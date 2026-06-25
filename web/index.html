@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Australia Tender Discovery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="drop-overlay" class="drop-overlay" hidden>
+    <div class="drop-overlay__inner">
+      <div class="drop-overlay__icon">⤓</div>
+      <p>Drop a <strong>tenders.json</strong> export to load it</p>
+    </div>
+  </div>
+
+  <header class="appbar">
+    <div class="appbar__brand">
+      <div class="appbar__mark">AT</div>
+      <div>
+        <h1 class="appbar__title">Australia Tender Discovery</h1>
+        <p class="appbar__subtitle">Government, public sector &amp; private procurement — one view</p>
+      </div>
+    </div>
+    <div class="appbar__actions">
+      <span id="data-badge" class="badge badge--muted" title="Source of the currently displayed data">No data</span>
+      <label class="btn btn--ghost" for="file-input">Load JSON…</label>
+      <input id="file-input" type="file" accept="application/json,.json" hidden />
+      <button id="reload-btn" class="btn btn--ghost" title="Reload from ../output/tenders.json">Reload</button>
+    </div>
+  </header>
+
+  <section class="run-strip" id="run-strip" hidden>
+    <div class="run-strip__item">
+      <span class="run-strip__label">Latest run</span>
+      <span class="run-strip__value" id="meta-latest-run">—</span>
+    </div>
+    <div class="run-strip__item">
+      <span class="run-strip__label">Unique tenders</span>
+      <span class="run-strip__value" id="meta-unique">—</span>
+    </div>
+    <div class="run-strip__item">
+      <span class="run-strip__label">New in latest</span>
+      <span class="run-strip__value" id="meta-new">—</span>
+    </div>
+    <div class="run-strip__item">
+      <span class="run-strip__label">Closing ≤ 7 days</span>
+      <span class="run-strip__value" id="meta-closing">—</span>
+    </div>
+    <div class="run-strip__item">
+      <span class="run-strip__label">Runs covered</span>
+      <span class="run-strip__value" id="meta-runs">—</span>
+    </div>
+    <div class="run-strip__summary" id="meta-summary"></div>
+  </section>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab tab--active" data-tab="tenders" role="tab">Tenders <span class="tab__count" id="tab-count-tenders"></span></button>
+    <button class="tab" data-tab="sources" role="tab">Discovered Sources <span class="tab__count" id="tab-count-sources"></span></button>
+    <button class="tab" data-tab="coverage" role="tab">Coverage</button>
+  </nav>
+
+  <main class="layout">
+    <!-- ============ TENDERS TAB ============ -->
+    <section class="panel" id="panel-tenders">
+      <aside class="filters" id="filters">
+        <div class="filters__head">
+          <h2>Filters</h2>
+          <button id="clear-filters" class="link-btn">Clear all</button>
+        </div>
+
+        <div class="field">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="Title, buyer, description, tags…" autocomplete="off" />
+        </div>
+
+        <div class="field" id="field-month" hidden>
+          <label for="month-filter">Discovered in month</label>
+          <select id="month-filter">
+            <option value="">All time</option>
+          </select>
+        </div>
+
+        <div class="field" id="field-time-flags" hidden>
+          <label>Run presence</label>
+          <label class="facet__row"><input type="checkbox" id="flag-new" /><span class="facet__label">New in latest run</span></label>
+          <label class="facet__row"><input type="checkbox" id="flag-active" /><span class="facet__label">Active in latest run</span></label>
+        </div>
+
+        <div class="field">
+          <label for="closing-window">Closing within</label>
+          <select id="closing-window">
+            <option value="">Any time</option>
+            <option value="7">7 days</option>
+            <option value="14">14 days</option>
+            <option value="30">30 days</option>
+            <option value="overdue">Past closing date</option>
+          </select>
+        </div>
+
+        <div class="field" data-facet="source_type">
+          <label>Source type</label>
+          <div class="facet" id="facet-source_type"></div>
+        </div>
+        <div class="field" data-facet="state">
+          <label>State / jurisdiction</label>
+          <div class="facet" id="facet-state"></div>
+        </div>
+        <div class="field" data-facet="procurement_type">
+          <label>Procurement type</label>
+          <div class="facet" id="facet-procurement_type"></div>
+        </div>
+        <div class="field" data-facet="current_status">
+          <label>Status</label>
+          <div class="facet" id="facet-current_status"></div>
+        </div>
+        <div class="field" data-facet="access">
+          <label>Access</label>
+          <div class="facet" id="facet-access"></div>
+        </div>
+      </aside>
+
+      <div class="results">
+        <div class="results__bar">
+          <div class="results__count" id="results-count">—</div>
+          <div class="results__controls">
+            <label class="results__sort">
+              Sort
+              <select id="sort-by">
+                <option value="closing_date:asc">Closing date (soonest)</option>
+                <option value="closing_date:desc">Closing date (latest)</option>
+                <option value="publish_date:desc">Published (newest)</option>
+                <option value="publish_date:asc">Published (oldest)</option>
+                <option value="value:desc">Value (highest)</option>
+                <option value="value:asc">Value (lowest)</option>
+                <option value="title:asc">Title (A–Z)</option>
+              </select>
+            </label>
+            <div class="viewtoggle" role="group" aria-label="View mode">
+              <button id="view-cards" class="viewtoggle__btn viewtoggle__btn--active" title="Card view">▦</button>
+              <button id="view-table" class="viewtoggle__btn" title="Table view">▤</button>
+            </div>
+          </div>
+        </div>
+        <div id="tender-results"></div>
+      </div>
+    </section>
+
+    <!-- ============ SOURCES TAB ============ -->
+    <section class="panel" id="panel-sources" hidden>
+      <div class="results results--full">
+        <div class="results__bar">
+          <div class="results__count" id="sources-count">—</div>
+          <label class="results__sort">
+            <input type="checkbox" id="sources-new-only" />
+            New sources only
+          </label>
+        </div>
+        <div id="sources-results"></div>
+      </div>
+    </section>
+
+    <!-- ============ COVERAGE TAB ============ -->
+    <section class="panel" id="panel-coverage" hidden>
+      <div class="results results--full" id="coverage-results"></div>
+    </section>
+  </main>
+
+  <footer class="appfoot">
+    <span>Static portal · reads <code>output/tenders.json</code> from the daily Claude routine.</span>
+  </footer>
+
+  <script src="sample-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

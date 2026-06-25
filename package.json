@@ -1,0 +1,13 @@
+{
+  "name": "tenders-discovery-portal",
+  "version": "1.0.0",
+  "description": "Static portal for the Australia Tender Discovery routine output.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "aggregate": "node scripts/aggregate.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
