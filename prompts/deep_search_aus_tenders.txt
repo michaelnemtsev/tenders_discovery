@@ -44,17 +44,42 @@ TIER 2 — Broader public sector and government-owned entities (often NOT listed
 - Universities, TAFEs, and public research bodies (e.g. CSIRO): many run their own procurement / tender pages.
 - Public health: Local Health Districts / Networks and hospital procurement units.
 
-TIER 3 — Private sector (large corporations publish through their own supplier channels):
-- Corporate "supplier" / "become a supplier" / "procurement" pages, usually powered by an e-sourcing platform. Common platforms whose listings come DIRECTLY from the buyer: SAP Ariba (including Ariba Discovery's public posting board), Coupa, Jaggaer, Oracle Procurement Cloud, GEP SMART, Ivalua.
-- Representative large buyers to check and to use as seeds for finding peers in the same sector:
-  - Mining/resources: BHP, Rio Tinto, Fortescue, Woodside, Santos.
-  - Banking/finance: CBA, Westpac, NAB, ANZ.
-  - Telco: Telstra, Optus, TPG.
-  - Retail/consumer: Woolworths, Coles, Wesfarmers/Bunnings.
-  - Energy/utilities: AGL, Origin, EnergyAustralia.
-  - Transport/logistics: Qantas, major freight and toll-road operators.
-- Construction head-contractor → subcontractor work packages: platforms such as EstimateOne, iTWOcx, BidContender, ProjectPak, where Tier-1 builders (e.g. Lendlease, CPB/CIMIC, John Holland, Multiplex) invite subcontractor quotes.
-- Large not-for-profits, charities, and private health groups (e.g. Ramsay Health Care, Healthscope) with public supplier/opportunity pages.
+TIER 3 — Private sector (large corporations). MANDATORY each run — do not defer.
+Central e-sourcing hubs (the highest-value corporate channels; a free supplier account is
+usually required to view full opportunity detail — register accounts so an authenticated
+run can read them):
+- SAP Ariba Discovery / SAP Business Network Discovery — public posting board where buyers
+  post open RFx (https://service.ariba.com/Discovery.aw/). Largest single slice of corporate
+  opportunity. Also SAP Ariba Network / GCMS for buyer-specific events.
+- Coupa Supplier Portal; Jaggaer; Oracle Procurement Cloud; GEP SMART; Ivalua.
+- RangeMe (retail product sourcing, e.g. Coles/Woolworths product suppliers).
+
+Known major-buyer portals to check directly (verified channels — capture the portal even
+when individual opportunities are login-gated):
+- Mining/resources: BHP (SAP Ariba + GCMS; https://www.bhp.com/suppliers/find-opportunities;
+  interestedsupplier.bhp.com), Rio Tinto, Fortescue, Woodside, Santos.
+- Retail/consumer: Woolworths (Partner Hub, partnerhub.woolworthsgroup.com.au), Coles
+  (tenders run via Ariba Network; RangeMe for products; colesgroup.com.au/suppliers),
+  Wesfarmers/Bunnings.
+- Transport/logistics: Qantas (Coupa Supplier Portal; procurement contact via supplier page),
+  major freight and toll-road operators.
+- Banking/finance: CBA, Westpac, NAB, ANZ.   Telco: Telstra, Optus, TPG.
+  Energy/utilities: AGL, Origin, EnergyAustralia.
+- Use each known buyer as a seed to find sector peers on the same e-sourcing platform.
+
+Construction head-contractor → subcontractor work packages: EstimateOne, iTWOcx, BidContender,
+ProjectPak (Tier-1 builders such as Lendlease, CPB/CIMIC, John Holland, Multiplex invite quotes).
+Large not-for-profits, charities, and private health groups (e.g. Ramsay Health Care, Healthscope).
+
+PRIVATE-SECTOR VISIBILITY — classify and handle each corporate opportunity by visibility:
+- publicly-advertised: a current RFx is visible without login → capture it as a normal tender.
+- registration-gated: opportunities exist but require a (usually free) supplier account on
+  Ariba/Coupa/RangeMe/GCMS → record the PORTAL in `discovered_sources` with
+  access_method=portal-registration and access="free-registration"; capture individual
+  opportunities only if an authenticated session is available. Do NOT invent gated opportunities.
+- invitation-only: closed RFx sent directly to shortlisted/panel/prequalified suppliers (typical
+  for management-consultancy RFPs, e.g. to Accenture/KPMG/Deloitte) → OUT OF SCOPE; these are never
+  published and cannot be discovered. Note this in `run_metadata` rather than fabricating entries.
 
 ==================================================================
 THE KEY RULE: buyer-originated vs. reseller (replaces "government domains only")
@@ -71,6 +96,7 @@ DISCOVERY STRATEGY (how to spend a daily run)
 - Prefer machine-readable access first: RSS/Atom feeds, JSON/REST APIs, or open search endpoints. Follow pagination fully.
 - Tier 1: aim for exhaustive coverage every run (these are queryable and high-volume).
 - Tier 2 and Tier 3: you cannot crawl every entity daily. Check the known high-value sources each run, and rotate through a broader sample so that coverage compounds across days. Note in `run_metadata` what you sampled vs. deferred.
+- Tier 3 is MANDATORY every run: always query SAP Ariba Discovery and at least a rotating sample of the known major-buyer portals above. Even when individual opportunities are login-gated, record the corporate portal in `discovered_sources` (access_method=portal-registration) so the source set is complete. If no corporate opportunity is publicly visible, say so in `run_metadata` (do not omit Tier 3 silently, and do not fabricate corporate tenders).
 - Source discovery every run (mandatory): actively look for sources you were not given. Techniques:
   - Search for new/changed government portals and rebrands.
   - For each TIER 3 sector above, search for additional large Australian buyers and follow their "suppliers/procurement" pages.

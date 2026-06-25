@@ -1,23 +1,26 @@
 {
   "run_metadata": {
     "run_date": "2026-06-25",
-    "coverage_summary": "Two-pass live discovery on 2026-06-25. Pass 1 covered Commonwealth/NSW/VIC plus a GBE; pass 2 broadened to QLD (QTenders), SA (Tenders SA / Energy & Mining) and TAS (Tenders Tasmania). WA, ACT and NT portals were confirmed live but no current opportunity detail was extractable from search snippets this run.",
-    "sources_checked": 13,
+    "coverage_summary": "Two-pass live discovery on 2026-06-25. Pass 1 covered Commonwealth/NSW/VIC plus a GBE; pass 2 broadened to QLD (QTenders), SA (Tenders SA / Energy & Mining) and TAS (Tenders Tasmania). WA, ACT and NT portals were confirmed live but no current opportunity detail was extractable from search snippets this run. Tier 3 (private sector) was executed this run: confirmed the major corporate channels (SAP Ariba Discovery, BHP via Ariba/GCMS, Qantas via Coupa, Woolworths Partner Hub, Coles via Ariba/RangeMe). Their live opportunities are gated behind free supplier registration or are invitation-only, so the portals are recorded as sources but individual corporate RFx could not be captured publicly.",
+    "sources_checked": 18,
     "tenders_found": 13,
-    "new_sources_found": 5,
+    "new_sources_found": 10,
     "entries_pending_detail": 6,
     "gaps": [
       "AusTender per-tender detail pages returned HTTP 403; Defence DSRG scopes are released only after a signed confidentiality agreement.",
       "WA, ACT and NT: portals confirmed live but no current opportunity could be extracted from search snippets - need authenticated portal/detail access.",
       "Headline-only entries still need a deliverables/requirements detail pass (see entries_pending_detail).",
-      "Tier 3 corporate supplier portals and the construction subcontractor market were not swept this pass."
+      "Tier 3 corporate supplier portals and the construction subcontractor market were not swept this pass.",
+      "Corporate (Tier 3) opportunities are registration-gated (SAP Ariba / Coupa / RangeMe / GCMS) or invitation-only (e.g. management-consultancy RFPs to Accenture/KPMG/Deloitte). They are not publicly scrapable; capturing them requires authenticated supplier accounts on each platform. The corporate portals are recorded in discovered_sources; no corporate tender entries were fabricated."
     ],
     "recommended_seed_additions": [
       "School Infrastructure NSW (buyer) — recurring education construction & ICT tenders via buy.nsw.",
       "NSW eTendering RSS feed (https://www.tenders.nsw.gov.au/public_data/rss/rss.xml) — machine-readable, use first for NSW.",
       "Sydney Water current tenders page (https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html) — GBE on SAP Ariba.",
       "Port of Townsville Limited (GOC) - civil/marine works via QTenders.",
-      "QTenders eTender current list (https://etender.hpw.qld.gov.au/public/TendersListingCurrent.aspx)."
+      "QTenders eTender current list (https://etender.hpw.qld.gov.au/public/TendersListingCurrent.aspx).",
+      "Register free supplier accounts on SAP Ariba Network/Discovery, Coupa and RangeMe so an authenticated routine can read gated corporate opportunities.",
+      "SAP Ariba Discovery (https://service.ariba.com/Discovery.aw/) — primary public-ish corporate RFx board."
     ]
   },
   "tenders": [
@@ -831,6 +834,76 @@
       "how_discovered": "Source-discovery search of SA energy procurement; competitive land/energy release tenders.",
       "recommended_check_frequency": "monthly",
       "notes": "Hydrogen & renewable energy release-area call for tenders."
+    },
+    {
+      "source_name": "SAP Ariba Discovery (corporate RFx hub)",
+      "source_url": "https://service.ariba.com/Discovery.aw/",
+      "source_type": "corporate",
+      "jurisdiction": "International / National",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 sweep: the public posting board where corporate buyers post open RFx; highest-value single corporate channel.",
+      "recommended_check_frequency": "daily",
+      "notes": "Public postings exist but full detail requires a free SAP Business Network / Ariba account. Register to let an authenticated run read AU opportunities."
+    },
+    {
+      "source_name": "BHP — Find opportunities (suppliers)",
+      "source_url": "https://www.bhp.com/suppliers/find-opportunities",
+      "source_type": "corporate",
+      "jurisdiction": "Western Australia / National",
+      "platform": "SAP-Ariba (GCMS)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 sweep of major mining buyers.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Opportunities posted as they arise; respond via GCMS after registering on SAP Ariba. Also interestedsupplier.bhp.com. Individual RFx are login-gated."
+    },
+    {
+      "source_name": "Qantas — Procurement (Coupa Supplier Portal)",
+      "source_url": "https://www.qantas.com/au/en/about-us/our-company/our-departments/procurement.html",
+      "source_type": "corporate",
+      "jurisdiction": "National",
+      "platform": "Coupa",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 sweep of transport/logistics buyers.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Engagement via email + Coupa Supplier Portal; no public RFP list. Opportunities are invitation/registration based."
+    },
+    {
+      "source_name": "Woolworths Group — Partner Hub",
+      "source_url": "https://partnerhub.woolworthsgroup.com.au/",
+      "source_type": "corporate",
+      "jurisdiction": "National",
+      "platform": "Partner Hub (custom)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 sweep of retail buyers.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Supplier onboarding portal; live opportunities handled via relationship managers, not publicly listed."
+    },
+    {
+      "source_name": "Coles Group — Suppliers (Ariba Network / RangeMe)",
+      "source_url": "https://www.colesgroup.com.au/suppliers",
+      "source_type": "corporate",
+      "jurisdiction": "National",
+      "platform": "SAP-Ariba / RangeMe",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 sweep of retail buyers.",
+      "recommended_check_frequency": "monthly",
+      "notes": "All Coles tenders are conducted via the Ariba Network (free registration); RangeMe is the product-supplier discovery channel. Individual tenders are login-gated."
     }
   ]
 }
