@@ -1,16 +1,17 @@
 {
-  "generated": "2026-06-25",
+  "generated": "2026-06-26",
   "runs": [
-    "2026-06-25"
+    "2026-06-25",
+    "2026-06-26"
   ],
-  "run_count": 1,
+  "run_count": 2,
   "first_run": "2026-06-25",
-  "latest_run": "2026-06-25",
-  "latest_coverage_summary": "Two-pass live discovery on 2026-06-25. Pass 1 covered Commonwealth/NSW/VIC plus a GBE; pass 2 broadened to QLD (QTenders), SA (Tenders SA / Energy & Mining) and TAS (Tenders Tasmania). WA, ACT and NT portals were confirmed live but no current opportunity detail was extractable from search snippets this run. Tier 3 (private sector) was executed this run: confirmed the major corporate channels (SAP Ariba Discovery, BHP via Ariba/GCMS, Qantas via Coupa, Woolworths Partner Hub, Coles via Ariba/RangeMe). Their live opportunities are gated behind free supplier registration or are invitation-only, so the portals are recorded as sources but individual corporate RFx could not be captured publicly.",
+  "latest_run": "2026-06-26",
+  "latest_coverage_summary": "Live discovery on 2026-06-26 via WebSearch. Tier 1 swept across all jurisdictions (Commonwealth/AusTender, NSW eTendering/buy.nsw, Buying for Victoria, QTenders QLD, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) — concrete open opportunities captured for Commonwealth (Defence DSRG), NSW (NSW Health / Far West LHD) and Tasmania (local council water services), plus still-open carry-forwards for NSW and SA. Tier 2 (GBE/public sector) reviewed: Sydney Water, Transgrid, Powerlink, Power and Water Corporation, CSIRO and NSW Health procurement channels confirmed and recorded as sources. Tier 3 (private sector) executed: SAP Ariba Discovery, BHP, Rio Tinto and EstimateOne (construction subcontractor) channels confirmed; their live opportunities are behind free supplier registration or invitation-only, so they are recorded as discovered_sources, not fabricated as tenders. CRITICAL LIMITATION: every buyer detail page (AusTender, NSW/VIC/QLD/SA/TAS portals, VendorPanel) returned HTTP 403 to the fetch tool (bot protection) and the egress policy blocked direct curl to those hosts, so all opportunity detail was reconstructed from search-result snippets only; no tender document could be opened this run.",
   "months": [
     {
       "month": "2026-06",
-      "new_tenders": 13,
+      "new_tenders": 17,
       "active_tenders": 0
     }
   ],
@@ -75,8 +76,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:defence-dsrg-building-works",
@@ -137,8 +138,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "sydneywater:strategic-customer-engagement-2026-29",
@@ -200,8 +201,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:nmi-cryogenics-gases",
@@ -258,8 +259,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:urea-stockpile-storage",
@@ -317,8 +318,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:barton-hwy-shoulder-widening",
@@ -376,32 +377,32 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:frank-partridge-rest-area-water",
-      "source_name": "buy.nsw (eTendering NSW)",
-      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_name": "NSW eTendering (buy.nsw)",
+      "source_url": "https://www.tenders.nsw.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "New South Wales",
       "state": "NSW",
-      "tender_id": null,
-      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
-      "access": "free-registration",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.nsw.gov.au/",
+      "access": "public",
       "title": "Frank Partridge Rest Area 2026–29 — Potable Water Supply",
-      "buyer": "Transport for NSW",
-      "buyer_url": "https://www.transport.nsw.gov.au",
-      "category": "Water / Roads",
+      "buyer": "Transport for NSW (roads/rest areas)",
+      "buyer_url": "https://www.transport.nsw.gov.au/",
+      "category": "Water supply / facilities services",
       "category_codes": [],
       "procurement_type": "RFT",
-      "current_status": "open",
-      "description": "Supply of potable water for the Frank Partridge rest area, 2026–2029.",
+      "current_status": "closing-soon",
+      "description": "Supply of potable water to the Frank Partridge rest area for the 2026–2029 period.",
       "deliverables_summary": "",
       "key_deliverables": [],
       "scope_of_work": "",
       "requirements": [],
-      "eligibility": "",
+      "eligibility": "Open (publicly advertised via NSW eTendering).",
       "evaluation_criteria": [],
       "value": "",
       "value_currency": "AUD",
@@ -409,33 +410,36 @@
       "contract_start": null,
       "contract_end": null,
       "publish_date": null,
-      "closing_date": null,
+      "closing_date": "2026-07-01",
       "closing_time": "",
-      "questions_due": null,
+      "questions_due": "",
       "briefing": "",
-      "submission_method": "Online via buy.nsw",
-      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "submission_method": "Lodge via NSW eTendering / buy.nsw",
+      "lodgement_url": "https://www.tenders.nsw.gov.au/",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "NSW",
+      "delivery_location": "Frank Partridge Rest Area, NSW",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
+        "NSW",
         "water",
-        "roads",
-        "transport"
+        "rest-area",
+        "RFT",
+        "carry-forward"
       ],
       "first_seen": "2026-06-25",
       "detail_source": "",
-      "reasoning": "Listed among current buy.nsw opportunities via web search.",
-      "notes": "Headline-only — confirm on buy.nsw.",
-      "last_seen": "2026-06-25",
+      "reasoning": "Carried forward from the 2026-06-25 run; re-confirmed via NSW eTendering search snippet as still open with closing 01-Jul-2026.",
+      "notes": "Carry-forward, still open. Closing 01-Jul-2026 per search snippet; detail page not openable (HTTP 403), so scope and contacts remain unverified. first_seen retained from prior run.",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -493,8 +497,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buyingfor.vic:indigo-mch-fitout",
@@ -552,8 +556,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:RFT000024",
@@ -614,32 +618,32 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:sa-hydrogen-release-2026",
-      "source_name": "SA Tenders and Contracts",
+      "source_name": "Tenders SA / SA Department for Energy and Mining",
       "source_url": "https://www.tenders.sa.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "South Australia",
       "state": "SA",
-      "tender_id": null,
-      "tender_url": "https://www.energymining.sa.gov.au/industry/hydrogen-and-renewable-energy/hydrogen-and-renewable-energy-act/release-areas/call-for-tenders",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.sa.gov.au/tenders/index",
       "access": "public",
-      "title": "Hydrogen & Renewable Energy Release Areas - Call for Tenders (Gawler Ranges East & Whyalla West)",
-      "buyer": "Department for Energy and Mining (SA)",
-      "buyer_url": "https://www.energymining.sa.gov.au",
-      "category": "Energy / Hydrogen",
+      "title": "Hydrogen & Renewable Energy Release Areas — Call for Tenders (Gawler Ranges East & Whyalla West)",
+      "buyer": "SA Department for Energy and Mining",
+      "buyer_url": "https://www.energymining.sa.gov.au/",
+      "category": "Energy / land release / hydrogen",
       "category_codes": [],
       "procurement_type": "RFT",
       "current_status": "closing-soon",
-      "description": "Competitive call for tenders for hydrogen and renewable energy release areas (Gawler Ranges East and Whyalla West) under the Hydrogen and Renewable Energy Act.",
-      "deliverables_summary": "Bids for rights to develop hydrogen and renewable energy projects in the Gawler Ranges East and Whyalla West release areas under South Australia's Hydrogen and Renewable Energy Act.",
+      "description": "Competitive call for tenders over designated Hydrogen and Renewable Energy release areas (Gawler Ranges East and Whyalla West) under SA's Hydrogen and Renewable Energy Act framework.",
+      "deliverables_summary": "",
       "key_deliverables": [],
       "scope_of_work": "",
       "requirements": [],
-      "eligibility": "",
+      "eligibility": "Open competitive call for the designated release areas.",
       "evaluation_criteria": [],
       "value": "",
       "value_currency": "AUD",
@@ -649,32 +653,34 @@
       "publish_date": null,
       "closing_date": "2026-06-28",
       "closing_time": "",
-      "questions_due": null,
+      "questions_due": "",
       "briefing": "",
-      "submission_method": "",
-      "lodgement_url": "",
+      "submission_method": "Lodge via Tenders SA",
+      "lodgement_url": "https://www.tenders.sa.gov.au/",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "Gawler Ranges East & Whyalla West, SA",
+      "delivery_location": "Gawler Ranges East and Whyalla West, South Australia",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
-        "energy",
+        "SA",
         "hydrogen",
-        "renewables",
-        "release-area"
+        "renewable-energy",
+        "land-release",
+        "carry-forward"
       ],
       "first_seen": "2026-06-25",
-      "detail_source": "energymining.sa.gov.au call-for-tenders page via web search",
-      "reasoning": "Surfaced via Tenders SA / Department for Energy and Mining release-areas page.",
-      "notes": "Applications close 28 Jun 2026.",
-      "last_seen": "2026-06-25",
+      "detail_source": "",
+      "reasoning": "Carried forward from the 2026-06-25 run; closing 28-Jun-2026, still open this run.",
+      "notes": "Carry-forward, closing-soon. Detail page not openable (HTTP 403); release-area boundaries, conditions and contacts unverified. first_seen retained from prior run. Note: tenders.sa.gov.au scheduled a brief maintenance outage on 25-Jun-2026.",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -737,8 +743,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersTAS:bridge-dc-2026-27",
@@ -800,6 +806,258 @@
         "2026-06-25"
       ],
       "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_80064-graphic-digital-marketing",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "ACT",
+      "tender_id": "80064",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/c860d13d-1ae3-415b-8b13-9d16785ec38b",
+      "access": "public",
+      "title": "Graphic and Digital Marketing Services to support industry engagements",
+      "buyer": "Department of Defence — Capability Acquisition and Sustainment Group (Industry Engagement Division), DSRG",
+      "buyer_url": "https://www.defence.gov.au/business-industry",
+      "category": "Marketing and communications / event management",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "Defence's Industry Engagement Division (Capability Acquisition and Sustainment Group) is seeking graphic and digital marketing services plus event-management support for virtual events, to support delivery of international trade events and promote Australian defence industry.",
+      "deliverables_summary": "Provision of graphic design and digital marketing collateral together with event-management support for virtual/online events, used to deliver international trade events and promote the Australian defence industry to international and domestic audiences.",
+      "key_deliverables": [
+        "Graphic design and digital marketing materials",
+        "Digital/virtual event management support",
+        "Support for delivery of international trade events",
+        "Promotion of Australian defence industry"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to all suppliers (publicly advertised RFT).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "2026-07-08",
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-06-29",
+      "closing_time": "10:00 AM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender (www.tenders.gov.au)",
+      "lodgement_url": "https://www.tenders.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia (Commonwealth)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "defence",
+        "marketing",
+        "events",
+        "commonwealth",
+        "RFT"
+      ],
+      "first_seen": "2026-06-26",
+      "detail_source": "AusTender Current ATM View snippet for ATM 80064 (search result); full ATM page and documents returned HTTP 403.",
+      "reasoning": "Found via AusTender keyword search for newly published ATMs closing in June 2026; buyer-originated on the Commonwealth AusTender portal.",
+      "notes": "Scope, closing time and delivery timeframe (08/07/2026) taken from the AusTender search snippet; the ATM detail page and any attached documents could not be opened (HTTP 403), so values, evaluation criteria and contact remain unverified.",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:DEF8101-market-scan-industry-notification",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "ACT",
+      "tender_id": "DEF8101",
+      "tender_url": "https://www.tenders.gov.au/atm",
+      "access": "public",
+      "title": "DEF8101 Market Scan Activity — Industry Notification",
+      "buyer": "Department of Defence",
+      "buyer_url": "https://www.defence.gov.au/business-industry",
+      "category": "Defence / market sounding",
+      "category_codes": [],
+      "procurement_type": "market-sounding",
+      "current_status": "closing-soon",
+      "description": "Industry notification of a market-scan activity under the DEF8101 program, inviting industry to register interest ahead of a future Defence procurement.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to industry (market-scan / industry notification).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-06-26",
+      "closing_time": "5:00 PM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Respond via AusTender (www.tenders.gov.au)",
+      "lodgement_url": "https://www.tenders.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia (Commonwealth)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "defence",
+        "market-sounding",
+        "commonwealth"
+      ],
+      "first_seen": "2026-06-26",
+      "detail_source": "",
+      "reasoning": "Surfaced via AusTender keyword search for Defence ATMs closing 26-Jun-2026; buyer-originated on AusTender.",
+      "notes": "Headline only — captured from search snippet (title and closing 26-Jun-2026 5:00pm ACT). The notice detail page returned HTTP 403, so scope, deliverables and the exact ATM URL are unconfirmed.",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:fwlhd-air-transport-remote-health",
+      "source_name": "NSW eTendering (buy.nsw)",
+      "source_url": "https://www.tenders.nsw.gov.au/",
+      "source_type": "health",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.nsw.gov.au/",
+      "access": "public",
+      "title": "Air Transport and Remote Health Services for Regional and Rural NSW (Far West LHD)",
+      "buyer": "NSW Ministry of Health / Far West Local Health District",
+      "buyer_url": "https://www.health.nsw.gov.au/lhd/Pages/fwlhd.aspx",
+      "category": "Health services / aeromedical transport",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "NSW Health is seeking a provider (or providers) to deliver air transport and a bundle of remote health services across regional and rural NSW, anchored in the Far West Local Health District.",
+      "deliverables_summary": "Provision of inter-hospital patient transfers and fixed-wing transport for clinicians, plus delivery of remote/rural health services including medical primary health care clinics, remote oral health services, and drug and alcohol information and counselling services across the Far West Local Health District and regional/rural NSW.",
+      "key_deliverables": [
+        "Inter-hospital patient transfers across regional and rural NSW",
+        "Fixed-wing transport for clinicians to provide health services in rural and remote communities",
+        "Medical primary health care clinics in Far West LHD",
+        "Remote oral health services in Far West LHD",
+        "Drug and alcohol information and counselling services in Far West LHD"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open (publicly advertised RFT via NSW eTendering).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-16",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via NSW eTendering / buy.nsw",
+      "lodgement_url": "https://www.tenders.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Far West Local Health District, regional and rural NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "aeromedical",
+        "remote-health",
+        "NSW",
+        "RFT"
+      ],
+      "first_seen": "2026-06-26",
+      "detail_source": "Scope reconstructed from GovMarket aggregator listing snippet (discovery signal); buyer-originated NSW eTendering page could not be opened (HTTP 403).",
+      "reasoning": "Discovered via a GovMarket aggregator listing used only as a discovery signal; recorded against the buyer-originated source (NSW eTendering / NSW Ministry of Health). Aggregator is NOT treated as the source of truth.",
+      "notes": "Closing date 16-Jul-2026 and service scope are snippet-derived via an aggregator and still need confirmation on the buyer's own NSW eTendering notice; RFT number, value and contacts unverified.",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersTAS:sandford-oval-water-delivery-2026-31",
+      "source_name": "Tenders Tasmania",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "Tasmania",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Sandford Oval Water Delivery Services (2026–2031)",
+      "buyer": "Local council (Clarence/Sandford area), Tasmania",
+      "buyer_url": "",
+      "category": "Water delivery / facilities services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "Tender for the provision of water delivery services to Sandford Oval over the 2026–2031 period.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open (publicly advertised via Tenders Tasmania).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "2026–2031",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-06-26",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via Tenders Tasmania",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Sandford Oval, Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "water",
+        "local-government",
+        "RFT"
+      ],
+      "first_seen": "2026-06-26",
+      "detail_source": "",
+      "reasoning": "Found via Tenders Tasmania / Tasmanian local-government tender search for opportunities closing in late June 2026.",
+      "notes": "Headline only — title, 2026–2031 term and closing 26-Jun-2026 from search snippet. The exact issuing council and the detail page could not be confirmed (portal not directly readable); buyer recorded approximately.",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
       "is_new_in_latest": true,
       "active_in_latest": true
     }
@@ -824,8 +1082,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NSW eTendering RSS feed",
@@ -846,33 +1104,34 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
-      "source_name": "Sydney Water current tenders",
+      "source_name": "Sydney Water — current tenders",
       "source_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
       "source_type": "gov-business-enterprise",
       "jurisdiction": "New South Wales",
-      "platform": "SAP Ariba",
-      "access_method": "portal-registration",
+      "platform": "SAP-Ariba / NSW eTendering",
+      "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Source-discovery search of NSW Government Business Enterprises.",
+      "how_discovered": "Known GBE from prior run; re-checked this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "GBE; opportunities not always mirrored on the core state portal.",
+      "notes": "Lists current tenders; also mirrored on NSW eTendering (tenders.nsw.gov.au/sydneywater).",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "AusTender current ATM list",
+      "source_name": "AusTender — Current ATM list",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth",
@@ -881,16 +1140,17 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed source.",
+      "how_discovered": "Canonical seed; queried this run for June 2026 ATMs.",
       "recommended_check_frequency": "daily",
-      "notes": "Detail pages (Atm/Show/...) blocked automated fetch (HTTP 403) this run.",
+      "notes": "Detail pages returned HTTP 403 to the fetch tool this run; data via search snippets only. An RSS/keyword interface exists but the same anti-bot block applies.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -912,8 +1172,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders WA",
@@ -934,8 +1194,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Port of Townsville Limited (buyer)",
@@ -956,8 +1216,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "SA Department for Energy and Mining - release areas",
@@ -978,51 +1238,53 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
-      "source_name": "SAP Ariba Discovery (corporate RFx hub)",
+      "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "International / National",
+      "jurisdiction": "Australia (global platform)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 sweep: the public posting board where corporate buyers post open RFx; highest-value single corporate channel.",
+      "how_discovered": "Mandatory Tier 3 channel; re-checked this run.",
       "recommended_check_frequency": "daily",
-      "notes": "Public postings exist but full detail requires a free SAP Business Network / Ariba account. Register to let an authenticated run read AU opportunities.",
+      "notes": "Public posting board for corporate RFx; full opportunity detail requires a free SAP Business Network supplier account. No publicly visible AU opportunity captured without login this run.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "BHP — Find opportunities (suppliers)",
+      "source_name": "BHP — Find opportunities (Suppliers)",
       "source_url": "https://www.bhp.com/suppliers/find-opportunities",
       "source_type": "corporate",
-      "jurisdiction": "Western Australia / National",
+      "jurisdiction": "Australia (global buyer)",
       "platform": "SAP-Ariba (GCMS)",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 sweep of major mining buyers.",
+      "how_discovered": "Known major buyer; re-checked this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "Opportunities posted as they arise; respond via GCMS after registering on SAP Ariba. Also interestedsupplier.bhp.com. Individual RFx are login-gated.",
+      "notes": "Opportunities via SAP Ariba + GCMS (interestedsupplier.bhp.com); registration-gated, no public RFx captured.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "seen_dates": [
-        "2026-06-25"
+        "2026-06-25",
+        "2026-06-26"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -1044,8 +1306,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Woolworths Group — Partner Hub",
@@ -1066,8 +1328,8 @@
         "2026-06-25"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Coles Group — Suppliers (Ariba Network / RangeMe)",
@@ -1086,6 +1348,226 @@
       "last_seen": "2026-06-25",
       "seen_dates": [
         "2026-06-25"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "NSW eTendering / buy.nsw",
+      "source_url": "https://www.tenders.nsw.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw / eTendering",
+      "access_method": "rss",
+      "feed_or_api_url": "https://www.tenders.nsw.gov.au/public_data/rss/rss.xml",
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Canonical seed; RSS feed known from prior run.",
+      "recommended_check_frequency": "daily",
+      "notes": "RSS feed and HTML both returned HTTP 403 to the fetch tool and the egress policy blocked direct curl; needs a non-blocked or authenticated channel.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Transgrid — procurement (NSW eTendering)",
+      "source_url": "https://tenders.nsw.gov.au/transgrid",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw / eTendering",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.tenders.nsw.gov.au/public_data/rss/rss.xml",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Searched NSW GBE utilities; Transgrid publishes its tenders on its NSW eTendering sub-site.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Grid-forming BESS RFPs (~1GW of stabilising services) flagged to begin H2 2026; buyer-originated on NSW eTendering.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Powerlink Queensland — Suppliers",
+      "source_url": "https://www.powerlink.com.au/about/suppliers",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel (Queensland Procurement Solution)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Searched QLD energy GBEs; Powerlink runs tenders via the Queensland Procurement Solution (VendorPanel).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Suppliers register on VendorPanel to receive notifications; buyer-originated transmission GBE.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Power and Water Corporation (NT) — Opportunities to tender",
+      "source_url": "https://www.powerwater.com.au/about/working-with-us/contractors-and-suppliers/opportunities-to-tender",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Northern Territory",
+      "platform": "NT QTOL (Quotations and Tenders Online)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Searched NT utilities; Power and Water advertises all tenders via the NT Government QTOL portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Mandatory minimum 30% local-content evaluation criterion on competitive procurements.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "CSIRO — Tenders & procurement",
+      "source_url": "https://www.csiro.au/en/work-with-us/working-with-csiro/tenders-procurement",
+      "source_type": "university",
+      "jurisdiction": "Commonwealth",
+      "platform": "AusTender",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Searched public research bodies; CSIRO procurements over A$400k run via AusTender.",
+      "recommended_check_frequency": "weekly",
+      "notes": "CSIRO's SAP Ariba supplier portal was retired 25-Mar-2024; tenders now publish on AusTender.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "NSW Health — Strategic Procurement / Health tenders",
+      "source_url": "https://www.health.nsw.gov.au/assets/Pages/health-tenders.aspx",
+      "source_type": "health",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw / eTendering",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Searched public-health procurement; gateway page to Local Health District tenders advertised on buy.nsw.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Covers HealthShare NSW and Local Health District opportunities (e.g. Far West LHD air-transport RFT captured this run).",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Rio Tinto — Supplier portals",
+      "source_url": "https://www.riotinto.com/en/about/suppliers/supplier-portals",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (global buyer)",
+      "platform": "SAP-Ariba / SAP Business Network",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 mining sweep; Rio Tinto issues RFx via SAP Ariba / SAP Business Network.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Registration-gated. Rio Tinto spent A$19.7bn with 6,000+ Australian suppliers in 2025; individual sourcing events require an authenticated Ariba/SBN account.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "EstimateOne (E1) — construction tenders",
+      "source_url": "https://estimateone.com/tenders/",
+      "source_type": "construction-subcontract",
+      "jurisdiction": "Australia",
+      "platform": "EstimateOne",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 construction sweep; E1 is Australia's largest commercial construction tender platform for head-contractor to subcontractor packages.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Free trade account required to view live package closing dates; 900+ builders, 50,000+ subcontractors. Packages uploaded by builders (ITT/RFQ + drawings/specs/SOW).",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "QTenders eTender — current opportunities (QLD)",
+      "source_url": "https://etender.hpw.qld.gov.au/public/TendersListingCurrent.aspx",
+      "source_type": "gov-state",
+      "jurisdiction": "Queensland",
+      "platform": "QTenders",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Prior-run recommended addition; QLD eTender current-opportunities list (alongside QTenders directory and supply.qld.gov.au migration).",
+      "recommended_check_frequency": "daily",
+      "notes": "Returned HTTP 403 to the fetch tool this run; QLD is also migrating procurement to VendorPanel via supply.qld.gov.au — check both.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "VendorPanel — Public tenders",
+      "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "source_type": "gov-local",
+      "jurisdiction": "Australia (local government)",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Canonical local-government channel; re-checked this run.",
+      "recommended_check_frequency": "daily",
+      "notes": "Used by most Australian councils; returned HTTP 403 to the fetch tool this run. Registration required to download documents/submit.",
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26",
+      "seen_dates": [
+        "2026-06-26"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

@@ -72,7 +72,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "marketing", "events", "commonwealth", "RFT"],
+      "tags": [
+        "defence",
+        "marketing",
+        "events",
+        "commonwealth",
+        "RFT"
+      ],
       "first_seen": "2026-06-26",
       "detail_source": "AusTender Current ATM View snippet for ATM 80064 (search result); full ATM page and documents returned HTTP 403.",
       "reasoning": "Found via AusTender keyword search for newly published ATMs closing in June 2026; buyer-originated on the Commonwealth AusTender portal.",
@@ -120,7 +126,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "market-sounding", "commonwealth"],
+      "tags": [
+        "defence",
+        "market-sounding",
+        "commonwealth"
+      ],
       "first_seen": "2026-06-26",
       "detail_source": "",
       "reasoning": "Surfaced via AusTender keyword search for Defence ATMs closing 26-Jun-2026; buyer-originated on AusTender.",
@@ -174,7 +184,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "aeromedical", "remote-health", "NSW", "RFT"],
+      "tags": [
+        "health",
+        "aeromedical",
+        "remote-health",
+        "NSW",
+        "RFT"
+      ],
       "first_seen": "2026-06-26",
       "detail_source": "Scope reconstructed from GovMarket aggregator listing snippet (discovery signal); buyer-originated NSW eTendering page could not be opened (HTTP 403).",
       "reasoning": "Discovered via a GovMarket aggregator listing used only as a discovery signal; recorded against the buyer-originated source (NSW eTendering / NSW Ministry of Health). Aggregator is NOT treated as the source of truth.",
@@ -222,7 +238,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "water", "local-government", "RFT"],
+      "tags": [
+        "tasmania",
+        "water",
+        "local-government",
+        "RFT"
+      ],
       "first_seen": "2026-06-26",
       "detail_source": "",
       "reasoning": "Found via Tenders Tasmania / Tasmanian local-government tender search for opportunities closing in late June 2026.",
@@ -270,7 +291,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["NSW", "water", "rest-area", "RFT", "carry-forward"],
+      "tags": [
+        "NSW",
+        "water",
+        "rest-area",
+        "RFT",
+        "carry-forward"
+      ],
       "first_seen": "2026-06-25",
       "detail_source": "",
       "reasoning": "Carried forward from the 2026-06-25 run; re-confirmed via NSW eTendering search snippet as still open with closing 01-Jul-2026.",
@@ -318,7 +345,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["SA", "hydrogen", "renewable-energy", "land-release", "carry-forward"],
+      "tags": [
+        "SA",
+        "hydrogen",
+        "renewable-energy",
+        "land-release",
+        "carry-forward"
+      ],
       "first_seen": "2026-06-25",
       "detail_source": "",
       "reasoning": "Carried forward from the 2026-06-25 run; closing 28-Jun-2026, still open this run.",
