@@ -87,6 +87,35 @@ SEARCH GUIDANCE
 - Always capture the originating jurisdiction and the buying organisation.
 
 ==================================================================
+DETAIL & DELIVERABLES EXTRACTION (capture WHAT each tender requires)
+==================================================================
+For each opportunity you include, go beyond the listing row: open the tender's own
+detail page, and where the request/specification documents are publicly accessible
+(no paywall or restricted login), skim them to capture the real scope. Extract:
+- A plain-language `deliverables_summary` — what the supplier must actually deliver
+  (goods, services, or works) and the outcome the buyer wants — plus a
+  `key_deliverables` list of the discrete outputs / milestones.
+- `requirements`, `eligibility`, and `mandatory_conditions` — what a respondent must
+  have or do to be considered (licences, insurances, certifications, accreditations,
+  standards, prequalification, panel membership, SME / Indigenous set-asides).
+- `evaluation_criteria` and weightings, if published.
+- Submission mechanics: `submission_method`, `closing_time` (with timezone),
+  `questions_due`, `briefing` (site visit / industry briefing), and the list of
+  tender `documents`.
+- Commercial shape: `value`, `contract_term`, `contract_start` / `contract_end`.
+Record in `detail_source` where you read these details from (which page or document).
+
+Fidelity rule: base every detail on the actual notice or its documents. If a detail
+page or document is behind a login/paywall or otherwise unavailable, capture what is
+publicly visible, set the remaining detail fields to null, and note the limitation in
+`notes` — do NOT infer, guess, or fabricate scope, deliverables, dates, or contacts.
+
+Depth vs. breadth: capture the core identity/headline fields for EVERY opportunity you
+find, but prioritise full deliverables/requirements extraction for the most recent and
+most relevant ones (last 24-48 hours, higher value, or priority categories). Count any
+opportunity left at headline level only in `run_metadata.entries_pending_detail`.
+
+==================================================================
 OUTPUT FORMAT
 ==================================================================
 Return a SINGLE valid JSON object and nothing else (no prose outside the JSON). It must have exactly these top-level keys: `run_metadata`, `tenders`, `discovered_sources`.
@@ -97,10 +126,15 @@ Return a SINGLE valid JSON object and nothing else (no prose outside the JSON). 
 - `sources_checked`     (integer)
 - `tenders_found`       (integer)
 - `new_sources_found`   (integer)
+- `entries_pending_detail` (integer: opportunities captured at headline level only, still needing a deliverables/detail pass)
 - `gaps`                (array of strings: sources unreachable, behind login, rate-limited, deferred to a future run, or URLs that had changed)
 - `recommended_seed_additions` (array of strings: sources worth adding to the permanent known-source list)
 
-`tenders` (array). Each entry:
+`tenders` (array). Each entry — populate every field you can from the tender's own
+detail page and documents; use "" or null when a field is genuinely not published
+(never invent). Fields are grouped for clarity but the object is flat.
+
+Identity & source:
 - `dedup_key`        (stable key for de-duplication across runs, e.g. "<source_name>:<tender_id>" or a normalised title+buyer+closing_date when no id exists)
 - `source_name`
 - `source_url`
@@ -108,22 +142,57 @@ Return a SINGLE valid JSON object and nothing else (no prose outside the JSON). 
 - `jurisdiction`
 - `state`
 - `tender_id`
+- `tender_url`       (deep link to the tender detail page)
+- `access`           (one of: public, free-registration, paywalled-do-not-rely)
+
+Headline:
 - `title`
-- `description`
 - `buyer`            (the buying organisation; replaces/extends "agency")
 - `buyer_url`
-- `publish_date`
-- `closing_date`
-- `value`
 - `category`
+- `category_codes`   (array: UNSPSC or agency category codes if shown; else [])
 - `procurement_type` (e.g. RFT, RFP, RFQ, EOI, panel, prequalification, subcontractor-package, market-sounding)
 - `current_status`   (e.g. open, closing-soon, recently-published)
-- `access`           (one of: public, free-registration, paywalled-do-not-rely)
-- `tender_url`
+
+What is required (description & deliverables):
+- `description`          (1-3 sentence plain-language summary of the opportunity)
+- `deliverables_summary` (a concise paragraph: what the supplier must deliver — goods, services or works — and the outcome the buyer wants)
+- `key_deliverables`     (array of strings: the discrete deliverables / outputs / milestones)
+- `scope_of_work`        (fuller scope text if available from the detail page or documents)
+- `requirements`         (array of strings: mandatory requirements — qualifications, licences, certifications, insurances, standards, prequalification)
+- `eligibility`          (who may respond: open to all / existing panel members only / prequalified suppliers / SME set-aside / Indigenous procurement, etc.)
+- `evaluation_criteria`  (array of strings: stated assessment criteria and weightings, if published)
+
+Commercial & timeline:
+- `value`            (estimated/total contract value as published, e.g. "$1,200,000")
+- `value_currency`   (default "AUD")
+- `contract_term`    (e.g. "3 years with 2 x 1-year options")
+- `contract_start`   (ISO date if known)
+- `contract_end`     (ISO date if known)
+- `publish_date`     (ISO date)
+- `closing_date`     (ISO date)
+- `closing_time`     (local closing time incl. timezone if published, e.g. "2:00 PM AEST")
+- `questions_due`    (deadline for supplier clarification questions, if any)
+- `briefing`         (site visit / industry briefing details incl. date and whether mandatory; "" if none)
+
+How to respond (submission & documents):
+- `submission_method`    (e.g. "Online via AusTender", "Lodge in portal", "Email to ...")
+- `lodgement_url`        (where to submit, if different from tender_url)
+- `documents`            (array of objects {"name": "...", "url": "..."} for tender documents / attachments; [] if none accessible)
+- `mandatory_conditions` (array of strings: e.g. "Current $20M public liability insurance", "Must hold QBCC licence")
+- `delivery_location`    (where the work/goods are required: region or address)
+
+Contact:
+- `contact_name`
+- `contact_email`
+- `contact_phone`
+
+Provenance & tracking:
 - `tags`             (array)
 - `first_seen`       (ISO date you first observed it; for a fresh run, this run's date)
+- `detail_source`    (which page or document the deliverables & requirements were extracted from; "" if headline-only)
 - `reasoning`        (how it was discovered and which buyer-originated source provided it)
-- `notes`
+- `notes`            (anything notable, including fields that still need verification)
 
 `discovered_sources` (array). Each entry:
 - `source_name`
@@ -148,4 +217,5 @@ CONSTRAINTS
 - Cover the full source universe above, not just government.
 - Capture buyer-originated listings; use aggregators only as a discovery signal, never as the source of truth.
 - Every run must attempt to find at least some NEW sources and report them in `discovered_sources`.
+- Deliverables, requirements, dates, values and contacts must come from the actual notice or its documents — null when not published. Never infer or invent detail.
 - Be truthful about coverage and gaps in `run_metadata`.
