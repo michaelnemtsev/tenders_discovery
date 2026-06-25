@@ -8,6 +8,31 @@
   "first_run": "2026-06-25",
   "latest_run": "2026-06-26",
   "latest_coverage_summary": "Live discovery on 2026-06-26 via WebSearch. Tier 1 swept across all jurisdictions (Commonwealth/AusTender, NSW eTendering/buy.nsw, Buying for Victoria, QTenders QLD, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) — concrete open opportunities captured for Commonwealth (Defence DSRG), NSW (NSW Health / Far West LHD) and Tasmania (local council water services), plus still-open carry-forwards for NSW and SA. Tier 2 (GBE/public sector) reviewed: Sydney Water, Transgrid, Powerlink, Power and Water Corporation, CSIRO and NSW Health procurement channels confirmed and recorded as sources. Tier 3 (private sector) executed: SAP Ariba Discovery, BHP, Rio Tinto and EstimateOne (construction subcontractor) channels confirmed; their live opportunities are behind free supplier registration or invitation-only, so they are recorded as discovered_sources, not fabricated as tenders. CRITICAL LIMITATION: every buyer detail page (AusTender, NSW/VIC/QLD/SA/TAS portals, VendorPanel) returned HTTP 403 to the fetch tool (bot protection) and the egress policy blocked direct curl to those hosts, so all opportunity detail was reconstructed from search-result snippets only; no tender document could be opened this run.",
+  "latest_run_metadata": {
+    "run_date": "2026-06-26",
+    "coverage_summary": "Live discovery on 2026-06-26 via WebSearch. Tier 1 swept across all jurisdictions (Commonwealth/AusTender, NSW eTendering/buy.nsw, Buying for Victoria, QTenders QLD, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) — concrete open opportunities captured for Commonwealth (Defence DSRG), NSW (NSW Health / Far West LHD) and Tasmania (local council water services), plus still-open carry-forwards for NSW and SA. Tier 2 (GBE/public sector) reviewed: Sydney Water, Transgrid, Powerlink, Power and Water Corporation, CSIRO and NSW Health procurement channels confirmed and recorded as sources. Tier 3 (private sector) executed: SAP Ariba Discovery, BHP, Rio Tinto and EstimateOne (construction subcontractor) channels confirmed; their live opportunities are behind free supplier registration or invitation-only, so they are recorded as discovered_sources, not fabricated as tenders. CRITICAL LIMITATION: every buyer detail page (AusTender, NSW/VIC/QLD/SA/TAS portals, VendorPanel) returned HTTP 403 to the fetch tool (bot protection) and the egress policy blocked direct curl to those hosts, so all opportunity detail was reconstructed from search-result snippets only; no tender document could be opened this run.",
+    "sources_checked": 24,
+    "tenders_found": 6,
+    "new_sources_found": 8,
+    "entries_pending_detail": 4,
+    "gaps": [
+      "All buyer-originated tender detail pages (tenders.gov.au, tenders.nsw.gov.au incl. RSS, tenders.vic.gov.au, etender.hpw.qld.gov.au, suppliers.buy.nsw.gov.au, vendorpanel.com.au) returned HTTP 403 to WebFetch (bot/anti-scraping protection); the session egress policy additionally rejected direct curl CONNECT to these hosts. Detail therefore comes from search snippets only and could not be confirmed against the notices' own documents.",
+      "WA, ACT and NT Tier 1 portals confirmed live but no current opportunity with a concrete closing date could be extracted from snippets this run (NT had one fuel-supply notice whose questions deadline had already passed; not captured to avoid uncertainty).",
+      "Tier 3 corporate opportunities (SAP Ariba Discovery / SBN, BHP via Ariba+GCMS, Rio Tinto via Ariba/SBN, Coles/Woolworths) are registration-gated or invitation-only and not publicly scrapable; no authenticated supplier session is available, so portals are recorded but no corporate tender entries were fabricated. Management-consultancy RFPs (Accenture/KPMG/Deloitte) remain out of scope (invitation-only).",
+      "EstimateOne / construction subcontractor work-packages require a free trade account to view live package closing dates; platform recorded as a source, individual packages not captured.",
+      "The Far West LHD air-transport tender was surfaced via the GovMarket aggregator (discovery signal only); its buyer-originated NSW eTendering listing could not be opened (403), so scope is snippet-derived and still needs buyer-source/document confirmation.",
+      "Six entries are headline / snippet level only and need a deliverables/requirements pass once an authenticated or non-blocked portal session is available (see entries_pending_detail)."
+    ],
+    "recommended_seed_additions": [
+      "Transgrid procurement on NSW eTendering (https://tenders.nsw.gov.au/transgrid) — NSW transmission GBE; grid-forming BESS RFPs flagged for H2 2026.",
+      "Powerlink Queensland — Suppliers (https://www.powerlink.com.au/about/suppliers), tenders run via the Queensland Procurement Solution / VendorPanel.",
+      "Power and Water Corporation (NT) — Opportunities to tender (https://www.powerwater.com.au/about/working-with-us/contractors-and-suppliers/opportunities-to-tender), advertised via NT QTOL; mandatory 30% local-content criterion.",
+      "Rio Tinto Supplier Portals (https://www.riotinto.com/en/about/suppliers/supplier-portals) — SAP Ariba / SAP Business Network; A$19.7bn spent with Australian suppliers in 2025.",
+      "CSIRO Procurement (https://www.csiro.au/en/work-with-us/working-with-csiro/tenders-procurement) — research body; tenders >$400k run via AusTender (Ariba supplier portal retired 2024).",
+      "NSW Health Strategic Procurement (https://www.health.nsw.gov.au/assets/Pages/health-tenders.aspx) — gateway to Local Health District tenders on buy.nsw.",
+      "EstimateOne (https://estimateone.com/tenders/) — primary head-contractor to subcontractor work-package platform (free trade account)."
+    ]
+  },
   "months": [
     {
       "month": "2026-06",

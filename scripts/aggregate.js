@@ -85,13 +85,17 @@ function main() {
   const sourceMap = new Map();
   const runDates = [];
   let lastCoverage = "";
+  let latestMeta = {};
 
   files.forEach(function (f) {
     const snap = readJson(path.join(DAILY, f));
     if (!snap) return;
     const runDate = (snap.run_metadata && snap.run_metadata.run_date) || f.replace(/\.json$/, "");
     runDates.push(runDate);
-    if (snap.run_metadata && snap.run_metadata.coverage_summary) lastCoverage = snap.run_metadata.coverage_summary;
+    if (snap.run_metadata) {
+      latestMeta = snap.run_metadata; // files are date-ascending, so the last one wins
+      if (snap.run_metadata.coverage_summary) lastCoverage = snap.run_metadata.coverage_summary;
+    }
     fold(tenderMap, snap.tenders, tenderKey, runDate);
     fold(sourceMap, snap.discovered_sources, sourceKey, runDate);
   });
@@ -124,6 +128,7 @@ function main() {
     first_run: runs[0] || null,
     latest_run: latestRun,
     latest_coverage_summary: lastCoverage,
+    latest_run_metadata: latestMeta,
     months: Object.keys(months).sort().map(function (k) { return months[k]; }),
     tenders: tenders,
     discovered_sources: sources

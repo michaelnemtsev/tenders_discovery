@@ -102,6 +102,7 @@
       latestRun: isAggregate ? data.latest_run : (data.run_metadata && data.run_metadata.run_date) || null,
       firstRun: isAggregate ? data.first_run : runs[0] || null,
       coverage: isAggregate ? data.latest_coverage_summary : (data.run_metadata && data.run_metadata.coverage_summary) || "",
+      latestMeta: isAggregate ? (data.latest_run_metadata || {}) : (data.run_metadata || {}),
       isAggregate: isAggregate
     };
     STATE.source = source;
@@ -159,7 +160,6 @@
     var runsLabel = String(STATE.meta.runCount);
     if (STATE.meta.runCount > 1) runsLabel += " (" + STATE.meta.firstRun + " → " + STATE.meta.latestRun + ")";
     $("#meta-runs").textContent = runsLabel;
-    $("#meta-summary").textContent = STATE.meta.coverage || "";
   }
 
   // =================================================================
@@ -461,20 +461,33 @@
   // Rendering — coverage (run_metadata)
   // =================================================================
   function renderCoverage() {
-    var m = STATE.data.run_metadata || {};
+    var m = STATE.meta.latestMeta || {};
+    var summary = STATE.meta.coverage || m.coverage_summary || "";
     var c = $("#coverage-results");
     c.innerHTML = "";
+
+    // Latest-run summary banner (moved here from the home strip to save space).
+    if (summary) {
+      var banner = el("div", "cov-card");
+      banner.style.cssText = "margin-bottom:16px";
+      banner.appendChild(el("h3", null, "Latest run — " + (STATE.meta.latestRun || m.run_date || "")));
+      var sp = el("p", null, summary);
+      sp.style.cssText = "margin:0;font-size:13px;color:var(--text-2);line-height:1.55";
+      banner.appendChild(sp);
+      c.appendChild(banner);
+    }
 
     var grid = el("div", "cov-grid");
 
     // Stats card
     var stats = el("div", "cov-card");
-    stats.appendChild(el("h3", null, "Run " + (m.run_date || "")));
+    stats.appendChild(el("h3", null, "Coverage (latest run)"));
     var row = el("div", "cov-stat-row");
     [
-      [m.tenders_found != null ? m.tenders_found : STATE.data.tenders.length, "Tenders found"],
+      [m.tenders_found != null ? m.tenders_found : STATE.data.tenders.length, "Tenders"],
       [m.sources_checked != null ? m.sources_checked : "—", "Sources checked"],
-      [m.new_sources_found != null ? m.new_sources_found : "—", "New sources"]
+      [m.new_sources_found != null ? m.new_sources_found : "—", "New sources"],
+      [m.entries_pending_detail != null ? m.entries_pending_detail : "—", "Pending detail"]
     ].forEach(function (pair) {
       var st = el("div", "cov-stat");
       st.appendChild(el("div", "cov-stat__n", String(pair[0])));
@@ -482,11 +495,6 @@
       row.appendChild(st);
     });
     stats.appendChild(row);
-    if (m.coverage_summary) {
-      var p = el("p", null, m.coverage_summary);
-      p.style.cssText = "margin:14px 0 0;font-size:13px;color:var(--text-2)";
-      stats.appendChild(p);
-    }
     grid.appendChild(stats);
 
     // Gaps card
