@@ -36,6 +36,11 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
+  // Only allow http(s) links — data is auto-harvested, so block javascript:/data: etc.
+  function safeUrl(u) {
+    var s = String(u == null ? "" : u).trim();
+    return /^https?:\/\//i.test(s) ? s : "";
+  }
   function titleize(s) {
     if (!s) return "—";
     return String(s).replace(/[-_]/g, " ").replace(/\b\w/g, function (m) { return m.toUpperCase(); });
@@ -357,9 +362,10 @@
         tags.appendChild(el("span", "tag", tag));
       });
       foot.appendChild(tags);
-      if (t.tender_url) {
+      var cardHref = safeUrl(t.tender_url);
+      if (cardHref) {
         var a = el("a", "card__link", "View ↗");
-        a.href = t.tender_url; a.target = "_blank"; a.rel = "noopener";
+        a.href = cardHref; a.target = "_blank"; a.rel = "noopener";
         foot.appendChild(a);
       }
       card.appendChild(foot);
@@ -404,7 +410,7 @@
         "<td>" + statusChip(t.current_status) + "</td>" +
         "<td>" + (accessChip(t.access) || "—") + "</td>" +
         seenCell +
-        "<td>" + (t.tender_url ? '<a href="' + esc(t.tender_url) + '" target="_blank" rel="noopener">View ↗</a>' : "") + "</td>";
+        "<td>" + (safeUrl(t.tender_url) ? '<a href="' + esc(safeUrl(t.tender_url)) + '" target="_blank" rel="noopener">View ↗</a>' : "") + "</td>";
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
@@ -443,7 +449,7 @@
         "<td>" + esc(titleize(s.access_method)) + "</td>" +
         "<td>" + esc(titleize(s.confidence)) + "</td>" +
         "<td>" + esc(titleize(s.recommended_check_frequency)) + "</td>" +
-        "<td>" + (s.source_url ? '<a href="' + esc(s.source_url) + '" target="_blank" rel="noopener">Open ↗</a>' : "") + "</td>";
+        "<td>" + (safeUrl(s.source_url) ? '<a href="' + esc(safeUrl(s.source_url)) + '" target="_blank" rel="noopener">Open ↗</a>' : "") + "</td>";
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
