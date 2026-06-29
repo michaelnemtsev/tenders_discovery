@@ -1,52 +1,47 @@
 {
-  "generated": "2026-06-29",
+  "generated": "2026-06-30",
   "runs": [
     "2026-06-25",
     "2026-06-26",
     "2026-06-27",
     "2026-06-28",
-    "2026-06-29"
+    "2026-06-29",
+    "2026-06-30"
   ],
-  "run_count": 5,
+  "run_count": 6,
   "first_run": "2026-06-25",
-  "latest_run": "2026-06-29",
-  "latest_coverage_summary": "DEGRADED RUN. The session egress proxy returned HTTP 403 (organization policy denial) on the CONNECT tunnel for EVERY WebFetch host this run - verified against all nine Tier-1 portals, all Tier-2/Tier-3 buyer domains, and even a neutral control URL (en.wikipedia.org), and corroborated by the proxy's recentRelayFailures log. WebFetch is therefore unusable; only WebSearch was available, which returns indexed result snippets but not live pages. Consequently NO tender detail page or specification document could be opened, and sources_checked reflects survey-via-search, not pages actually fetched. Tier 1 (all nine jurisdictions), Tier 2 (GBE/public sector/councils/universities/health) and the mandatory Tier 3 (private sector + new-source discovery) were all attempted via WebSearch. Twelve net-new opportunities were captured at HEADLINE level only from public AusTender / Buying-for-Victoria search snippets (real ATM IDs and deep links): ten Commonwealth AusTender ATMs (four Defence DSRG refurbishment RFTs at WA/Mt Waverley/Armidale/Dandenong South; DFAT airport facilitation; DFAT Vanuatu infrastructure adviser; Services Australia Doomadgee agent-services EOI; IHACPA events management; Geoscience Australia geoscience BI; DFAT DEV+ Panel; AACAP airfield design) and one Victorian DoT&P traffic-signal RFT. All are flagged pending-detail and require re-verification once egress is restored. Tier 3 produced strong NEW-SOURCE discovery (18 new sources incl. Workday Strategic Sourcing at APA, SAP Ariba sibling buyers Western Power/Arrow Energy/Energy Queensland, Coupa at Westpac, and TenderLink at Sydney Airport).",
+  "latest_run": "2026-06-30",
+  "latest_coverage_summary": "DEGRADED RUN (egress). WebFetch was blocked by an organization egress-policy 403 on the CONNECT tunnel for EVERY destination this run - confirmed against AusTender, Buying for Victoria, VendorPanel, and a neutral control (en.wikipedia.org), and consistent with the agent-proxy README which classifies a blanket 403 as a policy denial that must not be retried or routed around. WebFetch is therefore unusable; only WebSearch (indexed result snippets, not live pages) was available. As a result NO tender detail page or specification document could be opened directly: every captured field below is derived from WebSearch snippets of the AusTender/QTenders detail pages, not from a direct fetch, and must be re-verified once egress is restored. Tier 1 (all nine jurisdictions), Tier 2 (councils/GBE/university/health) and the mandatory Tier 3 (private sector + new-source discovery) were all attempted via WebSearch. Five net-new opportunities were captured (real IDs + deep links): four Commonwealth AusTender ATMs (Director of National Parks air-conditioning at Uluru-Kata Tjuta NP; Australian CDC One Health conference event management; AFMA fisheries monitoring services; Sydney Harbour Federation Trust ATM SHFT26001) and one Queensland Fire Department aerial-firefighting-appliance supply tender (VP494386 via QTenders/VendorPanel). Three new sources were discovered (HealthShare Victoria on JAGGAER; Sydney Harbour Federation Trust as an AusTender buyer; Australian CDC as a new Commonwealth buyer). SAP Ariba Discovery and corporate Tier-3 buyer portals remain registration/login-gated with no publicly-visible AU RFx capturable without an authenticated session - recorded as portals only, never fabricated as tenders.",
   "latest_run_metadata": {
-    "run_date": "2026-06-29",
-    "coverage_summary": "DEGRADED RUN. The session egress proxy returned HTTP 403 (organization policy denial) on the CONNECT tunnel for EVERY WebFetch host this run - verified against all nine Tier-1 portals, all Tier-2/Tier-3 buyer domains, and even a neutral control URL (en.wikipedia.org), and corroborated by the proxy's recentRelayFailures log. WebFetch is therefore unusable; only WebSearch was available, which returns indexed result snippets but not live pages. Consequently NO tender detail page or specification document could be opened, and sources_checked reflects survey-via-search, not pages actually fetched. Tier 1 (all nine jurisdictions), Tier 2 (GBE/public sector/councils/universities/health) and the mandatory Tier 3 (private sector + new-source discovery) were all attempted via WebSearch. Twelve net-new opportunities were captured at HEADLINE level only from public AusTender / Buying-for-Victoria search snippets (real ATM IDs and deep links): ten Commonwealth AusTender ATMs (four Defence DSRG refurbishment RFTs at WA/Mt Waverley/Armidale/Dandenong South; DFAT airport facilitation; DFAT Vanuatu infrastructure adviser; Services Australia Doomadgee agent-services EOI; IHACPA events management; Geoscience Australia geoscience BI; DFAT DEV+ Panel; AACAP airfield design) and one Victorian DoT&P traffic-signal RFT. All are flagged pending-detail and require re-verification once egress is restored. Tier 3 produced strong NEW-SOURCE discovery (18 new sources incl. Workday Strategic Sourcing at APA, SAP Ariba sibling buyers Western Power/Arrow Energy/Energy Queensland, Coupa at Westpac, and TenderLink at Sydney Airport).",
-    "sources_checked": 40,
-    "tenders_found": 12,
-    "new_sources_found": 18,
-    "entries_pending_detail": 12,
+    "run_date": "2026-06-30",
+    "coverage_summary": "DEGRADED RUN (egress). WebFetch was blocked by an organization egress-policy 403 on the CONNECT tunnel for EVERY destination this run - confirmed against AusTender, Buying for Victoria, VendorPanel, and a neutral control (en.wikipedia.org), and consistent with the agent-proxy README which classifies a blanket 403 as a policy denial that must not be retried or routed around. WebFetch is therefore unusable; only WebSearch (indexed result snippets, not live pages) was available. As a result NO tender detail page or specification document could be opened directly: every captured field below is derived from WebSearch snippets of the AusTender/QTenders detail pages, not from a direct fetch, and must be re-verified once egress is restored. Tier 1 (all nine jurisdictions), Tier 2 (councils/GBE/university/health) and the mandatory Tier 3 (private sector + new-source discovery) were all attempted via WebSearch. Five net-new opportunities were captured (real IDs + deep links): four Commonwealth AusTender ATMs (Director of National Parks air-conditioning at Uluru-Kata Tjuta NP; Australian CDC One Health conference event management; AFMA fisheries monitoring services; Sydney Harbour Federation Trust ATM SHFT26001) and one Queensland Fire Department aerial-firefighting-appliance supply tender (VP494386 via QTenders/VendorPanel). Three new sources were discovered (HealthShare Victoria on JAGGAER; Sydney Harbour Federation Trust as an AusTender buyer; Australian CDC as a new Commonwealth buyer). SAP Ariba Discovery and corporate Tier-3 buyer portals remain registration/login-gated with no publicly-visible AU RFx capturable without an authenticated session - recorded as portals only, never fabricated as tenders.",
+    "sources_checked": 22,
+    "tenders_found": 5,
+    "new_sources_found": 3,
+    "entries_pending_detail": 2,
     "gaps": [
-      "EGRESS POLICY BLOCK (dominant gap): the session egress gateway returned HTTP 403 on the CONNECT tunnel for ALL WebFetch destinations - confirmed for tenders.gov.au, buy.nsw.gov.au, tenders.nsw/vic/sa/tas/act.gov.au, tenders.wa.gov.au, qtenders.hpw.qld.gov.au, tendersonline.nt.gov.au, and every Tier-2/Tier-3 buyer domain, plus a neutral control (en.wikipedia.org). Per the proxy README these are organization egress-policy denials and were not retried/routed around. No detail page or specification document could be read this run. ACTION: the session egress allowlist must permit AU government/buyer domains (e.g. *.gov.au, vendorpanel.com.au, *.tenderlink.com, SAP Ariba/Coupa hosts) before the routine can capture full deliverables/requirements again.",
-      "All 12 captured opportunities are HEADLINE-ONLY (from public search snippets): full scope, deliverables, evaluation criteria, contacts, documents and values were not captured. They need a detail pass once fetch access is restored.",
-      "AusTender GA2026/818, DFAT-1050 (DEV+ Panel) and AACAP 2026-P04: closing dates not present in snippets; DFAT-1050 may already be in evaluation - status to verify.",
-      "QLD QTenders leads seen only via an aggregator (qld2032.com), not QTenders itself, so NOT recorded as confirmed tenders: 'Everton Electorate Office Fitout and Relocation' (Qld Parliamentary Service, ~close 13-Jul-2026) and 'Lease and operate new long day care service - Chinchilla' (Qld Dept of Education, ~close 24-Jul-2026). Verify on qtenders.hpw.qld.gov.au next run.",
-      "Tenders Tasmania 'EDSS support/hosting/maintenance' (~close 31-Jul-2026) seen in snippet but likely the same as already-known TendersTAS:edss-2026 - excluded as a probable duplicate pending verification.",
-      "NT QTOL: a Dept of Chief Minister & Cabinet tender (close 27-Jul-2026 02:00 PM ACST) appears to exist but title/ID/category were not extractable from the snippet - deferred.",
-      "Tenders WA, Tenders SA/Buying4SA and ACT Tenders: no individual current opportunity was extractable via search this run (WA showed only a scheduled-outage notice 1-Jul-2026; SA search was polluted by South-African 'sa-tenders' noise) - deferred.",
-      "buy.nsw / NSW eTendering: no net-new NSW opportunity surfaced this run; only previously-known items reappeared in snippets.",
-      "SAP Ariba Discovery (service.ariba.com/Discovery.aw): per SAP docs, viewing/responding requires a (free) seller account - it is NOT an open public board. No publicly-visible AU postings capturable without login; recorded as portal-registration only.",
-      "Bank procurement (CBA, NAB, ANZ on SAP Ariba; Westpac on Coupa) is invitation/registration-gated with no public RFx board - portals recorded, individual opportunities not captured (no fabrication).",
-      "Energy Queensland (Ergon/Energex) public 'Current tenders' pages and the two airport portals (Sydney Airport TenderLink, WSI Airport) may carry publicly-advertised RFx but could not be read due to 403 - highest-value targets to re-attempt once egress is restored.",
-      "Tier 2 (GBE/councils/universities/health): no opportunity could be verified because every buyer domain and VendorPanel were 403-blocked; coverage deferred to a future run with fetch access."
+      "EGRESS POLICY BLOCK (dominant gap, unchanged from 2026-06-29): the session egress proxy returned HTTP 403 on the CONNECT tunnel for ALL WebFetch destinations - confirmed for tenders.gov.au, tenders.vic.gov.au and vendorpanel.com.au, plus a neutral control (en.wikipedia.org). Per /root/.ccr/README.md a blanket 403 is an organization egress-policy denial and was not retried or routed around. No tender detail page or specification document could be opened this run. ACTION: the session egress allowlist must permit AU government/buyer domains (e.g. *.gov.au, vendorpanel.com.au, qtenders.hpw.qld.gov.au, SAP Ariba/Coupa hosts) before the routine can capture full deliverables/requirements again.",
+      "All 5 captured opportunities are SNIPPET-DERIVED (from public WebSearch result summaries of the AusTender/QTenders detail pages), NOT from a direct page fetch. The three with deliverables detail (15854, CE26-1639, AFMA25-26-3) still need verification against the live notice; the two headline-only entries (SHFT26001, VP494386) need a full deliverables/detail pass. Documents, evaluation criteria, values and full eligibility could not be captured for any of them.",
+      "AusTender ATM_2026_6011 (TGU / urea stockpile management, contract ~1-Jul-2026 to 30-Jun-2030) surfaced in snippets but is very likely the same opportunity as already-known 'AusTender:urea-stockpile-storage' - excluded as a probable duplicate pending verification.",
+      "AusTender DHAPROC26/311 (Defence Housing Australia - asphalt & line marking, Nirimba Fields, Blacktown NSW) surfaced but the snippet shows it CLOSED 19-Jun-2026 - excluded as already closed.",
+      "NT QTOL: a Department of the Chief Minister and Cabinet tender closing 27-Jul-2026 02:00 PM ACST appears to exist (same lead as 2026-06-29) but title/ID/category were not extractable from the snippet - deferred again.",
+      "Tenders WA, Tenders SA/Buying4SA, Tenders Tasmania and ACT Tenders: no individual current opportunity was extractable via search this run (WA showed only a scheduled-outage notice for 1-Jul-2026) - deferred.",
+      "buy.nsw / NSW eTendering: only previously-known items reappeared in snippets this run (Frank Partridge Rest Area water; Sydney Park Junction Stage 2) - no net-new NSW opportunity captured.",
+      "SAP Ariba Discovery (discovery.ariba.com): confirmed via SAP help docs that viewing/responding requires a (free) seller account and that public RFx posting depends on the buyer's Sourcing config - no publicly-visible AU postings capturable without login; recorded as portal-registration only.",
+      "Tier 3 corporate buyer portals (BHP/Rio/Fortescue/Woodside on Ariba; Qantas/Westpac on Coupa; banks on SAP Business Network; Woolworths/Coles): registration- or invitation-gated with no public RFx board readable this run; portals retained in the known source set, individual opportunities not captured (no fabrication).",
+      "Tier 2 (councils via VendorPanel, universities, CSIRO, GBEs, local health): no individual opportunity could be verified because every buyer domain and the VendorPanel public board were unreachable via WebFetch (403); coverage deferred to a future run with fetch access."
     ],
     "recommended_seed_additions": [
-      "Origin Energy - Origin Vendor Portal (https://www.originenergy.com.au/about/procurement/) - free self-registration, regional SME program.",
-      "Western Power - SAP Ariba supplier portal (WA electricity network).",
-      "Energy Queensland (Ergon Energy / Energex) - dual VendorPanel(advertise)+SAP Ariba(respond); public Current tenders pages - check weekly.",
-      "APA Group - Workday Strategic Sourcing (new platform family; seed for detecting Workday-Sourcing sibling buyers).",
-      "Sydney Airport Corporation - TenderLink e-tendering portal (buyer-hosted); seed for other TenderLink sibling buyers.",
-      "Arrow Energy and Western Power as SAP Ariba sibling buyers; Westpac as a Coupa sibling buyer (alongside known Qantas).",
-      "Lendlease Site Access and John Holland Contractors as subcontractor onboarding portals (packages flow via EstimateOne).",
-      "INFRASTRUCTURE: add AU government/buyer domains to the session egress allowlist so WebFetch can open detail pages again - without this the routine can only capture headline-level data."
+      "HealthShare Victoria - JAGGAER Procurement Portal (healthsharevic.org.au) - public-sector health buyer on the JAGGAER platform; seed for detecting JAGGAER sibling buyers (higher-ed and health). Check weekly.",
+      "Sydney Harbour Federation Trust (SHFT) - Commonwealth GBE/statutory buyer publishing ATMs on AusTender (ATM prefix 'SHFT'); add as a named buyer to sweep.",
+      "Australian CDC (Centre for Disease Control) - new Commonwealth buyer (ATM prefix 'CE26-') publishing on AusTender; add to the agency sweep list.",
+      "INFRASTRUCTURE (repeat from 2026-06-29): add AU government/buyer domains to the session egress allowlist so WebFetch can open detail pages and documents again - without this the routine can only capture snippet-level data."
     ]
   },
   "months": [
     {
       "month": "2026-06",
-      "new_tenders": 40,
+      "new_tenders": 45,
       "active_tenders": 0
     }
   ],
@@ -1885,8 +1880,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:s-est10783-monash-barracks-mt-waverley",
@@ -1940,8 +1935,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:s-est11115-gaza-training-depot-armidale",
@@ -1995,8 +1990,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:s-est11079-monash-barracks-dandenong-south",
@@ -2050,8 +2045,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:dfat-exd-afs01-airport-facilitation",
@@ -2105,8 +2100,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:dfat-1095-vanuatu-infrastructure-adviser",
@@ -2160,8 +2155,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:doomadgee-eoi-services-australia",
@@ -2215,8 +2210,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ihacpa-2526-e26-1345-events-management",
@@ -2270,8 +2265,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ga2026-818-geoscience-business-intelligence",
@@ -2325,8 +2320,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:dfat-1050-dev-plus-panel",
@@ -2380,8 +2375,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:aacap-2026-p04-airfield-design",
@@ -2435,8 +2430,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buyingfor.vic:dot43290-belmore-rd-pos-mont-albert-north",
@@ -2488,6 +2483,326 @@
       "last_seen": "2026-06-29",
       "seen_dates": [
         "2026-06-29"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:15854-uluru-air-conditioning",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "NT",
+      "tender_id": "15854",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/ac161740-5458-4055-9a07-8e5b5218b482",
+      "access": "public",
+      "title": "Air Conditioning Services (Maintenance, Testing and Installation) at Uluru-Kata Tjuta National Park",
+      "buyer": "Director of National Parks (DCCEEW - Parks Australia)",
+      "buyer_url": "https://uluru.gov.au/",
+      "category": "Building and facility maintenance / HVAC services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Approach to market for air conditioning services - maintenance, testing and installation - at Uluru-Kata Tjuta National Park, issued by the Director of National Parks.",
+      "deliverables_summary": "Provision of air conditioning services covering maintenance, testing and installation of HVAC equipment across facilities at Uluru-Kata Tjuta National Park, Northern Territory, to keep the park's building services operational.",
+      "key_deliverables": [
+        "Air conditioning maintenance",
+        "Air conditioning testing",
+        "Air conditioning installation"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "2026-07-07",
+      "closing_time": "12:30 PM ACT Local Time",
+      "questions_due": "2026-06-30 12:00 PM (NT time)",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender (www.tenders.gov.au) before the ATM close date and time",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Uluru-Kata Tjuta National Park, Northern Territory",
+      "contact_name": "",
+      "contact_email": "UKTNP.Procurement@dcceew.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "facilities",
+        "hvac",
+        "national-parks",
+        "nt"
+      ],
+      "first_seen": "2026-06-30",
+      "detail_source": "WebSearch indexed snippet of the AusTender ATM 15854 detail page (direct fetch blocked by egress 403)",
+      "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated Commonwealth notice published on AusTender (tenders.gov.au).",
+      "notes": "Closing date/time, questions-due deadline and contact email are from the AusTender snippet; full scope, documents, value and evaluation criteria could not be captured because the live page/documents were unreachable (egress 403). Verify against the live notice when fetch access is restored.",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:CE26-1639-one-health-conference-event-management",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "CE26-1639",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/ced25379-1917-4d7e-983c-43014731cab3",
+      "access": "public",
+      "title": "One Health Conference - End-to-End Event Management and Logistical Coordination Services",
+      "buyer": "Australian CDC (Centre for Disease Control) - One Health Unit",
+      "buyer_url": "https://www.cdc.gov.au/",
+      "category": "Event management / conference and logistics services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Approach to market for end-to-end event management of a national, multi-day hybrid One Health conference bringing together stakeholders across human, animal and environmental health sectors.",
+      "deliverables_summary": "Deliver complete event management for a national multi-day hybrid One Health conference - logistical coordination, facilitation support, stakeholder engagement assistance, and post-conference reporting and evaluation - working with the Australian CDC One Health Unit and the Australian Government One Health Network while the Australian CDC retains strategic oversight, content ownership and governance.",
+      "key_deliverables": [
+        "End-to-end conference event management",
+        "Logistical coordination of a multi-day hybrid event",
+        "Facilitation support",
+        "Stakeholder engagement assistance",
+        "Post-conference reporting and evaluation"
+      ],
+      "scope_of_work": "A national, multi-day hybrid event bringing together stakeholders across human, animal and environmental health sectors to strengthen collaboration, build capacity and advance the One Health approach in Australia.",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "2026-07-13",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "health",
+        "event-management",
+        "one-health",
+        "conference"
+      ],
+      "first_seen": "2026-06-30",
+      "detail_source": "WebSearch indexed snippet of the AusTender ATM CE26-1639 detail page (direct fetch blocked by egress 403)",
+      "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated Commonwealth notice published on AusTender (Australian CDC).",
+      "notes": "Scope and deliverables are from the AusTender snippet; closing date 13-Jul-2026 per snippet but time, documents, value, contact and evaluation criteria could not be captured (egress 403). Australian CDC is a relatively new Commonwealth buyer - also recorded in discovered_sources.",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:AFMA25-26-3-monitoring-services",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "AFMA25-26-3",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/24b8cb79-c91d-4a8f-aa2e-dd7b5ad5bb89",
+      "access": "public",
+      "title": "Provision of Monitoring Services (Southern Bluefin Tuna Fishery transfer weighing)",
+      "buyer": "Australian Fisheries Management Authority (AFMA)",
+      "buyer_url": "https://www.afma.gov.au/",
+      "category": "Fisheries monitoring / inspection services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for tender to identify market capability, capacity and costs to deliver fisheries monitoring requirements, including Southern Bluefin Tuna (SBT) transfer weighing attendance and monitoring in the SBT Fishery.",
+      "deliverables_summary": "Provide fisheries monitoring services for the Australian Fisheries Management Authority, including attendance at and monitoring of Southern Bluefin Tuna transfer weighings in the SBT Fishery, and obtaining and maintaining the equipment and personnel needed to conduct those transfer weighings.",
+      "key_deliverables": [
+        "SBT transfer weighing attendance and monitoring",
+        "Provision and maintenance of monitoring equipment",
+        "Provision and maintenance of trained monitoring personnel"
+      ],
+      "scope_of_work": "Identify market capability, capacity and costs to deliver AFMA's monitoring requirements including SBT transfer weighing attendance and monitoring in the SBT Fishery, and to obtain and maintain equipment and personnel to conduct transfer weighings.",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "2026-07-08",
+      "closing_time": "5:00 PM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia (SBT Fishery)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "fisheries",
+        "monitoring",
+        "afma"
+      ],
+      "first_seen": "2026-06-30",
+      "detail_source": "WebSearch indexed snippet of the AusTender ATM AFMA25-26-3 detail page (direct fetch blocked by egress 403)",
+      "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated Commonwealth notice published on AusTender (AFMA).",
+      "notes": "Scope, deliverables and closing date/time are from the AusTender snippet; documents, value, contact and evaluation criteria could not be captured (egress 403). Verify against the live notice when fetch access is restored.",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:SHFT26001-sydney-harbour-federation-trust",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Commonwealth",
+      "state": "NSW",
+      "tender_id": "SHFT26001",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/e24f993a-8e2e-4f1e-b1a9-3304c2b09f1f",
+      "access": "public",
+      "title": "Sydney Harbour Federation Trust ATM SHFT26001 (title not extractable from snippet)",
+      "buyer": "Sydney Harbour Federation Trust (Harbour Trust)",
+      "buyer_url": "https://www.harbourtrust.gov.au/",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "An open approach to market published by the Sydney Harbour Federation Trust on AusTender; the specific title and scope were not extractable from the search snippet.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "",
+      "closing_time": "",
+      "questions_due": "2026-06-22 5:00 PM (attendee details for briefing due)",
+      "briefing": "Online briefing held via Microsoft Teams at 11:00 AM Wednesday 24 June 2026; attendees were required to email the contact officer with attendee details by 5:00 PM Monday 22 June 2026",
+      "submission_method": "Lodge electronically via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [
+        "Respondent agrees to abide by the Harbour Trust Supplier Code of Conduct"
+      ],
+      "delivery_location": "Sydney, NSW (Harbour Trust sites)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "gbe",
+        "sydney-harbour-federation-trust",
+        "headline-only"
+      ],
+      "first_seen": "2026-06-30",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated notice published on AusTender by the Sydney Harbour Federation Trust (a new buyer for this routine).",
+      "notes": "HEADLINE-ONLY. Only the ATM ID, buyer, a Teams briefing (24-Jun-2026) and the Harbour Trust Supplier Code of Conduct condition were extractable from the snippet; title, scope, deliverables and closing date could not be captured (egress 403). Needs a full detail pass. Buyer also recorded in discovered_sources.",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "QTenders:VP494386-aerial-firefighting-appliances",
+      "source_name": "QTenders (Queensland) / VendorPanel",
+      "source_url": "https://qtenders.hpw.qld.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "Queensland",
+      "state": "QLD",
+      "tender_id": "VP494386",
+      "tender_url": "https://qtenders.hpw.qld.gov.au/",
+      "access": "free-registration",
+      "title": "Supply of 5 x Aerial Firefighting Appliances",
+      "buyer": "Queensland Fire Department",
+      "buyer_url": "https://www.qfes.qld.gov.au/",
+      "category": "Emergency services vehicles / firefighting appliances",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Queensland Fire Department tender for the supply of five aerial firefighting appliances, advertised on QTenders with documents/response via the VendorPanel platform.",
+      "deliverables_summary": "Supply of five (5) aerial firefighting appliances to the Queensland Fire Department.",
+      "key_deliverables": [
+        "Supply of 5 x aerial firefighting appliances"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "2026-07-23",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Register with VendorPanel to access documents and respond (QTenders migrating to VendorPanel)",
+      "lodgement_url": "https://qtenders.hpw.qld.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Queensland",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "queensland",
+        "emergency-services",
+        "firefighting",
+        "vendorpanel"
+      ],
+      "first_seen": "2026-06-30",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch (QTenders / VendorPanel reference VP494386); buyer-originated Queensland Government notice. QTenders is migrating to the VendorPanel platform - documents and responses now require VendorPanel registration.",
+      "notes": "HEADLINE-ONLY. Title, buyer, reference and closing date (23-Jul-2026) from the snippet; full scope, documents and value could not be captured (egress 403, and QTenders/VendorPanel detail requires registration). Needs a full detail pass.",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -3541,8 +3856,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Western Power - Suppliers (SAP Ariba)",
@@ -3563,8 +3878,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Arrow Energy - SAP Ariba Supplier Portal",
@@ -3585,8 +3900,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Energy Queensland (Ergon Energy / Energex) - SAP Ariba + VendorPanel",
@@ -3607,8 +3922,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "APA Group - Suppliers and Contractors",
@@ -3629,8 +3944,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "AGL Energy - Suppliers and Contractors",
@@ -3651,8 +3966,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Aurizon - Suppliers Portal",
@@ -3673,8 +3988,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Airport Corporation - e-Tendering (TenderLink)",
@@ -3695,8 +4010,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Western Sydney International Airport - Future Procurement Opportunities",
@@ -3717,8 +4032,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Westpac - How to be a supplier (Coupa)",
@@ -3739,8 +4054,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NAB - SAP Business Network (Ariba) Supplier Onboarding",
@@ -3761,8 +4076,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "ANZ - SAP Business Network supplier engagement",
@@ -3783,8 +4098,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Commonwealth Bank (CBA) - Procurement / Supplier Diversity",
@@ -3805,8 +4120,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Optus - Suppliers Portal",
@@ -3827,8 +4142,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Toll Group - Supplying Toll",
@@ -3849,8 +4164,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Ramsay Health Care - Suppliers / Vendor Portal",
@@ -3871,8 +4186,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Lendlease - Contractors / Site Access (subcontractor onboarding)",
@@ -3893,8 +4208,8 @@
         "2026-06-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "John Holland - Contractors / Business Registration",
@@ -3913,6 +4228,72 @@
       "last_seen": "2026-06-29",
       "seen_dates": [
         "2026-06-29"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "HealthShare Victoria - JAGGAER Procurement Portal",
+      "source_url": "https://healthsharevic.org.au/procurement-guidance/procurement-portal/",
+      "source_type": "health",
+      "jurisdiction": "Victoria",
+      "platform": "JAGGAER",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian buyers on Jaggaer/GEP/Ivalua e-sourcing platforms surfaced HealthShare Victoria running its end-to-end tender process on the JAGGAER Procurement Portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Victorian public-sector health procurement aggregator (buyer-originated). Buyer-hosted on JAGGAER. Useful as a seed to detect JAGGAER sibling buyers (health and higher-education). Detail page was not fetchable this run (egress 403).",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Sydney Harbour Federation Trust (Harbour Trust) - AusTender buyer",
+      "source_url": "https://www.harbourtrust.gov.au/",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Commonwealth",
+      "platform": "AusTender",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced ATM SHFT26001 published by the Sydney Harbour Federation Trust on AusTender - a Commonwealth statutory buyer not previously on this routine's named-buyer sweep list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Commonwealth statutory body managing former defence/harbour lands in Sydney; publishes ATMs on AusTender under the 'SHFT' prefix. Add to the agency sweep.",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Australian CDC (Centre for Disease Control) - AusTender buyer",
+      "source_url": "https://www.cdc.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "platform": "AusTender",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced ATM CE26-1639 (One Health conference event management) published by the Australian CDC One Health Unit on AusTender - a new Commonwealth buyer for this routine.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Newly established Commonwealth agency publishing ATMs on AusTender under the 'CE26-' prefix. Add to the agency sweep list.",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "seen_dates": [
+        "2026-06-30"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
