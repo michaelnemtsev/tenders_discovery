@@ -73,7 +73,14 @@
       "contact_name": "Anne Sadleir",
       "contact_email": "Tenders@opc.gov.au",
       "contact_phone": "",
-      "tags": ["commonwealth", "printing", "print-on-demand", "legislation", "e-commerce", "opc"],
+      "tags": [
+        "commonwealth",
+        "printing",
+        "print-on-demand",
+        "legislation",
+        "e-commerce",
+        "opc"
+      ],
       "first_seen": "2026-07-01",
       "detail_source": "WebSearch indexed snippet of the AusTender ATM OPC-2026-03 detail page (direct fetch blocked by egress 403)",
       "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated Commonwealth notice published on AusTender by the Office of Parliamentary Counsel. Net-new for this routine and published in the last 48 hours (30-Jun-2026).",
@@ -93,7 +100,9 @@
       "buyer": "Department of Climate Change, Energy, the Environment and Water (DCCEEW) - Australian Bushland Program",
       "buyer_url": "https://www.dcceew.gov.au/",
       "category": "Environmental management",
-      "category_codes": ["77100000"],
+      "category_codes": [
+        "77100000"
+      ],
       "procurement_type": "RFI",
       "current_status": "open",
       "description": "Request for Information / expression of interest by the Department of Climate Change, Energy, the Environment and Water, on behalf of the Australian Bushland Program, inviting potential Purchasing Partners to express interest in supporting strategic property purchases.",
@@ -121,7 +130,16 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "environment", "conservation", "property", "rfi", "eoi", "dcceew", "bushland-program"],
+      "tags": [
+        "commonwealth",
+        "environment",
+        "conservation",
+        "property",
+        "rfi",
+        "eoi",
+        "dcceew",
+        "bushland-program"
+      ],
       "first_seen": "2026-07-01",
       "detail_source": "WebSearch indexed snippet of the AusTender ATM ATM_2026_6066 detail page (direct fetch blocked by egress 403)",
       "reasoning": "Discovered via WebSearch of the AusTender Current ATM list; buyer-originated Commonwealth notice published on AusTender by DCCEEW for the Australian Bushland Program. Net-new for this routine and published in the last 48 hours (29-Jun-2026).",
