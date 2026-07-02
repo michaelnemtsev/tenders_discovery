@@ -48,7 +48,9 @@
       "buyer": "Australian National Maritime Museum",
       "buyer_url": "https://www.sea.museum/",
       "category": "72100000 - Building construction and support and maintenance and repair services",
-      "category_codes": ["72100000"],
+      "category_codes": [
+        "72100000"
+      ],
       "procurement_type": "RFT",
       "current_status": "open",
       "description": "The Australian National Maritime Museum is seeking an appropriately qualified organisation to remediate wharf structures forming part of Wharf 7 and the South Wharf, to restore functional stability by replacing severely compromised construction elements and repairing deteriorated elements where feasible.",
@@ -76,7 +78,13 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "tags": ["commonwealth", "construction", "maritime", "remediation", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "construction",
+        "maritime",
+        "remediation",
+        "headline-only"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the live AusTender Current ATM page; real deep-link /Atm/Show/ URL and ATM identity captured from the search index. Buyer-originated (Commonwealth agency publishing on AusTender).",
@@ -124,7 +132,14 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "tags": ["commonwealth", "energy-efficiency", "testing", "accreditation", "GEMS", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "energy-efficiency",
+        "testing",
+        "accreditation",
+        "GEMS",
+        "headline-only"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the live AusTender Current ATM page; real deep-link /Atm/Show/ URL and ATM_2026_6786 identity captured from the search index. Buyer-originated (DCCEEW on AusTender).",
@@ -172,7 +187,12 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "tags": ["commonwealth", "health", "headline-only", "title-unconfirmed"],
+      "tags": [
+        "commonwealth",
+        "health",
+        "headline-only",
+        "title-unconfirmed"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the live AusTender Current ATM page; real deep-link /Atm/Show/ URL and ATM id captured from the search index. Buyer-originated (Department of Health, Disability and Ageing on AusTender).",
@@ -220,7 +240,13 @@
       "contact_name": null,
       "contact_email": null,
       "contact_phone": null,
-      "tags": ["victoria", "facilities-maintenance", "electrical", "high-voltage", "headline-only"],
+      "tags": [
+        "victoria",
+        "facilities-maintenance",
+        "electrical",
+        "high-voltage",
+        "headline-only"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the live Buying for Victoria portal; real portal-id deep-link (view?id=324738), title, buyer and site-visit note captured from the search index. Buyer-originated (Melbourne Market Authority / BGIS on the Victorian portal).",
