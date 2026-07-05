@@ -9,7 +9,7 @@
     source: "none", // "live" | "sample" | "file"
     view: "cards",
     filters: { search: "", closingWindow: "", facets: {}, month: "", newOnly: false, activeOnly: false },
-    sort: "closing_date:asc",
+    sort: "open_recent",
     sourcesNewOnly: false
   };
 
@@ -277,7 +277,40 @@
     });
   }
 
+  // A tender counts as "closed" only when it has a real closing date in the past.
+  // No/unknown closing date is treated as still-open so it stays near the top.
+  function isClosed(t) {
+    var n = daysUntil(t.closing_date);
+    return n != null && n < 0;
+  }
+  // "Latest" = most recently published, falling back to when we first saw it.
+  function recencyTime(t) {
+    var d = parseDate(t.publish_date) || parseDate(t.first_seen);
+    return d ? d.getTime() : null;
+  }
+
   function sortTenders(rows) {
+    // Default view: open (not-yet-closed) opportunities on top, newest first;
+    // anything already closed sinks to the bottom (most-recently-closed first).
+    if (STATE.sort === "open_recent") {
+      return rows.slice().sort(function (a, b) {
+        var ac = isClosed(a), bc = isClosed(b);
+        if (ac !== bc) return ac ? 1 : -1; // open before closed
+        if (ac) {
+          var acd = parseDate(a.closing_date), bcd = parseDate(b.closing_date);
+          acd = acd ? acd.getTime() : null; bcd = bcd ? bcd.getTime() : null;
+          if (acd == null && bcd == null) return 0;
+          if (acd == null) return 1;
+          if (bcd == null) return -1;
+          return bcd - acd; // both closed → most recently closed first
+        }
+        var ar = recencyTime(a), br = recencyTime(b);
+        if (ar == null && br == null) return 0;
+        if (ar == null) return 1;
+        if (br == null) return -1;
+        return br - ar; // both open → latest published first
+      });
+    }
     var parts = STATE.sort.split(":");
     var key = parts[0], dir = parts[1] === "desc" ? -1 : 1;
     return rows.slice().sort(function (a, b) {
