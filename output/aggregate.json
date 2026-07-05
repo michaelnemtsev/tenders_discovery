@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05",
+  "generated": "2026-07-06",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -11,38 +11,35 @@
     "2026-07-02",
     "2026-07-03",
     "2026-07-04",
-    "2026-07-05"
+    "2026-07-05",
+    "2026-07-06"
   ],
-  "run_count": 11,
+  "run_count": 12,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-05",
-  "latest_coverage_summary": "DEGRADED RUN (headline / search-snippet level) for the THIRD consecutive day. WebFetch remains fully blocked by this session's outbound egress policy: every WebFetch call returned HTTP 403, confirmed against a control host (example.com returned 403 identically to tenders.gov.au), so this is a blanket organisation egress-policy denial recorded at the proxy gateway, not per-site bot protection. Per /root/.ccr/README.md a proxy 403 must be reported rather than retried or bypassed. WebSearch (server-side, not routed through the egress proxy) was the only functioning web tool and was used exclusively. Consequently NO tender detail page or specification document could be opened this run: every field below was taken from WebSearch result snippets that quote the AusTender / portal listing rows (identity, buyer, publish/closing dates, ATM ID, and — where the index surfaced it — the notice's own description text). No documents, evaluation criteria, contacts, or values could be verified against an opened notice, so all 7 tenders are counted in entries_pending_detail. Tier-1 Commonwealth (AusTender) was productive: 7 confirmable current ATMs, of which 2 are genuinely newly-seen this run (S-EST10741 HMAS Stirling System Works; S-EST11096 Lavarack Barracks Irrigation Upgrades) and 5 are still-open opportunities carried from earlier runs (re-reported to advance last_seen/active status). Tier-1 state/territory portals (NSW buy.nsw, Buying for Victoria, QTenders, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) returned only landing pages via the search index; one confirmable open VIC item (DOT43290) is carried. Source discovery (mission half 2) was productive: 6 genuinely new buyer-originated Australian sources were identified via WebSearch and recorded in discovered_sources, plus a self-heal of the QTenders host (hpw.qld.gov.au -> epw.qld.gov.au). Tier-3 corporate / GBE opportunity detail remained login/invitation-gated as expected; no corporate RFx was fabricated and none was publicly visible via the search index this run.",
+  "latest_run": "2026-07-06",
+  "latest_coverage_summary": "Daily incremental discovery run. Tier 1 (federal + state/territory) portals surveyed via web search across AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL and Tenders ACT; Tier 2 (local government via VendorPanel, GBE water corporations) and Tier 3 (SAP Ariba Discovery, BHP, Melbourne Water) sampled. IMPORTANT COVERAGE LIMITATION: this run executed under a restrictive network egress policy that blocked direct HTTPS access to every tender portal (all *.gov.au, buy.nsw, vendorpanel, ariba, etc. returned proxy 403 CONNECT denials; only github.com was reachable). Detail pages and tender documents therefore could NOT be opened directly. All opportunities below were surfaced through indexed web-search results (real detail-page URLs with consistent titles); headline identity fields are corroborated but closing dates/times, values, deliverables and contacts were not verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
   "latest_run_metadata": {
-    "run_date": "2026-07-05",
-    "coverage_summary": "DEGRADED RUN (headline / search-snippet level) for the THIRD consecutive day. WebFetch remains fully blocked by this session's outbound egress policy: every WebFetch call returned HTTP 403, confirmed against a control host (example.com returned 403 identically to tenders.gov.au), so this is a blanket organisation egress-policy denial recorded at the proxy gateway, not per-site bot protection. Per /root/.ccr/README.md a proxy 403 must be reported rather than retried or bypassed. WebSearch (server-side, not routed through the egress proxy) was the only functioning web tool and was used exclusively. Consequently NO tender detail page or specification document could be opened this run: every field below was taken from WebSearch result snippets that quote the AusTender / portal listing rows (identity, buyer, publish/closing dates, ATM ID, and — where the index surfaced it — the notice's own description text). No documents, evaluation criteria, contacts, or values could be verified against an opened notice, so all 7 tenders are counted in entries_pending_detail. Tier-1 Commonwealth (AusTender) was productive: 7 confirmable current ATMs, of which 2 are genuinely newly-seen this run (S-EST10741 HMAS Stirling System Works; S-EST11096 Lavarack Barracks Irrigation Upgrades) and 5 are still-open opportunities carried from earlier runs (re-reported to advance last_seen/active status). Tier-1 state/territory portals (NSW buy.nsw, Buying for Victoria, QTenders, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) returned only landing pages via the search index; one confirmable open VIC item (DOT43290) is carried. Source discovery (mission half 2) was productive: 6 genuinely new buyer-originated Australian sources were identified via WebSearch and recorded in discovered_sources, plus a self-heal of the QTenders host (hpw.qld.gov.au -> epw.qld.gov.au). Tier-3 corporate / GBE opportunity detail remained login/invitation-gated as expected; no corporate RFx was fabricated and none was publicly visible via the search index this run.",
-    "sources_checked": 24,
-    "tenders_found": 7,
-    "new_sources_found": 6,
-    "entries_pending_detail": 7,
+    "run_date": "2026-07-06",
+    "coverage_summary": "Daily incremental discovery run. Tier 1 (federal + state/territory) portals surveyed via web search across AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL and Tenders ACT; Tier 2 (local government via VendorPanel, GBE water corporations) and Tier 3 (SAP Ariba Discovery, BHP, Melbourne Water) sampled. IMPORTANT COVERAGE LIMITATION: this run executed under a restrictive network egress policy that blocked direct HTTPS access to every tender portal (all *.gov.au, buy.nsw, vendorpanel, ariba, etc. returned proxy 403 CONNECT denials; only github.com was reachable). Detail pages and tender documents therefore could NOT be opened directly. All opportunities below were surfaced through indexed web-search results (real detail-page URLs with consistent titles); headline identity fields are corroborated but closing dates/times, values, deliverables and contacts were not verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
+    "sources_checked": 22,
+    "tenders_found": 5,
+    "new_sources_found": 5,
+    "entries_pending_detail": 5,
     "gaps": [
-      "CRITICAL (3rd consecutive day): WebFetch is denied by the session outbound egress policy for ALL hosts. Every WebFetch call returned HTTP 403, confirmed against the control host example.com (403) and against tenders.gov.au (403). The proxy status endpoint reported enabled=true with no recentRelayFailures, and /root/.ccr/README.md classifies a proxy 403 as an organisation egress-policy denial that must be reported and NOT retried or routed around. WebSearch was the only functioning web tool this session. Runs on 2026-07-03 and 2026-07-04 hit the identical block; runs on/before 2026-07-02 clearly had WebFetch access, so this is a persistent change in this session's egress allowlist, not a transient outage. ACTION NEEDED: allow outbound HTTPS to the tender portals so detail/deliverables extraction can resume.",
-      "No tender detail page or specification document could be opened this run. For every tender captured, requirements, eligibility, evaluation_criteria, documents, contacts and (except where the AusTender listing snippet stated it) value/contract_term could not be verified against the notice and are null/empty. Where a deliverables_summary or scope is populated it was taken verbatim from the AusTender / portal listing text surfaced in a WebSearch result snippet, NOT from an opened detail page or tender document; treat as high-but-not-page-verified confidence. All 7 tenders are counted in entries_pending_detail and need a documents-level detail pass once fetch access is restored.",
-      "AusTender ATM S-EST10741 (HMAS Stirling System Works, Defence DSRG, WA) was confirmed as a current ATM with a works description via the search index, but its closing_date, publish_time and full agency line could not be captured from the snippet; closing_date is left null pending a detail pass.",
-      "Tier-1 state/territory portals — NSW buy.nsw/eTendering, QTenders (QLD, now qtenders.epw.qld.gov.au), Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT, Buying for Victoria — were unreachable via WebFetch (403). The search index returned only generic portal landing pages plus aggregator/TenderLink rows; apart from the carried Buying for Victoria item DOT43290, no fresh non-excluded STATE government tender detail could be captured with confidence this run.",
-      "Tier-2 (councils/GBEs/universities/health) and Tier-3 (corporate): VendorPanel public tenders and every individual buyer portal (HealthShare NSW, Queensland Health, SAP Ariba Discovery, BHP, Rio Tinto, etc.) were unreachable via WebFetch (403). Genuine buyer-originated portal URLs were recovered from the search index and recorded in discovered_sources, but no individual opportunity could be opened or verified, and no corporate/GBE RFx was recorded as a tender.",
-      "Tier-3 corporate e-sourcing hubs (SAP Ariba Discovery / SAP Business Network Discovery, Coupa, Jaggaer, RangeMe) and major-buyer portals could not be opened; per prior fetch-verified runs and search evidence their opportunity detail is login- or invitation-gated. No publicly-visible corporate RFx could be confirmed this run, so none was recorded as a tender (portals remain captured in discovered_sources with access_method=portal-registration). Invitation-only corporate RFPs (e.g. management-consultancy panels) remain out of scope and unobservable.",
-      "AusTender ATM_2026_6551 recurred across several searches but no confirmable title/agency/closing snippet could be captured; deferred to a future run.",
-      "URL self-heal: the QTenders (Queensland) live host is now qtenders.epw.qld.gov.au; the seed list and prior discovered_sources used qtenders.hpw.qld.gov.au. Recorded corrected URL in discovered_sources.",
-      "WebSearch is US-geolocated, which limits freshness/geo-ranking of Australian results and may miss items published in the last 24 hours that have not yet been indexed."
+      "Network egress policy blocked ALL direct portal fetches (WebFetch and curl returned proxy '403 to CONNECT' for www.tenders.gov.au, buy.nsw.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, qtenders.epw.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au and vendorpanel.com.au). Only github.com/raw.githubusercontent.com were reachable. Discovery therefore relied entirely on web-search snippets; no primary detail page or tender document could be read.",
+      "AusTender (tenders.gov.au) ATM list and all /Atm/Show detail pages unreachable for direct extraction; individual ATM IDs (e.g. ATM_2026_6551 energy pipeline data - already closed 8-Jun-2026) seen only via search index.",
+      "SAP Ariba Discovery / SAP Business Network Discovery: no Australian open RFx publicly visible without a supplier login; the posting board itself was not reachable. No corporate opportunity captured as a tender this run (recorded as portals only). No invitation-only consultancy RFPs are discoverable by design - out of scope.",
+      "Tier 3 corporate portals (BHP interested-supplier register, Melbourne Water Zycus) are registration-gated; recorded as discovered_sources with access_method=portal-registration, individual opportunities not captured.",
+      "Melbourne Water Cardinia Dam Upgrade (CDU) RFP excluded: its published closing date (27-Mar-2026) is already past, so it is not a current opportunity.",
+      "Closing dates/times, values, deliverables, eligibility and contacts for all captured tenders are UNVERIFIED against the primary notice due to the egress block; they need confirmation on the buyer portal before downstream reliance.",
+      "Tier 2 local government (VendorPanel public tenders) and universities/health only sampled at portal level this run; individual council/university opportunities deferred to a future run when portal access is available."
     ],
     "recommended_seed_additions": [
-      "Transport for NSW — Tenders and contracts (transport.nsw.gov.au/operations/roads-and-waterways/business-and-industry/partners-and-suppliers/tenders-and-contracts) — major state transport buyer publishing via NSW eTendering; distinct from the general buy.nsw feed",
-      "HealthShare NSW — Procurement & Supply Chain (healthshare.nsw.gov.au/services/procurement) — NSW Health central goods/services procurement (~100 statewide contracts); distinct from the NSW Health tenders landing page already known",
-      "Sutherland Shire Council — Current tenders (sutherlandshire.nsw.gov.au/local-business/doing-business-with-council/tender-opportunities/current-tenders) — local-government buyer current-tenders register",
-      "Central Coast Council — Tenders (centralcoast.nsw.gov.au/business/tenders) — local-government buyer tender page (NSW)",
-      "Townsville Regional Council — Current tenders (tr.qld.gov.au/community-business/business-support/tenders-contracts) — local-government buyer (QLD)",
-      "WALGA Preferred Supplier Program (walga.asn.au/suppliers/preferred-supplier-program/become-a-preferred-supplier) — WA Local Government Association preferred-supplier panels used by member councils",
-      "QTenders (Queensland) — URL correction only: live host is now qtenders.epw.qld.gov.au (previously listed as qtenders.hpw.qld.gov.au)"
+      "QTenders new domain qtenders.epw.qld.gov.au (migrated from hpw.qld.gov.au) plus eTender QLD etender.hpw.qld.gov.au",
+      "Sydney Olympic Park Authority own tenders & EOI page (sydneyolympicpark.nsw.gov.au/development/planning-and-building/tenders-and-eoi)",
+      "BHP Interested Supplier Register (interestedsupplier.bhp.com) as the entry channel feeding SAP Ariba / GCMS",
+      "Melbourne Water Zycus e-sourcing portal (sourcing events lodged via Zycus) as the GBE's actual submission platform",
+      "Public Transport Authority of WA tenders page (pta.wa.gov.au/about-us/supplying-to-the-pta/tenders)"
     ]
   },
   "months": [
@@ -53,7 +50,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 19,
+      "new_tenders": 24,
       "active_tenders": 0
     }
   ],
@@ -1705,7 +1702,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:randwick-high-school-fibre-network-upgrade",
@@ -2505,7 +2502,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:15854-uluru-air-conditioning",
@@ -2889,7 +2886,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM_2026_6066-bushland-program-strategic-property-purchases",
@@ -3642,7 +3639,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM_2026_6786-gems-verification-testing-labs",
@@ -3713,7 +3710,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:health-E26-205921-comprehensive-health-services",
@@ -3963,8 +3960,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:s-est11096-lavarack-barracks-irrigation-upgrades",
@@ -4030,6 +4027,327 @@
       "last_seen": "2026-07-05",
       "seen_dates": [
         "2026-07-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "buy.nsw:sopa-maintenance-public-area-lighting",
+      "source_name": "buy.nsw (NSW eTendering)",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "access": "public",
+      "title": "Maintenance of Public Area Lighting - Sydney Olympic Park precinct",
+      "buyer": "Sydney Olympic Park Authority",
+      "buyer_url": "https://www.sydneyolympicpark.nsw.gov.au/development/planning-and-building/tenders-and-eoi",
+      "category": "Building and property / Facilities maintenance",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for tender for maintenance of public area lighting across the Sydney Olympic Park (SOPA) precinct, including street lighting, carpark lighting, parks lighting and precinct feature lighting.",
+      "deliverables_summary": "Supplier to provide ongoing maintenance of the SOPA precinct's public-area lighting assets (street, carpark, parks and feature lighting). Full scope not verified against the primary notice due to portal access being blocked this run.",
+      "key_deliverables": [
+        "Maintenance of street lighting",
+        "Maintenance of carpark lighting",
+        "Maintenance of parks lighting",
+        "Maintenance of precinct feature lighting"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-29",
+      "closing_time": "3:00 PM (AEST) - unverified",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Sydney Olympic Park, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "facilities-maintenance",
+        "lighting",
+        "gbe-precinct"
+      ],
+      "first_seen": "2026-07-06",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated listing on the NSW Government eTendering platform (Sydney Olympic Park Authority).",
+      "notes": "Headline captured from search index; closing date/time and all detail fields UNVERIFIED because buy.nsw detail pages were unreachable under this run's egress policy. Confirm on buy.nsw before relying.",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:homes-nsw-chp-partnership-haff-round-3",
+      "source_name": "buy.nsw (NSW eTendering)",
+      "source_url": "https://buy.nsw.gov.au/prcOpportunity/A7317A31-D918-4F66-94D40EB0103700B9",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "WS4668862702",
+      "tender_url": "https://buy.nsw.gov.au/prcOpportunity/A7317A31-D918-4F66-94D40EB0103700B9",
+      "access": "public",
+      "title": "Community Housing Provider (CHP) Partnership Opportunity - HAFF Round 3",
+      "buyer": "Homes NSW (Department of Communities and Justice)",
+      "buyer_url": "https://www.nsw.gov.au/housing-and-construction/social-affordable/housing-providers/chp-partnership-opportunity",
+      "category": "Construction / Social and affordable housing",
+      "category_codes": [],
+      "procurement_type": "RFP",
+      "current_status": "open",
+      "description": "Request for proposal inviting registered Community Housing Providers to partner with Homes NSW to deliver social and affordable housing under Housing Australia Future Fund (HAFF) Round 3.",
+      "deliverables_summary": "Partnership proposals from Community Housing Providers to develop and/or deliver social and affordable dwellings under the HAFF Round 3 program. Detailed scope not verified against the primary notice due to portal access being blocked this run.",
+      "key_deliverables": [
+        "Delivery of new social and affordable housing dwellings",
+        "CHP partnership arrangement with Homes NSW under HAFF Round 3"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Registered Community Housing Providers (eligibility to be confirmed against the notice)",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/prcOpportunity/A7317A31-D918-4F66-94D40EB0103700B9",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "social-housing",
+        "haff",
+        "community-housing",
+        "homes-nsw"
+      ],
+      "first_seen": "2026-07-06",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search; buyer-originated RFP on buy.nsw plus corroborating Homes NSW / nsw.gov.au CHP Partnership Opportunity page (HAFF Round 3).",
+      "notes": "Search results referenced a 'Camden' variant with differing closing dates (17-Jul vs 22-Jul-2026); these could not be reconciled against the primary notice under this run's egress block, so closing date left null. Confirm scope, reference and dates on buy.nsw.",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:bombah-point-depot-office-amenity-hire-proc10013",
+      "source_name": "buy.nsw (NSW eTendering)",
+      "source_url": "https://buy.nsw.gov.au/notices/BC6D3D8B-DD1A-7E1A-21432A4975BD7F90",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "PROC10013",
+      "tender_url": "https://buy.nsw.gov.au/notices/BC6D3D8B-DD1A-7E1A-21432A4975BD7F90",
+      "access": "public",
+      "title": "Bombah Point Depot - Office and Amenity Hire (PROC10013)",
+      "buyer": "Department of Climate Change, Energy, the Environment and Water (NSW)",
+      "buyer_url": "https://www.dcceew.nsw.gov.au/",
+      "category": "Building and property / Temporary facilities hire",
+      "category_codes": [],
+      "procurement_type": "RFQ",
+      "current_status": "open",
+      "description": "Notice/quotation for hire of office and amenity facilities at the Bombah Point Depot (Myall Lakes / NSW national parks estate).",
+      "deliverables_summary": "Provision (hire) of office and amenity buildings/facilities at the Bombah Point Depot. Exact scope and term not verified against the primary notice due to portal access being blocked this run.",
+      "key_deliverables": [
+        "Supply/hire of office facilities at Bombah Point Depot",
+        "Supply/hire of amenity facilities at Bombah Point Depot"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-17",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Respond via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/notices/BC6D3D8B-DD1A-7E1A-21432A4975BD7F90",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Bombah Point, NSW (Myall Lakes area)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "facilities-hire",
+        "national-parks",
+        "dcceew"
+      ],
+      "first_seen": "2026-07-06",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search; buyer-originated notice on buy.nsw (title 'Office and Amenity Hire - PROC10013'). Note: one search snippet described a 'custom-designed office building construction' variant; the buy.nsw notice title indicates office/amenity HIRE - treat construction framing as unverified.",
+      "notes": "Headline captured from search index; procurement_type inferred as RFQ from 'hire' notice title and NOT confirmed. Closing date and all detail fields UNVERIFIED due to egress block. Confirm on buy.nsw.",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:tfnsw-professional-services-26-0000139291-0409",
+      "source_name": "buy.nsw (NSW eTendering)",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "26.0000139291.0409",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "access": "free-registration",
+      "title": "Transport for NSW - Professional Services (excl Consultancies)",
+      "buyer": "Transport for NSW",
+      "buyer_url": "https://www.transport.nsw.gov.au/operations/roads-and-waterways/business-and-industry/partners-and-suppliers/tenders-and-contracts",
+      "category": "Professional Services (excl Consultancies)",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for tender for professional services (excluding consultancies) for Transport for NSW. Industry is notified to complete a Confidentiality Deed Poll to obtain access to the RFT documents.",
+      "deliverables_summary": "Professional services to be delivered to Transport for NSW; detailed scope is behind a Confidentiality Deed Poll and was not accessible this run.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [
+        "Completion of a Confidentiality Deed Poll to receive access to the RFT documents"
+      ],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-24",
+      "closing_time": "3:00 PM (AEST) - unverified",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering after executing Confidentiality Deed Poll",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "documents": [],
+      "mandatory_conditions": [
+        "Confidentiality Deed Poll required to access tender documents"
+      ],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "transport",
+        "professional-services",
+        "confidentiality-deed"
+      ],
+      "first_seen": "2026-07-06",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFT from Transport for NSW with reference 26.0000139291.0409.",
+      "notes": "RFT documents gated behind a Confidentiality Deed Poll; access set to free-registration. Closing date/time and scope UNVERIFIED against primary notice due to egress block.",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersTasmania:edss-support-hosting-maintenance",
+      "source_name": "Tenders Tasmania",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "Tasmania",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Support, hosting and maintenance services for an Electronic Disease Surveillance System",
+      "buyer": "Tasmanian Government (Department of Health, Tasmania - to confirm)",
+      "buyer_url": "https://www.health.tas.gov.au/",
+      "category": "ICT / Health information systems",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Tender seeking the provision of support, hosting and maintenance services for an Electronic Disease Surveillance System (EDSS) product.",
+      "deliverables_summary": "Supplier to provide ongoing support, hosting and maintenance for an Electronic Disease Surveillance System product used by the Tasmanian Government. Detailed scope not verified against the primary notice due to portal access being blocked this run.",
+      "key_deliverables": [
+        "Support services for the EDSS product",
+        "Hosting services for the EDSS product",
+        "Maintenance services for the EDSS product"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-31",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge online via Tenders Tasmania (tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tas",
+        "health",
+        "ict",
+        "disease-surveillance",
+        "hosting-maintenance"
+      ],
+      "first_seen": "2026-07-06",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search of Tenders Tasmania; buyer-originated Tasmanian Government tender. Buying agency (likely Department of Health) inferred from subject matter and not confirmed.",
+      "notes": "Headline captured from search index; tender_id, buyer and closing date UNVERIFIED against the primary notice due to egress block. Confirm on tenders.tas.gov.au.",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -6253,8 +6571,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "HealthShare NSW — Procurement & Supply Chain",
@@ -6275,8 +6593,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Sutherland Shire Council — Current tenders",
@@ -6297,8 +6615,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Central Coast Council — Tenders",
@@ -6319,8 +6637,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Townsville Regional Council — Current tenders",
@@ -6341,8 +6659,8 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "WALGA — Preferred Supplier Program",
@@ -6363,26 +6681,115 @@
         "2026-07-05"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
-      "source_name": "QTenders (Queensland Government Tenders Directory)",
+      "source_name": "QTenders (Queensland Government Tenders Directory) - new domain",
       "source_url": "https://qtenders.epw.qld.gov.au/qtenders/",
       "source_type": "gov-state",
       "jurisdiction": "Queensland",
       "platform": "QTenders",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": false,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "URL self-heal: WebSearch returned the live QTenders host as qtenders.epw.qld.gov.au; the seed list and prior discovered_sources used qtenders.hpw.qld.gov.au (host moved from HPW to EPW/Department of Energy and Public Works branding).",
+      "how_discovered": "Web search returned the Queensland Government Tenders Directory on the domain qtenders.epw.qld.gov.au (Dept of Energy and Public Works), a change from the previously-known qtenders.hpw.qld.gov.au. Companion current-tender listing at etender.hpw.qld.gov.au also observed.",
       "recommended_check_frequency": "daily",
-      "notes": "Not a new source — URL correction only. Recorded so the known-source list points at the live host. QLD is also migrating some procurement to VendorPanel via supply.qld.gov.au (already tracked).",
+      "notes": "URL/branding change to record: QTenders now served from qtenders.epw.qld.gov.au. Migration to VendorPanel (via supply.qld.gov.au) is ongoing; check both. Not directly fetchable this run (egress 403).",
       "first_seen": "2026-07-05",
-      "last_seen": "2026-07-05",
+      "last_seen": "2026-07-06",
       "seen_dates": [
-        "2026-07-05"
+        "2026-07-05",
+        "2026-07-06"
+      ],
+      "seen_count": 2,
+      "is_new_in_latest": false,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Sydney Olympic Park Authority - Tenders & EOI",
+      "source_url": "https://www.sydneyolympicpark.nsw.gov.au/development/planning-and-building/tenders-and-eoi",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Found while investigating the SOPA public-area-lighting RFT; the Authority maintains its own Tenders & EOI page in addition to publishing on buy.nsw.",
+      "recommended_check_frequency": "weekly",
+      "notes": "GBE-style precinct authority; opportunities also mirror onto buy.nsw. Not directly fetchable this run (egress 403).",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "BHP - Interested Supplier Register",
+      "source_url": "https://interestedsupplier.bhp.com/",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (national / global mining)",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 corporate sweep; BHP's dedicated Interested Supplier Register is the entry channel that onboards suppliers into SAP Business Network (Ariba) and the Global Contract Management System (GCMS).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Registration-gated (free SAP Ariba Standard Account). Individual RFx are invitation/login only; recorded as a portal, no opportunity captured. Complements the already-known 'BHP - Find opportunities' source.",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Melbourne Water - Zycus e-sourcing portal",
+      "source_url": "https://www.melbournewater.com.au/about/what-we-do/our-customers/suppliers-and-procurement",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "Zycus",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "While reviewing the Cardinia Dam Upgrade EOI/RFP, found that Melbourne Water runs its sourcing events through the Zycus platform (submissions lodged via Zycus sourcing event numbers), a distinct e-sourcing platform not previously catalogued for this GBE.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Platform detail (Zycus) is the new finding; a Melbourne Water supplier/tender channel was already known. Registration-gated. Not directly fetchable this run (egress 403).",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Public Transport Authority of Western Australia - Tenders",
+      "source_url": "https://www.pta.wa.gov.au/about-us/supplying-to-the-pta/tenders",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 1/2 WA sweep surfaced the PTA WA supplying-to-the-PTA tenders page as a buyer-originated channel alongside Tenders WA.",
+      "recommended_check_frequency": "weekly",
+      "notes": "State transport authority publishing its own tender notices. Not directly fetchable this run (egress 403).",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "seen_dates": [
+        "2026-07-06"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

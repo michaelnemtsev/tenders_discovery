@@ -71,7 +71,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "facilities-maintenance", "lighting", "gbe-precinct"],
+      "tags": [
+        "nsw",
+        "facilities-maintenance",
+        "lighting",
+        "gbe-precinct"
+      ],
       "first_seen": "2026-07-06",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated listing on the NSW Government eTendering platform (Sydney Olympic Park Authority).",
@@ -122,7 +127,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "social-housing", "haff", "community-housing", "homes-nsw"],
+      "tags": [
+        "nsw",
+        "social-housing",
+        "haff",
+        "community-housing",
+        "homes-nsw"
+      ],
       "first_seen": "2026-07-06",
       "detail_source": "",
       "reasoning": "Surfaced via web search; buyer-originated RFP on buy.nsw plus corroborating Homes NSW / nsw.gov.au CHP Partnership Opportunity page (HAFF Round 3).",
@@ -173,7 +184,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "facilities-hire", "national-parks", "dcceew"],
+      "tags": [
+        "nsw",
+        "facilities-hire",
+        "national-parks",
+        "dcceew"
+      ],
       "first_seen": "2026-07-06",
       "detail_source": "",
       "reasoning": "Surfaced via web search; buyer-originated notice on buy.nsw (title 'Office and Amenity Hire - PROC10013'). Note: one search snippet described a 'custom-designed office building construction' variant; the buy.nsw notice title indicates office/amenity HIRE - treat construction framing as unverified.",
@@ -225,7 +241,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "professional-services", "confidentiality-deed"],
+      "tags": [
+        "nsw",
+        "transport",
+        "professional-services",
+        "confidentiality-deed"
+      ],
       "first_seen": "2026-07-06",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFT from Transport for NSW with reference 26.0000139291.0409.",
@@ -277,7 +298,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "health", "ict", "disease-surveillance", "hosting-maintenance"],
+      "tags": [
+        "tas",
+        "health",
+        "ict",
+        "disease-surveillance",
+        "hosting-maintenance"
+      ],
       "first_seen": "2026-07-06",
       "detail_source": "",
       "reasoning": "Surfaced via web search of Tenders Tasmania; buyer-originated Tasmanian Government tender. Buying agency (likely Department of Health) inferred from subject matter and not confirmed.",
