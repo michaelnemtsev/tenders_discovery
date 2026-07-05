@@ -75,7 +75,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "construction", "works", "wa", "fencing"],
+      "tags": [
+        "defence",
+        "construction",
+        "works",
+        "wa",
+        "fencing"
+      ],
       "first_seen": "2026-07-05",
       "detail_source": "",
       "reasoning": "Discovered on AusTender (Tier-1 Commonwealth, buyer-originated) via WebSearch of current ATMs. Confirmed as a current ATM published 2-Jul-2026; the works description was surfaced in the search result snippet quoting the AusTender listing.",
@@ -95,7 +101,9 @@
       "buyer": "Department of Defence - DSRG",
       "buyer_url": "https://www.tenders.gov.au/atm",
       "category": "Building construction and support and maintenance and repair services",
-      "category_codes": ["72100000"],
+      "category_codes": [
+        "72100000"
+      ],
       "procurement_type": "RFT",
       "current_status": "open",
       "description": "Request for tender to upgrade irrigation at Lavarack Barracks, Townsville QLD, involving demolition and decommissioning of existing irrigation equipment, earthworks, a new irrigation system and associated multidisciplinary works.",
@@ -129,7 +137,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "construction", "irrigation", "qld", "works"],
+      "tags": [
+        "defence",
+        "construction",
+        "irrigation",
+        "qld",
+        "works"
+      ],
       "first_seen": "2026-07-05",
       "detail_source": "",
       "reasoning": "Discovered on AusTender (Tier-1 Commonwealth, buyer-originated) via WebSearch of current ATMs. Title, agency, category (UNSPSC 72100000), close date 14-Jul-2026 12:00pm ACT, publish date 10-Jun-2026 and works description were all surfaced in the search result snippet quoting the AusTender listing.",
@@ -185,7 +199,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["environment", "energy", "testing", "panel", "gems", "national"],
+      "tags": [
+        "environment",
+        "energy",
+        "testing",
+        "panel",
+        "gems",
+        "national"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Tier-1 Commonwealth (AusTender), buyer-originated. Re-reported to advance last_seen/active status; still open (closes 12-Aug-2026). Scope, panel term and delivery locations were surfaced in the search result snippet quoting the AusTender listing.",
@@ -240,7 +261,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["construction", "marine", "wharf", "remediation", "nsw", "cultural"],
+      "tags": [
+        "construction",
+        "marine",
+        "wharf",
+        "remediation",
+        "nsw",
+        "cultural"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "",
       "reasoning": "Tier-1 Commonwealth (AusTender), buyer-originated (Australian National Maritime Museum). Re-reported to advance last_seen/active status; still open (closes 12-Aug-2026). Scope was surfaced in the search result snippet quoting the AusTender listing.",
@@ -291,7 +319,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["printing", "distribution", "act", "parliamentary"],
+      "tags": [
+        "printing",
+        "distribution",
+        "act",
+        "parliamentary"
+      ],
       "first_seen": "2026-06-28",
       "detail_source": "",
       "reasoning": "Tier-1 Commonwealth (AusTender), buyer-originated (Office of Parliamentary Counsel). Re-reported to advance last_seen/active status; closing soon (7-Jul-2026).",
@@ -341,7 +374,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["printing", "print-on-demand", "act", "legislation", "parliamentary"],
+      "tags": [
+        "printing",
+        "print-on-demand",
+        "act",
+        "legislation",
+        "parliamentary"
+      ],
       "first_seen": "2026-07-01",
       "detail_source": "",
       "reasoning": "Tier-1 Commonwealth (AusTender), buyer-originated (Office of Parliamentary Counsel). Re-reported to advance last_seen/active status. Contract dates surfaced in the search result snippet quoting the AusTender listing.",
@@ -391,7 +430,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["transport", "traffic-signals", "roadworks", "vic", "construction"],
+      "tags": [
+        "transport",
+        "traffic-signals",
+        "roadworks",
+        "vic",
+        "construction"
+      ],
       "first_seen": "2026-06-29",
       "detail_source": "",
       "reasoning": "Tier-1 state (Buying for Victoria), buyer-originated (Vic Department of Transport and Planning). Re-reported to advance last_seen/active status; closing soon (8-Jul-2026 3:30pm). Title and closing time surfaced in the search result snippet quoting the Buying for Victoria listing.",
