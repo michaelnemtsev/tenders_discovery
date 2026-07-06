@@ -71,7 +71,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence-adjacent", "marine", "research-vessel", "nt", "construction"],
+      "tags": [
+        "commonwealth",
+        "defence-adjacent",
+        "marine",
+        "research-vessel",
+        "nt",
+        "construction"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via targeted web search of AusTender; buyer-originated Commonwealth ATM (AIMS). Scope paragraph quoted from the search index of the notice; detail page could not be opened due to the egress block.",
@@ -119,7 +126,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "construction", "estate-upgrade", "closing-soon"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "construction",
+        "estate-upgrade",
+        "closing-soon"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of the AusTender current ATM list; the 'S-EST' reference prefix and barracks subject indicate a Defence estate works ATM. Buyer inferred (Department of Defence) and NOT confirmed.",
@@ -167,7 +180,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "communications", "support-services", "closing-soon"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "communications",
+        "support-services",
+        "closing-soon"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of the AusTender current ATM list; buyer-originated Commonwealth ATM (Department of Defence), reference JSD/RFT/75462/1.",
@@ -218,7 +237,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "construction", "roads", "sydney-park-junction"],
+      "tags": [
+        "nsw",
+        "transport",
+        "construction",
+        "roads",
+        "sydney-park-junction"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities plus the Transport for NSW project page; buyer-originated RFT from Transport for NSW / Transport Infrastructure Projects.",
@@ -268,7 +293,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "roads-and-rail", "maintenance", "bega"],
+      "tags": [
+        "nsw",
+        "transport",
+        "roads-and-rail",
+        "maintenance",
+        "bega"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFT from Transport for NSW / Transport Infrastructure Projects.",
@@ -316,7 +347,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "health", "air-transport", "rfi", "market-sounding"],
+      "tags": [
+        "nsw",
+        "health",
+        "air-transport",
+        "rfi",
+        "market-sounding"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFI from the NSW Ministry of Health.",
@@ -366,7 +403,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "construction", "roofing", "building-repair"],
+      "tags": [
+        "nsw",
+        "construction",
+        "roofing",
+        "building-repair"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFT (reference OoS25/26-028). Buying agency not identified in the snippet.",
@@ -417,7 +459,14 @@
       "contact_name": "",
       "contact_email": "businessconnect@sydneywater.com.au",
       "contact_phone": "1300 690 399",
-      "tags": ["nsw", "gbe", "water", "epcm", "eoi", "sydney-water"],
+      "tags": [
+        "nsw",
+        "gbe",
+        "water",
+        "epcm",
+        "eoi",
+        "sydney-water"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search; buyer-originated EOI from Sydney Water Corporation (a NSW GBE) published on buy.nsw with a deep-link prcOpportunity URL (reference SWC-WS5192918179).",
@@ -467,7 +516,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "council", "construction", "hawkesbury"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "council",
+        "construction",
+        "hawkesbury"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of buy.nsw open opportunities; buyer-originated RFT from Hawkesbury City Council (NSW local government).",
@@ -518,7 +573,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["qld", "education", "childcare", "long-day-care", "vendorpanel"],
+      "tags": [
+        "qld",
+        "education",
+        "childcare",
+        "long-day-care",
+        "vendorpanel"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of QTenders/Queensland Government; buyer-originated RFT from the QLD Department of Education, VendorPanel reference VP513149. Part of a set of new long day care tenders closing 24-Jul-2026.",
@@ -569,7 +630,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["qld", "education", "childcare", "long-day-care", "vendorpanel"],
+      "tags": [
+        "qld",
+        "education",
+        "childcare",
+        "long-day-care",
+        "vendorpanel"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of QTenders/Queensland Government; buyer-originated RFT from the QLD Department of Education, VendorPanel reference VP512938. Part of a set of new long day care tenders closing 24-Jul-2026.",
@@ -623,7 +690,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["qld", "parliamentary-service", "office-fitout", "relocation", "ito", "vendorpanel", "closing-soon"],
+      "tags": [
+        "qld",
+        "parliamentary-service",
+        "office-fitout",
+        "relocation",
+        "ito",
+        "vendorpanel",
+        "closing-soon"
+      ],
       "first_seen": "2026-07-07",
       "detail_source": "",
       "reasoning": "Surfaced via web search of QTenders/Queensland Government; buyer-originated Invitation to Offer from the Queensland Parliamentary Service, VendorPanel reference VP513321.",
