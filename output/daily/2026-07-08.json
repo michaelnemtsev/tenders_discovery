@@ -57,14 +57,23 @@
       "submission_method": "Online via AusTender",
       "lodgement_url": "https://www.tenders.gov.au/",
       "documents": [
-        { "name": "FSANZ Laboratory Panel - tender documents", "url": "https://www.foodstandards.gov.au/news/fsanz-laboratory-panel" }
+        {
+          "name": "FSANZ Laboratory Panel - tender documents",
+          "url": "https://www.foodstandards.gov.au/news/fsanz-laboratory-panel"
+        }
       ],
       "mandatory_conditions": [],
       "delivery_location": "Australia / New Zealand",
       "contact_name": "",
       "contact_email": "tenders@foodstandards.gov.au",
       "contact_phone": "",
-      "tags": ["commonwealth", "health", "laboratory", "panel", "food-safety"],
+      "tags": [
+        "commonwealth",
+        "health",
+        "laboratory",
+        "panel",
+        "food-safety"
+      ],
       "first_seen": "2026-07-08",
       "detail_source": "",
       "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement published on AusTender with supporting documents on the FSANZ (buyer) website.",
@@ -112,7 +121,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "event-management", "health", "one-health"],
+      "tags": [
+        "commonwealth",
+        "event-management",
+        "health",
+        "one-health"
+      ],
       "first_seen": "2026-07-08",
       "detail_source": "",
       "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement on AusTender.",
@@ -160,7 +174,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "fisheries", "environment", "monitoring", "closing-today"],
+      "tags": [
+        "commonwealth",
+        "fisheries",
+        "environment",
+        "monitoring",
+        "closing-today"
+      ],
       "first_seen": "2026-07-08",
       "detail_source": "",
       "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement (AFMA) on AusTender.",
@@ -208,7 +228,14 @@
       "contact_name": "",
       "contact_email": "procurement@ssroc.nsw.gov.au",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "regional-procurement", "roads", "sustainability", "vendorpanel"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "regional-procurement",
+        "roads",
+        "sustainability",
+        "vendorpanel"
+      ],
       "first_seen": "2026-07-08",
       "detail_source": "",
       "reasoning": "Discovered while hunting for new sources: SSROC is a buyer-originated regional council procurement body (new to this routine) that publishes joint tenders via VendorPanel. This tender was listed as current on the SSROC procurement page.",
@@ -256,7 +283,13 @@
       "contact_name": "",
       "contact_email": "procurement@ssroc.nsw.gov.au",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "regional-procurement", "office-supplies", "vendorpanel"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "regional-procurement",
+        "office-supplies",
+        "vendorpanel"
+      ],
       "first_seen": "2026-07-08",
       "detail_source": "",
       "reasoning": "Discovered via SSROC source discovery (see above); listed as a current SSROC tender on the procurement page, published via VendorPanel.",

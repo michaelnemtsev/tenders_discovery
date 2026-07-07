@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-07",
+  "generated": "2026-07-08",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -13,34 +13,31 @@
     "2026-07-04",
     "2026-07-05",
     "2026-07-06",
-    "2026-07-07"
+    "2026-07-07",
+    "2026-07-08"
   ],
-  "run_count": 13,
+  "run_count": 14,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-07",
-  "latest_coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT); Tier 2 sampled (local government via VendorPanel + Hawkesbury City Council; GBE water corporations Sydney Water / Melbourne Water / SA Water; universities ANU and UWA); Tier 3 sampled (SAP Ariba / SAP Business Network Discovery, EstimateOne construction subcontractor packages). IMPORTANT COVERAGE LIMITATION (unchanged from the 2026-07-06 run): this run executed under a restrictive network egress policy that blocked direct HTTPS access to every tender portal. All portal hosts (www.tenders.gov.au, tenders.vic.gov.au, vendorpanel.com.au, tenders.tas.gov.au, etc.) returned proxy '403 to CONNECT' policy denials, confirmed against the agent-proxy status endpoint (kind=connect_rejected). Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets with real detail-page URLs and consistent titles; headline identity fields are corroborated but closing dates/times, values, deliverables, eligibility and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
+  "latest_run": "2026-07-08",
+  "latest_coverage_summary": "Daily incremental run. Tier 1 Commonwealth (AusTender) swept via web search: captured three fresh/closing-soon Approaches to Market (FSANZ food analysis panel, One Health National Conference 2027 event management, AFMA Southern Bluefin Tuna fishery monitoring). Tier 1 state portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA) checked for new July-2026 items; most open NSW opportunities were already captured in prior runs and remain tracked in the aggregate. Tier 2/3 source discovery was the focus this run: two genuinely new buyer-originated sources found and recorded (Endeavour Energy on SAP Ariba; SSROC regional council procurement on VendorPanel). SAP Ariba Discovery (Tier 3) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login.",
   "latest_run_metadata": {
-    "run_date": "2026-07-07",
-    "coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT); Tier 2 sampled (local government via VendorPanel + Hawkesbury City Council; GBE water corporations Sydney Water / Melbourne Water / SA Water; universities ANU and UWA); Tier 3 sampled (SAP Ariba / SAP Business Network Discovery, EstimateOne construction subcontractor packages). IMPORTANT COVERAGE LIMITATION (unchanged from the 2026-07-06 run): this run executed under a restrictive network egress policy that blocked direct HTTPS access to every tender portal. All portal hosts (www.tenders.gov.au, tenders.vic.gov.au, vendorpanel.com.au, tenders.tas.gov.au, etc.) returned proxy '403 to CONNECT' policy denials, confirmed against the agent-proxy status endpoint (kind=connect_rejected). Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets with real detail-page URLs and consistent titles; headline identity fields are corroborated but closing dates/times, values, deliverables, eligibility and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
-    "sources_checked": 21,
-    "tenders_found": 12,
-    "new_sources_found": 4,
-    "entries_pending_detail": 12,
+    "run_date": "2026-07-08",
+    "coverage_summary": "Daily incremental run. Tier 1 Commonwealth (AusTender) swept via web search: captured three fresh/closing-soon Approaches to Market (FSANZ food analysis panel, One Health National Conference 2027 event management, AFMA Southern Bluefin Tuna fishery monitoring). Tier 1 state portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA) checked for new July-2026 items; most open NSW opportunities were already captured in prior runs and remain tracked in the aggregate. Tier 2/3 source discovery was the focus this run: two genuinely new buyer-originated sources found and recorded (Endeavour Energy on SAP Ariba; SSROC regional council procurement on VendorPanel). SAP Ariba Discovery (Tier 3) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login.",
+    "sources_checked": 14,
+    "tenders_found": 5,
+    "new_sources_found": 2,
+    "entries_pending_detail": 5,
     "gaps": [
-      "Network egress policy blocked ALL direct portal fetches this run. Both WebFetch and curl returned 'CONNECT tunnel failed, response 403' for www.tenders.gov.au, tenders.vic.gov.au, www.vendorpanel.com.au and www.tenders.tas.gov.au; the agent-proxy status endpoint recorded these as kind=connect_rejected 'gateway answered 403 to CONNECT (policy denial)'. This is an organisation egress-policy denial, not portal bot-protection, and was not routed around. Only WebSearch was available; no primary detail page or tender document was read.",
-      "Because detail pages were unreachable, closing dates/times, values, contract terms, deliverables, eligibility, evaluation criteria and contacts for every captured tender are UNVERIFIED against the primary notice. Dates shown are taken from search-result snippets and need confirmation on the buyer portal before downstream reliance.",
-      "AusTender: current ATM list and all /Atm/Show detail pages unreachable for direct extraction. ATO 'SES Band 1 / EL2 Talent Development Programs' (PROC-15553) appeared in search with a 6-Jul-2026 close date and was excluded as already closed relative to the 7-Jul run date.",
-      "SAP Ariba Discovery / SAP Business Network Discovery: no Australian open RFx was publicly visible in search without a supplier login this run, and the posting board itself was unreachable. No corporate opportunity captured as a tender (recorded as portals/registration-gated only). Invitation-only consultancy RFPs remain out of scope by design.",
-      "Tier 3 corporate buyer portals (BHP, Rio Tinto, Fortescue, Sydney Water SAP Ariba supplier registration, Melbourne Water Zycus) are registration-gated; individual opportunities not captured. Recorded at portal level only.",
-      "Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT and Tenders ACT returned only navigational/landing results in search this run (no specific current opportunities surfaced); the 'Tenders SA' query was polluted by South-Africa results. These jurisdictions are under-covered this run and deferred to a future run when portal access is available.",
-      "QLD long day care set: search surfaced sibling VendorPanel references (Yarrabilba VP513152, Yorkeys Knob VP513154) alongside the two captured entries; the full set was not enumerable without portal access.",
-      "Tenders Tasmania EDSS support/hosting RFT (captured on 2026-07-06) was not re-verifiable this run; not re-included today. It may still be open until ~31-Jul-2026 on tenders.tas.gov.au."
+      "www.tenders.gov.au (AusTender) is blocked by this session's egress network policy (proxy returns 403 to CONNECT); ATM detail pages could not be opened directly. Commonwealth entries were captured at headline level from web-search result snippets and are flagged entries_pending_detail.",
+      "buy.nsw.gov.au, tenders.vic.gov.au, endeavourenergy.com.au and ssroc.nsw.gov.au reached the origin but returned HTTP 403 to the fetch tool (bot/WAF block); detail pages could not be scraped. Headline data taken from search snippets.",
+      "SAP Ariba Discovery / SAP Business Network Discovery: opportunity list is registration-gated; no publicly-visible AU RFx could be captured without an authenticated supplier session. Recorded as a portal source only, not fabricated as a tender.",
+      "SSROC tenders T2025-16 and T2025-12 confirmed as current via search, but closing dates and full scope were not publicly extractable this run (VendorPanel detail behind portal) - dates left null, pending a detail pass.",
+      "Tier 2 sampling only: universities/TAFEs, most local councils, and health districts were not exhaustively swept this run; rotated to energy-network GBE and NSW regional council procurement instead."
     ],
     "recommended_seed_additions": [
-      "AusTender Supplier Portal (new public, searchable supplier-capability database rolling out from mid-2026 via tenders.gov.au) - track once live",
-      "Bradfield Development Authority industry/procurement opportunities (Western Parkland City, NSW) - wpca.sydney / bradfield",
-      "Buying for Victoria companion domain buyingfor.vic.gov.au/browse-tenders (front-of-house to tenders.vic.gov.au)",
-      "Hawkesbury City Council current tenders (NSW local government not previously catalogued)"
+      "Endeavour Energy - Suppliers / Tendering & EOI (SAP Ariba) - NSW electricity distribution network GBE not previously in the known source list.",
+      "Southern Sydney Regional Organisation of Councils (SSROC) - joint/regional council procurement via VendorPanel; aggregates tenders for 12 NSW member councils.",
+      "Consider an authenticated SAP Ariba Discovery supplier account so future runs can read gated corporate RFx detail."
     ]
   },
   "months": [
@@ -51,7 +48,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 35,
+      "new_tenders": 40,
       "active_tenders": 0
     }
   ],
@@ -3573,7 +3570,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ANMM-wharf7-south-wharf-remediation",
@@ -4421,8 +4418,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:S-EST11042",
@@ -4482,8 +4479,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:JSD-RFT-75462-1",
@@ -4543,8 +4540,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:sydney-park-junction-stage-2-construction",
@@ -4607,8 +4604,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:high-pressure-water-blasting-bega-region",
@@ -4670,8 +4667,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:rural-regional-air-transport-services-rfi",
@@ -4731,8 +4728,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:storm-damaged-roof-replacement-OoS25-26-028",
@@ -4793,8 +4790,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:hawkesbury-city-council-construction-services",
@@ -4856,8 +4853,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:VP513149-long-day-care-rosewood",
@@ -4920,8 +4917,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:VP512938-long-day-care-chinchilla",
@@ -4984,8 +4981,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:VP513321-everton-electorate-office-fitout",
@@ -5051,6 +5048,316 @@
       "last_seen": "2026-07-07",
       "seen_dates": [
         "2026-07-07"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:FSANZ-2026/6",
+      "source_name": "AusTender - Current ATM list",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "FSANZ-2026/6",
+      "tender_url": "https://www.tenders.gov.au/Advert/Show/b6793ee2-9cdb-4e98-8ff1-f32f72d4eb32",
+      "access": "public",
+      "title": "Provision of Food Analysis Services (FSANZ Laboratory Panel)",
+      "buyer": "Food Standards Australia New Zealand (FSANZ)",
+      "buyer_url": "https://www.foodstandards.gov.au/",
+      "category": "Laboratory / food testing services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for Tender to establish a panel for the provision of food analysis (laboratory testing) services to Food Standards Australia New Zealand.",
+      "deliverables_summary": "Supplier(s) to provide accredited food analysis / laboratory testing services to FSANZ under a panel arrangement. Full scope and required test categories are in the tender documents, which are hosted on the FSANZ website.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to all (panel establishment)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-13",
+      "closing_time": "2:00 PM AEST (Canberra local time)",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [
+        {
+          "name": "FSANZ Laboratory Panel - tender documents",
+          "url": "https://www.foodstandards.gov.au/news/fsanz-laboratory-panel"
+        }
+      ],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia / New Zealand",
+      "contact_name": "",
+      "contact_email": "tenders@foodstandards.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "health",
+        "laboratory",
+        "panel",
+        "food-safety"
+      ],
+      "first_seen": "2026-07-08",
+      "detail_source": "",
+      "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement published on AusTender with supporting documents on the FSANZ (buyer) website.",
+      "notes": "Headline-level only: AusTender ATM detail page is blocked by this session's egress policy (403), so scope, evaluation criteria and value could not be extracted. Closing date/time and contact email taken from AusTender search snippet. Pending detail pass.",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:one-health-national-conference-2027-event-mgmt",
+      "source_name": "AusTender - Current ATM list",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.gov.au/atm",
+      "access": "public",
+      "title": "One Health National Conference 2027 - Event Management Services",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Event management services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for Tender for the provision of event management services to deliver the One Health National Conference 2027.",
+      "deliverables_summary": "Supplier to plan and deliver end-to-end event management for the 2027 One Health National Conference. Full scope is in the tender documents on AusTender.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-13",
+      "closing_time": "2:00 PM (ACT local time)",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "event-management",
+        "health",
+        "one-health"
+      ],
+      "first_seen": "2026-07-08",
+      "detail_source": "",
+      "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement on AusTender.",
+      "notes": "Headline-level only. AusTender ATM detail page unreachable this session (egress policy 403), so the buying agency, value and scope could not be confirmed - buyer left blank rather than guessed. Closing date/time from AusTender search snippet. Pending detail pass.",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:sbt-fishery-monitoring-services",
+      "source_name": "AusTender - Current ATM list",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.gov.au/atm",
+      "access": "public",
+      "title": "Fishery Monitoring Services - Southern Bluefin Tuna (SBT) Fishery",
+      "buyer": "Australian Fisheries Management Authority (AFMA)",
+      "buyer_url": "https://www.afma.gov.au/",
+      "category": "Environmental / fishery monitoring services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "Provision of fishery monitoring services for the Southern Bluefin Tuna (SBT) Fishery.",
+      "deliverables_summary": "Supplier to deliver monitoring services for the Southern Bluefin Tuna fishery (e.g. catch/effort and compliance monitoring). Full scope is in the AusTender tender documents.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-08",
+      "closing_time": "5:00 PM (ACT local time)",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "fisheries",
+        "environment",
+        "monitoring",
+        "closing-today"
+      ],
+      "first_seen": "2026-07-08",
+      "detail_source": "",
+      "reasoning": "Found via web search of the AusTender current ATM list; buyer-originated Commonwealth procurement (AFMA) on AusTender.",
+      "notes": "Headline-level only. Closes today (RUN_DATE) at 5:00 PM ACT, so effectively closing-soon. AusTender detail page unreachable this session (egress policy 403). Buyer inferred from the fishery context (AFMA administers the SBT fishery); confirm on detail page. Pending detail pass.",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "SSROC:T2025-16-sustainable-pavements",
+      "source_name": "SSROC - Tenders, Quotations & EOIs (VendorPanel)",
+      "source_url": "https://ssroc.nsw.gov.au/procurement/tenders-and-eoi/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales (regional council group)",
+      "state": "NSW",
+      "tender_id": "T2025-16",
+      "tender_url": "https://ssroc.nsw.gov.au/procurement/tenders-and-eoi/",
+      "access": "free-registration",
+      "title": "Sustainable Pavements - Road Construction Material & Related Services",
+      "buyer": "Southern Sydney Regional Organisation of Councils (SSROC) Incorporated",
+      "buyer_url": "https://ssroc.nsw.gov.au/",
+      "category": "Road construction materials & services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "SSROC regional (joint-council) tender for the supply of sustainable road construction/pavement materials and related services on behalf of its member councils.",
+      "deliverables_summary": "Supplier to provide sustainable pavement / road construction materials and related services under a panel arrangement available to SSROC's 12 member councils. Full scope and specifications are in the VendorPanel tender documents.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to all (regional council panel)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via VendorPanel portal",
+      "lodgement_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Southern Sydney region, NSW",
+      "contact_name": "",
+      "contact_email": "procurement@ssroc.nsw.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "nsw",
+        "regional-procurement",
+        "roads",
+        "sustainability",
+        "vendorpanel"
+      ],
+      "first_seen": "2026-07-08",
+      "detail_source": "",
+      "reasoning": "Discovered while hunting for new sources: SSROC is a buyer-originated regional council procurement body (new to this routine) that publishes joint tenders via VendorPanel. This tender was listed as current on the SSROC procurement page.",
+      "notes": "Headline-level only. SSROC page returned 403 to the fetch tool (WAF); closing date and full scope not publicly extractable this run. Contact email from search snippet. Pending detail pass.",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "SSROC:T2025-12-stationery-furniture-janitorial",
+      "source_name": "SSROC - Tenders, Quotations & EOIs (VendorPanel)",
+      "source_url": "https://ssroc.nsw.gov.au/procurement/tenders-and-eoi/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales (regional council group)",
+      "state": "NSW",
+      "tender_id": "T2025-12",
+      "tender_url": "https://ssroc.nsw.gov.au/procurement/tenders-and-eoi/",
+      "access": "free-registration",
+      "title": "Stationery, Furniture, Janitorial & Associated Products",
+      "buyer": "Southern Sydney Regional Organisation of Councils (SSROC) Incorporated",
+      "buyer_url": "https://ssroc.nsw.gov.au/",
+      "category": "Office supplies / furniture / janitorial products",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "SSROC regional (joint-council) tender for the supply of stationery, furniture, janitorial and associated products on behalf of its member councils.",
+      "deliverables_summary": "Supplier(s) to provide stationery, furniture, janitorial and associated products under a regional panel available to SSROC member councils. Full scope and product categories are in the VendorPanel tender documents.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to all (regional council panel)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via VendorPanel portal",
+      "lodgement_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Southern Sydney region, NSW",
+      "contact_name": "",
+      "contact_email": "procurement@ssroc.nsw.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "nsw",
+        "regional-procurement",
+        "office-supplies",
+        "vendorpanel"
+      ],
+      "first_seen": "2026-07-08",
+      "detail_source": "",
+      "reasoning": "Discovered via SSROC source discovery (see above); listed as a current SSROC tender on the procurement page, published via VendorPanel.",
+      "notes": "Headline-level only. SSROC page returned 403 to the fetch tool; closing date and full scope not publicly extractable this run. Confirm whether still open. Pending detail pass.",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -5126,29 +5433,30 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender — Current ATM list",
+      "source_name": "AusTender - Current ATM list",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": null,
+      "feed_or_api_url": "https://www.tenders.gov.au/atm",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; queried this run for June/July 2026 ATMs (OPC-2026-02 printing RFT captured).",
+      "how_discovered": "Known canonical Tier 1 source, re-checked this run.",
       "recommended_check_frequency": "daily",
-      "notes": "Detail pages returned HTTP 403 to the fetch tool this run; data via search snippets only.",
+      "notes": "Reachable via web search only this run: direct fetch of tenders.gov.au is blocked by the session egress policy (403 to CONNECT). ATM detail pages could not be scraped; captured items are headline-level.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-28",
+      "last_seen": "2026-07-08",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
         "2026-06-27",
-        "2026-06-28"
+        "2026-06-28",
+        "2026-07-08"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria",
@@ -5248,27 +5556,28 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national, corporate)",
+      "jurisdiction": "Australia (global platform)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier-3 check. Public posting board where buyers post open RFx; full detail requires a free supplier account. Could not be opened this run (WebFetch 403) so no individual opportunity captured; recorded to keep the corporate source set complete.",
+      "how_discovered": "Mandatory Tier 3 check re-run this run.",
       "recommended_check_frequency": "daily",
-      "notes": "Known source, re-affirmed. Opportunity detail is registration-gated; no corporate RFx fabricated. Authenticated fetch access required to read individual events.",
+      "notes": "Public posting board for corporate RFx, but AU opportunity detail is registration-gated. No publicly-visible AU opportunity extractable without an authenticated supplier session this run; recorded as portal only, no tender fabricated.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-04",
+      "last_seen": "2026-07-08",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
-        "2026-07-04"
+        "2026-07-04",
+        "2026-07-08"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -7517,8 +7826,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Bradfield Development Authority - Industry & procurement opportunities",
@@ -7539,8 +7848,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Buying for Victoria - Browse tenders (buyingfor.vic.gov.au)",
@@ -7561,8 +7870,8 @@
         "2026-07-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Hawkesbury City Council - Tenders",
@@ -7581,6 +7890,72 @@
       "last_seen": "2026-07-07",
       "seen_dates": [
         "2026-07-07"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Endeavour Energy - Suppliers / Tendering & EOI",
+      "source_url": "https://www.endeavourenergy.com.au/suppliers/tendering-expression-of-interest",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for NSW network/utility procurement portals; Endeavour Energy's supplier page states all tenders (RFT/RFP/RFI) are managed on the SAP Ariba e-sourcing platform and require SAP Ariba registration to receive alerts and submit responses.",
+      "recommended_check_frequency": "weekly",
+      "notes": "NSW electricity distribution network (government-owned/GBE lineage). Buyer-originated; opportunities are registration-gated on SAP Ariba. Procurement contact: procurement@endeavourenergy.com.au. Not previously in the known-source list. Individual opportunities not captured (login-gated) - recorded as a portal only.",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Southern Sydney Regional Organisation of Councils (SSROC) - Tenders, Quotations & EOIs",
+      "source_url": "https://ssroc.nsw.gov.au/procurement/tenders-and-eoi/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Source-discovery search for NSW regional/joint council procurement; SSROC is an incorporated association of 12 southern-Sydney councils that runs joint tenders and publishes/receives submissions via the VendorPanel portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated regional procurement body (not an aggregator). Current tenders observed include T2025-16 (Sustainable Pavements) and T2025-12 (Stationery/Furniture/Janitorial). Contact: procurement@ssroc.nsw.gov.au. Public listing visible; full detail and lodgement via VendorPanel. New to this routine.",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Food Standards Australia New Zealand (FSANZ) - Laboratory Panel / tenders",
+      "source_url": "https://www.foodstandards.gov.au/news/fsanz-laboratory-panel",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Followed from the AusTender FSANZ-2026/6 ATM to the buyer's own website where tender documents are hosted.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated Commonwealth agency page hosting the current food-analysis laboratory panel RFT documents; complements the AusTender listing.",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "seen_dates": [
+        "2026-07-08"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
