@@ -70,7 +70,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "internal-audit", "professional-services", "NSW"],
+      "tags": [
+        "local-government",
+        "internal-audit",
+        "professional-services",
+        "NSW"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via search of buy.nsw open tenders and confirmed against Wingecarribee Shire Council's own tenders page (RFT T-2026-15). Buyer-originated listing on the NSW government procurement portal.",
@@ -122,7 +127,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "lifts-elevators", "building-property", "NSW"],
+      "tags": [
+        "health",
+        "lifts-elevators",
+        "building-property",
+        "NSW"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via search of buy.nsw open tenders; buyer-originated listing by Central Coast Local Health District (a NSW health district) on the NSW government procurement portal.",
@@ -173,7 +183,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["construction", "road-works", "pavement", "NSW"],
+      "tags": [
+        "construction",
+        "road-works",
+        "pavement",
+        "NSW"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via search of buy.nsw open tenders. Buyer-originated listing on the NSW government procurement portal.",
@@ -221,7 +236,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gbe", "electricity-network", "power-system-protection", "TAS"],
+      "tags": [
+        "gbe",
+        "electricity-network",
+        "power-system-protection",
+        "TAS"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via search of Tasmanian tenders; TasNetworks is the Tasmanian electricity transmission/distribution GBE publishing this RFT directly and via Tenders Tasmania. Buyer-originated. TasNetworks recorded as a new source this run.",
@@ -272,7 +292,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "heritage", "venue-activation", "EOI", "TAS"],
+      "tags": [
+        "local-government",
+        "heritage",
+        "venue-activation",
+        "EOI",
+        "TAS"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via search of Tasmanian tenders; buyer-originated EOI by the City of Hobart, advertised via Tenders Tasmania. City of Hobart recorded as a new source this run.",
@@ -331,7 +357,14 @@
       "contact_name": "Courtney Davidson (Reeds Consulting Pty Ltd)",
       "contact_email": "Courtney.Davidson@reedsconsulting.com.au",
       "contact_phone": "03 8660 3000",
-      "tags": ["gbe", "water", "sewer", "civil-construction", "developer-works", "VIC"],
+      "tags": [
+        "gbe",
+        "water",
+        "sewer",
+        "civil-construction",
+        "developer-works",
+        "VIC"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "Public trade-notice snippet describing the RFT (contractor accreditation categories, scope, closing date and contact); GWW advertises construction contracts via illion TenderLink.",
       "reasoning": "Found via search for Greater Western Water tenders; buyer-originated (GWW, run by consultant Reeds Consulting) and advertised on GWW's own TenderLink portal. Greater Western Water TenderLink portal recorded as a new source this run.",
@@ -379,7 +412,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gbe", "water", "engineering-design", "panel", "market-sounding", "WA"],
+      "tags": [
+        "gbe",
+        "water",
+        "engineering-design",
+        "panel",
+        "market-sounding",
+        "WA"
+      ],
       "first_seen": "2026-07-09",
       "detail_source": "",
       "reasoning": "Found via Tenders WA / Water Corporation search; buyer-originated early tender advice from the WA state water GBE flagging an upcoming EDS Panel procurement. Captured as market-sounding per the prompt's guidance on early market engagement notices.",
