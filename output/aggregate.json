@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-09",
+  "generated": "2026-07-10",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -15,32 +15,33 @@
     "2026-07-06",
     "2026-07-07",
     "2026-07-08",
-    "2026-07-09"
+    "2026-07-09",
+    "2026-07-10"
   ],
-  "run_count": 15,
+  "run_count": 16,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-09",
-  "latest_coverage_summary": "Daily incremental run. Tier 1 swept via web search across Commonwealth (AusTender) and all state/territory portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL). Origin fetches were broadly blocked this session (see gaps): AusTender, buy.nsw and the Tasmanian portals returned HTTP 403 to the fetch tool, so opportunities were captured at headline level from search-result snippets and cross-checked across multiple queries. Seven fresh, publicly-visible, buyer-originated opportunities captured this run, spanning NSW local government and health, Tasmanian GBE and council, a Victorian water GBE (via TenderLink) and a WA water GBE market sounding. Tier 2/3 source discovery focus: three genuinely new buyer-originated sources found and recorded (TasNetworks tenders page; Greater Western Water TenderLink portal; City of Hobart tenders/EOI). Tier 3 (SAP Ariba Discovery) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login; recorded as a portal source only, not fabricated as tenders.",
+  "latest_run": "2026-07-10",
+  "latest_coverage_summary": "Daily incremental run. Tier 1 swept via web search across Commonwealth (AusTender) and all state/territory portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT). Direct fetches were broadly blocked this session (see gaps): AusTender, buy.nsw, tenders.vic.gov.au, VendorPanel, Sydney Water and Queensland Health all returned HTTP 403 to the fetch tool (target-side WAF), so opportunities were captured at headline level from search-result snippets and cross-checked across multiple queries. Four fresh, publicly-visible, buyer-originated opportunities captured this run, spanning NSW local government (Blacktown City Council), NSW state transport (Transport for NSW - two distinct opportunities) and NSW public health (Central Coast Local Health District). Tier 2/3 source discovery focus: two genuinely new buyer-originated sources recorded (the new Australian Government Supplier Portal opening for registration mid-2026, and Development Victoria's own Tenders & EOI channel). Tier 3 (SAP Ariba Discovery) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login; recorded as a portal source only, not fabricated as tenders. Development Victoria's Commonwealth Games 2026 construction procurement surfaced but returned only stale/2023-dated timeline data and could not be confirmed as a current live opportunity, so it was deliberately NOT captured as a tender.",
   "latest_run_metadata": {
-    "run_date": "2026-07-09",
-    "coverage_summary": "Daily incremental run. Tier 1 swept via web search across Commonwealth (AusTender) and all state/territory portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL). Origin fetches were broadly blocked this session (see gaps): AusTender, buy.nsw and the Tasmanian portals returned HTTP 403 to the fetch tool, so opportunities were captured at headline level from search-result snippets and cross-checked across multiple queries. Seven fresh, publicly-visible, buyer-originated opportunities captured this run, spanning NSW local government and health, Tasmanian GBE and council, a Victorian water GBE (via TenderLink) and a WA water GBE market sounding. Tier 2/3 source discovery focus: three genuinely new buyer-originated sources found and recorded (TasNetworks tenders page; Greater Western Water TenderLink portal; City of Hobart tenders/EOI). Tier 3 (SAP Ariba Discovery) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login; recorded as a portal source only, not fabricated as tenders.",
-    "sources_checked": 14,
-    "tenders_found": 7,
-    "new_sources_found": 3,
-    "entries_pending_detail": 6,
+    "run_date": "2026-07-10",
+    "coverage_summary": "Daily incremental run. Tier 1 swept via web search across Commonwealth (AusTender) and all state/territory portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT). Direct fetches were broadly blocked this session (see gaps): AusTender, buy.nsw, tenders.vic.gov.au, VendorPanel, Sydney Water and Queensland Health all returned HTTP 403 to the fetch tool (target-side WAF), so opportunities were captured at headline level from search-result snippets and cross-checked across multiple queries. Four fresh, publicly-visible, buyer-originated opportunities captured this run, spanning NSW local government (Blacktown City Council), NSW state transport (Transport for NSW - two distinct opportunities) and NSW public health (Central Coast Local Health District). Tier 2/3 source discovery focus: two genuinely new buyer-originated sources recorded (the new Australian Government Supplier Portal opening for registration mid-2026, and Development Victoria's own Tenders & EOI channel). Tier 3 (SAP Ariba Discovery) confirmed as registration-gated with no publicly-visible AU opportunity extractable without login; recorded as a portal source only, not fabricated as tenders. Development Victoria's Commonwealth Games 2026 construction procurement surfaced but returned only stale/2023-dated timeline data and could not be confirmed as a current live opportunity, so it was deliberately NOT captured as a tender.",
+    "sources_checked": 16,
+    "tenders_found": 4,
+    "new_sources_found": 2,
+    "entries_pending_detail": 4,
     "gaps": [
-      "www.tenders.gov.au (AusTender) returned HTTP 403 to the fetch tool this run (egress/WAF block); the current ATM list and ATM detail pages could not be opened directly. No new Commonwealth opportunity was captured with confidence this run beyond items already tracked in prior runs; Commonwealth coverage was headline-level via search only.",
-      "buy.nsw.gov.au returned HTTP 403 to the fetch tool; NSW opportunities (Wingecarribee internal audit, Gosford Lift 13 RFQ, HW4 Log Creek pavement RFT) were captured at headline level from search-result snippets and cross-checked, but full detail pages, documents, evaluation criteria and contacts could not be scraped - flagged entries_pending_detail.",
-      "www.tasnetworks.com.au and www.tenders.tas.gov.au both returned HTTP 403 to the fetch tool; the TasNetworks TISPS RFT and City of Hobart Dorney House EOI were captured at headline level from search snippets only. Closing times, document lists and contacts not extractable this run.",
+      "www.tenders.gov.au (AusTender) returned HTTP 403 to the fetch tool this run (egress/WAF block); the current ATM list and ATM detail pages could not be opened directly. Commonwealth coverage was headline-level via search only; no new Commonwealth opportunity was captured with confidence beyond items already tracked in prior runs.",
+      "buy.nsw.gov.au / tenders.nsw.gov.au returned HTTP 403 to the fetch tool; NSW opportunities (Blacktown City Council Christmas decorations RFT, TfNSW Bradfield Bus Interchange EOI, TfNSW Woolgoolga-to-Ballina koala monitoring RFT, Central Coast LHD EAP RFQ) were captured at headline level from search-result snippets and cross-checked, but full detail pages, documents, evaluation criteria and contacts could not be scraped - all flagged entries_pending_detail.",
+      "www.tenders.vic.gov.au, www.vendorpanel.com.au, www.sydneywater.com.au and www.health.qld.gov.au all returned HTTP 403 to the fetch tool; Victorian, council-platform, Sydney Water and Queensland Health tender detail pages could not be opened. No confirmed new opportunity captured from these this run beyond headline signals already known.",
+      "Development Victoria Commonwealth Games 2026 construction procurement (main works contractor EOI/RFP) surfaced in search but only returned stale timeline data (2023 dates) and could not be confirmed as a current live opportunity; deliberately not captured as a tender to avoid fabrication.",
       "SAP Ariba Discovery / SAP Business Network Discovery (Tier 3, mandatory): opportunity list is registration-gated; no publicly-visible AU RFx could be captured without an authenticated supplier session. Recorded as a portal source only, not fabricated as a tender.",
-      "Greater Western Water 'Montgomery Estate - Branch Sewer' RFT is being run by consultant Reeds Consulting on GWW's behalf and advertised via TenderLink; detail captured from a public trade-notice snippet. The TenderLink detail page itself was not opened this run - value and evaluation criteria left null.",
-      "Tier 2 sampling only: most universities/TAFEs, the majority of local councils, and health districts were not exhaustively swept this run; rotated to Tasmanian GBE/council and Victorian/WA water GBEs instead. Buying for Victoria, QTenders and Tenders SA/WA returned only known or headline-level items this run."
+      "Tier 2 sampling only: most universities/TAFEs, the majority of local councils, and most health districts outside NSW were not exhaustively swept this run; coverage rotated to NSW transport/health/local-government. WA, SA, TAS, NT and ACT portals returned only known or headline-level items this run."
     ],
     "recommended_seed_additions": [
-      "TasNetworks - Tenders (https://www.tasnetworks.com.au/tenders): Tasmanian electricity transmission/distribution GBE running RFTs (e.g. TISPS) directly and via Tenders Tasmania; not previously in the known-source list.",
-      "Greater Western Water - Current Tenders (https://portal.tenderlink.com/greaterwesternwater/alltenders/): Victorian metropolitan water GBE advertising construction works via illion TenderLink; sibling to the already-known Melbourne Water / WaterNSW / SA Water sources.",
-      "City of Hobart - Tenders & EOI (https://www.hobartcity.com.au): Tasmanian capital-city council running EOIs (e.g. Dorney House activation) via Tenders Tasmania; worth a dedicated council check.",
-      "Consider an authenticated SAP Ariba Discovery supplier account so future runs can read gated corporate RFx detail (carried from prior runs)."
+      "Australian Government Supplier Portal (https://suppliers.tenders.gov.au/): new Commonwealth supplier-registration database launching mid-2026, with supplier registration opening from July 2026; complements AusTender and is worth monitoring as agencies begin sourcing capability through it.",
+      "Development Victoria - Doing business with us / Tenders & EOI (https://www.development.vic.gov.au/about/tenders-and-eoi): Victorian state development GBE that runs EOIs/tenders (e.g. major precinct and Games-related works) directly on its own channel as well as via Buying for Victoria; sibling to other state development/works agencies.",
+      "Consider an authenticated SAP Ariba Discovery supplier account so future runs can read gated corporate RFx detail (carried from prior runs).",
+      "Consider a fetch path that is not WAF-blocked for the Tier-1 government portals (AusTender, buy.nsw, tenders.vic) so deliverables/documents can be extracted rather than left at headline level (carried from prior runs)."
     ]
   },
   "months": [
@@ -51,7 +52,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 47,
+      "new_tenders": 51,
       "active_tenders": 0
     }
   ],
@@ -5429,8 +5430,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:cclhd-gosford-lift13-p1-carpark-replacement",
@@ -5493,8 +5494,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:healthshare-hw4-log-creek-pavement-rehab-stage2-kerb",
@@ -5556,8 +5557,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TasNetworks:tisps-integrated-system-protection-scheme",
@@ -5616,8 +5617,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersTasmania:hobart-dorney-house-activation-eoi",
@@ -5680,8 +5681,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "GreaterWesternWater:montgomery-estate-branch-sewer-rft",
@@ -5753,8 +5754,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersWA:watercorporation-2026-eds-panel-market-sounding",
@@ -5813,6 +5814,278 @@
       "last_seen": "2026-07-09",
       "seen_dates": [
         "2026-07-09"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "buy.nsw:blacktown-christmas-decorations-rft-2026",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://www.tenders.nsw.gov.au/?event=public.RFT.list",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": null,
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Provision, hire, installation, maintenance and removal of Christmas decorations - Blacktown Local Government Area",
+      "buyer": "Blacktown City Council",
+      "buyer_url": "https://www.blacktown.nsw.gov.au/",
+      "category": "Facilities / events / seasonal decorations",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Blacktown City Council is inviting tenders from suitably qualified suppliers for the provision, hire, installation, maintenance and removal of Christmas decorations across the Blacktown Local Government Area.",
+      "deliverables_summary": "Supply, hire, installation, ongoing maintenance and end-of-season removal of Christmas decorations across public places in the Blacktown LGA, delivering a safe, well-presented festive display for the Council's annual Christmas program.",
+      "key_deliverables": [
+        "Provision / hire of Christmas decorations",
+        "Installation across the Blacktown Local Government Area",
+        "Maintenance of decorations during the display period",
+        "Removal of decorations at end of season"
+      ],
+      "scope_of_work": null,
+      "requirements": [
+        "Suitably qualified and experienced supplier (headline requirement stated in the notice; full mandatory conditions not extractable this run)"
+      ],
+      "eligibility": "Open to all suitably qualified suppliers",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-22",
+      "closing_time": "3:00 PM (AEST)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Blacktown Local Government Area, Western Sydney, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "events",
+        "facilities",
+        "seasonal",
+        "NSW"
+      ],
+      "first_seen": "2026-07-10",
+      "detail_source": "",
+      "reasoning": "Found via search of buy.nsw open tenders (buyer-originated listing on the NSW government procurement portal) and cross-checked against Blacktown City Council references. Closing date/time confirmed across two searches.",
+      "notes": "Headline-level only: buy.nsw returned HTTP 403 to the fetch tool this run, so the full detail page, documents, evaluation criteria and contacts could not be scraped. Tender ID not captured this run.",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:tfnsw-bradfield-bus-interchange-eoi-2026",
+      "source_name": "buy.nsw / NSW eTendering (Transport for NSW)",
+      "source_url": "https://www.tenders.nsw.gov.au/TfNSW/?event=public.RFT",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": null,
+      "tender_url": "https://www.tenders.nsw.gov.au/TfNSW/?event=public.RFT",
+      "access": "public",
+      "title": "EOI - Construction of Bradfield Bus Interchange (New Bus Service for Western Sydney)",
+      "buyer": "Transport for NSW",
+      "buyer_url": "https://www.transport.nsw.gov.au/operations/roads-and-waterways/business-and-industry/partners-and-suppliers/tenders-and-contracts",
+      "category": "Construction / transport infrastructure",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Transport for NSW is seeking Expressions of Interest from pre-qualified contractors to deliver the construction of the Bradfield Bus Interchange as part of the New Bus Service for Western Sydney.",
+      "deliverables_summary": "Construction of the Bradfield Bus Interchange - a new bus interchange supporting the New Bus Service for Western Sydney - to be delivered by a pre-qualified contractor. This EOI stage shortlists capable contractors ahead of a subsequent tender/proposal stage.",
+      "key_deliverables": [
+        "Construction of the Bradfield Bus Interchange",
+        "Enabling infrastructure for the New Bus Service for Western Sydney"
+      ],
+      "scope_of_work": null,
+      "requirements": [
+        "Pre-qualified contractor status with Transport for NSW (headline eligibility; specific prequalification scheme/level not extractable this run)"
+      ],
+      "eligibility": "Pre-qualified contractors only (Transport for NSW prequalification)",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-22",
+      "closing_time": "3:00 PM (AEST)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via NSW eTendering (Transport for NSW)",
+      "lodgement_url": "https://www.tenders.nsw.gov.au/TfNSW/?event=public.RFT",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Bradfield / Western Sydney, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "transport",
+        "construction",
+        "infrastructure",
+        "EOI",
+        "prequalified",
+        "Western-Sydney",
+        "NSW"
+      ],
+      "first_seen": "2026-07-10",
+      "detail_source": "",
+      "reasoning": "Found via search of Transport for NSW open tenders on NSW eTendering (buyer-originated). Cross-checked closing date across searches.",
+      "notes": "Headline-level only: NSW eTendering returned HTTP 403 to the fetch tool this run. Tender ID, documents, evaluation criteria and contacts not extractable. EOI (first stage of a multi-stage procurement).",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:tfnsw-w2b-koala-population-monitoring-yr10-15",
+      "source_name": "buy.nsw / NSW eTendering (Transport for NSW - Roads)",
+      "source_url": "https://www.tenders.nsw.gov.au/rms/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": null,
+      "tender_url": "https://www.tenders.nsw.gov.au/rms/",
+      "access": "public",
+      "title": "Koala population monitoring (Years 10-15) - Woolgoolga to Ballina Pacific Highway Upgrade",
+      "buyer": "Transport for NSW",
+      "buyer_url": "https://www.transport.nsw.gov.au/operations/roads-and-waterways/business-and-industry/partners-and-suppliers/tenders-and-contracts",
+      "category": "Environmental / ecological services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Transport for NSW is seeking experienced ecological specialists to undertake koala population monitoring for years 10-15 in accordance with the Woolgoolga to Ballina Pacific Highway Upgrade Koala Management Plan V6 (Sept 2024).",
+      "deliverables_summary": "Provision of ecological specialist services to deliver koala population monitoring across years 10-15 of the Woolgoolga to Ballina Pacific Highway Upgrade, in accordance with the project's Koala Management Plan V6, producing monitoring data and reporting on koala populations in the upgrade corridor.",
+      "key_deliverables": [
+        "Koala population monitoring surveys (years 10-15)",
+        "Monitoring in accordance with Koala Management Plan V6 (Sept 2024)",
+        "Monitoring data and reporting deliverables"
+      ],
+      "scope_of_work": null,
+      "requirements": [
+        "Experienced ecological specialists (headline requirement; specific licences/accreditations not extractable this run)"
+      ],
+      "eligibility": "Open to all suitably experienced ecological specialists",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "Years 10-15 of the monitoring program",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-13",
+      "closing_time": "3:00 PM (AEST)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via NSW eTendering (Transport for NSW - Roads and Maritime Projects)",
+      "lodgement_url": "https://www.tenders.nsw.gov.au/rms/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Woolgoolga to Ballina, Pacific Highway corridor, Northern NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "transport",
+        "environmental",
+        "ecology",
+        "koala",
+        "monitoring",
+        "NSW"
+      ],
+      "first_seen": "2026-07-10",
+      "detail_source": "",
+      "reasoning": "Found via search of Transport for NSW (Roads and Maritime Projects) open tenders on NSW eTendering (buyer-originated). Scope (koala monitoring years 10-15 per KMP V6) captured from the search snippet.",
+      "notes": "Headline-level only: NSW eTendering returned HTTP 403 to the fetch tool this run. Tender ID, documents, evaluation criteria, value and contacts not extractable.",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "NSWHealth:cclhd-employee-assistance-program-eap-rfq-2026",
+      "source_name": "NSW Health eTendering (buy.nsw)",
+      "source_url": "https://www.tenders.nsw.gov.au/health/?event=public.RFT.list",
+      "source_type": "health",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": null,
+      "tender_url": "https://www.tenders.nsw.gov.au/health/?event=public.RFT.list",
+      "access": "public",
+      "title": "Provision of an Employee Assistance Program (EAP) to service all Local Health Districts",
+      "buyer": "Central Coast Local Health District (on behalf of NSW Local Health Districts)",
+      "buyer_url": "https://www.cclhd.health.nsw.gov.au/",
+      "category": "Health / employee wellbeing / professional services",
+      "category_codes": [],
+      "procurement_type": "RFQ",
+      "current_status": "open",
+      "description": "Central Coast Local Health District is requesting quotes for the provision of an Employee Assistance Program (EAP) to service all NSW Local Health Districts.",
+      "deliverables_summary": "Provision of an Employee Assistance Program (EAP) - confidential counselling and employee wellbeing/support services - for the staff of all NSW Local Health Districts, procured through Central Coast LHD on behalf of the districts.",
+      "key_deliverables": [
+        "Employee Assistance Program (EAP) counselling and support services",
+        "Statewide coverage across all NSW Local Health Districts",
+        "Manager support / critical-incident support (typical EAP scope; to be confirmed from documents)"
+      ],
+      "scope_of_work": null,
+      "requirements": [
+        "Suitably qualified EAP provider capable of servicing all NSW Local Health Districts (headline requirement; full mandatory conditions not extractable this run)"
+      ],
+      "eligibility": "Open to all suitably qualified EAP providers",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-04",
+      "closing_time": null,
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via NSW Health eTendering (buy.nsw)",
+      "lodgement_url": "https://www.tenders.nsw.gov.au/health/?event=public.RFT.list",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "All NSW Local Health Districts (statewide), NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "employee-assistance-program",
+        "wellbeing",
+        "professional-services",
+        "statewide",
+        "NSW"
+      ],
+      "first_seen": "2026-07-10",
+      "detail_source": "",
+      "reasoning": "Found via search of NSW Health eTendering opportunities (buyer-originated on the NSW Health procurement portal). Buyer (Central Coast LHD, servicing all LHDs) and closing date captured from search snippet.",
+      "notes": "Headline-level only: buy.nsw / NSW Health eTendering returned HTTP 403 to the fetch tool this run. Tender ID, closing time, documents, evaluation criteria and contacts not extractable. Some listed key_deliverables reflect typical EAP scope and need confirmation from the RFQ documents.",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -6011,17 +6284,17 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national / global)",
+      "jurisdiction": "Australia (and global)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Checked again this run to satisfy the mandatory Tier-3 sweep; the public posting board lists buyer-posted open RFx but full AU opportunity detail is registration-gated.",
+      "how_discovered": "Mandatory Tier 3 check each run; queried for publicly-visible Australian RFx.",
       "recommended_check_frequency": "daily",
-      "notes": "Already known. Recorded again this run to keep Tier 3 coverage explicit: no publicly-visible AU RFx could be captured without an authenticated supplier account; no corporate tenders fabricated. An authenticated session is recommended for future runs.",
+      "notes": "Registration-gated: the opportunity list requires a free SAP Business Network supplier account. No publicly-visible AU RFx was extractable without an authenticated session this run. Recorded as a portal source only - not fabricated as tenders. Largest single slice of corporate opportunity; an authenticated account is recommended for future runs.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -6029,9 +6302,10 @@
         "2026-06-28",
         "2026-07-04",
         "2026-07-08",
-        "2026-07-09"
+        "2026-07-09",
+        "2026-07-10"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8436,8 +8710,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Greater Western Water - Current Tenders (TenderLink)",
@@ -8458,8 +8732,8 @@
         "2026-07-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "City of Hobart - Tenders & EOI",
@@ -8478,6 +8752,50 @@
       "last_seen": "2026-07-09",
       "seen_dates": [
         "2026-07-09"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Australian Government Supplier Portal",
+      "source_url": "https://suppliers.tenders.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth (Australia)",
+      "platform": "AusTender / custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced while searching for Commonwealth 'become a supplier' / GBE procurement portals; a new Australian Government Supplier Portal is launching mid-2026 with supplier registration opening from July 2026 as part of the federal procurement modernisation agenda.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated Commonwealth registration database (not an aggregator). Currently a capability/registration directory rather than a tender board; worth monitoring as agencies begin sourcing capability through it. Complements AusTender. Origin not fetched this run (Tier-1 gov.au domains WAF-blocked).",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Development Victoria - Tenders & EOI",
+      "source_url": "https://www.development.vic.gov.au/about/tenders-and-eoi",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "custom (buyer page) + Buying for Victoria",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Found while investigating the Commonwealth Games 2026 / precinct construction procurement; Development Victoria (the state's development GBE) publishes EOIs and tenders directly on its own 'Doing business with us' page as well as via Buying for Victoria.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated Victorian development agency running major works EOIs/RFPs. Not previously in the known-source list. Origin returned HTTP 403 to the fetch tool this run; individual opportunity freshness (e.g. Games-related works) could not be confirmed and was not captured as a tender.",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "seen_dates": [
+        "2026-07-10"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
