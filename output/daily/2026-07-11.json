@@ -63,7 +63,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "energy", "natural-gas", "utilities", "nsw"],
+      "tags": [
+        "health",
+        "energy",
+        "natural-gas",
+        "utilities",
+        "nsw"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Surfaced via buy.nsw / NSW eTendering health-portal search for recently published NSW RFTs; buyer-originated (HealthShare NSW on the NSW Government portal).",
@@ -111,7 +117,13 @@
       "contact_name": "Jaco Van Staden (Project Manager)",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["education", "construction", "refurbishment", "queensland", "schools"],
+      "tags": [
+        "education",
+        "construction",
+        "refurbishment",
+        "queensland",
+        "schools"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Found via QTenders directory and qld2032 QTenders mirror (data sourced from the QLD Dept of Housing & Public Works QTenders system); buyer-originated (QLD Dept of Education).",
@@ -159,7 +171,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["education", "construction", "refurbishment", "queensland", "schools", "science-lab"],
+      "tags": [
+        "education",
+        "construction",
+        "refurbishment",
+        "queensland",
+        "schools",
+        "science-lab"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Found via QTenders directory and qld2032 QTenders mirror (data sourced directly from the QLD QTenders system); buyer-originated (QLD Dept of Education).",
@@ -207,7 +226,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["energy", "sustainability", "solar", "eoi", "nsw", "government-facilities"],
+      "tags": [
+        "energy",
+        "sustainability",
+        "solar",
+        "eoi",
+        "nsw",
+        "government-facilities"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Surfaced as a discovery signal in search results (aggregator listing australiantenders.com.au #605503); buyer-originated source is buy.nsw / NSW eTendering (NSW Public Works). Buyer-portal listing could not be opened to confirm reference and dates.",
@@ -255,7 +281,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["energy", "bess", "battery-storage", "gbe", "electricity-network", "nsw"],
+      "tags": [
+        "energy",
+        "bess",
+        "battery-storage",
+        "gbe",
+        "electricity-network",
+        "nsw"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Surfaced as a discovery signal in search results referencing Ausgrid BESS tender packages; buyer-originated source is Ausgrid's own e-tendering (TenderLink) portal. Ausgrid is a NSW government-owned electricity distribution GBE.",
