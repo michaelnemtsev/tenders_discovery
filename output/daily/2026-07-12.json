@@ -64,7 +64,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["federal", "panel", "skills-assessment", "education-training"],
+      "tags": [
+        "federal",
+        "panel",
+        "skills-assessment",
+        "education-training"
+      ],
       "first_seen": "2026-07-12",
       "detail_source": "",
       "reasoning": "Discovered via web search of the AusTender Current ATM list (buyer-originated Commonwealth procurement portal). Headline fields (ATM ID, buyer, close date/time) taken from the AusTender search snippet.",
@@ -112,7 +117,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["federal", "defence", "construction", "environmental-remediation", "hazmat"],
+      "tags": [
+        "federal",
+        "defence",
+        "construction",
+        "environmental-remediation",
+        "hazmat"
+      ],
       "first_seen": "2026-07-12",
       "detail_source": "",
       "reasoning": "Discovered via web search of the AusTender Current ATM list (buyer-originated Commonwealth portal). Headline fields (ATM ID, buyer, location, close date/time) taken from the AusTender search snippet.",
@@ -160,7 +171,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["queensland", "health", "standing-offer", "clinical-nutrition", "medical-supplies"],
+      "tags": [
+        "queensland",
+        "health",
+        "standing-offer",
+        "clinical-nutrition",
+        "medical-supplies"
+      ],
       "first_seen": "2026-07-12",
       "detail_source": "",
       "reasoning": "Discovered via web search of the QTenders directory (buyer-originated Queensland Government portal) and corroborated as a Metro North HHS standing-offer sourcing event. Headline fields (buyer, scope title, close date) from QTenders search snippets.",
@@ -208,7 +225,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "vocational-education", "construction", "building-extension", "tastafe"],
+      "tags": [
+        "tasmania",
+        "vocational-education",
+        "construction",
+        "building-extension",
+        "tastafe"
+      ],
       "first_seen": "2026-07-12",
       "detail_source": "",
       "reasoning": "Discovered via web search of the Tasmanian Government eTendering site (tenders.tas.gov.au, buyer-originated portal) with the TasTAFE RFT reference. Headline fields (buyer, tender reference, project) from the Tenders Tasmania search snippet.",

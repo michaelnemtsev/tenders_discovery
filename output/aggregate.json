@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11",
+  "generated": "2026-07-12",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -17,31 +17,33 @@
     "2026-07-08",
     "2026-07-09",
     "2026-07-10",
-    "2026-07-11"
+    "2026-07-11",
+    "2026-07-12"
   ],
-  "run_count": 17,
+  "run_count": 18,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-11",
-  "latest_coverage_summary": "Tier 1 government portals swept via search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA/SA/Tas/NT). Tier 2 GBEs and health touched (HealthShare NSW, Ausgrid, TasNetworks, water corporations). Tier 3 corporate/e-sourcing checked (SAP Ariba Discovery, NBN Co, Australia Post, Transgrid) but no publicly-visible corporate RFx was captured - all were registration- or invitation-gated. Primary constraint this run: the environment's outbound egress returns HTTP 403 on direct WebFetch of every major AU tender portal (AusTender detail pages, buy.nsw, tenders.vic, qld2032), so opportunity detail was extracted from search-result snippets rather than the tender detail pages/documents. As a result most captured tenders are at headline level and still need a full deliverables pass. One genuinely new source found: Procurement Australia (national group-buying organisation running its own tenders).",
+  "latest_run": "2026-07-12",
+  "latest_coverage_summary": "Tier 1 government portals swept via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA/SA/Tas/NT, Tenders ACT). Tier 2 sampled (water corporations, universities, Homes Tasmania, local councils via VendorPanel). Tier 3 attempted (SAP Ariba Discovery, Sydney Water/Ariba, Melbourne Water/Zycus). Detail-page extraction was NOT possible this run: WebFetch returned HTTP 403 for every host attempted (including AusTender, buy.nsw, VendorPanel, council sites, and even non-AU control sites), so no tender detail pages or documents could be opened. All captured opportunities are therefore headline-level, drawn from official-portal search-result snippets, and are flagged as pending a detailed deliverables pass. No deliverables, contacts, values or dates were inferred where not explicitly seen.",
   "latest_run_metadata": {
-    "run_date": "2026-07-11",
-    "coverage_summary": "Tier 1 government portals swept via search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA/SA/Tas/NT). Tier 2 GBEs and health touched (HealthShare NSW, Ausgrid, TasNetworks, water corporations). Tier 3 corporate/e-sourcing checked (SAP Ariba Discovery, NBN Co, Australia Post, Transgrid) but no publicly-visible corporate RFx was captured - all were registration- or invitation-gated. Primary constraint this run: the environment's outbound egress returns HTTP 403 on direct WebFetch of every major AU tender portal (AusTender detail pages, buy.nsw, tenders.vic, qld2032), so opportunity detail was extracted from search-result snippets rather than the tender detail pages/documents. As a result most captured tenders are at headline level and still need a full deliverables pass. One genuinely new source found: Procurement Australia (national group-buying organisation running its own tenders).",
-    "sources_checked": 18,
-    "tenders_found": 5,
-    "new_sources_found": 1,
-    "entries_pending_detail": 5,
+    "run_date": "2026-07-12",
+    "coverage_summary": "Tier 1 government portals swept via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA/SA/Tas/NT, Tenders ACT). Tier 2 sampled (water corporations, universities, Homes Tasmania, local councils via VendorPanel). Tier 3 attempted (SAP Ariba Discovery, Sydney Water/Ariba, Melbourne Water/Zycus). Detail-page extraction was NOT possible this run: WebFetch returned HTTP 403 for every host attempted (including AusTender, buy.nsw, VendorPanel, council sites, and even non-AU control sites), so no tender detail pages or documents could be opened. All captured opportunities are therefore headline-level, drawn from official-portal search-result snippets, and are flagged as pending a detailed deliverables pass. No deliverables, contacts, values or dates were inferred where not explicitly seen.",
+    "sources_checked": 22,
+    "tenders_found": 4,
+    "new_sources_found": 3,
+    "entries_pending_detail": 4,
     "gaps": [
-      "AusTender: main /atm list and every /Atm/Show/<uuid> detail page returned HTTP 403 to WebFetch (WAF block on datacenter egress); detail limited to search snippets. New-looking ATMs seen but not opened: RFI_ATM_2026_6026, GA2026/564, MSD/RFT/55619/1, PR10031930-RASS. ATM_2026_6339 (Host Broadcaster Services, DCCEEW) checked but had already closed 09-Jun-2026, excluded.",
-      "buy.nsw / NSW eTendering: opportunity search pages returned HTTP 403 to WebFetch; captured items rely on search snippets. Detail/documents not opened.",
-      "Buying for Victoria (tenders.vic.gov.au /tenders/new): HTTP 403 to WebFetch; no Victorian opportunity captured this run - deferred to next run.",
-      "QTenders (qtenders.epw.qld.gov.au) and qld2032 mirror: HTTP 403 to WebFetch; QLD education refurbishment tenders captured at headline level from snippets, closing dates and documents not confirmed.",
-      "SAP Ariba Discovery / SAP Business Network Discovery: no publicly-visible Australian RFx surfaced without login; portal recorded in discovered_sources only. No corporate tender fabricated.",
-      "Tenders WA, Tenders SA, NT QTOL, ACT Tenders: only lightly searched this run, no new open opportunity confirmed; rotate for deeper coverage next run.",
-      "Corporate/major-buyer portals (NBN Co, Australia Post, BHP, Rio Tinto, Woolworths, Coles, Qantas, banks, telcos): opportunities are registration-gated (Ariba/Coupa) or invitation-only; recorded as sources where relevant, none captured as tenders.",
-      "NSW Public Works Sustainable Energy Infrastructure EOI and Ausgrid BESS packages were surfaced via aggregator/search signal only; the buyer-originated portal listing (buy.nsw / Ausgrid e-tendering) could not be opened due to 403, so both remain pending buyer-source verification."
+      "WebFetch tool returned HTTP 403 Forbidden for ALL URLs attempted this run — including AusTender ATM detail pages, tenders.nsw.gov.au RFT detail pages, tenders.vic.gov.au/tenders/open, tenders.wa.gov.au, qtenders.hpw.qld.gov.au, vendorpanel.com.au, council sites, and a non-AU control (en.wikipedia.org). This is an environment-level fetch outage, not a per-site login wall. Consequently no tender detail pages or specification documents could be read; deliverables_summary, key_deliverables, requirements, evaluation_criteria, contacts and exact publish dates could not be captured.",
+      "curl via the egress proxy returned HTTP 000 for tenders.nsw.gov.au and tenders.gov.au, so direct HTML fallback was also unavailable.",
+      "All four captured tenders remain at headline level (title, buyer, tender id, close date from portal search snippets) and need a detailed pass once fetch access is restored.",
+      "AusTender: AIMS NT Small Research Vessel Replacement (AIMSRFT785) seen but closed 10-Jul-2026 (before run date) — excluded as not open.",
+      "Tier 3 corporate: SAP Ariba Discovery, Sydney Water (SAP Ariba), and Melbourne Water (Zycus) checked but individual live AU RFx are login-gated; with WebFetch down no publicly-visible corporate RFx could be confirmed. No corporate opportunity fabricated. Portals recorded in discovered_sources / already known.",
+      "University opportunities surfaced only via aggregator (australiantenders.com.au) — e.g. RMIT architects panel EOI, La Trobe Bundoora HV Infrastructure Renewal EOI — could not be confirmed on the buyer's own source with WebFetch down, so they were NOT recorded as tenders (aggregator = discovery signal only). Buyer portals noted in discovered_sources for a future authenticated/fetch-enabled pass.",
+      "Tenders SA, Tenders ACT and NT QTOL: only portal landing pages and a small number of AusTender-cross-listed refs surfaced via search; no state-specific open opportunity could be verified to headline level this run — deferred."
     ],
     "recommended_seed_additions": [
-      "Procurement Australia - E-Tendering portal (portal.tenderlink.com/procurementaustralia) - national group-buying / aggregated-demand organisation that runs its own public RFTs on behalf of member councils and agencies; buyer-originated collective procurement, not a paid reseller."
+      "Homes Tasmania — Tenders, EOI and grants (https://www.homestasmania.com.au/engage/Tenders,-EOI-and-Grants) — GBE-style housing buyer with its own EOI/RFGP page; not in current known list.",
+      "RMIT University — Procurement / Tenders (Victorian university buyer, runs EOI/RFP panels; not previously tracked).",
+      "La Trobe University — Procurement / Tenders (Victorian university buyer; Bundoora campus capital works EOIs)."
     ]
   },
   "months": [
@@ -52,7 +54,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 56,
+      "new_tenders": 60,
       "active_tenders": 0
     }
   ],
@@ -6149,8 +6151,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:QED6353-murrumba-ssc-block-ip-refurbishment",
@@ -6210,8 +6212,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:QED6332-pimlico-shs-science-lab-refurbishment",
@@ -6272,8 +6274,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:nsw-public-works-sustainable-energy-infrastructure-providers-eoi-2026",
@@ -6334,8 +6336,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Ausgrid:bess-equipment-packages-community-battery-tranche2-2026",
@@ -6394,6 +6396,249 @@
       "last_seen": "2026-07-11",
       "seen_dates": [
         "2026-07-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:ESE24-1125-B-trades-recognition-assessment-services-panel",
+      "source_name": "AusTender - Current ATM list",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "National",
+      "tender_id": "ESE24/1125-B",
+      "tender_url": "https://www.tenders.gov.au/atm",
+      "access": "public",
+      "title": "Trades Recognition Australia Assessment Services Panel",
+      "buyer": "Department of Employment and Workplace Relations",
+      "buyer_url": "https://www.dewr.gov.au",
+      "category": "Education and Training Services / Skills assessment",
+      "category_codes": [],
+      "procurement_type": "panel",
+      "current_status": "closing-soon",
+      "description": "Approach to market to establish a panel of providers of assessment services for Trades Recognition Australia (TRA), the Australian Government's trade skills assessment authority.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-16",
+      "closing_time": "11:30 PM (ACT Local Time)",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia (national)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "federal",
+        "panel",
+        "skills-assessment",
+        "education-training"
+      ],
+      "first_seen": "2026-07-12",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of the AusTender Current ATM list (buyer-originated Commonwealth procurement portal). Headline fields (ATM ID, buyer, close date/time) taken from the AusTender search snippet.",
+      "notes": "Headline-level only — AusTender ATM detail page (tenders.gov.au/Atm/Show/...) returned HTTP 403 to WebFetch this run, so scope, deliverables, evaluation criteria and contact could not be captured. Needs a detail pass when fetch access is restored.",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:S-EST11128-raaf-wagga-lead-removal-works",
+      "source_name": "AusTender - Current ATM list",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "NSW",
+      "tender_id": "S-EST11128",
+      "tender_url": "https://www.tenders.gov.au/atm",
+      "access": "public",
+      "title": "RAAF Base Wagga Lead Removal Works, NSW",
+      "buyer": "Department of Defence",
+      "buyer_url": "https://www.defence.gov.au",
+      "category": "Construction / Environmental remediation",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "Request for tender for lead removal (hazardous material remediation) works at RAAF Base Wagga in New South Wales.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-17",
+      "closing_time": "12:00 PM (ACT Local Time)",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "RAAF Base Wagga, Wagga Wagga, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "federal",
+        "defence",
+        "construction",
+        "environmental-remediation",
+        "hazmat"
+      ],
+      "first_seen": "2026-07-12",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of the AusTender Current ATM list (buyer-originated Commonwealth portal). Headline fields (ATM ID, buyer, location, close date/time) taken from the AusTender search snippet.",
+      "notes": "Headline-level only — AusTender ATM detail page returned HTTP 403 to WebFetch this run; scope of works, licensing/insurance requirements, briefing and contact could not be captured. Needs a detail pass.",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "QTenders:metro-north-hhs-home-parenteral-nutrition-soa",
+      "source_name": "QTenders (Queensland Government Tenders Directory)",
+      "source_url": "https://qtenders.hpw.qld.gov.au/",
+      "source_type": "health",
+      "jurisdiction": "Queensland",
+      "state": "QLD",
+      "tender_id": "",
+      "tender_url": "https://qtenders.hpw.qld.gov.au/",
+      "access": "public",
+      "title": "Supply and Delivery of Home Parenteral Nutrition, Intravenous Fluids and Associated Items (Standing Offer Arrangement)",
+      "buyer": "Metro North Hospital and Health Service (Queensland Health)",
+      "buyer_url": "https://metronorth.health.qld.gov.au",
+      "category": "Medical and health supplies / Clinical nutrition",
+      "category_codes": [],
+      "procurement_type": "ITO",
+      "current_status": "open",
+      "description": "Invitation to offer to establish a Standing Offer Arrangement for the supply and delivery of home parenteral nutrition, intravenous fluids and associated items for Metro North Hospital and Health Service.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-28",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge in QTenders portal",
+      "lodgement_url": "https://qtenders.hpw.qld.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Metro North region, Brisbane, QLD",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "queensland",
+        "health",
+        "standing-offer",
+        "clinical-nutrition",
+        "medical-supplies"
+      ],
+      "first_seen": "2026-07-12",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of the QTenders directory (buyer-originated Queensland Government portal) and corroborated as a Metro North HHS standing-offer sourcing event. Headline fields (buyer, scope title, close date) from QTenders search snippets.",
+      "notes": "Headline-level only — QTenders detail page (qtenders.hpw.qld.gov.au) returned HTTP 403 to WebFetch this run, so the tender reference number, exact closing time, item schedules, eligibility and contact could not be captured. Tender_id left blank as it was not visible in the snippet. Needs a detail pass.",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersTasmania:RFT-2026-01-tastafe-freer-farm-atcoe-building-extension",
+      "source_name": "Tenders Tasmania",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "university",
+      "jurisdiction": "Tasmania",
+      "state": "TAS",
+      "tender_id": "TasTAFE RFT 2026-01",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Freer Farm ATCoE - Building Extension",
+      "buyer": "TasTAFE",
+      "buyer_url": "https://www.tastafe.tas.edu.au",
+      "category": "Construction / Building works",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for tender for a building extension at the TasTAFE Freer Farm Agricultural Training Centre of Excellence (ATCoE), Burnie, Tasmania.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge online via Tenders Tasmania (tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Freer Farm Training Facility, Burnie, TAS",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "vocational-education",
+        "construction",
+        "building-extension",
+        "tastafe"
+      ],
+      "first_seen": "2026-07-12",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of the Tasmanian Government eTendering site (tenders.tas.gov.au, buyer-originated portal) with the TasTAFE RFT reference. Headline fields (buyer, tender reference, project) from the Tenders Tasmania search snippet.",
+      "notes": "Headline-level only — Tenders Tasmania detail page returned HTTP 403 to WebFetch this run, so the closing date/time, scope, prequalification/licensing requirements and contact could not be captured. Closing date not visible in snippet and left null (not inferred). Needs a detail pass.",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -6589,20 +6834,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
+      "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (and global)",
+      "jurisdiction": "Global / Australia",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check each run; queried for publicly-visible Australian RFx.",
+      "how_discovered": "Mandatory Tier 3 check. Public posting board where buyers post open RFx; full detail requires a free supplier account. Checked this run for AU postings but no publicly-visible AU corporate RFx could be confirmed with WebFetch unavailable.",
       "recommended_check_frequency": "daily",
-      "notes": "Registration-gated: the opportunity list requires a free SAP Business Network supplier account. No publicly-visible AU RFx was extractable without an authenticated session this run. Recorded as a portal source only - not fabricated as tenders. Largest single slice of corporate opportunity; an authenticated account is recommended for future runs.",
+      "notes": "Already known. Access is free-registration for full opportunity detail. No corporate opportunity fabricated. Recorded to keep the Tier 3 source set complete.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-10",
+      "last_seen": "2026-07-12",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -6611,11 +6856,12 @@
         "2026-07-04",
         "2026-07-08",
         "2026-07-09",
-        "2026-07-10"
+        "2026-07-10",
+        "2026-07-12"
       ],
-      "seen_count": 8,
+      "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -8756,7 +9002,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Olympic Park Authority - Tenders & EOI",
@@ -9129,8 +9375,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NSW eTendering / buy.nsw (NSW Health)",
@@ -9151,8 +9397,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Ausgrid - Procurement and suppliers (e-tendering)",
@@ -9173,8 +9419,8 @@
         "2026-07-11"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
@@ -9193,6 +9439,72 @@
       "last_seen": "2026-07-11",
       "seen_dates": [
         "2026-07-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Homes Tasmania — Tenders, EOI and grants",
+      "source_url": "https://www.homestasmania.com.au/engage/Tenders,-EOI-and-Grants",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Tasmania",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for Tasmanian housing procurement; Homes Tasmania (statutory housing authority) publishes its own Tenders/EOI/RFGP page and also advertises on tenders.tas.gov.au. Recent items include SDA management services procurement, general maintenance services (Southern TAS), off-the-plan apartment supply, and insurance coverage.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated authority page, not previously tracked. Full opportunity detail is cross-listed on Tenders Tasmania. Could not open the page this run (WebFetch 403); captured from search snippet.",
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "RMIT University — Procurement / Tenders",
+      "source_url": "https://www.rmit.edu.au/about/our-organisation/business-partners/procurement",
+      "source_type": "university",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Surfaced via a tender aggregator as an RMIT EOI to appoint a panel of prequalified architects for RMIT capital projects (two-stage EOI then RFP). Aggregator used only as a discovery signal; RMIT is a Victorian university buyer running its own panel procurements. Buyer portal recorded for a future verified pass.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Not previously tracked. The specific architects-panel EOI was NOT recorded as a tender because it could not be confirmed on RMIT's own source (WebFetch 403). Source_url is the likely procurement landing page and should be verified.",
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "La Trobe University — Procurement / Tenders",
+      "source_url": "https://www.latrobe.edu.au/about/tenders",
+      "source_type": "university",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Surfaced via aggregator as a La Trobe EOI for the Bundoora Campus High Voltage Infrastructure Renewal project (building/construction contractors). Aggregator used only as a discovery signal; La Trobe is a Victorian university buyer. Buyer portal recorded for a future verified pass.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Not previously tracked. The Bundoora HV EOI was NOT recorded as a tender (unconfirmed on buyer source; WebFetch 403). Source_url should be verified.",
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "seen_dates": [
+        "2026-07-12"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
