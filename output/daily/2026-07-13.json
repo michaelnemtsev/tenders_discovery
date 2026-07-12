@@ -64,7 +64,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "GBE", "EPCM", "infrastructure", "headline-only"],
+      "tags": [
+        "water",
+        "GBE",
+        "EPCM",
+        "infrastructure",
+        "headline-only"
+      ],
       "first_seen": "2026-07-13",
       "detail_source": "",
       "reasoning": "Discovered via web search of Sydney Water current tenders; captured from the buyer-originated buy.nsw (NSW eTendering) opportunity listing SWC-WS5192918179, not from an aggregator.",
@@ -112,7 +118,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "GBE", "circular-economy", "resource-recovery", "headline-only"],
+      "tags": [
+        "water",
+        "GBE",
+        "circular-economy",
+        "resource-recovery",
+        "headline-only"
+      ],
       "first_seen": "2026-07-13",
       "detail_source": "",
       "reasoning": "Discovered via web search of Sydney Water buy.nsw opportunities; captured from the buyer-originated buy.nsw listing EOI-2004959 (WS5038645409).",
@@ -160,7 +172,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "GBE", "panel", "construction", "delivery-contractor", "headline-only"],
+      "tags": [
+        "water",
+        "GBE",
+        "panel",
+        "construction",
+        "delivery-contractor",
+        "headline-only"
+      ],
       "first_seen": "2026-07-13",
       "detail_source": "",
       "reasoning": "Discovered via web search of Sydney Water buy.nsw opportunities; captured from the buyer-originated buy.nsw Registration of Interest listing SWC-WS4915925121.",
@@ -208,7 +227,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "facilities", "landscape-maintenance", "closing-today", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "facilities",
+        "landscape-maintenance",
+        "closing-today",
+        "headline-only"
+      ],
       "first_seen": "2026-07-13",
       "detail_source": "",
       "reasoning": "Discovered via web search of the AusTender current ATM list; buyer-originated Commonwealth notice (ATM ID SHFT26001, Sydney Harbour Federation Trust).",
@@ -256,7 +281,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "wastewater", "GBE", "design-and-construct", "headline-only"],
+      "tags": [
+        "water",
+        "wastewater",
+        "GBE",
+        "design-and-construct",
+        "headline-only"
+      ],
       "first_seen": "2026-07-13",
       "detail_source": "",
       "reasoning": "Discovered via web search of SA Water tenders; captured from SA Water's own tenders-and-contracts page description, cross-published on SA Tenders and Contracts (tenders.sa.gov.au) — buyer-originated, not an aggregator.",
