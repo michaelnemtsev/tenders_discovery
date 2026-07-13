@@ -64,7 +64,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "renewable-energy", "microgrid", "design-services", "NT"],
+      "tags": [
+        "defence",
+        "renewable-energy",
+        "microgrid",
+        "design-services",
+        "NT"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATM list; previously seen under the same dedup_key, still open/closing-soon this run. Buyer-originated (Defence DSRG on AusTender).",
@@ -112,7 +118,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["facilities", "mechanical-maintenance", "commonwealth"],
+      "tags": [
+        "facilities",
+        "mechanical-maintenance",
+        "commonwealth"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATM list. Buyer-originated (Export Finance Australia on AusTender).",
@@ -160,7 +170,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["roads", "civil-construction", "pavement", "NSW", "transport"],
+      "tags": [
+        "roads",
+        "civil-construction",
+        "pavement",
+        "NSW",
+        "transport"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw / Transport for NSW eTendering opportunities. Buyer-originated (Transport for NSW).",
@@ -208,7 +224,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["climate-risk", "governance", "local-government", "advisory", "SA"],
+      "tags": [
+        "climate-risk",
+        "governance",
+        "local-government",
+        "advisory",
+        "SA"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of SA Tenders and Contracts open RFx. Buyer-originated (SA local government sector on the SA portal).",
@@ -256,7 +278,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["roads", "civil-construction", "local-government", "SA"],
+      "tags": [
+        "roads",
+        "civil-construction",
+        "local-government",
+        "SA"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of SA Tenders and Contracts open RFx. Buyer-originated (SA council on the SA portal).",
@@ -304,7 +331,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["internal-audit", "assurance", "local-government", "SA"],
+      "tags": [
+        "internal-audit",
+        "assurance",
+        "local-government",
+        "SA"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of SA Tenders and Contracts open RFx. Buyer-originated (Municipal Council of Roxby Downs on the SA portal).",
@@ -352,7 +384,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ICT", "asset-management", "software", "local-government", "SA"],
+      "tags": [
+        "ICT",
+        "asset-management",
+        "software",
+        "local-government",
+        "SA"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of SA Tenders and Contracts open RFx. Buyer-originated (Kingston District Council on the SA portal).",
@@ -400,7 +438,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["waste", "environmental-services", "local-government", "TAS"],
+      "tags": [
+        "waste",
+        "environmental-services",
+        "local-government",
+        "TAS"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of Tenders Tasmania open tenders. Buyer-originated (Dorset Council on the Tasmanian portal).",
@@ -448,7 +491,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["utilities", "power-and-water", "GBE", "NT"],
+      "tags": [
+        "utilities",
+        "power-and-water",
+        "GBE",
+        "NT"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NT QTOL current tenders. Buyer-originated (Power and Water Corporation, an NT government-owned corporation, on QTOL).",
@@ -496,7 +544,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "EPCM", "GBE", "infrastructure", "NSW"],
+      "tags": [
+        "water",
+        "EPCM",
+        "GBE",
+        "infrastructure",
+        "NSW"
+      ],
       "first_seen": "2026-07-14",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch; an aggregator listing (govmarket.com.au) flagged the EOI, then pivoted to Sydney Water's own current-tenders / eTendering source as the recorded source of truth. Buyer-originated (Sydney Water GBE).",
