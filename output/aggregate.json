@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-07-15",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -20,32 +20,35 @@
     "2026-07-11",
     "2026-07-12",
     "2026-07-13",
-    "2026-07-14"
+    "2026-07-14",
+    "2026-07-15"
   ],
-  "run_count": 20,
+  "run_count": 21,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-14",
-  "latest_coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT). Tier 2 sampled: local government via VendorPanel public tenders, GBE water (Sydney Water, Melbourne Water), CSIRO, and WA Primary Health Alliance (WAPHA). Tier 3 (mandatory) attempted: SAP Ariba / SAP Business Network Discovery, BHP, Rio Tinto, Woodside — no publicly-visible individual corporate RFx could be captured (all buyer detail is registration- or invitation-gated), so corporate channels are recorded in discovered_sources only, not invented as tenders. COVERAGE LIMITATION (unchanged from recent runs): this run executed under a restrictive network egress policy. Direct HTTPS access to primary tender portals was blocked — every portal host (www.tenders.gov.au, tenders.sa.gov.au, tendersonline.nt.gov.au, vendorpanel.com.au, etc.) returned HTTP 403 to WebFetch, confirmed against the agent-proxy status endpoint. Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets carrying real detail-page URLs and consistent titles; headline identity fields are corroborated, but closing dates/times, values, deliverables, eligibility, evaluation criteria and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
+  "latest_run": "2026-07-15",
+  "latest_coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT). Tier 2 sampled: local government via VendorPanel public tenders and council eProcurement portals, GBE water (Sydney Water, WaterNSW, Melbourne Water), CSIRO, Australia Post, NBN Co, Snowy Hydro. Tier 3 (mandatory) attempted: SAP Ariba / SAP Business Network Discovery, EstimateOne (construction head-contractor packages), plus mining/retail/telco/bank buyer portals - no publicly-visible individual corporate RFx could be captured (all buyer detail is registration- or invitation-gated), so corporate channels remain recorded in discovered_sources from prior runs, not invented as tenders. COVERAGE LIMITATION (unchanged from recent runs): this run executed under a restrictive network egress policy. Direct HTTPS access to primary tender portals was blocked - every portal detail host (www.tenders.gov.au, tenders.wa.gov.au, buy.nsw.gov.au, tendersonline.nt.gov.au, vendorpanel.com.au, etc.) returned HTTP 403 to WebFetch, confirmed against the agent-proxy status endpoint (proxy enabled, no relay failures - the 403s are origin bot-protection, not a proxy fault). Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets carrying real detail-page URLs and consistent titles; headline identity fields are corroborated, but closing times, values, deliverables, eligibility, evaluation criteria and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass. Emphasis this run was on opportunities NOT already present in the aggregate: several AusTender ATMs that surfaced (ATM_2026_6066 Bushland Program, OPC-2026-03 Print on Demand, DCET2026-01A RAAF Tindal microgrid, ATM_2026_6786 GEMS testing) were found to be already captured on earlier runs and were therefore excluded as duplicates rather than re-listed.",
   "latest_run_metadata": {
-    "run_date": "2026-07-14",
-    "coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT). Tier 2 sampled: local government via VendorPanel public tenders, GBE water (Sydney Water, Melbourne Water), CSIRO, and WA Primary Health Alliance (WAPHA). Tier 3 (mandatory) attempted: SAP Ariba / SAP Business Network Discovery, BHP, Rio Tinto, Woodside — no publicly-visible individual corporate RFx could be captured (all buyer detail is registration- or invitation-gated), so corporate channels are recorded in discovered_sources only, not invented as tenders. COVERAGE LIMITATION (unchanged from recent runs): this run executed under a restrictive network egress policy. Direct HTTPS access to primary tender portals was blocked — every portal host (www.tenders.gov.au, tenders.sa.gov.au, tendersonline.nt.gov.au, vendorpanel.com.au, etc.) returned HTTP 403 to WebFetch, confirmed against the agent-proxy status endpoint. Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets carrying real detail-page URLs and consistent titles; headline identity fields are corroborated, but closing dates/times, values, deliverables, eligibility, evaluation criteria and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass.",
-    "sources_checked": 21,
-    "tenders_found": 10,
+    "run_date": "2026-07-15",
+    "coverage_summary": "Daily incremental discovery run. Tier 1 federal + all state/territory portals surveyed via web search (AusTender, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, QTOL NT, Tenders ACT). Tier 2 sampled: local government via VendorPanel public tenders and council eProcurement portals, GBE water (Sydney Water, WaterNSW, Melbourne Water), CSIRO, Australia Post, NBN Co, Snowy Hydro. Tier 3 (mandatory) attempted: SAP Ariba / SAP Business Network Discovery, EstimateOne (construction head-contractor packages), plus mining/retail/telco/bank buyer portals - no publicly-visible individual corporate RFx could be captured (all buyer detail is registration- or invitation-gated), so corporate channels remain recorded in discovered_sources from prior runs, not invented as tenders. COVERAGE LIMITATION (unchanged from recent runs): this run executed under a restrictive network egress policy. Direct HTTPS access to primary tender portals was blocked - every portal detail host (www.tenders.gov.au, tenders.wa.gov.au, buy.nsw.gov.au, tendersonline.nt.gov.au, vendorpanel.com.au, etc.) returned HTTP 403 to WebFetch, confirmed against the agent-proxy status endpoint (proxy enabled, no relay failures - the 403s are origin bot-protection, not a proxy fault). Only WebSearch (a separate backend) was usable; no primary tender detail page or tender document could be opened directly. Every opportunity below was surfaced from indexed web-search snippets carrying real detail-page URLs and consistent titles; headline identity fields are corroborated, but closing times, values, deliverables, eligibility, evaluation criteria and contacts were NOT verifiable against the primary notice and must be confirmed on the buyer portal. Every captured tender is consequently flagged as pending a detail pass. Emphasis this run was on opportunities NOT already present in the aggregate: several AusTender ATMs that surfaced (ATM_2026_6066 Bushland Program, OPC-2026-03 Print on Demand, DCET2026-01A RAAF Tindal microgrid, ATM_2026_6786 GEMS testing) were found to be already captured on earlier runs and were therefore excluded as duplicates rather than re-listed.",
+    "sources_checked": 23,
+    "tenders_found": 6,
     "new_sources_found": 2,
-    "entries_pending_detail": 10,
+    "entries_pending_detail": 6,
     "gaps": [
-      "Direct HTTPS fetch of all primary tender portals blocked (HTTP 403 via proxy/bot-protection); confirmed via curl to $HTTPS_PROXY/__agentproxy/status. All detail extraction was headline-only from WebSearch snippets — no primary notice, document, closing time, value, deliverable or contact could be verified against the source.",
-      "Victoria (tenders.vic.gov.au) and Queensland (QTenders) surveyed but no individually-named open tender with a corroborated title/closing date surfaced in search snippets this run; deferred to next run.",
-      "Two AusTender opportunities that surfaced (FSANZ-2026/6 food analysis services; ACDC One Health National Conference 2027 event management) had closing dates of 2026-07-13, i.e. already closed by this run date (2026-07-14), so were excluded as stale rather than recorded as open.",
-      "Wujal Wujal Aboriginal Shire Council 'Reef Guardian Cemetery Access Road & Car Park' (via VendorPanel) surfaced but closed 2026-07-01 — excluded as closed; VendorPanel public tenders board was checked.",
-      "WA WAPHA RFQ994 (Bondi 2025 Response Education & Training Support, Perth North PHN) surfaced but closed 2026-07-09 — excluded as closed; the WAPHA tender page itself is recorded as a new source.",
-      "SAP Ariba Discovery: no Australia-specific open posting could be read without an authenticated supplier session; the public board is registration-gated and recorded in discovered_sources.",
-      "Tier 3 mining/energy buyers (BHP interestedsupplier portal, Rio Tinto Buy Local, Woodside): individual opportunities are registration- or invitation-gated; portals recorded in discovered_sources, no corporate tenders fabricated.",
-      "Aggregator/dashboard sites (govmarket.com.au, tenderhub.com.au, tendersontime.com, australiantenders.com.au, bidio.ai, qld2032.com, tastenders.com) appeared in results and were used only as discovery signals to confirm buyer-originated sources; none are recorded as sources of truth."
+      "Direct HTTPS fetch of all primary tender portals blocked (HTTP 403 origin bot-protection); confirmed the agent proxy itself is healthy via curl to $HTTPS_PROXY/__agentproxy/status (enabled, no recent relay failures). All detail extraction was headline-only from WebSearch snippets - no primary notice, document, closing time, value, deliverable or contact could be verified against the source.",
+      "Victoria (tenders.vic.gov.au / buyingfor.vic.gov.au) surveyed but no individually-named open tender with a corroborated title AND closing date surfaced in search snippets this run (only the standing Development Victoria 2026 Commonwealth Games two-stage EOI/RFP, which lacks a specific current closing date); deferred to next run.",
+      "Queensland (QTenders / supply.qld.gov.au) surveyed but no individually-named open tender with a corroborated title and closing date surfaced in snippets this run; deferred.",
+      "Tenders WA: an open-tender listing surfaced a live detail URL (DHW0092026, tender id 69203, apparently WA Health) but the title and closing date were not present in the snippet and the detail page is login/verification-gated, so it was not recorded as a tender; deferred to next run.",
+      "buy.nsw: additional live opportunity URLs surfaced without a corroborated future closing date in the snippet (T-2026-2 Sewer Main Upgrades & Renewals Package B RFT; Queanbeyan STP Upgrade EOI-2013388) - not recorded to avoid listing a possibly-closed notice; deferred.",
+      "NT QTOL: the Power and Water Corporation tender closing 2026-07-23 remains open but was already captured on a prior run (dedup_key QTOL-NT:power-and-water-corporation-tender-closing-2026-07-23); not re-listed.",
+      "SAP Ariba Discovery / SAP Business Network Discovery: no Australia-specific open posting could be read without an authenticated supplier session; the public board is registration-gated and is already recorded in discovered_sources from earlier runs.",
+      "Tier 3 corporate buyers (BHP, Rio Tinto, Fortescue, Woodside, Santos, Woolworths, Coles, Qantas, CBA/Westpac/NAB/ANZ, Telstra/Optus): individual opportunities are registration- or invitation-gated; portals already recorded in discovered_sources; no corporate tenders fabricated. Management-consultancy RFPs remain invitation-only and out of scope.",
+      "EstimateOne / iTWOcx construction subcontractor packages (Lendlease, John Holland, Multiplex): platform is supplier-account-gated; no publicly-readable open package surfaced; recorded as source only.",
+      "Aggregator/dashboard sites (australiantenders.com.au, tendersontime.com, tendersinfo.com, govmarket.com.au, bidio.ai, tenders.net, qld2032.com, illion.tenderlink.com) appeared in results and were used ONLY as discovery signals to confirm buyer-originated sources; none are recorded as sources of truth."
     ],
     "recommended_seed_additions": [
-      "WA Primary Health Alliance (WAPHA) tender page — https://www.wapha.org.au/tender/ — buyer-originated NFP/health commissioning body, publishes RFQs directly.",
-      "Rio Tinto Buy Local (onlineprocurement.com.au) EOI portal — https://riotintobuylocal.onlineprocurement.com.au/eois — buyer-originated corporate EOI board on the onlineprocurement.com.au (Felix) platform, distinct from the riotinto.com supplier-portals page already known."
+      "Hinchinbrook Shire Council E-Procurement Portal (VendorPanel Marketplace) - https://www.hinchinbrook.qld.gov.au/our-council/procurement-and-tenders/e-procurement-portal/ - QLD local-government buyer that recently launched a free supplier procurement portal on VendorPanel; publishes current procurement/tender opportunities directly.",
+      "Wingecarribee Shire Council - tenders published via buy.nsw / NSW eTendering - NSW local-government buyer actively publishing RFQ/RFT opportunities (e.g. development contributions framework review) not otherwise listed among known council seeds."
     ]
   },
   "months": [
@@ -56,7 +59,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 74,
+      "new_tenders": 80,
       "active_tenders": 0
     }
   ],
@@ -3902,7 +3905,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:s-est10741-hmas-stirling-system-works",
@@ -7006,8 +7009,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TransportforNSW:HW4-log-creek-pavement-rehabilitation-stage-2-kerb-installation",
@@ -7067,8 +7070,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:embedding-climate-risk-governance-financial-decision-making-sa-local-government",
@@ -7128,8 +7131,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:moonta-road-construction-stage-2-and-3",
@@ -7188,8 +7191,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:internal-audit-services-municipal-council-roxby-downs",
@@ -7248,8 +7251,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:asset-management-information-system-kingston-district-council",
@@ -7309,8 +7312,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersTAS:public-places-waste-collection-service-dorset-council",
@@ -7369,8 +7372,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTOL-NT:power-and-water-corporation-tender-closing-2026-07-23",
@@ -7429,8 +7432,8 @@
         "2026-07-14"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "SydneyWater:drinking-water-program-epcm-projects-eoi",
@@ -7488,6 +7491,369 @@
       "last_seen": "2026-07-14",
       "seen_dates": [
         "2026-07-14"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:ATM24-3609-antarctic-aviation-intracontinental-fixed-wing-services",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "ATM24/3609",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/56aafd93-244a-4de1-b7de-6c23d3ef536e",
+      "access": "public",
+      "title": "Antarctic Aviation Intracontinental Fixed-Wing Services",
+      "buyer": "Department of Climate Change, Energy, the Environment and Water (Australian Antarctic Division)",
+      "buyer_url": "https://www.antarctica.gov.au/",
+      "category": "Aviation / air transport services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Approach to market by the Australian Antarctic Division for intracontinental fixed-wing aviation services supporting the Australian Antarctic Program.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-22",
+      "closing_time": "2:00 PM (ACT Local Time)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Antarctica (Australian Antarctic Territory)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "aviation",
+        "antarctic",
+        "commonwealth",
+        "logistics"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of the AusTender current ATM list; buyer-originated Commonwealth notice on tenders.gov.au. Title and close date corroborated across two search snippets.",
+      "notes": "Headline-only: primary AusTender detail page returned HTTP 403 to WebFetch (origin bot-protection), so closing time, value, deliverables, eligibility, evaluation criteria and contacts could not be verified against the notice. Confirm all detail on the AusTender detail page.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:wingecarribee-development-contributions-framework-review-rationalisation-rfq",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Development Contributions Framework Review and Rationalisation",
+      "buyer": "Wingecarribee Shire Council",
+      "buyer_url": "https://www.wsc.nsw.gov.au/",
+      "category": "Professional / advisory services - urban planning",
+      "category_codes": [],
+      "procurement_type": "RFQ",
+      "current_status": "open",
+      "description": "Request for quote by Wingecarribee Shire Council for a review and rationalisation of its development contributions framework.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-21",
+      "closing_time": "3:00 PM AEST",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Wingecarribee Shire, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "planning",
+        "development-contributions",
+        "nsw"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW local-government RFQ published on the NSW Government procurement platform.",
+      "notes": "Headline-only: buy.nsw detail page returned HTTP 403 to WebFetch. Closing date/time from a search snippet and not verified against the notice; deliverables, value, eligibility and contacts not captured. Distinct from Wingecarribee's separately-listed internal audit program tender already in the aggregate.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:npws-goobang-national-park-strategic-fire-trails-upgrade-works-rft",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Upgrade Works of Strategic Fire Trails within Goobang National Park",
+      "buyer": "NSW National Parks and Wildlife Service (NPWS West Branch)",
+      "buyer_url": "https://www.nationalparks.nsw.gov.au/",
+      "category": "Construction / civil works - fire trail upgrade",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for tender by NPWS West Branch for upgrade works to strategic fire trails within Goobang National Park.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-24",
+      "closing_time": "3:00 PM AEST",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Goobang National Park, Central West NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "national-parks",
+        "fire-trails",
+        "civil-works",
+        "nsw",
+        "bushfire"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW state agency (NPWS) RFT on the NSW Government procurement platform.",
+      "notes": "Headline-only: buy.nsw detail page returned HTTP 403 to WebFetch. Closing date/time from a search snippet and not verified; scope, value, licences/insurance requirements and contacts not captured. Likely requires civil/earthworks capability and relevant WHS/environmental conditions - confirm on the notice.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:motor-dealer-assessment-expert-panel-mdaep",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Motor Dealer Assessment Expert Panel (MDAEP)",
+      "buyer": "NSW Government (buyer not confirmed from search - likely NSW Fair Trading / Department of Customer Service)",
+      "buyer_url": "",
+      "category": "Professional services panel - assessment / advisory",
+      "category_codes": [],
+      "procurement_type": "panel",
+      "current_status": "open",
+      "description": "Establishment of an expert panel to provide motor dealer assessment services for a NSW Government agency.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-30",
+      "closing_time": "3:00 PM AEST",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "panel",
+        "assessment",
+        "motor-dealer",
+        "nsw"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW panel establishment on the NSW Government procurement platform.",
+      "notes": "Headline-only: buy.nsw detail page returned HTTP 403 to WebFetch. The specific buying agency, closing time, scope, eligibility and contacts were not verifiable against the notice; buyer inferred only from the panel name and NOT confirmed. Confirm all detail on the buy.nsw notice.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersACT:parliamentary-library-evaluation-of-services-rfi",
+      "source_name": "Tenders ACT",
+      "source_url": "https://www.tenders.act.gov.au/tenders/open",
+      "source_type": "gov-state",
+      "jurisdiction": "Australian Capital Territory",
+      "state": "ACT",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.act.gov.au/tenders/open",
+      "access": "public",
+      "title": "Evaluation of Services Provided by the Parliamentary Library",
+      "buyer": "ACT Legislative Assembly (Office of the Legislative Assembly) - buyer inferred, confirm on notice",
+      "buyer_url": "https://www.parliament.act.gov.au/",
+      "category": "Professional / advisory services - evaluation",
+      "category_codes": [],
+      "procurement_type": "RFI",
+      "current_status": "open",
+      "description": "Request for information relating to an evaluation of the services provided by the Parliamentary Library, advertised on Tenders ACT.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-21",
+      "closing_time": "2:00 PM (ACT Local Time)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via Tenders ACT",
+      "lodgement_url": "https://www.tenders.act.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Canberra, ACT",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "act",
+        "evaluation",
+        "rfi",
+        "parliamentary-library"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of Tenders ACT current tenders; buyer-originated ACT Government notice on tenders.act.gov.au.",
+      "notes": "Headline-only: Tenders ACT detail page not fetchable (portal bot-protection). Buyer, closing time and scope from a search snippet and not verified; as an RFI this is a market-sounding / information-gathering step rather than a binding solicitation. Confirm on the notice.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:sydney-water-EOI-2004889-plant-equipment-dry-wet-hire-services",
+      "source_name": "buy.nsw / NSW eTendering (Sydney Water)",
+      "source_url": "https://buy.nsw.gov.au/prcOpportunity/1AF9CAF4-1A27-48E9-B9ED2255DE28A873",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "EOI-2004889 (WS4662427734 / WS4662458379)",
+      "tender_url": "https://buy.nsw.gov.au/prcOpportunity/1AF9CAF4-1A27-48E9-B9ED2255DE28A873",
+      "access": "public",
+      "title": "Supply of Plant and Equipment Dry Hire Services and Wet Hire Services",
+      "buyer": "Sydney Water Corporation",
+      "buyer_url": "https://www.sydneywater.com.au/about-us/our-suppliers.html",
+      "category": "Plant and equipment hire (dry hire and wet hire)",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Expression of interest by Sydney Water Corporation for the supply of plant and equipment dry hire services (WS4662427734) and wet hire services (WS4662458379).",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": null,
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Greater Sydney, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "sydney-water",
+        "plant-hire",
+        "equipment-hire",
+        "eoi",
+        "nsw",
+        "gbe"
+      ],
+      "first_seen": "2026-07-15",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw opportunities with a live prcOpportunity deep link; buyer-originated Sydney Water (state-owned corporation) EOI on the NSW Government platform.",
+      "notes": "Headline-only: buy.nsw detail page returned HTTP 403 to WebFetch, so the closing date/time could NOT be verified - it may already be closed. Recorded because the deep link and title are corroborated, but treat open status as unconfirmed pending a detail pass on the notice.",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -7712,7 +8078,7 @@
       ],
       "seen_count": 11,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -10405,7 +10771,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Cootamundra-Gundagai Regional Council (CGRC) — Tenders / EOI / RFQ",
@@ -10468,6 +10834,50 @@
       "last_seen": "2026-07-14",
       "seen_dates": [
         "2026-07-14"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Hinchinbrook Shire Council - E-Procurement Portal (VendorPanel Marketplace)",
+      "source_url": "https://www.hinchinbrook.qld.gov.au/our-council/procurement-and-tenders/e-procurement-portal/",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for newly-launched Australian council procurement portals; Hinchinbrook Shire Council media release 'Council Launches New Free Procurement Portal' plus its E-Procurement Portal and 'Current Procurement and Tender Opportunities' pages confirm a buyer-originated VendorPanel Marketplace, free for suppliers.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Far North Queensland local-government buyer. Also runs a TenderLink e-tendering site (portal.tenderlink.com/hinchinbrook). Register on VendorPanel Marketplace to see current opportunities; the current-opportunities table is public.",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Wingecarribee Shire Council - Tenders (via buy.nsw / NSW eTendering)",
+      "source_url": "https://www.wsc.nsw.gov.au/Business/Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of buy.nsw open opportunities surfaced multiple current Wingecarribee Shire Council solicitations (development contributions framework review RFQ; internal audit program) published on the NSW Government procurement platform - a buyer-originated NSW council not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Southern Highlands NSW council. Publishes RFQ/RFT via buy.nsw / NSW eTendering; council tenders page mirrors the listings. Confirm exact council tenders URL on the WSC website.",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "seen_dates": [
+        "2026-07-15"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

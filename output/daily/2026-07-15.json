@@ -66,7 +66,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["aviation", "antarctic", "commonwealth", "logistics"],
+      "tags": [
+        "aviation",
+        "antarctic",
+        "commonwealth",
+        "logistics"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the AusTender current ATM list; buyer-originated Commonwealth notice on tenders.gov.au. Title and close date corroborated across two search snippets.",
@@ -114,7 +119,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "planning", "development-contributions", "nsw"],
+      "tags": [
+        "local-government",
+        "planning",
+        "development-contributions",
+        "nsw"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW local-government RFQ published on the NSW Government procurement platform.",
@@ -162,7 +172,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["national-parks", "fire-trails", "civil-works", "nsw", "bushfire"],
+      "tags": [
+        "national-parks",
+        "fire-trails",
+        "civil-works",
+        "nsw",
+        "bushfire"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW state agency (NPWS) RFT on the NSW Government procurement platform.",
@@ -210,7 +226,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["panel", "assessment", "motor-dealer", "nsw"],
+      "tags": [
+        "panel",
+        "assessment",
+        "motor-dealer",
+        "nsw"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated NSW panel establishment on the NSW Government procurement platform.",
@@ -258,7 +279,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["act", "evaluation", "rfi", "parliamentary-library"],
+      "tags": [
+        "act",
+        "evaluation",
+        "rfi",
+        "parliamentary-library"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of Tenders ACT current tenders; buyer-originated ACT Government notice on tenders.act.gov.au.",
@@ -306,7 +332,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sydney-water", "plant-hire", "equipment-hire", "eoi", "nsw", "gbe"],
+      "tags": [
+        "sydney-water",
+        "plant-hire",
+        "equipment-hire",
+        "eoi",
+        "nsw",
+        "gbe"
+      ],
       "first_seen": "2026-07-15",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw opportunities with a live prcOpportunity deep link; buyer-originated Sydney Water (state-owned corporation) EOI on the NSW Government platform.",
