@@ -63,7 +63,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "NSW", "EOI", "environmental-monitoring", "cold-storage", "laboratory", "ICT"],
+      "tags": [
+        "university",
+        "NSW",
+        "EOI",
+        "environmental-monitoring",
+        "cold-storage",
+        "laboratory",
+        "ICT"
+      ],
       "first_seen": "2026-07-17",
       "detail_source": "",
       "reasoning": "Discovered via web search of Australian university procurement; UNSW publishes its own tenders through the buyer-originated UNSW E-Tendering portal (portal.tenderlink.com/unsw). An aggregator listing (australiantenders.com.au id 594385) was used only as a discovery signal, not as the source of truth.",
