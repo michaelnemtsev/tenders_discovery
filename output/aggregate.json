@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-18",
+  "generated": "2026-07-19",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -24,30 +24,32 @@
     "2026-07-15",
     "2026-07-16",
     "2026-07-17",
-    "2026-07-18"
+    "2026-07-18",
+    "2026-07-19"
   ],
-  "run_count": 24,
+  "run_count": 25,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-18",
-  "latest_coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (local councils via buy.nsw/tenders.sa.gov.au, universities UNSW and RMIT); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured five recently-published or open opportunities (NSW DPIRD Business Systems Assurance platform, Blacktown City Council tree-planting RFT, Copper Coast Council Jones Street Wallaroo reconstruction, UNSW physical blast-simulation facility RFT, RMIT Architecture Panel EOI) and one genuinely new buyer-originated source (RMIT Supply Portal / TenderMax at tendermax.rmit.edu.au). As in recent runs, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external portal, including buy.nsw), so detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls.",
+  "latest_run": "2026-07-19",
+  "latest_coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (water GBEs Sydney Water / Melbourne Water / SA Water, universities University of Sydney and RMIT, local government via VendorPanel); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured two buyer-originated opportunities not seen in prior runs (a Tasmanian Government 'Provision of Security Guarding Services' tender closing 31 July 2026, and the University of Sydney Campus Master Plan program of four forthcoming consultant EOIs), and discovered one genuinely new e-sourcing platform (Zycus, the procurement system Melbourne Water uses for its Cardinia Dam Upgrade EOI). As in every recent run, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external site this run, including tenders.gov.au and aggregator pages), so all detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls, and no deliverables/specification documents could be opened.",
   "latest_run_metadata": {
-    "run_date": "2026-07-18",
-    "coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (local councils via buy.nsw/tenders.sa.gov.au, universities UNSW and RMIT); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured five recently-published or open opportunities (NSW DPIRD Business Systems Assurance platform, Blacktown City Council tree-planting RFT, Copper Coast Council Jones Street Wallaroo reconstruction, UNSW physical blast-simulation facility RFT, RMIT Architecture Panel EOI) and one genuinely new buyer-originated source (RMIT Supply Portal / TenderMax at tendermax.rmit.edu.au). As in recent runs, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external portal, including buy.nsw), so detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls.",
-    "sources_checked": 16,
-    "tenders_found": 5,
+    "run_date": "2026-07-19",
+    "coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (water GBEs Sydney Water / Melbourne Water / SA Water, universities University of Sydney and RMIT, local government via VendorPanel); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured two buyer-originated opportunities not seen in prior runs (a Tasmanian Government 'Provision of Security Guarding Services' tender closing 31 July 2026, and the University of Sydney Campus Master Plan program of four forthcoming consultant EOIs), and discovered one genuinely new e-sourcing platform (Zycus, the procurement system Melbourne Water uses for its Cardinia Dam Upgrade EOI). As in every recent run, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external site this run, including tenders.gov.au and aggregator pages), so all detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls, and no deliverables/specification documents could be opened.",
+    "sources_checked": 17,
+    "tenders_found": 2,
     "new_sources_found": 1,
-    "entries_pending_detail": 5,
+    "entries_pending_detail": 2,
     "gaps": [
-      "Direct page retrieval (WebFetch) returned HTTP 403 Forbidden for every external site this run, including buy.nsw, tenders.gov.au, Tenders WA/SA/Tasmania, NT QTOL and ACT Tenders. Tender detail pages and specification documents could not be opened, so deliverables/requirements/evaluation-criteria extraction was not possible; all findings rely on public search snippets and must be treated as pending a detail pass.",
-      "Closing dates for the captured opportunities come from search-index and aggregator listings, not the buyer's own verified detail page. The NSW DPIRD Business Systems Assurance platform closing date was reported inconsistently across listings (21 July vs 24 July 2026) and is left null pending verification.",
+      "Direct page retrieval (WebFetch) returned HTTP 403 Forbidden for every external site this run, including tenders.gov.au (AusTender ATM detail pages) and aggregator listing pages. Tender detail pages and specification documents could not be opened, so deliverables/requirements/evaluation-criteria/value/contact extraction was not possible; all findings rely on public search snippets and must be treated as pending a detail pass.",
+      "Tasmanian 'Provision of Security Guarding Services' tender: the issuing department/agency and the tender reference number were not resolvable from public search snippets; only the tender title and a closing date of 31 July 2026 were visible. The buyer field is left blank rather than guessed; the closing date is from an aggregator/search index and is not verified against the buyer's own tenders.tas.gov.au detail page (which returned a session timeout / could not be fetched).",
+      "Melbourne Water 'Cardinia Dam Upgrade (CDU) Construct Only' EOI surfaced (run via the Zycus platform, sourcing event 1221426768) but its published online briefing was dated 19 September 2025, indicating the EOI opened in 2025 and is likely already closed; it was therefore recorded only as a platform/source discovery (Zycus) and NOT captured as an open tender, to avoid asserting an unverified open status.",
+      "University of Sydney Campus Master Plan: the university has flagged that four interrelated consultant EOIs 'will shortly be released'; individual EOI closing dates were not yet published, so this is recorded as a market-sounding / notice of upcoming procurement rather than an open tender with a deadline.",
       "Tier-3 corporate opportunities (SAP Ariba Discovery / SAP Business Network) are login/registration-gated; no publicly-visible Australian corporate RFx was retrievable without a supplier account this run. The portal is recorded in discovered_sources with access_method=portal-registration; no corporate tenders were fabricated.",
       "Invitation-only / panel-restricted RFx (e.g. management-consultancy RFPs sent to shortlisted firms) are out of scope and were not sought.",
-      "A Tasmanian DECYP opportunity ('Practical School Based Engagement and Attendance Program', DECYP_2398) surfaced but an aggregator listed it as already closed (15 July 2026); it was excluded rather than recorded as open.",
-      "Search index appears to lag by roughly 1-2 weeks; several returned listings had closing dates already passed relative to the run date and were excluded."
+      "Several opportunities returned by the search index were already captured in prior runs (e.g. Blacktown Christmas decorations RFT, Gosford Hospital Lift 13 replacement, TfNSW koala population monitoring, HSSP natural gas to public hospitals, Sydney Water Circular Economy Zone EOI, SA Water Millicent WWTP EOI) and were not re-recorded as new; the search index continues to lag by roughly 1-2 weeks, so many surfaced listings had already-passed closing dates and were excluded."
     ],
     "recommended_seed_additions": [
-      "RMIT University Supply Portal (TenderMax) — https://tendermax.rmit.edu.au — buyer-originated university e-tendering portal (VIC) hosting EOIs/RFTs such as the RMIT Architecture Panel; distinct from RMIT's general procurement info page already known.",
-      "Copper Coast Council (SA) — publishes works quotations/tenders via SA Tenders and Contracts (tenders.sa.gov.au); a recurring local-government buyer worth monitoring."
+      "Zycus (zsn.zycus.com/guest) — buyer-chosen e-sourcing platform, sibling to SAP Ariba / Coupa / Jaggaer; used by Melbourne Water (and other large buyers) to run EOIs/RFx. Worth monitoring as a corporate/GBE e-sourcing channel and using each buyer on it as a seed to find sibling buyers.",
+      "University of Sydney eTendering portal (Strategic Sourcing) — buyer-originated university procurement channel running the Campus Master Plan consultant EOIs and Managing Contractor Contract panel; contact Strategic Sourcing (fredrik.bengtsson@sydney.edu.au)."
     ]
   },
   "months": [
@@ -58,7 +60,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 89,
+      "new_tenders": 91,
       "active_tenders": 0
     }
   ],
@@ -8171,8 +8173,8 @@
         "2026-07-18"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:blacktown-c16-2026-tree-planting-establishment",
@@ -8233,8 +8235,8 @@
         "2026-07-18"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersSA:copper-coast-jones-street-wallaroo-reconstruction",
@@ -8296,8 +8298,8 @@
         "2026-07-18"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "UNSW:rft-national-facility-physical-blast-simulation",
@@ -8357,8 +8359,8 @@
         "2026-07-18"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "RMIT:architecture-panel-eoi-prequalified-architects",
@@ -8419,6 +8421,130 @@
         "2026-07-18"
       ],
       "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "TendersTasmania:provision-of-security-guarding-services-closing-2026-07-31",
+      "source_name": "Tasmanian Government Tenders (eTendering)",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "Australia / Tasmania",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Provision of Security Guarding Services",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Security services / guarding",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "A Tasmanian Government tender seeking the provision of security guarding services, published on the Tasmanian Government eTendering portal and open for response.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-31",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via the Tasmanian Government eTendering portal (tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "gov-state",
+        "TAS",
+        "security",
+        "guarding-services",
+        "RFT"
+      ],
+      "first_seen": "2026-07-19",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of current Tasmanian Government tenders; the Tasmanian eTendering portal (tenders.tas.gov.au) is the buyer-originated publication channel and a search snippet from it indicated one new tender published within the last 7 days. An aggregator listing (australiantenders.com.au/tenders/582370) was used only as a corroborating discovery signal, not as the source of truth.",
+      "notes": "Headline-level only. The issuing department/agency and tender reference number were not visible in public snippets (buyer left blank rather than guessed). Closing date 31 July 2026 is from the search index/aggregator and could not be confirmed on the buyer's own detail page (WebFetch returned HTTP 403 and the tenders.tas.gov.au page returned a session timeout this run). General portal helpdesk is tenders@treasury.tas.gov.au / 03 6145 5888, but that is not confirmed as this tender's contact so it is not recorded in the contact fields. Scope, documents, value and requirements remain unverified.",
+      "last_seen": "2026-07-19",
+      "seen_dates": [
+        "2026-07-19"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "USYD:campus-master-plan-four-consultant-eois-2026",
+      "source_name": "University of Sydney — eTendering (Strategic Sourcing)",
+      "source_url": "https://www.sydney.edu.au/about-us/working-with-the-university/suppliers.html",
+      "source_type": "university",
+      "jurisdiction": "Australia / New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.sydney.edu.au/about-us/working-with-the-university/suppliers.html",
+      "access": "free-registration",
+      "title": "Campus Master Plan — four Expression of Interest opportunities for leading consultants",
+      "buyer": "The University of Sydney",
+      "buyer_url": "https://www.sydney.edu.au/",
+      "category": "Professional services / architecture, urban design and master planning consultancy",
+      "category_codes": [],
+      "procurement_type": "market-sounding",
+      "current_status": "recently-published",
+      "description": "The University of Sydney has flagged that it will shortly release four interrelated Expressions of Interest for its Campus Master Plan, inviting leading consultants across architecture, urban design and master planning to participate as the EOIs are released.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Aimed at suitably qualified and experienced consultants in architecture, urban design and master planning; interested parties are encouraged to monitor the University's eTender portal for the individual EOI release dates.",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via the University of Sydney eTender portal once each EOI is released",
+      "lodgement_url": "",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "University of Sydney campuses, NSW",
+      "contact_name": "Fred Bengtsson (Strategic Sourcing Manager)",
+      "contact_email": "fredrik.bengtsson@sydney.edu.au",
+      "contact_phone": "",
+      "tags": [
+        "university",
+        "NSW",
+        "master-planning",
+        "architecture",
+        "consultancy",
+        "EOI",
+        "upcoming"
+      ],
+      "first_seen": "2026-07-19",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of University of Sydney tenders; the University runs its own buyer-originated eTendering / Strategic Sourcing channel through which the Campus Master Plan EOIs will be released. An aggregator listing (australiantenders.com.au/tenders/601222) was used only as a discovery signal. Recorded as a notice of upcoming procurement (market-sounding) because the individual EOIs are not yet open.",
+      "notes": "Headline-level only and forthcoming rather than open: the four EOIs 'will shortly be released' with submission requirements and timelines to be published with each. Individual closing dates were not available. The contact (Fred Bengtsson, fredrik.bengtsson@sydney.edu.au) is published as the query point for these EOIs. Scope, deliverables, evaluation criteria and value remain unpublished at the time of this run.",
+      "last_seen": "2026-07-19",
+      "seen_dates": [
+        "2026-07-19"
+      ],
+      "seen_count": 1,
       "is_new_in_latest": true,
       "active_in_latest": true
     }
@@ -8469,27 +8595,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Sydney Water — Current tenders (NSW eTendering)",
+      "source_name": "Sydney Water — Current Tenders",
       "source_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
       "source_type": "gov-business-enterprise",
       "jurisdiction": "New South Wales",
-      "platform": "NSW eTendering / SAP-Ariba",
+      "platform": "custom / buy.nsw",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.nsw.gov.au/sydneywater/",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 2 GBE sweep; re-checked this run (Quakers Hill WRRF Package C + Strategic Customer Engagement market sounding).",
+      "how_discovered": "Known GBE water-corporation source; re-checked this run. Surfaced items already captured in prior runs (Drinking Water Program EPCM EOI, Circular Economy Zone EOI).",
       "recommended_check_frequency": "weekly",
-      "notes": "Buyer-originated water GBE; detail page returned HTTP 403 to the fetch tool.",
+      "notes": "Sydney Water publishes major EOIs/tenders here and via buy.nsw.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-28",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-25",
-        "2026-06-28"
+        "2026-06-28",
+        "2026-07-19"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "AusTender (Commonwealth)",
@@ -8501,11 +8628,11 @@
       "feed_or_api_url": "https://www.tenders.gov.au/atm",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via the search index. Direct fetch returned HTTP 403.",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via the search index. Direct fetch (ATM detail pages) returned HTTP 403.",
       "recommended_check_frequency": "daily",
-      "notes": "Central Commonwealth procurement portal. A new Supplier Portal rollout to all registered users is scheduled for July 2026. Individual ATM detail pages could not be fetched directly this run.",
+      "notes": "Central Commonwealth procurement portal. Individual ATM detail pages could not be fetched directly this run.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -8513,9 +8640,10 @@
         "2026-06-28",
         "2026-07-08",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8526,23 +8654,24 @@
       "jurisdiction": "Victoria",
       "platform": "Buying for Victoria",
       "access_method": "html",
-      "feed_or_api_url": null,
+      "feed_or_api_url": "https://www.tenders.vic.gov.au/tenders/open",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; queried this run (open + 'new this week' views).",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Direct fetch returned HTTP 403.",
       "recommended_check_frequency": "daily",
-      "notes": "Detail/list pages list dynamically and were not extractable from snippets this run; note buyingfor.vic.gov.au is the companion supplier portal.",
+      "notes": "Victorian Government central tender portal.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-28",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
         "2026-06-27",
-        "2026-06-28"
+        "2026-06-28",
+        "2026-07-19"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Tenders WA",
@@ -8558,16 +8687,17 @@
       "recommended_check_frequency": "daily",
       "notes": "WA public-sector advertised requests and awarded contracts.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 6,
+      "seen_count": 7,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8629,7 +8759,7 @@
       "recommended_check_frequency": "daily",
       "notes": "Largest single slice of corporate opportunity; full detail requires free supplier registration.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -8643,9 +8773,10 @@
         "2026-07-13",
         "2026-07-14",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 13,
+      "seen_count": 14,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8751,18 +8882,19 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Surfaced fresh opportunities (DPIRD Business Systems Assurance platform; Blacktown City Council tree-planting RFT). Direct fetch returned HTTP 403.",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Surfaced opportunities already captured in prior runs (Blacktown Christmas decorations RFT, Gosford Hospital Lift 13, TfNSW koala monitoring, natural gas to public hospitals). Direct fetch returned HTTP 403.",
       "recommended_check_frequency": "daily",
       "notes": "NSW Government Opportunities Hub; carries state agency and many council tenders.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9080,19 +9212,20 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-2 seed; checked this run. Most councils publish here.",
+      "how_discovered": "Canonical Tier-2 seed; checked this run. Most councils publish here; no new resolvable open council opportunity beyond those already captured surfaced in snippets.",
       "recommended_check_frequency": "daily",
       "notes": "Buyer-originated platform for councils, GOCs, NFPs and universities.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9287,13 +9420,14 @@
       "recommended_check_frequency": "daily",
       "notes": "Tender notices continue on QTenders during the transition to VendorPanel.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9307,17 +9441,18 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Surfaced a Copper Coast Council roadworks quotation (Jones Street, Wallaroo). Direct fetch returned HTTP 403.",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via search. SA Water Millicent WWTP EOI (already captured previously) was the main SA item surfaced. Direct fetch returned HTTP 403.",
       "recommended_check_frequency": "daily",
       "notes": "South Australian Government and local-government tenders and contracts.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9331,17 +9466,18 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via search. A DECYP opportunity surfaced but appeared already closed and was excluded.",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Surfaced a new 'Provision of Security Guarding Services' tender (closing 31 July 2026) which is captured this run. Direct fetch / detail page returned a session timeout.",
       "recommended_check_frequency": "daily",
-      "notes": "Tasmanian Government tenders; purchasing.tas.gov.au hosts current-tender listings.",
+      "notes": "Tasmanian Government tenders; purchasing.tas.gov.au hosts current-tender listings and tenders@treasury.tas.gov.au is the general helpdesk.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9381,12 +9517,13 @@
       "recommended_check_frequency": "daily",
       "notes": "ACT Government central tender portal.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-06-28",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9986,26 +10123,27 @@
       "active_in_latest": false
     },
     {
-      "source_name": "University of Sydney - Suppliers / UniBuy Procurement",
+      "source_name": "University of Sydney — eTendering (Strategic Sourcing)",
       "source_url": "https://www.sydney.edu.au/about-us/working-with-the-university/suppliers.html",
       "source_type": "university",
       "jurisdiction": "New South Wales",
-      "platform": "custom",
-      "access_method": "html",
+      "platform": "custom (university eTender)",
+      "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
-      "confidence": "medium",
-      "how_discovered": "WebSearch for Australian university procurement surfaced the University of Sydney's own suppliers page (with EOIs for a Modern Methods of Construction Panel and Electrical Test-and-Tag services referenced via aggregators); recorded the buyer-originated portal rather than the aggregator listings.",
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Known university supplier page; re-checked this run and found the Campus Master Plan program of four forthcoming consultant EOIs plus a Managing Contractor Contract (MCC) panel EOI.",
       "recommended_check_frequency": "weekly",
-      "notes": "Buyer-originated university procurement portal (UniBuy). Specific current EOIs were only visible via third-party aggregators this run and could not be confirmed on the buyer's own portal (egress 403); verify on the University's own portal next run. Useful seed for sibling universities.",
+      "notes": "Buyer-originated university procurement channel; individual EOIs released via the University's eTender portal.",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-02",
+      "last_seen": "2026-07-19",
       "seen_dates": [
-        "2026-07-02"
+        "2026-07-02",
+        "2026-07-19"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
@@ -10846,26 +10984,27 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Melbourne Water - Zycus e-sourcing portal",
+      "source_name": "Melbourne Water — Suppliers and Procurement",
       "source_url": "https://www.melbournewater.com.au/about/what-we-do/our-customers/suppliers-and-procurement",
       "source_type": "gov-business-enterprise",
       "jurisdiction": "Victoria",
       "platform": "Zycus",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "While reviewing the Cardinia Dam Upgrade EOI/RFP, found that Melbourne Water runs its sourcing events through the Zycus platform (submissions lodged via Zycus sourcing event numbers), a distinct e-sourcing platform not previously catalogued for this GBE.",
+      "how_discovered": "Known GBE water-corporation source; re-checked this run. Its Cardinia Dam Upgrade Construct-Only EOI is run on Zycus (sourcing event 1221426768); that EOI appears to have opened in 2025 (briefing 19 Sep 2025) and was not captured as a new open tender.",
       "recommended_check_frequency": "weekly",
-      "notes": "Platform detail (Zycus) is the new finding; a Melbourne Water supplier/tender channel was already known. Registration-gated. Not directly fetchable this run (egress 403).",
+      "notes": "Melbourne Water publishes major EOIs (dam upgrades, capital works program) via the Zycus platform.",
       "first_seen": "2026-07-06",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-19",
       "seen_dates": [
-        "2026-07-06"
+        "2026-07-06",
+        "2026-07-19"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Public Transport Authority of Western Australia - Tenders",
@@ -11549,7 +11688,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "buy.nsw / NSW eTendering",
@@ -11594,7 +11733,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -11606,16 +11745,17 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via search. No new resolvable open opportunity surfaced in snippets beyond the previously-noted Power & Water tender.",
+      "how_discovered": "Canonical Tier-1 seed; checked this run via search. No new resolvable open opportunity surfaced in snippets this run.",
       "recommended_check_frequency": "daily",
       "notes": "NT Government procurement over ~$200k is advertised here.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-07-17",
-        "2026-07-18"
+        "2026-07-18",
+        "2026-07-19"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -11658,6 +11798,28 @@
       "last_seen": "2026-07-18",
       "seen_dates": [
         "2026-07-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Zycus (Melbourne Water e-sourcing platform)",
+      "source_url": "https://zsn.zycus.com/guest",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Australia (multi-buyer; observed at Melbourne Water, Victoria)",
+      "platform": "Zycus",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Found while searching Melbourne Water tenders (Cardinia Dam Upgrade Construct-Only EOI, sourcing event 1221426768). Melbourne Water runs its EOIs/RFx through the Zycus procurement system, with guest access and an eForum at zsn.zycus.com/guest. Zycus is a buyer-chosen e-sourcing platform (sibling to SAP Ariba / Coupa / Jaggaer), not an aggregator.",
+      "recommended_check_frequency": "weekly",
+      "notes": "New platform for this routine. Buyer-originated e-sourcing hub; full opportunity detail and lodgement require registration/guest access on the Zycus event. Use each buyer found on Zycus as a seed to identify sibling buyers on the same platform.",
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "seen_dates": [
+        "2026-07-19"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
