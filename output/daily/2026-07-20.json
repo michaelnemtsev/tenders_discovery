@@ -71,7 +71,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "environment", "energy", "testing", "panel", "GEMS"],
+      "tags": [
+        "commonwealth",
+        "environment",
+        "energy",
+        "testing",
+        "panel",
+        "GEMS"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth notice published on AusTender by DCCEEW. Headline and scope taken from public search snippet of the ATM detail page.",
@@ -119,7 +126,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "education-training", "EOI"],
+      "tags": [
+        "commonwealth",
+        "education-training",
+        "EOI"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth EOI published on AusTender by DCCEEW, published 13 July 2026 (within the last 7 days).",
@@ -170,7 +181,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "health-agency", "personnel-security", "screening"],
+      "tags": [
+        "commonwealth",
+        "health-agency",
+        "personnel-security",
+        "screening"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via AusTender web search for the Australian Digital Health Agency; buyer-originated Commonwealth RFT published on AusTender. Description drawn from the public search snippet of the ATM detail page.",
@@ -222,7 +238,13 @@
       "contact_name": "Stephanie Scroope",
       "contact_email": "stephanie.scroope@moadoph.gov.au",
       "contact_phone": "",
-      "tags": ["commonwealth", "exhibition-design", "first-nations", "cultural", "closing-soon"],
+      "tags": [
+        "commonwealth",
+        "exhibition-design",
+        "first-nations",
+        "cultural",
+        "closing-soon"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via AusTender web search for Museum of Australian Democracy exhibition design; buyer-originated Commonwealth RFT published on AusTender by MoAD. Scope, briefing and contact taken from the public search snippet of the ATM detail page.",
@@ -270,7 +292,10 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "printing"],
+      "tags": [
+        "commonwealth",
+        "printing"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth notice published on AusTender by the Office of Parliamentary Counsel.",
@@ -323,7 +348,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "queensland", "procurement-advisory", "vendorpanel"],
+      "tags": [
+        "local-government",
+        "queensland",
+        "procurement-advisory",
+        "vendorpanel"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "",
       "reasoning": "Found via web search of VendorPanel public tenders for Douglas Shire Council; buyer-originated local-government RFQ posted on the Council's chosen e-sourcing platform (VendorPanel).",

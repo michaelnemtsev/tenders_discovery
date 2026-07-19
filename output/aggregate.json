@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19",
+  "generated": "2026-07-20",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -25,31 +25,32 @@
     "2026-07-16",
     "2026-07-17",
     "2026-07-18",
-    "2026-07-19"
+    "2026-07-19",
+    "2026-07-20"
   ],
-  "run_count": 25,
+  "run_count": 26,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-19",
-  "latest_coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (water GBEs Sydney Water / Melbourne Water / SA Water, universities University of Sydney and RMIT, local government via VendorPanel); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured two buyer-originated opportunities not seen in prior runs (a Tasmanian Government 'Provision of Security Guarding Services' tender closing 31 July 2026, and the University of Sydney Campus Master Plan program of four forthcoming consultant EOIs), and discovered one genuinely new e-sourcing platform (Zycus, the procurement system Melbourne Water uses for its Cardinia Dam Upgrade EOI). As in every recent run, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external site this run, including tenders.gov.au and aggregator pages), so all detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls, and no deliverables/specification documents could be opened.",
+  "latest_run": "2026-07-20",
+  "latest_coverage_summary": "Swept all nine Tier-1 government portals via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders). Sampled Tier-2 (local government via VendorPanel public tenders, universities, NSW/QLD Local Health District procurement) and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured six buyer-originated opportunities not seen in prior runs: five Commonwealth AusTender approaches to market (a DCCEEW GEMS verification-testing laboratory panel, a DCCEEW education-and-training EOI, an Australian Digital Health Agency pre-employment screening RFT, a Museum of Australian Democracy exhibition-design RFT, and an Office of Parliamentary Counsel printing RFT) plus one Queensland local-government RFQ (Douglas Shire Council, run via VendorPanel). Two genuinely new buyer sources were recorded (Douglas Shire Council on VendorPanel, and Townsville Hospital and Health Service's own procurement page). As in every recent run, direct page retrieval was blocked: WebFetch returned HTTP 403 to every external URL this run, so all detail is limited to publicly-searchable headline/snippet level and no specification documents could be opened; no publicly-visible Australian corporate RFx was retrievable without a supplier login.",
   "latest_run_metadata": {
-    "run_date": "2026-07-19",
-    "coverage_summary": "Queried all nine Tier-1 government jurisdictions (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) via web search; sampled Tier-2 (water GBEs Sydney Water / Melbourne Water / SA Water, universities University of Sydney and RMIT, local government via VendorPanel); and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured two buyer-originated opportunities not seen in prior runs (a Tasmanian Government 'Provision of Security Guarding Services' tender closing 31 July 2026, and the University of Sydney Campus Master Plan program of four forthcoming consultant EOIs), and discovered one genuinely new e-sourcing platform (Zycus, the procurement system Melbourne Water uses for its Cardinia Dam Upgrade EOI). As in every recent run, direct page fetching was unavailable (WebFetch returned HTTP 403 to every external site this run, including tenders.gov.au and aggregator pages), so all detail is limited to publicly-searchable headline level; no corporate RFx could be read behind registration walls, and no deliverables/specification documents could be opened.",
-    "sources_checked": 17,
-    "tenders_found": 2,
-    "new_sources_found": 1,
-    "entries_pending_detail": 2,
+    "run_date": "2026-07-20",
+    "coverage_summary": "Swept all nine Tier-1 government portals via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders). Sampled Tier-2 (local government via VendorPanel public tenders, universities, NSW/QLD Local Health District procurement) and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured six buyer-originated opportunities not seen in prior runs: five Commonwealth AusTender approaches to market (a DCCEEW GEMS verification-testing laboratory panel, a DCCEEW education-and-training EOI, an Australian Digital Health Agency pre-employment screening RFT, a Museum of Australian Democracy exhibition-design RFT, and an Office of Parliamentary Counsel printing RFT) plus one Queensland local-government RFQ (Douglas Shire Council, run via VendorPanel). Two genuinely new buyer sources were recorded (Douglas Shire Council on VendorPanel, and Townsville Hospital and Health Service's own procurement page). As in every recent run, direct page retrieval was blocked: WebFetch returned HTTP 403 to every external URL this run, so all detail is limited to publicly-searchable headline/snippet level and no specification documents could be opened; no publicly-visible Australian corporate RFx was retrievable without a supplier login.",
+    "sources_checked": 18,
+    "tenders_found": 6,
+    "new_sources_found": 2,
+    "entries_pending_detail": 6,
     "gaps": [
-      "Direct page retrieval (WebFetch) returned HTTP 403 Forbidden for every external site this run, including tenders.gov.au (AusTender ATM detail pages) and aggregator listing pages. Tender detail pages and specification documents could not be opened, so deliverables/requirements/evaluation-criteria/value/contact extraction was not possible; all findings rely on public search snippets and must be treated as pending a detail pass.",
-      "Tasmanian 'Provision of Security Guarding Services' tender: the issuing department/agency and the tender reference number were not resolvable from public search snippets; only the tender title and a closing date of 31 July 2026 were visible. The buyer field is left blank rather than guessed; the closing date is from an aggregator/search index and is not verified against the buyer's own tenders.tas.gov.au detail page (which returned a session timeout / could not be fetched).",
-      "Melbourne Water 'Cardinia Dam Upgrade (CDU) Construct Only' EOI surfaced (run via the Zycus platform, sourcing event 1221426768) but its published online briefing was dated 19 September 2025, indicating the EOI opened in 2025 and is likely already closed; it was therefore recorded only as a platform/source discovery (Zycus) and NOT captured as an open tender, to avoid asserting an unverified open status.",
-      "University of Sydney Campus Master Plan: the university has flagged that four interrelated consultant EOIs 'will shortly be released'; individual EOI closing dates were not yet published, so this is recorded as a market-sounding / notice of upcoming procurement rather than an open tender with a deadline.",
-      "Tier-3 corporate opportunities (SAP Ariba Discovery / SAP Business Network) are login/registration-gated; no publicly-visible Australian corporate RFx was retrievable without a supplier account this run. The portal is recorded in discovered_sources with access_method=portal-registration; no corporate tenders were fabricated.",
+      "Direct page retrieval (WebFetch) returned HTTP 403 Forbidden for every external site this run, including tenders.gov.au ATM detail pages and VendorPanel listing pages. Tender specification documents, contact details, evaluation criteria and values could not be extracted; all findings rely on public search snippets and are flagged as pending a detail pass.",
+      "SA Tenders and Contracts, Tenders Tasmania and NT QTOL: no new open opportunity distinct from prior runs surfaced above the search-snippet threshold this run; their landing/search endpoints were reachable but individual current-tender listings were not retrievable via WebFetch (403). Deferred deeper listing extraction to a future run.",
+      "Tier-3 corporate opportunities (SAP Ariba Discovery / SAP Business Network Discovery) remain registration/login-gated; no publicly-visible Australian corporate RFx was retrievable without a supplier account this run. The portal is recorded in discovered_sources with access_method=portal-registration; no corporate tenders were fabricated.",
       "Invitation-only / panel-restricted RFx (e.g. management-consultancy RFPs sent to shortlisted firms) are out of scope and were not sought.",
-      "Several opportunities returned by the search index were already captured in prior runs (e.g. Blacktown Christmas decorations RFT, Gosford Hospital Lift 13 replacement, TfNSW koala population monitoring, HSSP natural gas to public hospitals, Sydney Water Circular Economy Zone EOI, SA Water Millicent WWTP EOI) and were not re-recorded as new; the search index continues to lag by roughly 1-2 weeks, so many surfaced listings had already-passed closing dates and were excluded."
+      "Museum of Australian Democracy exhibition-design RFT (MoAD-ATM-7493) closes 20 July 2026 (today, Sydney time); it is captured as closing-soon and may already be closed by ingestion time. Its industry briefing/site inspection was held 24 June 2026 and has passed.",
+      "Douglas Shire Council RFQ closing date (approx. early August 2026) was visible only in an aggregator/search snippet and was not verified against the buyer's own VendorPanel detail page (403); recorded as approximate and pending verification.",
+      "Many listings returned by the search index had already-passed closing dates or were captured in prior runs (the public search index continues to lag by roughly 1-2 weeks) and were excluded to avoid re-recording stale or duplicate entries."
     ],
     "recommended_seed_additions": [
-      "Zycus (zsn.zycus.com/guest) — buyer-chosen e-sourcing platform, sibling to SAP Ariba / Coupa / Jaggaer; used by Melbourne Water (and other large buyers) to run EOIs/RFx. Worth monitoring as a corporate/GBE e-sourcing channel and using each buyer on it as a seed to find sibling buyers.",
-      "University of Sydney eTendering portal (Strategic Sourcing) — buyer-originated university procurement channel running the Campus Master Plan consultant EOIs and Managing Contractor Contract panel; contact Strategic Sourcing (fredrik.bengtsson@sydney.edu.au)."
+      "Douglas Shire Council (QLD) — buyer-originated council procurement run through VendorPanel Marketplace (pages.vendorpanel.com/workwithdouglasshire); worth monitoring weekly for far-north-Queensland local-government RFQs/RFTs.",
+      "Townsville Hospital and Health Service — buyer-originated Queensland public-health procurement page (townsville.health.qld.gov.au/about-us/procurement-and-tenders), a Hospital and Health Service publishing outside the core QTenders row view; use as a seed to find sibling QLD HHS procurement pages."
     ]
   },
   "months": [
@@ -60,7 +61,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 91,
+      "new_tenders": 97,
       "active_tenders": 0
     }
   ],
@@ -8482,8 +8483,8 @@
         "2026-07-19"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "USYD:campus-master-plan-four-consultant-eois-2026",
@@ -8543,6 +8544,386 @@
       "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-07-19"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_6786-dcceew-gems-verification-testing-laboratory-panel",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "National",
+      "tender_id": "ATM_2026_6786",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/998e15fe-ea59-434c-9b12-cf38ae0b49d2",
+      "access": "public",
+      "title": "GEMS Act verification testing laboratory services (panel)",
+      "buyer": "Department of Climate Change, Energy, the Environment and Water (DCCEEW)",
+      "buyer_url": "https://www.dcceew.gov.au/about/assistance-grants-tenders",
+      "category": "Environmental auditing",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "DCCEEW is seeking accredited testing laboratories to undertake verification testing of products regulated under the Greenhouse and Energy Minimum Standards Act 2012 (GEMS Act), to confirm compliance with mandatory regulatory requirements and verify manufacturers' energy-efficiency and performance claims. The procurement is to establish a panel arrangement.",
+      "deliverables_summary": "The supplier(s) must provide laboratory verification testing of GEMS-regulated products so the department can check that the products meet mandatory minimum energy-performance standards and that suppliers' efficiency/performance claims are accurate. Delivery is national (and where required overseas) under a multi-supplier panel.",
+      "key_deliverables": [
+        "Verification testing of GEMS-regulated products against the applicable standards",
+        "Compliance/verification test reports supporting regulatory enforcement",
+        "Testing capacity across product categories under a panel arrangement"
+      ],
+      "scope_of_work": "Testing laboratories with appropriate accreditation undertake verification testing of products regulated under the GEMS Act 2012; testing is used to verify compliance with mandatory regulatory requirements and to confirm the accuracy of energy-efficiency and performance claims made by manufacturers and suppliers. Delivery locations span ACT, NSW, VIC, SA, WA, QLD, NT, TAS and overseas.",
+      "requirements": [
+        "Appropriate testing-laboratory accreditation (as specified in the tender documents)"
+      ],
+      "eligibility": "Open approach to market to establish a panel arrangement",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-07-01",
+      "closing_date": "2026-08-12",
+      "closing_time": "2:00 PM ACT Local Time",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/998e15fe-ea59-434c-9b12-cf38ae0b49d2",
+      "documents": [],
+      "mandatory_conditions": [
+        "Laboratory must hold appropriate accreditation to perform GEMS verification testing"
+      ],
+      "delivery_location": "National (ACT, NSW, VIC, SA, WA, QLD, NT, TAS) and overseas",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "environment",
+        "energy",
+        "testing",
+        "panel",
+        "GEMS"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth notice published on AusTender by DCCEEW. Headline and scope taken from public search snippet of the ATM detail page.",
+      "notes": "Panel arrangement. Deliverables/scope summarised from a public search snippet of the ATM detail page; contact, value, contract term, evaluation criteria and documents were not retrievable because WebFetch returned HTTP 403. Pending a detail pass against the notice's own documents.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_6489-dcceew-education-and-training-services-eoi",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "National",
+      "tender_id": "ATM_2026_6489",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/a45bebc4-880f-4f1a-8fca-cb9b02e60999",
+      "access": "public",
+      "title": "Expression of Interest — Education and Training Services",
+      "buyer": "Department of Climate Change, Energy, the Environment and Water (DCCEEW)",
+      "buyer_url": "https://www.dcceew.gov.au/about/assistance-grants-tenders",
+      "category": "Education and Training Services",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "recently-published",
+      "description": "DCCEEW has published an Expression of Interest in the Education and Training Services category on AusTender.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open expression of interest",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-07-13",
+      "closing_date": "2026-08-17",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/a45bebc4-880f-4f1a-8fca-cb9b02e60999",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "education-training",
+        "EOI"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth EOI published on AusTender by DCCEEW, published 13 July 2026 (within the last 7 days).",
+      "notes": "Headline only — the EOI's category, publish date (13 Jul 2026) and closing date (17 Aug 2026) were visible in the AusTender ATM index snippet, but the detailed scope, deliverables, contact and documents were not retrievable (WebFetch 403). Pending a detail pass.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:RFT13109-australian-digital-health-agency-pre-employment-screening",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "ACT",
+      "tender_id": "RFT13109",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/57716272-356e-4479-a822-83d353a112f4",
+      "access": "public",
+      "title": "Pre-employment Screening Services",
+      "buyer": "Australian Digital Health Agency",
+      "buyer_url": "https://www.digitalhealth.gov.au/about-us/policies-privacy-and-reporting/procurement-tenders-and-contracts",
+      "category": "Business administration services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Australian Digital Health Agency is undertaking an open approach to market to establish a new contractual arrangement for pre-employment screening services that support recruitment, onboarding and personnel-security activities. The services form part of the Agency's personnel security framework.",
+      "deliverables_summary": "The supplier must provide pre-employment screening services supporting workforce integrity, personnel security and organisational risk management — including screening to support recruitment, onboarding and ongoing personnel-security activities across the Agency's workforce.",
+      "key_deliverables": [
+        "Pre-employment screening / background checks supporting recruitment and onboarding",
+        "Screening services aligned to the Agency's personnel security framework"
+      ],
+      "scope_of_work": "The services form part of the Agency's personnel security framework and support recruitment and workforce engagement activities; the Agency currently engages an external provider and is going to open market to establish a new contractual arrangement for the provision of pre-employment screening services that support workforce integrity, personnel security and organisational risk management objectives.",
+      "requirements": [],
+      "eligibility": "Open approach to market",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-29",
+      "closing_time": "5:00 PM ACT Local Time",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/57716272-356e-4479-a822-83d353a112f4",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "health-agency",
+        "personnel-security",
+        "screening"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via AusTender web search for the Australian Digital Health Agency; buyer-originated Commonwealth RFT published on AusTender. Description drawn from the public search snippet of the ATM detail page.",
+      "notes": "Closing date (29 Jul 2026, 5:00pm ACT) from the ACT/AusTender snippet; publish date, value, contact and documents not retrievable (WebFetch 403). Pending a detail pass.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:MoAD-ATM-7493-2d-3d-exhibition-design-first-nations-democracy",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "ACT",
+      "tender_id": "MoAD-ATM-7493",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/bcc2d97b-4db0-4697-80c7-89503644c682",
+      "access": "public",
+      "title": "2D and 3D Exhibition Design Services — 'First Nations Peoples and Australian Democracy' exhibition",
+      "buyer": "Museum of Australian Democracy at Old Parliament House (MoAD)",
+      "buyer_url": "https://www.moadoph.gov.au/",
+      "category": "Exhibitions",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "The Museum of Australian Democracy at Old Parliament House is seeking 2D and 3D exhibition design services for a new exhibition, 'First Nations Peoples and Australian Democracy', which explores First Nations governance, law and society and centres First Nations perspectives, developed with First Nations curators and advisors.",
+      "deliverables_summary": "The supplier must provide 2D and 3D exhibition design for the 'First Nations Peoples and Australian Democracy' exhibition — translating a curatorial narrative (drawing on artworks, archival materials and audio-visual media, and developed with First Nations curators and advisors) into a cohesive designed exhibition space at the Museum of Australian Democracy.",
+      "key_deliverables": [
+        "2D exhibition design (graphics, panels, wayfinding)",
+        "3D exhibition design (spatial/environmental design and build documentation)",
+        "Design that presents a cohesive narrative of First Nations experiences of democracy from pre-contact to today"
+      ],
+      "scope_of_work": "The exhibition explores First Nations governance, law and society, highlighting Indigenous practice of democracy; guided by Yindymarra it centres First Nations perspectives of time and place through the 'Everywhen', linking past, present and future, drawing on artworks, archival materials and audio-visual media, developed with First Nations curators and advisors.",
+      "requirements": [],
+      "eligibility": "Open approach to market",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-07-20",
+      "closing_time": "3:00 PM ACT Local Time",
+      "questions_due": null,
+      "briefing": "Industry briefing and site inspection held Wednesday 24 June 2026 at the Museum of Australian Democracy at Old Parliament House (now passed); registration to attend was via email to stephanie.scroope@moadoph.gov.au by 5pm 23 June 2026.",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/bcc2d97b-4db0-4697-80c7-89503644c682",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Museum of Australian Democracy at Old Parliament House, Canberra ACT",
+      "contact_name": "Stephanie Scroope",
+      "contact_email": "stephanie.scroope@moadoph.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "exhibition-design",
+        "first-nations",
+        "cultural",
+        "closing-soon"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via AusTender web search for Museum of Australian Democracy exhibition design; buyer-originated Commonwealth RFT published on AusTender by MoAD. Scope, briefing and contact taken from the public search snippet of the ATM detail page.",
+      "notes": "Closes 20 Jul 2026 (today, Sydney time) — captured as closing-soon and may already be closed by ingestion time. Closing time listed as 3:00pm ACT per the AusTender exhibition-design listing. Full documents and evaluation criteria not retrievable (WebFetch 403). Contact email surfaced in the briefing-registration snippet.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:OPC-2026-03-office-of-parliamentary-counsel-printing-services",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "ACT",
+      "tender_id": "OPC-2026-03",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/7de3a2a6-4efc-4595-b0f1-db6d3164e2e1",
+      "access": "public",
+      "title": "Printing services",
+      "buyer": "Office of Parliamentary Counsel",
+      "buyer_url": "https://www.opc.gov.au/",
+      "category": "Printing",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Office of Parliamentary Counsel has published an approach to market for printing services on AusTender.",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open approach to market",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-06-30",
+      "closing_date": "2026-07-29",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/7de3a2a6-4efc-4595-b0f1-db6d3164e2e1",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "printing"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via AusTender current-ATM web search; buyer-originated Commonwealth notice published on AusTender by the Office of Parliamentary Counsel.",
+      "notes": "Headline only. Publish date (30 Jun 2026) and closing date (29 Jul 2026) from the AusTender index snippet; scope, value, contact and documents not retrievable (WebFetch 403). Pending a detail pass.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "VendorPanel:douglas-shire-council-procurement-advisory-tender-management-rfq-2026",
+      "source_name": "VendorPanel — Public Tenders",
+      "source_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=54746C469195&mode=all",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland — Douglas Shire",
+      "state": "QLD",
+      "tender_id": "",
+      "tender_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=54746C469195&mode=all",
+      "access": "public",
+      "title": "Procurement Advisory and Tender Management Services (RFQ)",
+      "buyer": "Douglas Shire Council",
+      "buyer_url": "https://douglas.qld.gov.au/business/tenders/",
+      "category": "Professional services — procurement advisory",
+      "category_codes": [],
+      "procurement_type": "RFQ",
+      "current_status": "open",
+      "description": "Douglas Shire Council invites quotations from suitably qualified and experienced respondents to provide procurement advisory and tender management services to support the delivery of the Council's major capital projects.",
+      "deliverables_summary": "The supplier must provide procurement advisory and tender management services supporting delivery of Douglas Shire Council's major capital projects — advising on and managing the Council's procurement and tendering processes for those projects.",
+      "key_deliverables": [
+        "Procurement advisory services for major capital projects",
+        "Tender management services (running/administering procurement processes)"
+      ],
+      "scope_of_work": "",
+      "requirements": [
+        "Suitably qualified and experienced in procurement advisory / tender management"
+      ],
+      "eligibility": "Open to suitably qualified and experienced respondents",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-04",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via VendorPanel",
+      "lodgement_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=54746C469195&mode=all",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Douglas Shire, Far North Queensland",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "queensland",
+        "procurement-advisory",
+        "vendorpanel"
+      ],
+      "first_seen": "2026-07-20",
+      "detail_source": "",
+      "reasoning": "Found via web search of VendorPanel public tenders for Douglas Shire Council; buyer-originated local-government RFQ posted on the Council's chosen e-sourcing platform (VendorPanel).",
+      "notes": "Closing date (~4 Aug 2026) seen only in an aggregator/search snippet and not verified against the buyer's own VendorPanel detail page (403); treat as approximate/pending verification. Full scope, contact and documents not retrievable.",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -8616,7 +8997,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "AusTender (Commonwealth)",
@@ -8625,14 +9006,14 @@
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm?filterby=published&orderby=ATM+ID",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via the search index. Direct fetch (ATM detail pages) returned HTTP 403.",
+      "how_discovered": "Canonical Tier-1 seed; queried this run for recently-published ATMs.",
       "recommended_check_frequency": "daily",
-      "notes": "Central Commonwealth procurement portal. Individual ATM detail pages could not be fetched directly this run.",
+      "notes": "Primary Commonwealth procurement portal; five opportunities captured this run. Detail pages returned HTTP 403 to WebFetch — only the search-index snippets were usable.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -8641,9 +9022,10 @@
         "2026-07-08",
         "2026-07-17",
         "2026-07-18",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-20"
       ],
-      "seen_count": 8,
+      "seen_count": 9,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8671,7 +9053,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders WA",
@@ -8699,7 +9081,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Port of Townsville Limited (buyer)",
@@ -8746,20 +9128,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Business Network / Ariba Discovery",
+      "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (multi-buyer)",
+      "jurisdiction": "Global / Australia",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
-      "feed_or_api_url": null,
+      "feed_or_api_url": "https://www.sap.com/australia/products/business-network/find-suppliers.html",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier-3 check each run. Public posting board for corporate RFx; no publicly-visible Australian RFx was retrievable without a supplier account this run.",
+      "how_discovered": "Mandatory Tier-3 corporate check; buyer-posting board on SAP Business Network.",
       "recommended_check_frequency": "daily",
-      "notes": "Largest single slice of corporate opportunity; full detail requires free supplier registration.",
+      "notes": "Largest single slice of corporate opportunity, but full RFx detail requires a free supplier account; no publicly-visible Australian corporate RFx was retrievable without login this run. Portal recorded per policy; no corporate tenders fabricated.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -8774,9 +9156,10 @@
         "2026-07-14",
         "2026-07-17",
         "2026-07-18",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-20"
       ],
-      "seen_count": 14,
+      "seen_count": 15,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -8896,7 +9279,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Water Corporation (WA) — Suppliers & contractors",
@@ -9206,26 +9589,27 @@
       "source_name": "VendorPanel — Public Tenders",
       "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
       "source_type": "gov-local",
-      "jurisdiction": "Australia (local government / multi-jurisdiction)",
+      "jurisdiction": "Australia (multi-jurisdiction local government)",
       "platform": "VendorPanel",
-      "access_method": "html",
+      "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-2 seed; checked this run. Most councils publish here; no new resolvable open council opportunity beyond those already captured surfaced in snippets.",
+      "how_discovered": "Canonical Tier-2 local-government seed; queried this run for open council RFQs/RFTs.",
       "recommended_check_frequency": "daily",
-      "notes": "Buyer-originated platform for councils, GOCs, NFPs and universities.",
+      "notes": "Aggregated public-tenders board across many Australian councils; each council listing links to that buyer's own VendorPanel workspace. Used to surface the Douglas Shire Council RFQ.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
         "2026-07-17",
         "2026-07-18",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-20"
       ],
-      "seen_count": 6,
+      "seen_count": 7,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9429,7 +9813,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Tenders and Contracts",
@@ -9454,7 +9838,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tasmanian Government Tenders",
@@ -9479,7 +9863,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -9525,7 +9909,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Trains — NSW eTendering",
@@ -10143,7 +10527,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
@@ -11004,7 +11388,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Public Transport Authority of Western Australia - Tenders",
@@ -11757,7 +12141,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "ACT Tenders",
@@ -11820,6 +12204,50 @@
       "last_seen": "2026-07-19",
       "seen_dates": [
         "2026-07-19"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Douglas Shire Council — Tenders & Procurement (VendorPanel Marketplace)",
+      "source_url": "https://douglas.qld.gov.au/business/tenders/",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland — Douglas Shire",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=54746C469195&mode=all",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for VendorPanel public council tenders surfaced Douglas Shire Council's RFQ for procurement advisory / tender management services; the Council uses VendorPanel Marketplace (pages.vendorpanel.com/workwithdouglasshire) to invite quotes.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated far-north-Queensland local-government channel; a genuinely new buyer not previously recorded. Public tenders visible; quoting requires VendorPanel registration.",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Townsville Hospital and Health Service — Procurement and tenders",
+      "source_url": "https://www.townsville.health.qld.gov.au/about-us/procurement-and-tenders/",
+      "source_type": "health",
+      "jurisdiction": "Queensland — Townsville",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for NSW/QLD Local Health District procurement surfaced Townsville Hospital and Health Service's own procurement-and-tenders page, distinct from the core QTenders row view.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated Queensland public-health procurement page (a Hospital and Health Service). Use as a seed to find sibling QLD HHS procurement pages (e.g. Metro North, Cairns and Hinterland).",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "seen_dates": [
+        "2026-07-20"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
