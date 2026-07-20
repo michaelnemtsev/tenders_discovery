@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20",
+  "generated": "2026-07-21",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -26,31 +26,36 @@
     "2026-07-17",
     "2026-07-18",
     "2026-07-19",
-    "2026-07-20"
+    "2026-07-20",
+    "2026-07-21"
   ],
-  "run_count": 26,
+  "run_count": 27,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-20",
-  "latest_coverage_summary": "Swept all nine Tier-1 government portals via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders). Sampled Tier-2 (local government via VendorPanel public tenders, universities, NSW/QLD Local Health District procurement) and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured six buyer-originated opportunities not seen in prior runs: five Commonwealth AusTender approaches to market (a DCCEEW GEMS verification-testing laboratory panel, a DCCEEW education-and-training EOI, an Australian Digital Health Agency pre-employment screening RFT, a Museum of Australian Democracy exhibition-design RFT, and an Office of Parliamentary Counsel printing RFT) plus one Queensland local-government RFQ (Douglas Shire Council, run via VendorPanel). Two genuinely new buyer sources were recorded (Douglas Shire Council on VendorPanel, and Townsville Hospital and Health Service's own procurement page). As in every recent run, direct page retrieval was blocked: WebFetch returned HTTP 403 to every external URL this run, so all detail is limited to publicly-searchable headline/snippet level and no specification documents could be opened; no publicly-visible Australian corporate RFx was retrievable without a supplier login.",
+  "latest_run": "2026-07-21",
+  "latest_coverage_summary": "Attempted the full source universe via web search: all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders), a Tier-2 sample (local government via VendorPanel public tenders and individual council pages, universities, water GBEs Sydney/Melbourne/SA Water, energy networks Ausgrid/Endeavour/Powerlink/TasNetworks, Transport for NSW/Sydney Metro, and public-health districts), and the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). As in every recent run, direct page retrieval was fully blocked: WebFetch returned HTTP 403 Forbidden to every external URL this run (tested against tenders.gov.au), so no tender detail page or specification document could be opened, and detail is limited to what is publicly visible in search-result titles and snippets. Search-summary text this run proved unreliable and repeatedly surfaced stale or already-closed items presented as current: the two concretely-titled new candidates identified (Department of Defence 'Defence Capability Support Panel' CD/RFT/27857/1, and Tamworth Regional Council RFQ Q041-2026 'Commercial Property and Landholdings Activation Plan') were both found on cross-checking to have closing dates already in the past (5 Jan 2026 and 6 Nov 2025 respectively), so neither was recorded as a current opportunity. No genuinely new, currently-open buyer-originated opportunity could be verified this run without opening a detail page, and no publicly-visible Australian corporate RFx was retrievable without a supplier login. To honour the source-discovery half of the mission, seven genuinely new buyer-originated local-government procurement channels were verified from their own tender-page link titles and recorded in discovered_sources. Zero tenders were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-07-20",
-    "coverage_summary": "Swept all nine Tier-1 government portals via web search (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders). Sampled Tier-2 (local government via VendorPanel public tenders, universities, NSW/QLD Local Health District procurement) and ran the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). Captured six buyer-originated opportunities not seen in prior runs: five Commonwealth AusTender approaches to market (a DCCEEW GEMS verification-testing laboratory panel, a DCCEEW education-and-training EOI, an Australian Digital Health Agency pre-employment screening RFT, a Museum of Australian Democracy exhibition-design RFT, and an Office of Parliamentary Counsel printing RFT) plus one Queensland local-government RFQ (Douglas Shire Council, run via VendorPanel). Two genuinely new buyer sources were recorded (Douglas Shire Council on VendorPanel, and Townsville Hospital and Health Service's own procurement page). As in every recent run, direct page retrieval was blocked: WebFetch returned HTTP 403 to every external URL this run, so all detail is limited to publicly-searchable headline/snippet level and no specification documents could be opened; no publicly-visible Australian corporate RFx was retrievable without a supplier login.",
-    "sources_checked": 18,
-    "tenders_found": 6,
-    "new_sources_found": 2,
-    "entries_pending_detail": 6,
+    "run_date": "2026-07-21",
+    "coverage_summary": "Attempted the full source universe via web search: all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders), a Tier-2 sample (local government via VendorPanel public tenders and individual council pages, universities, water GBEs Sydney/Melbourne/SA Water, energy networks Ausgrid/Endeavour/Powerlink/TasNetworks, Transport for NSW/Sydney Metro, and public-health districts), and the mandatory Tier-3 corporate check (SAP Ariba Discovery / SAP Business Network). As in every recent run, direct page retrieval was fully blocked: WebFetch returned HTTP 403 Forbidden to every external URL this run (tested against tenders.gov.au), so no tender detail page or specification document could be opened, and detail is limited to what is publicly visible in search-result titles and snippets. Search-summary text this run proved unreliable and repeatedly surfaced stale or already-closed items presented as current: the two concretely-titled new candidates identified (Department of Defence 'Defence Capability Support Panel' CD/RFT/27857/1, and Tamworth Regional Council RFQ Q041-2026 'Commercial Property and Landholdings Activation Plan') were both found on cross-checking to have closing dates already in the past (5 Jan 2026 and 6 Nov 2025 respectively), so neither was recorded as a current opportunity. No genuinely new, currently-open buyer-originated opportunity could be verified this run without opening a detail page, and no publicly-visible Australian corporate RFx was retrievable without a supplier login. To honour the source-discovery half of the mission, seven genuinely new buyer-originated local-government procurement channels were verified from their own tender-page link titles and recorded in discovered_sources. Zero tenders were fabricated.",
+    "sources_checked": 20,
+    "tenders_found": 0,
+    "new_sources_found": 7,
+    "entries_pending_detail": 0,
     "gaps": [
-      "Direct page retrieval (WebFetch) returned HTTP 403 Forbidden for every external site this run, including tenders.gov.au ATM detail pages and VendorPanel listing pages. Tender specification documents, contact details, evaluation criteria and values could not be extracted; all findings rely on public search snippets and are flagged as pending a detail pass.",
-      "SA Tenders and Contracts, Tenders Tasmania and NT QTOL: no new open opportunity distinct from prior runs surfaced above the search-snippet threshold this run; their landing/search endpoints were reachable but individual current-tender listings were not retrievable via WebFetch (403). Deferred deeper listing extraction to a future run.",
-      "Tier-3 corporate opportunities (SAP Ariba Discovery / SAP Business Network Discovery) remain registration/login-gated; no publicly-visible Australian corporate RFx was retrievable without a supplier account this run. The portal is recorded in discovered_sources with access_method=portal-registration; no corporate tenders were fabricated.",
-      "Invitation-only / panel-restricted RFx (e.g. management-consultancy RFPs sent to shortlisted firms) are out of scope and were not sought.",
-      "Museum of Australian Democracy exhibition-design RFT (MoAD-ATM-7493) closes 20 July 2026 (today, Sydney time); it is captured as closing-soon and may already be closed by ingestion time. Its industry briefing/site inspection was held 24 June 2026 and has passed.",
-      "Douglas Shire Council RFQ closing date (approx. early August 2026) was visible only in an aggregator/search snippet and was not verified against the buyer's own VendorPanel detail page (403); recorded as approximate and pending verification.",
-      "Many listings returned by the search index had already-passed closing dates or were captured in prior runs (the public search index continues to lag by roughly 1-2 weeks) and were excluded to avoid re-recording stale or duplicate entries."
+      "WebFetch returned HTTP 403 Forbidden for every external URL this run (verified on https://www.tenders.gov.au/atm). No tender detail page, listing page, RSS/API endpoint, or specification document could be retrieved directly; all coverage was limited to search-result titles and snippets.",
+      "AusTender (Tier-1 Commonwealth): several current 2026 approaches-to-market surfaced by ID only (e.g. RFT 04-2026, RFT_2026_0044, RFT 74698, MSD/RFT/55619/1) with no publicly-visible title or buyer in search results; not recorded because they could not be titled without fabrication. Detail pass deferred to a run with working page retrieval.",
+      "buy.nsw / NSW eTendering, Buying for Victoria, QTenders, Tenders WA, SA Tenders, Tenders Tasmania, NT QTOL, ACT Tenders: reachable as portals but no individual open tender could be confirmed as newly published in the last 7 days at a trustworthy level of detail (403 wall + unreliable search summaries).",
+      "Search-summary text was unreliable this run: it recycled closed/stale opportunities as if current (confirmed for CD/RFT/27857/1, closed 5 Jan 2026, and Tamworth Q041-2026, cited close 6 Nov 2025). Closing dates and values quoted in raw search summaries were therefore not trusted or recorded.",
+      "Tier-3 corporate (SAP Ariba Discovery / SAP Business Network, BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos): checked as required. No publicly-advertised Australian RFx was visible without a supplier login; corporate opportunities remain registration-gated or invitation-only, so none were captured as tenders (portals already recorded in prior runs' discovered_sources).",
+      "Sydney Water 'Drinking Water Program EPCM Projects' Request for EOI (buy.nsw, ref SWC-WS5192918179 / EE8AD371-65B3-42AE-BA2CD9A993109F23) re-surfaced and appears still open, but it was already captured on 2026-07-14, so it was not re-recorded as new."
     ],
     "recommended_seed_additions": [
-      "Douglas Shire Council (QLD) — buyer-originated council procurement run through VendorPanel Marketplace (pages.vendorpanel.com/workwithdouglasshire); worth monitoring weekly for far-north-Queensland local-government RFQs/RFTs.",
-      "Townsville Hospital and Health Service — buyer-originated Queensland public-health procurement page (townsville.health.qld.gov.au/about-us/procurement-and-tenders), a Hospital and Health Service publishing outside the core QTenders row view; use as a seed to find sibling QLD HHS procurement pages."
+      "Tamworth Regional Council (NSW) tenders — https://www.tamworth.nsw.gov.au/work/tenders-and-contracts (e-tendering via portal.tenderlink.com/tamworth; also VendorPanel Marketplace)",
+      "Randwick City Council (NSW) tenders & quotations — https://www.randwick.nsw.gov.au/business/business-opportunities/tenders-and-quotations",
+      "Orange City Council (NSW) contract work / RFQs via Felix — https://www.orange.nsw.gov.au/contract-work/",
+      "Greater Hume Council (NSW) tenders via VendorPanel — https://www.greaterhume.nsw.gov.au/Your-Greater-Hume-Council/Tenders-Contracts-Quotations-and-Debtors/VendorPanel",
+      "Queanbeyan-Palerang Regional Council (NSW) current tenders — https://www.qprc.nsw.gov.au/Council/Council-Business/Current-Tenders",
+      "Alexandrina Council (SA) tenders, contractors & suppliers — https://www.alexandrina.sa.gov.au/council/working-with-council/tenders",
+      "Rockhampton Regional Council (QLD) public tenders via VendorPanel — https://www.vendorpanel.com.au/PublicTenders.aspx"
     ]
   },
   "months": [
@@ -8616,8 +8621,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM_2026_6489-dcceew-education-and-training-services-eoi",
@@ -8675,8 +8680,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:RFT13109-australian-digital-health-agency-pre-employment-screening",
@@ -8738,8 +8743,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:MoAD-ATM-7493-2d-3d-exhibition-design-first-nations-democracy",
@@ -8803,8 +8808,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:OPC-2026-03-office-of-parliamentary-counsel-printing-services",
@@ -8861,8 +8866,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:douglas-shire-council-procurement-advisory-tender-management-rfq-2026",
@@ -8926,8 +8931,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ],
   "discovered_sources": [
@@ -9027,7 +9032,7 @@
       ],
       "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Buying for Victoria",
@@ -9161,7 +9166,7 @@
       ],
       "seen_count": 15,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -9611,7 +9616,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transgrid — Suppliers (ibuy / SAP Ariba)",
@@ -12228,8 +12233,8 @@
         "2026-07-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Townsville Hospital and Health Service — Procurement and tenders",
@@ -12248,6 +12253,160 @@
       "last_seen": "2026-07-20",
       "seen_dates": [
         "2026-07-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Tamworth Regional Council — Tenders, Quotations and Expressions of Interest",
+      "source_url": "https://www.tamworth.nsw.gov.au/work/tenders-and-contracts",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "TenderLink / VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": "https://portal.tenderlink.com/tamworth/alltenders/",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for NSW council RFQ/RFT opportunities surfaced Tamworth Regional Council's own tenders-and-contracts page and its TenderLink e-tendering portal, plus a public-notice RFQ page (Q041-2026 Commercial Property and Landholdings Activation Plan). Buyer-originated council procurement channel; not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Council runs quotations through VendorPanel Marketplace and tenders via TenderLink (portal.tenderlink.com/tamworth). The specific RFQ Q041-2026 seen this run had a closing date already in the past, so no current tender was recorded — the source itself is the new discovery.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Randwick City Council — Tenders & Quotations",
+      "source_url": "https://www.randwick.nsw.gov.au/business/business-opportunities/tenders-and-quotations",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "custom / council website",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via web search of NSW council tender/quotation pages; buyer-originated council procurement channel not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Headline-level source discovery only; no individual open opportunity could be confirmed this run due to the 403 detail-retrieval wall.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Orange City Council — Tenders and Request for Quotations (RFQs)",
+      "source_url": "https://www.orange.nsw.gov.au/contract-work/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "Felix",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search surfaced Orange City Council's own contract-work page, which advertises RFQs through the Felix supplier platform (free self-registration). Buyer-originated; not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "RFQs are issued via Felix (felix.net); RFTs are advertised on the council page. Source discovery only this run.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Greater Hume Council — Tenders, Contracts, Quotations (VendorPanel)",
+      "source_url": "https://www.greaterhume.nsw.gov.au/Your-Greater-Hume-Council/Tenders-Contracts-Quotations-and-Debtors/VendorPanel",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search of VendorPanel-based council procurement surfaced Greater Hume Council's own VendorPanel tenders page; buyer-originated, not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Council publishes quotations/tenders via VendorPanel public tenders. Source discovery only this run.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Queanbeyan-Palerang Regional Council (QPRC) — Current Tenders",
+      "source_url": "https://www.qprc.nsw.gov.au/Council/Council-Business/Current-Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "custom / council website",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via web search of NSW council current-tenders pages; buyer-originated procurement channel not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Headline-level source discovery only; individual opportunities not retrievable this run (403).",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Alexandrina Council — Tenders, Contractors and Suppliers",
+      "source_url": "https://www.alexandrina.sa.gov.au/council/working-with-council/tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "South Australia",
+      "platform": "custom / council website",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Web search of SA council procurement surfaced Alexandrina Council's own tenders page; buyer-originated, not previously in the known-source list.",
+      "recommended_check_frequency": "monthly",
+      "notes": "South Australian councils also list on SA Tenders and Contracts; this is the council's own channel. Source discovery only this run.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Rockhampton Regional Council — Public Tenders (VendorPanel)",
+      "source_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=275A85CD2F0E",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Web search of VendorPanel public tenders surfaced a Rockhampton Regional Council-specific public tenders view; buyer-originated Queensland council channel not previously in the known-source list.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Verified only via the VendorPanel public-tenders deep link seen in search; the council's own tenders page was not directly retrievable (403). Confidence medium pending confirmation of the council's own URL.",
+      "first_seen": "2026-07-21",
+      "last_seen": "2026-07-21",
+      "seen_dates": [
+        "2026-07-21"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
