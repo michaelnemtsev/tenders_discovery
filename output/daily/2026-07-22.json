@@ -71,7 +71,14 @@
       "contact_name": "Kyle Trayhurn",
       "contact_email": "ests4000ph6@rpsconsulting.com",
       "contact_phone": "+61 2 4940 4219",
-      "tags": ["defence", "estate-works", "construction", "eoi", "aegis", "sea-4000"],
+      "tags": [
+        "defence",
+        "estate-works",
+        "construction",
+        "eoi",
+        "aegis",
+        "sea-4000"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "DECnet ATM listing for ESTS4000PH6 and AusTender, surfaced via WebSearch (detail pages themselves returned HTTP 403 and were not directly opened)",
       "reasoning": "Discovered while searching AusTender/Defence estate EOIs; the full listing (dates, scope, evaluation criteria, contact) is published on DECnet, the buyer-adjacent Defence estate community channel, and corroborated across two independent searches. Buyer-originated (Department of Defence via managing contractor RPS Consulting).",
@@ -119,7 +126,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ict", "eoi", "market-sounding", "proof-of-concept", "regulatory-systems"],
+      "tags": [
+        "ict",
+        "eoi",
+        "market-sounding",
+        "proof-of-concept",
+        "regulatory-systems"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "",
       "reasoning": "Discovered via AusTender search for current ICT/EOI approaches; confirmed as a current AusTender ATM (PIN_2026_0334) for the Clean Energy Regulator, last updated 21 Jul 2026 per search snippets. Buyer-originated (Commonwealth agency on AusTender).",
@@ -171,7 +184,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["transport", "road-maintenance", "safety-barriers", "rft", "nsw"],
+      "tags": [
+        "transport",
+        "road-maintenance",
+        "safety-barriers",
+        "rft",
+        "nsw"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "",
       "reasoning": "Discovered via buy.nsw / Transport for NSW search; the scope text is quoted from the buy.nsw notice and corroborated across two independent searches. Buyer-originated (Transport for NSW on buy.nsw / NSW eTendering).",
