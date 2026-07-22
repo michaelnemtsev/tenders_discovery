@@ -66,7 +66,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "construction", "navy", "facilities", "aegis", "head-contractor"],
+      "tags": [
+        "defence",
+        "construction",
+        "navy",
+        "facilities",
+        "aegis",
+        "head-contractor"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "AusTender ATM search snippet (ATM ID AZ6626, title, agency, publish date, close date and location) cross-checked against project-scope snippet for ESTS4000PH6; detail page returned HTTP 403",
       "reasoning": "Discovered via AusTender ATM keyword search (Defence); corroborated across two independent WebSearch queries (AZ6626 ATM header fields and ESTS4000PH6 project scope). Buyer-originated on AusTender.",
@@ -118,7 +125,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ict", "clean-energy-regulator", "reoi", "two-stage", "registry"],
+      "tags": [
+        "ict",
+        "clean-energy-regulator",
+        "reoi",
+        "two-stage",
+        "registry"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "AusTender search snippet for PIN_2026_0334 (scope, two-stage structure and close date 10 Aug 2026 5:00pm ACT); detail page returned HTTP 403",
       "reasoning": "Re-verified from prior run (was headline-only). Closing date 10 Aug 2026 now confirmed via a dedicated WebSearch query. Buyer-originated on AusTender.",
@@ -171,7 +184,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "army", "rfi", "autonomous-systems", "innovation", "littoral", "trl-4-6"],
+      "tags": [
+        "defence",
+        "army",
+        "rfi",
+        "autonomous-systems",
+        "innovation",
+        "littoral",
+        "trl-4-6"
+      ],
       "first_seen": "2026-07-16",
       "detail_source": "AusTender search snippets for LCD-26-0030 (RFI theme/scope, TRL 4-6, close date 27 Jul 2026 10:00am ACT, event dates, invitation timing); detail page returned HTTP 403",
       "reasoning": "Re-verified from prior run; closing date 27 Jul 2026 now confirmed via dedicated WebSearch query. Buyer-originated on AusTender (managed by Department of Defence - DSRG).",
@@ -219,7 +240,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["property", "dcceew", "environment", "eoi"],
+      "tags": [
+        "property",
+        "dcceew",
+        "environment",
+        "eoi"
+      ],
       "first_seen": "2026-07-01",
       "detail_source": "AusTender search snippet for ATM_2026_6066 (title, agency, close date 3 Aug 2026 2:00pm ACT); detail page returned HTTP 403",
       "reasoning": "Re-verified from prior run; agency and closing date confirmed via dedicated WebSearch query. Buyer-originated on AusTender.",
@@ -271,7 +297,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["transport-for-nsw", "road", "safety-barriers", "civil", "rft"],
+      "tags": [
+        "transport-for-nsw",
+        "road",
+        "safety-barriers",
+        "civil",
+        "rft"
+      ],
       "first_seen": "2026-07-22",
       "detail_source": "buy.nsw / Transport for NSW search snippets (scope description); no RFT ID, publish date or close date recoverable (detail page 403)",
       "reasoning": "Re-verified from prior run. Scope corroborated across two buy.nsw snippets, but the RFT ID and closing date remain unrecoverable behind the 403 wall. Buyer-originated (Transport for NSW on buy.nsw).",
