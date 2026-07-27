@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27",
+  "generated": "2026-07-28",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -33,33 +33,39 @@
     "2026-07-24",
     "2026-07-25",
     "2026-07-26",
-    "2026-07-27"
+    "2026-07-27",
+    "2026-07-28"
   ],
-  "run_count": 33,
+  "run_count": 34,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-27",
-  "latest_coverage_summary": "Attempted the full source universe (Tier 1 core government, Tier 2 broader public sector / GBE, Tier 3 private). Direct page retrieval remained fully blocked this run: WebFetch returned HTTP 403 for every external URL tested (including the AusTender ATM list and individual AusTender ATM detail pages), and the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (recentRelayFailures empty, selective=false). Per proxy policy, 403 org-policy denials were not retried or routed around, so no tender detail page, listing page, RSS/API feed or specification document could be opened directly; all capture is from WebSearch snippets, cross-verified across multiple independent queries, with any item whose close date had already passed (or could not be corroborated) rejected. Three genuinely new currently-open opportunities were captured this run, all Commonwealth via AusTender: (1) Geoscience Australia GA2026/1392 - open RFT for licensed GNSS CORS data streams, metadata and support for the National Positioning Infrastructure Capability (published 24 Jul 2026, closes 18 Aug 2026 5:00pm ACT); (2) DCCEEW ATM_2026_6066 - Australian Bushland Program REOI seeking Purchasing Partners for Strategic Property Purchases, the first stage of a multi-stage procurement (closes 3 Aug 2026 2:00pm ACT); and (3) Australian Army LCD-26-0030 - Army Innovation Day 2026 (AID26) RFI on 'Autonomous Mass in Littoral Warfare', recorded as market-sounding (responses open Jul 2026, invitations to participate issued from 17 Aug 2026, event 6-8 Oct 2026 Perth). Seven previously-seen opportunities were re-verified as still open and carried forward with their original first_seen dates: CSIRO RFT CSIRORFT2026019 Ground Maintenance VIC Metro (closes 17 Aug 2026), City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI (closes 10 Aug 2026), Transport for NSW HW4 Log Creek Pavement Rehab Stage 2 Culvert Unit Supply (closes 4 Aug 2026), DCCEEW ATM_2026_6786 GEMS verification-testing laboratory panel (closes 12 Aug 2026), Western Power Clean Energy Link PCMS EOI (closes 31 Jul 2026, closing-soon), ANSTO ILWCI+ PSC002897 construction industry-briefing / upcoming-RFT notice (online briefing 31 Jul 2026, RFT intended early Aug 2026), and SA Water Millicent WWTP EIP Upgrade D&C EOI (closing date still unrecoverable behind SA Water's registration-gated Supplier Portal). Two genuinely new buyer-originated sources were recorded: the Victorian Health Building Authority (VHBA) health-infrastructure procurement channel and its parent the Victorian Infrastructure Delivery Authority (VIDA), both of which advertise EOI/RFP/RFT via the Buying for Victoria Supplier Portal. Tier 3 corporate e-sourcing (SAP Ariba Discovery / SAP Business Network, plus BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos, and energy/construction majors) was checked as required: no publicly-advertised Australian RFx was visible without a supplier login, so no corporate tender was captured (portals remain registration-gated or invitation-only). Zero tenders, dates, deliverables or contacts were fabricated.",
+  "latest_run": "2026-07-28",
+  "latest_coverage_summary": "Attempted the full source universe (Tier 1 core government, Tier 2 broader public sector / GBE, Tier 3 private). Direct page retrieval remained fully blocked this run: WebFetch returned HTTP 403 for every external URL tested (the AusTender ATM list and individual ATM detail pages), and the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (selective=false, recentRelayFailures empty). Per proxy policy, 403 org-policy denials were not retried or routed around, so no tender detail page, listing page, RSS/API feed or specification document could be opened directly; all capture is from WebSearch snippets, cross-verified across multiple independent queries, with any item whose close date had already passed (or could not be corroborated) rejected. Two genuinely new currently-open opportunities were captured this run, both Commonwealth via AusTender: (1) Director of National Parks ATM 16456 - open RFT for Buffel Grass Management at Uluru-Kata Tjuta National Park (published 16 Jul 2026, tenderer questions due 6 Aug 2026, closes 13 Aug 2026 12:30pm ACT; draft agreement 8 Oct 2026 - 7 Oct 2030 + 1yr option; contact dnpprocurement@dcceew.gov.au); and (2) Department of Defence S-EST11118 - Duntroon minor building remediation (multi-building demolition, painting, rust removal, ablution and workplace refurbishment; mechanical, electrical, hydraulic, civil and structural works; ACT; closes 30 Jul 2026 12:00pm ACT, closing-soon; tender administrator Aurecon, SNSW.PDS.Tenders@aurecongroup.com). Ten previously-seen opportunities whose published close dates are still in the future were carried forward with their original first_seen dates (Geoscience Australia GA2026/1392 GNSS CORS data streams, closes 18 Aug 2026; DCCEEW ATM_2026_6066 Australian Bushland Program Purchasing Partners REOI, closes 3 Aug 2026; Australian Army LCD-26-0030 Army Innovation Day 2026 RFI, market-sounding; CSIRO CSIRORFT2026019 Ground Maintenance VIC Metro, closes 17 Aug 2026; City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI, closes 10 Aug 2026; Transport for NSW HW4 Log Creek Culvert Unit Supply, closes 4 Aug 2026; DCCEEW ATM_2026_6786 GEMS verification-testing laboratory panel, closes 12 Aug 2026; Western Power Clean Energy Link PCMS EOI, closes 31 Jul 2026 closing-soon; ANSTO PSC002897 ILWCI+ construction industry-briefing / upcoming RFT, market-sounding; SA Water Millicent WWTP EIP Upgrade D&C EOI, close date still behind SA Water's registration-gated Supplier Portal). Seven genuinely new buyer-originated sources were recorded this run - the Director of National Parks (Parks Australia) as an AusTender buyer, plus six energy/water GBE and utility e-procurement portals not previously in the known-source set: Hunter Water (TenderLink), Essential Energy (newly migrated to an Oracle Cloud 'Tenders and Suppliers' portal, a notable rebrand off TenderLink), Seqwater (Zycus Supplier Network + Queensland Government Supplier Portal), Sunwater (registers via QTenders), SA Power Networks (own Supplying-to-us / Tenders channel) and Jemena (TenderLink). Tier 3 corporate e-sourcing (SAP Ariba Discovery / SAP Business Network, plus BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos and energy/construction majors) was checked as required: no publicly-advertised Australian RFx was visible without a supplier login, so no corporate tender was captured (portals remain registration-gated or invitation-only). Zero tenders, dates, deliverables or contacts were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-07-27",
-    "coverage_summary": "Attempted the full source universe (Tier 1 core government, Tier 2 broader public sector / GBE, Tier 3 private). Direct page retrieval remained fully blocked this run: WebFetch returned HTTP 403 for every external URL tested (including the AusTender ATM list and individual AusTender ATM detail pages), and the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (recentRelayFailures empty, selective=false). Per proxy policy, 403 org-policy denials were not retried or routed around, so no tender detail page, listing page, RSS/API feed or specification document could be opened directly; all capture is from WebSearch snippets, cross-verified across multiple independent queries, with any item whose close date had already passed (or could not be corroborated) rejected. Three genuinely new currently-open opportunities were captured this run, all Commonwealth via AusTender: (1) Geoscience Australia GA2026/1392 - open RFT for licensed GNSS CORS data streams, metadata and support for the National Positioning Infrastructure Capability (published 24 Jul 2026, closes 18 Aug 2026 5:00pm ACT); (2) DCCEEW ATM_2026_6066 - Australian Bushland Program REOI seeking Purchasing Partners for Strategic Property Purchases, the first stage of a multi-stage procurement (closes 3 Aug 2026 2:00pm ACT); and (3) Australian Army LCD-26-0030 - Army Innovation Day 2026 (AID26) RFI on 'Autonomous Mass in Littoral Warfare', recorded as market-sounding (responses open Jul 2026, invitations to participate issued from 17 Aug 2026, event 6-8 Oct 2026 Perth). Seven previously-seen opportunities were re-verified as still open and carried forward with their original first_seen dates: CSIRO RFT CSIRORFT2026019 Ground Maintenance VIC Metro (closes 17 Aug 2026), City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI (closes 10 Aug 2026), Transport for NSW HW4 Log Creek Pavement Rehab Stage 2 Culvert Unit Supply (closes 4 Aug 2026), DCCEEW ATM_2026_6786 GEMS verification-testing laboratory panel (closes 12 Aug 2026), Western Power Clean Energy Link PCMS EOI (closes 31 Jul 2026, closing-soon), ANSTO ILWCI+ PSC002897 construction industry-briefing / upcoming-RFT notice (online briefing 31 Jul 2026, RFT intended early Aug 2026), and SA Water Millicent WWTP EIP Upgrade D&C EOI (closing date still unrecoverable behind SA Water's registration-gated Supplier Portal). Two genuinely new buyer-originated sources were recorded: the Victorian Health Building Authority (VHBA) health-infrastructure procurement channel and its parent the Victorian Infrastructure Delivery Authority (VIDA), both of which advertise EOI/RFP/RFT via the Buying for Victoria Supplier Portal. Tier 3 corporate e-sourcing (SAP Ariba Discovery / SAP Business Network, plus BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos, and energy/construction majors) was checked as required: no publicly-advertised Australian RFx was visible without a supplier login, so no corporate tender was captured (portals remain registration-gated or invitation-only). Zero tenders, dates, deliverables or contacts were fabricated.",
-    "sources_checked": 24,
-    "tenders_found": 10,
-    "new_sources_found": 2,
-    "entries_pending_detail": 4,
+    "run_date": "2026-07-28",
+    "coverage_summary": "Attempted the full source universe (Tier 1 core government, Tier 2 broader public sector / GBE, Tier 3 private). Direct page retrieval remained fully blocked this run: WebFetch returned HTTP 403 for every external URL tested (the AusTender ATM list and individual ATM detail pages), and the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (selective=false, recentRelayFailures empty). Per proxy policy, 403 org-policy denials were not retried or routed around, so no tender detail page, listing page, RSS/API feed or specification document could be opened directly; all capture is from WebSearch snippets, cross-verified across multiple independent queries, with any item whose close date had already passed (or could not be corroborated) rejected. Two genuinely new currently-open opportunities were captured this run, both Commonwealth via AusTender: (1) Director of National Parks ATM 16456 - open RFT for Buffel Grass Management at Uluru-Kata Tjuta National Park (published 16 Jul 2026, tenderer questions due 6 Aug 2026, closes 13 Aug 2026 12:30pm ACT; draft agreement 8 Oct 2026 - 7 Oct 2030 + 1yr option; contact dnpprocurement@dcceew.gov.au); and (2) Department of Defence S-EST11118 - Duntroon minor building remediation (multi-building demolition, painting, rust removal, ablution and workplace refurbishment; mechanical, electrical, hydraulic, civil and structural works; ACT; closes 30 Jul 2026 12:00pm ACT, closing-soon; tender administrator Aurecon, SNSW.PDS.Tenders@aurecongroup.com). Ten previously-seen opportunities whose published close dates are still in the future were carried forward with their original first_seen dates (Geoscience Australia GA2026/1392 GNSS CORS data streams, closes 18 Aug 2026; DCCEEW ATM_2026_6066 Australian Bushland Program Purchasing Partners REOI, closes 3 Aug 2026; Australian Army LCD-26-0030 Army Innovation Day 2026 RFI, market-sounding; CSIRO CSIRORFT2026019 Ground Maintenance VIC Metro, closes 17 Aug 2026; City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI, closes 10 Aug 2026; Transport for NSW HW4 Log Creek Culvert Unit Supply, closes 4 Aug 2026; DCCEEW ATM_2026_6786 GEMS verification-testing laboratory panel, closes 12 Aug 2026; Western Power Clean Energy Link PCMS EOI, closes 31 Jul 2026 closing-soon; ANSTO PSC002897 ILWCI+ construction industry-briefing / upcoming RFT, market-sounding; SA Water Millicent WWTP EIP Upgrade D&C EOI, close date still behind SA Water's registration-gated Supplier Portal). Seven genuinely new buyer-originated sources were recorded this run - the Director of National Parks (Parks Australia) as an AusTender buyer, plus six energy/water GBE and utility e-procurement portals not previously in the known-source set: Hunter Water (TenderLink), Essential Energy (newly migrated to an Oracle Cloud 'Tenders and Suppliers' portal, a notable rebrand off TenderLink), Seqwater (Zycus Supplier Network + Queensland Government Supplier Portal), Sunwater (registers via QTenders), SA Power Networks (own Supplying-to-us / Tenders channel) and Jemena (TenderLink). Tier 3 corporate e-sourcing (SAP Ariba Discovery / SAP Business Network, plus BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos and energy/construction majors) was checked as required: no publicly-advertised Australian RFx was visible without a supplier login, so no corporate tender was captured (portals remain registration-gated or invitation-only). Zero tenders, dates, deliverables or contacts were fabricated.",
+    "sources_checked": 26,
+    "tenders_found": 12,
+    "new_sources_found": 7,
+    "entries_pending_detail": 5,
     "gaps": [
-      "Direct page retrieval fully blocked again this run. WebFetch returned HTTP 403 for every external URL tested (https://www.tenders.gov.au/atm and multiple https://www.tenders.gov.au/Atm/Show/... detail pages); the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (recentRelayFailures empty, selective=false). The proxy README instructs not to retry 403/407 policy denials. Consequence: no ATM/RFT/EOI/REOI detail page, listing page, RSS/API feed or specification document could be opened; all detail is limited to cross-verified WebSearch snippets. Source-document deliverables/requirements extraction (evaluation criteria weightings, full document lists, mandatory conditions) was not possible for any entry this run.",
-      "SA Water Millicent WWTP EIP Upgrade D&C EOI: existence, buyer (SA Water), EOI nature and multi-stage design-and-construct scope were carried forward from prior runs but the exact EOI reference, closing date/time, evaluation criteria and value remain visible only inside SA Water's registration-gated Supplier Portal and could not be recovered behind the 403 wall - retained at headline+scope level with closing_date null.",
-      "ANSTO ILWCI+ (PSC002897): this AusTender notice is an industry-briefing / early-RFT notice, not yet an open RFT. Buyer (ANSTO, Lucas Heights), scope (new Intermediate Level Waste storage facility, ~10-year capacity extension) and the online industry-briefing purpose are well corroborated, but the exact briefing date/time, interest-registration deadline, RFT release date, tender reference and documents will only be confirmable once the RFT is published (intended early Aug 2026). Recorded as procurement_type=market-sounding.",
-      "Army Innovation Day 2026 RFI (LCD-26-0030): confirmed as a current Defence RFI/market-sounding on 'Autonomous Mass in Littoral Warfare' (responses open Jul 2026, invitations from 17 Aug 2026, event 6-8 Oct 2026). The exact RFI response closing date/time and the list of RFI documents are behind the AusTender 403 wall; recorded at headline+scope level with closing_date null.",
-      "City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI and Transport for NSW HW4 Log Creek Culvert Unit Supply: carried forward and still open, but exact tender reference numbers, evaluation criteria and document lists remain unrecoverable behind the TenderLink / buy.nsw 403 walls (headline level).",
+      "Direct page retrieval fully blocked again this run. WebFetch returned HTTP 403 for every external URL tested (https://www.tenders.gov.au/atm and multiple https://www.tenders.gov.au/Atm/Show/... detail pages); the agent-proxy status endpoint confirmed the org egress policy denies CONNECT to external hosts (selective=false, recentRelayFailures empty). The proxy README instructs not to retry 403/407 policy denials. Consequence: no ATM/RFT/EOI/REOI detail page, listing page, RSS/API feed or specification document could be opened; all detail is limited to cross-verified WebSearch snippets. Source-document deliverables/requirements extraction (evaluation-criteria weightings, full document lists, mandatory conditions) was not possible for any entry this run.",
+      "Carry-forward verification limit: the ten previously-seen opportunities were retained because their published close dates are still in the future (all >= 30 Jul 2026, except the two market-soundings and SA Water which has no recoverable close date). Because of the 403 wall they could not each be individually re-opened this run to confirm they had not been withdrawn or amended; they are carried forward on the basis of their prior-run detail plus future close dates, not a fresh document read.",
+      "SA Water Millicent WWTP EIP Upgrade D&C EOI: existence, buyer (SA Water), EOI nature and multi-stage design-and-construct scope carried forward from prior runs, but the exact EOI reference, closing date/time, evaluation criteria and value remain visible only inside SA Water's registration-gated Supplier Portal and could not be recovered behind the 403 wall - retained at headline+scope level with closing_date null.",
+      "ANSTO ILWCI+ (PSC002897) and Army Innovation Day 2026 (LCD-26-0030) are market-soundings (industry briefing / RFI), not open RFTs; exact briefing dates, interest-registration deadlines, RFI closing date and document lists remain behind the AusTender 403 wall (closing_date null).",
+      "City of Sydney Christmas Trees & Decorations 2028-2032 design-concept EOI and Transport for NSW HW4 Log Creek Culvert Unit Supply: carried forward and still open by close date, but exact tender reference numbers, evaluation criteria and document lists remain unrecoverable behind the TenderLink / buy.nsw 403 + registration walls (headline level).",
       "Western Power Clean Energy Link PCMS EOI: carried forward, closing within days (EOI due 31 Jul 2026, closing-soon). Exact EOI reference, evaluation criteria and value remain behind the registration-gated + 403-blocked Opportunities Hub.",
-      "Search snippets again surfaced closed/stale items as if current (e.g. AusTender RFT-2026-0080 Federal Court Primary Dispute Resolution closed 7 Apr 2026; ATM_2026_6047 DCCEEW 'Game On' climate grants closed 5 May 2026; AACAP 2026-P04 Defence returned a 'Closed ATM View'; Sydney Water WS5192918179 Drinking Water Program EPCM EOI and Melbourne Water Greenvale Reservoir CCTV EOI, both long closed). These were date-checked and REJECTED, not recorded.",
-      "Tier-1 state/territory portals (buy.nsw, Buying for Victoria/buyingfor.vic, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) were reachable only as landing pages via search; individual open state tenders generally could not be drilled into or date-verified behind the 403 wall, so apart from the carried-forward TfNSW HW4 Culvert package and City of Sydney EOI no new state/local-portal opportunity could be confirmed at a trustworthy level of detail this run.",
+      "Search snippets again surfaced closed/stale items as if current (e.g. AusTender EST09297 Palmer Barracks civil works - closed ~Jan 2026; ATM_2026_6026 DCCEEW solar-panel-recycling pilot - closed 24 Apr 2026; RFT-2026-0080 Federal Court Primary Dispute Resolution - closed 7 Apr 2026; PR10031930 RASS air services - published 27 Mar 2026, recency/closing unverifiable). These were date-checked and REJECTED, not recorded. ATM_2026_6251 and 77680 could not have their recency or closing date corroborated and were left out rather than guessed.",
+      "Tier-1 state/territory portals (buy.nsw, Buying for Victoria / buyingfor.vic, QTenders / supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) were reachable only as landing pages via search; individual open state tenders generally could not be drilled into or date-verified behind the 403 wall, so apart from the carried-forward TfNSW HW4 Culvert package and City of Sydney EOI no new state/local-portal opportunity could be confirmed at a trustworthy level of detail this run.",
       "Tier-3 corporate (SAP Ariba Discovery / SAP Business Network, plus BHP, Rio Tinto, Fortescue, Woodside, Santos, Coles, Woolworths, Qantas, banks, telcos, EstimateOne construction packages): checked as required. No publicly-advertised Australian RFx was visible without a supplier login; corporate opportunities remain registration-gated or invitation-only, so none were captured as tenders (no corporate entries fabricated)."
     ],
     "recommended_seed_additions": [
-      "Victorian Health Building Authority (VHBA) - https://www.vhba.vic.gov.au/resources/procurement - Victorian government health-infrastructure buyer (major hospital and health capital projects). Runs open competitive EOI/RFP/RFQ/RFT and closed panel/register processes, all advertised on the Buying for Victoria Supplier Portal. Now part of the Victorian Infrastructure Delivery Authority (VIDA). High-value Tier-2 buyer worth watching directly.",
-      "Victorian Infrastructure Delivery Authority (VIDA) - https://www.tenders.vic.gov.au/ (buyer profile) - the Victorian government's consolidated major-project delivery authority (absorbed VHBA from 2 Apr 2024 and delivers health, transport and other social/economic infrastructure). Publishes via Buying for Victoria; a single high-volume buyer profile worth monitoring for large infrastructure EOIs/RFTs."
+      "Hunter Water Corporation - https://portal.tenderlink.com/hunterwater/alltenders/ - NSW government-owned water utility; advertises all tenders via its own TenderLink e-tendering portal (registered suppliers view/lodge and receive alerts). Buyer-originated Tier-2 GBE source worth watching weekly.",
+      "Essential Energy - https://www.essentialenergy.com.au/partners/tendersandsuppliers/suppliers - NSW government-owned electricity distributor; has migrated from TenderLink to a new Oracle Cloud (Oracle Fusion) 'Tenders and Suppliers' portal with a 'Become a supplier' onboarding flow (suppliers@essentialenergy.com.au). Notable platform rebrand - previously TenderLink-registered suppliers must re-register.",
+      "Seqwater - https://www.seqwater.com.au/supplier-information - Queensland bulk-water authority; runs sourcing via the Zycus Supplier Network (ZSN) and advertises full open-market tenders on the Queensland Government Supplier Portal. Tier-2 GBE.",
+      "Sunwater - https://www.sunwater.com.au/about/suppliers-and-contractors/ - Queensland government-owned bulk-water/infrastructure business; directs suppliers to register on QTenders for open-tender notifications. Tier-2 GBE.",
+      "SA Power Networks - https://www.sapowernetworks.com.au/industry/tenders/ - South Australian electricity distribution network (privately operated); publishes tenders and a 'Supplying to us' onboarding channel. Utility buyer worth watching.",
+      "Jemena - https://www.tenderlink.com/tenderers/2744.460/searchpages/ - privately owned (SGSP) gas/electricity network operator; runs an e-tendering portal via TenderLink. Utility buyer source.",
+      "Director of National Parks (Parks Australia, DCCEEW portfolio) - AusTender buyer (contact dnpprocurement@dcceew.gov.au) - Commonwealth statutory buyer that publishes park-management RFTs (e.g. ATM 16456 Buffel Grass Management at Uluru-Kata Tjuta) on AusTender. Worth watching as a distinct AusTender buyer profile."
     ]
   },
   "months": [
@@ -70,7 +76,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 110,
+      "new_tenders": 112,
       "active_tenders": 0
     }
   ],
@@ -8636,18 +8642,19 @@
         "carried-forward"
       ],
       "first_seen": "2026-07-20",
-      "detail_source": "AusTender ATM snippet (ATM_2026_6786) re-verified via WebSearch this run",
-      "reasoning": "Carried forward; re-verified via WebSearch as still open (published 1 Jul 2026, closes 12 Aug 2026 2:00pm ACT). Buyer-originated Commonwealth portal (AusTender).",
-      "notes": "Still open. Panel/accreditation requirements, evaluation criteria and value remain behind the AusTender 403 wall (headline level). Eligibility accreditation (e.g. NATA) inferred as likely but NOT confirmed from documents.",
-      "last_seen": "2026-07-27",
+      "detail_source": "AusTender ATM snippet (ATM_2026_6786) cross-verified in prior runs",
+      "reasoning": "Carried forward from prior runs; retained because its published close date (12 Aug 2026) is still in the future. Buyer-originated Commonwealth portal (AusTender). Not individually re-queried this run behind the 403 wall.",
+      "notes": "Still open by close date (published 1 Jul 2026, closes 12 Aug 2026 2:00pm ACT). Panel/accreditation requirements, evaluation criteria and value remain behind the AusTender 403 wall (headline level). Eligibility accreditation (e.g. NATA) inferred as likely but NOT confirmed from documents.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-20",
         "2026-07-24",
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9232,17 +9239,18 @@
         "closing-soon"
       ],
       "first_seen": "2026-07-24",
-      "detail_source": "WebSearch snippets (Western Power PCMS EOI, reneweconomy.com.au + Western Power Opportunities Hub page) re-verified this run",
-      "reasoning": "Carried forward; re-verified via WebSearch as still open (EOI due 31 Jul 2026). Buyer-originated via Western Power's own Opportunities Hub; media coverage used only as a corroborating discovery signal.",
+      "detail_source": "WebSearch snippets (Western Power PCMS EOI + Opportunities Hub page) captured in prior runs",
+      "reasoning": "Carried forward from prior runs; retained because its published close date (31 Jul 2026) is still in the future (closing-soon). Buyer-originated via Western Power's own Opportunities Hub. Not individually re-queried this run behind the 403/registration wall.",
       "notes": "Closing very soon (31 Jul 2026). Exact EOI reference, evaluation criteria and value remain behind the registration-gated + 403-blocked Opportunities Hub. GenusPlus and Bechtel already have separate Clean Energy Link roles/contracts - this PCMS EOI is a distinct resourcing EOI.",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-24",
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9300,16 +9308,17 @@
         "carried-forward"
       ],
       "first_seen": "2026-07-25",
-      "detail_source": "AusTender ATM snippet (CSIRORFT2026019) re-verified via WebSearch this run",
-      "reasoning": "Carried forward from prior runs; re-verified this run via WebSearch as still open (published 16 Jul 2026, closes 17 Aug 2026). Buyer-originated Commonwealth portal (AusTender).",
-      "notes": "Still open. Closing time shown by AusTender in UTC (04:00 UTC 17 Aug 2026); local ~2:00 PM AEST. RFT documents, evaluation criteria and value remain behind the AusTender 403 wall.",
-      "last_seen": "2026-07-27",
+      "detail_source": "AusTender ATM snippet (CSIRORFT2026019) cross-verified in prior runs",
+      "reasoning": "Carried forward from prior runs; retained because its published close date (17 Aug 2026) is still in the future. Buyer-originated Commonwealth portal (AusTender). Not individually re-queried this run behind the 403 wall.",
+      "notes": "Still open by close date (published 16 Jul 2026, closes 17 Aug 2026). Closing time shown by AusTender in UTC (04:00 UTC 17 Aug 2026); local ~2:00 PM AEST. RFT documents, evaluation criteria and value remain behind the AusTender 403 wall.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9367,16 +9376,17 @@
         "carried-forward"
       ],
       "first_seen": "2026-07-25",
-      "detail_source": "WebSearch snippets (City of Sydney EOI) re-verified this run",
-      "reasoning": "Carried forward; re-verified via WebSearch as still open (closes 10 Aug 2026). Buyer-originated via City of Sydney's own TenderLink e-tendering portal.",
-      "notes": "Still open. Exact EOI reference number, evaluation criteria and documents remain behind the TenderLink registration + 403 wall (headline level).",
-      "last_seen": "2026-07-27",
+      "detail_source": "WebSearch snippets (City of Sydney EOI) captured in prior runs",
+      "reasoning": "Carried forward from prior runs; retained because its published close date (10 Aug 2026) is still in the future. Buyer-originated via City of Sydney's own TenderLink e-tendering portal. Not individually re-queried this run behind the 403/registration wall.",
+      "notes": "Still open by close date (10 Aug 2026). Exact EOI reference number, evaluation criteria and documents remain behind the TenderLink registration + 403 wall (headline level).",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9436,16 +9446,17 @@
         "carried-forward"
       ],
       "first_seen": "2026-07-25",
-      "detail_source": "WebSearch snippets (TfNSW HW4 Log Creek culvert supply) re-verified this run",
-      "reasoning": "Carried forward; re-verified via WebSearch as still open (closes 4 Aug 2026). Buyer-originated via Transport for NSW on NSW eTendering / buy.nsw.",
-      "notes": "Still open, closing soon (4 Aug 2026). Exact tender reference, evaluation criteria and documents remain behind the buy.nsw registration + 403 wall (headline level).",
-      "last_seen": "2026-07-27",
+      "detail_source": "WebSearch snippets (TfNSW HW4 Log Creek culvert supply) captured in prior runs",
+      "reasoning": "Carried forward from prior runs; retained because its published close date (4 Aug 2026) is still in the future. Buyer-originated via Transport for NSW on NSW eTendering / buy.nsw. Not individually re-queried this run behind the 403 wall.",
+      "notes": "Still open by close date, closing soon (4 Aug 2026). Exact tender reference, evaluation criteria and documents remain behind the buy.nsw registration + 403 wall (headline level).",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9569,15 +9580,16 @@
         "carried-forward"
       ],
       "first_seen": "2026-07-26",
-      "detail_source": "AusTender ATM snippet (PSC002897/Brief) + ARPANSA/ANSTO context pages re-verified this run",
-      "reasoning": "Carried forward; re-verified via WebSearch as still current. Buyer-originated Commonwealth notice on AusTender (ANSTO). Recorded as market-sounding pending RFT release.",
+      "detail_source": "AusTender ATM snippet (PSC002897/Brief) + ANSTO context pages captured in prior runs",
+      "reasoning": "Carried forward from prior runs; retained as a current market-sounding whose industry briefing (~31 Jul 2026) and expected RFT release (early Aug 2026) are still upcoming. Buyer-originated Commonwealth notice on AusTender (ANSTO).",
       "notes": "Industry-briefing / early-RFT notice, NOT yet an open RFT. Scope well corroborated (new ILW storage facility, ~10-year capacity extension, ILW capacity reached ~2027). Exact briefing date/time, interest-registration deadline, RFT reference and documents remain behind the AusTender 403 wall; the RFT is intended for release early Aug 2026.",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9637,14 +9649,15 @@
       ],
       "first_seen": "2026-07-26",
       "detail_source": "",
-      "reasoning": "Carried forward from prior run; existence and D&C multi-stage EOI nature previously corroborated across independent listings (australiantenders.com.au issuer listing and govmarket.com.au) plus an SA Water program news item, with SA Water's own Supplier Portal recorded as the buyer-originated source. Not further recoverable this run behind the 403 wall.",
-      "notes": "Headline + scope only. Exact EOI reference, closing date/time, evaluation criteria and value are visible only inside SA Water's registration-gated Supplier Portal and could not be recovered behind the 403 wall - closing_date null. Distinct from the separately-reported ~$4m York Civil concrete-tank works already under construction at those plants.",
-      "last_seen": "2026-07-27",
+      "reasoning": "Carried forward from prior runs; existence and D&C multi-stage EOI nature previously corroborated across independent listings plus an SA Water program news item, with SA Water's own Supplier Portal recorded as the buyer-originated source. Not further recoverable this run behind the 403 wall.",
+      "notes": "Headline + scope only. Exact EOI reference, closing date/time, evaluation criteria and value are visible only inside SA Water's registration-gated Supplier Portal and could not be recovered behind the 403 wall - closing_date null. Retained pending confirmation the EOI is still open; distinct from the separately-reported ~$4m York Civil concrete-tank works already under construction at those plants.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9699,18 +9712,19 @@
         "positioning",
         "geospatial",
         "commonwealth",
-        "new-this-run"
+        "carried-forward"
       ],
       "first_seen": "2026-07-27",
-      "detail_source": "AusTender ATM search snippet (GA2026/1392) cross-verified across two independent WebSearch queries",
-      "reasoning": "Discovered via WebSearch of the AusTender ATM listing (buyer-originated Commonwealth portal); published 24 Jul 2026 within the 7-day window. Detail page 403-blocked, so captured from cross-verified snippets.",
-      "notes": "Headline + scope confirmed and date-verified (published 24 Jul 2026, closes 18 Aug 2026 5:00pm ACT). RFT documents, evaluation criteria, value and contact remain behind the AusTender 403 wall.",
-      "last_seen": "2026-07-27",
+      "detail_source": "AusTender ATM search snippet (GA2026/1392) cross-verified in a prior run",
+      "reasoning": "Carried forward from the 2026-07-27 run; retained because its published close date (18 Aug 2026) is still in the future. Buyer-originated Commonwealth portal (AusTender). Not individually re-queried this run behind the 403 wall.",
+      "notes": "Still open by close date (published 24 Jul 2026, closes 18 Aug 2026 5:00pm ACT). RFT documents, evaluation criteria, value and contact remain behind the AusTender 403 wall.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -9764,18 +9778,19 @@
         "eoi",
         "multi-stage",
         "commonwealth",
-        "new-this-run"
+        "carried-forward"
       ],
       "first_seen": "2026-07-27",
-      "detail_source": "AusTender ATM search snippet (ATM_2026_6066) cross-verified via WebSearch",
-      "reasoning": "Discovered via WebSearch of the AusTender ATM listing (buyer-originated Commonwealth portal). First-stage REOI closing 3 Aug 2026 within window. Detail page 403-blocked; captured from cross-verified snippets.",
-      "notes": "Closing date/time (3 Aug 2026 2:00pm ACT) and category (Environmental management) confirmed from snippet. Exact publish date, REOI documents, evaluation criteria and value remain behind the AusTender 403 wall. First stage of a multi-stage process; no RFT has yet issued.",
-      "last_seen": "2026-07-27",
+      "detail_source": "AusTender ATM search snippet (ATM_2026_6066) cross-verified in a prior run",
+      "reasoning": "Carried forward from the 2026-07-27 run; retained because its published close date (3 Aug 2026) is still in the future. Buyer-originated Commonwealth portal (AusTender). Not individually re-queried this run behind the 403 wall.",
+      "notes": "Still open by close date (3 Aug 2026 2:00pm ACT), category Environmental management. Exact publish date, REOI documents, evaluation criteria and value remain behind the AusTender 403 wall. First stage of a multi-stage process; no RFT has yet issued.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -9830,15 +9845,154 @@
         "rfi",
         "autonomous-systems",
         "market-sounding",
-        "new-this-run"
+        "carried-forward"
       ],
       "first_seen": "2026-07-27",
-      "detail_source": "AusTender ATM snippet (LCD-26-0030) cross-verified with govmarket.com.au tender listing describing the same AID26 RFI",
-      "reasoning": "Discovered via WebSearch of the AusTender ATM listing (buyer-originated Commonwealth/Defence portal); an aggregator listing (govmarket.com.au) was used only as a corroborating discovery signal, with the buyer's own AusTender notice recorded as the source. Current RFI within the window.",
-      "notes": "Recorded as market-sounding (RFI, not an open RFT). Responses open Jul 2026; invitations from 17 Aug 2026; event 6-8 Oct 2026. Exact RFI closing date/time and documents behind the AusTender 403 wall - closing_date null.",
-      "last_seen": "2026-07-27",
+      "detail_source": "AusTender ATM snippet (LCD-26-0030) cross-verified with an aggregator listing describing the same AID26 RFI in a prior run",
+      "reasoning": "Carried forward from the 2026-07-27 run; retained as a current Defence market-sounding whose associated event (6-8 Oct 2026) and invitation window (from 17 Aug 2026) are still upcoming. Buyer-originated Commonwealth/Defence portal (AusTender).",
+      "notes": "Recorded as market-sounding (RFI, not an open RFT). Responses open Jul 2026; invitations from 17 Aug 2026; event 6-8 Oct 2026 (Perth). Exact RFI closing date/time and documents remain behind the AusTender 403 wall - closing_date null.",
+      "last_seen": "2026-07-28",
       "seen_dates": [
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
+      ],
+      "seen_count": 2,
+      "is_new_in_latest": false,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:16456-director-of-national-parks-buffel-grass-management-uluru-kata-tjuta",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "NT",
+      "tender_id": "16456",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/946f9a8b-975f-4467-8bcf-d5be34e94573",
+      "access": "public",
+      "title": "Buffel Grass Management at Uluru-Kata Tjuta National Park",
+      "buyer": "Director of National Parks (Parks Australia)",
+      "buyer_url": "https://www.dcceew.gov.au/",
+      "category": "Facility maintenance and repair services (invasive weed / land management)",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Director of National Parks (Parks Australia) invites tenders for buffel grass (Cenchrus ciliaris) management services at Uluru-Kata Tjuta National Park in the Northern Territory - control of a highly invasive introduced grass that threatens the park's ecological and cultural values.",
+      "deliverables_summary": "The successful tenderer would deliver on-park buffel grass management services at Uluru-Kata Tjuta National Park - invasive-weed control work to suppress and manage buffel grass across the park - under a multi-year agreement, working within a jointly managed, culturally sensitive World Heritage landscape. Full task scope and service levels are set out in the RFT documents on AusTender (not retrievable this run behind the 403 wall).",
+      "key_deliverables": [
+        "Buffel grass control / management works across Uluru-Kata Tjuta National Park",
+        "Ongoing management delivery over the agreement term (8 Oct 2026 - 7 Oct 2030, plus optional 1-year extension)"
+      ],
+      "scope_of_work": "Management of invasive buffel grass at Uluru-Kata Tjuta National Park, NT. Categorised on AusTender under Facility maintenance and repair services. The draft agreement is expected to commence 8 October 2026 and conclude 7 October 2030, with an option for the Director to extend for a further one year. Full scope is in the RFT documents (not retrievable this run behind the 403 wall).",
+      "requirements": [],
+      "eligibility": "Open to suitably qualified and experienced tenderers able to deliver invasive-weed / land-management services (full eligibility in the RFT documents, not retrievable this run).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "Approx. 4 years (8 Oct 2026 - 7 Oct 2030) with an option for the Director to extend for a further 1 year",
+      "contract_start": "2026-10-08",
+      "contract_end": "2030-10-07",
+      "publish_date": "2026-07-16",
+      "closing_date": "2026-08-13",
+      "closing_time": "12:30 PM ACT Local Time",
+      "questions_due": "2026-08-06 (12:00 PM Northern Territory time)",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/946f9a8b-975f-4467-8bcf-d5be34e94573",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Uluru-Kata Tjuta National Park, Northern Territory",
+      "contact_name": "DNP Procurement",
+      "contact_email": "dnpprocurement@dcceew.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "environment",
+        "weed-management",
+        "national-parks",
+        "rft",
+        "northern-territory",
+        "commonwealth",
+        "new-this-run"
+      ],
+      "first_seen": "2026-07-28",
+      "detail_source": "AusTender ATM search snippets (ATM 16456) cross-verified across multiple independent WebSearch queries",
+      "reasoning": "Discovered via WebSearch of the AusTender ATM listing (buyer-originated Commonwealth portal); a current open RFT with future close date. Detail page 403-blocked, so headline, dates, contract term, contact and category captured from cross-verified snippets.",
+      "notes": "Headline, dates and contract term date-verified: published 16 Jul 2026, tenderer questions due 6 Aug 2026 (12:00pm NT time), closes 13 Aug 2026 12:30pm ACT, agreement 8 Oct 2026 - 7 Oct 2030 + optional 1 year. Contact dnpprocurement@dcceew.gov.au. RFT documents, evaluation criteria and value remain behind the AusTender 403 wall.",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:S-EST11118-department-of-defence-duntroon-minor-building-remediation",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "ACT",
+      "tender_id": "S-EST11118",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/0e3aa5c8-0121-4596-957c-19ea1d8e114a",
+      "access": "public",
+      "title": "S-EST11118 - Duntroon Minor Building Remediation",
+      "buyer": "Department of Defence",
+      "buyer_url": "https://www.defence.gov.au/",
+      "category": "Building construction and support and maintenance and repair services (72100000)",
+      "category_codes": [
+        "72100000"
+      ],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "The Department of Defence seeks a contractor for minor building remediation across multiple buildings at Duntroon (Royal Military College), ACT - including demolition, painting, rust removal, and ablution and workplace refurbishment.",
+      "deliverables_summary": "The contractor is to carry out minor remediation works to multiple buildings at Duntroon, ACT - demolition, painting, rust removal and ablution/workplace refurbishment - encompassing mechanical, electrical, hydraulic, civil and structural works, delivered within the Defence estate. Full scope is in the tender documents on AusTender (not retrievable this run behind the 403 wall).",
+      "key_deliverables": [
+        "Minor building remediation across multiple Duntroon buildings",
+        "Demolition works",
+        "Painting and rust removal",
+        "Ablution and workplace refurbishment",
+        "Associated mechanical, electrical, hydraulic, civil and structural works"
+      ],
+      "scope_of_work": "Minor remediation to multiple buildings at Duntroon including demolition, painting, rust removal and ablution and workplace refurbishment; scope includes mechanical, electrical, hydraulic, civil and structural works. Category 72100000 (building construction and support and maintenance and repair services). Full scope is in the tender documents (not retrievable this run behind the 403 wall).",
+      "requirements": [],
+      "eligibility": "Open to suitably qualified and experienced building/construction contractors (full eligibility in the tender documents, not retrievable this run).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "",
+      "closing_date": "2026-07-30",
+      "closing_time": "12:00 PM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/0e3aa5c8-0121-4596-957c-19ea1d8e114a",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Duntroon (Royal Military College), ACT",
+      "contact_name": "Tender Administrator (Aurecon)",
+      "contact_email": "SNSW.PDS.Tenders@aurecongroup.com",
+      "contact_phone": "",
+      "tags": [
+        "defence",
+        "construction",
+        "building-remediation",
+        "rft",
+        "act",
+        "commonwealth",
+        "closing-soon",
+        "new-this-run"
+      ],
+      "first_seen": "2026-07-28",
+      "detail_source": "AusTender ATM snippet (S-EST11118) cross-verified with DECnet (decnet.com.au) and tenderhub.com.au listings describing the same Duntroon remediation ATM",
+      "reasoning": "Discovered via WebSearch of the AusTender ATM listing (buyer-originated Commonwealth/Defence portal); DECnet and other listings were used only as corroborating discovery signals, with the buyer's own AusTender notice recorded as the source. A current Defence RFT closing 30 Jul 2026.",
+      "notes": "Closing very soon (30 Jul 2026 12:00pm ACT; an earlier listed date of 21 Jul 2026 was superseded). Tender administered by Aurecon (SNSW.PDS.Tenders@aurecongroup.com). Category 72100000. Value, contract term and full document list remain behind the AusTender 403 wall.",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -9924,11 +10078,11 @@
       "feed_or_api_url": "https://www.tenders.gov.au/atm",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known canonical Tier-1 source; queried via WebSearch this run (ATM listing + multiple ATM IDs) - provided GA2026/1392, ATM_2026_6066, LCD-26-0030, CSIRORFT2026019, ATM_2026_6786 and PSC002897.",
+      "how_discovered": "Known canonical Tier-1 source; queried via WebSearch this run (ATM listing + multiple ATM IDs) - provided ATM 16456 (Buffel Grass), S-EST11118 (Duntroon), and re-surfaced the carried-forward GA2026/1392, ATM_2026_6066, LCD-26-0030, CSIRORFT2026019, ATM_2026_6786 and PSC002897.",
       "recommended_check_frequency": "daily",
       "notes": "Detail pages returned HTTP 403 to WebFetch this run; only WebSearch snippets were usable.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -9942,9 +10096,10 @@
         "2026-07-23",
         "2026-07-25",
         "2026-07-26",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 13,
+      "seen_count": 14,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -10060,7 +10215,7 @@
       "recommended_check_frequency": "daily",
       "notes": "Largest single slice of corporate opportunity, but full opportunity detail requires a free supplier account. No corporate tender captured this run (registration-gated / invitation-only).",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -10079,9 +10234,10 @@
         "2026-07-20",
         "2026-07-23",
         "2026-07-24",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 18,
+      "seen_count": 19,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -11597,14 +11753,15 @@
       "confidence": "high",
       "how_discovered": "Known GBE source (added in a prior run); carried forward as host of the Millicent WWTP EIP Upgrade D&C EOI.",
       "recommended_check_frequency": "weekly",
-      "notes": "SA Water now runs its public RFx (RFT/EOI) through its own registration-gated Supplier Portal rather than Tenders SA. Register for an authenticated pass to read opportunity detail.",
+      "notes": "SA Water runs its public RFx (RFT/EOI) through its own registration-gated Supplier Portal rather than Tenders SA. Register for an authenticated pass to read opportunity detail.",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-03",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -13045,7 +13202,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -13433,16 +13590,17 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known GBE source; re-confirmed this run as host of the Clean Energy Link PCMS EOI (due 31 Jul 2026).",
+      "how_discovered": "Known GBE source; carried forward this run as host of the Clean Energy Link PCMS EOI (due 31 Jul 2026).",
       "recommended_check_frequency": "weekly",
       "notes": "Registration-gated; individual EOI detail not publicly retrievable.",
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "seen_dates": [
         "2026-07-24",
-        "2026-07-27"
+        "2026-07-27",
+        "2026-07-28"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -13573,6 +13731,138 @@
       "last_seen": "2026-07-27",
       "seen_dates": [
         "2026-07-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Hunter Water Corporation - E-Tendering (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/hunterwater/alltenders/",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch while probing Tier-2 water GBE procurement channels; Hunter Water's supplier page states all new tenders are advertised via its own TenderLink e-tendering portal where registered suppliers view, receive alerts and lodge online.",
+      "recommended_check_frequency": "weekly",
+      "notes": "NSW government-owned water utility. Buyer-originated TenderLink portal (portal.tenderlink.com/hunterwater). Free registration to view/lodge.",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Essential Energy - Tenders and Suppliers (Oracle Cloud portal)",
+      "source_url": "https://www.essentialenergy.com.au/partners/tendersandsuppliers/suppliers",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "Oracle Procurement Cloud (Oracle Fusion)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of energy-network supplier pages; Essential Energy's supplier page describes a new Oracle Cloud 'Tenders and Suppliers' portal with a 'Become a supplier' onboarding flow (suppliers@essentialenergy.com.au), replacing its former TenderLink registration.",
+      "recommended_check_frequency": "weekly",
+      "notes": "NSW government-owned electricity distributor. NOTABLE PLATFORM CHANGE: migrated from TenderLink to Oracle Fusion; suppliers previously registered on TenderLink must re-register via the 'Become a supplier' tile. Buyer-originated.",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Seqwater - Supplier information (Zycus Supplier Network + QLD Government Supplier Portal)",
+      "source_url": "https://www.seqwater.com.au/supplier-information",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland",
+      "platform": "Zycus (ZSN) / Queensland Government Supplier Portal",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of QLD bulk-water procurement pages; Seqwater's supplier page states it runs sourcing via the Zycus Supplier Network (ZSN) and advertises full open-market tenders on the Queensland Government Supplier Portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Queensland bulk-water authority (Tier-2 GBE). Buyer-originated (ZSN registration + QLD Supplier Portal for open-market tenders).",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Sunwater - Suppliers and Contractors (via QTenders)",
+      "source_url": "https://www.sunwater.com.au/about/suppliers-and-contractors/",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland",
+      "platform": "QTenders",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of QLD water-infrastructure supplier pages; Sunwater directs interested vendors to register on the Queensland Government QTenders website to receive notifications for its open tenders.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Queensland government-owned bulk-water / infrastructure business (Tier-2 GBE). Publishes open tenders via QTenders; complies with the Queensland Procurement Policy.",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "SA Power Networks - Tenders / Supplying to us",
+      "source_url": "https://www.sapowernetworks.com.au/industry/tenders/",
+      "source_type": "corporate",
+      "jurisdiction": "South Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of electricity-distribution supplier pages; SA Power Networks publishes a 'Tenders' page and a 'Supplying to us' supplier-onboarding channel on its own website.",
+      "recommended_check_frequency": "weekly",
+      "notes": "South Australian electricity distribution network (privately operated under lease). Buyer-originated tender/supplier channel; classified corporate (not government-owned).",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Jemena - E-Tendering (TenderLink)",
+      "source_url": "https://www.tenderlink.com/tenderers/2744.460/searchpages/",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (VIC/NSW gas & electricity networks)",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch of energy-network supplier pages; Jemena runs an e-tendering portal via TenderLink to improve tendering speed/efficiency for its suppliers.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Privately owned (SGSP - State Grid / Singapore Power) gas and electricity network operator. Buyer-originated TenderLink e-tendering portal; classified corporate.",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "seen_dates": [
+        "2026-07-28"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
