@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30",
+  "generated": "2026-07-31",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -36,32 +36,35 @@
     "2026-07-27",
     "2026-07-28",
     "2026-07-29",
-    "2026-07-30"
+    "2026-07-30",
+    "2026-07-31"
   ],
-  "run_count": 36,
+  "run_count": 37,
   "first_run": "2026-06-25",
-  "latest_run": "2026-07-30",
-  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) and NSW (buy.nsw/NSW eTendering) covered via search-indexed detail; partial reads of Victoria, Queensland, WA, SA, Tasmania, NT and ACT portals. Tier 2 sampled (CSIRO, universities incl. Monash/UQ/Griffith, water GBEs, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery, EstimateOne, major-buyer portals) but no publicly-visible corporate RFx was readable. MAJOR LIMITATION THIS RUN: direct WebFetch to essentially every Australian government, council, water-corporation and e-sourcing portal returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy with no relay failures). Tender detail was therefore reconstructed from search-engine indexed snippets rather than the notices themselves, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or closing in the next ~2 weeks. No tenders, dates, deliverables or contacts were fabricated.",
+  "latest_run": "2026-07-31",
+  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) covered via search-indexed detail; NSW (buy.nsw / NSW eTendering), Victoria (Buying for Victoria), Queensland (QTenders / VendorPanel), WA (Tenders WA), Tasmania (Tenders Tas / Dept of State Growth) landing and search-indexed listings reviewed. Tier 2 sampled (CSIRO, universities incl. ANU/USyd, water GBEs, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery + major-buyer portals incl. Transgrid, NBN Co) — no publicly-visible corporate RFx was readable; corporate channels recorded in discovered_sources only. MAJOR LIMITATION THIS RUN (unchanged from recent runs): direct WebFetch to essentially every Australian government, council, water-corporation, university-portal and e-sourcing domain returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy). All tender detail below was therefore reconstructed from search-engine indexed snippets rather than the primary notices, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or recently published/updated. Several ATM IDs that surfaced in search (RFT-2026-0080 Federal Court, MSD/RFT/55619/1 Defence, ATM_2026_6026 DCCEEW) were verified as already CLOSED and excluded; the CSIRO Parkes Observatory EOI captured on 2026-07-30 has since closed and was not re-recorded as open. No tenders, dates, deliverables or contacts were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-07-30",
-    "coverage_summary": "Tier 1 Commonwealth (AusTender) and NSW (buy.nsw/NSW eTendering) covered via search-indexed detail; partial reads of Victoria, Queensland, WA, SA, Tasmania, NT and ACT portals. Tier 2 sampled (CSIRO, universities incl. Monash/UQ/Griffith, water GBEs, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery, EstimateOne, major-buyer portals) but no publicly-visible corporate RFx was readable. MAJOR LIMITATION THIS RUN: direct WebFetch to essentially every Australian government, council, water-corporation and e-sourcing portal returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy with no relay failures). Tender detail was therefore reconstructed from search-engine indexed snippets rather than the notices themselves, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or closing in the next ~2 weeks. No tenders, dates, deliverables or contacts were fabricated.",
-    "sources_checked": 24,
+    "run_date": "2026-07-31",
+    "coverage_summary": "Tier 1 Commonwealth (AusTender) covered via search-indexed detail; NSW (buy.nsw / NSW eTendering), Victoria (Buying for Victoria), Queensland (QTenders / VendorPanel), WA (Tenders WA), Tasmania (Tenders Tas / Dept of State Growth) landing and search-indexed listings reviewed. Tier 2 sampled (CSIRO, universities incl. ANU/USyd, water GBEs, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery + major-buyer portals incl. Transgrid, NBN Co) — no publicly-visible corporate RFx was readable; corporate channels recorded in discovered_sources only. MAJOR LIMITATION THIS RUN (unchanged from recent runs): direct WebFetch to essentially every Australian government, council, water-corporation, university-portal and e-sourcing domain returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy). All tender detail below was therefore reconstructed from search-engine indexed snippets rather than the primary notices, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or recently published/updated. Several ATM IDs that surfaced in search (RFT-2026-0080 Federal Court, MSD/RFT/55619/1 Defence, ATM_2026_6026 DCCEEW) were verified as already CLOSED and excluded; the CSIRO Parkes Observatory EOI captured on 2026-07-30 has since closed and was not re-recorded as open. No tenders, dates, deliverables or contacts were fabricated.",
+    "sources_checked": 26,
     "tenders_found": 5,
-    "new_sources_found": 2,
+    "new_sources_found": 4,
     "entries_pending_detail": 2,
     "gaps": [
-      "WebFetch blocked (HTTP 403 from destination WAF, not the proxy) on: tenders.gov.au (ATM index + all /Atm/Show detail pages), tenders.nsw.gov.au RSS, tenders.vic.gov.au / buyingfor.vic.gov.au, qtenders.hpw.qld.gov.au, health.qld.gov.au current-tenders, tenders.wa.gov.au, tendersonline.nt.gov.au (incl. /Tender/Details/4816), vendorpanel.com.au/publictenders, service.ariba.com Discovery, and individual council sites (Cabonne, East Gippsland, Wentworth). All tender detail below was therefore taken from search-indexed summaries, not primary notice pages.",
-      "SAP Ariba Discovery / SAP Business Network Discovery: could not read the public posting board (login/JS-gated + 403 on direct fetch). No Australian corporate RFx captured as a tender this run; portal recorded in discovered_sources only, per invitation/registration-gated policy.",
+      "WebFetch blocked (HTTP 403 from destination WAF, not the proxy) on EVERY primary source attempted this run: tenders.gov.au (/atm index + /Atm/Show detail pages), tenders.nsw.gov.au / buy.nsw (RFT.show detail + opportunity/search), vendorpanel.com.au/PublicTenders.aspx, innerwest.nsw.gov.au current-tenders, and illion.tenderlink.com listing pages. All tender detail below was taken from search-indexed summaries, not primary notice pages.",
+      "SAP Ariba Discovery / SAP Business Network Discovery: public posting board not readable (login/JS-gated + 403 on direct fetch). No Australian corporate RFx captured as a tender this run; portal recorded in discovered_sources only, per registration-gated policy.",
+      "Tier 3 major-buyer portals (Transgrid ibuy, NBN Co, Australia Post, BHP, Rio Tinto, Woolworths, Coles, Qantas, CBA/Westpac/NAB/ANZ, Telstra/Optus, AGL/Origin): supplier opportunities are registration- or invitation-gated on SAP Ariba/Coupa; no publicly-visible open RFx surfaced this run. Confirmed Transgrid and NBN Co both run procurement via SAP Ariba — recorded as sources.",
       "EstimateOne, iTWOcx, BidContender (construction subcontractor packages): live package listings require a supplier login; not readable this run. No subcontractor packages captured.",
-      "Tier 3 major-buyer portals (BHP, Rio Tinto, Woolworths, Coles, Qantas, CBA/Westpac/NAB/ANZ, Telstra/Optus, AGL/Origin): supplier opportunities are registration- or invitation-gated; no publicly-visible open RFx surfaced this run. Recorded as sources on prior runs; not re-fetched today due to 403s.",
-      "NT QTOL: a Department of Logistics and Infrastructure tender closing 31-Aug-2026 14:00 ACST is indexed (tendersonline.nt.gov.au/Tender/Details/4816) but the title/reference could not be extracted (403 on detail page); not recorded as a tender to avoid fabrication.",
-      "Old Nowra Bridge steel-recycling RFT: search results disagreed on the closing date (11-Aug-2026 vs 13-Aug-2026). Recorded as 2026-08-11 with the discrepancy flagged in notes; verify against buy.nsw before relying on it.",
-      "Victoria, Queensland, WA, SA, Tasmania, ACT core portals: only landing/index pages were reachable via search; no new jurisdiction-specific tender detail could be confirmed this run. Deferred to a future run when portal fetch succeeds.",
-      "CSIRO EOI (Parkes Observatory food & beverage) and Monash University RFT (Student Conduct case-management): captured at headline level only; closing dates, documents and full scope not extractable (AusTender/TenderLink detail pages 403). Left null; flagged in entries_pending_detail."
+      "CSIRORFT2026004 (grid-fed electricity supply to CSIRO WA sites): closing date not extractable from search-indexed snippet (AusTender detail page 403). Captured at headline level; flagged in entries_pending_detail.",
+      "Tasmania Northern Suburbs Community Recreation Hub Stage 3: search snippets disagreed on the closing date (a GovMarket snippet showed '17 Jul 2026' which is inconsistent with a 22-Jul-2026 tender release). Closing date left null pending verification on Tenders Tasmania; project scope/value ($18.9M) corroborated across multiple public sources.",
+      "Victoria, Queensland, WA, SA, NT, ACT core state portals: only landing/index pages were reachable via search; no jurisdiction-specific NEW tender detail could be confirmed to primary-source fidelity this run (403 on all detail pages). Deferred to a future run when portal fetch succeeds.",
+      "GovMarket (govmarket.com.au) surfaced Tasmania and Sydney Water opportunities but is a re-publishing aggregator; used only as a discovery signal and NOT recorded as a source of truth — the buyer's own portal is recorded instead."
     ],
     "recommended_seed_additions": [
-      "University of Queensland — UQProcure supplier portal (Jaggaer): https://coo.uq.edu.au/uq-suppliers/supplying-uq",
-      "Griffith University — Supplying to Griffith (procurement/supplier registration): https://www.griffith.edu.au/engage/supplying-to-griffith"
+      "Transgrid — supplier portal / ibuy (SAP Ariba): https://www.transgrid.com.au/about-us/suppliers/",
+      "NBN Co — Partners and Suppliers (SAP Ariba): https://www.nbnco.com.au/corporate-information/about-nbn-co/suppliers",
+      "University of Sydney — UniBuy / Suppliers (SAP Ariba Network): https://www.sydney.edu.au/about-us/working-with-the-university/suppliers.html",
+      "Australian National University — Current Tenders (TenderLink): https://portal.tenderlink.com/anu/alltenders/"
     ]
   },
   "months": [
@@ -72,7 +75,7 @@
     },
     {
       "month": "2026-07",
-      "new_tenders": 120,
+      "new_tenders": 123,
       "active_tenders": 0
     }
   ],
@@ -8039,7 +8042,7 @@
       "procurement_type": "RFT",
       "current_status": "closing-soon",
       "description": "The Australian Submarine Agency is seeking a suitably qualified supplier to design and deliver a Welding Aptitude Testing Program to help identify and develop future welders for the AUKUS submarine enterprise.",
-      "deliverables_summary": "Design and delivery of a Welding Aptitude Testing Program that attracts applicants, facilitates hands-on welding construction and assessment activities, determines candidates' suitability for welding careers, and provides career-oriented conversations and participant follow-up. Program targets testing 400 candidates over four years, aimed at individuals with limited to no prior welding experience.",
+      "deliverables_summary": "Design and delivery of a Welding Aptitude Testing Program that attracts applicants, facilitates hands-on welding construction and assessment activities, determines candidates' suitability for welding careers, and provides career-oriented conversations and participant follow-up. Program targets testing approximately 400 candidates over four years, aimed at individuals with limited to no prior welding experience.",
       "key_deliverables": [
         "Attract and recruit program applicants",
         "Facilitate hands-on welding construction and assessment activities",
@@ -8056,7 +8059,7 @@
       "contract_term": "Program spans approximately four years (400 candidates over four years).",
       "contract_start": null,
       "contract_end": null,
-      "publish_date": null,
+      "publish_date": "2026-07-02",
       "closing_date": "2026-08-03",
       "closing_time": "4:00 PM ACT Local Time",
       "questions_due": "",
@@ -8080,14 +8083,15 @@
       ],
       "first_seen": "2026-07-16",
       "detail_source": "AusTender ATM RFT/WLD/2026 as indexed by web search (primary ATM page returned HTTP 403 on direct fetch)",
-      "reasoning": "Previously tracked ATM; still open and closing 3-Aug-2026. Detail refreshed this run with fuller scope (400 candidates over four years) from search-indexed summary. Buyer-originated on AusTender.",
-      "notes": "Known/active opportunity refreshed with additional scope detail; closing very soon (3-Aug-2026). Contacts and documents not readable this run (403).",
-      "last_seen": "2026-07-30",
+      "reasoning": "Previously tracked ATM (first seen 2026-07-30); still open and closing 3-Aug-2026. Re-confirmed current this run via search. Buyer-originated on AusTender.",
+      "notes": "Known/active opportunity; closing imminent (3-Aug-2026). Publish date (2-Jul-2026) confirmed via search this run. Contacts and documents not readable (403).",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-07-16",
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -9550,7 +9554,7 @@
       "category_codes": [],
       "procurement_type": "market-sounding",
       "current_status": "open",
-      "description": "ANSTO is holding an online industry briefing ahead of an upcoming open Request for Tender for the Intermediate Level Waste Capacity Increase (ILWCI+) Project at its Lucas Heights campus – construction of a new intermediate-level waste storage facility. The formal RFT is anticipated to be released via an open approach to market in early August 2026.",
+      "description": "ANSTO held an online industry briefing ahead of an upcoming open Request for Tender for the Intermediate Level Waste Capacity Increase (ILWCI+) Project at its Lucas Heights campus – construction of a new intermediate-level waste storage facility. The formal RFT is anticipated to be released via an open approach to market in early August 2026.",
       "deliverables_summary": "Upcoming works (RFT to follow) to construct a new Intermediate Level Waste storage facility within ANSTO's highly regulated operational environment, including significant reinforced concrete structures, specialist fabricated components, mechanical and electrical services, and integration of process systems requiring high standards of quality assurance, traceability, inspection and testing.",
       "key_deliverables": [
         "Construction of a new Intermediate Level Waste storage facility (works to be scoped in the forthcoming RFT)",
@@ -9561,7 +9565,7 @@
       ],
       "scope_of_work": "Construction of a new Intermediate Level Waste storage facility at ANSTO's Lucas Heights campus within a highly regulated nuclear operational environment.",
       "requirements": [],
-      "eligibility": "Construction contractors interested in the upcoming RFT; industry briefing open to interested organisations who register.",
+      "eligibility": "Construction contractors interested in the upcoming RFT; industry briefing was open to interested organisations who registered.",
       "evaluation_criteria": [],
       "value": "",
       "value_currency": "AUD",
@@ -9572,8 +9576,8 @@
       "closing_date": null,
       "closing_time": "",
       "questions_due": "",
-      "briefing": "Online industry briefing via Microsoft Teams on 31 July 2026 at 2:00 PM; register attendance by emailing jenksm@ansto.gov.au before 4:00 PM AEST on 29 July 2026. Formal open RFT anticipated early August 2026.",
-      "submission_method": "Register interest for the industry briefing by email; formal RFT to be released via AusTender open approach to market",
+      "briefing": "Online industry briefing via Microsoft Teams held 31 July 2026 at 2:00 PM (registration was by email to jenksm@ansto.gov.au before 4:00 PM AEST on 29 July 2026). Formal open RFT anticipated early August 2026.",
+      "submission_method": "Formal RFT to be released via AusTender open approach to market (watch AusTender in early August 2026)",
       "lodgement_url": "",
       "documents": [],
       "mandatory_conditions": [],
@@ -9592,17 +9596,18 @@
       ],
       "first_seen": "2026-07-26",
       "detail_source": "AusTender ATM PSC002897/Brief as indexed by web search (primary ATM page returned HTTP 403 on direct fetch)",
-      "reasoning": "Previously tracked market-sounding notice; still active with the industry briefing scheduled 31-Jul-2026 and the RFT expected early August 2026. Buyer-originated on AusTender.",
-      "notes": "Market-sounding / pre-RFT notice (not yet a live tender). Time-critical: briefing 31-Jul-2026. Watch for the open RFT on AusTender in early August 2026.",
-      "last_seen": "2026-07-30",
+      "reasoning": "Previously tracked market-sounding notice (first seen 2026-07-30). Industry briefing has now occurred (31-Jul-2026); the open RFT is expected on AusTender in early August 2026. Buyer-originated on AusTender.",
+      "notes": "Market-sounding / pre-RFT notice (not yet a live tender). Briefing date (31-Jul-2026) has now passed. Watch AusTender for the open ILWCI+ RFT in early August 2026.",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-07-26",
         "2026-07-27",
         "2026-07-28",
         "2026-07-29",
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -10408,8 +10413,8 @@
         "2026-07-30"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:CSIROEOI2026001-cafe-food-beverage-parkes-observatory",
@@ -10472,8 +10477,8 @@
         "2026-07-30"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "MonashUniversity:student-conduct-complaints-case-management-solution-rft",
@@ -10534,6 +10539,206 @@
       "last_seen": "2026-07-30",
       "seen_dates": [
         "2026-07-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:CSIRORFT2026019-grounds-maintenance-csiro-vic-metro",
+      "source_name": "AusTender (Commonwealth) / CSIRO",
+      "source_url": "https://www.tenders.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "VIC",
+      "tender_id": "CSIRORFT2026019",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/c26648f6-b84c-40dd-96cc-0d163d91e290",
+      "access": "public",
+      "title": "Ground Maintenance Services for CSIRO Managed Sites – VIC Metro",
+      "buyer": "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+      "buyer_url": "https://www.csiro.au/en/work-with-us/working-with-csiro/tenders-procurement",
+      "category": "Grounds maintenance / facilities services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "CSIRO is seeking suitably qualified and experienced service providers to deliver grounds maintenance services at its Victorian metropolitan managed sites, including the Clayton Precinct (Clayton, Clayton North and Notting Hill), Aspendale, and Werribee (Sneydes Road and South Road).",
+      "deliverables_summary": "Provision of grounds and landscape maintenance services across CSIRO's Victorian metropolitan sites, keeping grounds, gardens and external areas maintained to the required standard at the Clayton Precinct, Aspendale and Werribee locations. Delivery period indicated from around October 2026.",
+      "key_deliverables": [
+        "Grounds maintenance at CSIRO Clayton Precinct (Clayton, Clayton North, Notting Hill)",
+        "Grounds maintenance at CSIRO Aspendale",
+        "Grounds maintenance at CSIRO Werribee (Sneydes Road and South Road)"
+      ],
+      "scope_of_work": "Grounds maintenance services across multiple CSIRO-managed Victorian metropolitan sites; commencement indicated around October 2026.",
+      "requirements": [],
+      "eligibility": "Open approach to market (open to all suppliers).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "2026-10-01",
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-17",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/c26648f6-b84c-40dd-96cc-0d163d91e290",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "CSIRO VIC metro sites: Clayton Precinct, Aspendale and Werribee, Victoria",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "csiro",
+        "grounds-maintenance",
+        "facilities",
+        "victoria",
+        "rft"
+      ],
+      "first_seen": "2026-07-31",
+      "detail_source": "AusTender ATM CSIRORFT2026019 as indexed by web search / TenderTracker snippet (primary ATM page returned HTTP 403 on direct fetch)",
+      "reasoning": "Discovered via search of CSIRO current AusTender RFTs; buyer-originated on AusTender. Closing date (17-Aug-2026) confirmed via a search-indexed tender-tracking snippet.",
+      "notes": "Contract start (~Oct 2026) and site list from the listing description; full specification documents, evaluation criteria and contacts not readable this run (403). Contract-start date approximate.",
+      "last_seen": "2026-07-31",
+      "seen_dates": [
+        "2026-07-31"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:CSIRORFT2026004-grid-electricity-supply-csiro-wa",
+      "source_name": "AusTender (Commonwealth) / CSIRO",
+      "source_url": "https://www.tenders.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "WA",
+      "tender_id": "CSIRORFT2026004",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/8cfa44a9-922a-45aa-9730-bb8dc7f7dfc7",
+      "access": "public",
+      "title": "Supply of Grid-fed Electricity to CSIRO Managed Sites in Western Australia",
+      "buyer": "CSIRO (Commonwealth Scientific and Industrial Research Organisation)",
+      "buyer_url": "https://www.csiro.au/en/work-with-us/working-with-csiro/tenders-procurement",
+      "category": "Energy / electricity retail supply",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "CSIRO is seeking proposals for the supply of grid-fed electricity to its managed sites in Western Australia, including associated account management services (data provision, invoicing, site transfers) and the provision and administration of applicable environmental charges and green-energy options.",
+      "deliverables_summary": "Retail supply of grid-fed electricity to CSIRO's Western Australian managed sites, together with account management services such as consumption data provision, invoicing and site transfers, plus administration of applicable environmental charges and optional green-energy products. Full scope captured at headline level only this run.",
+      "key_deliverables": [
+        "Supply of grid-fed electricity to CSIRO WA managed sites",
+        "Account management services (data provision, invoicing, site transfers)",
+        "Provision/administration of environmental charges and green-energy options"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open approach to market (open to all suppliers).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/8cfa44a9-922a-45aa-9730-bb8dc7f7dfc7",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "CSIRO managed sites, Western Australia",
+      "contact_name": "",
+      "contact_email": "CSIRORFT2026004@csiro.au",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "csiro",
+        "energy",
+        "electricity",
+        "western-australia",
+        "rft"
+      ],
+      "first_seen": "2026-07-31",
+      "detail_source": "AusTender ATM CSIRORFT2026004 as indexed by web search (primary ATM page returned HTTP 403 on direct fetch)",
+      "reasoning": "Discovered via search of CSIRO current AusTender RFTs; buyer-originated on AusTender. Procurement-officer contact email quoted in the search-indexed listing.",
+      "notes": "Headline-level only — closing date, contract term and documents not extractable this run (403); flagged in entries_pending_detail. Contact email is the tender-specific mailbox shown in the listing.",
+      "last_seen": "2026-07-31",
+      "seen_dates": [
+        "2026-07-31"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersTasmania:northern-suburbs-community-recreation-hub-stage-3-expansion-construction",
+      "source_name": "Tenders Tasmania / Department of State Growth",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "Tasmania",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Northern Suburbs Community Recreation Hub – Stage 3 Expansion Construction Works",
+      "buyer": "Tasmanian Department of State Growth",
+      "buyer_url": "https://www.stategrowth.tas.gov.au/about/tendering_and_contracts",
+      "category": "Construction / building and facility construction",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "The Tasmanian Department of State Growth has released a Request for Tender for the main construction works of Stage 3 of Launceston's Northern Suburbs Community Recreation Hub at Mowbray – an approximately $18.9 million expansion of Tasmania's largest community sport and recreation facility.",
+      "deliverables_summary": "Construction and fit-out of the Stage 3 expansion of the Northern Suburbs Community Recreation Hub at Mowbray, delivering approximately 5,000 square metres of additional indoor space including four additional indoor courts to support a broad range of sport and recreation activities.",
+      "key_deliverables": [
+        "Main construction works for the Stage 3 expansion at Mowbray",
+        "Approximately 5,000 sqm of additional indoor space",
+        "Four additional indoor sport/recreation courts",
+        "Fit-out of the expanded facility"
+      ],
+      "scope_of_work": "Delivery of the Stage 3 main construction works for the Northern Suburbs Community Recreation Hub, Mowbray, expanding Tasmania's largest community sport and recreation facility by approximately 5,000 sqm and four indoor courts (project value approximately $18.9 million).",
+      "requirements": [],
+      "eligibility": "Suitably qualified and experienced construction contractors.",
+      "evaluation_criteria": [],
+      "value": "$18,900,000",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-07-22",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via Tenders Tasmania (www.tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Mowbray, Launceston, Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "construction",
+        "recreation",
+        "sport",
+        "state-growth",
+        "rft",
+        "launceston"
+      ],
+      "first_seen": "2026-07-31",
+      "detail_source": "Multiple public sources (Australasian Leisure Management, Mirage News, GovMarket listing) reporting the Department of State Growth tender release; primary Tenders Tasmania notice returned 403 on direct fetch",
+      "reasoning": "Discovered via search for recent Tasmanian RFTs (aggregator/media as discovery signal); buyer-originated by the Department of State Growth and published on Tenders Tasmania, which is recorded as the source of truth.",
+      "notes": "Recently released (~22-Jul-2026). Closing date left null — a GovMarket snippet showed '17 Jul 2026' which is inconsistent with the 22-Jul release, so the date is unverified pending Tenders Tasmania. Value ($18.9M) and scope corroborated across multiple public reports.",
+      "last_seen": "2026-07-31",
+      "seen_dates": [
+        "2026-07-31"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -10757,7 +10962,7 @@
       "recommended_check_frequency": "daily",
       "notes": "Largest single slice of corporate RFx. No Australian opportunity readable this run; recorded as source only per registration-gated policy. Free supplier registration required for full detail.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -10779,9 +10984,10 @@
         "2026-07-27",
         "2026-07-28",
         "2026-07-29",
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "seen_count": 21,
+      "seen_count": 22,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -11023,29 +11229,30 @@
       "active_in_latest": false
     },
     {
-      "source_name": "NBN Co — Partners and suppliers",
+      "source_name": "NBN Co — Partners and Suppliers (SAP Ariba)",
       "source_url": "https://www.nbnco.com.au/corporate-information/about-nbn-co/suppliers",
       "source_type": "gov-business-enterprise",
-      "jurisdiction": "Commonwealth",
-      "platform": "custom / SAP Ariba",
+      "jurisdiction": "Commonwealth (National)",
+      "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": false,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "Tier 3 rotating check; NBN Co uses RFI/RFQ/RFP/RFT sourcing and directs prospective suppliers to supplierpolicies@nbnco.com.au.",
+      "how_discovered": "Tier 3 GBE search; NBN Co's supplier page confirms it uses SAP Ariba to transact with potential and current suppliers and to source new supply opportunities (recent RFP activity for design & construction).",
       "recommended_check_frequency": "weekly",
-      "notes": "Already known. Registration/invitation-gated; no publicly-visible RFx captured this run.",
+      "notes": "Buyer-originated GBE e-sourcing channel. Opportunities registration-gated on SAP Ariba; NBN Co also issues public media statements for major construction RFPs.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
-        "2026-07-13"
+        "2026-07-13",
+        "2026-07-31"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Snowy Hydro — Current tenders",
@@ -11239,27 +11446,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Transgrid - Suppliers (SAP Ariba 'ibuy')",
+      "source_name": "Transgrid — Supplier portal / ibuy (SAP Ariba)",
       "source_url": "https://www.transgrid.com.au/about-us/suppliers/",
       "source_type": "gov-business-enterprise",
-      "jurisdiction": "New South Wales / ACT (transmission network)",
+      "jurisdiction": "New South Wales / National (electricity transmission)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "WebSearch of energy-network supplier pages; Transgrid states it runs all sourcing (RFI/RFQ/RFP/RFT) through SAP Ariba, branded internally as 'ibuy', and requires suppliers to register on the SAP Ariba Network (free standard account) before trading.",
+      "how_discovered": "Tier 3 GBE search for electricity transmission buyers; Transgrid's supplier page confirms all procurement (RFTs and EOIs) runs through the SAP Ariba Network (branded 'ibuy'), requiring supplier registration.",
       "recommended_check_frequency": "weekly",
-      "notes": "High-voltage transmission network operator (Tier-2 GBE / major energy buyer). Buyer-originated via SAP Ariba; opportunities are registration-gated (SAP Ariba Network account required).",
+      "notes": "Buyer-originated GBE e-sourcing channel. Individual opportunities are registration-gated on SAP Ariba; note Transgrid also historically used NSW eTendering (tenders.nsw.gov.au/transgrid) for some notices.",
       "first_seen": "2026-06-27",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-06-27",
-        "2026-07-29"
+        "2026-07-29",
+        "2026-07-31"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Ausgrid - Procurement and suppliers (TenderLink)",
@@ -11468,29 +11676,30 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Tasmanian Government Tenders",
+      "source_name": "Tenders Tasmania (Department of State Growth)",
       "source_url": "https://www.tenders.tas.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "Tasmania",
-      "platform": "Tenders Tasmania",
+      "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier-1 seed; checked this run via search. Surfaced a new 'Provision of Security Guarding Services' tender (closing 31 July 2026) which is captured this run. Direct fetch / detail page returned a session timeout.",
+      "how_discovered": "Canonical Tier 1 Tasmanian source; confirmed active this run as the source of truth for the Department of State Growth Northern Suburbs Recreation Hub Stage 3 RFT (direct fetch returned 403).",
       "recommended_check_frequency": "daily",
-      "notes": "Tasmanian Government tenders; purchasing.tas.gov.au hosts current-tender listings and tenders@treasury.tas.gov.au is the general helpdesk.",
+      "notes": "Tasmanian state procurement portal. Direct WebFetch blocked (403) this run; opportunities obtained via search indexing.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
         "2026-07-18",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-31"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -12135,27 +12344,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "University of Sydney — eTendering (Strategic Sourcing)",
+      "source_name": "University of Sydney — UniBuy / Suppliers (SAP Ariba Network)",
       "source_url": "https://www.sydney.edu.au/about-us/working-with-the-university/suppliers.html",
       "source_type": "university",
       "jurisdiction": "New South Wales",
-      "platform": "custom (university eTender)",
+      "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": false,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "Known university supplier page; re-checked this run and found the Campus Master Plan program of four forthcoming consultant EOIs plus a Managing Contractor Contract (MCC) panel EOI.",
+      "how_discovered": "Tier 2 university procurement search; University of Sydney publishes RFT/RFQ/RFP/EOI opportunities and registers suppliers via its UniBuy portal on the SAP Ariba Network.",
       "recommended_check_frequency": "weekly",
-      "notes": "Buyer-originated university procurement channel; individual EOIs released via the University's eTender portal.",
+      "notes": "Buyer-originated university procurement. Registration on the SAP Ariba Network required to view/respond to opportunities.",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-07-02",
-        "2026-07-19"
+        "2026-07-19",
+        "2026-07-31"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
@@ -13052,19 +13262,20 @@
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": null,
+      "feed_or_api_url": "https://data.gov.au/data/dataset/latest-approaches-to-markets-listed-on-austender",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 source; queried via search this run (direct fetch returned 403).",
+      "how_discovered": "Canonical Tier 1 source; queried via search this run (direct fetch returned 403). A public data.gov.au RSS/dataset of latest ATMs was noted as a machine-readable feed candidate.",
       "recommended_check_frequency": "daily",
-      "notes": "Primary Commonwealth procurement portal. Direct WebFetch blocked (403) this run; ATM detail obtained via search indexing.",
+      "notes": "Primary Commonwealth procurement portal. Direct WebFetch blocked (403) this run; ATM detail obtained via search indexing. The data.gov.au 'latest approaches to markets' dataset may offer a machine-readable feed worth testing on a future run.",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-07-31",
       "seen_dates": [
         "2026-07-07",
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -14467,8 +14678,8 @@
         "2026-07-30"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Griffith University — Supplying to Griffith (procurement / supplier registration)",
@@ -14489,8 +14700,8 @@
         "2026-07-30"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "buy.nsw / NSW eTendering",
@@ -14506,12 +14717,13 @@
       "recommended_check_frequency": "daily",
       "notes": "NSW state procurement portal. RSS endpoint returned 403 to direct fetch this run; opportunities obtained via search indexing.",
       "first_seen": "2026-07-30",
-      "last_seen": "2026-07-30",
+      "last_seen": "2026-07-31",
       "seen_dates": [
-        "2026-07-30"
+        "2026-07-30",
+        "2026-07-31"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -14531,6 +14743,28 @@
       "last_seen": "2026-07-30",
       "seen_dates": [
         "2026-07-30"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Australian National University — Current Tenders (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/anu/alltenders/",
+      "source_type": "university",
+      "jurisdiction": "Australian Capital Territory",
+      "platform": "illion TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 2 university procurement search surfaced ANU's dedicated TenderLink current-tenders portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated university procurement on illion TenderLink. Free registration required for full documents; sibling to Monash's TenderLink portal.",
+      "first_seen": "2026-07-31",
+      "last_seen": "2026-07-31",
+      "seen_dates": [
+        "2026-07-31"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
