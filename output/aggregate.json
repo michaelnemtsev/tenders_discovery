@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-01",
+  "generated": "2026-08-02",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -38,34 +38,29 @@
     "2026-07-29",
     "2026-07-30",
     "2026-07-31",
-    "2026-08-01"
+    "2026-08-01",
+    "2026-08-02"
   ],
-  "run_count": 38,
+  "run_count": 39,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-01",
-  "latest_coverage_summary": "Tier 1 covered via search-indexed detail: Commonwealth (AusTender), NSW (NSW eTendering / buy.nsw incl. Transport for NSW and Central Coast Local Health District), Victoria (Buying for Victoria), Queensland (QTenders), WA (Tenders WA), SA (Tenders SA), NT (QTOL) and Tasmania landing/search-indexed listings reviewed. Tier 2 sampled (CSIRO, ANSTO, water GBEs incl. Sydney Water, electricity network GBEs Western Power/Ausgrid, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery + major-buyer/GBE portals) — no publicly-visible corporate RFx was readable without login; corporate/GBE e-sourcing channels recorded in discovered_sources only. MAJOR LIMITATION THIS RUN (unchanged from recent runs): direct WebFetch to essentially every Australian government, health, water/electricity-GBE, university and e-sourcing domain returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy). All tender detail below was therefore reconstructed from search-engine indexed snippets rather than the primary notices, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or recently published/updated in the last 7 days. No tenders, dates, deliverables or contacts were fabricated; login-gated corporate opportunities were NOT invented.",
+  "latest_run": "2026-08-02",
+  "latest_coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) plus VendorPanel and the mandatory Tier-3 channel (SAP Ariba Discovery) via web search. Direct page fetching was blocked environment-wide (HTTP 403 anti-bot walls) on every government portal and on individual AusTender ATM detail pages, so opportunity detail could only be captured from search-index snippets, not from the buyers' own detail pages or tender documents. Genuinely new opportunities surfaced this run were in Tasmania (City of Hobart, City of Launceston). Most other recent items resurfaced by search were already recorded in prior runs. Tier-3 corporate channels were checked and remain registration- or invitation-gated with no publicly-visible RFx; recorded as a portal, not fabricated as tenders.",
   "latest_run_metadata": {
-    "run_date": "2026-08-01",
-    "coverage_summary": "Tier 1 covered via search-indexed detail: Commonwealth (AusTender), NSW (NSW eTendering / buy.nsw incl. Transport for NSW and Central Coast Local Health District), Victoria (Buying for Victoria), Queensland (QTenders), WA (Tenders WA), SA (Tenders SA), NT (QTOL) and Tasmania landing/search-indexed listings reviewed. Tier 2 sampled (CSIRO, ANSTO, water GBEs incl. Sydney Water, electricity network GBEs Western Power/Ausgrid, VendorPanel councils). Tier 3 attempted (SAP Ariba Discovery + major-buyer/GBE portals) — no publicly-visible corporate RFx was readable without login; corporate/GBE e-sourcing channels recorded in discovered_sources only. MAJOR LIMITATION THIS RUN (unchanged from recent runs): direct WebFetch to essentially every Australian government, health, water/electricity-GBE, university and e-sourcing domain returned HTTP 403 from the destination site's bot/WAF protection (the egress proxy itself reported healthy). All tender detail below was therefore reconstructed from search-engine indexed snippets rather than the primary notices, so some fields could not be verified to primary-source fidelity and are left null. Prioritised opportunities open or recently published/updated in the last 7 days. No tenders, dates, deliverables or contacts were fabricated; login-gated corporate opportunities were NOT invented.",
-    "sources_checked": 27,
-    "tenders_found": 8,
-    "new_sources_found": 4,
+    "run_date": "2026-08-02",
+    "coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) plus VendorPanel and the mandatory Tier-3 channel (SAP Ariba Discovery) via web search. Direct page fetching was blocked environment-wide (HTTP 403 anti-bot walls) on every government portal and on individual AusTender ATM detail pages, so opportunity detail could only be captured from search-index snippets, not from the buyers' own detail pages or tender documents. Genuinely new opportunities surfaced this run were in Tasmania (City of Hobart, City of Launceston). Most other recent items resurfaced by search were already recorded in prior runs. Tier-3 corporate channels were checked and remain registration- or invitation-gated with no publicly-visible RFx; recorded as a portal, not fabricated as tenders.",
+    "sources_checked": 14,
+    "tenders_found": 3,
+    "new_sources_found": 1,
     "entries_pending_detail": 3,
     "gaps": [
-      "WebFetch blocked (HTTP 403 from destination WAF, not the proxy) on EVERY primary source attempted this run: tenders.gov.au (/Atm/Show detail pages), tenders.nsw.gov.au (public.RFT.show detail), decnet.com.au (Defence ATM mirror) and govmarket.com.au (Sydney Water EOI listing). All tender detail below was taken from search-indexed summaries, not primary notice pages.",
-      "SAP Ariba Discovery / SAP Business Network Discovery: public posting board not readable (login/JS-gated + 403 on direct fetch). No Australian corporate RFx captured as a tender this run; portal recorded in discovered_sources only, per registration-gated policy.",
-      "Tier 3 major-buyer / GBE e-sourcing portals (Western Power, Ausgrid, Transgrid, NBN Co, BHP, Rio Tinto, Woolworths, Coles, Qantas, CBA/Westpac/NAB/ANZ, Telstra/Optus, AGL/Origin): supplier opportunities are registration- or invitation-gated on SAP Ariba/Coupa/TenderLink; no publicly-visible open RFx surfaced this run. Western Power (SAP Ariba) and Ausgrid (TenderLink) confirmed and newly recorded as sources.",
-      "EstimateOne, iTWOcx, BidContender (construction subcontractor packages): live package listings require a supplier login; not readable this run. No subcontractor packages captured.",
-      "Sydney Water 'Drinking Water Program EPCM Projects' EOI surfaced via GovMarket (a re-publishing aggregator, used only as a discovery signal) — the buyer's own Sydney Water eProcurement portal is recorded as the source of truth. Closing date and full scope could not be verified (GovMarket page returned 403); captured at headline level and flagged in entries_pending_detail.",
-      "Central Coast Local Health District RFQ (Gosford Hospital Lift 13 replacement) and Transport for NSW 'Old Nowra Bridge' RFT: closing dates obtained from search-indexed buy.nsw/eTendering snippets; full specification documents, evaluation criteria and contacts not readable this run (403). Captured at headline level.",
-      "Victoria, Queensland, WA, SA, NT, ACT core state portals: only landing/index pages were reachable via search; no jurisdiction-specific NEW tender detail could be confirmed to primary-source fidelity this run (403 on all detail pages). Deferred to a future run when portal fetch succeeds.",
-      "ANSTO ILWCI+ open RFT was still NOT yet published on AusTender as of this run (only the pre-RFT market-sounding / industry-briefing notice PSC002897/Brief is live; briefing was held 31-Jul-2026 and the open RFT is anticipated early August 2026)."
+      "WebFetch returned HTTP 403 (Forbidden) for the Tier-1 portal landing/search pages: https://www.tenders.gov.au/atm, https://www.tenders.nsw.gov.au, https://www.tenders.vic.gov.au/tenders/open, https://www.vendorpanel.com.au/publictenders.aspx. Portals appear to enforce anti-bot protection against non-browser clients in this environment.",
+      "Individual AusTender ATM detail pages (e.g. https://www.tenders.gov.au/Atm/Show/...) and the Buying for Victoria tender view page (https://www.tenders.vic.gov.au/tender/view?id=251016) also returned HTTP 403, so full deliverables/requirements/contact extraction from buyer detail pages and tender documents was not possible this run. Detail below is limited to what public search snippets exposed and is marked pending verification.",
+      "Tenders WA, QTenders (QLD), Tenders SA, NT QTOL and ACT Tenders were reachable only via search-index summaries; no new jurisdiction-specific opportunities could be confirmed at detail level beyond items already known from prior runs.",
+      "Tier-3 (SAP Ariba Discovery, BHP, Rio Tinto, Woolworths, Coles, Qantas, banks, telcos): no publicly-visible RFx surfaced without login. These channels are registration-gated (Ariba/Coupa) or invitation-only; per spec the portal is recorded in discovered_sources and no corporate opportunities were invented.",
+      "Invitation-only management-consultancy RFPs (Accenture/KPMG/Deloitte-style) are out of scope by definition (never published) and were not sought as tenders."
     ],
     "recommended_seed_additions": [
-      "Western Power — Tenders and Registrations of Interest (SAP Ariba): https://www.westernpower.com.au/resources-education/suppliers/tenders-and-registrations-of-interest/",
-      "Ausgrid — Procurement and suppliers (illion TenderLink): https://portal.tenderlink.com/Ausgrid/",
-      "Transport for NSW (Roads and Maritime Projects) eTendering RSS feed: https://www.tenders.nsw.gov.au/public_data/rss/rss.xml",
-      "Central Coast Local Health District (NSW Health) — opportunities published via buy.nsw / NSW eTendering"
+      "City of Launceston e-Tendering (illion TenderLink) — https://portal.tenderlink.com/launceston/alltenders/ (Tasmanian local-government buyer-originated portal, not previously in the known-source list)."
     ]
   },
   "months": [
@@ -81,7 +76,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 4,
+      "new_tenders": 7,
       "active_tenders": 0
     }
   ],
@@ -7542,7 +7537,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM24-3609-antarctic-aviation-intracontinental-fixed-wing-services",
@@ -8103,7 +8098,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "UNSW:eoi-enterprise-environmental-monitoring-cold-storage-laboratory",
@@ -9620,7 +9615,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "SAWater:millicent-wwtp-eip-upgrade-design-construct-eoi",
@@ -10620,7 +10615,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:CSIRORFT2026004-grid-electricity-supply-csiro-wa",
@@ -10827,8 +10822,8 @@
         "2026-08-01"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NSWeTendering:tfnsw-mona-vale-west-road-upgrade-mvrw-transaction-management-services",
@@ -10893,8 +10888,8 @@
         "2026-08-01"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NSWeTendering:tfnsw-old-nowra-bridge-zinc-chromate-painted-steel-recycling",
@@ -10958,8 +10953,8 @@
         "2026-08-01"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buyNSW:cclhd-gosford-hospital-lift-13-lifecycle-replacement-rfq",
@@ -11021,6 +11016,198 @@
       "last_seen": "2026-08-01",
       "seen_dates": [
         "2026-08-01"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "CityOfHobart:domain-athletic-centre-dac-track-replacement",
+      "source_name": "Tenders Tasmania / City of Hobart",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "Tasmania, Australia",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Domain Athletic Centre (DAC) Track Replacement",
+      "buyer": "City of Hobart (Hobart City Council)",
+      "buyer_url": "https://www.hobartcity.com.au/",
+      "category": "Construction / sporting facilities — athletics track resurfacing",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Hobart City Council tender for replacement/resurfacing of the athletics track at the Domain Athletic Centre, including line marking and re-certification of the resurfaced track to World Athletics standard.",
+      "deliverables_summary": "Supply and installation of a replacement synthetic athletics track surface at the Domain Athletic Centre, line marking of the resurfaced tracks, and achievement of World Athletics (WA) certification for the completed surface. (Scope captured from public search snippet; not yet confirmed against the buyer's own detail page — see notes.)",
+      "key_deliverables": [
+        "Resurfacing / replacement of the Domain Athletic Centre athletics tracks",
+        "Line marking of the resurfaced tracks",
+        "Obtaining World Athletics (WA) certification for the resurfaced tracks"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-20",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via the Tenders Tasmania portal (tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Domain Athletic Centre, Queens Domain, Hobart, Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "local-government",
+        "construction",
+        "sports-facility",
+        "athletics-track",
+        "world-athletics-certification"
+      ],
+      "first_seen": "2026-08-02",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of Tenders Tasmania (tenders.tas.gov.au) recent listings, which flagged tenders published in the last 7 days; the City of Hobart is the buyer-originated publisher. The Tenders Tasmania portal and City of Hobart tender pages returned HTTP 403 to direct fetch, so scope/closing detail was taken from the public search index.",
+      "notes": "Headline + partial scope only. Scope (resurfacing, line marking, World Athletics certification) and closing date (~20 Aug 2026) come from public search snippets; the buyer's own detail page (Tenders Tasmania) was not directly accessible (HTTP 403), so tender_id, value, evaluation criteria, contacts and documents remain unverified and must be confirmed on a future authenticated/browser-accessible pass.",
+      "last_seen": "2026-08-02",
+      "seen_dates": [
+        "2026-08-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "CityOfLaunceston:city-heart-intuitive-wayfinding-amenity-lighting-plan",
+      "source_name": "City of Launceston e-Tendering (illion TenderLink) / Tenders Tasmania",
+      "source_url": "https://portal.tenderlink.com/launceston/alltenders/",
+      "source_type": "gov-local",
+      "jurisdiction": "Tasmania, Australia",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://portal.tenderlink.com/launceston/alltenders/",
+      "access": "public",
+      "title": "City Heart Intuitive Wayfinding and Amenity Lighting Project",
+      "buyer": "City of Launceston (Launceston City Council)",
+      "buyer_url": "https://www.launceston.tas.gov.au/Business-and-Development/Conducting-business-with-Council/Tenders-and-Expressions-of-Interest",
+      "category": "Professional services — urban design / wayfinding / lighting planning",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "City of Launceston engagement to prepare a City Heart-wide intuitive wayfinding and amenity lighting plan and to develop concept designs for key streets across the Launceston City Heart precinct.",
+      "deliverables_summary": "Preparation of a precinct-wide Intuitive Wayfinding and Amenity Lighting Plan for the Launceston City Heart, plus concept designs for key streets within the precinct. (Scope captured from public search snippet; not yet confirmed against the buyer's own detail page — see notes.)",
+      "key_deliverables": [
+        "City Heart-wide Intuitive Wayfinding and Amenity Lighting Plan",
+        "Concept designs for key streets across the Launceston City Heart precinct"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via the City of Launceston TenderLink portal",
+      "lodgement_url": "https://portal.tenderlink.com/launceston/alltenders/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Launceston City Heart precinct, Launceston, Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "local-government",
+        "urban-design",
+        "wayfinding",
+        "lighting",
+        "professional-services"
+      ],
+      "first_seen": "2026-08-02",
+      "detail_source": "",
+      "reasoning": "Surfaced via web search of Tenders Tasmania recent listings and cross-referenced to the City of Launceston as the buyer-originated publisher (own TenderLink e-tendering portal). Buyer pages returned HTTP 403 to direct fetch; scope taken from the public search index.",
+      "notes": "Headline + partial scope only. Closing date and tender_id not confirmed; the buyer's detail page was not directly accessible (HTTP 403). Requires a detail pass to confirm timeline, evaluation criteria, eligibility and documents.",
+      "last_seen": "2026-08-02",
+      "seen_dates": [
+        "2026-08-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "TendersTasmania:stormwater-risk-and-investment-pathway-analysis",
+      "source_name": "Tenders Tasmania",
+      "source_url": "https://www.tenders.tas.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "Tasmania, Australia",
+      "state": "TAS",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.tas.gov.au/",
+      "access": "public",
+      "title": "Stormwater Risk and Investment Pathway Analysis",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Professional services — stormwater / water infrastructure planning",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "Tasmanian public-sector engagement for a stormwater risk and investment pathway analysis (risk assessment and prioritised investment planning for stormwater infrastructure).",
+      "deliverables_summary": "",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-21",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge electronically via the Tenders Tasmania portal (tenders.tas.gov.au)",
+      "lodgement_url": "https://www.tenders.tas.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Tasmania",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "tasmania",
+        "stormwater",
+        "water-infrastructure",
+        "risk-assessment",
+        "professional-services"
+      ],
+      "first_seen": "2026-08-02",
+      "detail_source": "",
+      "reasoning": "Flagged among Tenders Tasmania's recent (last-7-days) listings via web search. Recorded as a headline-level lead; the specific buying organisation was not resolvable from the search snippet.",
+      "notes": "Headline only, low confidence on specifics. The buying organisation could not be identified from the public snippet (likely a Tasmanian council or water authority) and is left blank rather than guessed. Closing date (~21 Aug 2026) is from the search index and unverified; the buyer detail page was not directly accessible (HTTP 403). Needs a detail pass to identify the buyer and confirm scope, timeline and documents.",
+      "last_seen": "2026-08-02",
+      "seen_dates": [
+        "2026-08-02"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -11234,17 +11421,17 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (multi-buyer)",
+      "jurisdiction": "Global (incl. Australia)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check; public posting board queried but not readable (login/JS-gated + 403 on direct fetch).",
+      "how_discovered": "Checked this run as the mandatory Tier-3 corporate channel. Public postings board where buyers post open RFx; full opportunity detail and Australia-only filtering require a free supplier account.",
       "recommended_check_frequency": "daily",
-      "notes": "Largest single slice of corporate RFx. No Australian opportunity readable this run; recorded as source only per registration-gated policy. Free supplier registration required for full detail.",
+      "notes": "Re-affirmed per Tier-3 requirement. No publicly-visible Australian RFx could be captured this run without an authenticated supplier session; recorded as a registration-gated portal, with no opportunities fabricated. Access='free-registration' to view full detail.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -11268,9 +11455,10 @@
         "2026-07-29",
         "2026-07-30",
         "2026-07-31",
-        "2026-08-01"
+        "2026-08-01",
+        "2026-08-02"
       ],
-      "seen_count": 23,
+      "seen_count": 24,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -13561,7 +13749,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Bradfield Development Authority - Industry & procurement opportunities",
@@ -14650,7 +14838,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "LGANT Current Tenders (Local Government Association of the Northern Territory)",
@@ -15010,7 +15198,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Monash University — eTendering (TenderLink portal)",
@@ -15075,8 +15263,8 @@
         "2026-08-01"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Transport for NSW (Roads and Maritime Projects) — eTendering RSS feed",
@@ -15097,8 +15285,8 @@
         "2026-08-01"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Central Coast Local Health District (NSW Health) — via buy.nsw",
@@ -15117,6 +15305,28 @@
       "last_seen": "2026-08-01",
       "seen_dates": [
         "2026-08-01"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "City of Launceston e-Tendering (illion TenderLink)",
+      "source_url": "https://portal.tenderlink.com/launceston/alltenders/",
+      "source_type": "gov-local",
+      "jurisdiction": "Tasmania, Australia",
+      "platform": "TenderLink",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Reached via web search while resolving the buyer for the 'City Heart Intuitive Wayfinding and Amenity Lighting' listing on Tenders Tasmania; the City of Launceston runs its own illion TenderLink e-tendering portal, which was not previously in the known-source list (other TenderLink councils such as Melbourne and City of Sydney were already recorded, but not Launceston).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated Tasmanian local-government procurement portal. Company page: https://www.launceston.tas.gov.au/Business-and-Development/Conducting-business-with-Council/Tenders-and-Expressions-of-Interest. Recommend adding to the permanent seed list.",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_dates": [
+        "2026-08-02"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

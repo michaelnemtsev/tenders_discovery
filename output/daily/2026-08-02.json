@@ -64,7 +64,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "local-government", "construction", "sports-facility", "athletics-track", "world-athletics-certification"],
+      "tags": [
+        "tasmania",
+        "local-government",
+        "construction",
+        "sports-facility",
+        "athletics-track",
+        "world-athletics-certification"
+      ],
       "first_seen": "2026-08-02",
       "detail_source": "",
       "reasoning": "Discovered via web search of Tenders Tasmania (tenders.tas.gov.au) recent listings, which flagged tenders published in the last 7 days; the City of Hobart is the buyer-originated publisher. The Tenders Tasmania portal and City of Hobart tender pages returned HTTP 403 to direct fetch, so scope/closing detail was taken from the public search index.",
@@ -115,7 +122,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "local-government", "urban-design", "wayfinding", "lighting", "professional-services"],
+      "tags": [
+        "tasmania",
+        "local-government",
+        "urban-design",
+        "wayfinding",
+        "lighting",
+        "professional-services"
+      ],
       "first_seen": "2026-08-02",
       "detail_source": "",
       "reasoning": "Surfaced via web search of Tenders Tasmania recent listings and cross-referenced to the City of Launceston as the buyer-originated publisher (own TenderLink e-tendering portal). Buyer pages returned HTTP 403 to direct fetch; scope taken from the public search index.",
@@ -163,7 +177,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "stormwater", "water-infrastructure", "risk-assessment", "professional-services"],
+      "tags": [
+        "tasmania",
+        "stormwater",
+        "water-infrastructure",
+        "risk-assessment",
+        "professional-services"
+      ],
       "first_seen": "2026-08-02",
       "detail_source": "",
       "reasoning": "Flagged among Tenders Tasmania's recent (last-7-days) listings via web search. Recorded as a headline-level lead; the specific buying organisation was not resolvable from the search snippet.",
