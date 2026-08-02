@@ -62,7 +62,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "communications", "radio", "LAND-4140", "CASG", "commonwealth", "new-this-run"],
+      "tags": [
+        "defence",
+        "communications",
+        "radio",
+        "LAND-4140",
+        "CASG",
+        "commonwealth",
+        "new-this-run"
+      ],
       "first_seen": "2026-08-03",
       "detail_source": "",
       "reasoning": "Discovered via AusTender web search for current Defence approaches to market; grounded to the buyer-originated AusTender ATM detail URL (ATM ID JSD/RFT/76225/1). Genuinely new to this routine (not present in prior aggregate). A related LAND 4140 Submission 3 ATM (Land4140S3CCISTS-2V1) also appeared but its status/detail were ambiguous and it was not captured.",
@@ -110,7 +118,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "energy", "natural-gas", "utilities", "nsw", "healthshare"],
+      "tags": [
+        "health",
+        "energy",
+        "natural-gas",
+        "utilities",
+        "nsw",
+        "healthshare"
+      ],
       "first_seen": "2026-07-11",
       "detail_source": "",
       "reasoning": "Re-confirmed still open via NSW eTendering / buy.nsw web search; previously recorded by this routine (agency ref HSSP_HC26_C676). Buyer-originated NSW eTendering listing. Retained to keep active status current as the 13-Aug-2026 close approaches.",
@@ -158,7 +173,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "ansto", "nuclear", "market-sounding", "upcoming-rft", "nsw"],
+      "tags": [
+        "commonwealth",
+        "ansto",
+        "nuclear",
+        "market-sounding",
+        "upcoming-rft",
+        "nsw"
+      ],
       "first_seen": "2026-07-26",
       "detail_source": "",
       "reasoning": "Re-checked via AusTender search; previously recorded by this routine (ATM PSC002897/Brief). Retained because the associated open RFT was anticipated in early August 2026 — worth watching this window for the formal approach to market.",
