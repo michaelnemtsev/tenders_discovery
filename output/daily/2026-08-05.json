@@ -67,7 +67,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence-maritime", "fisheries", "panel", "commonwealth"],
+      "tags": [
+        "defence-maritime",
+        "fisheries",
+        "panel",
+        "commonwealth"
+      ],
       "first_seen": "2026-08-05",
       "detail_source": "AusTender ATM search-result summary for AFMA 2025/2026-02 (full ATM detail page returned HTTP 403)",
       "reasoning": "Surfaced via AusTender current-ATM web search; buyer-originated Commonwealth notice on tenders.gov.au.",
@@ -119,7 +124,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["environment", "ecosystem-accounting", "advisory-panel", "commonwealth"],
+      "tags": [
+        "environment",
+        "ecosystem-accounting",
+        "advisory-panel",
+        "commonwealth"
+      ],
       "first_seen": "2026-08-05",
       "detail_source": "AusTender ATM search-result summary for ATM_2026_6984 (full ATM detail page returned HTTP 403)",
       "reasoning": "Surfaced via AusTender current-ATM web search filtered to recently-published notices; buyer-originated Commonwealth notice published 03-Aug-2026.",
@@ -167,7 +177,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water-utility", "gbe", "blasting-coating", "eoi", "nsw"],
+      "tags": [
+        "water-utility",
+        "gbe",
+        "blasting-coating",
+        "eoi",
+        "nsw"
+      ],
       "first_seen": "2026-08-05",
       "detail_source": "buy.nsw opportunity listing (search result); full detail page not opened",
       "reasoning": "Discovered via buy.nsw opportunity search for Sydney Water; buyer-originated GBE EOI published on the NSW eTendering / buy.nsw platform.",
@@ -215,7 +231,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["infrastructure-maintenance", "blasting-equipment", "nsw", "sydney-harbour-bridge"],
+      "tags": [
+        "infrastructure-maintenance",
+        "blasting-equipment",
+        "nsw",
+        "sydney-harbour-bridge"
+      ],
       "first_seen": "2026-08-05",
       "detail_source": "",
       "reasoning": "Surfaced via buy.nsw / NSW eTendering web search for current tenders; buyer-originated NSW Government listing.",
@@ -266,7 +287,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "civil-works", "qld", "kerb-footpath"],
+      "tags": [
+        "local-government",
+        "civil-works",
+        "qld",
+        "kerb-footpath"
+      ],
       "first_seen": "2026-08-05",
       "detail_source": "VendorPanel / Queensland tender listing summary",
       "reasoning": "Discovered via a Queensland tenders web search; buyer-originated local-government notice published on VendorPanel Public Tenders (also flowing to QTenders). Balonne Shire Council is a newly-observed buyer/source for this routine.",

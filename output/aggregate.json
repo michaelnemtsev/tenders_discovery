@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-05",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -41,30 +41,31 @@
     "2026-08-01",
     "2026-08-02",
     "2026-08-03",
-    "2026-08-04"
+    "2026-08-04",
+    "2026-08-05"
   ],
-  "run_count": 41,
+  "run_count": 42,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-04",
-  "latest_coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) plus VendorPanel Public Tenders and the mandatory Tier-3 corporate channel (SAP Ariba Discovery / SAP Business Network Discovery) via web search. Tier-2 was sampled across GBE/water utilities (Sydney/Melbourne/SA/WaterNSW/Water Corporation WA/Greater Western Water), councils on VendorPanel, and a NSW GBE (Bradfield Development Authority). Nine genuinely new opportunities were grounded to buyer-originated portals this run: two Bradfield Development Authority AMRF supplier panels (Bundle 25 Raw Materials, Bundle 26 Manufacturing Tooling; both EOI, closing 31-Aug-2026), two ACT Government tenders (GovAI Chat WCAG Accessibility Testing, closing 17-Aug; Graduate Relocation Services, closing 11-Aug), an NT QTOL supply tender (PM044 Product Bagging, Nolans Project, closing 8-Aug), two Transport for NSW items on NSW eTendering (Hume Motorway litter/debris collection, closing 31-Aug; Jervis Bay Road Intersection Aboriginal artwork, closing 19-Aug), a NSW council RFQ on VendorPanel (Cootamundra-Gundagai stump grinding, RFQ2026/44), and one Tier-3 buyer-originated upcoming-tender notice on SAP Ariba (Energy Queensland vans interior fit-out, SR26889514). One still-open prior Commonwealth/NSW item (HealthShare NSW natural gas RFT, closing 13-Aug) was re-confirmed active. One genuinely new buyer-originated source was discovered: the Suburban Rail Loop Authority (SRLA) buyer profile on Buying for Victoria. As in every recent run, direct page fetching was blocked environment-wide: every government portal and every detail page (AusTender, buy.nsw, Tenders Tasmania, buy.nsw opportunity pages) returned HTTP 403 to the non-browser client, so all opportunity detail below is captured from public search-index snippets at headline level, not from buyers' own detail pages or tender documents.",
+  "latest_run": "2026-08-05",
+  "latest_coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal + VendorPanel Marketplace, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) via live web search, prioritising notices published or updated in the last 7 days. Tier-2 sampled across GBEs/water utilities (Sydney Water, Australia Post, NBN Co) and local councils on VendorPanel/TenderLink. Tier-3 corporate channel checked (SAP Ariba Discovery / SAP Business Network Discovery, Australia Post e-sourcing) as mandated. Captured 5 genuinely new opportunities distinct from the ~185 previously-seen tenders, with full deliverables/detail on the two Commonwealth RFTs and headline-level capture (pending detail) on the three where the detail page was login-gated or returned 403. Found 2 new local-government sources (Balonne Shire Council QLD, Lachlan Shire Council NSW).",
   "latest_run_metadata": {
-    "run_date": "2026-08-04",
-    "coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) plus VendorPanel Public Tenders and the mandatory Tier-3 corporate channel (SAP Ariba Discovery / SAP Business Network Discovery) via web search. Tier-2 was sampled across GBE/water utilities (Sydney/Melbourne/SA/WaterNSW/Water Corporation WA/Greater Western Water), councils on VendorPanel, and a NSW GBE (Bradfield Development Authority). Nine genuinely new opportunities were grounded to buyer-originated portals this run: two Bradfield Development Authority AMRF supplier panels (Bundle 25 Raw Materials, Bundle 26 Manufacturing Tooling; both EOI, closing 31-Aug-2026), two ACT Government tenders (GovAI Chat WCAG Accessibility Testing, closing 17-Aug; Graduate Relocation Services, closing 11-Aug), an NT QTOL supply tender (PM044 Product Bagging, Nolans Project, closing 8-Aug), two Transport for NSW items on NSW eTendering (Hume Motorway litter/debris collection, closing 31-Aug; Jervis Bay Road Intersection Aboriginal artwork, closing 19-Aug), a NSW council RFQ on VendorPanel (Cootamundra-Gundagai stump grinding, RFQ2026/44), and one Tier-3 buyer-originated upcoming-tender notice on SAP Ariba (Energy Queensland vans interior fit-out, SR26889514). One still-open prior Commonwealth/NSW item (HealthShare NSW natural gas RFT, closing 13-Aug) was re-confirmed active. One genuinely new buyer-originated source was discovered: the Suburban Rail Loop Authority (SRLA) buyer profile on Buying for Victoria. As in every recent run, direct page fetching was blocked environment-wide: every government portal and every detail page (AusTender, buy.nsw, Tenders Tasmania, buy.nsw opportunity pages) returned HTTP 403 to the non-browser client, so all opportunity detail below is captured from public search-index snippets at headline level, not from buyers' own detail pages or tender documents.",
+    "run_date": "2026-08-05",
+    "coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal + VendorPanel Marketplace, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) via live web search, prioritising notices published or updated in the last 7 days. Tier-2 sampled across GBEs/water utilities (Sydney Water, Australia Post, NBN Co) and local councils on VendorPanel/TenderLink. Tier-3 corporate channel checked (SAP Ariba Discovery / SAP Business Network Discovery, Australia Post e-sourcing) as mandated. Captured 5 genuinely new opportunities distinct from the ~185 previously-seen tenders, with full deliverables/detail on the two Commonwealth RFTs and headline-level capture (pending detail) on the three where the detail page was login-gated or returned 403. Found 2 new local-government sources (Balonne Shire Council QLD, Lachlan Shire Council NSW).",
     "sources_checked": 18,
-    "tenders_found": 10,
-    "new_sources_found": 1,
-    "entries_pending_detail": 10,
+    "tenders_found": 5,
+    "new_sources_found": 2,
+    "entries_pending_detail": 3,
     "gaps": [
-      "WebFetch returned HTTP 403 (Forbidden) for every buyer detail page attempted this run, including AusTender ATM pages (e.g. https://www.tenders.gov.au/Atm/Show/2701a39f-879e-4e91-a49f-f5cccbacd3c4), buy.nsw opportunity pages (e.g. https://buy.nsw.gov.au/prcOpportunity/3AB3D56D-B5DE-47D7-8FAB389B81CF1B2F) and Tenders Tasmania's Open For Bids list. Portals continue to enforce anti-bot protection against non-browser clients in this environment, so full deliverables/requirements/eligibility/evaluation-criteria/contact/document extraction from buyer detail pages was not possible. All tender detail below is from public search-index snippets and is headline-level / pending verification.",
-      "Buying for Victoria, QTenders (QLD)/Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts and Tenders Tasmania were reachable only via search-index summaries; no new jurisdiction-specific opportunities could be grounded to a specific tender ID + closing date beyond items already recorded in prior runs. A Tenders WA planned outage was again flagged for Wed 5 Aug 2026 17:00-19:00.",
-      "A 'Defence Psychosocial Risk Management Solution' item (closing ~16-Aug-2026) surfaced in an NT QTOL-tagged search result, but its subject matter (replacing/enhancing Australian Defence psychosocial risk-management tooling) is inconsistent with an NT Territory portal and is more likely a Commonwealth approach mis-attributed by the search index. It could not be grounded to a confirmed source portal or tender ID, so it was NOT recorded as a tender to avoid mis-attribution.",
-      "VendorPanel Public Tenders individual RFQ detail (e.g. Cootamundra-Gundagai RFQ2026/44) remains behind supplier login; only the public listing summary was visible, so scope, evaluation criteria, documents and contact could not be extracted.",
-      "Tier-3 (SAP Ariba Discovery, BHP, Rio Tinto, Woolworths, Coles, Qantas, banks, telcos, energy retailers): apart from the publicly-visible Energy Queensland upcoming-tender notice (SR26889514, an Ariba event that is registration-gated for full detail), no publicly-visible open corporate RFx surfaced without login. These channels remain registration-gated (Ariba/Coupa/RangeMe) or invitation-only; per spec the portals are recorded in discovered_sources and no corporate opportunities were invented.",
-      "Invitation-only management-consultancy RFPs (Accenture/KPMG/Deloitte-style) are out of scope by definition (never published) and were not sought as tenders."
+      "AusTender ATM detail pages (tenders.gov.au/Atm/Show/...) consistently returned HTTP 403 to the automated fetcher; details for AFMA 2025/2026-02 and ATM_2026_6984 were reconstructed from AusTender search-result summaries, not the full notice pages. Several other current Commonwealth ATMs observed in listings (e.g. RFT-2026-0080, PROCFY26051, OET-DRC-2026, AACAP 2026-P04, AFMA25-26-3) could not be opened to confirm buyer/scope/dates and were NOT recorded as tenders to avoid fabrication.",
+      "auspost.com.au tendering & supply opportunities page returned HTTP 403; Australia Post current-opportunity list could not be read this run.",
+      "SAP Ariba Discovery / SAP Business Network Discovery: no publicly-visible Australian RFx surfaced via search; full opportunity detail requires a free supplier login. Recorded as a registration-gated portal in prior runs; no individual corporate opportunity captured this run (none publicly visible without authentication).",
+      "buy.nsw opportunity detail for the Sydney Harbour Bridge blasting & vacuuming equipment tender could not be deep-linked from search; captured at headline level with buyer unconfirmed.",
+      "Buying for Victoria: no clearly new (last-7-day) open tender confirmed at detail level this run; portal reachable but specific fresh notices not verifiable without an authenticated browse.",
+      "Tier-3 invitation-only management-consultancy RFPs remain out of scope (never publicly published) — not fabricated."
     ],
     "recommended_seed_additions": [
-      "Suburban Rail Loop Authority (SRLA) — buyer profile on Buying for Victoria (https://www.tenders.vic.gov.au/, buyerId 698214) plus procurement landing page https://bigbuild.vic.gov.au/about/about-the-suburban-rail-loop-authority/srla-governance/procurement-at-srla . Major Victorian rail-infrastructure buyer publishing supply/manufacture/sub-contract packages (signalling, station fit-outs, tunnelling, line-wide, rolling stock, O&M); buyer-originated, not previously in the known-source list.",
-      "Energy Queensland (EQL) SAP Ariba upcoming-tender notices — publicly-visible pre-market notices (e.g. SR-numbered events) are a useful early-warning signal for a known GBE already tracked; worth monitoring the public Ariba notice stream, not only the registration-gated event board."
+      "Balonne Shire Council (QLD) — publishes via VendorPanel Marketplace / QTenders; observed a live kerb & footpath works tender.",
+      "Lachlan Shire Council (NSW) — runs its own TenderLink e-Tendering portal (portal.tenderlink.com / tenderlink.com/lachlan); not previously in the known-source list."
     ]
   },
   "months": [
@@ -80,7 +81,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 17,
+      "new_tenders": 22,
       "active_tenders": 0
     }
   ],
@@ -10353,7 +10354,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:26.0000129151.0490-old-nowra-bridge-zinc-chromate-steel-recycling",
@@ -11335,8 +11336,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:WPCA-AMRF-23-049-bradfield-bundle26-manufacturing-tooling-panel-amrf",
@@ -11399,8 +11400,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:govai-chat-wcag-accessibility-testing",
@@ -11465,8 +11466,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:graduate-relocation-services",
@@ -11524,8 +11525,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NTQTOL:PM044-product-bagging-nolans-project",
@@ -11585,8 +11586,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NSWeTendering:tfnsw-litter-debris-collection-south-region-hume-motorway-office",
@@ -11647,8 +11648,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NSWeTendering:tfnsw-jervis-bay-road-intersection-connecting-with-country-aboriginal-artwork",
@@ -11709,8 +11710,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:CGRC-RFQ2026-44-cootamundra-gundagai-stump-grinding",
@@ -11772,8 +11773,8 @@
         "2026-08-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Ariba:EnergyQueensland-SR26889514-eql-vans-interior-body-fitout",
@@ -11835,6 +11836,319 @@
       "last_seen": "2026-08-04",
       "seen_dates": [
         "2026-08-04"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:AFMA-2025-2026-02-charter-vessel-services-panel-illegal-foreign-fishing",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "AFMA 2025/2026-02",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/af340f5e-3977-44df-9f03-4597db821453",
+      "access": "public",
+      "title": "Charter Vessel Services Panel — combatting illegal foreign fishing",
+      "buyer": "Australian Fisheries Management Authority (AFMA)",
+      "buyer_url": "https://www.afma.gov.au/",
+      "category": "Charter vessel services / maritime fisheries patrol services",
+      "category_codes": [],
+      "procurement_type": "RFT-panel",
+      "current_status": "open",
+      "description": "AFMA is establishing a panel of service providers to supply charter vessel services to combat and deter illegal foreign fishing around Australia, its external territories, and on the high seas where Australia has an interest. Providers may tender for one or more services in one or more locations.",
+      "deliverables_summary": "Supply of chartered vessels and associated crew/services for ad hoc engagements (typically 3 days to 3 months) covering fisheries patrols, land-based disposal support, disposal at sea, and foreign-fishing marine-debris retrieval and land disposal, in support of Australia's maritime fisheries enforcement.",
+      "key_deliverables": [
+        "Fisheries patrols by charter vessel",
+        "Land-based disposal support",
+        "Disposal at sea",
+        "Foreign-fishing marine-debris retrieval and land disposal"
+      ],
+      "scope_of_work": "Panel of vessel service providers for ad hoc engagements combatting/deterring illegal foreign fishing across Australian waters, external territories and relevant high-seas areas. Engagements typically between 3 days and 3 months depending on the service and area of operation.",
+      "requirements": [],
+      "eligibility": "Open to all; providers may submit a response for one or more services within one or more locations.",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "Initial term 3 years with the option for a single 3-year extension",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "2026-08-07",
+      "briefing": "",
+      "submission_method": "Online via AusTender (www.tenders.gov.au)",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australian waters, external territories, and high-seas areas of Australian interest",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "defence-maritime",
+        "fisheries",
+        "panel",
+        "commonwealth"
+      ],
+      "first_seen": "2026-08-05",
+      "detail_source": "AusTender ATM search-result summary for AFMA 2025/2026-02 (full ATM detail page returned HTTP 403)",
+      "reasoning": "Surfaced via AusTender current-ATM web search; buyer-originated Commonwealth notice on tenders.gov.au.",
+      "notes": "Questions-due date (07-Aug-2026) confirmed from summary; overall closing date and estimated value not captured because the full ATM page returned 403. Contract term (3+3 years) and scope reconstructed from the AusTender summary text.",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_6984-dcceew-national-ecosystem-accounts-technical-expert-reference-group",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "ATM_2026_6984",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/6104e16e-c638-43b0-b0c8-cd7ebff0cfaa",
+      "access": "public",
+      "title": "National Ecosystem Accounts (NEA) Technical Expert Reference Group (TERG) — member appointments",
+      "buyer": "Department of Climate Change, Energy, the Environment and Water (DCCEEW)",
+      "buyer_url": "https://www.dcceew.gov.au/",
+      "category": "Ecological advisory services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "DCCEEW is seeking to appoint up to 10 members to a new National Ecosystem Accounts (NEA) Technical Expert Reference Group (TERG) for 12 months (with possible extension to 24 months). TERG will provide independent, expert technical advice to support development and continuous improvement of the National Ecosystem Accounts.",
+      "deliverables_summary": "Provision of independent expert technical advice, as members of a reference group, to support the development and continuous improvement of Australia's National Ecosystem Accounts (natural-capital / ecosystem accounting under the DCCEEW work program).",
+      "key_deliverables": [
+        "Independent expert technical advice to DCCEEW on National Ecosystem Accounts",
+        "Participation as a TERG member over the appointment term",
+        "Input into continuous improvement of NEA methods"
+      ],
+      "scope_of_work": "Appointment of up to 10 individuals with relevant technical expertise to the National Ecosystem Accounts Technical Expert Reference Group, providing independent advice supporting NEA development and improvement.",
+      "requirements": [],
+      "eligibility": "Open to suitably qualified individuals/experts (up to 10 members to be appointed).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "12 months, with possible extension to 24 months",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-08-03",
+      "closing_date": "2026-08-28",
+      "closing_time": "2:00 PM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender (www.tenders.gov.au)",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia (remote/advisory)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "environment",
+        "ecosystem-accounting",
+        "advisory-panel",
+        "commonwealth"
+      ],
+      "first_seen": "2026-08-05",
+      "detail_source": "AusTender ATM search-result summary for ATM_2026_6984 (full ATM detail page returned HTTP 403)",
+      "reasoning": "Surfaced via AusTender current-ATM web search filtered to recently-published notices; buyer-originated Commonwealth notice published 03-Aug-2026.",
+      "notes": "Publish date (03-Aug-2026), closing (28-Aug-2026 2:00pm ACT), buyer (DCCEEW), category (Ecological advisory services) and member count/term confirmed from AusTender summary. Estimated value and contact details not captured (full ATM page returned 403).",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:SWC-WS4645974632-sydney-water-abrasive-blasting-coating-services-eoi",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "SWC-WS4645974632",
+      "tender_url": "https://buy.nsw.gov.au/prcOpportunity/BD311C30-B00C-4DB3-AAFF34E23B291721",
+      "access": "public",
+      "title": "Abrasive Blasting & Coating Services — Request for Expressions of Interest",
+      "buyer": "Sydney Water Corporation",
+      "buyer_url": "https://www.sydneywater.com.au/",
+      "category": "Abrasive blasting and protective coating services",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Sydney Water is seeking Expressions of Interest from suitably qualified and experienced organisations to participate in an upcoming procurement process for abrasive blasting and protective coating services.",
+      "deliverables_summary": "Provision of abrasive blasting and protective coating services to Sydney Water assets/infrastructure. This is an EOI (early-market/pre-qualification stage) inviting capable suppliers to register interest ahead of a fuller tender.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to suitably qualified and experienced organisations (EOI stage).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge in buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/prcOpportunity/BD311C30-B00C-4DB3-AAFF34E23B291721",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Greater Sydney, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "water-utility",
+        "gbe",
+        "blasting-coating",
+        "eoi",
+        "nsw"
+      ],
+      "first_seen": "2026-08-05",
+      "detail_source": "buy.nsw opportunity listing (search result); full detail page not opened",
+      "reasoning": "Discovered via buy.nsw opportunity search for Sydney Water; buyer-originated GBE EOI published on the NSW eTendering / buy.nsw platform.",
+      "notes": "Headline-level capture pending detail. Closing date, value, contact and full scope not yet extracted from the opportunity detail page. Tender reference SWC-WS4645974632 / WS4645974632 as shown in the buy.nsw listing.",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:sydney-harbour-bridge-supply-install-service-blasting-vacuuming-equipment-closing-2026-08-19",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Supply, Install and Service of Blasting and Vacuuming Equipment at Sydney Harbour Bridge",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Supply, installation and servicing of blasting/vacuuming plant and equipment",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "A NSW Government opportunity on buy.nsw for the supply, installation and servicing of blasting and vacuuming equipment at the Sydney Harbour Bridge (SHB), reported to close 19 August 2026.",
+      "deliverables_summary": "Supply, install and ongoing service of blasting and vacuuming equipment to support maintenance / abrasive-blasting operations at the Sydney Harbour Bridge.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-19",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge in buy.nsw / NSW eTendering portal",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Sydney Harbour Bridge, Sydney NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "infrastructure-maintenance",
+        "blasting-equipment",
+        "nsw",
+        "sydney-harbour-bridge"
+      ],
+      "first_seen": "2026-08-05",
+      "detail_source": "",
+      "reasoning": "Surfaced via buy.nsw / NSW eTendering web search for current tenders; buyer-originated NSW Government listing.",
+      "notes": "Headline-level capture pending detail. Buyer not confirmed (Sydney Harbour Bridge maintenance is administered by Transport for NSW, but the buyer field is left blank rather than inferred). Closing date 19-Aug-2026 reported in search results; a direct deep link to the opportunity detail page was not obtained this run.",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "VendorPanel:balonne-shire-council-kerb-footpath-construction-bowen-street-subdivision",
+      "source_name": "VendorPanel — Public Tenders",
+      "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "state": "QLD",
+      "tender_id": "",
+      "tender_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "access": "public",
+      "title": "Kerb & Footpath Construction — Bowen Street Subdivision",
+      "buyer": "Balonne Shire Council",
+      "buyer_url": "https://www.balonne.qld.gov.au/",
+      "category": "Civil construction — kerb and footpath works",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "Balonne Shire Council invites tenders from suitably qualified tenderers for the installation of kerb and footpath related to the Bowen Street Subdivision, in the South West & Darling Downs region of Queensland. Listed as current as of 04 August 2026.",
+      "deliverables_summary": "Construction and installation of kerb and footpath infrastructure for the Bowen Street Subdivision project for Balonne Shire Council.",
+      "key_deliverables": [
+        "Installation of kerb for the Bowen Street Subdivision",
+        "Construction of associated footpath"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open to suitably qualified tenderers.",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-08-04",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via VendorPanel Marketplace / QTenders",
+      "lodgement_url": "https://www.vendorpanel.com.au/publictenders.aspx",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Bowen Street, Balonne Shire, South West Queensland",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "civil-works",
+        "qld",
+        "kerb-footpath"
+      ],
+      "first_seen": "2026-08-05",
+      "detail_source": "VendorPanel / Queensland tender listing summary",
+      "reasoning": "Discovered via a Queensland tenders web search; buyer-originated local-government notice published on VendorPanel Public Tenders (also flowing to QTenders). Balonne Shire Council is a newly-observed buyer/source for this routine.",
+      "notes": "Headline-level capture pending detail. Closing date, value and contact not yet extracted from the full notice. Published/listed 04-Aug-2026.",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -12089,7 +12403,7 @@
       ],
       "seen_count": 26,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -16000,6 +16314,50 @@
       "last_seen": "2026-08-04",
       "seen_dates": [
         "2026-08-04"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Balonne Shire Council (QLD) — Tenders (VendorPanel Marketplace / QTenders)",
+      "source_url": "https://www.balonne.qld.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Observed a live Balonne Shire Council kerb & footpath tender (Bowen Street Subdivision) in a Queensland tenders web search; Council publishes via VendorPanel Public Tenders / VendorPanel Marketplace, which also feeds QTenders.",
+      "recommended_check_frequency": "weekly",
+      "notes": "South West & Darling Downs QLD council not previously in the known-source list. Best monitored through the VendorPanel Public Tenders board filtered to Balonne Shire Council.",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Lachlan Shire Council (NSW) — e-Tendering (illion TenderLink)",
+      "source_url": "https://www.lachlan.nsw.gov.au/Council/Keep-In-Touch/Tenders-Procurement",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": "https://portal.tenderlink.com/lachlan/",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via a source-discovery web search for less-commonly-listed Australian council procurement portals; Lachlan Shire Council runs its own TenderLink e-Tendering site where suppliers register to receive RFT/EOI/RFQ notices.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Central-West NSW council with a dedicated buyer-originated TenderLink portal; not previously in the known-source list. Free supplier registration gives full notice access.",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "seen_dates": [
+        "2026-08-05"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
