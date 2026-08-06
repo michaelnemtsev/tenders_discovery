@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-07",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -43,34 +43,30 @@
     "2026-08-03",
     "2026-08-04",
     "2026-08-05",
-    "2026-08-06"
+    "2026-08-06",
+    "2026-08-07"
   ],
-  "run_count": 43,
+  "run_count": 44,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-06",
-  "latest_coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw / NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) via live web search, prioritising notices published or updated in the last 7 days. Tier-2 sampled across GBEs/water utilities (Sydney Water, Melbourne Water, NBN Co), universities (Macquarie, University of Sydney) and public health (HealthShare NSW/VIC, Local Health Districts). Tier-3 corporate channel checked as mandated (SAP Ariba Discovery / SAP Business Network Discovery) — no publicly-visible Australian RFx surfaced without a supplier login this run. Most currently-open notices seen today were already captured in prior runs (through 2026-08-05): one genuinely new opportunity was confirmed (Macquarie University Hard FM & Soft Services EOI) and three still-open known Commonwealth/university notices were re-confirmed as active. Found four genuinely new buyer-originated sources (Logan City Council QLD, Hornsby Shire Council NSW, Scenic Rim Regional Council QLD, Bendigo Health VIC). Note: many buyer portals (AusTender detail pages, NSW eTendering, NT QTOL and several council pages) returned HTTP 403 to the automated fetcher, so detail was reconstructed from AusTender/search summaries rather than the full notice pages.",
+  "latest_run": "2026-08-07",
+  "latest_coverage_summary": "Degraded run due to an outbound network-policy (egress) restriction. WebSearch (Anthropic search infrastructure) was available and was used to query across all three tiers: Tier 1 government portals (AusTender, buy.nsw / NSW eTendering, Buying for Victoria, QTenders / Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders), Tier 2 (VendorPanel public tenders, Sydney Water, Melbourne Water, NBN Co, Australian universities incl. Sydney/Melbourne/UWA) and Tier 3 corporate/construction (SAP Ariba Discovery / SAP Business Network Discovery, BHP Find Opportunities, Rio Tinto Buy Local, Fortescue, EstimateOne). However, EVERY attempt to open a buyer/detail/listing page — via WebFetch and via Bash curl — returned an egress-proxy denial (CONNECT tunnel failed, HTTP 403) for all external hosts (e.g. tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, tendersonline.nt.gov.au, estimateone.com, bhp.com, and third-party listing sites). Because no tender detail page could be opened and verified, and because WebSearch's synthesised prose proved unreliable this run (one candidate it asserted, Wingecarribee Shire Council 'RFT T-2026-14' for the Moss Vale Aquatic Centre heating upgrade, could not be corroborated on cross-search — the only real Wingecarribee heating tender found, ref 6330/12.25, is ARCHIVED not current), no opportunities were captured as confirmed tenders. Per the routine's strict no-fabrication / fidelity rule, unverifiable search-synthesised specifics (IDs, closing dates, values) were deliberately NOT recorded rather than guessed. Tier 3 was checked as mandated: no publicly-visible Australian corporate RFx could be confirmed (the known corporate portals are login-gated and were unreachable to open this run). This run therefore records zero tenders and zero new sources, with the blockage documented in gaps.",
   "latest_run_metadata": {
-    "run_date": "2026-08-06",
-    "coverage_summary": "Swept all nine Tier-1 government portals (AusTender, buy.nsw / NSW eTendering, Buying for Victoria, QTenders/Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) via live web search, prioritising notices published or updated in the last 7 days. Tier-2 sampled across GBEs/water utilities (Sydney Water, Melbourne Water, NBN Co), universities (Macquarie, University of Sydney) and public health (HealthShare NSW/VIC, Local Health Districts). Tier-3 corporate channel checked as mandated (SAP Ariba Discovery / SAP Business Network Discovery) — no publicly-visible Australian RFx surfaced without a supplier login this run. Most currently-open notices seen today were already captured in prior runs (through 2026-08-05): one genuinely new opportunity was confirmed (Macquarie University Hard FM & Soft Services EOI) and three still-open known Commonwealth/university notices were re-confirmed as active. Found four genuinely new buyer-originated sources (Logan City Council QLD, Hornsby Shire Council NSW, Scenic Rim Regional Council QLD, Bendigo Health VIC). Note: many buyer portals (AusTender detail pages, NSW eTendering, NT QTOL and several council pages) returned HTTP 403 to the automated fetcher, so detail was reconstructed from AusTender/search summaries rather than the full notice pages.",
-    "sources_checked": 19,
-    "tenders_found": 4,
-    "new_sources_found": 4,
-    "entries_pending_detail": 2,
+    "run_date": "2026-08-07",
+    "coverage_summary": "Degraded run due to an outbound network-policy (egress) restriction. WebSearch (Anthropic search infrastructure) was available and was used to query across all three tiers: Tier 1 government portals (AusTender, buy.nsw / NSW eTendering, Buying for Victoria, QTenders / Queensland Supplier Portal, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, ACT Tenders), Tier 2 (VendorPanel public tenders, Sydney Water, Melbourne Water, NBN Co, Australian universities incl. Sydney/Melbourne/UWA) and Tier 3 corporate/construction (SAP Ariba Discovery / SAP Business Network Discovery, BHP Find Opportunities, Rio Tinto Buy Local, Fortescue, EstimateOne). However, EVERY attempt to open a buyer/detail/listing page — via WebFetch and via Bash curl — returned an egress-proxy denial (CONNECT tunnel failed, HTTP 403) for all external hosts (e.g. tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, tendersonline.nt.gov.au, estimateone.com, bhp.com, and third-party listing sites). Because no tender detail page could be opened and verified, and because WebSearch's synthesised prose proved unreliable this run (one candidate it asserted, Wingecarribee Shire Council 'RFT T-2026-14' for the Moss Vale Aquatic Centre heating upgrade, could not be corroborated on cross-search — the only real Wingecarribee heating tender found, ref 6330/12.25, is ARCHIVED not current), no opportunities were captured as confirmed tenders. Per the routine's strict no-fabrication / fidelity rule, unverifiable search-synthesised specifics (IDs, closing dates, values) were deliberately NOT recorded rather than guessed. Tier 3 was checked as mandated: no publicly-visible Australian corporate RFx could be confirmed (the known corporate portals are login-gated and were unreachable to open this run). This run therefore records zero tenders and zero new sources, with the blockage documented in gaps.",
+    "sources_checked": 22,
+    "tenders_found": 0,
+    "new_sources_found": 0,
+    "entries_pending_detail": 0,
     "gaps": [
-      "AusTender ATM detail pages (tenders.gov.au/Atm/Show/...) consistently returned HTTP 403 to the automated fetcher; details for ATM_2026_6786 and ATM_2026_6489 were reconstructed from AusTender current-ATM search summaries, not the full notice pages.",
-      "NSW eTendering (tenders.nsw.gov.au) and NT QTOL (tendersonline.nt.gov.au) returned HTTP 403 to the fetcher; current-tender detail could not be deep-linked this run and was read only via search summaries.",
-      "New buyer-originated council/health pages (Hornsby Shire Council, Logan City Council VendorPanel page, Scenic Rim Regional Council, Bendigo Health) returned HTTP 403/robots to the fetcher; their existence and buyer-origin were confirmed via search but live opportunity lists could not be read this run.",
-      "EFA2026015 (Export Finance Australia — Mechanical Repairs & Maintenance, Export Finance House, 22 Pitt St Sydney) still appears on the AusTender current-ATM list, but the previously-recorded closing date was 2026-07-15; whether the notice has been re-issued/extended could not be verified (detail page 403). Not re-confirmed as active this run to avoid asserting an unverified open status.",
-      "SAP Ariba Discovery / SAP Business Network Discovery: no publicly-visible Australian RFx surfaced via search; full opportunity detail requires a free supplier login. Recorded as a registration-gated portal; no individual corporate opportunity captured this run (none publicly visible without authentication).",
-      "Tier-3 invitation-only management-consultancy RFPs (e.g. to Accenture/KPMG/Deloitte) remain out of scope — never publicly published — and were not fabricated.",
-      "URL change observed: the Queensland Government Tenders Directory now resolves at qtenders.epw.qld.gov.au (the prompt's seed lists qtenders.hpw.qld.gov.au); Queensland is also migrating agencies to VendorPanel via supply.qld.gov.au. Seed URL should be updated."
+      "OUTBOUND EGRESS BLOCKED: this session's network policy denied CONNECT to all external tender hosts at the agent proxy (HTTP 403 'CONNECT tunnel failed'). Confirmed via /root/.ccr/README.md: a proxy 403 means the destination host is not allowed by the organisation's egress policy for this session; the guidance is to report, not retry or route around. WebFetch and Bash curl were both affected identically.",
+      "Tier 1 government portals unreachable to open/verify (all returned proxy 403): www.tenders.gov.au (AusTender), www.tenders.nsw.gov.au / suppliers.buy.nsw.gov.au, www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au (QTOL), www.tenders.act.gov.au. RSS/API endpoints (e.g. tenders.nsw.gov.au RSS, tenders.gov.au atm.xml) were blocked identically.",
+      "Tier 2 unreachable to open/verify: vendorpanel.com.au public tenders, sydneywater.com.au, melbournewater.com.au, nbnco.com.au, and university procurement portals.",
+      "Tier 3 unreachable to open/verify (login-gated AND egress-blocked this run): service.ariba.com Discovery, bhp.com/suppliers, riotintobuylocal.onlineprocurement.com.au, fortescue supplier centre, estimateone.com. No publicly-visible corporate RFx could be confirmed; none fabricated.",
+      "WebSearch (the only working retrieval path) returns synthesised summaries that could not be cross-verified against source pages this run and produced at least one non-corroborated specific (Wingecarribee 'T-2026-14'); such unverified specifics were excluded rather than recorded.",
+      "Because no detail pages could be opened, no deliverables/requirements extraction was possible this run.",
+      "Note (not a tender): the ADF Health Services procurement (Department of Defence, potential replacement of incumbent provider) surfaced in search as live but is a restricted RFT released only to shortlisted organisations (invitation-only) — out of scope by the routine's rules and therefore not recorded as a tender."
     ],
-    "recommended_seed_additions": [
-      "Logan City Council (QLD) — publishes public tenders on its own VendorPanel buyer page (vendorpanel.com.au/logancity/tenders).",
-      "Hornsby Shire Council (NSW) — Tenders, RFQs & EOIs noticeboard on its own council site (hornsby.nsw.gov.au/council/noticeboard/tenders-rfqs-eois).",
-      "Scenic Rim Regional Council (QLD) — Tenders and Expressions of Interest page on its own council site.",
-      "Bendigo Health (VIC) — regional public health service publishing a 2026 Procurement Activity Plan; major tenders likely run via HealthShare Victoria (JAGGAER)."
-    ]
+    "recommended_seed_additions": []
   },
   "months": [
     {
@@ -8610,7 +8606,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM_2026_6786-dcceew-gems-verification-testing-laboratory-panel",
@@ -8684,7 +8680,7 @@
       ],
       "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM_2026_6489-dcceew-education-and-training-services-eoi",
@@ -8753,7 +8749,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:RFT13109-australian-digital-health-agency-pre-employment-screening",
@@ -12237,8 +12233,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ],
   "discovered_sources": [
@@ -12490,7 +12486,7 @@
       ],
       "seen_count": 27,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP — Find opportunities (Suppliers)",
@@ -16469,8 +16465,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Hornsby Shire Council — Tenders, RFQs & EOIs",
@@ -16491,8 +16487,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Scenic Rim Regional Council — Tenders and Expressions of Interest",
@@ -16513,8 +16509,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Bendigo Health — Procurement",
@@ -16535,8 +16531,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Macquarie University — eTendering (illion TenderLink)",
@@ -16557,8 +16553,8 @@
         "2026-08-06"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ]
 }
