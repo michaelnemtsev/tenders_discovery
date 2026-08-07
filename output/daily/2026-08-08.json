@@ -35,7 +35,9 @@
       "buyer": "Department of Climate Change, Energy, the Environment and Water (DCCEEW)",
       "buyer_url": "https://www.dcceew.gov.au",
       "category": "Environmental auditing",
-      "category_codes": ["77101800"],
+      "category_codes": [
+        "77101800"
+      ],
       "procurement_type": "RFT",
       "current_status": "open",
       "description": "DCCEEW is seeking accredited testing laboratories to undertake verification (check) testing of products regulated under the Greenhouse and Energy Minimum Standards Act 2012 (GEMS).",
@@ -69,7 +71,13 @@
       "contact_name": "",
       "contact_email": "checktestingtender@dcceew.gov.au",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "testing", "energy-efficiency", "GEMS", "laboratory"],
+      "tags": [
+        "gov-commonwealth",
+        "testing",
+        "energy-efficiency",
+        "GEMS",
+        "laboratory"
+      ],
       "first_seen": "2026-07-03",
       "detail_source": "AusTender search-index result for ATM_2026_6786 (page title + snippet: title, agency, category 77101800, RFT, publish 01-Jul-2026, close 12-Aug-2026, contact email). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch over site:tenders.gov.au current ATM listings; buyer-originated on the Commonwealth AusTender portal. Re-seen from prior runs (first observed 2026-07-03); confirmed still current-and-open (close 12-Aug-2026).",
@@ -121,7 +129,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "energy-transition", "Pacific", "training", "EOI"],
+      "tags": [
+        "gov-commonwealth",
+        "energy-transition",
+        "Pacific",
+        "training",
+        "EOI"
+      ],
       "first_seen": "2026-07-20",
       "detail_source": "AusTender search-index result for ATM_2026_6489 (title, agency, EOI, Education and Training Services, close 17-Aug-2026 4:00pm ACT). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch over AusTender current ATM listings; buyer-originated on AusTender. Re-seen from prior runs (first observed 2026-07-20); confirmed still current-and-open (close 17-Aug-2026).",
@@ -175,7 +189,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "defence", "EV-charging", "SaaS", "ICT"],
+      "tags": [
+        "gov-commonwealth",
+        "defence",
+        "EV-charging",
+        "SaaS",
+        "ICT"
+      ],
       "first_seen": "2026-08-08",
       "detail_source": "AusTender search-index result for DCET-EVCI-CMS-2026 (title, Department of Defence - DSRG, category SaaS-Cloud, close 28-Aug-2026 4:30pm ACT, description). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch over AusTender current ATM listings (Defence keyword); buyer-originated on AusTender. Newly observed this run.",
@@ -223,7 +243,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "defence", "research", "energy"],
+      "tags": [
+        "gov-commonwealth",
+        "defence",
+        "research",
+        "energy"
+      ],
       "first_seen": "2026-08-08",
       "detail_source": "AusTender search-index result for OET-DRC-2026 (title, Department of Defence - DSRG, close 28-Aug-2026 4:30pm ACT). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch over AusTender current ATM listings; buyer-originated on AusTender. Newly observed this run.",
@@ -277,7 +302,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-state", "NSW", "transport", "ICT", "enforcement", "RFP"],
+      "tags": [
+        "gov-state",
+        "NSW",
+        "transport",
+        "ICT",
+        "enforcement",
+        "RFP"
+      ],
       "first_seen": "2026-08-08",
       "detail_source": "buy.nsw search-index result for opportunity WS5766247796 (title, Transport for NSW, RFP, briefing 24-Jul-2026 via Teams, responses close 11-Aug-2026, functional description). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch; buyer-originated on the NSW buy.nsw / NSW eTendering portal (canonical prcOpportunity deep link captured). Newly observed this run. A separate earlier RFEOI Stage 1 (WS5077264081) for the same programme was also seen and is a distinct, earlier-stage notice.",
@@ -325,7 +357,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-state", "NT", "infrastructure", "headline-only"],
+      "tags": [
+        "gov-state",
+        "NT",
+        "infrastructure",
+        "headline-only"
+      ],
       "first_seen": "2026-08-08",
       "detail_source": "NT QTOL search-index result (Tender/Details/3676: buyer Department of Logistics and Infrastructure, close 27-Aug-2026 2:00pm ACST). Live detail page could NOT be opened this run (egress blocked).",
       "reasoning": "Discovered via WebSearch over NT QTOL current tenders; buyer-originated on the NT Government QTOL portal. Newly observed this run.",
