@@ -70,7 +70,12 @@
       "contact_name": "Frank Tambosis, Senior Procurement Business Partner",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "public-art", "conservation", "vendorpanel"],
+      "tags": [
+        "local-government",
+        "public-art",
+        "conservation",
+        "vendorpanel"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "WebSearch snippet of the Inner West Council RFT-42 notice (detail page not openable — egress blocked)",
       "reasoning": "Found via WebSearch on VendorPanel public tenders for NSW councils; captured from Inner West Council's own VendorPanel-hosted tender listing (buyer-originated).",
@@ -121,7 +126,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "1800 570 562",
-      "tags": ["transport", "public-art", "connecting-with-country", "buy.nsw"],
+      "tags": [
+        "transport",
+        "public-art",
+        "connecting-with-country",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on buy.nsw open opportunities; the artwork package is published by Transport for NSW on the NSW eTendering / buy.nsw platform (buyer-originated).",
@@ -169,7 +179,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["transport", "recycling", "steel", "buy.nsw"],
+      "tags": [
+        "transport",
+        "recycling",
+        "steel",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on buy.nsw RFTs closing August 2026; published by Transport for NSW on NSW eTendering / buy.nsw (buyer-originated).",
@@ -217,7 +232,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "arborist", "tree-services", "buy.nsw"],
+      "tags": [
+        "local-government",
+        "arborist",
+        "tree-services",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on buy.nsw RFTs; Hawkesbury City Council opportunity published on NSW eTendering / buy.nsw (buyer-originated).",
@@ -269,7 +289,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "gbe", "epcm", "eoi", "buy.nsw"],
+      "tags": [
+        "water",
+        "gbe",
+        "epcm",
+        "eoi",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch; Sydney Water publishes its EOI on the NSW eTendering / buy.nsw platform as a buyer profile (buyer-originated).",
@@ -317,7 +343,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-state", "heavy-vehicle", "equipment", "tenderswa"],
+      "tags": [
+        "gov-state",
+        "heavy-vehicle",
+        "equipment",
+        "tenderswa"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on Tenders WA open opportunities; published on the WA Government's own Tenders WA portal.",
@@ -365,7 +396,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-state", "roads", "vegetation", "panel", "tenderswa"],
+      "tags": [
+        "gov-state",
+        "roads",
+        "vegetation",
+        "panel",
+        "tenderswa"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on Tenders WA; panel contract published on the WA Government's own Tenders WA portal (Main Roads WA buyer).",
@@ -413,7 +450,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-act", "project-management", "infrastructure"],
+      "tags": [
+        "gov-act",
+        "project-management",
+        "infrastructure"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on ACT Tenders; published on the ACT Government's own Tenders ACT portal.",
@@ -461,7 +502,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-act", "professional-services", "change-management"],
+      "tags": [
+        "gov-act",
+        "professional-services",
+        "change-management"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on ACT Tenders; published on the ACT Government's own Tenders ACT portal.",
@@ -509,7 +554,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "inspection", "infrastructure", "austender"],
+      "tags": [
+        "gov-commonwealth",
+        "inspection",
+        "infrastructure",
+        "austender"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on AusTender ATM list; published on the Commonwealth's own AusTender portal.",
@@ -560,7 +610,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "architecture", "panel", "eoi"],
+      "tags": [
+        "university",
+        "architecture",
+        "panel",
+        "eoi"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on Australian university procurement; buyer-originated EOI from RMIT University.",
@@ -610,7 +665,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "master-plan", "consultancy", "eoi"],
+      "tags": [
+        "university",
+        "master-plan",
+        "consultancy",
+        "eoi"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on Australian university procurement; buyer-originated EOI program from the University of Sydney.",
@@ -660,7 +720,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "construction", "car-park", "eoi", "qtenders"],
+      "tags": [
+        "health",
+        "construction",
+        "car-park",
+        "eoi",
+        "qtenders"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch on Queensland Health procurement; tender HCD754 published on the Queensland Government's own QTenders portal (buyer-originated).",
@@ -710,7 +776,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "property", "economic-development", "rfq"],
+      "tags": [
+        "local-government",
+        "property",
+        "economic-development",
+        "rfq"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch; RFQ published on Tamworth Regional Council's own website (buyer-originated).",
@@ -758,7 +829,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["corporate", "mining", "engineering", "eoi", "publicly-advertised"],
+      "tags": [
+        "corporate",
+        "mining",
+        "engineering",
+        "eoi",
+        "publicly-advertised"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch; Rio Tinto publicly advertises this EOI on its own Rio Tinto Buy Local portal (buyer-originated, publicly-advertised).",
@@ -806,7 +883,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["gov-commonwealth", "defence", "estate-works", "market-sounding", "industry-briefing"],
+      "tags": [
+        "gov-commonwealth",
+        "defence",
+        "estate-works",
+        "market-sounding",
+        "industry-briefing"
+      ],
       "first_seen": "2026-08-10",
       "detail_source": "",
       "reasoning": "Found via WebSearch (DECnet discovery signal), then attributed to the Department of Defence's own industry-briefing notice as the buyer-originated source. Flagged as a market-sounding / notice of upcoming procurement, not a live RFx.",
