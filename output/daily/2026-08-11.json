@@ -62,7 +62,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "ict", "ai", "vendorpanel", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "ict",
+        "ai",
+        "vendorpanel",
+        "headline-only"
+      ],
       "first_seen": "2026-08-11",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NSW/VendorPanel current tenders; Inner West Council is a buyer-originated source publishing via VendorPanel. Closing date and buyer confirmed in search snippet; detail page not fetchable this run (egress blocked).",
@@ -110,7 +117,16 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "ict", "data", "ai", "panel", "vendorpanel", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "ict",
+        "data",
+        "ai",
+        "panel",
+        "vendorpanel",
+        "headline-only"
+      ],
       "first_seen": "2026-08-11",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of VendorPanel/NSW council tenders; Inner West Council buyer-originated via VendorPanel. Tender ID (RFT-43), title and closing date confirmed in search snippet; detail page not fetchable this run (egress blocked).",
