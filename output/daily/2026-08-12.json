@@ -64,7 +64,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "aviation", "remote-services", "austender"],
+      "tags": [
+        "commonwealth",
+        "aviation",
+        "remote-services",
+        "austender"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced as a current AusTender ATM (deep link) via WebSearch. Buyer-originated Commonwealth procurement portal.",
@@ -112,7 +117,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "environment", "botanic-gardens", "austender"],
+      "tags": [
+        "commonwealth",
+        "environment",
+        "botanic-gardens",
+        "austender"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced as a current AusTender ATM (deep link) via WebSearch.",
@@ -160,7 +170,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "rfi", "market-sounding", "austender"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "rfi",
+        "market-sounding",
+        "austender"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced as a current AusTender ATM/RFI (deep link) via WebSearch.",
@@ -208,7 +224,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "fisheries", "austender"],
+      "tags": [
+        "commonwealth",
+        "fisheries",
+        "austender"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced as a current AusTender ATM (deep link) via WebSearch.",
@@ -256,7 +276,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "education", "construction", "panel", "buy.nsw"],
+      "tags": [
+        "nsw",
+        "education",
+        "construction",
+        "panel",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced in a buy.nsw WebSearch snippet with a specific tender ID, buyer and closing date. School Infrastructure NSW is a known buyer-originated source.",
@@ -304,7 +330,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "road-maintenance", "buy.nsw", "tfnsw"],
+      "tags": [
+        "nsw",
+        "transport",
+        "road-maintenance",
+        "buy.nsw",
+        "tfnsw"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced in a buy.nsw WebSearch snippet with a specific title and closing date; Transport for NSW is a known buyer-originated source.",
@@ -352,7 +384,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "civil-construction", "materials-supply", "buy.nsw", "tfnsw"],
+      "tags": [
+        "nsw",
+        "transport",
+        "civil-construction",
+        "materials-supply",
+        "buy.nsw",
+        "tfnsw"
+      ],
       "first_seen": "2026-08-12",
       "detail_source": "",
       "reasoning": "Surfaced in a buy.nsw WebSearch snippet with a specific title and closing date; Transport for NSW is a known buyer-originated source.",
