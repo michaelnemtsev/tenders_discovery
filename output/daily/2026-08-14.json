@@ -63,7 +63,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "assessment", "commonwealth", "DSP"],
+      "tags": [
+        "health",
+        "assessment",
+        "commonwealth",
+        "DSP"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Found via AusTender current ATM list (buyer-originated Commonwealth portal), surfaced through WebSearch because direct WebFetch was egress-blocked.",
@@ -111,7 +116,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["geospatial", "GNSS", "positioning", "commonwealth", "data-services"],
+      "tags": [
+        "geospatial",
+        "GNSS",
+        "positioning",
+        "commonwealth",
+        "data-services"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Found via AusTender current ATM list (Geoscience Australia buyer profile), read through WebSearch summariser due to WebFetch egress block.",
@@ -136,7 +147,11 @@
       "current_status": "open",
       "description": "AFMA is seeking to establish a panel of service providers to supply a broad range of charter vessel services to combat and deter illegal foreign fishing around Australia and its external territories, and on the high seas where Australia has an interest.",
       "deliverables_summary": "Establishment of a multi-provider panel supplying charter vessel services including fisheries patrols, land-based disposal support, and disposal at sea, in support of AFMA's illegal-foreign-fishing deterrence operations. Detailed scope, requirements and evaluation criteria were not extractable this run (documents unreachable).",
-      "key_deliverables": ["Fisheries patrols", "Land based disposal support", "Disposal at sea"],
+      "key_deliverables": [
+        "Fisheries patrols",
+        "Land based disposal support",
+        "Disposal at sea"
+      ],
       "scope_of_work": "",
       "requirements": [],
       "eligibility": "",
@@ -159,7 +174,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["marine", "fisheries", "charter-vessel", "panel", "commonwealth"],
+      "tags": [
+        "marine",
+        "fisheries",
+        "charter-vessel",
+        "panel",
+        "commonwealth"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Found via AusTender current ATM list (AFMA buyer profile), read through WebSearch summariser due to WebFetch egress block.",
@@ -184,7 +205,10 @@
       "current_status": "open",
       "description": "Defence is establishing an Operational Energy Transitions Defence Research Centre (OET DRC) to conduct research contributing to the Defence Future Energy Strategy. The process involves selecting a lead partner and commencing research projects aligned to Defence's operational energy transition challenges.",
       "deliverables_summary": "Selection of a lead research partner to stand up and operate the OET Defence Research Centre and to select and commence research projects aligned to Defence's operational energy transition challenges, in support of the Defence Future Energy Strategy. Detailed deliverables, eligibility and evaluation criteria were not extractable this run (documents unreachable).",
-      "key_deliverables": ["Selection of a lead partner", "Selection and commencement of aligned research projects"],
+      "key_deliverables": [
+        "Selection of a lead partner",
+        "Selection and commencement of aligned research projects"
+      ],
       "scope_of_work": "",
       "requirements": [],
       "eligibility": "",
@@ -207,7 +231,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "research", "energy", "commonwealth", "R&D"],
+      "tags": [
+        "defence",
+        "research",
+        "energy",
+        "commonwealth",
+        "R&D"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Found via AusTender current ATM list (Department of Defence DSRG buyer profile), read through WebSearch summariser due to WebFetch egress block.",
@@ -255,7 +285,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["agriculture", "research", "grains", "commonwealth", "plant-disease"],
+      "tags": [
+        "agriculture",
+        "research",
+        "grains",
+        "commonwealth",
+        "plant-disease"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Found via AusTender current ATM list (GRDC buyer profile), read through WebSearch summariser due to WebFetch egress block.",
@@ -303,7 +339,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "equipment", "maintenance"],
+      "tags": [
+        "nsw",
+        "transport",
+        "equipment",
+        "maintenance"
+      ],
       "first_seen": "2026-08-14",
       "detail_source": "",
       "reasoning": "Surfaced from a buy.nsw opportunity-search result (buyer-originated NSW state portal) via WebSearch; direct portal access was egress-blocked.",
