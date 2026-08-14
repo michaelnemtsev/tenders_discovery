@@ -66,7 +66,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ICT", "panel", "drupal", "govcms", "commonwealth"],
+      "tags": [
+        "ICT",
+        "panel",
+        "drupal",
+        "govcms",
+        "commonwealth"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender's current ATM list; buyer-originated notice published by the Department of Finance on AusTender. Detail page (tenders.gov.au) could not be opened directly due to the egress block, so captured at headline level.",
@@ -114,7 +120,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["energy", "electricity", "CSIRO", "WA", "green-energy"],
+      "tags": [
+        "energy",
+        "electricity",
+        "CSIRO",
+        "WA",
+        "green-energy"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender; buyer-originated RFT published by CSIRO on AusTender (CSIRO procures >$400k via AusTender). Detail page egress-blocked, captured at headline level.",
@@ -162,7 +174,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["plant", "tractor", "NSW", "Murray", "supply-and-delivery"],
+      "tags": [
+        "plant",
+        "tractor",
+        "NSW",
+        "Murray",
+        "supply-and-delivery"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NSW eTendering listings. Buyer-originated NSW Government listing. Detail page egress-blocked; buying organisation and tender ID not surfaced in the snippet.",
@@ -210,7 +228,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["roads", "civil", "SA", "local-government", "Copper-Coast"],
+      "tags": [
+        "roads",
+        "civil",
+        "SA",
+        "local-government",
+        "Copper-Coast"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of SA Tenders and Contracts. Buyer-originated council notice on the SA Government portal. Detail page egress-blocked, captured at headline level.",
@@ -258,7 +282,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["roads", "civil", "NT", "gravel-resheeting", "Katherine"],
+      "tags": [
+        "roads",
+        "civil",
+        "NT",
+        "gravel-resheeting",
+        "Katherine"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NT QTOL listings. Buyer-originated NT Government notice. Detail page egress-blocked, captured at headline level.",
@@ -306,7 +336,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["project-management", "contract-administration", "ACT", "convention-centre", "construction"],
+      "tags": [
+        "project-management",
+        "contract-administration",
+        "ACT",
+        "convention-centre",
+        "construction"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of ACT Tenders listings. Buyer-originated ACT Government notice. Detail page egress-blocked, captured at headline level.",
@@ -354,7 +390,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ICT", "panel", "data", "AI", "local-government", "NSW"],
+      "tags": [
+        "ICT",
+        "panel",
+        "data",
+        "AI",
+        "local-government",
+        "NSW"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch; buyer-originated council listing published on VendorPanel (the platform Inner West Council uses). Detail page egress-blocked, captured at headline level.",
@@ -402,7 +445,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["construction", "refurbishment", "panel", "EOI", "university", "VIC"],
+      "tags": [
+        "construction",
+        "refurbishment",
+        "panel",
+        "EOI",
+        "university",
+        "VIC"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch; buyer-originated University of Melbourne EOI (two-stage EOI-then-RFP panel). The buyer's own detail page was egress-blocked; the discovery pointer was an aggregator listing, so the opportunity is confirmed at headline level only against the buyer.",
@@ -450,7 +500,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["HVACR", "facilities-maintenance", "EOI", "university", "NSW"],
+      "tags": [
+        "HVACR",
+        "facilities-maintenance",
+        "EOI",
+        "university",
+        "NSW"
+      ],
       "first_seen": "2026-08-15",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch; buyer-originated Western Sydney University EOI for pre-registration to tender. Buyer detail page egress-blocked; discovery pointer was an aggregator, so captured at headline level against the buyer.",
