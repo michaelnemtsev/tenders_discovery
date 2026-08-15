@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15",
+  "generated": "2026-08-16",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -52,34 +52,31 @@
     "2026-08-12",
     "2026-08-13",
     "2026-08-14",
-    "2026-08-15"
+    "2026-08-15",
+    "2026-08-16"
   ],
-  "run_count": 52,
+  "run_count": 53,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-15",
-  "latest_coverage_summary": "Tier 1 government portals were the best-covered this run. Commonwealth AusTender yielded two current open approaches to market (GovCMS Drupal/DXP Services Panel and a CSIRO WA electricity RFT), and headline-level opportunities were captured for NSW eTendering, Tenders SA, NT QTOL and ACT Tenders. Tier 2 was covered via Sydney Water (NSW eTendering sub-portal), two universities (Melbourne, Western Sydney) and a local-government VendorPanel listing (Inner West Council). Tier 3 corporate channels (SAP Ariba Discovery, EstimateOne, and major-buyer portals such as BHP/Woolworths/NBN Co) were checked and confirmed as registration- or login-gated; no corporate opportunity was publicly visible, so those are recorded only in discovered_sources. As in the prior run, the environment's egress proxy blocked direct WebFetch to every external host, so all data was gathered indirectly through the WebSearch summariser and every tender is headline-level only.",
+  "latest_run": "2026-08-16",
+  "latest_coverage_summary": "Tier 1 Commonwealth and all state/territory portals were swept for opportunities published or updated in the last 7 days, together with a sample of Tier 2 (GBE water utilities, universities, public health, local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, EstimateOne, BHP, Woolworths, Coles, Qantas). As on prior runs, the environment's network egress proxy blocked WebFetch to every external tender domain tested (EGRESS_BLOCKED on tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au); this is an organisation egress-policy denial, so per the proxy README it was reported rather than routed around. All data below was therefore gathered indirectly through the WebSearch page-summariser, so no tender detail page or specification document could be opened directly. Three genuinely new opportunities were captured that are not present in prior runs: an AusTender Commonwealth health-panel notice of intent, an EnergyCo (buy.nsw) power-systems panel RFT, and a Gold Coast Health facilities-management RFT. Most other currently-open items surfaced by search (Sydney Harbour Bridge blasting/vacuuming RFT, TfNSW Hume Motorway litter collection, GWW Hopkins Road water main) were already captured on earlier runs and are not re-listed.",
   "latest_run_metadata": {
-    "run_date": "2026-08-15",
-    "coverage_summary": "Tier 1 government portals were the best-covered this run. Commonwealth AusTender yielded two current open approaches to market (GovCMS Drupal/DXP Services Panel and a CSIRO WA electricity RFT), and headline-level opportunities were captured for NSW eTendering, Tenders SA, NT QTOL and ACT Tenders. Tier 2 was covered via Sydney Water (NSW eTendering sub-portal), two universities (Melbourne, Western Sydney) and a local-government VendorPanel listing (Inner West Council). Tier 3 corporate channels (SAP Ariba Discovery, EstimateOne, and major-buyer portals such as BHP/Woolworths/NBN Co) were checked and confirmed as registration- or login-gated; no corporate opportunity was publicly visible, so those are recorded only in discovered_sources. As in the prior run, the environment's egress proxy blocked direct WebFetch to every external host, so all data was gathered indirectly through the WebSearch summariser and every tender is headline-level only.",
-    "sources_checked": 20,
-    "tenders_found": 9,
-    "new_sources_found": 6,
-    "entries_pending_detail": 9,
+    "run_date": "2026-08-16",
+    "coverage_summary": "Tier 1 Commonwealth and all state/territory portals were swept for opportunities published or updated in the last 7 days, together with a sample of Tier 2 (GBE water utilities, universities, public health, local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, EstimateOne, BHP, Woolworths, Coles, Qantas). As on prior runs, the environment's network egress proxy blocked WebFetch to every external tender domain tested (EGRESS_BLOCKED on tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au); this is an organisation egress-policy denial, so per the proxy README it was reported rather than routed around. All data below was therefore gathered indirectly through the WebSearch page-summariser, so no tender detail page or specification document could be opened directly. Three genuinely new opportunities were captured that are not present in prior runs: an AusTender Commonwealth health-panel notice of intent, an EnergyCo (buy.nsw) power-systems panel RFT, and a Gold Coast Health facilities-management RFT. Most other currently-open items surfaced by search (Sydney Harbour Bridge blasting/vacuuming RFT, TfNSW Hume Motorway litter collection, GWW Hopkins Road water main) were already captured on earlier runs and are not re-listed.",
+    "sources_checked": 24,
+    "tenders_found": 3,
+    "new_sources_found": 2,
+    "entries_pending_detail": 1,
     "gaps": [
-      "MAJOR CONSTRAINT (repeat of prior run): the environment's network egress proxy blocked WebFetch to ALL external domains tested this run (EGRESS_BLOCKED on tenders.gov.au and vendorpanel.com.au directly; all state/GBE/corporate portals are assumed equally blocked). All tender data was therefore gathered indirectly through the WebSearch tool's page summariser. No tender detail page or specification document could be opened directly.",
-      "Because detail pages/documents could not be opened, no deliverables/requirements/evaluation-criteria/document-list/contact extraction was possible. Every captured tender is headline-level only (all 9 counted in entries_pending_detail); descriptions are derived from listing text surfaced by the search summariser.",
-      "Several precise fields could not be confirmed from search snippets: exact closing date/time for the GovCMS and CSIRO ATMs, the buyer/agency behind the NSW 'New Holland tractor' listing (only the Murray region and 19 Aug closing were surfaced), and the value/term of most listings. These are left null rather than guessed.",
-      "Tier 3 corporate: SAP Ariba Discovery, EstimateOne, BHP, Woolworths Partner Hub, Coles, Qantas Coupa and NBN Co were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded as discovered_sources only, never as tenders. Invitation-only RFx (e.g. NBN Co's invited design-and-construction tender to 21 named companies) are out of scope and not captured as opportunities.",
-      "Tier 1 state portals for VIC, QLD, WA and TAS were confirmed live and enumerated as sources but their live opportunity lists could not be read directly (egress block); only aggregator-surfaced snippets were available and no confirmed open opportunity from these four was captured this run. Deferred to a future run with working egress.",
-      "Inner West Council 'Development Assessment Transformation and AI' tender surfaced (VendorPanel, closed 14 Aug 2026 05:00PM AEST) is already past close as at RUN_DATE and was not captured as an open opportunity; the council's still-open RFT-43 panel EOI was captured instead."
+      "MAJOR CONSTRAINT (repeat of prior runs): the environment's network egress proxy blocked WebFetch to ALL external tender domains tested this run. Confirmed EGRESS_BLOCKED on www.tenders.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au and www.vendorpanel.com.au; the proxy status endpoint reports selective=false with an organisation egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. The proxy README instructs not to route around policy denials, so they were reported here rather than bypassed.",
+      "Because no detail page or document could be opened, deliverables/requirements/evaluation-criteria/document-list extraction relied entirely on text surfaced by the search summariser. Even the two entries that carry deliverable detail (AusTender HTA panel, EnergyCo Power Systems panel) were assembled from search snippets of the notice text, not from the opened ATM page or its attachments; those fields should be re-verified on a future run with working egress.",
+      "Exact closing date/time could not be confirmed for the Gold Coast Health Facilities Management RFT (surfaced only via aggregator australiantenders.com.au; buyer-originated source is QTenders, which could not be opened) - left null rather than guessed and counted in entries_pending_detail.",
+      "AusTender: additional current ATMs were visible in search result lists but could not be opened to read scope, e.g. CSIRORFT2026019 (CSIRO), ATM_2026_3048, Health/E26-205921, CE26-1639, and a '_N' addendum to Health/PH25/16174. Deferred to a future run with working egress rather than captured at ID-only level.",
+      "Tier 1 VIC, QLD, WA, SA, TAS, NT, ACT portals were confirmed live and enumerated as sources, but their live open-opportunity lists could not be read directly; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from VIC/WA/SA/TAS/ACT was captured this run (deferred).",
+      "Tier 3 corporate: SAP Ariba Discovery, EstimateOne, BHP, Woolworths Partner Hub, Coles (Ariba/RangeMe), Qantas (Coupa) and NBN Co were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run."
     ],
     "recommended_seed_additions": [
-      "Sydney Water tender sub-portal on NSW eTendering (https://www.tenders.nsw.gov.au/sydneywater/) - GBE, buyer-originated.",
-      "SA Water Supplier Portal (https://www.sawater.com.au/about-us/partner-with-us/tenders-and-contracts) - GBE runs its own portal, not on Tenders SA.",
-      "University of Melbourne procurement (https://www.australiantenders.com.au/issuer/7695/tenders/university-of-melbourne pointer; buyer-originated page at unimelb.edu.au procurement).",
-      "Western Sydney University procurement / vendor pre-registration.",
-      "GovCMS Drupal Services Panel programme page (https://www.govcms.gov.au/dsp) - buyer-originated companion to the AusTender ATM.",
-      "NBN Co procurement / supplier engagement (https://www.nbnco.com.au) - GBE, corporate-style e-sourcing."
+      "Energy Corporation of NSW (EnergyCo) - active buyer publishing panels/RFTs on buy.nsw (Renewable Energy Zone programs); worth tracking as a distinct buyer profile.",
+      "Gold Coast Hospital and Health Service (GCHHS) - Queensland Health entity running its own FM/services RFTs via QTenders."
     ]
   },
   "months": [
@@ -95,7 +92,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 105,
+      "new_tenders": 108,
       "active_tenders": 0
     }
   ],
@@ -16752,8 +16749,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:CSIRORFT2026004",
@@ -16813,8 +16810,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NSW-eTendering:new-holland-t5050-tractor-murray-2026",
@@ -16874,8 +16871,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-SA:copper-coast-moonta-road-stage-2-3",
@@ -16935,8 +16932,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:buchanan-highway-gravel-resheeting-katherine",
@@ -16996,8 +16993,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "ACT-Tenders:new-convention-entertainment-centre-pm-ca",
@@ -17057,8 +17054,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel-InnerWest:RFT-43-data-ai-automation-panel",
@@ -17119,8 +17116,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "UniMelb:refurbishment-contractor-panel-2026-eoi",
@@ -17181,8 +17178,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "WSU:hvacr-maintenance-services-eoi",
@@ -17242,6 +17239,208 @@
         "2026-08-15"
       ],
       "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:Health-PH25-16174-hta-support-services-panel",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "National",
+      "tender_id": "Health/PH25/16174",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/494d8977-b105-4bf2-a9dd-66829dd29857",
+      "access": "public",
+      "title": "Notice of Intent - Health Technology Assessment (HTA) and support services panel arrangement",
+      "buyer": "Department of Health, Disability and Ageing",
+      "buyer_url": "https://www.health.gov.au",
+      "category": "Health services / advisory panel",
+      "category_codes": [],
+      "procurement_type": "market-sounding",
+      "current_status": "recently-published",
+      "description": "A Commonwealth notice of intent flagging an upcoming approach to market to establish a panel arrangement for Health Technology Assessment (HTA) and associated support services, ahead of a formal Request for Tender. An online industry briefing precedes the RFT.",
+      "deliverables_summary": "The eventual panel is to supply the Department with Health Technology Assessment services and supporting advisory capability - the specialist analysis used to assess the clinical and cost-effectiveness of health technologies to inform government funding and policy decisions. Full deliverables will be defined in the RFT; this notice covers the industry-briefing and registration stage.",
+      "key_deliverables": [
+        "Health Technology Assessment (HTA) services",
+        "Associated HTA support / advisory services under a panel arrangement"
+      ],
+      "scope_of_work": "Establishment of a panel arrangement for HTA and support services. Scope detail to be released in the formal RFT following the industry briefing; not available from the notice.",
+      "requirements": [],
+      "eligibility": "Open - interested organisations may register for the industry briefing (attendance limited to 2 representatives per organisation).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "Enquiries about the RFT to be submitted before 5:00 PM Friday 11 September 2026 (per notice)",
+      "briefing": "Online industry briefing on Tuesday 1 September 2026 at 11:00 AM AEST; registration required by 2:00 PM Thursday 27 August 2026 via RFT.HTApanel@health.gov.au (max 2 representatives per organisation).",
+      "submission_method": "Via AusTender once the formal RFT is released",
+      "lodgement_url": "https://www.tenders.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "National (Australia)",
+      "contact_name": "",
+      "contact_email": "RFT.HTApanel@health.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "HTA",
+        "panel",
+        "commonwealth",
+        "notice-of-intent",
+        "advisory"
+      ],
+      "first_seen": "2026-08-16",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of current AusTender ATMs (Health/PH25/16174). Buyer-originated Commonwealth source (AusTender). Detail page could not be opened directly due to the egress block; briefing/registration details taken from the search summary of the ATM notice.",
+      "notes": "Notice of intent / market-sounding stage, not yet an open RFT. A '_N' addendum (Health/ PH25/16174_N) also appears on AusTender. Dates, value and requirements to be confirmed against the ATM page once egress is available; captured at notice level.",
+      "last_seen": "2026-08-16",
+      "seen_dates": [
+        "2026-08-16"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:SR01280-energyco-power-systems-analysis-services-panel",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "SR01280",
+      "tender_url": "https://buy.nsw.gov.au/prcOpportunity/115262B0-B544-454F-B2D2A4259C75E735",
+      "access": "free-registration",
+      "title": "Power Systems Analysis Services Panel - SR01280",
+      "buyer": "Energy Corporation of NSW (EnergyCo)",
+      "buyer_url": "https://www.energyco.nsw.gov.au",
+      "category": "Engineering / power systems technical advisory",
+      "category_codes": [],
+      "procurement_type": "panel",
+      "current_status": "open",
+      "description": "EnergyCo is establishing a multi-supplier Power Systems Analysis Services Panel to give it access to high-quality power-systems modelling, analysis and study capabilities supporting the planning, development, delivery and assurance of its major projects (Renewable Energy Zone infrastructure). A three-year panel term is anticipated to commence September 2026.",
+      "deliverables_summary": "Panel suppliers will provide technical power-systems engineering services commissioned through individual work orders across the panel term: power-system modelling, system studies and associated technical analysis across a range of scenarios and project stages - including load-flow, stability and electromagnetic-transient (EMT) studies, model development and management, and preparation of technical outputs to inform system planning and engineering decisions.",
+      "key_deliverables": [
+        "Power system modelling",
+        "System studies (load flow, stability, EMT)",
+        "Model development and management",
+        "Technical outputs to inform system planning and engineering decisions",
+        "Services delivered via individual work orders over the panel term"
+      ],
+      "scope_of_work": "Establish a multi-supplier panel providing EnergyCo with power-systems modelling, analysis and study capability to support planning, development, delivery and assurance of major projects. Services are technical in nature and commissioned through individual work orders over the term.",
+      "requirements": [],
+      "eligibility": "Open approach to establish a multi-supplier panel; respondents must demonstrate power-systems modelling and analysis capability (full requirements in the RFT documents, which could not be opened).",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "Three-year panel term anticipated to commence September 2026",
+      "contract_start": "2026-09-01",
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via buy.nsw / NSW eTendering (registration required)",
+      "lodgement_url": "https://buy.nsw.gov.au/prcOpportunity/115262B0-B544-454F-B2D2A4259C75E735",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales (EnergyCo Renewable Energy Zone projects)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "energy",
+        "power-systems",
+        "panel",
+        "renewable-energy-zone",
+        "engineering",
+        "buy.nsw"
+      ],
+      "first_seen": "2026-08-16",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of buy.nsw opportunities; buyer-originated NSW Government source (buy.nsw / NSW eTendering) with EnergyCo as the buying agency. Objective and services text taken from the search summary of the opportunity page (SR01280); the detail page and RFT documents could not be opened due to the egress block.",
+      "notes": "Closing date/time and evaluation criteria not captured (detail page behind free registration and unreachable via WebFetch under the egress block). Contract term stated as three years commencing ~September 2026. Value not published in the surfaced text.",
+      "last_seen": "2026-08-16",
+      "seen_dates": [
+        "2026-08-16"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "QTenders:gchhs-facilities-management-services-rft",
+      "source_name": "QTenders (Queensland Government)",
+      "source_url": "https://qtenders.hpw.qld.gov.au/",
+      "source_type": "health",
+      "jurisdiction": "Queensland",
+      "state": "QLD",
+      "tender_id": "",
+      "tender_url": "",
+      "access": "public",
+      "title": "Request for Tender (RFT) - Facilities Management (FM) Services",
+      "buyer": "Gold Coast Hospital and Health Service (GCHHS)",
+      "buyer_url": "https://www.goldcoast.health.qld.gov.au",
+      "category": "Facilities management services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "Gold Coast Hospital and Health Service is seeking tenders for Facilities Management (FM) Services across multiple health facilities in the Gold Coast region.",
+      "deliverables_summary": "The successful tenderer is to deliver facilities management services managing a portfolio of Gold Coast Health sites - including Gold Coast University Hospital, Southport Health Precinct, Robina Hospital, Carrara Health Centre, Robina Health Precinct and other community health centres across the region. Detailed FM scope (hard/soft services split, term and value) was not available from the surfaced listing.",
+      "key_deliverables": [
+        "Facilities management of Gold Coast University Hospital",
+        "Facilities management of Southport Health Precinct",
+        "Facilities management of Robina Hospital",
+        "Facilities management of Carrara Health Centre and Robina Health Precinct",
+        "Facilities management of other community health centres in the Gold Coast region"
+      ],
+      "scope_of_work": "Management of facilities across the listed Gold Coast Health sites. Full scope, service specifications and KPIs not available (buyer detail page on QTenders could not be opened).",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Via QTenders (Queensland Government tenders portal)",
+      "lodgement_url": "https://qtenders.hpw.qld.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Gold Coast region, Queensland",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "qld",
+        "health",
+        "facilities-management",
+        "gold-coast",
+        "rft",
+        "hospital"
+      ],
+      "first_seen": "2026-08-16",
+      "detail_source": "",
+      "reasoning": "Surfaced via the aggregator australiantenders.com.au as a discovery signal only; the buyer-originated source is QTenders (Queensland Government), recorded here as the source of truth. The QTenders detail page could not be opened due to the egress block, so only the sites-in-scope text was captured.",
+      "notes": "Headline-level only (counted in entries_pending_detail). Closing date/time, tender ID, value, term and requirements could not be confirmed - the aggregator listing did not provide a reliable closing date and the QTenders page was unreachable. Do not treat the aggregator listing as the source of truth; re-verify on QTenders when egress is available.",
+      "last_seen": "2026-08-16",
+      "seen_dates": [
+        "2026-08-16"
+      ],
+      "seen_count": 1,
       "is_new_in_latest": true,
       "active_in_latest": true
     }
@@ -17290,7 +17489,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Water — Current Tenders",
@@ -17513,7 +17712,7 @@
       ],
       "seen_count": 35,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP - Find opportunities (ICN Gateway + Local Buying Program)",
@@ -17949,7 +18148,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "VendorPanel Public Tenders",
@@ -17983,7 +18182,7 @@
       ],
       "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transgrid — Supplier portal / ibuy (SAP Ariba)",
@@ -18168,31 +18367,32 @@
       "active_in_latest": false
     },
     {
-      "source_name": "QTenders (Queensland Government)",
+      "source_name": "Gold Coast Hospital and Health Service (GCHHS) - buyer on QTenders",
       "source_url": "https://qtenders.hpw.qld.gov.au/",
-      "source_type": "gov-state",
+      "source_type": "health",
       "jurisdiction": "Queensland",
-      "platform": "QTenders (migrating to VendorPanel via supply.qld.gov.au)",
+      "platform": "QTenders",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": false,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "Tier 1 canonical seed; swept this run via WebSearch.",
-      "recommended_check_frequency": "daily",
-      "notes": "QTenders is being replaced by VendorPanel in a phased implementation; check both QTenders and supply.qld.gov.au.",
+      "how_discovered": "Surfaced via an aggregator listing for a GCHHS Facilities Management RFT; pivoted to the buyer-originated QTenders platform. Platform (QTenders) is already known; this Queensland Health entity had not been separately recorded as a buyer by the routine.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Queensland Health hospital-and-health-service buyer publishing FM/services RFTs via QTenders. Buyer-originated, not an aggregator.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-10",
+      "last_seen": "2026-08-16",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
         "2026-07-18",
         "2026-07-19",
         "2026-08-09",
-        "2026-08-10"
+        "2026-08-10",
+        "2026-08-16"
       ],
-      "seen_count": 6,
+      "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Tenders and Contracts",
@@ -18893,7 +19093,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "University of Sydney — UniBuy / Suppliers (SAP Ariba Network)",
@@ -19076,7 +19276,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Powerlink Queensland — Suppliers",
@@ -21024,7 +21224,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -22464,8 +22664,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -22486,8 +22686,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "ACT Tenders",
@@ -22508,8 +22708,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Melbourne Water procurement",
@@ -22530,8 +22730,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "University of Melbourne Procurement",
@@ -22552,8 +22752,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Western Sydney University Procurement",
@@ -22574,8 +22774,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "GovCMS Drupal Services Panel programme",
@@ -22596,8 +22796,8 @@
         "2026-08-15"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NBN Co procurement / supplier engagement",
@@ -22616,6 +22816,28 @@
       "last_seen": "2026-08-15",
       "seen_dates": [
         "2026-08-15"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Energy Corporation of NSW (EnergyCo) - buyer profile on buy.nsw",
+      "source_url": "https://buy.nsw.gov.au/prcOpportunity/115262B0-B544-454F-B2D2A4259C75E735",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw / NSW eTendering",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Found while searching buy.nsw for newly published RFTs; EnergyCo is running multi-supplier panels (e.g. Power Systems Analysis Services Panel SR01280, Technical Advisory Services Panel SR01191) to support its Renewable Energy Zone delivery. Platform (buy.nsw) is already known; this buyer profile had not been separately recorded by the routine.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated NSW Government agency; opportunities published on buy.nsw. Worth tracking as a distinct high-value buyer given the scale of the REZ program.",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16",
+      "seen_dates": [
+        "2026-08-16"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

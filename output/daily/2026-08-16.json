@@ -65,7 +65,14 @@
       "contact_name": "",
       "contact_email": "RFT.HTApanel@health.gov.au",
       "contact_phone": "",
-      "tags": ["health", "HTA", "panel", "commonwealth", "notice-of-intent", "advisory"],
+      "tags": [
+        "health",
+        "HTA",
+        "panel",
+        "commonwealth",
+        "notice-of-intent",
+        "advisory"
+      ],
       "first_seen": "2026-08-16",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of current AusTender ATMs (Health/PH25/16174). Buyer-originated Commonwealth source (AusTender). Detail page could not be opened directly due to the egress block; briefing/registration details taken from the search summary of the ATM notice.",
@@ -119,7 +126,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "energy", "power-systems", "panel", "renewable-energy-zone", "engineering", "buy.nsw"],
+      "tags": [
+        "nsw",
+        "energy",
+        "power-systems",
+        "panel",
+        "renewable-energy-zone",
+        "engineering",
+        "buy.nsw"
+      ],
       "first_seen": "2026-08-16",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of buy.nsw opportunities; buyer-originated NSW Government source (buy.nsw / NSW eTendering) with EnergyCo as the buying agency. Objective and services text taken from the search summary of the opportunity page (SR01280); the detail page and RFT documents could not be opened due to the egress block.",
@@ -173,7 +188,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["qld", "health", "facilities-management", "gold-coast", "rft", "hospital"],
+      "tags": [
+        "qld",
+        "health",
+        "facilities-management",
+        "gold-coast",
+        "rft",
+        "hospital"
+      ],
       "first_seen": "2026-08-16",
       "detail_source": "",
       "reasoning": "Surfaced via the aggregator australiantenders.com.au as a discovery signal only; the buyer-originated source is QTenders (Queensland Government), recorded here as the source of truth. The QTenders detail page could not be opened due to the egress block, so only the sites-in-scope text was captured.",
