@@ -65,7 +65,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "ICT", "AI", "clinical-documentation", "REOI", "two-stage", "pending-detail"],
+      "tags": [
+        "health",
+        "ICT",
+        "AI",
+        "clinical-documentation",
+        "REOI",
+        "two-stage",
+        "pending-detail"
+      ],
       "first_seen": "2026-08-17",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch across Queensland Health / QTenders and AI-in-healthcare procurement queries; existence corroborated by aggregator discovery signals (govmarket.com.au, australiantenders.com.au) and CHQ's own Digital & Data Strategy 2024-2028 context. Buyer-originated source of truth is QTenders; the aggregator was used only to learn the opportunity exists.",
@@ -113,7 +121,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "facilities", "food-beverage", "retail", "pending-detail"],
+      "tags": [
+        "health",
+        "facilities",
+        "food-beverage",
+        "retail",
+        "pending-detail"
+      ],
       "first_seen": "2026-08-17",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch on health-service retail/facilities tenders; existence corroborated by aggregator listings (australiantenders.com.au) and Albury Wodonga Health's own supply/tender page. Buyer-originated sources are the AWH supply page and Buying for Victoria (tenders.vic.gov.au).",

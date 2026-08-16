@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16",
+  "generated": "2026-08-17",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -53,30 +53,34 @@
     "2026-08-13",
     "2026-08-14",
     "2026-08-15",
-    "2026-08-16"
+    "2026-08-16",
+    "2026-08-17"
   ],
-  "run_count": 53,
+  "run_count": 54,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-16",
-  "latest_coverage_summary": "Tier 1 Commonwealth and all state/territory portals were swept for opportunities published or updated in the last 7 days, together with a sample of Tier 2 (GBE water utilities, universities, public health, local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, EstimateOne, BHP, Woolworths, Coles, Qantas). As on prior runs, the environment's network egress proxy blocked WebFetch to every external tender domain tested (EGRESS_BLOCKED on tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au); this is an organisation egress-policy denial, so per the proxy README it was reported rather than routed around. All data below was therefore gathered indirectly through the WebSearch page-summariser, so no tender detail page or specification document could be opened directly. Three genuinely new opportunities were captured that are not present in prior runs: an AusTender Commonwealth health-panel notice of intent, an EnergyCo (buy.nsw) power-systems panel RFT, and a Gold Coast Health facilities-management RFT. Most other currently-open items surfaced by search (Sydney Harbour Bridge blasting/vacuuming RFT, TfNSW Hume Motorway litter collection, GWW Hopkins Road water main) were already captured on earlier runs and are not re-listed.",
+  "latest_run": "2026-08-17",
+  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept for opportunities published or updated in the last 7 days, together with a Tier 2 sample (water GBEs - Sydney/Melbourne/SA Water; electricity networks - Transgrid/Ausgrid/Powerlink/Western Power; universities; ports/airports/rail authorities; local government via VendorPanel; public health) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; proxy status reports selective=false, an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Verification via search saved three false positives: the NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), the eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (closed 3 Dec 2025), and the Northern Health 'AI-Powered Medical Scribe' RFI (closed 19 May 2025) were all surfaced by search but confirmed already closed and correctly excluded rather than listed. Two genuinely new, not-previously-seen opportunities were captured at headline level (Children's Health Queensland Digital AI Scribe REOI; Albury Wodonga Health food & beverage retail operator RFT); their publish/closing dates, IDs and open-status could not be confirmed under the egress block and are flagged pending detail. Four new buyer-originated sources were discovered (High Speed Rail Authority, Children's Health Queensland HHS, Rail Projects Victoria, Albury Wodonga Health).",
   "latest_run_metadata": {
-    "run_date": "2026-08-16",
-    "coverage_summary": "Tier 1 Commonwealth and all state/territory portals were swept for opportunities published or updated in the last 7 days, together with a sample of Tier 2 (GBE water utilities, universities, public health, local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, EstimateOne, BHP, Woolworths, Coles, Qantas). As on prior runs, the environment's network egress proxy blocked WebFetch to every external tender domain tested (EGRESS_BLOCKED on tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au); this is an organisation egress-policy denial, so per the proxy README it was reported rather than routed around. All data below was therefore gathered indirectly through the WebSearch page-summariser, so no tender detail page or specification document could be opened directly. Three genuinely new opportunities were captured that are not present in prior runs: an AusTender Commonwealth health-panel notice of intent, an EnergyCo (buy.nsw) power-systems panel RFT, and a Gold Coast Health facilities-management RFT. Most other currently-open items surfaced by search (Sydney Harbour Bridge blasting/vacuuming RFT, TfNSW Hume Motorway litter collection, GWW Hopkins Road water main) were already captured on earlier runs and are not re-listed.",
-    "sources_checked": 24,
-    "tenders_found": 3,
-    "new_sources_found": 2,
-    "entries_pending_detail": 1,
+    "run_date": "2026-08-17",
+    "coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept for opportunities published or updated in the last 7 days, together with a Tier 2 sample (water GBEs - Sydney/Melbourne/SA Water; electricity networks - Transgrid/Ausgrid/Powerlink/Western Power; universities; ports/airports/rail authorities; local government via VendorPanel; public health) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; proxy status reports selective=false, an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Verification via search saved three false positives: the NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), the eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (closed 3 Dec 2025), and the Northern Health 'AI-Powered Medical Scribe' RFI (closed 19 May 2025) were all surfaced by search but confirmed already closed and correctly excluded rather than listed. Two genuinely new, not-previously-seen opportunities were captured at headline level (Children's Health Queensland Digital AI Scribe REOI; Albury Wodonga Health food & beverage retail operator RFT); their publish/closing dates, IDs and open-status could not be confirmed under the egress block and are flagged pending detail. Four new buyer-originated sources were discovered (High Speed Rail Authority, Children's Health Queensland HHS, Rail Projects Victoria, Albury Wodonga Health).",
+    "sources_checked": 26,
+    "tenders_found": 2,
+    "new_sources_found": 4,
+    "entries_pending_detail": 2,
     "gaps": [
-      "MAJOR CONSTRAINT (repeat of prior runs): the environment's network egress proxy blocked WebFetch to ALL external tender domains tested this run. Confirmed EGRESS_BLOCKED on www.tenders.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au and www.vendorpanel.com.au; the proxy status endpoint reports selective=false with an organisation egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. The proxy README instructs not to route around policy denials, so they were reported here rather than bypassed.",
-      "Because no detail page or document could be opened, deliverables/requirements/evaluation-criteria/document-list extraction relied entirely on text surfaced by the search summariser. Even the two entries that carry deliverable detail (AusTender HTA panel, EnergyCo Power Systems panel) were assembled from search snippets of the notice text, not from the opened ATM page or its attachments; those fields should be re-verified on a future run with working egress.",
-      "Exact closing date/time could not be confirmed for the Gold Coast Health Facilities Management RFT (surfaced only via aggregator australiantenders.com.au; buyer-originated source is QTenders, which could not be opened) - left null rather than guessed and counted in entries_pending_detail.",
-      "AusTender: additional current ATMs were visible in search result lists but could not be opened to read scope, e.g. CSIRORFT2026019 (CSIRO), ATM_2026_3048, Health/E26-205921, CE26-1639, and a '_N' addendum to Health/PH25/16174. Deferred to a future run with working egress rather than captured at ID-only level.",
-      "Tier 1 VIC, QLD, WA, SA, TAS, NT, ACT portals were confirmed live and enumerated as sources, but their live open-opportunity lists could not be read directly; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from VIC/WA/SA/TAS/ACT was captured this run (deferred).",
-      "Tier 3 corporate: SAP Ariba Discovery, EstimateOne, BHP, Woolworths Partner Hub, Coles (Ariba/RangeMe), Qantas (Coupa) and NBN Co were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run."
+      "MAJOR CONSTRAINT (repeat of every prior run): the environment's network egress proxy blocked WebFetch to ALL external tender domains. Confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false and no tool scoping, i.e. an organisation-wide egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. The proxy README explicitly instructs not to retry or route around policy denials, so they are reported here rather than bypassed. Consequence: no detail page or specification document could be opened; deliverables, requirements, evaluation criteria, document lists, exact dates and contacts could not be extracted for any opportunity this run.",
+      "Because detail pages could not be opened, the two captured opportunities (CHQ Digital AI Scribe REOI; Albury Wodonga Health F&B retail operator RFT) are headline-level only. Their tender IDs, publish/closing dates, and confirmed open-status could not be verified and are set to null; existence is corroborated only by the WebSearch summariser and aggregator discovery signals (govmarket.com.au / australiantenders.com.au). Both are counted in entries_pending_detail and should be re-verified on a run with working egress or an authenticated portal session.",
+      "Three opportunities surfaced by search were confirmed ALREADY CLOSED and deliberately excluded (not listed as tenders): NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (published 12 Nov 2025, closed 3 Dec 2025), and Northern Health (VIC) 'AI-Powered Medical Scribe Solutions Exploration' RFI (closed 19 May 2025). Recorded here so future runs do not re-chase them as new.",
+      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions could be validated this run (deferred).",
+      "AusTender: several current ATMs were visible in search result lists but could not be opened to confirm scope or dates, e.g. EST09297 (Palmer Barracks Infrastructure & Civil Works, Defence WA - questions window Dec 2025-Jan 2026 suggests it may already be closed), ATM_2026_6551, ATM_2026_6026 / RFI_ATM_2026_6026, and JSD/NOT/74800/1. Deferred rather than captured at ID-only level or with guessed dates.",
+      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery, BHP, Woodside, Santos, Fortescue, NBN Co (SAP Ariba), Australia Post and Snowy Hydro were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run.",
+      "An open airport 'Traffic Management Services' opportunity (deadline 21 Aug 2026) was surfaced by search but without a confirmable buyer identity, tender ID or source URL, so it was not captured (insufficient to attribute responsibly)."
     ],
     "recommended_seed_additions": [
-      "Energy Corporation of NSW (EnergyCo) - active buyer publishing panels/RFTs on buy.nsw (Renewable Energy Zone programs); worth tracking as a distinct buyer profile.",
-      "Gold Coast Hospital and Health Service (GCHHS) - Queensland Health entity running its own FM/services RFTs via QTenders."
+      "High Speed Rail Authority (HSRA) - hsra.gov.au - Commonwealth statutory authority calling EOIs for High Speed Rail Line 1 major packages (twin TBM tunnels, underground station) via AusTender; its industry-update page flags upcoming EOIs early.",
+      "Children's Health Queensland Hospital and Health Service (CHQ) - childrens.health.qld.gov.au - Queensland HHS running its own digital-health procurements (e.g. AI Scribe REOI) via QTenders.",
+      "Rail Projects Victoria (Major Transport Infrastructure Authority) - inviting EOIs for Melbourne Airport Rail (MAR) works via Buying for Victoria (tenders.vic.gov.au).",
+      "Albury Wodonga Health - awh.org.au/about-us/supply-tender-information - cross-border (NSW/VIC) health service with its own supply/tender page, also lists on Buying for Victoria."
     ]
   },
   "months": [
@@ -92,7 +96,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 108,
+      "new_tenders": 110,
       "active_tenders": 0
     }
   ],
@@ -17304,8 +17308,8 @@
         "2026-08-16"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:SR01280-energyco-power-systems-analysis-services-panel",
@@ -17373,8 +17377,8 @@
         "2026-08-16"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTenders:gchhs-facilities-management-services-rft",
@@ -17439,6 +17443,130 @@
       "last_seen": "2026-08-16",
       "seen_dates": [
         "2026-08-16"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "QTenders:chq-digital-ai-scribe-reoi",
+      "source_name": "QTenders (Queensland Government)",
+      "source_url": "https://qtenders.epw.qld.gov.au/qtenders/",
+      "source_type": "health",
+      "jurisdiction": "Queensland",
+      "state": "QLD",
+      "tender_id": "",
+      "tender_url": "",
+      "access": "public",
+      "title": "Digital AI Scribe Solution - Registration of Expressions of Interest (REOI, Stage 1)",
+      "buyer": "Children's Health Queensland Hospital and Health Service (CHQ)",
+      "buyer_url": "https://www.childrens.health.qld.gov.au/",
+      "category": "ICT / Digital health / Clinical documentation software",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "",
+      "description": "Children's Health Queensland is running a two-stage procurement to acquire an enterprise-wide Digital AI (ambient) Scribe solution to support clinicians with clinical documentation. This Registration of Expressions of Interest (REOI) is Stage 1, used for market information-gathering and shortlisting respondents for a Stage 2 process.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via QTenders",
+      "lodgement_url": "https://qtenders.epw.qld.gov.au/qtenders/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Queensland",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "ICT",
+        "AI",
+        "clinical-documentation",
+        "REOI",
+        "two-stage",
+        "pending-detail"
+      ],
+      "first_seen": "2026-08-17",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch across Queensland Health / QTenders and AI-in-healthcare procurement queries; existence corroborated by aggregator discovery signals (govmarket.com.au, australiantenders.com.au) and CHQ's own Digital & Data Strategy 2024-2028 context. Buyer-originated source of truth is QTenders; the aggregator was used only to learn the opportunity exists.",
+      "notes": "Headline level only. The QTenders detail page could not be opened because the environment's egress proxy blocked WebFetch to all tender domains this run, so tender ID, publish/closing dates, deliverables, evaluation criteria, documents and contacts could not be verified and are set to null. Unlike the eHealth NSW and Northern Health AI-scribe procurements (both confirmed closed and excluded this run), no 'closed' signal was found for this CHQ REOI, but its open-status is unverified. Re-verify on a run with working egress or an authenticated QTenders session.",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AlburyWodongaHealth:albury-hospital-campus-fb-retail-operator-rft",
+      "source_name": "Albury Wodonga Health - Supply & Tender Information",
+      "source_url": "https://www.awh.org.au/about-us/supply-tender-information",
+      "source_type": "health",
+      "jurisdiction": "Victoria (cross-border NSW/VIC health service)",
+      "state": "VIC",
+      "tender_id": "",
+      "tender_url": "",
+      "access": "public",
+      "title": "Food and Beverage Retail Operator - Albury Hospital Campus",
+      "buyer": "Albury Wodonga Health",
+      "buyer_url": "https://www.awh.org.au/",
+      "category": "Facilities / Retail food & beverage services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "",
+      "description": "Albury Wodonga Health is seeking an experienced food and beverage operator to deliver retail food and beverage services across the Albury Hospital Campus. The approach follows a retail Food and Hospitality Strategy developed by consultancy Future Food for the Albury and Wodonga hospitals.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "",
+      "lodgement_url": "",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Albury Hospital Campus, Albury NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "facilities",
+        "food-beverage",
+        "retail",
+        "pending-detail"
+      ],
+      "first_seen": "2026-08-17",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch on health-service retail/facilities tenders; existence corroborated by aggregator listings (australiantenders.com.au) and Albury Wodonga Health's own supply/tender page. Buyer-originated sources are the AWH supply page and Buying for Victoria (tenders.vic.gov.au).",
+      "notes": "Headline level only. Detail/lodgement page could not be opened due to the egress block, so tender ID, publish/closing dates and requirements could not be verified and are null. Search signals ('with the view to conducting an Expression of Interest') suggest this may be at an early/market-approach stage rather than confirmed open; open-status is unverified. Re-verify on a run with working egress. Albury Wodonga Health is a Victorian statutory health service operating cross-border for the Albury (NSW) / Wodonga (VIC) region.",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -18392,7 +18520,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Tenders and Contracts",
@@ -22838,6 +22966,94 @@
       "last_seen": "2026-08-16",
       "seen_dates": [
         "2026-08-16"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "High Speed Rail Authority (HSRA)",
+      "source_url": "https://www.hsra.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth (Australia)",
+      "platform": "AusTender",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.hsra.gov.au/industry-update",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via a WebSearch on Australian rail/transport authority tenders. HSRA is calling Expressions of Interest for High Speed Rail Line 1 major contract packages (Area Package 1: ~35 km of twin TBM tunnels, an underground station and associated civil works), with formal tender information published through AusTender. Its March/May 2026 industry-update pages flag the upcoming EOIs.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Commonwealth statutory authority (buyer-originated). Actual RFx are lodged via AusTender, but the HSRA industry-update page gives early visibility of upcoming packages, so worth tracking the authority directly in addition to AusTender.",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Children's Health Queensland Hospital and Health Service (CHQ)",
+      "source_url": "https://www.childrens.health.qld.gov.au/",
+      "source_type": "health",
+      "jurisdiction": "Queensland",
+      "platform": "QTenders",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Identified as the buyer behind the Digital AI Scribe REOI surfaced this run; CHQ publishes its procurement opportunities via the Queensland Government QTenders portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Queensland Hospital and Health Service running its own digital-health and clinical-services procurements; a distinct buyer profile within Queensland Health worth tracking as its own source.",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Rail Projects Victoria (Major Transport Infrastructure Authority)",
+      "source_url": "https://bigbuild.vic.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "Victoria",
+      "platform": "Buying for Victoria (tenders.vic.gov.au)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via a WebSearch on rail/airport authority tenders. Rail Projects Victoria (a division of the Major Transport Infrastructure Authority) is inviting Expressions of Interest for Melbourne Airport Rail (MAR) works - the Airport (AIP) works and the Viaduct (AVP) works - advertised on Buying for Victoria (tenders.vic.gov.au).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated major transport infrastructure entity; large EOIs published on Buying for Victoria under the Big Build program.",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Albury Wodonga Health - Supply & Tender Information",
+      "source_url": "https://www.awh.org.au/about-us/supply-tender-information",
+      "source_type": "health",
+      "jurisdiction": "Victoria (cross-border NSW/VIC)",
+      "platform": "Buying for Victoria (tenders.vic.gov.au) / own website",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via a WebSearch on health-service retail/facilities tenders (Albury Hospital Campus food & beverage operator). AWH maintains its own supply/tender information page and also lists on Buying for Victoria.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Cross-border (Albury NSW / Wodonga VIC) Victorian statutory health service; publishes tenders on its own page and via Buying for Victoria.",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "seen_dates": [
+        "2026-08-17"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
