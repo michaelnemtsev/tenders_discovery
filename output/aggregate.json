@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-17",
+  "generated": "2026-08-18",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -54,33 +54,33 @@
     "2026-08-14",
     "2026-08-15",
     "2026-08-16",
-    "2026-08-17"
+    "2026-08-17",
+    "2026-08-18"
   ],
-  "run_count": 54,
+  "run_count": 55,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-17",
-  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept for opportunities published or updated in the last 7 days, together with a Tier 2 sample (water GBEs - Sydney/Melbourne/SA Water; electricity networks - Transgrid/Ausgrid/Powerlink/Western Power; universities; ports/airports/rail authorities; local government via VendorPanel; public health) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; proxy status reports selective=false, an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Verification via search saved three false positives: the NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), the eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (closed 3 Dec 2025), and the Northern Health 'AI-Powered Medical Scribe' RFI (closed 19 May 2025) were all surfaced by search but confirmed already closed and correctly excluded rather than listed. Two genuinely new, not-previously-seen opportunities were captured at headline level (Children's Health Queensland Digital AI Scribe REOI; Albury Wodonga Health food & beverage retail operator RFT); their publish/closing dates, IDs and open-status could not be confirmed under the egress block and are flagged pending detail. Four new buyer-originated sources were discovered (High Speed Rail Authority, Children's Health Queensland HHS, Rail Projects Victoria, Albury Wodonga Health).",
+  "latest_run": "2026-08-18",
+  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept via the WebSearch summariser for opportunities published or updated in the last 7 days, alongside a Tier 2 sample (water GBEs - Sydney/Melbourne/SA/Queensland Urban Utilities; electricity/rail networks; universities/TAFEs; ports/airports/rail authorities; local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro, plus a new defence-prime sample). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au again this run; proxy status reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Two opportunities were captured at headline level: the Commonwealth Remote Air Services Subsidy (RASS) Scheme ATM (PR10031930, service commencing Sep/Oct 2026) and the Wingecarribee Shire Council 'Christmas in the Highlands 2026' EOI (event performers/production/lighting suppliers); both had their existence corroborated but their exact publish/closing dates could not be confirmed under the egress block and are flagged pending detail. Verification via search saved false positives: the Department of Finance 'GovAI Future Expansion' REOI (FIN-2025-26-00616) was surfaced but the only closing date found (24-Jul-2026) is already past, so it was excluded not listed; and the DTA 'Digital Marketplace Panel 2 Q2 2025/2026 Refresh' (DTA-ICT-72326) names a FY2025/26-Q2 window (late 2025) that has closed. Four genuinely new buyer-originated sources were discovered (Queensland Urban Utilities SRM portal; Sydney Metro supplier channel via SAP Ariba/Avetta; Hanwha Defence Australia industry portal via BenchOn; Local Buy / LGAQ procurement via VendorPanel).",
   "latest_run_metadata": {
-    "run_date": "2026-08-17",
-    "coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept for opportunities published or updated in the last 7 days, together with a Tier 2 sample (water GBEs - Sydney/Melbourne/SA Water; electricity networks - Transgrid/Ausgrid/Powerlink/Western Power; universities; ports/airports/rail authorities; local government via VendorPanel; public health) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; proxy status reports selective=false, an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Verification via search saved three false positives: the NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), the eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (closed 3 Dec 2025), and the Northern Health 'AI-Powered Medical Scribe' RFI (closed 19 May 2025) were all surfaced by search but confirmed already closed and correctly excluded rather than listed. Two genuinely new, not-previously-seen opportunities were captured at headline level (Children's Health Queensland Digital AI Scribe REOI; Albury Wodonga Health food & beverage retail operator RFT); their publish/closing dates, IDs and open-status could not be confirmed under the egress block and are flagged pending detail. Four new buyer-originated sources were discovered (High Speed Rail Authority, Children's Health Queensland HHS, Rail Projects Victoria, Albury Wodonga Health).",
-    "sources_checked": 26,
+    "run_date": "2026-08-18",
+    "coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, tenders.vic, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT) were swept via the WebSearch summariser for opportunities published or updated in the last 7 days, alongside a Tier 2 sample (water GBEs - Sydney/Melbourne/SA/Queensland Urban Utilities; electricity/rail networks; universities/TAFEs; ports/airports/rail authorities; local government via VendorPanel) and the mandatory Tier 3 corporate e-sourcing check (SAP Ariba Discovery, BHP, Woodside, Santos, Fortescue, NBN Co, Australia Post, Snowy Hydro, plus a new defence-prime sample). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (confirmed EGRESS_BLOCKED on www.tenders.gov.au again this run; proxy status reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch page-summariser. Two opportunities were captured at headline level: the Commonwealth Remote Air Services Subsidy (RASS) Scheme ATM (PR10031930, service commencing Sep/Oct 2026) and the Wingecarribee Shire Council 'Christmas in the Highlands 2026' EOI (event performers/production/lighting suppliers); both had their existence corroborated but their exact publish/closing dates could not be confirmed under the egress block and are flagged pending detail. Verification via search saved false positives: the Department of Finance 'GovAI Future Expansion' REOI (FIN-2025-26-00616) was surfaced but the only closing date found (24-Jul-2026) is already past, so it was excluded not listed; and the DTA 'Digital Marketplace Panel 2 Q2 2025/2026 Refresh' (DTA-ICT-72326) names a FY2025/26-Q2 window (late 2025) that has closed. Four genuinely new buyer-originated sources were discovered (Queensland Urban Utilities SRM portal; Sydney Metro supplier channel via SAP Ariba/Avetta; Hanwha Defence Australia industry portal via BenchOn; Local Buy / LGAQ procurement via VendorPanel).",
+    "sources_checked": 27,
     "tenders_found": 2,
     "new_sources_found": 4,
     "entries_pending_detail": 2,
     "gaps": [
       "MAJOR CONSTRAINT (repeat of every prior run): the environment's network egress proxy blocked WebFetch to ALL external tender domains. Confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false and no tool scoping, i.e. an organisation-wide egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. The proxy README explicitly instructs not to retry or route around policy denials, so they are reported here rather than bypassed. Consequence: no detail page or specification document could be opened; deliverables, requirements, evaluation criteria, document lists, exact dates and contacts could not be extracted for any opportunity this run.",
-      "Because detail pages could not be opened, the two captured opportunities (CHQ Digital AI Scribe REOI; Albury Wodonga Health F&B retail operator RFT) are headline-level only. Their tender IDs, publish/closing dates, and confirmed open-status could not be verified and are set to null; existence is corroborated only by the WebSearch summariser and aggregator discovery signals (govmarket.com.au / australiantenders.com.au). Both are counted in entries_pending_detail and should be re-verified on a run with working egress or an authenticated portal session.",
-      "Three opportunities surfaced by search were confirmed ALREADY CLOSED and deliberately excluded (not listed as tenders): NSW Health 'Respectful Maternity Care Training' RFT (closed 21 May 2026), eHealth NSW 'AI Scribe Software Supplier Panel' HT25057 (published 12 Nov 2025, closed 3 Dec 2025), and Northern Health (VIC) 'AI-Powered Medical Scribe Solutions Exploration' RFI (closed 19 May 2025). Recorded here so future runs do not re-chase them as new.",
-      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions could be validated this run (deferred).",
-      "AusTender: several current ATMs were visible in search result lists but could not be opened to confirm scope or dates, e.g. EST09297 (Palmer Barracks Infrastructure & Civil Works, Defence WA - questions window Dec 2025-Jan 2026 suggests it may already be closed), ATM_2026_6551, ATM_2026_6026 / RFI_ATM_2026_6026, and JSD/NOT/74800/1. Deferred rather than captured at ID-only level or with guessed dates.",
-      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery, BHP, Woodside, Santos, Fortescue, NBN Co (SAP Ariba), Australia Post and Snowy Hydro were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run.",
-      "An open airport 'Traffic Management Services' opportunity (deadline 21 Aug 2026) was surfaced by search but without a confirmable buyer identity, tender ID or source URL, so it was not captured (insufficient to attribute responsibly)."
+      "Because detail pages could not be opened, the two captured opportunities (Commonwealth RASS Scheme ATM PR10031930; Wingecarribee Shire Council 'Christmas in the Highlands 2026' EOI) are headline-level only. Their tender publish/closing dates and confirmed open-status could not be verified and are set to null; existence is corroborated only by the WebSearch summariser (AusTender Current ATM View for RASS; the council's own Highlands Christmas page plus an aggregator listing for the EOI). Both are counted in entries_pending_detail and should be re-verified on a run with working egress or an authenticated portal session.",
+      "Opportunities surfaced by search but deliberately EXCLUDED as already closed / not confirmable (not listed as tenders): Department of Finance 'REOI GovAI Future Expansion Opportunities' FIN-2025-26-00616 (only closing date found was 24-Jul-2026, already past); DTA 'Digital Marketplace Panel 2 Q2 2025/2026 Refresh' DTA-ICT-72326 (FY2025/26-Q2 refresh window = late 2025, closed); and an unattributed 'Surgical Supplies' tender with offers due 21-Aug-2026 5pm Cairns time (likely a Queensland HHS opportunity but no confirmable buyer identity, tender ID or source URL, so not captured). Recorded here so future runs neither re-chase closed items nor attribute the Cairns item irresponsibly.",
+      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions (beyond the two captured) could be validated this run (deferred).",
+      "AusTender: several current ATMs were visible in search result lists but could not be opened to confirm scope or dates, e.g. ATM_2026_6551, RFI_ATM_2026_6026, DCET2026-01A, ATM_2026_3048, CON0003962, ATM24/3609. Deferred rather than captured at ID-only level or with guessed dates.",
+      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery, BHP, Woodside, Santos, Fortescue, NBN Co (SAP Ariba), Australia Post and Snowy Hydro were checked. All are registration- or invitation-gated with no publicly visible individual opportunity; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run. The newly-discovered Hanwha Defence Australia and Sydney Metro channels are likewise registration/invitation-gated and are recorded as sources, not opportunities."
     ],
     "recommended_seed_additions": [
-      "High Speed Rail Authority (HSRA) - hsra.gov.au - Commonwealth statutory authority calling EOIs for High Speed Rail Line 1 major packages (twin TBM tunnels, underground station) via AusTender; its industry-update page flags upcoming EOIs early.",
-      "Children's Health Queensland Hospital and Health Service (CHQ) - childrens.health.qld.gov.au - Queensland HHS running its own digital-health procurements (e.g. AI Scribe REOI) via QTenders.",
-      "Rail Projects Victoria (Major Transport Infrastructure Authority) - inviting EOIs for Melbourne Airport Rail (MAR) works via Buying for Victoria (tenders.vic.gov.au).",
-      "Albury Wodonga Health - awh.org.au/about-us/supply-tender-information - cross-border (NSW/VIC) health service with its own supply/tender page, also lists on Buying for Victoria."
+      "Queensland Urban Utilities (Urban Utilities) - urbanutilities.com.au/about-us/information-for-suppliers/becoming-a-supplier - south-east Queensland water/wastewater GBE running its own supplier onboarding via an SRM Portal; not listed on the core state portal.",
+      "Sydney Metro - runs open tenders via its SAP Ariba Supplier portal with contractor compliance managed on Avetta; most opportunities are by invitation, but it is a distinct high-value NSW transport buyer worth monitoring alongside NSW eTendering.",
+      "Hanwha Defence Australia industry portal (via BenchOn) - hanwha-defence.com.au/work-with-us - defence prime advertising ~A$17bn of supply-chain/work packages to Australian SMEs through a registration-gated portal; a new construction/defence-subcontract discovery channel.",
+      "Local Buy (Local Government Association of Queensland) - localbuy.net.au / suppliers.localbuyportal.com - LGAQ procurement arrangements used by Queensland councils, GOCs, utilities and schools (also NT/TAS), with opportunities tendered via VendorPanel; a buyer-side aggregation channel distinct from individual council sites."
     ]
   },
   "months": [
@@ -96,7 +96,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 110,
+      "new_tenders": 112,
       "active_tenders": 0
     }
   ],
@@ -17508,8 +17508,8 @@
         "2026-08-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AlburyWodongaHealth:albury-hospital-campus-fb-retail-operator-rft",
@@ -17567,6 +17567,134 @@
       "last_seen": "2026-08-17",
       "seen_dates": [
         "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:PR10031930-remote-air-services-subsidy-rass-scheme",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "PR10031930",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/caebbda0-a773-4c9b-b19a-10483b2f0505",
+      "access": "public",
+      "title": "Remote Air Services Subsidy (RASS) Scheme",
+      "buyer": "Department of Infrastructure, Transport, Regional Development, Communications and the Arts",
+      "buyer_url": "https://www.infrastructure.gov.au/department/tenders",
+      "category": "Air transport / aviation services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Commonwealth approach to market (Current ATM on AusTender) for the Remote Air Services Subsidy Scheme, which subsidises regular air services carrying passengers, freight, mail and essential goods to remote and isolated communities across Australia. Search results indicate subsidised services commencing 1 September 2026 in some regions and 1 October 2026 in Region 7.",
+      "deliverables_summary": "Provision of subsidised regular air services (passengers, freight, mail and essential goods/foodstuffs) to eligible remote and isolated communities under the RASS Scheme, by region. Full deliverables, route/region lists and service standards could not be extracted because the ATM detail page and documents are behind the environment's egress block.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "2026-09-01",
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/caebbda0-a773-4c9b-b19a-10483b2f0505",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Remote and isolated communities across Australia (multiple regions incl. Region 7)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "aviation",
+        "remote-services",
+        "subsidy",
+        "headline-only"
+      ],
+      "first_seen": "2026-08-18",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; the RASS Scheme is a program of the Department of Infrastructure, Transport, Regional Development, Communications and the Arts, so the buyer-originated source is AusTender. Detail page could not be opened due to the egress block.",
+      "notes": "Headline-level only. contract_start (2026-09-01) is inferred from search snippets stating services commence 1 September 2026 (Region 7 from 1 October 2026) and should be treated as indicative until the ATM page can be read. Publish date, closing date/time, value, documents and contacts are unconfirmed and set to null/blank pending a detail pass. Counted in entries_pending_detail.",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "WingecarribeeShireCouncil:christmas-in-the-highlands-2026-eoi",
+      "source_name": "Wingecarribee Shire Council - Tenders (via buy.nsw / NSW eTendering)",
+      "source_url": "https://www.wsc.nsw.gov.au/Places/Our-Community/Highlands-Christmas",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales - Wingecarribee Shire (Southern Highlands)",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.wsc.nsw.gov.au/Places/Our-Community/Highlands-Christmas",
+      "access": "public",
+      "title": "Call for Expressions of Interest - Christmas in the Highlands 2026",
+      "buyer": "Wingecarribee Shire Council",
+      "buyer_url": "https://www.wsc.nsw.gov.au",
+      "category": "Events / entertainment / creative services",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Wingecarribee Shire Council has called for expressions of interest from suppliers to deliver components of its 'Christmas in the Highlands 2026' program, including performers, musicians and entertainers, community groups, schools and artists, children's activity providers, event production suppliers and lighting specialists.",
+      "deliverables_summary": "Supply of event delivery services for the Council's 2026 Christmas program: live entertainment and performance, children's/community activities, event production, and event lighting. Precise packages, quantities, dates and terms could not be extracted because the EOI detail/lodgement page is behind the environment's egress block.",
+      "key_deliverables": [
+        "Performers, musicians and entertainers",
+        "Community groups, schools and artists",
+        "Children's activity providers",
+        "Event production suppliers",
+        "Lighting specialists"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Open EOI (suppliers, performers, community groups and event providers)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "",
+      "lodgement_url": "",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Wingecarribee Shire (Southern Highlands), NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "local-government",
+        "nsw",
+        "events",
+        "eoi",
+        "headline-only"
+      ],
+      "first_seen": "2026-08-18",
+      "detail_source": "",
+      "reasoning": "Surfaced as an aggregator listing (australiantenders.com.au) then confirmed against the buyer's own site (wsc.nsw.gov.au Highlands Christmas program page) - the aggregator was used only as a discovery signal and the buyer-originated council source is recorded here. Wingecarribee Shire Council is an already-known source; this is a newly-observed opportunity from it.",
+      "notes": "Headline-level only. The scope list (performers, entertainers, community groups, children's activities, event production, lighting) is taken from search summaries of the EOI; closing date/time, tender ID, lodgement mechanics and contacts could not be confirmed under the egress block and are left null/blank pending a detail pass. Counted in entries_pending_detail.",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -21332,27 +21460,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender",
+      "source_name": "AusTender (Commonwealth)",
       "source_url": "https://www.tenders.gov.au",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm/search",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; re-confirmed live this run with two current ATMs (GovCMS, CSIRO).",
+      "how_discovered": "Canonical Tier 1 source; re-checked this run for the RASS Scheme ATM (PR10031930).",
       "recommended_check_frequency": "daily",
-      "notes": "Direct WebFetch egress-blocked this run; read via search summariser.",
+      "notes": "Egress-blocked for direct WebFetch this run; enumerated via the WebSearch summariser only.",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-18",
       "seen_dates": [
         "2026-07-26",
-        "2026-08-15"
+        "2026-08-15",
+        "2026-08-18"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -22990,8 +23119,8 @@
         "2026-08-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Children's Health Queensland Hospital and Health Service (CHQ)",
@@ -23012,8 +23141,8 @@
         "2026-08-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Rail Projects Victoria (Major Transport Infrastructure Authority)",
@@ -23034,8 +23163,8 @@
         "2026-08-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Albury Wodonga Health - Supply & Tender Information",
@@ -23054,6 +23183,116 @@
       "last_seen": "2026-08-17",
       "seen_dates": [
         "2026-08-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Queensland Urban Utilities - Becoming a supplier (SRM Portal)",
+      "source_url": "https://urbanutilities.com.au/about-us/information-for-suppliers/becoming-a-supplier",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland (South-East Queensland)",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Queensland water GBE procurement channels not present in the known-source list; confirmed the buyer's own 'Becoming a supplier' page describing its SRM Portal for supplier registration and contract management.",
+      "recommended_check_frequency": "monthly",
+      "notes": "SEQ water/wastewater government-owned entity. Contract opportunities are managed through an SRM Portal (registration-gated); some opportunities may also appear via Queensland Government / Local Buy channels. Not carried on the core state portal, so worth monitoring directly.",
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Sydney Metro - Suppliers (SAP Ariba Supplier Portal / Avetta)",
+      "source_url": "https://www.sydneymetro.info/industry/opportunities",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for Sydney Metro procurement/supplier engagement; results indicate open tenders are communicated via a SAP Ariba Supplier portal with contractor compliance managed on Avetta, and that most Metro tenders are by invitation.",
+      "recommended_check_frequency": "weekly",
+      "notes": "High-value NSW transport buyer. Registration/invitation-gated (SAP Ariba + Avetta); major works are also frequently advertised via NSW eTendering and ICN Gateway. source_url is the industry/opportunities landing area; exact URL to be confirmed on a run with working egress.",
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Hanwha Defence Australia - Industry Portal (via BenchOn)",
+      "source_url": "https://www.hanwha-defence.com.au/work-with-us",
+      "source_type": "construction-subcontract",
+      "jurisdiction": "Australia (Commonwealth defence supply chain)",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for defence-prime supplier portals absent from the known-source list; Janes and Australian Defence Magazine confirm Hanwha Defence Australia launched an online industry portal (delivered with BenchOn) advertising work packages and supply-chain opportunities to Australian businesses.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Defence prime (AS21 Redback IFV, K9/AS9 programs). Registration-gated portal on BenchOn connecting SMEs to work packages across programs (reported ~A$17bn of contracts). Individual packages are not publicly visible; recorded as a source, not fabricated as opportunities. A useful seed to find sibling defence-prime supplier portals.",
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Local Buy (Local Government Association of Queensland) - Supplier opportunities",
+      "source_url": "https://www.localbuy.net.au/suppliers",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland (and NT/TAS)",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch while checking Queensland Urban Utilities procurement surfaced Local Buy (LGAQ's procurement services company); confirmed it publishes procurement opportunities and lets suppliers tender via VendorPanel, used by QLD councils, GOCs, utilities and schools.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-side arrangement operator for Queensland local government and related entities; opportunities are lodged through VendorPanel (suppliers.localbuyportal.com). Distinct from individual council sites and from the Queensland Government Supplier Portal; treat as a legitimate buyer-originated channel rather than a paid aggregator.",
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Wingecarribee Shire Council - Tenders",
+      "source_url": "https://www.wsc.nsw.gov.au",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales - Wingecarribee Shire",
+      "platform": "custom",
+      "access_method": "html",
+      "is_new_source": false,
+      "feed_or_api_url": null,
+      "confidence": "high",
+      "how_discovered": "Already-known local-government source; re-checked this run as the buyer behind the 'Christmas in the Highlands 2026' EOI.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Southern Highlands NSW council. Publishes EOIs/tenders on its own site and via buy.nsw / NSW eTendering; detail pages egress-blocked this run.",
+      "first_seen": "2026-08-18",
+      "last_seen": "2026-08-18",
+      "seen_dates": [
+        "2026-08-18"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

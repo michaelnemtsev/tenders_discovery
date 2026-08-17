@@ -64,7 +64,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "aviation", "remote-services", "subsidy", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "aviation",
+        "remote-services",
+        "subsidy",
+        "headline-only"
+      ],
       "first_seen": "2026-08-18",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; the RASS Scheme is a program of the Department of Infrastructure, Transport, Regional Development, Communications and the Arts, so the buyer-originated source is AusTender. Detail page could not be opened due to the egress block.",
@@ -118,7 +124,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "events", "eoi", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "events",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-18",
       "detail_source": "",
       "reasoning": "Surfaced as an aggregator listing (australiantenders.com.au) then confirmed against the buyer's own site (wsc.nsw.gov.au Highlands Christmas program page) - the aggregator was used only as a discovery signal and the buyer-originated council source is recorded here. Wingecarribee Shire Council is an already-known source; this is a newly-observed opportunity from it.",
