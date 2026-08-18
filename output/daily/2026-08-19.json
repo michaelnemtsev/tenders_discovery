@@ -67,7 +67,15 @@
       "contact_name": "Frank Tambosis, Senior Procurement Business Partner",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["panel", "ICT", "AI", "data", "digital", "local-government", "NSW"],
+      "tags": [
+        "panel",
+        "ICT",
+        "AI",
+        "data",
+        "digital",
+        "local-government",
+        "NSW"
+      ],
       "first_seen": "2026-08-19",
       "detail_source": "WebSearch summary of Inner West Council current-tenders / VendorPanel innerwest listing",
       "reasoning": "Discovered via WebSearch of NSW council EOIs closing Aug/Sep 2026; opportunity is buyer-originated, published by Inner West Council on VendorPanel (a buyer-chosen e-sourcing platform, not an aggregator).",
@@ -120,7 +128,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["RFI", "market-sounding", "customer-engagement", "water", "GBE", "NSW"],
+      "tags": [
+        "RFI",
+        "market-sounding",
+        "customer-engagement",
+        "water",
+        "GBE",
+        "NSW"
+      ],
       "first_seen": "2026-08-19",
       "detail_source": "WebSearch summary of buy.nsw opportunity RFI-2009090 (Sydney Water Corporation)",
       "reasoning": "Discovered via WebSearch for Sydney Water current tenders; the opportunity is buyer-originated, published by Sydney Water on the NSW Government buy.nsw portal.",
@@ -171,7 +186,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["construction", "transport", "bus-interchange", "infrastructure", "NSW"],
+      "tags": [
+        "construction",
+        "transport",
+        "bus-interchange",
+        "infrastructure",
+        "NSW"
+      ],
       "first_seen": "2026-08-19",
       "detail_source": "WebSearch summary of Transport for NSW tenders (buy.nsw / NSW eTendering)",
       "reasoning": "Discovered via WebSearch for NSW transport tenders closing Aug/Sep 2026; opportunity is buyer-originated, published by Transport for NSW on NSW eTendering/buy.nsw.",
@@ -222,7 +243,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["construction", "rail", "metro", "corridor-restoration", "WSA", "NSW"],
+      "tags": [
+        "construction",
+        "rail",
+        "metro",
+        "corridor-restoration",
+        "WSA",
+        "NSW"
+      ],
       "first_seen": "2026-08-19",
       "detail_source": "WebSearch summary of Sydney Metro / Transport for NSW tender listings",
       "reasoning": "Discovered via WebSearch for NSW transport/metro tenders; opportunity is buyer-originated (Sydney Metro), advertised via NSW eTendering with contracting through Sydney Metro's SAP Ariba supplier channel.",
@@ -270,7 +298,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["RFP", "ICT", "IT-delivery", "university", "SA"],
+      "tags": [
+        "RFP",
+        "ICT",
+        "IT-delivery",
+        "university",
+        "SA"
+      ],
       "first_seen": "2026-08-19",
       "detail_source": "",
       "reasoning": "Surfaced as a discovery signal via an aggregator index (australiantenders.com.au) listing University of Adelaide RFPs; the buyer-originated source is the University of Adelaide's own e-tendering portal (illion TenderLink), which is recorded here rather than the aggregator.",
