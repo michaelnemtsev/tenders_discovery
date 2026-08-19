@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19",
+  "generated": "2026-08-20",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -56,30 +56,30 @@
     "2026-08-16",
     "2026-08-17",
     "2026-08-18",
-    "2026-08-19"
+    "2026-08-19",
+    "2026-08-20"
   ],
-  "run_count": 56,
+  "run_count": 57,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-19",
-  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) were swept via the WebSearch page-summariser for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders), water GBEs (Sydney Water, Melbourne Water, SA Water), universities (Adelaide, and the health sector), and NSW transport authorities (Transport for NSW, Sydney Metro). The mandatory Tier 3 corporate e-sourcing check covered SAP Ariba / SAP Business Network Discovery and generic Coupa/Jaggaer/Felix corporate channels. As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. Five open, buyer-corroborated opportunities were captured this run: Inner West Council RFT-43 Preferred Supplier Panel for Data/AI/Automation/Integration & Digital Solutions (EOI closing 30-Aug-2026, VendorPanel, public, good detail); Sydney Water RFI-2009090 Strategic Customer Engagement Program 2026-2029 (market sounding on buy.nsw, deliverables described, closing date not confirmable); Transport for NSW construction of the Macquarie Park Precinct & Bus Interchange (RFT closing 11-Sep-2026); Sydney Metro WSA Finalisation and Auxiliary Works (FAW) Corridor Restoration Works Seed Procurement (RFT closing 24-Aug-2026); and University of Adelaide RFP to Embed Sustainable Enterprise Delivery Capability for AU IT (active as of 20-Aug-2026, surfaced only via an aggregator, headline-level). One genuinely new buyer-originated source was discovered and recorded: the University of Adelaide / Adelaide University E-Tendering portal (illion TenderLink), noting the Jan-2026 amalgamation of UniSA and the University of Adelaide into 'Adelaide University'. Verification via search prevented false positives: the Transport for NSW Avoca Drive Upgrade EOI (closed 11-Aug-2026), a Queensland Health generic-pharmaceuticals RFQ (closed 18-Mar-2026) and a University of Adelaide Sustainability Reporting Assurance RFP (closed 29-Jul-2026) were all found already closed and excluded; and an unattributed Queensland 'Surgical Supplies' ITO (offers due 21-Aug-2026) again lacked a confirmable buyer identity/ID/URL and was not captured. The Commonwealth RASS Scheme ATM (PR10031930), captured on the 18-Aug run and still current, was not re-listed today (unchanged).",
+  "latest_run": "2026-08-20",
+  "latest_coverage_summary": "Tier 1 was swept via the WebSearch page-summariser across the Commonwealth (AusTender) and every state/territory portal (buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA/Buying4SA, Tenders Tasmania, NT QTOL, ACT Tenders), filtered for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders, City of Launceston), water GBEs (Sydney/Melbourne/SA Water, Greater Western Water, Water Corporation WA), universities (UTS, Flinders, ANU, JCU, University of Adelaide) and DevelopmentWA. The mandatory Tier 3 corporate check covered SAP Ariba / SAP Business Network Discovery, EstimateOne (construction subcontract), and private-health procurement (Ramsay, Healthscope, St Vincent's). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. One genuinely new, open, buyer-corroborated opportunity was captured this run: the Bays West International Design Competition EOI (buy.nsw / NSW Government, Bays West Delivery Authority with Government Architect NSW; Stage-1 global EOI closing 21-Aug-2026 3pm AEST, well-detailed from official NSW Government sources). One genuinely new buyer-originated source was discovered: the Bays West Delivery Authority (a NSW Government delivery authority not previously in the known-source set). Most other confirmable open items surfaced this run were already captured on prior runs and are unchanged: Commonwealth RASS PR10031930 (still current), Services Australia RFT 1001032028 (Disability Support Pension medical assessments, closing 21-Aug-2026), Sydney Harbour Bridge blasting/vacuuming equipment RFT on buy.nsw, City of Launceston City Heart Wayfinding & Amenity Lighting, and Water Corporation WA 2026 Engineering Design Services Panel market sounding — none re-listed. Note: the buy.nsw Sydney Harbour Bridge blasting/vacuuming RFT was surfaced this run with a closing date of 31-Aug-2026 15:00, whereas prior runs recorded 19-Aug-2026; recorded in gaps for reconciliation rather than creating a third dedup variant.",
   "latest_run_metadata": {
-    "run_date": "2026-08-19",
-    "coverage_summary": "Tier 1 Commonwealth (AusTender) and all state/territory portals (buy.nsw/tenders.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) were swept via the WebSearch page-summariser for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders), water GBEs (Sydney Water, Melbourne Water, SA Water), universities (Adelaide, and the health sector), and NSW transport authorities (Transport for NSW, Sydney Metro). The mandatory Tier 3 corporate e-sourcing check covered SAP Ariba / SAP Business Network Discovery and generic Coupa/Jaggaer/Felix corporate channels. As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain tested (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. Five open, buyer-corroborated opportunities were captured this run: Inner West Council RFT-43 Preferred Supplier Panel for Data/AI/Automation/Integration & Digital Solutions (EOI closing 30-Aug-2026, VendorPanel, public, good detail); Sydney Water RFI-2009090 Strategic Customer Engagement Program 2026-2029 (market sounding on buy.nsw, deliverables described, closing date not confirmable); Transport for NSW construction of the Macquarie Park Precinct & Bus Interchange (RFT closing 11-Sep-2026); Sydney Metro WSA Finalisation and Auxiliary Works (FAW) Corridor Restoration Works Seed Procurement (RFT closing 24-Aug-2026); and University of Adelaide RFP to Embed Sustainable Enterprise Delivery Capability for AU IT (active as of 20-Aug-2026, surfaced only via an aggregator, headline-level). One genuinely new buyer-originated source was discovered and recorded: the University of Adelaide / Adelaide University E-Tendering portal (illion TenderLink), noting the Jan-2026 amalgamation of UniSA and the University of Adelaide into 'Adelaide University'. Verification via search prevented false positives: the Transport for NSW Avoca Drive Upgrade EOI (closed 11-Aug-2026), a Queensland Health generic-pharmaceuticals RFQ (closed 18-Mar-2026) and a University of Adelaide Sustainability Reporting Assurance RFP (closed 29-Jul-2026) were all found already closed and excluded; and an unattributed Queensland 'Surgical Supplies' ITO (offers due 21-Aug-2026) again lacked a confirmable buyer identity/ID/URL and was not captured. The Commonwealth RASS Scheme ATM (PR10031930), captured on the 18-Aug run and still current, was not re-listed today (unchanged).",
-    "sources_checked": 22,
-    "tenders_found": 5,
+    "run_date": "2026-08-20",
+    "coverage_summary": "Tier 1 was swept via the WebSearch page-summariser across the Commonwealth (AusTender) and every state/territory portal (buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA/Buying4SA, Tenders Tasmania, NT QTOL, ACT Tenders), filtered for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders, City of Launceston), water GBEs (Sydney/Melbourne/SA Water, Greater Western Water, Water Corporation WA), universities (UTS, Flinders, ANU, JCU, University of Adelaide) and DevelopmentWA. The mandatory Tier 3 corporate check covered SAP Ariba / SAP Business Network Discovery, EstimateOne (construction subcontract), and private-health procurement (Ramsay, Healthscope, St Vincent's). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. One genuinely new, open, buyer-corroborated opportunity was captured this run: the Bays West International Design Competition EOI (buy.nsw / NSW Government, Bays West Delivery Authority with Government Architect NSW; Stage-1 global EOI closing 21-Aug-2026 3pm AEST, well-detailed from official NSW Government sources). One genuinely new buyer-originated source was discovered: the Bays West Delivery Authority (a NSW Government delivery authority not previously in the known-source set). Most other confirmable open items surfaced this run were already captured on prior runs and are unchanged: Commonwealth RASS PR10031930 (still current), Services Australia RFT 1001032028 (Disability Support Pension medical assessments, closing 21-Aug-2026), Sydney Harbour Bridge blasting/vacuuming equipment RFT on buy.nsw, City of Launceston City Heart Wayfinding & Amenity Lighting, and Water Corporation WA 2026 Engineering Design Services Panel market sounding — none re-listed. Note: the buy.nsw Sydney Harbour Bridge blasting/vacuuming RFT was surfaced this run with a closing date of 31-Aug-2026 15:00, whereas prior runs recorded 19-Aug-2026; recorded in gaps for reconciliation rather than creating a third dedup variant.",
+    "sources_checked": 24,
+    "tenders_found": 1,
     "new_sources_found": 1,
-    "entries_pending_detail": 4,
+    "entries_pending_detail": 0,
     "gaps": [
-      "MAJOR CONSTRAINT (repeat of every prior run): the environment's network egress proxy blocked WebFetch to ALL external tender domains. Re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; a direct curl CONNECT to the same host also returned proxy 403. The proxy status endpoint reports enabled=true, selective=false, toolScoped=false, i.e. an organisation-wide egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. Per the proxy README, policy denials are reported rather than routed around. Consequence: no detail page or specification document could be opened; deliverables, requirements, evaluation criteria, document lists, exact dates and contacts could not be extracted directly for any opportunity this run and are limited to what the WebSearch summariser surfaced.",
-      "Because detail pages could not be opened, four of the five captured opportunities are headline-level or partially-detailed only: Sydney Water RFI-2009090 (deliverables described in search but no confirmable closing date, questions-due, contacts or document list); Transport for NSW Macquarie Park Precinct & Bus Interchange (closing 11-Sep-2026 corroborated but full scope, value, documents and contacts not readable); Sydney Metro WSA FAW Corridor Restoration Works Seed Procurement (closing 24-Aug-2026 corroborated but scope/value/documents not readable); University of Adelaide 'Embed Sustainable Enterprise Delivery Capability for AU IT' RFP (surfaced only via an aggregator index, no confirmable closing date, buyer-source URL detail, value or documents). All four are counted in entries_pending_detail and should be re-verified on a run with working egress or an authenticated portal session.",
-      "Opportunities surfaced by search but deliberately EXCLUDED as already closed or not confirmable (not listed as tenders): Transport for NSW 'Avoca Drive Upgrade' GC21 EOI (closing date 11-Aug-2026, already past); Queensland Health generic-pharmaceuticals supply-arrangement RFQ (closed 18-Mar-2026); University of Adelaide 'Sustainability Reporting Assurance Services' RFP (closed 29-Jul-2026); and an unattributed Queensland 'Surgical Supplies' ITO with offers due 21-Aug-2026 (no confirmable buyer identity, tender ID or buyer-source URL — the same item was flagged on the prior run and remains unattributable). Recorded here so future runs neither re-chase closed items nor attribute the surgical-supplies item irresponsibly.",
-      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly under the egress block; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions could be validated this run (deferred to a run with working egress).",
-      "AusTender: the Current ATM List and several current ATMs were visible in search result lists but could not be opened to confirm scope or dates, e.g. ATM_2026_6026, RFI_ATM_2026_6026, ATM_2026_3048, and the 'ASCA EDT P2ISR RFP'. Deferred rather than captured at ID-only level or with guessed dates.",
-      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery and generic Coupa/Jaggaer/Felix corporate channels were checked. All are registration- or invitation-gated with no publicly visible individual opportunity this run; recorded only as discovered_sources on prior runs, never fabricated as tenders. No publicly-advertised corporate RFx was visible this run.",
-      "The Commonwealth notice of the AusTender Supplier Portal opening to all businesses from 1 July 2026 was re-surfaced; the relevant portals ('Australian Government Supplier Portal' / 'AusTender GovPanels / Supplier Portal') are already in the known-source set, so it is not recorded as a new source."
+      "MAJOR CONSTRAINT (repeat of every prior run): the environment's network egress proxy blocked WebFetch to ALL external tender domains. Re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, toolScoped=false, i.e. an organisation-wide egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. Per the proxy README, policy denials are reported rather than routed around. Consequence: no detail page or specification document could be opened; deliverables, requirements, evaluation criteria, document lists, exact contacts and lodgement URLs could not be extracted directly for any opportunity this run and are limited to what the WebSearch summariser and official NSW Government pages surfaced.",
+      "Aggregator date noise: several search snippets sourced from paid aggregators (australiantenders.com.au and similar) returned implausible/future publish dates (e.g. ACT 'PMCA New National Convention and Entertainment Centre' shown published 25-Aug-2026, ACT '2 Change Managers' shown 15-Sep-2026, Tasmania 'Stormwater Risk and Investment Pathway Analysis' shown 21-Aug-2026 — all at or after the run date). These were treated as unconfirmable and NOT captured as tenders, since the buyer-originated source could not be opened to verify dates and scope. Deferred to a run with working egress.",
+      "buy.nsw Sydney Harbour Bridge 'Supply, Install and Service of Blasting and Vacuuming Equipment' RFT: two searches this run reported a closing date of 31-Aug-2026 15:00, but prior runs recorded 19-Aug-2026 for what appears to be the same tender. The detail page could not be opened to confirm whether the closing date was extended or the earlier record was wrong. Not re-listed this run to avoid creating a third dedup variant of an already-duplicated record; flagged here so a future run with working egress (or a human) can reconcile the existing entries.",
+      "Opportunities surfaced by search but deliberately EXCLUDED as already closed or not confirmable (not listed as tenders): AusTender ATM_2026_6026 'National Solar Panel Recycling Pilot' (DCCEEW, closed 24-Apr-2026); buy.nsw 'Jervis Bay Road Intersection Upgrade – Connecting with Country artwork' (closing 19-Aug-2026, past as of run date); buy.nsw 'Old Nowra Bridge zinc chromate steel recycling' (closed 11-Aug-2026); and the aggregator-only future-dated ACT/Tasmania items noted above.",
+      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly under the egress block; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions (beyond items already captured on prior runs) could be validated this run. Deferred to a run with working egress.",
+      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery, EstimateOne, and private-health procurement (Ramsay Health Care, Healthscope, St Vincent's Health Australia) were checked. All are registration- or invitation-gated with no publicly visible individual opportunity this run; the relevant portals are already recorded in discovered_sources on prior runs and are not fabricated as tenders. No publicly-advertised corporate RFx was visible this run."
     ],
     "recommended_seed_additions": [
-      "University of Adelaide / Adelaide University E-Tendering (illion TenderLink) - portal.tenderlink.com/adelaideuni and portal.tenderlink.com/adelaideuniversity - the university runs its own e-tendering portal separate from Tenders SA; note the Jan-2026 amalgamation of the University of South Australia and the University of Adelaide into 'Adelaide University', which is changing how suppliers engage from 1 Jan 2026. Worth monitoring weekly alongside Tenders SA."
+      "Bays West Delivery Authority (NSW Government) — https://www.nsw.gov.au/departments-and-agencies/bays-west-delivery-authority — a NSW Government delivery authority driving the Bays West (White Bay Power Station Precinct and Glebe Island) renewal; publishes procurement via buy.nsw/NSW eTendering and, with Government Architect NSW, runs staged international design competitions. Worth monitoring alongside buy.nsw and Infrastructure NSW for major-precinct EOIs/RFTs."
     ]
   },
   "months": [
@@ -95,7 +95,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 117,
+      "new_tenders": 118,
       "active_tenders": 0
     }
   ],
@@ -17764,8 +17764,8 @@
         "2026-08-19"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Sydney Water:RFI-2009090",
@@ -17831,8 +17831,8 @@
         "2026-08-19"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Transport for NSW:Macquarie Park Precinct and Bus Interchange",
@@ -17895,8 +17895,8 @@
         "2026-08-19"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Sydney Metro:WSA FAW Corridor Restoration Works Seed Procurement",
@@ -17960,8 +17960,8 @@
         "2026-08-19"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "University of Adelaide:Embed Sustainable Enterprise Delivery Capability for AU IT",
@@ -18019,6 +18019,73 @@
       "last_seen": "2026-08-19",
       "seen_dates": [
         "2026-08-19"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "buy.nsw:bays-west-international-design-competition-eoi-2026",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.nsw.gov.au/departments-and-agencies/bays-west-delivery-authority/bays-west-international-design-competition",
+      "access": "public",
+      "title": "Bays West International Design Competition — Stage 1 Expression of Interest",
+      "buyer": "Bays West Delivery Authority (in partnership with Government Architect NSW)",
+      "buyer_url": "https://www.nsw.gov.au/departments-and-agencies/bays-west-delivery-authority",
+      "category": "Urban design / architecture / master planning",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "closing-soon",
+      "description": "The Bays West Delivery Authority, with Government Architect NSW, is running a two-stage international design competition to shape two key sites in Sydney's new Bays West waterfront precinct — the White Bay Power Station Precinct and Glebe Island. Stage 1 is a global Expression of Interest open to design teams worldwide; a shortlist of 4–6 teams will proceed to a paid Stage 2 design phase.",
+      "deliverables_summary": "Stage 1 seeks Expressions of Interest from multidisciplinary design teams to be shortlisted for a paid design competition. The ultimate deliverable (from the shortlisted Stage 2 teams) is an urban framework that sets the spatial, urban design, public domain, movement, land use, built form, sustainability and infrastructure approach to guide the future planning, design and delivery of the White Bay Power Station Precinct and Glebe Island — a precinct planned to include up to 8,500 homes (at least 10% affordable/essential-worker housing) and public recreation spaces.",
+      "key_deliverables": [
+        "Stage 1: compliant Expression of Interest submission demonstrating design team capability and approach",
+        "Stage 2 (shortlisted 4–6 teams, paid): a competition design scheme for Glebe Island and the White Bay Power Station Precinct",
+        "Stage 2 outcome: an urban framework covering spatial/urban design, public domain, movement, land use, built form, sustainability and infrastructure to guide the precinct's future planning and delivery"
+      ],
+      "scope_of_work": "Two key sites within the Bays West precinct on Sydney Harbour: the White Bay Power Station Precinct and Glebe Island. The competition seeks bold, innovative urbanism ideas to unlock the precinct's full potential and to define its look, feel and character, informing an urban framework for future planning and delivery.",
+      "requirements": [],
+      "eligibility": "Stage 1 EOI is open globally to multidisciplinary design teams; Stage 2 is invitation-only for the 4–6 teams shortlisted from the EOI.",
+      "evaluation_criteria": [],
+      "value": "$200,000",
+      "value_currency": "AUD",
+      "contract_term": "Two-stage design competition (global EOI followed by an invitation-only paid Stage 2 design phase)",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": "2026-08-21",
+      "closing_time": "3:00 PM AEST",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Expression of Interest lodged via the competition process advertised on buy.nsw / NSW eTendering and the NSW Government Bays West Delivery Authority page",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Bays West precinct, Sydney Harbour, NSW (White Bay Power Station Precinct and Glebe Island)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "design-competition",
+        "urban-design",
+        "architecture",
+        "precinct-renewal",
+        "EOI",
+        "NSW",
+        "Sydney"
+      ],
+      "first_seen": "2026-08-20",
+      "detail_source": "NSW Government Bays West Delivery Authority competition page (nsw.gov.au) and NSW ministerial release, cross-referenced with the buy.nsw opportunity listing; value of AUD $200,000 (ex GST) competition fee per compliant shortlisted Stage 2 scheme and the 21-Aug-2026 3pm AEST EOI close from those official pages.",
+      "reasoning": "Discovered via a buy.nsw recency search ('new tender published 19/20 August 2026'), which surfaced the Bays West International Design Competition EOI (issued via buy.nsw by the Department of Planning, Housing and Infrastructure / Bays West Delivery Authority), then corroborated against the buyer-originated NSW Government competition page and ministerial release. Buyer-originated (NSW Government), not an aggregator.",
+      "notes": "The 'value' field records the AUD $200,000 (ex GST) competition fee paid to each shortlisted Stage 2 team that submits a compliant scheme — it is not a contract value. Submission mechanics, exact EOI documents, evaluation criteria and named contacts could not be extracted directly because the egress proxy blocked opening the detail/registration pages; captured detail is from official NSW Government pages via the WebSearch summariser. Closing date/time (21-Aug-2026, 3pm AEST) is well corroborated; the tender is closing-soon as of the run date.",
+      "last_seen": "2026-08-20",
+      "seen_dates": [
+        "2026-08-20"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -18103,14 +18170,14 @@
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/public_data",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; primary source read this run (via WebSearch summariser as WebFetch was egress-blocked).",
+      "how_discovered": "Known Tier 1 core portal; re-checked this run for current ATMs.",
       "recommended_check_frequency": "daily",
-      "notes": "Best-covered source this run; six open ATMs captured.",
+      "notes": "WebFetch to www.tenders.gov.au returned EGRESS_BLOCKED again this run; current ATMs (e.g. RASS PR10031930, Services Australia RFT 1001032028) were visible only via the WebSearch summariser and could not be opened for full detail.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-14",
+      "last_seen": "2026-08-20",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -18131,11 +18198,12 @@
         "2026-08-09",
         "2026-08-12",
         "2026-08-13",
-        "2026-08-14"
+        "2026-08-14",
+        "2026-08-20"
       ],
-      "seen_count": 20,
+      "seen_count": 21,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria",
@@ -21268,19 +21336,20 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; partially read via WebSearch.",
+      "how_discovered": "Known Tier 1 core portal; re-checked this run for recently published NSW opportunities.",
       "recommended_check_frequency": "daily",
-      "notes": "One opportunity captured (Sydney Harbour Bridge equipment); other snippets seen but IDs unresolved.",
+      "notes": "Confirmed active this run; direct detail pages remained unreadable under the egress block, so listings were read via the WebSearch summariser.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-14",
+      "last_seen": "2026-08-20",
       "seen_dates": [
         "2026-07-17",
         "2026-08-10",
-        "2026-08-14"
+        "2026-08-14",
+        "2026-08-20"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria",
@@ -23639,6 +23708,28 @@
       "last_seen": "2026-08-19",
       "seen_dates": [
         "2026-08-19"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Bays West Delivery Authority (NSW Government)",
+      "source_url": "https://www.nsw.gov.au/departments-and-agencies/bays-west-delivery-authority",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "platform": "buy.nsw / NSW eTendering",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced while confirming the Bays West International Design Competition EOI on buy.nsw; the Bays West Delivery Authority is the buying entity (with Government Architect NSW) and was not previously in the known-source set.",
+      "recommended_check_frequency": "weekly",
+      "notes": "NSW Government delivery authority for the Bays West precinct (White Bay Power Station Precinct, Glebe Island). Publishes procurement via buy.nsw/NSW eTendering and runs staged international design competitions with Government Architect NSW. Distinct buyer worth tracking alongside buy.nsw and Infrastructure NSW for major-precinct EOIs/RFTs.",
+      "first_seen": "2026-08-20",
+      "last_seen": "2026-08-20",
+      "seen_dates": [
+        "2026-08-20"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
