@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20",
+  "generated": "2026-08-21",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -57,29 +57,30 @@
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
-    "2026-08-20"
+    "2026-08-20",
+    "2026-08-21"
   ],
-  "run_count": 57,
+  "run_count": 58,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-20",
-  "latest_coverage_summary": "Tier 1 was swept via the WebSearch page-summariser across the Commonwealth (AusTender) and every state/territory portal (buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA/Buying4SA, Tenders Tasmania, NT QTOL, ACT Tenders), filtered for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders, City of Launceston), water GBEs (Sydney/Melbourne/SA Water, Greater Western Water, Water Corporation WA), universities (UTS, Flinders, ANU, JCU, University of Adelaide) and DevelopmentWA. The mandatory Tier 3 corporate check covered SAP Ariba / SAP Business Network Discovery, EstimateOne (construction subcontract), and private-health procurement (Ramsay, Healthscope, St Vincent's). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. One genuinely new, open, buyer-corroborated opportunity was captured this run: the Bays West International Design Competition EOI (buy.nsw / NSW Government, Bays West Delivery Authority with Government Architect NSW; Stage-1 global EOI closing 21-Aug-2026 3pm AEST, well-detailed from official NSW Government sources). One genuinely new buyer-originated source was discovered: the Bays West Delivery Authority (a NSW Government delivery authority not previously in the known-source set). Most other confirmable open items surfaced this run were already captured on prior runs and are unchanged: Commonwealth RASS PR10031930 (still current), Services Australia RFT 1001032028 (Disability Support Pension medical assessments, closing 21-Aug-2026), Sydney Harbour Bridge blasting/vacuuming equipment RFT on buy.nsw, City of Launceston City Heart Wayfinding & Amenity Lighting, and Water Corporation WA 2026 Engineering Design Services Panel market sounding — none re-listed. Note: the buy.nsw Sydney Harbour Bridge blasting/vacuuming RFT was surfaced this run with a closing date of 31-Aug-2026 15:00, whereas prior runs recorded 19-Aug-2026; recorded in gaps for reconciliation rather than creating a third dedup variant.",
+  "latest_run": "2026-08-21",
+  "latest_coverage_summary": "Severely degraded run. The environment's network egress policy blocked ALL WebFetch requests (every destination, including tender portals and even example.com, returned EGRESS_BLOCKED / an organization egress denial). Only the WebSearch tool was available. WebSearch can surface portal URLs and some opportunity titles, but it does NOT allow opening tender detail pages, so no live portal querying, pagination, or deliverables/requirements extraction was possible this run. Tier 1 (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, and the SA/TAS/NT/ACT portals) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. The single concrete opportunity lead that surfaced (a Hume Motorway litter & debris collection contract) was found to be ALREADY KNOWN from prior runs (dedup_key buy.nsw:tfnsw-litter-debris-collection-south-region-hume-motorway), and the search snippet mis-attributed its buyer (Transport for NSW, not Insurance and Care NSW), reinforcing that unverified snippet data must not be recorded as fact. No new, independently verifiable, buyer-originated opportunities could be confirmed without detail-page access, and per the no-fabrication rule none were invented. All portals re-observed this run were already in the known-source set, so no genuinely new source could be confirmed.",
   "latest_run_metadata": {
-    "run_date": "2026-08-20",
-    "coverage_summary": "Tier 1 was swept via the WebSearch page-summariser across the Commonwealth (AusTender) and every state/territory portal (buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA/Buying4SA, Tenders Tasmania, NT QTOL, ACT Tenders), filtered for opportunities open or published/updated in the last 7 days. A Tier 2 sample covered local government (VendorPanel public tenders, City of Launceston), water GBEs (Sydney/Melbourne/SA Water, Greater Western Water, Water Corporation WA), universities (UTS, Flinders, ANU, JCU, University of Adelaide) and DevelopmentWA. The mandatory Tier 3 corporate check covered SAP Ariba / SAP Business Network Discovery, EstimateOne (construction subcontract), and private-health procurement (Ramsay, Healthscope, St Vincent's). As on every prior run, the environment's network egress proxy blocked WebFetch to every external tender domain (re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, i.e. an organisation-wide egress policy), so no tender detail page or specification document could be opened directly and all data was gathered indirectly through the WebSearch summariser. One genuinely new, open, buyer-corroborated opportunity was captured this run: the Bays West International Design Competition EOI (buy.nsw / NSW Government, Bays West Delivery Authority with Government Architect NSW; Stage-1 global EOI closing 21-Aug-2026 3pm AEST, well-detailed from official NSW Government sources). One genuinely new buyer-originated source was discovered: the Bays West Delivery Authority (a NSW Government delivery authority not previously in the known-source set). Most other confirmable open items surfaced this run were already captured on prior runs and are unchanged: Commonwealth RASS PR10031930 (still current), Services Australia RFT 1001032028 (Disability Support Pension medical assessments, closing 21-Aug-2026), Sydney Harbour Bridge blasting/vacuuming equipment RFT on buy.nsw, City of Launceston City Heart Wayfinding & Amenity Lighting, and Water Corporation WA 2026 Engineering Design Services Panel market sounding — none re-listed. Note: the buy.nsw Sydney Harbour Bridge blasting/vacuuming RFT was surfaced this run with a closing date of 31-Aug-2026 15:00, whereas prior runs recorded 19-Aug-2026; recorded in gaps for reconciliation rather than creating a third dedup variant.",
-    "sources_checked": 24,
-    "tenders_found": 1,
-    "new_sources_found": 1,
+    "run_date": "2026-08-21",
+    "coverage_summary": "Severely degraded run. The environment's network egress policy blocked ALL WebFetch requests (every destination, including tender portals and even example.com, returned EGRESS_BLOCKED / an organization egress denial). Only the WebSearch tool was available. WebSearch can surface portal URLs and some opportunity titles, but it does NOT allow opening tender detail pages, so no live portal querying, pagination, or deliverables/requirements extraction was possible this run. Tier 1 (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, and the SA/TAS/NT/ACT portals) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. The single concrete opportunity lead that surfaced (a Hume Motorway litter & debris collection contract) was found to be ALREADY KNOWN from prior runs (dedup_key buy.nsw:tfnsw-litter-debris-collection-south-region-hume-motorway), and the search snippet mis-attributed its buyer (Transport for NSW, not Insurance and Care NSW), reinforcing that unverified snippet data must not be recorded as fact. No new, independently verifiable, buyer-originated opportunities could be confirmed without detail-page access, and per the no-fabrication rule none were invented. All portals re-observed this run were already in the known-source set, so no genuinely new source could be confirmed.",
+    "sources_checked": 12,
+    "tenders_found": 0,
+    "new_sources_found": 0,
     "entries_pending_detail": 0,
     "gaps": [
-      "MAJOR CONSTRAINT (repeat of every prior run): the environment's network egress proxy blocked WebFetch to ALL external tender domains. Re-confirmed EGRESS_BLOCKED on www.tenders.gov.au this run; the proxy status endpoint reports enabled=true, selective=false, toolScoped=false, i.e. an organisation-wide egress policy, so all state/GBE/corporate portals are assumed equally unreachable by direct fetch. Per the proxy README, policy denials are reported rather than routed around. Consequence: no detail page or specification document could be opened; deliverables, requirements, evaluation criteria, document lists, exact contacts and lodgement URLs could not be extracted directly for any opportunity this run and are limited to what the WebSearch summariser and official NSW Government pages surfaced.",
-      "Aggregator date noise: several search snippets sourced from paid aggregators (australiantenders.com.au and similar) returned implausible/future publish dates (e.g. ACT 'PMCA New National Convention and Entertainment Centre' shown published 25-Aug-2026, ACT '2 Change Managers' shown 15-Sep-2026, Tasmania 'Stormwater Risk and Investment Pathway Analysis' shown 21-Aug-2026 — all at or after the run date). These were treated as unconfirmable and NOT captured as tenders, since the buyer-originated source could not be opened to verify dates and scope. Deferred to a run with working egress.",
-      "buy.nsw Sydney Harbour Bridge 'Supply, Install and Service of Blasting and Vacuuming Equipment' RFT: two searches this run reported a closing date of 31-Aug-2026 15:00, but prior runs recorded 19-Aug-2026 for what appears to be the same tender. The detail page could not be opened to confirm whether the closing date was extended or the earlier record was wrong. Not re-listed this run to avoid creating a third dedup variant of an already-duplicated record; flagged here so a future run with working egress (or a human) can reconcile the existing entries.",
-      "Opportunities surfaced by search but deliberately EXCLUDED as already closed or not confirmable (not listed as tenders): AusTender ATM_2026_6026 'National Solar Panel Recycling Pilot' (DCCEEW, closed 24-Apr-2026); buy.nsw 'Jervis Bay Road Intersection Upgrade – Connecting with Country artwork' (closing 19-Aug-2026, past as of run date); buy.nsw 'Old Nowra Bridge zinc chromate steel recycling' (closed 11-Aug-2026); and the aggregator-only future-dated ACT/Tasmania items noted above.",
-      "Tier 1 VIC, QLD, WA, SA, TAS, NT and ACT portals were confirmed live and enumerated, but their live open-opportunity lists could not be read directly under the egress block; only aggregator-surfaced snippets were available and no confirmed NEW open opportunity from those jurisdictions (beyond items already captured on prior runs) could be validated this run. Deferred to a run with working egress.",
-      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery, EstimateOne, and private-health procurement (Ramsay Health Care, Healthscope, St Vincent's Health Australia) were checked. All are registration- or invitation-gated with no publicly visible individual opportunity this run; the relevant portals are already recorded in discovered_sources on prior runs and are not fabricated as tenders. No publicly-advertised corporate RFx was visible this run."
+      "CRITICAL / infrastructure: WebFetch is entirely unavailable this run. Every WebFetch call returned EGRESS_BLOCKED (an organization egress-policy denial per /root/.ccr/README.md, which instructs to report rather than route around it). Confirmed blocked hosts include www.tenders.gov.au, www.tenders.nsw.gov.au, www.vendorpanel.com.au, and even example.com, so this is a blanket outbound-HTTP block, not a per-site issue. The routine cannot perform its core function (open detail pages, follow feeds/APIs, extract deliverables) until the environment's network policy permits outbound access to tender-portal domains.",
+      "Tier 1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders + supply.qld.gov.au, Tenders WA, Tenders SA, Tenders TAS, NT QTOL, ACT Tenders) could not be queried live or paginated. Only generic descriptions and stale/aggregator snippets were returned by WebSearch; no current RFT rows with verified IDs, publish/closing dates, or buyers could be captured.",
+      "Tier 2 (Sydney Water, Melbourne Water, SA Water EOIs; universities/TAFE; local government via VendorPanel) surfaced only via paid-aggregator snippets (australiantenders.com.au, globaltenders.com, tendersontime.com) or generic portal pages; currency, IDs and dates could not be verified, so nothing was recorded as a confirmed opportunity.",
+      "Tier 3 (mandatory): SAP Ariba Discovery / SAP Business Network Discovery has no public directory reachable via WebSearch, and its postings plus the BHP/Rio Tinto/Fortescue/Woodside portals are registration- or login-gated; with WebFetch blocked and no authenticated session, no corporate opportunity could be read. These remain portal-registration sources only (already in the known-source set); none were fabricated.",
+      "Aggregator noise: a large share of WebSearch results pointed to paid reseller/aggregator sites, which the spec forbids relying on as a source of truth; they were used only as discovery signals and not recorded as opportunities or sources.",
+      "Source discovery: no genuinely new buyer-originated source could be confirmed this run — every portal that surfaced (water corporations, Rio Tinto Buy Local, TAFE NSW, Federation University, SAP Ariba Discovery, supply.qld.gov.au/Local Buy) is already present in the known-source set."
     ],
     "recommended_seed_additions": [
-      "Bays West Delivery Authority (NSW Government) — https://www.nsw.gov.au/departments-and-agencies/bays-west-delivery-authority — a NSW Government delivery authority driving the Bays West (White Bay Power Station Precinct and Glebe Island) renewal; publishes procurement via buy.nsw/NSW eTendering and, with Government Architect NSW, runs staged international design competitions. Worth monitoring alongside buy.nsw and Infrastructure NSW for major-precinct EOIs/RFTs."
+      "Operational fix required: allow-list Australian tender-portal domains for WebFetch in this environment's network egress policy (at minimum the Tier 1 *.gov.au portals, vendorpanel.com.au, and major buyer/e-sourcing hosts), or run this routine in an environment with unrestricted outbound HTTPS, otherwise daily runs will continue to be non-functional for opportunity capture."
     ]
   },
   "months": [
@@ -18088,8 +18089,8 @@
         "2026-08-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ],
   "discovered_sources": [
@@ -18173,11 +18174,11 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 core portal; re-checked this run for current ATMs.",
+      "how_discovered": "Attempted directly this run (WebFetch EGRESS_BLOCKED); re-confirmed as the core Commonwealth ATM portal via WebSearch.",
       "recommended_check_frequency": "daily",
-      "notes": "WebFetch to www.tenders.gov.au returned EGRESS_BLOCKED again this run; current ATMs (e.g. RASS PR10031930, Services Australia RFT 1001032028) were visible only via the WebSearch summariser and could not be opened for full detail.",
+      "notes": "Could not be queried live this run because WebFetch is blocked by the environment egress policy. Note: the new AusTender Supplier Portal opened to all Australian businesses from 1 July 2026 (already tracked).",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-08-21",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -18199,9 +18200,10 @@
         "2026-08-12",
         "2026-08-13",
         "2026-08-14",
-        "2026-08-20"
+        "2026-08-20",
+        "2026-08-21"
       ],
-      "seen_count": 21,
+      "seen_count": 22,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -18310,17 +18312,17 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Global (incl. Australia)",
+      "jurisdiction": "Australia (and global)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier-3 mandatory check; public posting board averaging ~1,200-1,500 buyer postings/month globally.",
+      "how_discovered": "Tier 3 mandatory check via WebSearch; no public directory of postings, opportunities are registration/login-gated.",
       "recommended_check_frequency": "daily",
-      "notes": "Individual Australian opportunities require a free supplier account to view; none publicly visible without login this run. access=free-registration.",
+      "notes": "Requires a (free) supplier account to view opportunity detail; no authenticated session available and WebFetch blocked, so no individual corporate opportunity could be captured. Recorded as portal only.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-08-21",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -18356,11 +18358,12 @@
         "2026-08-12",
         "2026-08-13",
         "2026-08-14",
-        "2026-08-15"
+        "2026-08-15",
+        "2026-08-21"
       ],
-      "seen_count": 35,
+      "seen_count": 36,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "BHP - Find opportunities (ICN Gateway + Local Buying Program)",
@@ -18563,24 +18566,25 @@
       "source_url": "https://www.supply.qld.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "Queensland",
-      "platform": "VendorPanel (Queensland Procurement Solution) + QTenders",
-      "access_method": "portal-registration",
+      "platform": "VendorPanel / QTenders",
+      "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 portal (mid-migration to VendorPanel); attempted via WebSearch only (WebFetch blocked).",
+      "how_discovered": "Surfaced via WebSearch (QLD Government + Local Buy joint procurement platform, migrating QTenders to VendorPanel); direct fetch blocked by egress policy.",
       "recommended_check_frequency": "daily",
-      "notes": "QTenders and VendorPanel run in parallel during the QLD migration. Not directly readable this run.",
+      "notes": "Check both qtenders.hpw.qld.gov.au and supply.qld.gov.au during the VendorPanel migration. Live query not possible this run.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-21",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
-        "2026-08-11"
+        "2026-08-11",
+        "2026-08-21"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Australia Post — Tendering & supply opportunities",
@@ -21336,18 +21340,19 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 core portal; re-checked this run for recently published NSW opportunities.",
+      "how_discovered": "Surfaced via WebSearch; direct fetch blocked by egress policy.",
       "recommended_check_frequency": "daily",
-      "notes": "Confirmed active this run; direct detail pages remained unreadable under the egress block, so listings were read via the WebSearch summariser.",
+      "notes": "NSW opportunities (incl. TAFE NSW and NSW Health) are consolidated here under PBD-2023-04. Live query not possible this run.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-20",
+      "last_seen": "2026-08-21",
       "seen_dates": [
         "2026-07-17",
         "2026-08-10",
         "2026-08-14",
-        "2026-08-20"
+        "2026-08-20",
+        "2026-08-21"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -21358,14 +21363,14 @@
       "jurisdiction": "Victoria",
       "platform": "Buying for Victoria",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.vic.gov.au/tenders/new",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; confirmed live this run but live tender list not retrievable via search snippets.",
+      "how_discovered": "Surfaced via WebSearch; direct fetch blocked by egress policy.",
       "recommended_check_frequency": "daily",
-      "notes": "buyingfor.vic.gov.au/browse-tenders is the alternate browse endpoint.",
+      "notes": "Also reachable at buyingfor.vic.gov.au/browse-tenders. Live query not possible this run.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-14",
+      "last_seen": "2026-08-21",
       "seen_dates": [
         "2026-07-17",
         "2026-07-18",
@@ -21373,11 +21378,12 @@
         "2026-08-09",
         "2026-08-10",
         "2026-08-11",
-        "2026-08-14"
+        "2026-08-14",
+        "2026-08-21"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -23730,6 +23736,28 @@
       "last_seen": "2026-08-20",
       "seen_dates": [
         "2026-08-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Tenders WA",
+      "source_url": "https://www.tenders.wa.gov.au/watenders/tender/search/tender-search.do?action=advanced-tender-search-open-tender",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "platform": "Tenders WA",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Surfaced via WebSearch (advertised-requests / open-tender search endpoint); direct fetch blocked by egress policy.",
+      "recommended_check_frequency": "daily",
+      "notes": "Live query not possible this run.",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "seen_dates": [
+        "2026-08-21"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
