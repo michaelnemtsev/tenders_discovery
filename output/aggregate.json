@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-22",
+  "generated": "2026-08-23",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -59,30 +59,31 @@
     "2026-08-19",
     "2026-08-20",
     "2026-08-21",
-    "2026-08-22"
+    "2026-08-22",
+    "2026-08-23"
   ],
-  "run_count": 59,
+  "run_count": 60,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-22",
-  "latest_coverage_summary": "Second consecutive severely degraded run. The environment's network egress policy again blocked ALL WebFetch requests: every destination tested (www.tenders.gov.au, www.tenders.nsw.gov.au, and even example.com) returned EGRESS_BLOCKED, confirming a blanket organization-level outbound-HTTP denial rather than a per-site issue. Per /root/.ccr/README.md this is a policy denial to report, not route around. Only the WebSearch tool was functional. WebSearch surfaces portal URLs and some opportunity titles, but cannot open tender detail pages, follow RSS/JSON feeds, paginate portal result sets, or read specification documents, so no live portal querying or deliverables/requirements extraction was possible. Tier 1 (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA/TAS, NT QTOL, ACT Tenders) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health, local government via VendorPanel) and Tier 3 (SAP Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. Several opportunity titles surfaced (e.g. an Inner West Council 'RFT-43 Preferred Supplier Panel for Data, AI, Automation & Integration and Digital Solutions', and a 'Development Assessment Transformation and AI' tender), but their detail pages could not be opened to verify tender IDs, buyers, closing dates or deliverables, and the buyers involved (Inner West Council) are already in the known-source set; per the fidelity rule none were recorded as confirmed opportunities. One notable change observed: SAP Ariba Discovery has rebranded to 'SAP Business Network Discovery' (SAP August release, ~18 Aug 2026) — a naming change on an already-known source, not a new source. No new, independently verifiable, buyer-originated opportunities could be confirmed without detail-page access, and per the no-fabrication rule none were invented. No genuinely new buyer-originated source could be confirmed; every portal re-observed is already in the known-source set.",
+  "latest_run": "2026-08-23",
+  "latest_coverage_summary": "Third consecutive severely degraded run. The environment's network egress policy again blocked ALL WebFetch requests: every destination tested (www.tenders.gov.au, www.vendorpanel.com.au, and even example.com) returned EGRESS_BLOCKED, confirming a blanket organization-level outbound-HTTPS denial rather than a per-site issue. Per /root/.ccr/README.md a 403/egress policy denial must be reported and not routed around. Only the WebSearch tool was functional. WebSearch surfaces portal URLs and some opportunity titles, but cannot open tender detail pages, follow RSS/JSON feeds, paginate portal result sets, or read specification documents, so no live portal querying or deliverables/requirements extraction was possible. Tier 1 (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA/TAS, NT QTOL, ACT Tenders) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health, local government via VendorPanel) and Tier 3 (SAP Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. A few opportunity titles surfaced in snippets (e.g. a UWA Turf & Landscape Maintenance RFT slated for release Jan 2026, a Water Corporation WA 2026 Engineering Design Services panel, a 'GovAI Chat WCAG Accessibility Testing' notice dated ~17 Aug 2026), but their detail pages could not be opened to verify tender IDs, buyers, closing dates or deliverables; per the fidelity rule none were recorded as confirmed opportunities. One genuinely new buyer-originated source WAS confirmed via multiple independent search results: the Commonwealth 'Supplier Portal' (Department of Finance), a federal supplier-discovery channel rolling out to all businesses from July 2026 that complements (does not replace) AusTender; it is recorded in discovered_sources as a new source. No new, independently verifiable, buyer-originated OPPORTUNITY could be confirmed without detail-page access, and per the no-fabrication rule none were invented.",
   "latest_run_metadata": {
-    "run_date": "2026-08-22",
-    "coverage_summary": "Second consecutive severely degraded run. The environment's network egress policy again blocked ALL WebFetch requests: every destination tested (www.tenders.gov.au, www.tenders.nsw.gov.au, and even example.com) returned EGRESS_BLOCKED, confirming a blanket organization-level outbound-HTTP denial rather than a per-site issue. Per /root/.ccr/README.md this is a policy denial to report, not route around. Only the WebSearch tool was functional. WebSearch surfaces portal URLs and some opportunity titles, but cannot open tender detail pages, follow RSS/JSON feeds, paginate portal result sets, or read specification documents, so no live portal querying or deliverables/requirements extraction was possible. Tier 1 (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA/TAS, NT QTOL, ACT Tenders) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health, local government via VendorPanel) and Tier 3 (SAP Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. Several opportunity titles surfaced (e.g. an Inner West Council 'RFT-43 Preferred Supplier Panel for Data, AI, Automation & Integration and Digital Solutions', and a 'Development Assessment Transformation and AI' tender), but their detail pages could not be opened to verify tender IDs, buyers, closing dates or deliverables, and the buyers involved (Inner West Council) are already in the known-source set; per the fidelity rule none were recorded as confirmed opportunities. One notable change observed: SAP Ariba Discovery has rebranded to 'SAP Business Network Discovery' (SAP August release, ~18 Aug 2026) — a naming change on an already-known source, not a new source. No new, independently verifiable, buyer-originated opportunities could be confirmed without detail-page access, and per the no-fabrication rule none were invented. No genuinely new buyer-originated source could be confirmed; every portal re-observed is already in the known-source set.",
-    "sources_checked": 5,
+    "run_date": "2026-08-23",
+    "coverage_summary": "Third consecutive severely degraded run. The environment's network egress policy again blocked ALL WebFetch requests: every destination tested (www.tenders.gov.au, www.vendorpanel.com.au, and even example.com) returned EGRESS_BLOCKED, confirming a blanket organization-level outbound-HTTPS denial rather than a per-site issue. Per /root/.ccr/README.md a 403/egress policy denial must be reported and not routed around. Only the WebSearch tool was functional. WebSearch surfaces portal URLs and some opportunity titles, but cannot open tender detail pages, follow RSS/JSON feeds, paginate portal result sets, or read specification documents, so no live portal querying or deliverables/requirements extraction was possible. Tier 1 (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA/TAS, NT QTOL, ACT Tenders) could not be queried live. Tier 2 (water corporations, GBEs, universities/TAFE, health, local government via VendorPanel) and Tier 3 (SAP Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, retail, banking) were attempted via WebSearch only. A few opportunity titles surfaced in snippets (e.g. a UWA Turf & Landscape Maintenance RFT slated for release Jan 2026, a Water Corporation WA 2026 Engineering Design Services panel, a 'GovAI Chat WCAG Accessibility Testing' notice dated ~17 Aug 2026), but their detail pages could not be opened to verify tender IDs, buyers, closing dates or deliverables; per the fidelity rule none were recorded as confirmed opportunities. One genuinely new buyer-originated source WAS confirmed via multiple independent search results: the Commonwealth 'Supplier Portal' (Department of Finance), a federal supplier-discovery channel rolling out to all businesses from July 2026 that complements (does not replace) AusTender; it is recorded in discovered_sources as a new source. No new, independently verifiable, buyer-originated OPPORTUNITY could be confirmed without detail-page access, and per the no-fabrication rule none were invented.",
+    "sources_checked": 6,
     "tenders_found": 0,
-    "new_sources_found": 0,
+    "new_sources_found": 1,
     "entries_pending_detail": 0,
     "gaps": [
-      "CRITICAL / infrastructure (second consecutive day): WebFetch is entirely unavailable. Every WebFetch call returned EGRESS_BLOCKED, an organization egress-policy denial. Confirmed blocked hosts this run include www.tenders.gov.au, www.tenders.nsw.gov.au and example.com, so this is a blanket outbound-HTTP block, not a per-site problem. Per /root/.ccr/README.md a 403/egress denial must be reported and not routed around. The routine cannot perform its core function (open detail pages, follow feeds/APIs, extract deliverables) until the environment's network policy permits outbound HTTPS to tender-portal domains.",
+      "CRITICAL / infrastructure (third consecutive day): WebFetch is entirely unavailable. Every WebFetch call returned EGRESS_BLOCKED, an organization egress-policy denial. Confirmed blocked hosts this run include www.tenders.gov.au, www.vendorpanel.com.au and example.com, so this is a blanket outbound-HTTPS block, not a per-site problem. Per /root/.ccr/README.md a 403/egress denial must be reported and not routed around. The routine cannot perform its core function (open detail pages, follow feeds/APIs, extract deliverables) until the environment's network policy permits outbound HTTPS to tender-portal domains.",
       "Tier 1 government portals (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders + supply.qld.gov.au, Tenders WA, Tenders SA, Tenders TAS, NT QTOL, ACT Tenders) could not be queried live or paginated. WebSearch returned only generic descriptions and stale/aggregator snippets; no current RFT rows with verified IDs, publish/closing dates or buyers could be captured.",
-      "Tier 2 (Sydney Water/Melbourne Water/SA Water; universities/TAFE; local government via VendorPanel) surfaced only via aggregator snippets and generic portal pages; IDs, currency and dates could not be verified, so nothing was recorded as a confirmed opportunity. An Inner West Council RFT-43 panel EOI and a Development Assessment Transformation and AI tender appeared in search snippets but could not be opened to verify.",
+      "Tier 2 (Sydney Water/Melbourne Water/Water Corporation WA; universities such as UWA/Sydney/Melbourne; local government via VendorPanel) surfaced only via aggregator snippets and generic portal pages; IDs, currency and dates could not be verified, so nothing was recorded as a confirmed opportunity. A UWA Turf & Landscape Maintenance RFT (planned Jan 2026) and a Water Corporation WA 2026 Engineering Design Services panel appeared in snippets but could not be opened to verify.",
       "Tier 3 (mandatory): SAP Business Network Discovery (formerly SAP Ariba Discovery) has no public directory reachable via WebSearch, and its postings plus the BHP/Rio Tinto/Fortescue/Woodside portals are registration- or login-gated; with WebFetch blocked and no authenticated session, no corporate opportunity could be read. These remain portal-registration sources only (already in the known-source set); none were fabricated.",
-      "Aggregator noise: a large share of WebSearch results pointed to paid reseller/aggregator sites (tendersontime.com, australiatenderalerts.com, gtbc.net, globaltenders.com), which the spec forbids relying on as a source of truth; they were used only as discovery signals and not recorded as opportunities or sources.",
-      "Source discovery: no genuinely new buyer-originated source could be confirmed this run. Every portal that surfaced is already present in the known-source set (248 discovered_sources aggregated to date)."
+      "Aggregator noise: a large share of WebSearch results pointed to paid reseller/aggregator sites (tendersontime.com, tendersinfo.com, australiantenders.com.au, australiatenderalerts.com, biddetail.com, globaltenders.com, gtbc.net), which the spec forbids relying on as a source of truth; they were used only as discovery signals and not recorded as opportunities or sources.",
+      "Source discovery: one new buyer-originated source confirmed this run (Commonwealth Supplier Portal, Dept of Finance). No other genuinely new source could be confirmed; every other portal that surfaced is already present in the known-source set."
     ],
     "recommended_seed_additions": [
-      "OPERATIONAL FIX REQUIRED (now failing for a second consecutive day): allow-list Australian tender-portal domains for WebFetch in this environment's network egress policy (at minimum the Tier 1 *.gov.au portals, vendorpanel.com.au, service.ariba.com and major buyer/e-sourcing hosts), or run this routine in an environment with unrestricted outbound HTTPS. Until then, daily runs cannot capture or verify opportunities and will keep returning zero tenders.",
-      "Naming update for the known-source list: 'SAP Ariba Discovery' is now branded 'SAP Business Network Discovery' (SAP August 2026 release); update the source label while keeping the same service.ariba.com/Discovery.aw endpoint."
+      "OPERATIONAL FIX REQUIRED (now failing for a third consecutive day): allow-list Australian tender-portal domains for WebFetch in this environment's network egress policy (at minimum the Tier 1 *.gov.au portals, vendorpanel.com.au, service.ariba.com and major buyer/e-sourcing hosts), or run this routine in an environment with unrestricted outbound HTTPS. Until then, daily runs cannot capture or verify opportunities and will keep returning zero tenders.",
+      "Add to the known-source list: Commonwealth 'Supplier Portal' (Department of Finance) — a new federal supplier-discovery/registration channel opening to all businesses from July 2026, complementing (not replacing) AusTender. Buyer-originated (Australian Government); check for whether it exposes any sourcing events or remains supplier-directory only."
     ]
   },
   "months": [
@@ -18180,7 +18181,7 @@
       "recommended_check_frequency": "daily",
       "notes": "Re-confirmed to exist but not queryable this run due to the blanket egress block. Already a known source.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-08-23",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -18204,9 +18205,10 @@
         "2026-08-14",
         "2026-08-20",
         "2026-08-21",
-        "2026-08-22"
+        "2026-08-22",
+        "2026-08-23"
       ],
-      "seen_count": 23,
+      "seen_count": 24,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -18321,11 +18323,11 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check; re-confirmed via WebSearch, which showed the platform rebranded to 'SAP Business Network Discovery' in the SAP August 2026 release. Postings are registration-gated and could not be read (WebFetch EGRESS_BLOCKED; no authenticated session).",
+      "how_discovered": "Mandatory Tier 3 check; re-confirmed via WebSearch. Postings are registration-gated and could not be read (WebFetch EGRESS_BLOCKED; no authenticated session).",
       "recommended_check_frequency": "daily",
-      "notes": "Known source, now rebranded. access=free-registration for full opportunity detail. No corporate opportunity could be captured this run.",
+      "notes": "Known source, rebranded in the SAP August 2026 release. access=free-registration for full opportunity detail. No corporate opportunity could be captured this run.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-08-23",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -18363,9 +18365,10 @@
         "2026-08-14",
         "2026-08-15",
         "2026-08-21",
-        "2026-08-22"
+        "2026-08-22",
+        "2026-08-23"
       ],
-      "seen_count": 37,
+      "seen_count": 38,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -18816,11 +18819,11 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 2 local-government channel; re-confirmed via WebSearch (e.g. Inner West Council RFT-43 panel surfaced in snippets). Detail pages could not be opened (WebFetch EGRESS_BLOCKED).",
+      "how_discovered": "Tier 2 local-government channel; re-confirmed via WebSearch. Detail pages could not be opened (WebFetch EGRESS_BLOCKED).",
       "recommended_check_frequency": "daily",
-      "notes": "Known source. Opportunity titles surfaced but could not be verified this run.",
+      "notes": "Known source. Not queryable this run.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-08-23",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -18835,9 +18838,10 @@
         "2026-08-12",
         "2026-08-14",
         "2026-08-15",
-        "2026-08-22"
+        "2026-08-22",
+        "2026-08-23"
       ],
-      "seen_count": 14,
+      "seen_count": 15,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -21360,7 +21364,7 @@
       ],
       "seen_count": 6,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Buying for Victoria",
@@ -21390,7 +21394,7 @@
       ],
       "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -23769,6 +23773,50 @@
       "seen_count": 1,
       "is_new_in_latest": false,
       "active_in_latest": false
+    },
+    {
+      "source_name": "Commonwealth Supplier Portal (Department of Finance)",
+      "source_url": "https://www.finance.gov.au/government/procurement",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch source-discovery pass surfaced multiple independent references (Dept of Finance procurement-modernisation news, plus secondary coverage) to a new federal 'Supplier Portal' — a publicly searchable supplier-discovery directory rolling out from panels (MAS Panel, People Panel) to ALL businesses by July 2026. Complements, does not replace, AusTender. Detail page could not be opened (WebFetch EGRESS_BLOCKED).",
+      "recommended_check_frequency": "weekly",
+      "notes": "New source this run. Primarily a supplier-registration/discovery directory rather than a tender publisher; buyers use it to find suppliers, so it may or may not expose open sourcing events. access=free-registration. Buyer-originated (Australian Government). Verify scope and any opportunity feed once WebFetch egress is restored.",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23",
+      "seen_dates": [
+        "2026-08-23"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Water Corporation (WA) Public Tenders",
+      "source_url": "https://www.watercorporation.com.au/help-and-advice/suppliers-and-providers/public-tenders/public-tenders",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Tier 2 GBE check; re-confirmed via WebSearch (public tenders page plus early advice of a 2026 Engineering Design Services panel). Detail pages could not be opened (WebFetch EGRESS_BLOCKED).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Known GBE source. A 2026 Engineering Design Services (EDS) Panel was flagged as upcoming in snippets but could not be verified this run.",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23",
+      "seen_dates": [
+        "2026-08-23"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
     }
   ]
 }
