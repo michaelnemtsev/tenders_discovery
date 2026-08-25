@@ -65,7 +65,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "approach-to-market", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "approach-to-market",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated deep link to the AusTender ATM detail page captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -113,7 +117,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "rfi", "market-sounding", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "rfi",
+        "market-sounding",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated deep link to the AusTender ATM detail page captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -161,7 +170,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["victoria", "rail", "eoi", "headline-only"],
+      "tags": [
+        "victoria",
+        "rail",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch on port/airport procurement; buyer-originated deep link to the Buying for Victoria tender view captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -209,7 +223,10 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["victoria", "headline-only"],
+      "tags": [
+        "victoria",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of Buying for Victoria open tenders; buyer-originated deep link captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -257,7 +274,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tasmania", "open-for-bids", "headline-only"],
+      "tags": [
+        "tasmania",
+        "open-for-bids",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of Tenders Tasmania; buyer-originated deep link to the OpenForBids detail record captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -305,7 +326,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["northern-territory", "qtol", "headline-only"],
+      "tags": [
+        "northern-territory",
+        "qtol",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NT QTOL; buyer-originated deep link to the QTOL tender detail page captured. Detail page not opened - outbound HTTPS blocked by egress policy.",
@@ -353,7 +378,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "campus-services", "cafe", "headline-only"],
+      "tags": [
+        "university",
+        "campus-services",
+        "cafe",
+        "headline-only"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch on Australian university procurement; buyer-originated University of Sydney TenderLink portal captured. Individual tender detail/documents are behind free registration and the page could not be fetched (egress blocked).",
@@ -401,7 +431,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "health", "pharmacy", "headline-only", "unverified"],
+      "tags": [
+        "nsw",
+        "health",
+        "pharmacy",
+        "headline-only",
+        "unverified"
+      ],
       "first_seen": "2026-08-26",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NSW eTendering / HealthShare NSW health tenders; buyer-originated (HealthShare NSW via NSW eTendering). No deep link to the notice was returned and the portal could not be fetched (egress blocked).",
