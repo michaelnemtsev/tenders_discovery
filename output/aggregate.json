@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26",
+  "generated": "2026-08-27",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -63,33 +63,35 @@
     "2026-08-23",
     "2026-08-24",
     "2026-08-25",
-    "2026-08-26"
+    "2026-08-26",
+    "2026-08-27"
   ],
-  "run_count": 63,
+  "run_count": 64,
   "first_run": "2026-06-25",
-  "latest_run": "2026-08-26",
-  "latest_coverage_summary": "Degraded run - outbound HTTPS via WebFetch was again entirely blocked by the environment network egress policy (blanket block re-confirmed this run: example.com, www.tenders.gov.au and www.tenders.nsw.gov.au all returned EGRESS_BLOCKED, and the agent proxy status endpoint reported no recent relay failures - this is an organisation-level egress restriction, not a per-site fault, and per /root/.ccr/README.md such policy denials must be reported, not routed around). Only the WebSearch tool was functional. WebSearch surfaced genuine, currently-relevant opportunities and portals across Tier 1 (AusTender ATMs, Buying for Victoria incl. Melbourne Airport Rail EOI, Tenders Tasmania, NT QTOL, NSW eTendering/HealthShare), Tier 2 (University of Sydney via TenderLink) and Tier 3 (SAP Business Network Discovery, Rio Tinto/Fortescue, EstimateOne - all registration/login-gated). Every tender below is captured at HEADLINE level only: because no tender detail page or specification document could be opened, closing dates, exact titles where not in the result link, deliverables, requirements, evaluation criteria, values and contacts are UNVERIFIED and left null/empty. Each tender is flagged in its notes and counted in entries_pending_detail. Tier 3 corporate e-sourcing hubs were checked and are entirely registration/login-gated: no publicly-visible corporate RFx detail was accessible, so no corporate tenders were invented; those portals are recorded in discovered_sources with access_method=portal-registration. Source discovery still ran and found three genuinely new buyer-originated sources not already in the known set (Temora Shire Council NSW, Coliban Water VIC, Unitywater QLD).",
+  "latest_run": "2026-08-27",
+  "latest_coverage_summary": "Degraded run - outbound HTTPS via WebFetch was again entirely blocked by the environment network egress policy (blanket block re-confirmed this run: example.com AND www.tenders.gov.au both returned EGRESS_BLOCKED, and the agent proxy status endpoint reported recentRelayFailures: [] - an organisation-level egress restriction, not a per-site fault; per /root/.ccr/README.md such policy denials are reported, not routed around). Only the WebSearch tool was functional. WebSearch surfaced genuine, currently-relevant buyer-originated opportunities and portals across Tier 1 (AusTender ATMs, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, Tenders ACT), Tier 2 (Inner West Council via VendorPanel, University of Sydney and Macquarie University via TenderLink, GBE water corporations Sydney Water and Melbourne Water) and Tier 3 (SAP Business Network Discovery, EstimateOne - both registration/login-gated). Every tender below is captured at HEADLINE level only: because no tender detail page or specification document could be opened via WebFetch, deliverables, requirements, evaluation criteria, exact values and contacts are UNVERIFIED and left null/empty unless a fact appeared directly in a buyer-originated search snippet. Each tender is flagged in its notes and counted in entries_pending_detail. Opportunities whose only known closing date had already passed before the run date (e.g. NSW Jervis Bay Road artwork closing 19-Aug-2026; the AusTender ASD/Home Affairs/ANMM/ATO/Defence ATMs closing 26-Aug-2026) were excluded rather than presented as open. Tier 3 corporate e-sourcing hubs were checked and are entirely registration/login-gated: no publicly-visible corporate RFx detail was accessible, so no corporate tenders were invented; those portals are recorded in discovered_sources with access_method=portal-registration. Source discovery still ran and found three genuinely new buyer-originated council sources not already in the known set (Murray River Council NSW, Southern Downs Regional Council QLD, Kempsey Shire Council NSW).",
   "latest_run_metadata": {
-    "run_date": "2026-08-26",
-    "coverage_summary": "Degraded run - outbound HTTPS via WebFetch was again entirely blocked by the environment network egress policy (blanket block re-confirmed this run: example.com, www.tenders.gov.au and www.tenders.nsw.gov.au all returned EGRESS_BLOCKED, and the agent proxy status endpoint reported no recent relay failures - this is an organisation-level egress restriction, not a per-site fault, and per /root/.ccr/README.md such policy denials must be reported, not routed around). Only the WebSearch tool was functional. WebSearch surfaced genuine, currently-relevant opportunities and portals across Tier 1 (AusTender ATMs, Buying for Victoria incl. Melbourne Airport Rail EOI, Tenders Tasmania, NT QTOL, NSW eTendering/HealthShare), Tier 2 (University of Sydney via TenderLink) and Tier 3 (SAP Business Network Discovery, Rio Tinto/Fortescue, EstimateOne - all registration/login-gated). Every tender below is captured at HEADLINE level only: because no tender detail page or specification document could be opened, closing dates, exact titles where not in the result link, deliverables, requirements, evaluation criteria, values and contacts are UNVERIFIED and left null/empty. Each tender is flagged in its notes and counted in entries_pending_detail. Tier 3 corporate e-sourcing hubs were checked and are entirely registration/login-gated: no publicly-visible corporate RFx detail was accessible, so no corporate tenders were invented; those portals are recorded in discovered_sources with access_method=portal-registration. Source discovery still ran and found three genuinely new buyer-originated sources not already in the known set (Temora Shire Council NSW, Coliban Water VIC, Unitywater QLD).",
-    "sources_checked": 22,
-    "tenders_found": 8,
+    "run_date": "2026-08-27",
+    "coverage_summary": "Degraded run - outbound HTTPS via WebFetch was again entirely blocked by the environment network egress policy (blanket block re-confirmed this run: example.com AND www.tenders.gov.au both returned EGRESS_BLOCKED, and the agent proxy status endpoint reported recentRelayFailures: [] - an organisation-level egress restriction, not a per-site fault; per /root/.ccr/README.md such policy denials are reported, not routed around). Only the WebSearch tool was functional. WebSearch surfaced genuine, currently-relevant buyer-originated opportunities and portals across Tier 1 (AusTender ATMs, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, Tenders ACT), Tier 2 (Inner West Council via VendorPanel, University of Sydney and Macquarie University via TenderLink, GBE water corporations Sydney Water and Melbourne Water) and Tier 3 (SAP Business Network Discovery, EstimateOne - both registration/login-gated). Every tender below is captured at HEADLINE level only: because no tender detail page or specification document could be opened via WebFetch, deliverables, requirements, evaluation criteria, exact values and contacts are UNVERIFIED and left null/empty unless a fact appeared directly in a buyer-originated search snippet. Each tender is flagged in its notes and counted in entries_pending_detail. Opportunities whose only known closing date had already passed before the run date (e.g. NSW Jervis Bay Road artwork closing 19-Aug-2026; the AusTender ASD/Home Affairs/ANMM/ATO/Defence ATMs closing 26-Aug-2026) were excluded rather than presented as open. Tier 3 corporate e-sourcing hubs were checked and are entirely registration/login-gated: no publicly-visible corporate RFx detail was accessible, so no corporate tenders were invented; those portals are recorded in discovered_sources with access_method=portal-registration. Source discovery still ran and found three genuinely new buyer-originated council sources not already in the known set (Murray River Council NSW, Southern Downs Regional Council QLD, Kempsey Shire Council NSW).",
+    "sources_checked": 21,
+    "tenders_found": 10,
     "new_sources_found": 3,
-    "entries_pending_detail": 8,
+    "entries_pending_detail": 10,
     "gaps": [
-      "WebFetch / outbound HTTPS is entirely blocked by the environment egress policy (EGRESS_BLOCKED on every host tested this run, including example.com, www.tenders.gov.au and www.tenders.nsw.gov.au). No tender detail page or specification document could be opened, so all detail/deliverables/requirements/value/contact/closing-date fields are null and every tender is headline-level only.",
-      "Tier 1 core portals (AusTender, Buying for Victoria, QTenders/supply.qld.gov.au, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, Tenders ACT) could only be searched via WebSearch, not fetched. Concrete open-tender rows with verified IDs/closing times for VIC (beyond the deep-linked ids), QLD, WA, SA and ACT were not retrievable at row level from search snippets this run and are deferred to a future run when egress is available.",
-      "Search-engine result summaries for several jurisdictions surfaced specific-sounding details (e.g. NSW HealthShare 'Pharmacy Equipment and Consumables' RFT-2016769, a Transport Infrastructure Projects RFT and an SR01372 seasonally-closed-roads RFT, and ACT tenders closing 25-26 Aug 2026 for the High Speed Rail Authority / Dept of Agriculture, Fisheries and Forestry / National Gallery of Australia) that could NOT be confirmed against the buyer's own notice because the detail pages were unreachable. Only items with a concrete buyer-originated deep link or a structured tender id are recorded below; the remainder are noted here rather than recorded as confirmed tenders.",
-      "Tier 3 corporate e-sourcing hubs (SAP Business Network Discovery, Rio Tinto supplier portals/Ariba, Fortescue Supplier Centre, EstimateOne) are registration- or login-gated; no publicly-visible RFx detail was accessible. Portals recorded in discovered_sources; no corporate opportunities fabricated.",
-      "Invitation-only management-consultancy and panel RFPs (e.g. DFAT Development Procurement Pipeline RFTs released only to shortlisted organisations) are out of scope - not publicly discoverable and not recorded as tenders.",
-      "Aged-care not-for-profit procurement surfaced only via a member-collective procurement platform (ACSA/ACCPA) and paid aggregators with no single buyer-originated notice; treated as a discovery signal only and not recorded as a confirmed tender."
+      "WebFetch / outbound HTTPS is entirely blocked by the environment egress policy (EGRESS_BLOCKED on every host tested this run, including example.com and www.tenders.gov.au; agent proxy status reported no recent relay failures). No tender detail page or specification document could be opened, so all deliverables/requirements/evaluation/value/contact fields are null and every tender is headline-level only.",
+      "Tier 1 core portals (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld.gov.au, Tenders WA, SA Tenders and Contracts, Tenders Tasmania, NT QTOL, Tenders ACT) could only be searched via WebSearch, not fetched. Concrete open-tender rows with verified IDs/closing times for VIC, QLD, WA, SA, TAS and ACT were not retrievable at row level from search snippets this run and are deferred to a future run when egress is available.",
+      "buy.nsw/NSW eTendering opportunities were surfaced with titles and closing dates from search snippets but individual RFT deep links (RFTUUID) could not be confirmed against the buyer's own notice because detail pages were unreachable; buy.nsw opportunity-search URL recorded instead of a per-tender deep link.",
+      "AusTender deep-linked ATMs (RFT-2026-0080, ATM_2026_6786, ATM_2026_6026, ATM_2026_6066, OET-DRC-2026) were surfaced with structured Atm/Show URLs but no title/closing date could be read from the snippet; only RFT-2026-0080 is recorded (headline id + URL, title pending) and the remainder are deferred.",
+      "Power and Water Corporation (NT GBE) tender closing 23-Sep-2026 14:00 ACST surfaced via QTOL search but its title was not in the snippet and the detail page (tendersonline.nt.gov.au) is login-gated; recorded at headline level with title pending.",
+      "Tier 3 corporate e-sourcing hubs (SAP Business Network Discovery / Ariba, EstimateOne construction subcontractor packages, RangeMe, BHP/Rio Tinto/Fortescue supplier portals) are registration- or login-gated; no publicly-visible RFx detail was accessible. Portals recorded in discovered_sources; no corporate opportunities fabricated.",
+      "Invitation-only management-consultancy and panel RFPs, and the DFAT Development Procurement Pipeline (released only to shortlisted organisations), are out of scope - not publicly discoverable and not recorded as tenders."
     ],
     "recommended_seed_additions": [
-      "Temora Shire Council (NSW) - council tenders via VendorPanel (https://www.temora.nsw.gov.au/Jobs-and-Procurement/VendorPanel)",
-      "Coliban Water (VIC government-owned water corporation) - tenders advertised on Buying for Victoria (https://coliban.com.au/about-us/Tenders-contractors)",
-      "Unitywater (QLD government-owned water corporation) - own procurement & tendering portal (https://www.unitywater.com/about-us/our-business/procurement-and-tendering)",
-      "University of Western Australia - own procurement/supplier channel (own portal URL not confirmed this run due to egress block; verify before adding)",
-      "Rail Projects Victoria / Major Transport Infrastructure Authority - active EOI issuer publishing via Buying for Victoria (Melbourne Airport Rail)"
+      "Murray River Council (NSW) - council tenders via VendorPanel (https://www.murrayriver.nsw.gov.au/Council/News/Public-notices/VendorPanel-Improving-Supplier-Engagement)",
+      "Southern Downs Regional Council (QLD) - public tenders via VendorPanel (https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=7C94BBCCAA83)",
+      "Kempsey Shire Council (NSW) - Current tenders & EOI (https://www.kempsey.nsw.gov.au/Business/Doing-business-with-Council/Current-tenders-EOI)",
+      "WaterNSW - procurement / working with us (https://www.waternsw.com.au/about-us/working-with-us/procurement) - verify against buyer-originated portal before adding",
+      "ICN Gateway - major-project supplier opportunities channel used by Western Sydney Airport (WSA Co) operational-phase procurement - useful discovery signal for infrastructure work packages"
     ]
   },
   "months": [
@@ -105,7 +107,7 @@
     },
     {
       "month": "2026-08",
-      "new_tenders": 143,
+      "new_tenders": 153,
       "active_tenders": 0
     }
   ],
@@ -19165,8 +19167,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:RFI_ATM_2026_6026",
@@ -19225,8 +19227,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:311050-melbourne-airport-rail-eoi",
@@ -19285,8 +19287,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:311050",
@@ -19343,8 +19345,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersTasmania:OpenForBids-4580",
@@ -19402,8 +19404,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:Tender-Details-62",
@@ -19461,8 +19463,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "USyd-TenderLink:camden-campus-cafe-rft",
@@ -19521,8 +19523,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "HealthShareNSW:RFT-2016769-pharmacy-equipment-consumables",
@@ -19582,6 +19584,621 @@
         "2026-08-26"
       ],
       "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "buy.nsw:SHB-Blasting-Vacuuming-Equipment-2026",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "access": "public",
+      "title": "Supply, Install and Service of Blasting and Vacuuming Equipment at Sydney Harbour Bridge",
+      "buyer": "Transport for NSW",
+      "buyer_url": "https://www.transport.nsw.gov.au/",
+      "category": "Construction - Infrastructure",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "NSW Government RFT for the supply, installation and servicing of blasting and vacuuming equipment used in maintenance works at the Sydney Harbour Bridge.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-31",
+      "closing_time": "3:00 PM (Sydney)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Sydney Harbour Bridge, Sydney NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "transport-for-nsw",
+        "infrastructure",
+        "maintenance"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated (NSW eTendering / buy.nsw, Transport for NSW).",
+      "notes": "Headline-level only. Closing date/time (31-Aug-2026 15:00) and category taken from search snippet; not confirmed against the buyer's own detail page because WebFetch egress was blocked. Per-tender RFTUUID deep link not captured; buy.nsw opportunity-search URL recorded.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:icare-Litter-Debris-Collection-Hume-Motorway-2026",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search/",
+      "access": "public",
+      "title": "Litter and Debris Collection - South Region (Hume Motorway Office)",
+      "buyer": "Insurance and Care NSW (icare)",
+      "buyer_url": "https://www.icare.nsw.gov.au/",
+      "category": "Environmental / cleaning services",
+      "category_codes": [],
+      "procurement_type": "RFP",
+      "current_status": "open",
+      "description": "Proposed opportunity (P-RFT) for litter and debris collection services in the South Region, based at the Hume Motorway Office.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-31",
+      "closing_time": "3:00 PM (Sydney)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw / NSW eTendering",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "South Region - Hume Motorway, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "icare",
+        "environmental-services"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated (NSW eTendering / buy.nsw, Insurance and Care NSW).",
+      "notes": "Headline-level only. Listed as a Proposed opportunity (P-RFT); closing date/time (31-Aug-2026 15:00) from search snippet, not confirmed against the detail page (WebFetch egress blocked).",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "vendorpanel:innerwest:RFT-43-Data-AI-Automation-Digital-Panel",
+      "source_name": "Inner West Council (VendorPanel)",
+      "source_url": "https://www.vendorpanel.com.au/innerwest/tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "RFT-43",
+      "tender_url": "https://www.vendorpanel.com.au/innerwest/tenders",
+      "access": "free-registration",
+      "title": "RFT-43 Preferred Supplier Panel for Data, AI, Automation & Integration and Digital Solutions",
+      "buyer": "Inner West Council",
+      "buyer_url": "https://www.innerwest.nsw.gov.au/tenders-and-contracts/current-tenders",
+      "category": "ICT / professional services",
+      "category_codes": [],
+      "procurement_type": "panel",
+      "current_status": "closing-soon",
+      "description": "Inner West Council invites expressions of interest from suitably qualified and experienced organisations to establish a multi-supplier Professional Services Panel for data, AI, automation & integration and digital solutions.",
+      "deliverables_summary": "Establishment of a multi-supplier Professional Services Panel across four streams - Data Services; Artificial Intelligence (AI) Services; Automation & Integration Services; and Digital Solutions & Development - to give Council access to specialist advisory, strategic, technical and delivery expertise from planning and architecture through to implementation, optimisation and ongoing capability development.",
+      "key_deliverables": [
+        "Data Services stream",
+        "Artificial Intelligence (AI) Services stream",
+        "Automation & Integration Services stream",
+        "Digital Solutions & Development stream"
+      ],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open to suitably qualified and experienced organisations (multi-supplier panel).",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-08-30",
+      "closing_time": "10:00 PM AEST",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Submit via VendorPanel (free of charge) at www.vendorpanel.com.au/innerwest/tenders; enquiries via the VendorPanel online forum",
+      "lodgement_url": "https://www.vendorpanel.com.au/innerwest/tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Inner West, Sydney NSW",
+      "contact_name": "Marea Getsios, Procurement & Contracts Manager",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "local-government",
+        "panel",
+        "ict",
+        "ai",
+        "data"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch; buyer-originated (Inner West Council listing on VendorPanel). Panel streams, contact and submission channel taken directly from the buyer-originated search snippet.",
+      "notes": "Headline-level with panel-structure detail from the search snippet; full requirements, evaluation criteria and closing confirmation not read from the detail page because WebFetch egress was blocked. Closing 30-Aug-2026 22:00 AEST per snippet.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "tenderlink:sydneyuni:Curriculum-Management-Technologies-EOI",
+      "source_name": "University of Sydney (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/sydneyuni/alltenders/",
+      "source_type": "university",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://portal.tenderlink.com/sydneyuni/alltenders/",
+      "access": "free-registration",
+      "title": "Curriculum Management Technologies (EOI)",
+      "buyer": "The University of Sydney",
+      "buyer_url": "https://www.sydney.edu.au/about-us/working-with-us/procurement.html",
+      "category": "ICT / education technology",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Expression of interest issued by the University of Sydney relating to curriculum management technologies.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Register and respond via University of Sydney TenderLink portal",
+      "lodgement_url": "https://portal.tenderlink.com/sydneyuni/alltenders/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Sydney NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "university",
+        "eoi",
+        "ict",
+        "edtech"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of the University of Sydney TenderLink current-tenders portal; buyer-originated.",
+      "notes": "Headline-level only. Closing date not visible in snippet; full detail behind free TenderLink registration (WebFetch egress blocked). Other current Sydney Uni EOIs seen in the same portal (Student Accommodation 2031 (SA31) EOI; chiller and cooling tower 2027 replacement program; Unified Hybrid Campus Management System - Sensors) are deferred to a future detail pass.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "tenderlink:macquarie:Cleaning-Services-EOI",
+      "source_name": "Macquarie University (TenderLink)",
+      "source_url": "https://www.tenderlink.com/macquarie",
+      "source_type": "university",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.tenderlink.com/macquarie",
+      "access": "free-registration",
+      "title": "Cleaning Services (EOI)",
+      "buyer": "Macquarie University",
+      "buyer_url": "https://www.mq.edu.au/about/campus-services-and-facilities/procurement",
+      "category": "Facilities / soft services",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Expression of interest issued by Macquarie University for the provision of cleaning services.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Register and respond via Macquarie University TenderLink portal",
+      "lodgement_url": "https://www.tenderlink.com/macquarie",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Macquarie Park, Sydney NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "university",
+        "eoi",
+        "cleaning",
+        "facilities"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of Macquarie University tender listings; buyer-originated (TenderLink e-tendering).",
+      "notes": "Headline-level only. Closing date not visible in snippet; detail behind free TenderLink registration (WebFetch egress blocked). A companion 'Security Services and Related Soft Services' EOI was also seen and is deferred to a future detail pass.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "melbournewater:Cardinia-Dam-Upgrade-Construct-Only-EOI",
+      "source_name": "Melbourne Water Corporation",
+      "source_url": "https://www.melbournewater.com.au/about-us/tenders-and-contracts",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "state": "VIC",
+      "tender_id": "",
+      "tender_url": "https://www.melbournewater.com.au/about-us/tenders-and-contracts",
+      "access": "public",
+      "title": "Cardinia Dam Upgrade - Construct Only services (EOI)",
+      "buyer": "Melbourne Water Corporation",
+      "buyer_url": "https://www.melbournewater.com.au/",
+      "category": "Construction / water infrastructure",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Melbourne Water is seeking expressions of interest for Construct Only services for the Cardinia Dam Upgrade project.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Respond via Melbourne Water tenders channel / Buying for Victoria",
+      "lodgement_url": "https://www.melbournewater.com.au/about-us/tenders-and-contracts",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Victoria",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "vic",
+        "gbe",
+        "water",
+        "construction",
+        "eoi"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch; buyer-originated (Melbourne Water Corporation, a Victorian government-owned water corporation).",
+      "notes": "Headline-level only. Closing date not confirmed from a buyer-originated detail page (WebFetch egress blocked). Companion Melbourne Water EOIs seen (biosolids processing solution; SCADA For Our Future) are deferred to a future detail pass.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "sydneywater:Circular-Economy-Zone-Kemps-Creek-EOI",
+      "source_name": "Sydney Water Corporation",
+      "source_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
+      "access": "public",
+      "title": "Circular Economy Zone - Kemps Creek (EOI to develop and lease ~12 hectares)",
+      "buyer": "Sydney Water Corporation",
+      "buyer_url": "https://www.sydneywater.com.au/",
+      "category": "Property / land development",
+      "category_codes": [],
+      "procurement_type": "EOI",
+      "current_status": "open",
+      "description": "Sydney Water has released an expression of interest for proposals to develop and lease approximately 12 hectares of land at Kemps Creek known as the Circular Economy Zone.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Respond via Sydney Water current tenders / eProcurement channel",
+      "lodgement_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Kemps Creek, Western Sydney NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "gbe",
+        "water",
+        "property",
+        "circular-economy",
+        "eoi"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch; buyer-originated (Sydney Water Corporation, a NSW government-owned water corporation).",
+      "notes": "Headline-level only. Closing date not confirmed from a buyer-originated detail page (WebFetch egress blocked). Companion Sydney Water opportunities seen (biochar beneficial reuse; Strategic Customer Engagement 2026-2029 RFI) are deferred to a future detail pass.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "qtol:PowerWater-NT-2026-09-23",
+      "source_name": "Quotations and Tenders Online (QTOL)",
+      "source_url": "https://tendersonline.nt.gov.au/Tender/Search/Current",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Northern Territory",
+      "state": "NT",
+      "tender_id": "",
+      "tender_url": "https://tendersonline.nt.gov.au/Tender/Search/Current",
+      "access": "free-registration",
+      "title": "",
+      "buyer": "Power and Water Corporation",
+      "buyer_url": "https://www.powerwater.com.au/",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "A Power and Water Corporation (NT government-owned utility) tender published on QTOL closing 23 September 2026.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-23",
+      "closing_time": "2:00 PM ACST",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via QTOL (tendersonline.nt.gov.au)",
+      "lodgement_url": "https://tendersonline.nt.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Northern Territory",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nt",
+        "gbe",
+        "utility",
+        "power-and-water"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of NT QTOL current tenders; buyer-originated (Power and Water Corporation via the NT Government QTOL portal).",
+      "notes": "Headline-level only and TITLE PENDING - the tender's title was not present in the search snippet and the QTOL detail page is login-gated (WebFetch egress blocked). Only the buyer, portal and closing date/time (23-Sep-2026 14:00 ACST) were confirmed from the snippet.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "austender:RFT-2026-0080",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "RFT-2026-0080",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/613a179b-dedb-46e9-9a22-c317aaafc75a",
+      "access": "public",
+      "title": "",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "A current Commonwealth approach-to-market (ATM RFT-2026-0080) listed on AusTender.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "austender",
+        "atm"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch of the AusTender current ATM list; buyer-originated Commonwealth ATM with a structured Atm/Show deep link.",
+      "notes": "Headline-level only and TITLE/BUYER/CLOSING PENDING - the ATM detail page (www.tenders.gov.au) is EGRESS_BLOCKED this run, so only the ATM id and its Atm/Show deep link were captured. Recorded so downstream automation can resolve it when egress is available. Other AusTender ATMs seen with deep links (ATM_2026_6786, ATM_2026_6026, ATM_2026_6066, OET-DRC-2026) are deferred.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "vendorpanel:camden:T004-2026-Street-Sweeping",
+      "source_name": "Camden Council (VendorPanel)",
+      "source_url": "https://www.camden.nsw.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "T004/2026",
+      "tender_url": "https://www.camden.nsw.gov.au/assets/Procurement-/T004-2026-Street-Sweeping-Collection-Processing-and-Disposal-Services.pdf",
+      "access": "public",
+      "title": "T004/2026 Street Sweeping Collection, Processing and Disposal Services",
+      "buyer": "Camden Council",
+      "buyer_url": "https://www.camden.nsw.gov.au/",
+      "category": "Environmental / waste services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Camden Council RFT (T004/2026) for street sweeping collection, processing and disposal services.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via Camden Council / VendorPanel",
+      "lodgement_url": "https://www.camden.nsw.gov.au/",
+      "documents": [
+        {
+          "name": "T004-2026 Street Sweeping Collection Processing and Disposal Services",
+          "url": "https://www.camden.nsw.gov.au/assets/Procurement-/T004-2026-Street-Sweeping-Collection-Processing-and-Disposal-Services.pdf"
+        }
+      ],
+      "mandatory_conditions": [],
+      "delivery_location": "Camden LGA, NSW",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "local-government",
+        "waste",
+        "street-sweeping"
+      ],
+      "first_seen": "2026-08-27",
+      "detail_source": "",
+      "reasoning": "Surfaced via WebSearch; buyer-originated Camden Council procurement document (T004/2026).",
+      "notes": "Headline-level only. A buyer-hosted PDF document URL was captured, but the PDF/detail could not be opened (WebFetch egress blocked), so closing date, value and requirements are unverified.",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
       "is_new_in_latest": true,
       "active_in_latest": true
     }
@@ -19633,7 +20250,7 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Sydney Water",
+      "source_name": "Sydney Water Corporation - Current tenders",
       "source_url": "https://www.sydneywater.com.au/about-us/our-suppliers/current-tenders.html",
       "source_type": "gov-business-enterprise",
       "jurisdiction": "New South Wales",
@@ -19642,37 +20259,38 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 2 GBE; market sounding for Strategic Customer Engagement 2026-2029 surfaced via WebSearch.",
+      "how_discovered": "Tier 2 GBE; re-checked via WebSearch (Circular Economy Zone EOI surfaced).",
       "recommended_check_frequency": "weekly",
-      "notes": "NSW water GBE; also has a sub-portal on NSW eTendering.",
+      "notes": "NSW government-owned water corporation with its own current-tenders page and eProcurement.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-06-25",
         "2026-06-28",
         "2026-07-19",
         "2026-08-13",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-27"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
-      "source_name": "AusTender (Commonwealth)",
+      "source_name": "AusTender - Current ATM List",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Australia (Commonwealth)",
+      "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
-      "access_method": "rss",
-      "feed_or_api_url": "https://www.tenders.gov.au/public_data/rss/",
+      "access_method": "html",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 portal, re-checked via WebSearch this run (two current ATMs deep-linked).",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch (detail pages EGRESS_BLOCKED this run).",
       "recommended_check_frequency": "daily",
-      "notes": "Detail pages could not be fetched this run (egress blocked); only search-level access.",
+      "notes": "Commonwealth core portal. Reachable only via WebSearch this run; Atm/Show detail pages blocked by egress policy.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -19700,9 +20318,10 @@
         "2026-08-23",
         "2026-08-24",
         "2026-08-25",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27"
       ],
-      "seen_count": 27,
+      "seen_count": 28,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -19762,7 +20381,7 @@
       ],
       "seen_count": 10,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Port of Townsville Limited (buyer)",
@@ -20089,7 +20708,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Australia Post — Tendering & supply opportunities",
@@ -20278,10 +20897,10 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
-      "source_name": "EstimateOne (E1)",
+      "source_name": "EstimateOne (E1) - Live construction tenders",
       "source_url": "https://estimateone.com/tenders/",
       "source_type": "construction-subcontract",
       "jurisdiction": "Australia",
@@ -20290,11 +20909,11 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 / construction check via WebSearch. Tier-1 builders invite subcontractor quotes for work packages via E1.",
+      "how_discovered": "Tier 3 construction check; head-contractors (Lendlease, Multiplex, John Holland, etc.) invite subcontractor quotes via E1.",
       "recommended_check_frequency": "weekly",
-      "notes": "Subcontractor work-package detail is behind a supplier account; no publicly-visible package detail accessible this run.",
+      "notes": "Subcontractor work-package invitations are login-gated (uploaded by builders). Portal recorded; no packages fabricated.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -20304,9 +20923,10 @@
         "2026-08-14",
         "2026-08-15",
         "2026-08-25",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27"
       ],
-      "seen_count": 9,
+      "seen_count": 10,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -20346,7 +20966,7 @@
       ],
       "seen_count": 17,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transgrid — Supplier portal / ibuy (SAP Ariba)",
@@ -20531,20 +21151,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Department of Transport and Main Roads (QLD) / QTenders",
+      "source_name": "QTenders / eTender (Queensland)",
       "source_url": "https://qtenders.hpw.qld.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "Queensland",
       "platform": "QTenders",
       "access_method": "html",
-      "feed_or_api_url": null,
+      "feed_or_api_url": "https://etender.hpw.qld.gov.au/public/TendersListingCurrent.aspx",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; TMR RSSP ICT Managed Services EOI surfaced via WebSearch.",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch. Note ongoing migration signal to supply.qld.gov.au / VendorPanel.",
       "recommended_check_frequency": "daily",
-      "notes": "QLD publishes on QTenders while migrating to VendorPanel via supply.qld.gov.au - check both.",
+      "notes": "QLD core portal; goods/services via QTenders, building & construction via eTender. supply.qld.gov.au is the emerging supplier portal to watch.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-06-28",
         "2026-07-17",
@@ -20553,11 +21173,12 @@
         "2026-08-09",
         "2026-08-10",
         "2026-08-16",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-27"
       ],
-      "seen_count": 8,
+      "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Tenders and Contracts",
@@ -20587,7 +21208,7 @@
       ],
       "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders Tasmania",
@@ -20615,7 +21236,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "NT Quotations and Tenders Online (QTOL)",
@@ -20650,20 +21271,21 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; produced two live opportunities (GovAI Chat WCAG testing, Graduate Relocation Services) via WebSearch this run.",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch.",
       "recommended_check_frequency": "daily",
-      "notes": "ACT Government tender portal.",
+      "notes": "ACT core portal. Row-level detail not retrievable from snippets this run.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-06-28",
         "2026-07-18",
         "2026-07-19",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-27"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Sydney Trains — NSW eTendering",
@@ -21288,48 +21910,50 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Business Network Discovery (SAP Ariba Discovery)",
+      "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
       "source_url": "https://www.sap.com/australia/products/business-network/find-suppliers.html",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national / global)",
+      "jurisdiction": "Australia (global platform)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier-3 check. SAP Help Portal confirms Business Opportunities on SAP Business Network Discovery require a free seller account to view/respond, with public posting dependent on buyer configuration.",
+      "how_discovered": "Tier 3 mandatory check; public product/help pages confirm live buyer RFx/RFI postings, but individual postings require a free supplier account.",
       "recommended_check_frequency": "daily",
-      "notes": "Largest single corporate opportunity channel. No publicly-visible AU RFx capturable without an authenticated seller account this run; recorded as a portal only. Register a free seller account so a future authenticated run can read open RFx.",
+      "notes": "Largest single corporate opportunity channel. Registration-gated; no publicly-visible RFx detail could be captured this run - portal recorded, no opportunities fabricated. An authenticated session is required to read postings.",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-02",
+      "last_seen": "2026-08-27",
       "seen_dates": [
-        "2026-07-02"
+        "2026-07-02",
+        "2026-08-27"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
-      "source_name": "ICN Gateway (Industry Capability Network)",
+      "source_name": "ICN Gateway (Western Sydney Airport / WSA Co operational procurement)",
       "source_url": "https://gateway.icn.org.au/",
-      "source_type": "public-sector-other",
-      "jurisdiction": "Australia (national)",
-      "platform": "ICN Gateway (proprietary)",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "New South Wales",
+      "platform": "custom",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "medium",
-      "how_discovered": "WebSearch for defence-prime and major-project subcontractor portals; ICN Gateway repeatedly surfaced as where government-funded and private project owners list work packages across defence, construction, mining, oil & gas, rail and manufacturing. Free supplier registration with project alerts and express-interest.",
-      "recommended_check_frequency": "daily",
-      "notes": "Buyer/project-originated work packages (incl. defence AIC/GSC programs) but functions partly as a marketplace — pivot to the underlying buyer where possible. Portal URL from search index; not fetch-verified this run (session egress block, HTTP 403). Register a free supplier account for alerts/API.",
+      "how_discovered": "WebSearch on airport/port corporation procurement; WSA Co (Western Sydney Airport) advertises operational-phase opportunities via ICN Gateway and its own site (procurement@wsaco.com.au).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Discovery signal for major-infrastructure supplier opportunities. ICN Gateway aggregates by-project work packages posted by proponents; treat individual buyer notices as the source of truth.",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-07-03",
+      "last_seen": "2026-08-27",
       "seen_dates": [
-        "2026-07-03"
+        "2026-07-03",
+        "2026-08-27"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "illion TenderLink",
@@ -21398,27 +22022,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "WaterNSW - Procurement / Working with us",
+      "source_name": "WaterNSW - Procurement",
       "source_url": "https://www.waternsw.com.au/about-us/working-with-us/procurement",
       "source_type": "gov-business-enterprise",
       "jurisdiction": "New South Wales",
       "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
-      "confidence": "high",
-      "how_discovered": "WebSearch (surfaced alongside Sydney Water); WaterNSW publishes a 'Working with us / Procurement' channel on its own website for supplier engagement and tender opportunities.",
-      "recommended_check_frequency": "weekly",
-      "notes": "NSW state-owned bulk water supplier/operator (Tier-2 GBE). Buyer-originated procurement channel; check for open RFx and supplier registration.",
+      "is_new_source": false,
+      "confidence": "medium",
+      "how_discovered": "WebSearch discovery signal alongside buy.nsw results.",
+      "recommended_check_frequency": "monthly",
+      "notes": "NSW government-owned water entity procurement page; verify buyer-originated listing channel before treating as primary.",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-07-03",
-        "2026-07-29"
+        "2026-07-29",
+        "2026-08-27"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Water Supplier Portal",
@@ -21866,7 +22491,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Mid West Ports Authority — Tenders",
@@ -22536,7 +23161,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Homes Tasmania — Tenders, EOI and grants",
@@ -22858,38 +23483,39 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; re-confirmed via WebSearch. Could not be opened live (WebFetch EGRESS_BLOCKED).",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch.",
       "recommended_check_frequency": "daily",
-      "notes": "Known source. Not queryable this run.",
+      "notes": "NSW core portal (tenders.nsw.gov.au now routes to buy.nsw / suppliers.buy.nsw.gov.au). Opportunity-search reachable via WebSearch; per-tender detail not fetchable this run.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-07-17",
         "2026-08-10",
         "2026-08-14",
         "2026-08-20",
         "2026-08-21",
-        "2026-08-22"
+        "2026-08-22",
+        "2026-08-27"
       ],
-      "seen_count": 6,
+      "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria",
       "source_url": "https://www.tenders.vic.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "Victoria",
-      "platform": "custom",
+      "platform": "Buying for Victoria",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 portal, re-checked via WebSearch this run (two tender views deep-linked, incl. Melbourne Airport Rail EOI).",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch (also buyingfor.vic.gov.au/browse-tenders).",
       "recommended_check_frequency": "daily",
-      "notes": "Detail pages not fetched this run (egress blocked).",
+      "notes": "VIC core portal. Row-level open tenders not retrievable from snippets this run; deferred.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-07-17",
         "2026-07-18",
@@ -22900,27 +23526,28 @@
         "2026-08-14",
         "2026-08-21",
         "2026-08-22",
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27"
       ],
-      "seen_count": 10,
+      "seen_count": 11,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "NT Quotations and Tenders Online (QTOL)",
+      "source_name": "Quotations and Tenders Online (QTOL)",
       "source_url": "https://tendersonline.nt.gov.au/Tender/Search/Current",
       "source_type": "gov-state",
       "jurisdiction": "Northern Territory",
       "platform": "custom",
-      "access_method": "html",
+      "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; produced a live open tender (Buchanan Highway gravel resheeting) via WebSearch this run.",
+      "how_discovered": "Canonical Tier 1 seed; re-checked via WebSearch (Power and Water Corporation tender surfaced).",
       "recommended_check_frequency": "daily",
-      "notes": "NT Government portal; most government work over $200,000 advertised here. Lodgement is online via QTOL.",
+      "notes": "NT core portal. Detail pages login-gated.",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "seen_dates": [
         "2026-07-17",
         "2026-07-18",
@@ -22928,11 +23555,12 @@
         "2026-08-08",
         "2026-08-09",
         "2026-08-14",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-27"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Tenders ACT",
@@ -24602,7 +25230,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders ACT",
@@ -24625,7 +25253,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Dubbo Regional Council — Public Tenders (VendorPanel)",
@@ -25484,7 +26112,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Greater Western Water",
@@ -25703,8 +26331,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Coliban Water (VIC) - Tenders and contractors",
@@ -25725,8 +26353,8 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Unitywater (QLD) - Procurement and Tendering",
@@ -25747,11 +26375,11 @@
         "2026-08-26"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
-      "source_name": "University of Sydney - Current Tenders (TenderLink)",
+      "source_name": "University of Sydney (TenderLink)",
       "source_url": "https://portal.tenderlink.com/sydneyuni/alltenders/",
       "source_type": "university",
       "jurisdiction": "New South Wales",
@@ -25760,16 +26388,17 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Re-checked via WebSearch on university procurement (Camden Campus cafe RFT surfaced). Buyer-originated portal hosted on TenderLink.",
+      "how_discovered": "Tier 2 known source; re-checked via WebSearch (multiple current EOIs surfaced).",
       "recommended_check_frequency": "weekly",
-      "notes": "Browsing is public; free registration required to download documents / lodge. Not fetched this run (egress blocked).",
+      "notes": "University buyer publishing on its own TenderLink portal; free registration for detail.",
       "first_seen": "2026-08-26",
-      "last_seen": "2026-08-26",
+      "last_seen": "2026-08-27",
       "seen_dates": [
-        "2026-08-26"
+        "2026-08-26",
+        "2026-08-27"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -25789,6 +26418,138 @@
       "last_seen": "2026-08-26",
       "seen_dates": [
         "2026-08-26"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Murray River Council",
+      "source_url": "https://www.murrayriver.nsw.gov.au/Council/News/Public-notices/VendorPanel-Improving-Supplier-Engagement",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for regional-council VendorPanel adoption in 2026; council's own public notice announcing it uses VendorPanel for supplier engagement / quotes.",
+      "recommended_check_frequency": "monthly",
+      "notes": "NSW local government buyer moving public quotes/tenders to VendorPanel. Not previously in the known-source set.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Southern Downs Regional Council",
+      "source_url": "https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=7C94BBCCAA83",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for regional-council VendorPanel public tenders; council's VendorPanel public-tenders page surfaced directly.",
+      "recommended_check_frequency": "monthly",
+      "notes": "QLD local government buyer publishing public tenders via VendorPanel. Not previously in the known-source set.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Kempsey Shire Council - Current tenders & EOI",
+      "source_url": "https://www.kempsey.nsw.gov.au/Business/Doing-business-with-Council/Current-tenders-EOI",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian council tenders/EOI pages; council's own current-tenders-and-EOI page surfaced.",
+      "recommended_check_frequency": "monthly",
+      "notes": "NSW local government buyer with its own current-tenders/EOI listing page. Not previously in the known-source set.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "VendorPanel - Public Tenders",
+      "source_url": "https://www.vendorpanel.com.au/PublicTenders.aspx",
+      "source_type": "gov-local",
+      "jurisdiction": "Australia (multi-jurisdiction)",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Canonical Tier 2 seed; re-checked. Strong 2026 migration signal - many councils (incl. from TenderLink) are moving public quotes/tenders to VendorPanel.",
+      "recommended_check_frequency": "daily",
+      "notes": "Buyer-originated platform used by 200+ Australian government agencies / councils.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Macquarie University (TenderLink)",
+      "source_url": "https://www.tenderlink.com/macquarie",
+      "source_type": "university",
+      "jurisdiction": "New South Wales",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Tier 2; re-checked via WebSearch (Cleaning and Security soft-services EOIs surfaced).",
+      "recommended_check_frequency": "weekly",
+      "notes": "University buyer on its own TenderLink e-tendering channel.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Melbourne Water Corporation - Tenders and contracts",
+      "source_url": "https://www.melbournewater.com.au/about-us/tenders-and-contracts",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Tier 2 GBE; re-checked via WebSearch (multiple current EOIs surfaced).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Victorian government-owned water corporation; also advertises via Buying for Victoria.",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "seen_dates": [
+        "2026-08-27"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

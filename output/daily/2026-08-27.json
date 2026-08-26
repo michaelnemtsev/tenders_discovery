@@ -66,7 +66,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport-for-nsw", "infrastructure", "maintenance"],
+      "tags": [
+        "nsw",
+        "transport-for-nsw",
+        "infrastructure",
+        "maintenance"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated (NSW eTendering / buy.nsw, Transport for NSW).",
@@ -114,7 +119,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "icare", "environmental-services"],
+      "tags": [
+        "nsw",
+        "icare",
+        "environmental-services"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw open opportunities; buyer-originated (NSW eTendering / buy.nsw, Insurance and Care NSW).",
@@ -167,7 +176,14 @@
       "contact_name": "Marea Getsios, Procurement & Contracts Manager",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "panel", "ict", "ai", "data"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "panel",
+        "ict",
+        "ai",
+        "data"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated (Inner West Council listing on VendorPanel). Panel streams, contact and submission channel taken directly from the buyer-originated search snippet.",
@@ -215,7 +231,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "eoi", "ict", "edtech"],
+      "tags": [
+        "nsw",
+        "university",
+        "eoi",
+        "ict",
+        "edtech"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the University of Sydney TenderLink current-tenders portal; buyer-originated.",
@@ -263,7 +285,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "eoi", "cleaning", "facilities"],
+      "tags": [
+        "nsw",
+        "university",
+        "eoi",
+        "cleaning",
+        "facilities"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of Macquarie University tender listings; buyer-originated (TenderLink e-tendering).",
@@ -311,7 +339,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "gbe", "water", "construction", "eoi"],
+      "tags": [
+        "vic",
+        "gbe",
+        "water",
+        "construction",
+        "eoi"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated (Melbourne Water Corporation, a Victorian government-owned water corporation).",
@@ -359,7 +393,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "gbe", "water", "property", "circular-economy", "eoi"],
+      "tags": [
+        "nsw",
+        "gbe",
+        "water",
+        "property",
+        "circular-economy",
+        "eoi"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated (Sydney Water Corporation, a NSW government-owned water corporation).",
@@ -407,7 +448,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "gbe", "utility", "power-and-water"],
+      "tags": [
+        "nt",
+        "gbe",
+        "utility",
+        "power-and-water"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NT QTOL current tenders; buyer-originated (Power and Water Corporation via the NT Government QTOL portal).",
@@ -455,7 +501,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "austender", "atm"],
+      "tags": [
+        "commonwealth",
+        "austender",
+        "atm"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the AusTender current ATM list; buyer-originated Commonwealth ATM with a structured Atm/Show deep link.",
@@ -498,14 +548,22 @@
       "submission_method": "Lodge via Camden Council / VendorPanel",
       "lodgement_url": "https://www.camden.nsw.gov.au/",
       "documents": [
-        {"name": "T004-2026 Street Sweeping Collection Processing and Disposal Services", "url": "https://www.camden.nsw.gov.au/assets/Procurement-/T004-2026-Street-Sweeping-Collection-Processing-and-Disposal-Services.pdf"}
+        {
+          "name": "T004-2026 Street Sweeping Collection Processing and Disposal Services",
+          "url": "https://www.camden.nsw.gov.au/assets/Procurement-/T004-2026-Street-Sweeping-Collection-Processing-and-Disposal-Services.pdf"
+        }
       ],
       "mandatory_conditions": [],
       "delivery_location": "Camden LGA, NSW",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "waste", "street-sweeping"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "waste",
+        "street-sweeping"
+      ],
       "first_seen": "2026-08-27",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated Camden Council procurement document (T004/2026).",
