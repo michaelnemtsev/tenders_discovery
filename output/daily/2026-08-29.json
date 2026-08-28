@@ -63,7 +63,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "services", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "services",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via AusTender site-restricted web search for current ATMs closing/commencing September 2026; buyer-originated on the Commonwealth AusTender portal.",
@@ -111,7 +115,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "marine", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "marine",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via AusTender-focused web search for current ATMs; buyer-originated on AusTender.",
@@ -159,7 +167,10 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via AusTender-focused web search for current ATMs with September 2026 activity; buyer-originated on AusTender.",
@@ -207,7 +218,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "health", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "health",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via AusTender-focused web search; the 'Health/' ATM ID prefix indicates the Commonwealth health portfolio. Buyer-originated on AusTender.",
@@ -255,7 +270,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "panel", "asdefcon", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "panel",
+        "asdefcon",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via AusTender-focused web search; use of ASDEFCON templates and Tasking Statements indicates a Department of Defence procurement. Buyer-originated on AusTender.",
@@ -303,7 +324,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "water", "gbe", "epcm", "eoi", "headline-only"],
+      "tags": [
+        "nsw",
+        "water",
+        "gbe",
+        "epcm",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via web search of buy.nsw/Sydney Water; buyer-originated on the NSW eTendering (buy.nsw) portal by Sydney Water Corporation, a NSW government-owned water utility.",
@@ -351,7 +379,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "roads", "construction", "eoi", "headline-only"],
+      "tags": [
+        "nsw",
+        "transport",
+        "roads",
+        "construction",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via buy.nsw opportunity search; buyer-originated on NSW eTendering (buy.nsw) by Transport for NSW.",
@@ -394,12 +429,21 @@
       "submission_method": "Lodge via buy.nsw / NSW eTendering",
       "lodgement_url": "https://buy.nsw.gov.au/prcOpportunity/07898F96-3255-4105-99789FCFA7F2A0C8",
       "documents": [],
-      "mandatory_conditions": ["Confidentiality Deed Poll required to access documents"],
+      "mandatory_conditions": [
+        "Confidentiality Deed Poll required to access documents"
+      ],
       "delivery_location": "Epping, NSW",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "bridge", "construction", "eoi", "headline-only"],
+      "tags": [
+        "nsw",
+        "transport",
+        "bridge",
+        "construction",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via buy.nsw opportunity search; buyer-originated on NSW eTendering (buy.nsw) by Transport for NSW.",
@@ -447,7 +491,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "electrical", "design-construct", "eoi", "headline-only"],
+      "tags": [
+        "nsw",
+        "transport",
+        "electrical",
+        "design-construct",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via buy.nsw opportunity search for transport/infrastructure EOIs closing September 2026; buyer-originated on NSW eTendering (buy.nsw) by Transport for NSW.",
@@ -495,7 +546,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "equipment", "maintenance", "rft", "closing-soon", "headline-only"],
+      "tags": [
+        "nsw",
+        "transport",
+        "equipment",
+        "maintenance",
+        "rft",
+        "closing-soon",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via NSW eTendering/buy.nsw web search; buyer-originated on the NSW eTendering portal by Transport for NSW (Transport Infrastructure Projects).",
@@ -543,7 +602,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "water", "gbe", "dam", "construction", "eoi", "headline-only"],
+      "tags": [
+        "vic",
+        "water",
+        "gbe",
+        "dam",
+        "construction",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via web search of water-corporation tenders; buyer-originated by Melbourne Water Corporation (Victorian government-owned water utility).",
@@ -591,7 +658,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "water", "gbe", "biosolids", "eoi", "headline-only"],
+      "tags": [
+        "vic",
+        "water",
+        "gbe",
+        "biosolids",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via web search of water-corporation tenders; buyer-originated by Melbourne Water Corporation.",
@@ -639,7 +713,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "water", "gbe", "wastewater", "design-construct", "eoi", "headline-only"],
+      "tags": [
+        "sa",
+        "water",
+        "gbe",
+        "wastewater",
+        "design-construct",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via web search of water-corporation tenders; buyer-originated by SA Water Corporation (South Australian government-owned water utility).",
@@ -687,7 +769,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "accommodation", "eoi", "headline-only"],
+      "tags": [
+        "nsw",
+        "university",
+        "accommodation",
+        "eoi",
+        "headline-only"
+      ],
       "first_seen": "2026-08-29",
       "detail_source": "",
       "reasoning": "Discovered via web search of university TenderLink portals; buyer-originated by the University of Sydney on its own TenderLink e-tendering portal. Full detail requires free TenderLink registration.",
