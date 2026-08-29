@@ -64,7 +64,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "1300 459 689",
-      "tags": ["local-government", "aquatic-centre", "facility-management", "vendorpanel"],
+      "tags": [
+        "local-government",
+        "aquatic-centre",
+        "facility-management",
+        "vendorpanel"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of CGRC's current tenders page; buyer-originated notice published by the council, lodged through VendorPanel Public Tenders.",
@@ -112,7 +117,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "health", "case-management", "panel", "icare"],
+      "tags": [
+        "nsw",
+        "health",
+        "case-management",
+        "panel",
+        "icare"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of buy.nsw opportunities; buyer-originated (icare NSW) on the NSW Government procurement portal.",
@@ -160,7 +171,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "roads", "maintenance", "environmental"],
+      "tags": [
+        "nsw",
+        "transport",
+        "roads",
+        "maintenance",
+        "environmental"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of buy.nsw opportunities; buyer-originated (Transport for NSW) on the NSW Government procurement portal.",
@@ -208,7 +225,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "maintenance", "equipment", "sydney-harbour-bridge"],
+      "tags": [
+        "nsw",
+        "transport",
+        "maintenance",
+        "equipment",
+        "sydney-harbour-bridge"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of buy.nsw opportunities; buyer-originated (Transport for NSW) on the NSW Government procurement portal.",
@@ -256,7 +279,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "ict", "data", "mobility"],
+      "tags": [
+        "nsw",
+        "transport",
+        "ict",
+        "data",
+        "mobility"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch returning a buy.nsw prcOpportunity deep link (WS5556332928); buyer-originated (Transport for NSW).",
@@ -304,7 +333,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "aviation", "remote-services", "austender"],
+      "tags": [
+        "commonwealth",
+        "aviation",
+        "remote-services",
+        "austender"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch returning a 'Current ATM View' deep link on AusTender for PR10031930 (RASS); buyer-originated Commonwealth notice.",
@@ -352,7 +386,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "austender", "long-term-contract"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "austender",
+        "long-term-contract"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch returning a 'Current ATM View' deep link on AusTender for JASD/RFT/20200/1; buyer-originated Defence notice.",
@@ -400,7 +439,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "csiro", "banking", "financial-services", "austender"],
+      "tags": [
+        "commonwealth",
+        "csiro",
+        "banking",
+        "financial-services",
+        "austender"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch returning a 'Current ATM View' deep link on AusTender for CSIRORFT2026009; buyer-originated CSIRO notice.",
@@ -448,7 +493,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "csiro", "hospitality", "food-and-beverage", "eoi", "austender"],
+      "tags": [
+        "commonwealth",
+        "csiro",
+        "hospitality",
+        "food-and-beverage",
+        "eoi",
+        "austender"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch returning a 'Current ATM View' deep link on AusTender for CSIROEOI2026001; buyer-originated CSIRO notice.",
@@ -496,7 +548,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "local-government", "civil", "roadworks", "sa-tenders"],
+      "tags": [
+        "sa",
+        "local-government",
+        "civil",
+        "roadworks",
+        "sa-tenders"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch; Copper Coast Council notice (CCC051878) published on SA Tenders and Contracts (buyer-originated via the SA Government portal).",
@@ -544,7 +602,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "vic", "ict", "research", "panel", "tenderlink"],
+      "tags": [
+        "university",
+        "vic",
+        "ict",
+        "research",
+        "panel",
+        "tenderlink"
+      ],
       "first_seen": "2026-08-30",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Monash University's TenderLink current-tenders portal; buyer-originated university procurement.",
