@@ -61,7 +61,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "commonwealth", "rft", "headline-only"],
+      "tags": [
+        "health",
+        "commonwealth",
+        "rft",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of current AusTender ATMs; buyer-originated Commonwealth notice on tenders.gov.au.",
@@ -109,7 +114,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["eoi", "commonwealth", "two-stage", "headline-only"],
+      "tags": [
+        "eoi",
+        "commonwealth",
+        "two-stage",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of current AusTender ATMs.",
@@ -157,7 +167,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["defence", "aacap", "indigenous", "construction", "headline-only"],
+      "tags": [
+        "defence",
+        "aacap",
+        "indigenous",
+        "construction",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of current AusTender ATMs; AACAP is a Department of Defence (Australian Army) program.",
@@ -205,7 +221,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["panel", "translation", "interpreting", "commonwealth", "headline-only"],
+      "tags": [
+        "panel",
+        "translation",
+        "interpreting",
+        "commonwealth",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated Commonwealth panel notice on AusTender.",
@@ -253,7 +275,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["rfi", "market-sounding", "commonwealth", "headline-only"],
+      "tags": [
+        "rfi",
+        "market-sounding",
+        "commonwealth",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of current AusTender ATMs.",
@@ -301,7 +328,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "aquatic-centre", "facilities-management", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "aquatic-centre",
+        "facilities-management",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the council's current-tenders page; buyer-originated council RFT advertised through VendorPanel.",
@@ -349,7 +382,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "nsw", "mechanical", "hvac", "headline-only"],
+      "tags": [
+        "university",
+        "nsw",
+        "mechanical",
+        "hvac",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of the University of Sydney TenderLink current-tenders portal.",
@@ -397,7 +436,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "consultancy", "onshore-gas", "headline-only"],
+      "tags": [
+        "nt",
+        "consultancy",
+        "onshore-gas",
+        "headline-only"
+      ],
       "first_seen": "2026-08-31",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of NT QTOL; buyer-originated NT Government notice.",
