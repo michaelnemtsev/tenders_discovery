@@ -66,7 +66,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["transport", "infrastructure", "precinct", "nsw"],
+      "tags": [
+        "transport",
+        "infrastructure",
+        "precinct",
+        "nsw"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of buy.nsw / tenders.nsw.gov.au for open tenders closing September 2026; buyer-originated NSW Government portal.",
@@ -114,7 +119,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["education", "construction", "roofing", "panel", "nsw"],
+      "tags": [
+        "education",
+        "construction",
+        "roofing",
+        "panel",
+        "nsw"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of buy.nsw / tenders.nsw.gov.au for panels closing September 2026; buyer-originated NSW Government portal.",
@@ -162,7 +173,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["health", "medical-equipment", "standing-offer", "nsw"],
+      "tags": [
+        "health",
+        "medical-equipment",
+        "standing-offer",
+        "nsw"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of buy.nsw / tenders.nsw.gov.au for HealthShare NSW tenders closing September 2026; buyer-originated NSW Government portal.",
@@ -210,7 +226,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["environment", "biosecurity", "cane-toad", "nsw"],
+      "tags": [
+        "environment",
+        "biosecurity",
+        "cane-toad",
+        "nsw"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of buy.nsw / tenders.nsw.gov.au for opportunities closing September 2026; buyer-originated NSW Government portal.",
@@ -258,7 +279,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "wastewater", "infrastructure", "eoi", "vic"],
+      "tags": [
+        "water",
+        "wastewater",
+        "infrastructure",
+        "eoi",
+        "vic"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.vic.gov.au for open tenders closing September 2026; Melbourne Water is a Victorian water GBE posting on the state portal.",
@@ -306,7 +333,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["agriculture", "work-health-safety", "tas"],
+      "tags": [
+        "agriculture",
+        "work-health-safety",
+        "tas"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.tas.gov.au for tenders closing September 2026; buyer-originated Tasmanian Government portal.",
@@ -354,7 +385,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["education", "architecture", "consultancy", "tas"],
+      "tags": [
+        "education",
+        "architecture",
+        "consultancy",
+        "tas"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.tas.gov.au for tenders closing September 2026; buyer-originated Tasmanian Government portal.",
@@ -402,7 +438,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["police", "training", "first-aid", "tas"],
+      "tags": [
+        "police",
+        "training",
+        "first-aid",
+        "tas"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.tas.gov.au for tenders closing September 2026; buyer-originated Tasmanian Government portal.",
@@ -450,7 +491,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["education", "oshc", "childcare", "tas"],
+      "tags": [
+        "education",
+        "oshc",
+        "childcare",
+        "tas"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.tas.gov.au for tenders closing September 2026; buyer-originated Tasmanian Government portal.",
@@ -498,7 +544,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["events", "ticketing", "nt"],
+      "tags": [
+        "events",
+        "ticketing",
+        "nt"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tendersonline.nt.gov.au current tenders closing September 2026; buyer-originated NT Government portal.",
@@ -546,7 +596,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["chemicals", "supply", "nt"],
+      "tags": [
+        "chemicals",
+        "supply",
+        "nt"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tendersonline.nt.gov.au current tenders closing September 2026; buyer-originated NT Government portal.",
@@ -594,7 +648,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["cleaning", "facilities", "nt"],
+      "tags": [
+        "cleaning",
+        "facilities",
+        "nt"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tendersonline.nt.gov.au current tenders closing September 2026; buyer-originated NT Government portal.",
@@ -642,7 +700,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["land", "development", "act"],
+      "tags": [
+        "land",
+        "development",
+        "act"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.act.gov.au open tenders; buyer-originated ACT Government portal (Suburban Land Agency).",
@@ -690,7 +752,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ict", "local-government", "development-application", "qld"],
+      "tags": [
+        "ict",
+        "local-government",
+        "development-application",
+        "qld"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch for Queensland QTenders / Brisbane City Council tenders closing September 2026; buyer-originated council portal.",
@@ -738,7 +805,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "engineering", "panel", "advance-notice", "wa"],
+      "tags": [
+        "water",
+        "engineering",
+        "panel",
+        "advance-notice",
+        "wa"
+      ],
       "first_seen": "2026-09-01",
       "detail_source": "",
       "reasoning": "Surfaced in WebSearch of tenders.wa.gov.au advance tender notices; Water Corporation (WA) is a state water GBE. Captured as an advance/market-sounding notice, not yet an open RFT.",
