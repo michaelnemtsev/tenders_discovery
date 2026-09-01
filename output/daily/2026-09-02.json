@@ -72,7 +72,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "small-business", "advisory", "government"],
+      "tags": [
+        "nsw",
+        "small-business",
+        "advisory",
+        "government"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NSW eTendering / buy.nsw open RFT listings; buyer-originated on the NSW Government procurement portal.",
@@ -120,7 +125,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "training", "leadership", "fresh-start"],
+      "tags": [
+        "nsw",
+        "training",
+        "leadership",
+        "fresh-start"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NSW eTendering / buy.nsw open RFT listings; buyer-originated on the NSW Government procurement portal.",
@@ -168,7 +178,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "rfs", "footwear", "ppe", "uniforms"],
+      "tags": [
+        "nsw",
+        "rfs",
+        "footwear",
+        "ppe",
+        "uniforms"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NSW eTendering / buy.nsw open RFT listings; buyer-originated (NSW RFS) on the NSW Government procurement portal.",
@@ -216,7 +232,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "legal-services", "council"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "legal-services",
+        "council"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NSW eTendering / buy.nsw open RFT listings; buyer-originated (Camden Council) advertising on the state portal.",
@@ -264,7 +285,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "water", "electrical", "switchboard", "southern-rural-water"],
+      "tags": [
+        "vic",
+        "water",
+        "electrical",
+        "switchboard",
+        "southern-rural-water"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Buying for Victoria open tenders; buyer-originated (Southern Rural Water, a VIC water corporation) on the state portal.",
@@ -312,7 +339,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "water", "construction", "civil-works", "barwon-water"],
+      "tags": [
+        "vic",
+        "water",
+        "construction",
+        "civil-works",
+        "barwon-water"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Buying for Victoria open tenders; buyer-originated (Barwon Water) on the state portal.",
@@ -360,7 +393,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["qld", "transport", "cycleway", "roads", "tmr"],
+      "tags": [
+        "qld",
+        "transport",
+        "cycleway",
+        "roads",
+        "tmr"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of QTenders / Queensland Government tender listings; buyer-originated (TMR) on the state portal.",
@@ -408,7 +447,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "boat-ramp", "marine", "construction"],
+      "tags": [
+        "wa",
+        "boat-ramp",
+        "marine",
+        "construction"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders WA current listings; buyer-originated on the WA Government portal.",
@@ -456,7 +500,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "health", "hospital", "plumbing", "qeii"],
+      "tags": [
+        "wa",
+        "health",
+        "hospital",
+        "plumbing",
+        "qeii"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders WA current listings; health-facility works published on the WA Government portal.",
@@ -504,7 +554,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "education", "architecture", "consultancy", "school-redevelopment"],
+      "tags": [
+        "tas",
+        "education",
+        "architecture",
+        "consultancy",
+        "school-redevelopment"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders Tasmania recently-added tenders (early September 2026); buyer-originated on the TAS Government portal.",
@@ -552,7 +608,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "agriculture", "whs", "program-delivery", "safe-farming"],
+      "tags": [
+        "tas",
+        "agriculture",
+        "whs",
+        "program-delivery",
+        "safe-farming"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders Tasmania recently-added tenders; buyer-originated on the TAS Government portal.",
@@ -600,7 +662,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "project-management", "consultancy", "creative-precinct"],
+      "tags": [
+        "tas",
+        "project-management",
+        "consultancy",
+        "creative-precinct"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders Tasmania recently-added tenders; buyer-originated on the TAS Government portal.",
@@ -648,7 +715,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "ticketing", "events", "health"],
+      "tags": [
+        "nt",
+        "ticketing",
+        "events",
+        "health"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NT QTOL current tenders; buyer-originated on the NT Government portal.",
@@ -696,7 +768,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "apprentices", "trainees", "group-training", "labour-hire"],
+      "tags": [
+        "nt",
+        "apprentices",
+        "trainees",
+        "group-training",
+        "labour-hire"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NT QTOL current tenders; buyer-originated on the NT Government portal.",
@@ -744,7 +822,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "energy", "remote-power", "consultancy", "engineering"],
+      "tags": [
+        "nt",
+        "energy",
+        "remote-power",
+        "consultancy",
+        "engineering"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NT QTOL current tenders; buyer-originated on the NT Government portal.",
@@ -792,7 +876,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nt", "electrical", "maintenance", "darwin"],
+      "tags": [
+        "nt",
+        "electrical",
+        "maintenance",
+        "darwin"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of NT QTOL current tenders; buyer-originated on the NT Government portal.",
@@ -840,7 +929,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["act", "land", "development", "kingston"],
+      "tags": [
+        "act",
+        "land",
+        "development",
+        "kingston"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders ACT current opportunities; buyer-originated on the ACT Government portal.",
@@ -888,7 +982,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["act", "convention-centre", "project-management", "design", "infrastructure"],
+      "tags": [
+        "act",
+        "convention-centre",
+        "project-management",
+        "design",
+        "infrastructure"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Tenders ACT current opportunities; buyer-originated on the ACT Government portal.",
@@ -936,7 +1036,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "aquatic-centre", "facilities-management", "vendorpanel"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "aquatic-centre",
+        "facilities-management",
+        "vendorpanel"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of VendorPanel public tenders and Cootamundra-Gundagai Regional Council's current tenders page; buyer-originated (council) on VendorPanel.",
@@ -984,7 +1090,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "ict", "edtech", "curriculum"],
+      "tags": [
+        "nsw",
+        "university",
+        "ict",
+        "edtech",
+        "curriculum"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of the University of Sydney TenderLink portal listing; buyer-originated on the university's own e-tendering portal.",
@@ -1032,7 +1144,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "architecture", "student-accommodation", "eoi"],
+      "tags": [
+        "nsw",
+        "university",
+        "architecture",
+        "student-accommodation",
+        "eoi"
+      ],
       "first_seen": "2026-09-02",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of the University of Sydney TenderLink portal listing; buyer-originated EOI on the university's own e-tendering portal.",
