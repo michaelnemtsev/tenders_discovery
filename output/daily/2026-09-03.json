@@ -64,7 +64,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "environment", "ecological-monitoring", "government"],
+      "tags": [
+        "nsw",
+        "environment",
+        "ecological-monitoring",
+        "government"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of buy.nsw open opportunities (NSW eTendering decommissioned; opportunities now on buy.nsw). Buyer-originated NSW Government portal.",
@@ -112,7 +117,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "irrigation", "agriculture", "civil-works", "government"],
+      "tags": [
+        "nsw",
+        "irrigation",
+        "agriculture",
+        "civil-works",
+        "government"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of buy.nsw open opportunities. Buyer-originated NSW Government portal.",
@@ -160,7 +171,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "national-parks", "civil-works", "access-tracks", "government"],
+      "tags": [
+        "nsw",
+        "national-parks",
+        "civil-works",
+        "access-tracks",
+        "government"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of buy.nsw open opportunities. Buyer-originated NSW Government portal.",
@@ -208,7 +225,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "main-roads", "road-construction", "pilbara", "infrastructure"],
+      "tags": [
+        "wa",
+        "main-roads",
+        "road-construction",
+        "pilbara",
+        "infrastructure"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search referencing Tenders WA / Main Roads WA listings; posted 27 August 2026. Buyer-originated state government portal.",
@@ -256,7 +279,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "hvac", "building-services", "facilities"],
+      "tags": [
+        "wa",
+        "hvac",
+        "building-services",
+        "facilities"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of Tenders WA current opportunities. Buyer-originated state government portal.",
@@ -281,7 +309,10 @@
       "current_status": "open",
       "description": "The University of Adelaide seeks a contractor to design and construct a new roof for the poultry shed at its Roseworthy Campus.",
       "deliverables_summary": "Design and construction of a new roof for the poultry shed at the University of Adelaide Roseworthy Campus.",
-      "key_deliverables": ["Design of replacement roof for poultry shed", "Construction / installation of the new roof"],
+      "key_deliverables": [
+        "Design of replacement roof for poultry shed",
+        "Construction / installation of the new roof"
+      ],
       "scope_of_work": null,
       "requirements": [],
       "eligibility": "Open (respond via Adelaide University TenderLink e-tendering portal)",
@@ -304,7 +335,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "university", "roofing", "construction", "roseworthy"],
+      "tags": [
+        "sa",
+        "university",
+        "roofing",
+        "construction",
+        "roseworthy"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of University of Adelaide TenderLink current tenders. Buyer-originated university e-tendering portal.",
@@ -352,7 +389,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "university", "flood-mitigation", "consultancy", "engineering"],
+      "tags": [
+        "sa",
+        "university",
+        "flood-mitigation",
+        "consultancy",
+        "engineering"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of University of Adelaide TenderLink current tenders. Buyer-originated university e-tendering portal.",
@@ -379,7 +422,9 @@
       "deliverables_summary": "Supply of subcontractor works packages for the Perth New Runway Landside project; specific package scopes are advertised to registered vendors via the Felix portal, with EOI leading to RFQ.",
       "key_deliverables": [],
       "scope_of_work": null,
-      "requirements": ["A Felix account is required to submit an EOI and receive RFQs"],
+      "requirements": [
+        "A Felix account is required to submit an EOI and receive RFQs"
+      ],
       "eligibility": "Open to qualified subcontractors; registration on Felix required",
       "evaluation_criteria": [],
       "value": null,
@@ -395,12 +440,21 @@
       "submission_method": "Register / submit EOI via Felix (cpbcon.felix.net/panel_registration/gateway-connect-eoi); existing Felix vendors email felix.procurement@cpbcon.com.au",
       "lodgement_url": "https://cpbcon.felix.net/panel_registration/gateway-connect-eoi",
       "documents": [],
-      "mandatory_conditions": ["Free Felix vendor account required"],
+      "mandatory_conditions": [
+        "Free Felix vendor account required"
+      ],
       "delivery_location": "Perth Airport, Western Australia",
       "contact_name": "",
       "contact_email": "felix.procurement@cpbcon.com.au",
       "contact_phone": "",
-      "tags": ["wa", "construction", "subcontractor", "perth-airport", "felix", "eoi"],
+      "tags": [
+        "wa",
+        "construction",
+        "subcontractor",
+        "perth-airport",
+        "felix",
+        "eoi"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of Perth Airport procurement; SkyWay JV (CPB/BMD) head-contractor subcontractor EOI channel routed through Felix. Buyer/head-contractor-originated.",
@@ -448,7 +502,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "water", "gbe", "engineering-design", "panel", "market-sounding"],
+      "tags": [
+        "wa",
+        "water",
+        "gbe",
+        "engineering-design",
+        "panel",
+        "market-sounding"
+      ],
       "first_seen": "2026-09-03",
       "detail_source": "",
       "reasoning": "Discovered via web search of Water Corporation WA supplier pages; early market advice of an upcoming EDS Panel procurement. Buyer-originated GBE.",

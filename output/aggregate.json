@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02",
+  "generated": "2026-09-03",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -70,40 +70,33 @@
     "2026-08-30",
     "2026-08-31",
     "2026-09-01",
-    "2026-09-02"
+    "2026-09-02",
+    "2026-09-03"
   ],
-  "run_count": 70,
+  "run_count": 71,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-02",
-  "latest_coverage_summary": "Tier 1 core government portals were swept via WebSearch across all jurisdictions: Commonwealth (AusTender), NSW (buy.nsw / NSW eTendering), VIC (Buying for Victoria), QLD (QTenders), WA (Tenders WA), SA (SA Tenders and Contracts), TAS (Tenders Tasmania), NT (QTOL) and ACT (Tenders ACT). Verifiable open opportunities with recognisable titles and September/October 2026 closing dates were captured for every jurisdiction. Tier 2 was sampled across local government (VendorPanel), universities (University of Sydney TenderLink) and government-owned water/port corporations. Tier 3 (private/corporate) was checked: SAP Business Network Discovery and mining-buyer portals (Rio Tinto Buy Local, BHP, Fortescue) were reviewed but current publicly-visible corporate RFx were login-gated or expired, so those portals are recorded in discovered_sources rather than fabricated as tenders. Direct WebFetch to government portal domains (tenders.nsw.gov.au, tenders.vic.gov.au, tenders.tas.gov.au, portal.tenderlink.com) was blocked by the network egress proxy, so tender detail was captured from search-result snippets at headline level; most entries therefore still need a deliverables/detail pass.",
+  "latest_run": "2026-09-03",
+  "latest_coverage_summary": "Discovery this run was performed with web search only: the environment's egress policy blocked direct WebFetch to every tender portal (tenders.gov.au, buy.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au, tenderlink, etc.), so no tender detail page or specification document could be opened and no deliverables/requirements pass was possible. Tier 1 government portals (NSW buy.nsw, Tenders WA, QTenders, SA/VIC/NT/ACT) were swept via search; university e-tendering (Adelaide, Sydney, UNSW, ANU) and GBE/utility procurement (Water Corporation WA, Southern Ports, water corporations) were checked; Tier 3 corporate was covered via SAP Ariba Discovery (login-gated) plus airport and head-contractor channels. All captured opportunities are recorded at headline level and flagged for a later authenticated/detail pass.",
   "latest_run_metadata": {
-    "run_date": "2026-09-02",
-    "coverage_summary": "Tier 1 core government portals were swept via WebSearch across all jurisdictions: Commonwealth (AusTender), NSW (buy.nsw / NSW eTendering), VIC (Buying for Victoria), QLD (QTenders), WA (Tenders WA), SA (SA Tenders and Contracts), TAS (Tenders Tasmania), NT (QTOL) and ACT (Tenders ACT). Verifiable open opportunities with recognisable titles and September/October 2026 closing dates were captured for every jurisdiction. Tier 2 was sampled across local government (VendorPanel), universities (University of Sydney TenderLink) and government-owned water/port corporations. Tier 3 (private/corporate) was checked: SAP Business Network Discovery and mining-buyer portals (Rio Tinto Buy Local, BHP, Fortescue) were reviewed but current publicly-visible corporate RFx were login-gated or expired, so those portals are recorded in discovered_sources rather than fabricated as tenders. Direct WebFetch to government portal domains (tenders.nsw.gov.au, tenders.vic.gov.au, tenders.tas.gov.au, portal.tenderlink.com) was blocked by the network egress proxy, so tender detail was captured from search-result snippets at headline level; most entries therefore still need a deliverables/detail pass.",
-    "sources_checked": 24,
-    "tenders_found": 21,
-    "new_sources_found": 10,
-    "entries_pending_detail": 21,
+    "run_date": "2026-09-03",
+    "coverage_summary": "Discovery this run was performed with web search only: the environment's egress policy blocked direct WebFetch to every tender portal (tenders.gov.au, buy.nsw.gov.au, tenders.vic.gov.au, vendorpanel.com.au, tenderlink, etc.), so no tender detail page or specification document could be opened and no deliverables/requirements pass was possible. Tier 1 government portals (NSW buy.nsw, Tenders WA, QTenders, SA/VIC/NT/ACT) were swept via search; university e-tendering (Adelaide, Sydney, UNSW, ANU) and GBE/utility procurement (Water Corporation WA, Southern Ports, water corporations) were checked; Tier 3 corporate was covered via SAP Ariba Discovery (login-gated) plus airport and head-contractor channels. All captured opportunities are recorded at headline level and flagged for a later authenticated/detail pass.",
+    "sources_checked": 22,
+    "tenders_found": 9,
+    "new_sources_found": 3,
+    "entries_pending_detail": 9,
     "gaps": [
-      "WebFetch to www.tenders.nsw.gov.au blocked by network egress proxy — NSW tender detail pages could not be opened; captured at headline level from search snippets.",
-      "WebFetch to www.tenders.vic.gov.au blocked by network egress proxy — Victorian tender detail pages could not be opened.",
-      "WebFetch to www.tenders.tas.gov.au blocked by network egress proxy — Tasmanian OpenForBids list could not be opened directly.",
-      "WebFetch to portal.tenderlink.com blocked by network egress proxy — University of Sydney and other TenderLink portal detail pages could not be opened; captured from search snippets.",
-      "SAP Business Network (Ariba) Discovery: open corporate RFx require a free supplier login to view full opportunity detail; no publicly-visible Australian opportunity could be confirmed this run without an authenticated session.",
-      "BHP / Fortescue supplier opportunities are behind registration walls; Rio Tinto Buy Local's only visible EOI (HVAC Maintenance, Wickham) had already closed (07-Jul-2026), so no current mining-buyer tender was captured.",
-      "Deliverables, requirements, evaluation criteria, values and contacts for all captured tenders still need a detail/document pass — recorded because portal detail pages were egress-blocked, not because they are unpublished.",
-      "Invitation-only corporate/management-consultancy RFPs are out of scope (never published) and were not fabricated."
+      "EGRESS BLOCKED: WebFetch to all tender portals was denied by the network egress proxy (tenders.gov.au, buy.nsw.gov.au, tenders.vic.gov.au, tenders.tas.gov.au, vendorpanel.com.au and others all returned EGRESS_BLOCKED). No tender detail page or attachment could be opened this run, so deliverables, requirements, evaluation criteria, documents and contacts could not be extracted from source. All entries are headline-level from search-result metadata only.",
+      "Identity/date fields for search-derived rows are taken from search-result summaries, not from the tender's own detail page; tender_id and closing_date on several rows still need confirmation against the portal once egress is available.",
+      "Buying for Victoria, NT QTOL, ACT Tenders and SA Tenders searches returned no confirmable newly-open rows via search this run (portal-side filtering needed).",
+      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery opportunities are behind free supplier registration; no publicly-visible corporate RFx could be read. Recorded as a registration-gated portal, not fabricated as tenders.",
+      "Invitation-only corporate RFx (e.g. management-consultancy RFPs to Accenture/KPMG/Deloitte-type panels) remain out of scope and undiscoverable, as expected."
     ],
     "recommended_seed_additions": [
-      "Fremantle Ports E-Tendering (TenderLink) — WA government-owned port corporation",
-      "Gladstone Ports Corporation — Procurement and tenders (Queensland Procurement Solution / VendorPanel) — QLD GBE",
-      "Tasmanian Ports Corporation (TasPorts) E-Tendering (TenderLink) — TAS GBE",
-      "Flinders University E-Tendering (TenderLink) — SA university",
-      "University of Wollongong Current Tenders (TenderLink) — NSW university",
-      "University of Newcastle — eProcure tender portal — NSW university",
-      "Wannon Water E-Tendering (TenderLink) — VIC regional water corporation",
-      "Gippsland Water — Tenders.Net eProcurement portal — VIC water corporation",
-      "Central Highlands Water — E-procurement portal — VIC water corporation",
-      "Tenders.Net — Australian buyer e-sourcing/eProcurement platform (used by Gippsland Water and others) — worth tracking as a platform"
+      "Perth Airport - Procurement / Suppliers (perthairport.com.au; PAPLtender@perthairport.com.au) - privately operated major airport, buyer-originated, runs a multi-billion-dollar expansion procurement program",
+      "Southern Ports (WA) - Procurement (southernports.com.au/procurement) - GBE port authority; advertises >$250k opportunities via Tenders WA",
+      "SkyWay JV (CPB Contractors + BMD) - Perth New Runway Landside subcontractor packages via Felix (cpbcon.felix.net) - Tier-1 head-contractor subcontractor EOI channel",
+      "University of Adelaide / Adelaide University E-Tendering (TenderLink) - confirm on permanent seed list; active RFT flow",
+      "Note VendorPanel to Unimarket migration for LGA Procurement (South Australia councils) when re-checking SA local government sources"
     ]
   },
   "months": [
@@ -124,7 +117,7 @@
     },
     {
       "month": "2026-09",
-      "new_tenders": 36,
+      "new_tenders": 45,
       "active_tenders": 0
     }
   ],
@@ -23556,8 +23549,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:SR01241",
@@ -23616,8 +23609,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:RFT-2016417",
@@ -23677,8 +23670,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:T033-2026-camden",
@@ -23737,8 +23730,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:cowwarr-weir-switchboard-2026",
@@ -23798,8 +23791,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:montpellier-basins-monitoring-building-2026",
@@ -23859,8 +23852,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "qtenders:new-england-hwy-chalk-drive-cycleway-2026",
@@ -23920,8 +23913,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenderswa:T15-2026-birchley-road-boat-ramp",
@@ -23980,8 +23973,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenderswa:qeii-gblock-cold-water-valve-19",
@@ -24041,8 +24034,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.tas.gov.au:deloraine-high-school-redevelopment-architectural",
@@ -24102,8 +24095,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.tas.gov.au:safe-farming-tasmania-program",
@@ -24163,8 +24156,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.tas.gov.au:rosny-creative-precinct-project-management",
@@ -24223,8 +24216,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "qtol:NTG26-0126-event-ticketing",
@@ -24283,8 +24276,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "qtol:NTG26-0073-group-training",
@@ -24344,8 +24337,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "qtol:T26-1215-remote-power-technical-advice",
@@ -24405,8 +24398,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "qtol:Q26-0092-electrical-repairs-maintenance",
@@ -24465,8 +24458,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.act.gov.au:kingston-section49-block-AAb",
@@ -24525,8 +24518,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.act.gov.au:PICM0009838-convention-centre-pmca",
@@ -24586,8 +24579,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "vendorpanel:RFT2027.2-cootamundra-aquatic-stadium",
@@ -24647,8 +24640,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "usyd-tenderlink:curriculum-management-technologies",
@@ -24708,8 +24701,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "usyd-tenderlink:eoi-lead-architect-student-accommodation-SA31",
@@ -24767,6 +24760,562 @@
       "last_seen": "2026-09-02",
       "seen_dates": [
         "2026-09-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "buy.nsw:ecological-thinning-trial-2026-2027",
+      "source_name": "NSW eTendering / buy.nsw",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Ecological Thinning Trial: Habitat Parameters and Stem Density Monitoring 2026-2027",
+      "buyer": "NSW Government (environment / national parks)",
+      "buyer_url": "https://buy.nsw.gov.au",
+      "category": "Environmental services / ecological monitoring",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "NSW Government open tender for ecological thinning trial monitoring, covering habitat parameters and stem density monitoring across the 2026-2027 period.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-21",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw (registered supplier required)",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "environment",
+        "ecological-monitoring",
+        "government"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of buy.nsw open opportunities (NSW eTendering decommissioned; opportunities now on buy.nsw). Buyer-originated NSW Government portal.",
+      "notes": "Headline-level only: buy.nsw detail page could not be opened (egress blocked). tender_id and buyer agency need confirmation on the portal.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:tocal-irrigation-system-2026",
+      "source_name": "NSW eTendering / buy.nsw",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Tocal Irrigation System",
+      "buyer": "NSW Government (Tocal / Department of Primary Industries)",
+      "buyer_url": "https://buy.nsw.gov.au",
+      "category": "Irrigation / civil works",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "NSW Government open tender for an irrigation system at Tocal (agricultural college / primary industries site).",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-17",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw (registered supplier required)",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "irrigation",
+        "agriculture",
+        "civil-works",
+        "government"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of buy.nsw open opportunities. Buyer-originated NSW Government portal.",
+      "notes": "Headline-level only: detail page could not be opened (egress blocked). Buyer agency inferred from 'Tocal' (NSW DPI agricultural college); confirm on portal.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:yanga-national-park-package5-access-tracks",
+      "source_name": "NSW eTendering / buy.nsw",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "public",
+      "title": "Yanga National Park - Package 5 - Access Tracks",
+      "buyer": "NSW National Parks and Wildlife Service (NSW Government)",
+      "buyer_url": "https://buy.nsw.gov.au",
+      "category": "Civil works / roads and tracks",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "NSW Government open tender for access track works (Package 5) in Yanga National Park.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-28",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via buy.nsw (registered supplier required)",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Yanga National Park, New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "national-parks",
+        "civil-works",
+        "access-tracks",
+        "government"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of buy.nsw open opportunities. Buyer-originated NSW Government portal.",
+      "notes": "Headline-level only: detail page could not be opened (egress blocked). tender_id needs confirmation on the portal.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "tenderswa:great-northern-highway-h006-sp1-sp2-pilbara",
+      "source_name": "Tenders WA",
+      "source_url": "https://www.tenders.wa.gov.au",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "state": "WA",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.wa.gov.au",
+      "access": "public",
+      "title": "Construction of Great Northern Highway (H006) - Separable Portion 1 & 2",
+      "buyer": "Main Roads Western Australia",
+      "buyer_url": "https://www.mainroads.wa.gov.au",
+      "category": "Road construction / civil infrastructure",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Main Roads WA open tender for construction works on the Great Northern Highway (H006), Separable Portions 1 and 2, in the Pilbara region.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-08-27",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via Tenders WA",
+      "lodgement_url": "https://www.tenders.wa.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Pilbara region, Western Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "wa",
+        "main-roads",
+        "road-construction",
+        "pilbara",
+        "infrastructure"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search referencing Tenders WA / Main Roads WA listings; posted 27 August 2026. Buyer-originated state government portal.",
+      "notes": "Headline-level only: Tenders WA detail page could not be opened (egress blocked). Closing date and tender_id need confirmation on the portal.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "tenderswa:ipm-air-conditioning-fresh-air-upgrade-room-1c15",
+      "source_name": "Tenders WA",
+      "source_url": "https://www.tenders.wa.gov.au",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "state": "WA",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.wa.gov.au",
+      "access": "public",
+      "title": "Air Conditioning and Fresh Air Upgrade - Room 1.C.15 (IPM office) & Nurses Office",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Building services / HVAC upgrade",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Western Australian government open tender for an air conditioning and fresh-air (HVAC) upgrade to Room 1.C.15 (IPM office) and a nurses' office.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-10-04",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via Tenders WA",
+      "lodgement_url": "https://www.tenders.wa.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Western Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "wa",
+        "hvac",
+        "building-services",
+        "facilities"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of Tenders WA current opportunities. Buyer-originated state government portal.",
+      "notes": "Headline-level only: buyer agency not identified in search results and detail page could not be opened (egress blocked). Buyer left blank rather than guessed; confirm on portal.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "adelaideuni-tenderlink:AU2026155-poultry-roof-replacement",
+      "source_name": "The University of Adelaide E-Tendering (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "source_type": "university",
+      "jurisdiction": "South Australia",
+      "state": "SA",
+      "tender_id": "AU2026155",
+      "tender_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "access": "free-registration",
+      "title": "RFT - Poultry Roof Replacement",
+      "buyer": "The University of Adelaide",
+      "buyer_url": "https://www.adelaide.edu.au",
+      "category": "Building / roofing construction",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The University of Adelaide seeks a contractor to design and construct a new roof for the poultry shed at its Roseworthy Campus.",
+      "deliverables_summary": "Design and construction of a new roof for the poultry shed at the University of Adelaide Roseworthy Campus.",
+      "key_deliverables": [
+        "Design of replacement roof for poultry shed",
+        "Construction / installation of the new roof"
+      ],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open (respond via Adelaide University TenderLink e-tendering portal)",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-21",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via University of Adelaide TenderLink e-tendering portal (free registration to download documents)",
+      "lodgement_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Roseworthy Campus, South Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "sa",
+        "university",
+        "roofing",
+        "construction",
+        "roseworthy"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of University of Adelaide TenderLink current tenders. Buyer-originated university e-tendering portal.",
+      "notes": "Deliverables_summary is a one-line scope from the listing metadata; the tender documents could not be opened (egress blocked / free registration), so requirements, value and closing time still need a detail pass.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "adelaideuni-tenderlink:AU2026158-flood-mitigation-consultant",
+      "source_name": "The University of Adelaide E-Tendering (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "source_type": "university",
+      "jurisdiction": "South Australia",
+      "state": "SA",
+      "tender_id": "AU2026158",
+      "tender_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "access": "free-registration",
+      "title": "RFT - Flood Mitigation Consultant",
+      "buyer": "The University of Adelaide",
+      "buyer_url": "https://www.adelaide.edu.au",
+      "category": "Professional / engineering consultancy",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "closing-soon",
+      "description": "The University of Adelaide seeks a flood mitigation consultant.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open (respond via Adelaide University TenderLink e-tendering portal)",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-08",
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via University of Adelaide TenderLink e-tendering portal (free registration to download documents)",
+      "lodgement_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "South Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "sa",
+        "university",
+        "flood-mitigation",
+        "consultancy",
+        "engineering"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of University of Adelaide TenderLink current tenders. Buyer-originated university e-tendering portal.",
+      "notes": "Headline-level only: closes 8 Sep 2026 (soon). Tender documents behind free registration and could not be opened (egress blocked); scope/requirements need a detail pass.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "cpbcon-felix:perth-new-runway-landside-subcontractor-packages",
+      "source_name": "SkyWay JV (CPB Contractors + BMD) - Perth New Runway Landside (Felix)",
+      "source_url": "https://www.cpbcon.com.au/procurement/procurement-perth-airport",
+      "source_type": "construction-subcontract",
+      "jurisdiction": "Western Australia",
+      "state": "WA",
+      "tender_id": "",
+      "tender_url": "https://cpbcon.felix.net/panel_registration/gateway-connect-eoi",
+      "access": "free-registration",
+      "title": "Perth New Runway - Landside: Subcontractor work packages (EOI)",
+      "buyer": "SkyWay JV (CPB Contractors and BMD) for Perth Airport",
+      "buyer_url": "https://www.cpbcon.com.au/procurement/procurement-perth-airport",
+      "category": "Construction subcontractor packages / civil works",
+      "category_codes": [],
+      "procurement_type": "subcontractor-package",
+      "current_status": "open",
+      "description": "SkyWay JV (CPB Contractors and BMD) is seeking qualified subcontractors for upcoming packages of works on the Perth New Runway - Landside project. Vendors register expressions of interest via Felix to receive Requests for Quotation.",
+      "deliverables_summary": "Supply of subcontractor works packages for the Perth New Runway Landside project; specific package scopes are advertised to registered vendors via the Felix portal, with EOI leading to RFQ.",
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [
+        "A Felix account is required to submit an EOI and receive RFQs"
+      ],
+      "eligibility": "Open to qualified subcontractors; registration on Felix required",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Register / submit EOI via Felix (cpbcon.felix.net/panel_registration/gateway-connect-eoi); existing Felix vendors email felix.procurement@cpbcon.com.au",
+      "lodgement_url": "https://cpbcon.felix.net/panel_registration/gateway-connect-eoi",
+      "documents": [],
+      "mandatory_conditions": [
+        "Free Felix vendor account required"
+      ],
+      "delivery_location": "Perth Airport, Western Australia",
+      "contact_name": "",
+      "contact_email": "felix.procurement@cpbcon.com.au",
+      "contact_phone": "",
+      "tags": [
+        "wa",
+        "construction",
+        "subcontractor",
+        "perth-airport",
+        "felix",
+        "eoi"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of Perth Airport procurement; SkyWay JV (CPB/BMD) head-contractor subcontractor EOI channel routed through Felix. Buyer/head-contractor-originated.",
+      "notes": "Registration-gated: individual package scopes are visible only to registered Felix vendors, so per-package detail could not be captured. Recorded as a real open EOI channel, not an invented tender.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "watercorporation-wa:2026-engineering-design-services-eds-panel",
+      "source_name": "Water Corporation (WA) - Public tenders",
+      "source_url": "https://www.watercorporation.com.au/help-and-advice/suppliers-and-providers/public-tenders/public-tenders",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Western Australia",
+      "state": "WA",
+      "tender_id": "",
+      "tender_url": "https://www.watercorporation.com.au/help-and-advice/suppliers-and-providers/public-tenders/public-tenders",
+      "access": "free-registration",
+      "title": "2026 Engineering Design Services (EDS) Panel - early tender advice",
+      "buyer": "Water Corporation (Western Australia)",
+      "buyer_url": "https://www.watercorporation.com.au",
+      "category": "Engineering design services / consultancy panel",
+      "category_codes": [],
+      "procurement_type": "market-sounding",
+      "current_status": "recently-published",
+      "description": "Water Corporation WA has issued early tender advice to the engineering consulting market regarding the upcoming procurement of the 2026 Engineering Design Services (EDS) Panel.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open (no pre-qualification required to lodge a public tender; register on Water Corporation eProcurement Supplier portal)",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Register / lodge via Water Corporation eProcurement Supplier portal",
+      "lodgement_url": "https://www.watercorporation.com.au/help-and-advice/suppliers-and-providers/public-tenders/public-tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Western Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "wa",
+        "water",
+        "gbe",
+        "engineering-design",
+        "panel",
+        "market-sounding"
+      ],
+      "first_seen": "2026-09-03",
+      "detail_source": "",
+      "reasoning": "Discovered via web search of Water Corporation WA supplier pages; early market advice of an upcoming EDS Panel procurement. Buyer-originated GBE.",
+      "notes": "Upcoming/market-sounding, not yet an open RFT. Timing and formal RFT reference not yet published; recorded as a forward-looking notice to track.",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -25159,20 +25708,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "buy.nsw / NSW eTendering",
+      "source_name": "NSW eTendering / buy.nsw",
       "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
       "source_type": "gov-state",
       "jurisdiction": "New South Wales",
       "platform": "buy.nsw",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.nsw.gov.au/?event=public.RFT",
+      "feed_or_api_url": "https://github.com/NSW-eTendering/NSW-eTendering-API",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 portal; TfNSW and School Infrastructure NSW opportunities surfaced via WebSearch.",
+      "how_discovered": "Known seed; legacy NSW eTendering decommissioned and opportunities consolidated on buy.nsw. Re-checked via search.",
       "recommended_check_frequency": "daily",
-      "notes": "Direct WebFetch was EGRESS_BLOCKED this run. Legacy tenders.nsw.gov.au now redirects into the buy.nsw Tenders module.",
+      "notes": "A public NSW eTendering search API exists (see feed_or_api_url) and is worth wiring in for machine-readable access once egress permits.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-09-03",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -25185,11 +25734,12 @@
         "2026-08-08",
         "2026-08-09",
         "2026-08-11",
-        "2026-08-12"
+        "2026-08-12",
+        "2026-09-03"
       ],
-      "seen_count": 12,
+      "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Water Corporation (WA) — Suppliers & contractors",
@@ -25480,17 +26030,17 @@
       "source_name": "EstimateOne (E1) - Live construction tenders",
       "source_url": "https://estimateone.com/tenders/",
       "source_type": "construction-subcontract",
-      "jurisdiction": "Australia",
+      "jurisdiction": "Australia (national)",
       "platform": "EstimateOne",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 mandatory check; re-verified via WebSearch. Head contractors (incl. John Holland) invite subcontractor quotes; category tender pages visible.",
-      "recommended_check_frequency": "daily",
-      "notes": "Individual builder packages require a subcontractor account; no specific Lendlease/Multiplex/John Holland packages readable at detail level this run.",
+      "how_discovered": "Mandatory construction-subcontract check; 900+ head builders (incl. Multiplex, Lendlease, John Holland) post subcontractor packages.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Package detail behind supplier login; no specific current packages captured this run.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-09-03",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -25502,27 +26052,28 @@
         "2026-08-25",
         "2026-08-26",
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-09-03"
       ],
-      "seen_count": 11,
+      "seen_count": 12,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "VendorPanel - Public Tenders",
       "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
       "source_type": "gov-local",
-      "jurisdiction": "Australia (multi-council)",
+      "jurisdiction": "Australia (local government, national)",
       "platform": "VendorPanel",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 2 seed; re-checked - carried the Cootamundra-Gundagai aquatic/stadium RFT and other council opportunities.",
+      "how_discovered": "Known seed for local government; 200+ agencies. Re-checked via search.",
       "recommended_check_frequency": "daily",
-      "notes": "Primary channel for local-government tenders across multiple states.",
+      "notes": "Direct fetch blocked by egress. Note migration signal: LGA Procurement (South Australia) councils moving from VendorPanel to Unimarket in 2026; Queensland local government consolidating on VendorPanel Marketplace.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-03",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -25543,11 +26094,12 @@
         "2026-08-26",
         "2026-08-28",
         "2026-08-29",
-        "2026-08-31"
+        "2026-08-31",
+        "2026-09-03"
       ],
-      "seen_count": 20,
+      "seen_count": 21,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Transgrid — Supplier portal / ibuy (SAP Ariba)",
@@ -26496,23 +27048,24 @@
       "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
       "source_url": "https://www.sap.com/australia/products/business-network/find-suppliers.html",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national) / global",
+      "jurisdiction": "Australia (multi-buyer)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
-      "feed_or_api_url": "https://service.ariba.com/Discovery.aw/",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check; public posting board where buyers post open corporate RFx.",
+      "how_discovered": "Mandatory Tier-3 check; public posting board where corporate buyers post open RFx. Individual opportunities require a free supplier account.",
       "recommended_check_frequency": "daily",
-      "notes": "Checked this run. Full opportunity detail requires a free supplier login; no publicly-visible Australian opportunity could be confirmed without an authenticated session. Recorded as portal, no fabricated tenders.",
+      "notes": "No publicly-visible AU corporate RFx could be read without login this run; recorded as registration-gated portal, no opportunities fabricated. Australian buyers on Ariba include Brisbane City Council and Energy Queensland.",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-09-02",
+      "last_seen": "2026-09-03",
       "seen_dates": [
         "2026-07-02",
         "2026-08-27",
-        "2026-09-02"
+        "2026-09-02",
+        "2026-09-03"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -28089,7 +28642,7 @@
       ],
       "seen_count": 11,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Buying for Victoria",
@@ -28606,22 +29159,23 @@
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known canonical seed source, re-checked this run (Current ATM list).",
+      "how_discovered": "Known canonical seed; re-checked via search this run (direct fetch blocked by egress).",
       "recommended_check_frequency": "daily",
-      "notes": "Checked this run. Commonwealth Approaches to Market.",
+      "notes": "Direct WebFetch to tenders.gov.au was EGRESS_BLOCKED this run; DFAT development pipeline (e.g. PWLES, PHC4PNG) seen via search only.",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-09-02",
+      "last_seen": "2026-09-03",
       "seen_dates": [
         "2026-07-26",
         "2026-08-15",
         "2026-08-18",
         "2026-08-31",
-        "2026-09-02"
+        "2026-09-02",
+        "2026-09-03"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -30775,7 +31329,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Territory Generation",
@@ -31525,8 +32079,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Gladstone Ports Corporation - Procurement and Tenders",
@@ -31547,8 +32101,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Tasmanian Ports Corporation (TasPorts) E-Tendering (TenderLink)",
@@ -31569,8 +32123,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Flinders University E-Tendering (TenderLink)",
@@ -31591,8 +32145,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "University of Wollongong - Current Tenders (TenderLink)",
@@ -31613,8 +32167,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "University of Newcastle - eProcure Tender Portal",
@@ -31635,8 +32189,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Wannon Water E-Tendering (TenderLink)",
@@ -31657,8 +32211,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Gippsland Water - Tenders.Net eProcurement Portal",
@@ -31679,8 +32233,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Central Highlands Water - E-Procurement Portal",
@@ -31701,8 +32255,8 @@
         "2026-09-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders.Net (Australian buyer eProcurement platform)",
@@ -31721,6 +32275,116 @@
       "last_seen": "2026-09-02",
       "seen_dates": [
         "2026-09-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Perth Airport - Procurement / Suppliers",
+      "source_url": "https://www.perthairport.com.au",
+      "source_type": "corporate",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for airport procurement opportunities; Perth Airport runs a multi-billion-dollar expansion program and publishes supplier/procurement contact (Senior Category Manager, PAPLtender@perthairport.com.au).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Privately operated major airport (buyer-originated). Major packages also cascade to head-contractor channels (e.g. SkyWay JV on Felix). Not previously in the known source set.",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Southern Ports (WA) - Procurement",
+      "source_url": "https://www.southernports.com.au/procurement",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Western Australia",
+      "platform": "Tenders WA",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for Australian port/water procurement portals; Southern Ports advertises open tenders >$250k via Tenders WA and invites supplier registration.",
+      "recommended_check_frequency": "monthly",
+      "notes": "WA GBE port authority (Albany, Bunbury, Esperance). Buyer-originated; opportunities surface on Tenders WA. Not previously in the known source set.",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "SkyWay JV (CPB Contractors + BMD) - Perth New Runway Landside (Felix)",
+      "source_url": "https://www.cpbcon.com.au/procurement/procurement-perth-airport",
+      "source_type": "construction-subcontract",
+      "jurisdiction": "Western Australia",
+      "platform": "Felix",
+      "access_method": "portal-registration",
+      "feed_or_api_url": "https://cpbcon.felix.net/panel_registration/gateway-connect-eoi",
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for Perth Airport procurement; CPB Contractors/BMD joint venture invites subcontractor EOIs for the Perth New Runway Landside project via a Felix panel-registration gateway.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Tier-1 head-contractor subcontractor channel on the Felix platform (free vendor registration). Buyer/head-contractor-originated. Not previously in the known source set.",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Tenders WA",
+      "source_url": "https://www.tenders.wa.gov.au",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "platform": "Tenders WA",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Known seed; re-checked via search (Main Roads WA and WA Health opportunities seen).",
+      "recommended_check_frequency": "daily",
+      "notes": "Direct fetch blocked by egress this run; also carries GBE opportunities (e.g. Southern Ports).",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "The University of Adelaide E-Tendering (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/adelaideuni/alltenders/",
+      "source_type": "university",
+      "jurisdiction": "South Australia",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Known university source; active RFT flow seen via search (AU2026155 Poultry Roof, AU2026158 Flood Mitigation).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Free registration to download documents. Adelaide University also operates a separate 'adelaideuniversity' TenderLink instance.",
+      "first_seen": "2026-09-03",
+      "last_seen": "2026-09-03",
+      "seen_dates": [
+        "2026-09-03"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
