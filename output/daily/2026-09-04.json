@@ -68,7 +68,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "cultural", "printing", "powerhouse"],
+      "tags": [
+        "nsw",
+        "cultural",
+        "printing",
+        "powerhouse"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of buy.nsw / NSW eTendering open opportunities; published by the buyer (Powerhouse) on the NSW Government portal.",
@@ -119,7 +124,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "roadworks", "drainage", "construction", "select-tender"],
+      "tags": [
+        "nsw",
+        "roadworks",
+        "drainage",
+        "construction",
+        "select-tender"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of NSW eTendering; select tender advertised on the NSW Government portal with stated TfNSW prequalification requirements.",
@@ -167,7 +178,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "market-sounding", "rfi"],
+      "tags": [
+        "nsw",
+        "transport",
+        "market-sounding",
+        "rfi"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of NSW eTendering; RFI published by Sydney Olympic Park Authority as early market engagement.",
@@ -215,7 +231,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "services", "eap", "hr"],
+      "tags": [
+        "vic",
+        "services",
+        "eap",
+        "hr"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Buying for Victoria open tenders; published by the buyer (Victoria Legal Aid) with tender reference VLA-0303.",
@@ -263,7 +284,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "water", "design-and-construct", "infrastructure"],
+      "tags": [
+        "vic",
+        "water",
+        "design-and-construct",
+        "infrastructure"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Buying for Victoria; published by Goulburn Valley Water (regional water corporation) with reference RFT 61 5408 25.",
@@ -311,7 +337,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "construction", "public-realm", "parks"],
+      "tags": [
+        "vic",
+        "construction",
+        "public-realm",
+        "parks"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Buying for Victoria; published by Parks Victoria with reference PAT-2526-4405.",
@@ -359,7 +390,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "health", "pharmacy", "tenancy", "eoi"],
+      "tags": [
+        "vic",
+        "health",
+        "pharmacy",
+        "tenancy",
+        "eoi"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Buying for Victoria; EOI published by The Royal Children's Hospital with reference RCH-EOI-2025-0037.",
@@ -407,7 +444,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "education", "early-tender-advice", "upcoming"],
+      "tags": [
+        "wa",
+        "education",
+        "early-tender-advice",
+        "upcoming"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Tenders WA early tender advice; upcoming procurement notice from the WA Department of Education with an estimated advertising date of 21-Sep-2026.",
@@ -455,7 +497,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["wa", "fire-services", "building-works", "early-tender-advice", "upcoming"],
+      "tags": [
+        "wa",
+        "fire-services",
+        "building-works",
+        "early-tender-advice",
+        "upcoming"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Tenders WA early tender advice; upcoming procurement notice from the WA Department of Justice with an estimated advertising date of 15-Sep-2026.",
@@ -503,7 +551,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["act", "land", "property", "development"],
+      "tags": [
+        "act",
+        "land",
+        "property",
+        "development"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Tenders ACT open tenders; released 30-Jun-2026, still open (closing 20-Oct-2026).",
@@ -551,7 +604,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "education", "architecture", "consultancy"],
+      "tags": [
+        "tas",
+        "education",
+        "architecture",
+        "consultancy"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Tenders Tasmania recent listings; published circa 03-Sep-2026.",
@@ -599,7 +657,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["tas", "consultancy", "project-management", "arts"],
+      "tags": [
+        "tas",
+        "consultancy",
+        "project-management",
+        "arts"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of Tenders Tasmania recent listings; published circa 02-Sep-2026.",
@@ -647,7 +710,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "university", "architecture", "student-accommodation", "eoi"],
+      "tags": [
+        "nsw",
+        "university",
+        "architecture",
+        "student-accommodation",
+        "eoi"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of the University of Sydney TenderLink portal current tenders list; buyer-originated EOI.",
@@ -695,7 +764,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "university", "engineering", "flood-mitigation", "consultancy"],
+      "tags": [
+        "sa",
+        "university",
+        "engineering",
+        "flood-mitigation",
+        "consultancy"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of the University of Adelaide TenderLink portal; buyer-originated RFT.",
@@ -743,7 +818,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "university", "building-works", "roofing"],
+      "tags": [
+        "sa",
+        "university",
+        "building-works",
+        "roofing"
+      ],
       "first_seen": "2026-09-04",
       "detail_source": "",
       "reasoning": "Found via web search of the University of Adelaide TenderLink portal; buyer-originated RFT.",
