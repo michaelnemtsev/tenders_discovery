@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04",
+  "generated": "2026-09-05",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -72,36 +72,30 @@
     "2026-09-01",
     "2026-09-02",
     "2026-09-03",
-    "2026-09-04"
+    "2026-09-04",
+    "2026-09-05"
   ],
-  "run_count": 72,
+  "run_count": 73,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-04",
-  "latest_coverage_summary": "Discovery this run was performed via WebSearch only. The environment's network egress policy again blocked direct WebFetch to every tender portal (tenders.gov.au, tenders.nsw.gov.au / buy.nsw.gov.au, tenders.vic.gov.au, tenders.wa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au, vendorpanel.com.au, tenderlink.com and others all returned EGRESS_BLOCKED), so no tender detail page or specification document could be opened and no deliverables/requirements/documents pass was possible. Tier 1 government portals were swept via search and returned confirmable, recently-published open opportunities for NSW (buy.nsw / eTendering), Victoria (Buying for Victoria), Western Australia (Tenders WA early tender advice), Tasmania (Tenders Tasmania) and the ACT. Tier 2 universities (University of Sydney and University of Adelaide TenderLink portals) yielded current open RFT/EOI rows; GBE/utility procurement (Sydney/Melbourne/SA Water, Transgrid, Western Power, Ausgrid, Snowy Hydro) and council/VendorPanel channels were checked but returned no new confirmable open rows via search this run. Tier 3 corporate was covered via SAP Ariba Discovery (login-gated) and EstimateOne (subscription construction board); no publicly-visible corporate RFx could be read, so corporate portals are recorded in discovered_sources rather than invented as tenders. All captured opportunities are at headline level and flagged for a later authenticated/detail pass.",
+  "latest_run": "2026-09-05",
+  "latest_coverage_summary": "Tier 1 (Commonwealth AusTender) covered via web search snippets, yielding buyer-confirmed open opportunities. State portals (VIC, WA, QLD, SA, NSW), Tier 2 (Sydney Water, universities, health) and Tier 3 (SAP Ariba Discovery, BHP) were queried at the search level. Direct portal fetches were NOT possible: the session's egress proxy blocked every outbound domain (all .gov.au, .com.au, aggregator and even wikipedia.org returned EGRESS_BLOCKED), so no tender detail page or specification document could be opened this run. All captured tenders are therefore corroborated from search-result snippets plus, where available, the buyer's own news/opportunity page text, not from a live fetch of the notice. New-source discovery surfaced the Commonwealth's new AusTender Supplier Portal (Central Procurement Systems), which becomes available to all businesses from 1 July 2026.",
   "latest_run_metadata": {
-    "run_date": "2026-09-04",
-    "coverage_summary": "Discovery this run was performed via WebSearch only. The environment's network egress policy again blocked direct WebFetch to every tender portal (tenders.gov.au, tenders.nsw.gov.au / buy.nsw.gov.au, tenders.vic.gov.au, tenders.wa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au, vendorpanel.com.au, tenderlink.com and others all returned EGRESS_BLOCKED), so no tender detail page or specification document could be opened and no deliverables/requirements/documents pass was possible. Tier 1 government portals were swept via search and returned confirmable, recently-published open opportunities for NSW (buy.nsw / eTendering), Victoria (Buying for Victoria), Western Australia (Tenders WA early tender advice), Tasmania (Tenders Tasmania) and the ACT. Tier 2 universities (University of Sydney and University of Adelaide TenderLink portals) yielded current open RFT/EOI rows; GBE/utility procurement (Sydney/Melbourne/SA Water, Transgrid, Western Power, Ausgrid, Snowy Hydro) and council/VendorPanel channels were checked but returned no new confirmable open rows via search this run. Tier 3 corporate was covered via SAP Ariba Discovery (login-gated) and EstimateOne (subscription construction board); no publicly-visible corporate RFx could be read, so corporate portals are recorded in discovered_sources rather than invented as tenders. All captured opportunities are at headline level and flagged for a later authenticated/detail pass.",
-    "sources_checked": 24,
-    "tenders_found": 15,
-    "new_sources_found": 7,
-    "entries_pending_detail": 15,
+    "run_date": "2026-09-05",
+    "coverage_summary": "Tier 1 (Commonwealth AusTender) covered via web search snippets, yielding buyer-confirmed open opportunities. State portals (VIC, WA, QLD, SA, NSW), Tier 2 (Sydney Water, universities, health) and Tier 3 (SAP Ariba Discovery, BHP) were queried at the search level. Direct portal fetches were NOT possible: the session's egress proxy blocked every outbound domain (all .gov.au, .com.au, aggregator and even wikipedia.org returned EGRESS_BLOCKED), so no tender detail page or specification document could be opened this run. All captured tenders are therefore corroborated from search-result snippets plus, where available, the buyer's own news/opportunity page text, not from a live fetch of the notice. New-source discovery surfaced the Commonwealth's new AusTender Supplier Portal (Central Procurement Systems), which becomes available to all businesses from 1 July 2026.",
+    "sources_checked": 18,
+    "tenders_found": 3,
+    "new_sources_found": 1,
+    "entries_pending_detail": 1,
     "gaps": [
-      "EGRESS BLOCKED: WebFetch to all tender portals and e-sourcing platforms was denied by the network egress proxy (verified this run against www.tenders.gov.au -> EGRESS_BLOCKED; the proxy status endpoint confirms selective egress is enforced). No tender detail page, attachment or specification could be opened, so deliverables, key_deliverables, requirements, eligibility, evaluation_criteria, documents, submission mechanics and contacts could not be extracted from source. Every tender below is headline-level from search-result metadata only and needs a detail pass once egress or an authenticated session is available.",
-      "Identity/date fields (tender_id, exact closing_time, publish_date) for several search-derived rows are taken from search-result summaries, not confirmed against the tender's own detail page; they still need verification against the portal.",
-      "Tasmania rows (Deloraine High School redevelopment consultancy, Rosny Creative Precinct project management) were surfaced with approximate 'posted' dates only and no tender ID or closing date from search; captured at headline level and flagged pending detail. One Tas search snippet referenced a 07-September posting date that is after this run date and was NOT captured, to avoid recording an unverifiable/future item.",
-      "South Australia (Tenders SA / Buying4SA), NT (QTOL) and Queensland (QTenders) searches returned no confirmable newly-open rows this run (portal-side date filtering needed; QTenders is mid-migration to VendorPanel via supply.qld.gov.au). Deferred to a future run.",
-      "Tier 2 GBE/utilities (Sydney Water, Melbourne Water, SA Water, Transgrid, Powerlink, Western Power, Ausgrid, NBN Co, Australia Post, Snowy Hydro): checked via search but no new publicly-confirmable open opportunity surfaced this run; Western Power Clean Energy Link EOI had already closed 31-Jul-2026 and Transgrid grid-forming battery tender was announced but no open portal row was confirmable. Recorded as sampled-but-no-new-rows.",
-      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery and buyer Ariba portals (BHP, Coles, Woolworths, Brisbane City) are behind free supplier registration; EstimateOne construction packages are behind a paid/registered subscription. No publicly-visible corporate RFx could be read, so none are recorded as tenders (per the no-fabrication rule).",
-      "Invitation-only corporate RFx (e.g. management-consultancy RFPs issued to Accenture/KPMG/Deloitte-type panels) remain out of scope and undiscoverable, as expected."
+      "WebFetch fully blocked this run: the egress proxy returned EGRESS_BLOCKED for every destination tried, including www.tenders.gov.au, www.tenders.vic.gov.au, www.tenders.wa.gov.au, www.health.qld.gov.au, www.vendorpanel.com.au, estimateone.com, tenders.net and en.wikipedia.org. No tender detail page or attachment could be read; all detail is from search snippets, so deliverables/requirements/documents fields are largely null.",
+      "Tier 1 state portals (VIC Buying for Victoria, Tenders WA, QTenders, Tenders SA, NSW buy.nsw) could only be searched, not swept; no new state-level opportunities were confirmed with a buyer-verified closing date this run - deferred to a future run when portal access is available.",
+      "SAP Ariba Discovery and BHP 'Find opportunities' were queried but expose no publicly-visible open RFx without a supplier login; both remain registration-gated (recorded as portals only, no tenders invented).",
+      "Health (NSW Local Health Districts) and university opportunities appeared only via paid aggregators (australiantenders.com.au, tenderhub.com.au) with no buyer-originated confirmation reachable, so none were captured as tenders.",
+      "'Tenders SA' searches are polluted by South-African (SARS/DIRCO) results; South Australian coverage this run is weak and deferred."
     ],
     "recommended_seed_additions": [
-      "Goulburn Valley Water (VIC) - buyer publishing RFTs via Buying for Victoria (e.g. Shepparton WTP disinfection upgrades); regional water corporation worth tracking directly.",
-      "Parks Victoria - buyer on Buying for Victoria running significant construction/works procurement (Shrine to Sea).",
-      "Victoria Legal Aid - buyer on Buying for Victoria (services procurement, e.g. Employee Assistance Program).",
-      "The Royal Children's Hospital Melbourne - buyer on Buying for Victoria (health facility fit-out EOIs).",
-      "Powerhouse (Museum of Applied Arts and Sciences, MAAS) - buyer on buy.nsw / NSW eTendering; active around the Powerhouse Parramatta opening program.",
-      "Unimarket (LGA Procurement, South Australia) - confirm VendorPanel -> Unimarket migration is complete for SA councils and re-point SA local-government checks to Unimarket.",
-      "TenderBuilt civil-construction portal guide - AGGREGATOR/discovery signal only (not a buyer source); use to spot new civil buyers, then pivot to the buyer's own portal."
+      "AusTender Supplier Portal / Central Procurement Systems (services-admin.tenders.gov.au and the supplier-portal help pages) - Commonwealth Dept of Finance, phased rollout Oct 2025-Jun 2026, all businesses from 1 Jul 2026.",
+      "Department of Industry, Science and Resources - business opportunities / news feed (industry.gov.au) as a buyer-originated notice channel that mirrors its AusTender ATMs (e.g. Northern Endeavour decommissioning)."
     ]
   },
   "months": [
@@ -122,7 +116,7 @@
     },
     {
       "month": "2026-09",
-      "new_tenders": 60,
+      "new_tenders": 62,
       "active_tenders": 0
     }
   ],
@@ -20884,43 +20878,47 @@
     },
     {
       "dedup_key": "AusTender:PBSS-RFT-92347-1",
-      "source_name": "AusTender",
+      "source_name": "AusTender (Commonwealth)",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth",
-      "state": "NSW",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
       "tender_id": "PBSS/RFT/92347/1",
       "tender_url": "https://www.tenders.gov.au/Atm/Show/e626aa6f-322e-4f3d-80ec-ce418e4d540f",
       "access": "public",
-      "title": "PBSS/RFT/92347/1 - Panel establishment (ASDEFCON) with immediate tasking",
+      "title": "Seaboats and Watercraft Panel - Request for Tender",
       "buyer": "Department of Defence",
-      "buyer_url": "",
-      "category": "Defence",
+      "buyer_url": "https://www.defence.gov.au/business-industry/finding-opportunities/austender",
+      "category": "Marine craft / watercraft capability",
       "category_codes": [],
       "procurement_type": "panel",
       "current_status": "open",
-      "description": "AusTender Request for Tender PBSS/RFT/92347/1, developed using ASDEFCON contracting templates, covering both establishment of a panel and immediate procurement opportunities through identified Tasking Statements. An industry briefing was held in Sydney CBD from 1:00pm on 25 August 2026.",
-      "deliverables_summary": null,
-      "key_deliverables": [],
-      "scope_of_work": null,
+      "description": "The Department of Defence is establishing a panel of experienced Australian suppliers able to design, integrate, manufacture and support seaboats and watercraft capabilities for Defence and other Commonwealth agencies, reducing procurement lead times through a consistent contracting framework.",
+      "deliverables_summary": "Establishment of a standing panel to supply seaboats and watercraft - covering design, integration, manufacture and through-life support - plus immediate procurement opportunities delivered through identified Tasking Statements under ASDEFCON contracting templates.",
+      "key_deliverables": [
+        "Panel establishment for seaboat/watercraft design, integration, manufacture and support",
+        "Immediate procurement opportunities via identified Tasking Statements",
+        "Consistent ASDEFCON-based contracting framework for future acquisitions"
+      ],
+      "scope_of_work": "The panel is expected to cover the majority of Defence's requirements for seaboats and watercraft. The RFT was developed using ASDEFCON contracting templates and includes both panel establishment requirements and immediate procurement opportunities through identified Tasking Statements.",
       "requirements": [],
-      "eligibility": "",
+      "eligibility": "Experienced Australian suppliers of watercraft capability",
       "evaluation_criteria": [],
       "value": "",
       "value_currency": "AUD",
       "contract_term": "",
-      "contract_start": "",
-      "contract_end": "",
-      "publish_date": "",
-      "closing_date": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
       "closing_time": "",
       "questions_due": "",
-      "briefing": "Industry briefing held in Sydney CBD commencing 1:00pm, 25 August 2026",
-      "submission_method": "Electronic lodgement via AusTender",
-      "lodgement_url": "https://www.tenders.gov.au",
+      "briefing": "Industry briefing held 1:00 PM 25 August 2026, Sydney CBD (max two representatives per prospective tenderer; nominations to the Contact Officer by 5:00 PM AEST 20 August 2026).",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "",
+      "delivery_location": "Australia",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
@@ -20928,20 +20926,21 @@
         "commonwealth",
         "defence",
         "panel",
-        "asdefcon",
-        "headline-only"
+        "watercraft",
+        "asdefcon"
       ],
       "first_seen": "2026-08-29",
-      "detail_source": "",
-      "reasoning": "Discovered via AusTender-focused web search; use of ASDEFCON templates and Tasking Statements indicates a Department of Defence procurement. Buyer-originated on AusTender.",
-      "notes": "Headline-level only. Buyer (Department of Defence) inferred from ASDEFCON usage; exact requirement, closing date and value unverified because the detail page could not be fetched (egress blocked). Briefing date (25 Aug 2026) from search snippet. Pending detail.",
-      "last_seen": "2026-08-29",
+      "detail_source": "AusTender ATM listing (PBSS/RFT/92347/1) read from search snippet; industry-briefing details from the snippet (detail page egress-blocked).",
+      "reasoning": "Re-confirmed as still open during this run's AusTender sweep; buyer-originated Defence RFT. Previously seen in an earlier run (kept as active_in_latest), not a new discovery.",
+      "notes": "Closing date/time not captured this run; industry briefing (25 Aug 2026) has passed. Full RFT documents and value not captured because the AusTender detail page could not be fetched (egress-blocked). Headline/active-status entry pending full detail.",
+      "last_seen": "2026-09-05",
       "seen_dates": [
-        "2026-08-29"
+        "2026-08-29",
+        "2026-09-05"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "buy.nsw:SWC-WS5192918179-DrinkingWaterEPCM-EOI",
@@ -25383,8 +25382,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:Parker-Stafford-St-Drainage-Penrith-2026-09-30",
@@ -25447,8 +25446,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:SOPA-Passenger-Services-RFI-2026-09-22",
@@ -25507,8 +25506,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:VLA-0303",
@@ -25567,8 +25566,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:RFT-61-5408-25",
@@ -25627,8 +25626,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:PAT-2526-4405",
@@ -25687,8 +25686,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.vic.gov.au:RCH-EOI-2025-0037",
@@ -25748,8 +25747,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.wa.gov.au:AtwellCollege-ESC-OutdoorLearning-EC25",
@@ -25808,8 +25807,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.wa.gov.au:PerthCentralLawCourts-FireSprinklerMains",
@@ -25869,8 +25868,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.act.gov.au:Kingston-Section49-BlockAAb-RFT",
@@ -25929,8 +25928,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.tas.gov.au:DeloraineHigh-Redevelopment-ArchConsultancy",
@@ -25989,8 +25988,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders.tas.gov.au:RosnyCreativePrecinct-ProjectManagementConsultancy",
@@ -26049,8 +26048,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "sydneyuni-tenderlink:EOI-LeadArchitect-SA31-StudentAccommodation-2026-09-14",
@@ -26110,8 +26109,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "adelaide-tenderlink:RFT-FloodMitigationConsultant-2026-09-08",
@@ -26171,8 +26170,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "adelaide-tenderlink:RFT-PoultryRoofReplacement-2026-09-21",
@@ -26229,6 +26228,136 @@
       "last_seen": "2026-09-04",
       "seen_dates": [
         "2026-09-04"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_3048-northern-endeavour-phase-3a",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "NT",
+      "tender_id": "ATM_2026_3048",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/270a195c-a914-4160-aaf8-f825fe0d7052",
+      "access": "public",
+      "title": "Northern Endeavour Decommissioning Program Phase 3A - Request for Tender",
+      "buyer": "Department of Industry, Science and Resources",
+      "buyer_url": "https://www.industry.gov.au/mining-oil-and-gas/oil-and-gas/offshore-oil-and-gas/decommissioning-northern-endeavour",
+      "category": "Oil and gas decommissioning / marine services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Department of Industry, Science and Resources seeks a lead contractor to deliver Phase 3A of the Northern Endeavour Decommissioning Program - the recovery, transport and offloading of subsea infrastructure from the Laminaria and Corallina oil fields to a nominated Australian port.",
+      "deliverables_summary": "Recovery of subsea infrastructure from the decommissioned Laminaria and Corallina oil fields (Timor Sea), transport of the recovered infrastructure, and offloading at a nominated Australian port. The Commonwealth wants the offshore subsea assets safely removed and brought to shore as part of the staged decommissioning of the former Northern Endeavour FPSO facilities.",
+      "key_deliverables": [
+        "Recovery of subsea infrastructure from the Laminaria and Corallina fields",
+        "Transport of recovered infrastructure to shore",
+        "Offloading at a nominated Australian port"
+      ],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open (public approach to market via AusTender)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-08-14",
+      "closing_date": "2026-10-23",
+      "closing_time": "2:00 PM AEDT",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Laminaria and Corallina oil fields (Timor Sea) to a nominated Australian port",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "oil-and-gas",
+        "decommissioning",
+        "marine",
+        "northern-endeavour"
+      ],
+      "first_seen": "2026-09-05",
+      "detail_source": "AusTender ATM listing (ATM_2026_3048) corroborated by the buyer's own announcement at industry.gov.au/news/northern-endeavour-decommissioning-program-phase-3a-request-tender; read from search snippets only (detail page egress-blocked).",
+      "reasoning": "Discovered via web search of AusTender current ATMs; buyer-originated Commonwealth RFT published by the Department of Industry, Science and Resources and mirrored on the department's own news page.",
+      "notes": "Publish date, closing date/time and scope taken from search snippets and the buyer's news release; full RFT documents, value, evaluation criteria and contact were not captured because the AusTender detail page could not be fetched (egress-blocked).",
+      "last_seen": "2026-09-05",
+      "seen_dates": [
+        "2026-09-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:RFP-BRUNSWICK-HEADS-services-australia-long-term-lease",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "NSW",
+      "tender_id": "RFP BRUNSWICK HEADS",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/aa4c9133-7f18-463a-a8b9-0d4c3755aa78",
+      "access": "public",
+      "title": "Long Term Commonwealth Lease - Brunswick Heads, NSW",
+      "buyer": "Services Australia",
+      "buyer_url": "https://www.servicesaustralia.gov.au/",
+      "category": "Lease and rental of property or building",
+      "category_codes": [],
+      "procurement_type": "RFP",
+      "current_status": "open",
+      "description": "Services Australia is seeking a long-term Commonwealth lease of commercial/retail premises in the Brunswick Heads area of northern NSW to accommodate a service delivery presence.",
+      "deliverables_summary": "Provision of leased commercial/retail accommodation on a long-term Commonwealth lease within Brunswick Heads and surrounding precincts, with good access to public transport and car parking, suitable for a Services Australia service-delivery site.",
+      "key_deliverables": [
+        "Long-term lease of suitable commercial/retail premises",
+        "Location within Brunswick Heads, New Brighton, Ocean Shores, South Golden Beach or Mullumbimby precincts",
+        "Good access to public transport and car parking"
+      ],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open to property owners/agents able to offer conforming premises in the nominated precincts",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "Long-term lease (term not published in snippet)",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-10-19",
+      "closing_time": "5:00 PM AEDT",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Proposals to the Commonwealth's property agent (Jones Lang LaSalle) by email",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/aa4c9133-7f18-463a-a8b9-0d4c3755aa78",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Brunswick Heads / New Brighton / Ocean Shores / South Golden Beach / Mullumbimby, NSW 2483",
+      "contact_name": "Jones Lang LaSalle (JLL) - Commonwealth property agent",
+      "contact_email": "SAEOIBrunswickH.wdaus@jll.com",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "property",
+        "lease",
+        "services-australia",
+        "nsw"
+      ],
+      "first_seen": "2026-09-05",
+      "detail_source": "AusTender ATM listing 'RFP BRUNSWICK HEADS' read from search snippet; location, closing time and JLL contact email taken from the snippet (detail page egress-blocked).",
+      "reasoning": "Discovered via web search of AusTender current ATMs; buyer-originated Commonwealth property RFP issued by Services Australia and managed by its agent JLL.",
+      "notes": "Publish date, lease term, floor area and value not captured - the AusTender detail page and any RFP documents could not be fetched (egress-blocked). Contact email is the JLL lodgement address quoted in the search snippet.",
+      "last_seen": "2026-09-05",
+      "seen_dates": [
+        "2026-09-05"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -26309,20 +26438,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender (Commonwealth)",
+      "source_name": "AusTender (Commonwealth) - current ATMs",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
       "feed_or_api_url": "https://www.tenders.gov.au/atm",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Core known Tier 1 portal; queried this run via site-restricted web search (direct fetch blocked by egress policy).",
+      "how_discovered": "Canonical Tier-1 seed source; swept via web search this run (direct fetch egress-blocked). Source of all three captured tenders.",
       "recommended_check_frequency": "daily",
-      "notes": "Primary Commonwealth procurement portal. Reachable only via search this run because WebFetch is egress-blocked.",
+      "notes": "Known source, re-listed because it supplied this run's tenders. Detail pages were not directly reachable due to the egress block.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -26353,11 +26482,12 @@
         "2026-08-26",
         "2026-08-27",
         "2026-08-28",
-        "2026-08-29"
+        "2026-08-29",
+        "2026-09-05"
       ],
-      "seen_count": 30,
+      "seen_count": 31,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria",
@@ -26524,7 +26654,7 @@
       ],
       "seen_count": 44,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP - Find opportunities",
@@ -26972,7 +27102,7 @@
       ],
       "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "VendorPanel - Public Tenders",
@@ -32468,7 +32598,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Fortescue - Supplier Centre",
@@ -32711,7 +32841,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transport for NSW - Internal Expressions of Interest (EOI) portal",
@@ -33326,8 +33456,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Parks Victoria - buyer on Buying for Victoria",
@@ -33348,8 +33478,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Victoria Legal Aid - buyer on Buying for Victoria",
@@ -33370,8 +33500,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "The Royal Children's Hospital Melbourne - buyer on Buying for Victoria",
@@ -33392,8 +33522,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Powerhouse (Museum of Applied Arts and Sciences) - buyer on buy.nsw / NSW eTendering",
@@ -33414,8 +33544,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "The University of Adelaide E-Tendering (TenderLink)",
@@ -33436,8 +33566,8 @@
         "2026-09-04"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "TenderBuilt - civil construction portal guide",
@@ -33456,6 +33586,28 @@
       "last_seen": "2026-09-04",
       "seen_dates": [
         "2026-09-04"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "AusTender Supplier Portal (Central Procurement Systems)",
+      "source_url": "https://services-admin.tenders.gov.au/",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "platform": "AusTender / Central Procurement Systems",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Web search for new Australian government procurement platforms surfaced Department of Finance news that the first tranche of the new AusTender Supplier Portal has launched (Oct 2025), with ~10,000 suppliers onboarding across 515 active panels through to June 2026 and availability to all businesses from 1 July 2026. Does not replace AusTender (tenders still published there) but adds a supplier-discovery layer.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated (Dept of Finance). Lets suppliers register business attributes (Indigenous, SME, women-owned, ANZ) so agencies can discover them for panel/sourcing events. Portal detail could not be fetched this run (egress-blocked); recorded from Finance/help.tenders.gov.au announcements.",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "seen_dates": [
+        "2026-09-05"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
