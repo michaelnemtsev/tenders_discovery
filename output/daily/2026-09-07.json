@@ -61,7 +61,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["water", "watermain", "civil-construction", "council", "nsw", "local-government"],
+      "tags": [
+        "water",
+        "watermain",
+        "civil-construction",
+        "council",
+        "nsw",
+        "local-government"
+      ],
       "first_seen": "2026-09-07",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch. The tender title, tender id (CON00839), publish date (20 Aug 2026) and closing date/time (16 Sep 2026, 10:00am) were corroborated across two independent WebSearch result snippets that pointed to the buyer-originated Coffs Harbour City Council TenderLink e-tendering portal (portal.tenderlink.com/coffsharbour). The tender detail page could not be opened to extract scope/deliverables because all WebFetch egress was blocked by the network policy this run.",
