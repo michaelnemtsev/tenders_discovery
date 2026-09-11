@@ -66,7 +66,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "professional-services", "translation"],
+      "tags": [
+        "commonwealth",
+        "professional-services",
+        "translation"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated Commonwealth notice on tenders.gov.au. Detail page not fetched (egress blocked).",
@@ -114,7 +118,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "innovation", "asca"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "innovation",
+        "asca"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated Defence/ASCA notice on tenders.gov.au.",
@@ -162,7 +171,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "health", "mental-health", "pre-release", "defence"],
+      "tags": [
+        "commonwealth",
+        "health",
+        "mental-health",
+        "pre-release",
+        "defence"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated pre-release/market-sounding notice on tenders.gov.au.",
@@ -210,7 +225,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "pre-release", "long-term-contract"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "pre-release",
+        "long-term-contract"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated Defence notice on tenders.gov.au.",
@@ -258,7 +278,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "state", "goods", "uniforms", "events"],
+      "tags": [
+        "nsw",
+        "state",
+        "goods",
+        "uniforms",
+        "events"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of buy.nsw/NSW eTendering; buyer-originated NSW state opportunity.",
@@ -306,7 +332,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "local-government", "facility-management", "aquatic", "vendorpanel"],
+      "tags": [
+        "nsw",
+        "local-government",
+        "facility-management",
+        "aquatic",
+        "vendorpanel"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch; buyer-originated council RFT advertised on the council website and lodged via VendorPanel Public Tenders.",
@@ -354,7 +386,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["sa", "government-business-enterprise", "water", "wastewater", "design-and-construct", "eoi", "unverified"],
+      "tags": [
+        "sa",
+        "government-business-enterprise",
+        "water",
+        "wastewater",
+        "design-and-construct",
+        "eoi",
+        "unverified"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced as an aggregator discovery signal (australiantenders.com.au) pointing to a buyer-originated SA Water EOI; recorded against SA Water's own procurement channel, not the aggregator.",
@@ -402,7 +442,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["vic", "government-business-enterprise", "water", "dam", "construction", "eoi", "unverified"],
+      "tags": [
+        "vic",
+        "government-business-enterprise",
+        "water",
+        "dam",
+        "construction",
+        "eoi",
+        "unverified"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced as an aggregator discovery signal (australiantenders.com.au) pointing to a buyer-originated Melbourne Water EOI; recorded against Melbourne Water's own tenders channel, not the aggregator.",
@@ -450,7 +498,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "government-business-enterprise", "water", "customer-engagement", "rfi", "unverified"],
+      "tags": [
+        "nsw",
+        "government-business-enterprise",
+        "water",
+        "customer-engagement",
+        "rfi",
+        "unverified"
+      ],
       "first_seen": "2026-09-12",
       "detail_source": "",
       "reasoning": "Surfaced as an aggregator discovery signal; recorded against Sydney Water's buyer-originated page on NSW eTendering, not the aggregator.",
