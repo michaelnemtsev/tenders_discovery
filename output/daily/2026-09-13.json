@@ -65,7 +65,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "austender", "laboratory", "testing", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "austender",
+        "laboratory",
+        "testing",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Surfaced via WebSearch of AusTender current ATM views; ATM_2026_6786 confirmed to exist on tenders.gov.au. Buyer-originated (AusTender is the Commonwealth's own publication portal).",
@@ -113,7 +119,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "health", "panel", "hta", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "health",
+        "panel",
+        "hta",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Re-confirmed as currently open via WebSearch of AusTender health ATM list. Buyer-originated (AusTender).",
@@ -161,7 +173,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "defence", "health", "market-sounding", "industry-notice", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "defence",
+        "health",
+        "market-sounding",
+        "industry-notice",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Re-confirmed via WebSearch of AusTender health/defence ATM list. Buyer-originated (AusTender / Department of Defence).",
@@ -209,7 +228,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "transport", "road", "fabrication", "headline-only"],
+      "tags": [
+        "nsw",
+        "transport",
+        "road",
+        "fabrication",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Re-confirmed as open via WebSearch of buy.nsw open opportunities. Buyer-originated (buy.nsw / Transport for NSW).",
@@ -257,7 +282,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "facilities-management", "headline-only"],
+      "tags": [
+        "nsw",
+        "facilities-management",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Re-confirmed as open via WebSearch of buy.nsw open opportunities. Buyer-originated (buy.nsw / NSW Premier's Department).",
@@ -305,7 +334,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["university", "victoria", "ict", "moodle", "lms", "headline-only"],
+      "tags": [
+        "university",
+        "victoria",
+        "ict",
+        "moodle",
+        "lms",
+        "headline-only"
+      ],
       "first_seen": "2026-09-13",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of Australian university eTendering; captured from Monash's own buyer-hosted TenderLink portal (buyer-originated, not an aggregator).",
