@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13",
+  "generated": "2026-09-14",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -81,33 +81,31 @@
     "2026-09-10",
     "2026-09-11",
     "2026-09-12",
-    "2026-09-13"
+    "2026-09-13",
+    "2026-09-14"
   ],
-  "run_count": 81,
+  "run_count": 82,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-13",
-  "latest_coverage_summary": "WebSearch-only discovery run. External WebFetch remained blocked by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.nsw.gov.au, so no tender detail page or specification document could be opened and every opportunity is captured at headline level from search snippets only. Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search: concrete open/recent opportunities were re-confirmed for AusTender (Testing Laboratory Services deed ATM_2026_6786; Health Technology Assessment Support Services Panel Health/PH25/16174 closing 9 Oct 2026; ADF Family Health Program industry notice closing 30 Sep 2026) and NSW via buy.nsw (Transport for NSW movable median components closing 22 Oct 2026; Premier's Department Facilities Management services closing 8 Oct 2026). QLD (QTenders/supply.qld.gov.au), WA (Tenders WA), SA (Tenders SA), TAS (Tenders Tasmania), NT (QTOL) and ACT returned only portal landing pages / generic results with no specific new current opportunity surfaced this run. Tier 2 covered universities (a new headline opportunity captured: Monash University Moodle Managed Services partner via its TenderLink eTendering portal), local government (VendorPanel; WALGA Preferred Supplier Program RFT cycle noted as underway), GBE water corporations (Sydney Water, Melbourne Water, SA Water, WaterNSW) and public health (NSW LHDs) — no NEW specific opportunity beyond items already captured on prior runs surfaced via search. Tier 3 was attempted per mandate (SAP Ariba Discovery, BHP, Rio Tinto Buy Local, Fortescue, Chevron Australia, ICN Gateway, Ramsay/St Vincent's private health): corporate opportunity detail is registration- or invitation-gated and none was publicly visible, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. A Rio Tinto ~4GW onshore renewables tender in Australia surfaced as a news/aggregator discovery signal only (buyer detail gated) and is noted in gaps rather than captured as a confirmed tender. Genuinely new sources are scarce because the routine's known-source set is now broad (334 sources over ~20 runs); one genuinely new buyer-originated portal was found this run: the Chevron Supplier Management Portal (ApexPortal), distinct from the already-known australia.chevron.com supplier page.",
+  "latest_run": "2026-09-14",
+  "latest_coverage_summary": "WebSearch-only discovery run. External WebFetch remained blocked by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.gov.au, so no tender detail page or specification document could be opened and every opportunity is captured at headline level from search-result snippets only. Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search. AusTender surfaced two genuinely new, currently-open Commonwealth opportunities not seen on prior runs: ATM D26/49129 (Asbestos and Silica Safety and Eradication Agency support for Aim 3 of the Asbestos National Strategic Plan 2024-30) and ATM_2026_3426 (Department of Industry, Science and Resources comprehensive company supply-chain dataset, closing 25 Sep 2026). Several other AusTender ATMs returned by search (RFT13109 pre-employment screening, PR10031930 RASS remote air services, RFI_ATM_2026_6026, CSIROEOI2026001 Parkes Observatory cafe) were already captured on prior runs or now closed, so were not re-added. NSW (buy.nsw), VIC (Buying for Victoria), QLD (QTenders/supply.qld.gov.au), WA (Tenders WA), SA (Tenders SA), TAS (Tenders Tasmania), NT (QTOL) and ACT returned only portal landing pages / generic aggregator results with no specific NEW current opportunity surfaced via search this run. Tier 2 covered universities (University of Sydney TenderLink items PROC-2026-293 chiller/cooling tower, SA31 student accommodation EOI, Curriculum Management Technologies EOI, Lead Architect EOI - all already captured on prior runs), GBE utilities (Sydney Water, Melbourne Water Cardinia Dam / biosolids EOIs, Transgrid Sydney demand-management, Ausgrid BESS - all already known or non-current) and public health (HealthShare Victoria JAGGAER portal - already known); no NEW specific opportunity surfaced. Tier 3 was attempted per mandate (SAP Business Network Discovery / Ariba, BHP Find Opportunities, Rio Tinto Buy Local, Fortescue, EstimateOne construction, HealthShare/JAGGAER): corporate opportunity detail is registration- or invitation-gated and none was publicly visible, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. Source discovery is saturating: every candidate source examined this run (HealthShare Victoria JAGGAER portal, app.jaggaer.com, EstimateOne, Rio Tinto Buy Local, BHP Find Opportunities, AAICLAS) was already in the known-source set of 336, so no genuinely new buyer-originated source was added this run - reported honestly rather than padded.",
   "latest_run_metadata": {
-    "run_date": "2026-09-13",
-    "coverage_summary": "WebSearch-only discovery run. External WebFetch remained blocked by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.nsw.gov.au, so no tender detail page or specification document could be opened and every opportunity is captured at headline level from search snippets only. Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search: concrete open/recent opportunities were re-confirmed for AusTender (Testing Laboratory Services deed ATM_2026_6786; Health Technology Assessment Support Services Panel Health/PH25/16174 closing 9 Oct 2026; ADF Family Health Program industry notice closing 30 Sep 2026) and NSW via buy.nsw (Transport for NSW movable median components closing 22 Oct 2026; Premier's Department Facilities Management services closing 8 Oct 2026). QLD (QTenders/supply.qld.gov.au), WA (Tenders WA), SA (Tenders SA), TAS (Tenders Tasmania), NT (QTOL) and ACT returned only portal landing pages / generic results with no specific new current opportunity surfaced this run. Tier 2 covered universities (a new headline opportunity captured: Monash University Moodle Managed Services partner via its TenderLink eTendering portal), local government (VendorPanel; WALGA Preferred Supplier Program RFT cycle noted as underway), GBE water corporations (Sydney Water, Melbourne Water, SA Water, WaterNSW) and public health (NSW LHDs) — no NEW specific opportunity beyond items already captured on prior runs surfaced via search. Tier 3 was attempted per mandate (SAP Ariba Discovery, BHP, Rio Tinto Buy Local, Fortescue, Chevron Australia, ICN Gateway, Ramsay/St Vincent's private health): corporate opportunity detail is registration- or invitation-gated and none was publicly visible, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. A Rio Tinto ~4GW onshore renewables tender in Australia surfaced as a news/aggregator discovery signal only (buyer detail gated) and is noted in gaps rather than captured as a confirmed tender. Genuinely new sources are scarce because the routine's known-source set is now broad (334 sources over ~20 runs); one genuinely new buyer-originated portal was found this run: the Chevron Supplier Management Portal (ApexPortal), distinct from the already-known australia.chevron.com supplier page.",
-    "sources_checked": 23,
-    "tenders_found": 6,
-    "new_sources_found": 1,
-    "entries_pending_detail": 6,
+    "run_date": "2026-09-14",
+    "coverage_summary": "WebSearch-only discovery run. External WebFetch remained blocked by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.gov.au, so no tender detail page or specification document could be opened and every opportunity is captured at headline level from search-result snippets only. Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search. AusTender surfaced two genuinely new, currently-open Commonwealth opportunities not seen on prior runs: ATM D26/49129 (Asbestos and Silica Safety and Eradication Agency support for Aim 3 of the Asbestos National Strategic Plan 2024-30) and ATM_2026_3426 (Department of Industry, Science and Resources comprehensive company supply-chain dataset, closing 25 Sep 2026). Several other AusTender ATMs returned by search (RFT13109 pre-employment screening, PR10031930 RASS remote air services, RFI_ATM_2026_6026, CSIROEOI2026001 Parkes Observatory cafe) were already captured on prior runs or now closed, so were not re-added. NSW (buy.nsw), VIC (Buying for Victoria), QLD (QTenders/supply.qld.gov.au), WA (Tenders WA), SA (Tenders SA), TAS (Tenders Tasmania), NT (QTOL) and ACT returned only portal landing pages / generic aggregator results with no specific NEW current opportunity surfaced via search this run. Tier 2 covered universities (University of Sydney TenderLink items PROC-2026-293 chiller/cooling tower, SA31 student accommodation EOI, Curriculum Management Technologies EOI, Lead Architect EOI - all already captured on prior runs), GBE utilities (Sydney Water, Melbourne Water Cardinia Dam / biosolids EOIs, Transgrid Sydney demand-management, Ausgrid BESS - all already known or non-current) and public health (HealthShare Victoria JAGGAER portal - already known); no NEW specific opportunity surfaced. Tier 3 was attempted per mandate (SAP Business Network Discovery / Ariba, BHP Find Opportunities, Rio Tinto Buy Local, Fortescue, EstimateOne construction, HealthShare/JAGGAER): corporate opportunity detail is registration- or invitation-gated and none was publicly visible, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. Source discovery is saturating: every candidate source examined this run (HealthShare Victoria JAGGAER portal, app.jaggaer.com, EstimateOne, Rio Tinto Buy Local, BHP Find Opportunities, AAICLAS) was already in the known-source set of 336, so no genuinely new buyer-originated source was added this run - reported honestly rather than padded.",
+    "sources_checked": 22,
+    "tenders_found": 2,
+    "new_sources_found": 0,
+    "entries_pending_detail": 2,
     "gaps": [
-      "NETWORK EGRESS BLOCK (primary cause of a degraded run, consistent with recent prior runs): WebFetch to external hosts is denied by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.nsw.gov.au. The agent proxy status endpoint reported healthy (bundleCoversEveryHost:true, no relay failures) yet external host fetches are still policy-blocked, so this is an organisation egress policy, not a transient TLS/proxy fault; it was not retried or routed around per proxy guidance. Only WebSearch (US-based, via Anthropic) and the GitHub MCP were reachable.",
-      "Because no external detail page or specification document could be opened, deliverables/requirements/evaluation-criteria/value/contacts could not be extracted for ANY entry; all 6 tenders are headline-level and pending a detail pass. Fields not present in search snippets are left null/\"\" rather than inferred.",
-      "Tier 1: AusTender and all state/territory portals could only be read through WebSearch snippets, not their live ATM/RFT lists, feeds or pagination, so full lists could not be swept. QTenders (QLD), Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL and ACT Tenders returned only portal landing pages / generic aggregator results in search (no specific current opportunity surfaced this run).",
-      "AusTender ATM_2026_6786 (Testing Laboratory Services deed, anticipated commencement 1 Nov 2026, conclusion 30 Jun 2030) and ATM_2026_6551 were confirmed to exist on AusTender but their full titles, buyers, values, closing dates and documents could not be read from search snippets; ATM_2026_6786 is captured at headline level with the deed dates from the snippet and everything else null. OET-DRC-2026 (Operational Energy Transitions Defence Research Centre RFP) closed 28 Aug 2026 and was excluded as not current; JHC/RFP/2025/1 (Defence health) is a down-select to shortlisted tenderers (invitation-only) and was excluded per scope.",
-      "Tier 2 water corporations (Sydney Water, Melbourne Water, SA Water, WaterNSW) and public health LHDs surfaced only portal/aggregator pages this run; no NEW specific opportunity beyond items captured on prior runs was visible, so none was re-added to avoid duplicate/unverified entries.",
-      "Tier 3 SAP Ariba Discovery / SAP Business Network Discovery: no specific currently-open, publicly-visible Australian RFx could be confirmed via search (results were generic platform/API/how-to pages). Corporate opportunities on Ariba/Coupa/BHP/Rio Tinto Buy Local/Fortescue/Chevron/ICN Gateway are registration- or invitation-gated; recorded as portals in discovered_sources, not as tenders. Invitation-only management-consultancy RFPs remain out of scope and were not fabricated.",
-      "DISCOVERY SIGNAL (not captured as a tender): a Rio Tinto tender for ~4GW of onshore renewables in Australia was reported via news/aggregator (pv-tech.org); the buyer's own opportunity detail is gated (Rio Tinto Buy Local / ICN Project Portal). Recorded here as a signal to verify on an authenticated/unblocked run rather than captured, to avoid presenting aggregator/news data as a confirmed opportunity.",
-      "Source discovery is saturating: of every candidate source examined this run (Monash eTendering, WALGA Preferred Supplier Program, Audit Office of NSW open tenders, WaterNSW procurement, Rio Tinto Buy Local, ICN Gateway, Ramsay Health, St Vincent's Health, Chevron Australia supplier opportunities) all but one were already in the known-source set of 334. Only the Chevron Supplier Management Portal (chevron.apexportal.net, ApexPortal platform) was genuinely new this run."
+      "NETWORK EGRESS BLOCK (primary cause of a degraded run, consistent with recent prior runs): WebFetch to external hosts is denied by the environment egress proxy (EGRESS_BLOCKED), reconfirmed this run against www.tenders.gov.au. The agent proxy status endpoint reported healthy (bundleCoversEveryHost:true, no recent relay failures) yet external host fetches are still policy-blocked, so this is an organisation egress policy, not a transient TLS/proxy fault; it was not retried or routed around per proxy guidance. Only WebSearch (US-based, via Anthropic) and the GitHub MCP were reachable.",
+      "Because no external detail page or specification document could be opened, deliverables/requirements/evaluation-criteria/value/contacts/closing-time could not be extracted for either tender; both entries are headline-level and pending a detail pass. Fields not present in search snippets are left null/\"\" rather than inferred.",
+      "AusTender D26/49129 (ASSEA Asbestos National Strategic Plan Aim 3 support): the ATM's own closing date could not be read from search snippets and is left null; only the scope (implement Aim 3, Priorities 7 and 8) and the two-year initial contract term commencing October 2026 were visible in the snippet. Full title, value, evaluation criteria, contact and documents were not readable.",
+      "Tier 1 states: AusTender and all state/territory portals could only be read through WebSearch snippets, not their live ATM/RFT lists, feeds or pagination, so full lists could not be swept. QTenders (QLD), Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL and ACT Tenders returned only portal landing pages / generic aggregator results in search (no specific new current opportunity surfaced this run).",
+      "Tier 3 SAP Business Network Discovery / Ariba: no specific currently-open, publicly-visible Australian RFx could be confirmed via search (results were generic platform/how-to pages). Corporate opportunities on Ariba/Coupa/BHP/Rio Tinto Buy Local/Fortescue/EstimateOne are registration- or invitation-gated; recorded as portals in discovered_sources, not as tenders. Invitation-only management-consultancy RFPs remain out of scope and were not fabricated.",
+      "Source discovery is saturating: of every candidate source examined this run (HealthShare Victoria JAGGAER procurement portal, app.jaggaer.com, EstimateOne, Rio Tinto Buy Local, BHP Find Opportunities, University of Sydney TenderLink, AAICLAS aviation) all were already in the known-source set of 336. No genuinely new buyer-originated source was found this run; new_sources_found is reported honestly as 0 rather than fabricating one."
     ],
     "recommended_seed_additions": [
-      "https://chevron.apexportal.net/ - Chevron Supplier Management Portal (ApexPortal e-sourcing platform); buyer-originated supplier/e-sourcing portal distinct from the already-known australia.chevron.com supplier page. Registration-gated; check monthly.",
       "https://www.tenders.gov.au/atm?orderby=Close+Date - AusTender open-ATM list ordered by close date; when egress is unblocked, sweep this and follow pagination for full Tier 1 Commonwealth coverage instead of relying on WebSearch snippets.",
-      "INFRASTRUCTURE NOTE (not a source): resolve the WebFetch/egress block. Every run since coverage began has been degraded to headline-level because external hosts are policy-blocked; an authenticated, unblocked run is required to extract deliverables, requirements, values, closing times, documents and contacts from the tenders' own detail pages."
+      "INFRASTRUCTURE NOTE (not a source): resolve the WebFetch/egress block. Every run for an extended period has been degraded to headline-level because external hosts are policy-blocked; an authenticated, unblocked run is required to extract deliverables, requirements, values, closing times, documents and contacts from the tenders' own detail pages and to read registration-gated Tier 3 corporate opportunities."
     ]
   },
   "months": [
@@ -128,7 +126,7 @@
     },
     {
       "month": "2026-09",
-      "new_tenders": 108,
+      "new_tenders": 110,
       "active_tenders": 0
     }
   ],
@@ -26828,7 +26826,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:CSIRORFT2026019",
@@ -28107,7 +28105,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:PremiersDept-facilities-management-services",
@@ -28167,7 +28165,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:TfNSW-risk-management-future-fleet-program",
@@ -29076,8 +29074,8 @@
         "2026-09-13"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ADFFHP IndustryNotice",
@@ -29138,8 +29136,8 @@
         "2026-09-13"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Monash University:moodle-managed-services-partner",
@@ -29198,6 +29196,133 @@
       "last_seen": "2026-09-13",
       "seen_dates": [
         "2026-09-13"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:D26/49129-assea-asbestos-national-strategic-plan-aim3-support",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "D26/49129",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/e52d0393-2d99-4707-8bd6-dddd33c3e12b",
+      "access": "public",
+      "title": "Support for implementation of Aim 3 of the Asbestos National Strategic Plan 2024-30",
+      "buyer": "Asbestos and Silica Safety and Eradication Agency (ASSEA)",
+      "buyer_url": "https://www.asbestossafety.gov.au/",
+      "category": "Advisory and support services",
+      "category_codes": [],
+      "procurement_type": "ATM",
+      "current_status": "open",
+      "description": "An Approach to Market by the Asbestos and Silica Safety and Eradication Agency (ASSEA) for a supplier to work in cooperation with the agency to implement Aim 3 of the Asbestos National Strategic Plan 2024-30 (securing a worldwide ban on the production and trade of asbestos), specifically supporting Priority 7 (capacity building in South-East Asia) and Priority 8 (promoting the Australian Government's position on asbestos bans).",
+      "deliverables_summary": "Provision of services under which the supplier works with ASSEA to advance Aim 3 of the Asbestos National Strategic Plan 2024-30 - securing a worldwide ban on the production and trade of asbestos - with a focus on Priority 7 (capacity building in South-East Asia) and Priority 8 (promoting the Australian Government's position on asbestos bans internationally). Full deliverables/milestones were not readable from the AusTender search snippet and the detail page could not be opened this run due to the egress block.",
+      "key_deliverables": [
+        "Support for Priority 7 of the ANSP: capacity building in South-East Asia",
+        "Support for Priority 8 of the ANSP: promoting the Australian Government's position on asbestos bans"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "Initial contract of two years, commencing October 2026 (as stated in the AusTender listing snippet)",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/e52d0393-2d99-4707-8bd6-dddd33c3e12b",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "asbestos",
+        "advisory-services",
+        "international",
+        "headline-only"
+      ],
+      "first_seen": "2026-09-14",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs. Buyer-originated Commonwealth listing published on AusTender (the buying agency's own portal). Not present in the routine's known dedup keys from prior runs.",
+      "notes": "Headline-level only. Scope/deliverables summarised from the AusTender search-result snippet of the ATM notice; the tender's own detail page and any specification documents could not be opened this run because external WebFetch is blocked by the environment egress proxy. Closing date, value, evaluation criteria, contacts and documents were not present in the snippet and are left null/empty rather than inferred. Pending a full detail pass on an unblocked run.",
+      "last_seen": "2026-09-14",
+      "seen_dates": [
+        "2026-09-14"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_3426-company-supply-chain-dataset",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "ATM_2026_3426",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/fb647610-d864-40ec-9c00-31b397abc856",
+      "access": "public",
+      "title": "Comprehensive company supply chain dataset",
+      "buyer": "Department of Industry, Science and Resources",
+      "buyer_url": "https://www.industry.gov.au/",
+      "category": "Data services",
+      "category_codes": [],
+      "procurement_type": "ATM",
+      "current_status": "closing-soon",
+      "description": "An Approach to Market by the Department of Industry, Science and Resources for the provision of a comprehensive company supply-chain dataset (Data services category). Listed as closing 25 September 2026, 3:00 pm ACT local time.",
+      "deliverables_summary": "Supply of a comprehensive company supply-chain dataset to the Department of Industry, Science and Resources. The detailed scope, data specification, coverage requirements and licensing terms were not readable from the AusTender search snippet and the detail page could not be opened this run due to the egress block.",
+      "key_deliverables": [
+        "Provision of a comprehensive company supply-chain dataset (Data services)"
+      ],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-09-25",
+      "closing_time": "3:00 PM ACT Local Time",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/fb647610-d864-40ec-9c00-31b397abc856",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "data-services",
+        "supply-chain",
+        "dataset",
+        "headline-only"
+      ],
+      "first_seen": "2026-09-14",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs. Buyer-originated Commonwealth listing published on AusTender by the Department of Industry, Science and Resources. Not present in the routine's known dedup keys from prior runs.",
+      "notes": "Headline-level only. Category (Data services), closing date (25 Sep 2026) and closing time (3:00 pm ACT local time) came from the AusTender search-result snippet; the tender's own detail page and any specification/data-requirement documents could not be opened this run because external WebFetch is blocked by the environment egress proxy. Value, evaluation criteria, contacts and documents were not present in the snippet and are left null/empty rather than inferred. Pending a full detail pass on an unblocked run.",
+      "last_seen": "2026-09-14",
+      "seen_dates": [
+        "2026-09-14"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -29444,21 +29569,21 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
+      "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia / global",
+      "jurisdiction": "Australia (global platform)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 mandatory check. WebSearch returned only generic platform/API/how-to pages; no specific currently-open, publicly-visible Australian RFx could be confirmed this run.",
-      "recommended_check_frequency": "daily",
-      "notes": "Public posting board where buyers post open RFx; free supplier registration required to view full opportunity detail. No fabricated opportunities. Best read on an authenticated, unblocked run.",
+      "how_discovered": "Mandatory Tier 3 check each run; probed via WebSearch for currently-open, publicly-visible Australian RFx.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Largest single corporate opportunity channel. No specific currently-open, publicly-visible Australian RFx confirmable via search this run; full opportunity detail requires a free supplier account (registration-gated). Recorded as a portal, not fabricated as a tender.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-09-14",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -29509,27 +29634,28 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-12",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-14"
       ],
-      "seen_count": 50,
+      "seen_count": 51,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "BHP - Find Opportunities",
+      "source_name": "BHP - Find Opportunities (supplier portal)",
       "source_url": "https://www.bhp.com/suppliers/find-opportunities",
       "source_type": "corporate",
-      "jurisdiction": "Australia / global",
-      "platform": "SAP-Ariba",
+      "jurisdiction": "Australia",
+      "platform": "SAP-Ariba / GCMS",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 mandatory check via WebSearch. Opportunity detail is registration/invitation-gated; no publicly visible current RFx surfaced.",
-      "recommended_check_frequency": "weekly",
-      "notes": "Buyer-originated. BHP posts via SAP Ariba + GCMS (interestedsupplier.bhp.com). Recorded as a portal, not captured as a tender.",
+      "how_discovered": "Known Tier 3 major-buyer portal; re-checked via WebSearch this run.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Individual opportunities are registration/invitation-gated (SAP Ariba + GCMS). No publicly visible current RFx captured; portal recorded so the Tier 3 source set stays complete.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-09-14",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -29540,9 +29666,10 @@
         "2026-08-25",
         "2026-09-08",
         "2026-09-12",
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-14"
       ],
-      "seen_count": 10,
+      "seen_count": 11,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -32412,7 +32539,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Hinchinbrook Shire Council - E-Procurement Portal (VendorPanel Marketplace)",
@@ -33093,20 +33220,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender",
+      "source_name": "AusTender (Australian Government procurement portal)",
       "source_url": "https://www.tenders.gov.au",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm?orderby=Close+Date",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 seed; re-confirmed via WebSearch (multiple current ATMs surfaced).",
+      "how_discovered": "Known Tier 1 portal; re-checked this run via WebSearch and surfaced both new tenders (D26/49129, ATM_2026_3426).",
       "recommended_check_frequency": "daily",
-      "notes": "Commonwealth core portal. Live ATM list and RSS not reachable this run (egress blocked); read via search snippets only.",
+      "notes": "Buyer-originated Commonwealth portal carrying the bulk of federal ATMs. Live ATM list / feed could not be fetched directly this run due to the egress block; only WebSearch snippets were available.",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-09-12",
+      "last_seen": "2026-09-14",
       "seen_dates": [
         "2026-07-26",
         "2026-08-15",
@@ -33114,11 +33241,12 @@
         "2026-08-31",
         "2026-09-02",
         "2026-09-03",
-        "2026-09-12"
+        "2026-09-12",
+        "2026-09-14"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -33417,7 +33545,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Australian National University — Current Tenders (TenderLink)",
@@ -36936,8 +37064,8 @@
         "2026-09-13"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Gateway by ICN (Industry Capability Network)",
@@ -36956,6 +37084,28 @@
       "last_seen": "2026-09-13",
       "seen_dates": [
         "2026-09-13"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Rio Tinto - Buy Local Australia (local suppliers)",
+      "source_url": "https://www.riotinto.com/en/about/suppliers/local-suppliers/buy-local-australia/",
+      "source_type": "corporate",
+      "jurisdiction": "Australia",
+      "platform": "custom / ICN",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "medium",
+      "how_discovered": "Known Tier 3 major-buyer portal; re-checked via WebSearch this run.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Opportunity detail is gated (Rio Tinto Buy Local / ICN Project Portal). No publicly visible current RFx captured; portal recorded so the Tier 3 source set stays complete.",
+      "first_seen": "2026-09-14",
+      "last_seen": "2026-09-14",
+      "seen_dates": [
+        "2026-09-14"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,

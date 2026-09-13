@@ -65,7 +65,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "asbestos", "advisory-services", "international", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "asbestos",
+        "advisory-services",
+        "international",
+        "headline-only"
+      ],
       "first_seen": "2026-09-14",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender current ATMs. Buyer-originated Commonwealth listing published on AusTender (the buying agency's own portal). Not present in the routine's known dedup keys from prior runs.",
@@ -115,7 +121,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "data-services", "supply-chain", "dataset", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "data-services",
+        "supply-chain",
+        "dataset",
+        "headline-only"
+      ],
       "first_seen": "2026-09-14",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender current ATMs. Buyer-originated Commonwealth listing published on AusTender by the Department of Industry, Science and Resources. Not present in the routine's known dedup keys from prior runs.",
