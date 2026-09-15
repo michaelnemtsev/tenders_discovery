@@ -66,7 +66,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "insurance", "reinsurance", "financial-services", "GBE-buyer"],
+      "tags": [
+        "commonwealth",
+        "insurance",
+        "reinsurance",
+        "financial-services",
+        "GBE-buyer"
+      ],
       "first_seen": "2026-09-16",
       "detail_source": "",
       "reasoning": "Discovered on AusTender (buyer-originated Commonwealth portal) via WebSearch; ATM page title 'Current ATM View - EFA2026002: AusTender' confirms it is currently listed. Buyer corroborated by the AusTender 'Annual Procurement Plan View - Export Finance Australia' entry. Not present in the 473 known dedup keys.",
@@ -118,7 +124,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "NDIS", "disability", "advisory", "pricing", "expert-appointment"],
+      "tags": [
+        "commonwealth",
+        "NDIS",
+        "disability",
+        "advisory",
+        "pricing",
+        "expert-appointment"
+      ],
       "first_seen": "2026-09-16",
       "detail_source": "",
       "reasoning": "Discovered on AusTender via WebSearch; ATM page title 'Current ATM View - NDIA PARG: AusTender' confirms current listing. Title and scope corroborated by AusTender search snippet describing the PARG independent-member appointment. Not present in the 473 known dedup keys.",
@@ -171,7 +184,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "renewable-energy", "data", "SaaS", "API", "ICT"],
+      "tags": [
+        "commonwealth",
+        "renewable-energy",
+        "data",
+        "SaaS",
+        "API",
+        "ICT"
+      ],
       "first_seen": "2026-09-16",
       "detail_source": "",
       "reasoning": "Discovered on AusTender via WebSearch; ATM page title 'Current ATM View - ATM_2026_6551: AusTender' confirms current listing. Scope corroborated by AusTender search snippet describing the reconciled renewable-energy dataset platform+API. Not present in the 473 known dedup keys.",
@@ -222,7 +242,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "attorney-general", "social-services", "community-services", "pilot"],
+      "tags": [
+        "commonwealth",
+        "attorney-general",
+        "social-services",
+        "community-services",
+        "pilot"
+      ],
       "first_seen": "2026-09-16",
       "detail_source": "",
       "reasoning": "Discovered on AusTender via WebSearch; ATM page title 'Current ATM View - 10018162: AusTender' confirms current listing. Buyer and scope corroborated by AusTender search snippets. Not present in the 473 known dedup keys.",
