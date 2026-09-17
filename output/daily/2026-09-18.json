@@ -66,7 +66,13 @@
       "contact_name": "AFP Contact Officer",
       "contact_email": "AFP-RFT@afp.gov.au",
       "contact_phone": "",
-      "tags": ["commonwealth", "AusTender", "AFP", "law-enforcement", "confidentiality-gated"],
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "AFP",
+        "law-enforcement",
+        "confidentiality-gated"
+      ],
       "first_seen": "2026-09-18",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - RFT 02-2026: AusTender' confirms existence and current status. Buyer (AFP) and Deed-of-Confidentiality access mechanism identified from the search answer snippet. Buyer-originated source: AusTender.",
@@ -114,7 +120,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "AusTender", "buyer-unidentified"],
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "buyer-unidentified"
+      ],
       "first_seen": "2026-09-18",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - ATM_2026_3512: AusTender' confirms existence and current status. Buyer-originated source: AusTender.",
@@ -162,7 +172,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "AusTender", "buyer-unidentified", "not-recent"],
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "buyer-unidentified",
+        "not-recent"
+      ],
       "first_seen": "2026-09-18",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - ATM_2026_2982: AusTender' confirms it is still in the Current ATM list. Buyer-originated source: AusTender.",
@@ -210,7 +225,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["nsw", "buy.nsw", "advance-notice", "market-sounding", "facilities-management"],
+      "tags": [
+        "nsw",
+        "buy.nsw",
+        "advance-notice",
+        "market-sounding",
+        "facilities-management"
+      ],
       "first_seen": "2026-09-18",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of buy.nsw opportunities; link title 'Advance Notice - Upcoming Tender for Facilities Management Services - PD2025046-A | buy.nsw' confirms existence and status. Buyer-originated source: buy.nsw / NSW eTendering.",

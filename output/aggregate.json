@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17",
+  "generated": "2026-09-18",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -85,30 +85,32 @@
     "2026-09-14",
     "2026-09-15",
     "2026-09-16",
-    "2026-09-17"
+    "2026-09-17",
+    "2026-09-18"
   ],
-  "run_count": 85,
+  "run_count": 86,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-17",
-  "latest_coverage_summary": "Tier 1 Commonwealth (AusTender) swept via search and yielded the two genuinely-new, currently-open opportunities added this run (NIAA Indigenous Business Verification RFT and DFAT Climate Resilient Communities mid-term review). All nine core state/territory portals (NSW buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders & Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) were checked for recent activity; their fresh items surfaced this week were already captured in prior runs. Tier 2 (universities incl. University of Adelaide/UTS, GBEs incl. Sydney Water/Melbourne Water/Transgrid/ARTC/Inland Rail, CSIRO, NSW/QLD health) and Tier 3 (SAP Ariba Discovery, EstimateOne, VendorPanel, major-buyer corporate portals, WSA Co, Ramsay/Healthscope) were sampled. One new source (Healthscope) added.",
+  "latest_run": "2026-09-18",
+  "latest_coverage_summary": "WebSearch-only discovery run. External WebFetch remained fully blocked by the environment egress proxy (EGRESS_BLOCKED) — reconfirmed this run against www.tenders.gov.au and www.vendorpanel.com.au — even though the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, no recent relay failures), i.e. an organisation-level egress policy rather than a transient fault. Consequently NO tender detail page or specification document could be opened; every opportunity is captured at headline level, and detail fields are drawn only from WebSearch result link titles (which carry the target page's own <title>, e.g. 'Current ATM View - <ID>: AusTender', treated as reliable for existence/status/ID) plus WebSearch answer snippets (treated as unverified for exact dates and scope). Tier 1 Commonwealth (AusTender) and all eight state/territory portals (NSW buy.nsw, VIC Buying for Victoria, QLD QTenders, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders) were probed via search. AusTender surfaced four verifiable Current-ATM link titles not present in the routine's 477 known dedup keys: RFT 02-2026 (Australian Federal Police — RFT, documents released via Deed-of-Confidentiality secure link, not on AusTender), ATM_2026_3512 (buyer not identifiable via search; October 2026 – October 2027 timeframe), and ATM_2026_2982 (buyer not identifiable; an older item shown as a Current ATM, reportedly last updated ~April 2026 — recorded but flagged as not-recent). NSW buy.nsw surfaced one verifiable link title, PD2025046-A, an Advance Notice for an upcoming Facilities Management Services tender (market-sounding). Other AusTender link titles returned by search were already-known dedup keys (EFA2026002, OPC-2026-02, OPC-2026-03, ASCA-RFT-2026-LDTPM, ATM_2026_3858, OET-DRC-2026, PR10031930-RASS, JASD/RFT/20200/1, RFT-2026-0154, RFT-2026-0080, RFT/WLD/2026, RFT Tranches 1-4, RFI_ATM_2026_6026, ATM_2026_6786, ATM_2026_6066) or Closed (RFT-2026-0031). WA/SA/TAS/NT/ACT returned only portal landing/search pages or aggregator results with no verifiable individual buyer link title; TAS items (Derby Master Plan, Reach Mowing, City Hall EOI) and NSW Destination NSW Vivid Sydney Site Management appeared only in answer prose and were NOT captured per the no-fabrication rule. Tier 2 (VendorPanel councils, universities, GBE utilities, CSIRO, public health) surfaced known sources only; university EOIs (USYD, UTS Connected Assessment, UOW ServiceNow) appeared only via aggregator (australiantenders) snippet prose without a buyer link title, and DFAT AusConnect RFT26-003 EOI had already closed (13-Sep-2026) — none captured. Tier 3 was attempted per mandate (SAP Business Network Discovery / Ariba, BHP Find Opportunities, Woolworths Partner Hub, Qantas): all corporate opportunity detail is registration- or invitation-gated and none was publicly visible via search, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. No genuinely NEW buyer-originated source surfaced this run; novel domains encountered (tenderhub.com.au, bidsfactory.com, australiatenders.com, consolidatedtenders.com, qld2032.com, australiantenders.com.au, tendersinfo.com) are third-party aggregators/scrapers, excluded per the buyer-originated rule (usable only as discovery signal).",
   "latest_run_metadata": {
-    "run_date": "2026-09-17",
-    "coverage_summary": "Tier 1 Commonwealth (AusTender) swept via search and yielded the two genuinely-new, currently-open opportunities added this run (NIAA Indigenous Business Verification RFT and DFAT Climate Resilient Communities mid-term review). All nine core state/territory portals (NSW buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, SA Tenders & Contracts, Tenders Tasmania, NT QTOL, ACT Tenders) were checked for recent activity; their fresh items surfaced this week were already captured in prior runs. Tier 2 (universities incl. University of Adelaide/UTS, GBEs incl. Sydney Water/Melbourne Water/Transgrid/ARTC/Inland Rail, CSIRO, NSW/QLD health) and Tier 3 (SAP Ariba Discovery, EstimateOne, VendorPanel, major-buyer corporate portals, WSA Co, Ramsay/Healthscope) were sampled. One new source (Healthscope) added.",
-    "sources_checked": 26,
-    "tenders_found": 2,
-    "new_sources_found": 1,
-    "entries_pending_detail": 2,
+    "run_date": "2026-09-18",
+    "coverage_summary": "WebSearch-only discovery run. External WebFetch remained fully blocked by the environment egress proxy (EGRESS_BLOCKED) — reconfirmed this run against www.tenders.gov.au and www.vendorpanel.com.au — even though the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, no recent relay failures), i.e. an organisation-level egress policy rather than a transient fault. Consequently NO tender detail page or specification document could be opened; every opportunity is captured at headline level, and detail fields are drawn only from WebSearch result link titles (which carry the target page's own <title>, e.g. 'Current ATM View - <ID>: AusTender', treated as reliable for existence/status/ID) plus WebSearch answer snippets (treated as unverified for exact dates and scope). Tier 1 Commonwealth (AusTender) and all eight state/territory portals (NSW buy.nsw, VIC Buying for Victoria, QLD QTenders, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders) were probed via search. AusTender surfaced four verifiable Current-ATM link titles not present in the routine's 477 known dedup keys: RFT 02-2026 (Australian Federal Police — RFT, documents released via Deed-of-Confidentiality secure link, not on AusTender), ATM_2026_3512 (buyer not identifiable via search; October 2026 – October 2027 timeframe), and ATM_2026_2982 (buyer not identifiable; an older item shown as a Current ATM, reportedly last updated ~April 2026 — recorded but flagged as not-recent). NSW buy.nsw surfaced one verifiable link title, PD2025046-A, an Advance Notice for an upcoming Facilities Management Services tender (market-sounding). Other AusTender link titles returned by search were already-known dedup keys (EFA2026002, OPC-2026-02, OPC-2026-03, ASCA-RFT-2026-LDTPM, ATM_2026_3858, OET-DRC-2026, PR10031930-RASS, JASD/RFT/20200/1, RFT-2026-0154, RFT-2026-0080, RFT/WLD/2026, RFT Tranches 1-4, RFI_ATM_2026_6026, ATM_2026_6786, ATM_2026_6066) or Closed (RFT-2026-0031). WA/SA/TAS/NT/ACT returned only portal landing/search pages or aggregator results with no verifiable individual buyer link title; TAS items (Derby Master Plan, Reach Mowing, City Hall EOI) and NSW Destination NSW Vivid Sydney Site Management appeared only in answer prose and were NOT captured per the no-fabrication rule. Tier 2 (VendorPanel councils, universities, GBE utilities, CSIRO, public health) surfaced known sources only; university EOIs (USYD, UTS Connected Assessment, UOW ServiceNow) appeared only via aggregator (australiantenders) snippet prose without a buyer link title, and DFAT AusConnect RFT26-003 EOI had already closed (13-Sep-2026) — none captured. Tier 3 was attempted per mandate (SAP Business Network Discovery / Ariba, BHP Find Opportunities, Woolworths Partner Hub, Qantas): all corporate opportunity detail is registration- or invitation-gated and none was publicly visible via search, so corporate portals are recorded in discovered_sources only, never fabricated as tenders. No genuinely NEW buyer-originated source surfaced this run; novel domains encountered (tenderhub.com.au, bidsfactory.com, australiatenders.com, consolidatedtenders.com, qld2032.com, australiantenders.com.au, tendersinfo.com) are third-party aggregators/scrapers, excluded per the buyer-originated rule (usable only as discovery signal).",
+    "sources_checked": 24,
+    "tenders_found": 4,
+    "new_sources_found": 0,
+    "entries_pending_detail": 4,
     "gaps": [
-      "WebFetch egress is blocked by the network egress proxy for every external tender domain tested this run (www.tenders.gov.au, www.vendorpanel.com.au, and a control host all returned EGRESS_BLOCKED / 403). All opportunity detail below is therefore reconstructed from WebSearch result snippets, not from a direct read of the tender detail page or its documents; tender documents, evaluation criteria weightings, and estimated values could not be extracted.",
-      "Tier 1 state/territory listing pages (NSW, VIC, QLD, WA, SA, TAS, NT, ACT) could not be paginated directly (egress block + several require a logged-in session or email token); coverage of those jurisdictions this run relied on search snippets and known-item de-duplication rather than an exhaustive live sweep.",
-      "Tier 3 corporate e-sourcing hubs (SAP Ariba / SAP Business Network Discovery, Coupa, Jaggaer) and major-buyer portals (BHP, Woolworths, Coles, Qantas, WSA Co, Ramsay, Healthscope) are login/registration-gated and no authenticated session is available, so no individual corporate opportunity was visible; portals recorded in discovered_sources only. No corporate tender was fabricated.",
-      "Management-consultancy and panel/prequalified RFx (invitation-only) remain out of scope and were not fabricated.",
-      "DFAT Climate Resilient Communities mid-term review: the AusTender ATM ID was not verifiable from search snippets (a mirror aggregator reported an unconfirmed 'DFAT-1111'), so tender_id is left blank and a normalised dedup_key is used.",
-      "Candidate leads that proved stale/closed on inspection were excluded to avoid fabrication: Transgrid 'Sydney 40MW demand management' (that tender closed 31-Jul-2018) and CSIRO EOI CSIROEOI2026008 (CDSCC Canteen Services, closed 09-Jun-2026)."
+      "WebFetch/egress fully blocked (EGRESS_BLOCKED) for ALL external hosts this run — confirmed against www.tenders.gov.au and www.vendorpanel.com.au. No tender detail page or specification document could be opened; all four captured tenders remain at headline level and require an authenticated/unblocked run for deliverables, requirements, evaluation criteria, exact dates, documents and contacts.",
+      "RFT 02-2026 (Australian Federal Police): full RFT documentation is deliberately not published on AusTender — access requires signing an AFP Deed of Confidentiality (AFP-RFT@afp.gov.au). Scope, deliverables, value and closing date could not be verified and are recorded null; access classified free-registration (gated).",
+      "ATM_2026_3512 (AusTender): buying agency not identifiable from search link title or snippet (detail page egress-blocked); buyer recorded as \"\" rather than guessed; closing date null.",
+      "ATM_2026_2982 (AusTender): buying agency not identifiable; item appears as a Current ATM but is reportedly an older listing (last updated ~April 2026), i.e. outside the 7-day recency window — captured for de-dup completeness only, all detail null, may warrant removal if a future unblocked run confirms it is closed.",
+      "PD2025046-A (buy.nsw): an Advance Notice / market-sounding for an upcoming Facilities Management Services tender (anticipated release Sept 2026, subject to change), not yet an open RFT; deliverables, exact release/closing dates and buyer detail unverifiable while egress-blocked.",
+      "State/territory portals (WA, SA, TAS, NT, ACT): only landing/search pages or aggregator results returned; no verifiable individual buyer link title surfaced. TAS items (Derby Master Plan, Reach Mowing of Rural Roads, City Hall Activation EOI) and NSW Destination NSW Vivid Sydney Site Management appeared only in answer prose and were deferred, not captured.",
+      "Tier 2 (VendorPanel council tenders, universities/TAFEs, GBE utilities, CSIRO, public health): sampled via search only; university EOIs (USYD Campus Master Plan/Curriculum Management, UTS Connected Assessment Ecosystem closing 18-Sep-2026, UOW ServiceNow panels) surfaced only via aggregator snippet prose without a buyer link title and were not captured; DFAT AusConnect RFT26-003 EOI had already closed (13-Sep-2026). Full portal sweep deferred pending unblocked WebFetch.",
+      "Tier 3 corporate (SAP Business Network Discovery/Ariba, BHP Find Opportunities, Woolworths Partner Hub, Qantas): opportunity detail is registration-/invitation-gated and none publicly visible via search; portals recorded in discovered_sources only, no corporate tender fabricated.",
+      "No genuinely new buyer-originated source found this run; novel domains encountered were aggregators/scrapers, excluded by policy."
     ],
-    "recommended_seed_additions": [
-      "Healthscope — Suppliers / Procurement (private hospital group; corporate-website + procurement-contact sourcing, opportunities largely invitation/contact-based rather than a public tender board)"
-    ]
+    "recommended_seed_additions": []
   },
   "months": [
     {
@@ -128,7 +130,7 @@
     },
     {
       "month": "2026-09",
-      "new_tenders": 119,
+      "new_tenders": 123,
       "active_tenders": 0
     }
   ],
@@ -29858,8 +29860,8 @@
         "2026-09-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:dfat-mid-term-review-climate-resilient-communities-program-2026",
@@ -29921,6 +29923,251 @@
       "last_seen": "2026-09-17",
       "seen_dates": [
         "2026-09-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:RFT-02-2026-afp",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "RFT 02-2026",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/72e3a249-4388-47cc-9ca4-eaed371f0758",
+      "access": "free-registration",
+      "title": "RFT 02-2026",
+      "buyer": "Australian Federal Police (AFP)",
+      "buyer_url": "https://www.afp.gov.au/",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Australian Federal Police has published an approach to market (RFT 02-2026) on AusTender. The RFT documentation is not made available on AusTender itself; access requires tenderers to complete an AFP Deed of Confidentiality, after which the documents are provided via a secure link.",
+      "deliverables_summary": "Scope and deliverables are not published on AusTender — the AFP releases the RFT content only to parties that have signed and returned a Deed of Confidentiality. Not captured (gated); requires an authenticated/eligible reader to determine.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [
+        "Tenderer must complete and return the AFP Deed of Confidentiality to obtain the RFT documents (documents provided via secure link once the signed Deed is received)"
+      ],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via AusTender; RFT documents obtained separately from AFP after signing a Deed of Confidentiality",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [
+        "Signed AFP Deed of Confidentiality required before RFT documents are released"
+      ],
+      "delivery_location": "",
+      "contact_name": "AFP Contact Officer",
+      "contact_email": "AFP-RFT@afp.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "AFP",
+        "law-enforcement",
+        "confidentiality-gated"
+      ],
+      "first_seen": "2026-09-18",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - RFT 02-2026: AusTender' confirms existence and current status. Buyer (AFP) and Deed-of-Confidentiality access mechanism identified from the search answer snippet. Buyer-originated source: AusTender.",
+      "notes": "Headline-level only — egress blocked, detail page not openable. Full scope/deliverables/dates/value are deliberately not on AusTender (AFP Deed of Confidentiality gate); closing_date recorded null pending verified access.",
+      "last_seen": "2026-09-18",
+      "seen_dates": [
+        "2026-09-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_3512",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "ATM_2026_3512",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/1e78d037-2073-4967-855a-f21612b068d2",
+      "access": "public",
+      "title": "ATM_2026_3512",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "",
+      "current_status": "open",
+      "description": "A current Commonwealth approach to market (ATM_2026_3512) listed on AusTender, with a reported delivery/engagement timeframe of October 2026 to October 2027 and lodgement via AusTender.",
+      "deliverables_summary": "Not captured — detail page could not be opened due to egress block; the buying agency and scope could not be identified from search.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "October 2026 – October 2027 (per search snippet; unverified)",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "buyer-unidentified"
+      ],
+      "first_seen": "2026-09-18",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - ATM_2026_3512: AusTender' confirms existence and current status. Buyer-originated source: AusTender.",
+      "notes": "Headline-level only — egress blocked. Buyer/agency not identifiable from search link title or snippet; recorded as \"\" rather than guessed. Contract-term note taken from unverified search prose. Requires unblocked/authenticated run for buyer, scope, dates and value.",
+      "last_seen": "2026-09-18",
+      "seen_dates": [
+        "2026-09-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_2982",
+      "source_name": "AusTender (Commonwealth)",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth of Australia",
+      "state": "",
+      "tender_id": "ATM_2026_2982",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/96aacaab-f4a7-4a3e-886a-990ef6d6412b",
+      "access": "public",
+      "title": "ATM_2026_2982",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "",
+      "current_status": "open",
+      "description": "A Commonwealth approach to market (ATM_2026_2982) still appearing in AusTender's Current ATM listing, but reportedly an older item last updated around April 2026.",
+      "deliverables_summary": "Not captured — detail page could not be opened due to egress block; buying agency and scope could not be identified from search.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "AusTender",
+        "buyer-unidentified",
+        "not-recent"
+      ],
+      "first_seen": "2026-09-18",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of AusTender Current ATM listings; link title 'Current ATM View - ATM_2026_2982: AusTender' confirms it is still in the Current ATM list. Buyer-originated source: AusTender.",
+      "notes": "Headline-level only — egress blocked. Flagged not-recent: reportedly last updated ~April 2026, outside the 7-day recency window; captured for de-dup completeness. Buyer not identifiable from search; recorded \"\". May warrant removal if a future unblocked run confirms it has closed.",
+      "last_seen": "2026-09-18",
+      "seen_dates": [
+        "2026-09-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "buy.nsw:PD2025046-A-facilities-management-advance-notice",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://www.tenders.nsw.gov.au/",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "PD2025046-A",
+      "tender_url": "https://buy.nsw.gov.au/prcOpportunity/AA74B61A-E550-4BE5-B58F7D08DD6B7B3E",
+      "access": "public",
+      "title": "Advance Notice — Upcoming Tender for Facilities Management Services",
+      "buyer": "",
+      "buyer_url": "",
+      "category": "Facilities management",
+      "category_codes": [],
+      "procurement_type": "market-sounding",
+      "current_status": "recently-published",
+      "description": "An Advance Notice published on buy.nsw signalling an upcoming tender for integrated facilities management services, anticipated for release in September 2026 (subject to change). Per the notice, the tender is expected to be open to all suppliers able to demonstrate experience delivering integrated FM services across large, multi-tenanted commercial and government environments.",
+      "deliverables_summary": "Advance notice only — the RFT is not yet open. When released, the tender is expected to cover integrated facilities management services for large multi-tenanted commercial/government environments; specific deliverables are not yet published.",
+      "key_deliverables": [],
+      "scope_of_work": "",
+      "requirements": [],
+      "eligibility": "Expected open to all suppliers with demonstrated experience in integrated facilities management across large, multi-tenanted commercial and government environments (per advance notice; unverified)",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "",
+      "contract_end": "",
+      "publish_date": "",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "To be advised when the tender is released on buy.nsw",
+      "lodgement_url": "https://buy.nsw.gov.au/",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "nsw",
+        "buy.nsw",
+        "advance-notice",
+        "market-sounding",
+        "facilities-management"
+      ],
+      "first_seen": "2026-09-18",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of buy.nsw opportunities; link title 'Advance Notice - Upcoming Tender for Facilities Management Services - PD2025046-A | buy.nsw' confirms existence and status. Buyer-originated source: buy.nsw / NSW eTendering.",
+      "notes": "Headline-level only — egress blocked, detail page not openable. This is a market-sounding/advance notice, not yet an open RFT; anticipated release Sept 2026 and eligibility drawn from unverified search snippet. Buying agency not identifiable from search; recorded \"\".",
+      "last_seen": "2026-09-18",
+      "seen_dates": [
+        "2026-09-18"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -30011,15 +30258,15 @@
       "jurisdiction": "Commonwealth of Australia",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm?filter=published",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm/search",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed source; queried this run for recently-published/closing ATMs.",
+      "how_discovered": "Known canonical Tier 1 seed; re-confirmed this run via WebSearch (multiple 'Current ATM View' link titles returned).",
       "recommended_check_frequency": "daily",
-      "notes": "Buyer-originated Commonwealth portal. WebFetch to detail pages was egress-blocked this run; relied on WebSearch.",
+      "notes": "Detail pages egress-blocked this run; only search link titles/snippets usable.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-17",
+      "last_seen": "2026-09-18",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -30059,9 +30306,10 @@
         "2026-09-10",
         "2026-09-11",
         "2026-09-16",
-        "2026-09-17"
+        "2026-09-17",
+        "2026-09-18"
       ],
-      "seen_count": 39,
+      "seen_count": 40,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -30243,23 +30491,23 @@
       ],
       "seen_count": 54,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
-      "source_name": "BHP - Find Opportunities (supplier portal)",
+      "source_name": "BHP — Find Opportunities",
       "source_url": "https://www.bhp.com/suppliers/find-opportunities",
       "source_type": "corporate",
-      "jurisdiction": "Australia (mining/resources)",
+      "jurisdiction": "Australia (WA/QLD/SA)",
       "platform": "SAP-Ariba / GCMS",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check; attempted this run — opportunities invitation/registration-gated, none publicly visible via search.",
+      "how_discovered": "Mandatory Tier 3 major-buyer check; re-confirmed via WebSearch.",
       "recommended_check_frequency": "weekly",
-      "notes": "Also interestedsupplier.bhp.com. Use as seed for sector peers (Rio Tinto, Fortescue, Woodside, Santos) on the same platforms.",
+      "notes": "Opportunities registration-/invitation-gated; none publicly visible via search this run.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-18",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -30273,11 +30521,12 @@
         "2026-09-13",
         "2026-09-14",
         "2026-09-15",
-        "2026-09-16"
+        "2026-09-16",
+        "2026-09-18"
       ],
-      "seen_count": 13,
+      "seen_count": 14,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Qantas — Procurement (Coupa Supplier Portal)",
@@ -30710,7 +30959,7 @@
       ],
       "seen_count": 17,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "VendorPanel Public Tenders",
@@ -30760,7 +31009,7 @@
       ],
       "seen_count": 28,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transgrid — Supplier engagement (SAP Ariba 'ibuy')",
@@ -31715,7 +31964,7 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
+      "source_name": "SAP Business Network Discovery / Ariba Discovery",
       "source_url": "https://www.sap.com/australia/products/business-network/find-suppliers.html",
       "source_type": "corporate",
       "jurisdiction": "Australia (multi-buyer)",
@@ -31724,20 +31973,21 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier-3 check; public posting board where corporate buyers post open RFx. Individual opportunities require a free supplier account.",
-      "recommended_check_frequency": "daily",
-      "notes": "No publicly-visible AU corporate RFx could be read without login this run; recorded as registration-gated portal, no opportunities fabricated. Australian buyers on Ariba include Brisbane City Council and Energy Queensland.",
+      "how_discovered": "Mandatory Tier 3 check; re-confirmed via WebSearch. Public postings board exists but individual opportunity detail requires a (free) supplier account.",
+      "recommended_check_frequency": "weekly",
+      "notes": "access=free-registration. No AU corporate opportunity publicly visible via search this run; nothing captured as a tender.",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-09-03",
+      "last_seen": "2026-09-18",
       "seen_dates": [
         "2026-07-02",
         "2026-08-27",
         "2026-09-02",
-        "2026-09-03"
+        "2026-09-03",
+        "2026-09-18"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "ICN Gateway (Industry Capability Network)",
@@ -35939,20 +36189,21 @@
       "feed_or_api_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; re-checked — only landing pages / unverifiable AI-summarised items this run.",
+      "how_discovered": "Known Tier 1 seed; re-confirmed via WebSearch (buy.nsw opportunity link titles including PD2025046-A).",
       "recommended_check_frequency": "daily",
-      "notes": "A public NSW eTendering search API exists (github.com/NSW-eTendering/NSW-eTendering-API) — worth wiring up for a machine-readable feed on an unblocked run.",
+      "notes": "Supplier Hub at suppliers.buy.nsw.gov.au; detail pages egress-blocked this run.",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-18",
       "seen_dates": [
         "2026-08-25",
         "2026-08-26",
         "2026-09-01",
-        "2026-09-16"
+        "2026-09-16",
+        "2026-09-18"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Greater Western Water",
@@ -37770,8 +38021,8 @@
         "2026-09-17"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Healthscope — Suppliers / Procurement",
@@ -37790,6 +38041,28 @@
       "last_seen": "2026-09-17",
       "seen_dates": [
         "2026-09-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Woolworths Group — Partner Hub",
+      "source_url": "https://partnerhub.woolworthsgroup.com.au/s/",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (national)",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Mandatory Tier 3 major-buyer check; re-confirmed via WebSearch.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Supplier onboarding/product portfolio portal; opportunities gated behind registration. Coles/RangeMe run product sourcing similarly.",
+      "first_seen": "2026-09-18",
+      "last_seen": "2026-09-18",
+      "seen_dates": [
+        "2026-09-18"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
