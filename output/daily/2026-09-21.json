@@ -63,7 +63,10 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["headline-only", "egress-blocked"],
+      "tags": [
+        "headline-only",
+        "egress-blocked"
+      ],
       "first_seen": "2026-09-21",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence and ID confirmed from the verifiable page <title> 'Current ATM View - ATM_2026_6026: AusTender'. Distinct from the already-known RFI variant RFI_ATM_2026_6026 (different GUID).",
@@ -111,7 +114,10 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["headline-only", "egress-blocked"],
+      "tags": [
+        "headline-only",
+        "egress-blocked"
+      ],
       "first_seen": "2026-09-21",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence and ID confirmed from the verifiable page <title> 'Current ATM View - SHFT25019: AusTender'.",
@@ -159,7 +165,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["headline-only", "egress-blocked", "ambiguous-id"],
+      "tags": [
+        "headline-only",
+        "egress-blocked",
+        "ambiguous-id"
+      ],
       "first_seen": "2026-09-21",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence confirmed from the verifiable page <title> 'Current ATM View - RFT 01-2026: AusTender'.",
@@ -207,7 +217,12 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["headline-only", "egress-blocked", "supplementary-notice", "buyer-unverified"],
+      "tags": [
+        "headline-only",
+        "egress-blocked",
+        "supplementary-notice",
+        "buyer-unverified"
+      ],
       "first_seen": "2026-09-21",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence and ID confirmed from the verifiable page <title> 'Current ATM View - RFT 01-2026 Sup No 1: AusTender'.",
