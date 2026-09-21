@@ -65,7 +65,12 @@
       "contact_name": "",
       "contact_email": "csirorft2026006@csiro.au",
       "contact_phone": "",
-      "tags": ["new-this-run", "snippet-derived-detail", "egress-blocked", "publishing"],
+      "tags": [
+        "new-this-run",
+        "snippet-derived-detail",
+        "egress-blocked",
+        "publishing"
+      ],
       "first_seen": "2026-09-22",
       "detail_source": "WebSearch result link title (verifiable 'Current ATM View - CSIRORFT2026006: AusTender') plus WebSearch answer snippet summarising the notice; the AusTender detail page and documents were egress-blocked and could not be read directly.",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence/ID confirmed from the verifiable page <title>; GUID dad6282a-95af-4235-af00-44d72a4ab343 is new (not among the 505 known dedup keys or known GUIDs).",
@@ -113,7 +118,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["new-this-run", "snippet-derived-detail", "egress-blocked", "market-sounding", "rfi"],
+      "tags": [
+        "new-this-run",
+        "snippet-derived-detail",
+        "egress-blocked",
+        "market-sounding",
+        "rfi"
+      ],
       "first_seen": "2026-09-22",
       "detail_source": "WebSearch result link title (verifiable 'Current ATM View - MTS RFI: AusTender') plus WebSearch answer snippet summarising the notice; the AusTender detail page was egress-blocked and could not be read directly.",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence/ID confirmed from the verifiable page <title>; GUID ea95abf5-a4c7-4bad-a6db-0a4a301da392 is new (not among known keys/GUIDs).",
@@ -168,7 +179,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["new-this-run", "snippet-derived-detail", "egress-blocked", "defence", "construction", "roadworks"],
+      "tags": [
+        "new-this-run",
+        "snippet-derived-detail",
+        "egress-blocked",
+        "defence",
+        "construction",
+        "roadworks"
+      ],
       "first_seen": "2026-09-22",
       "detail_source": "WebSearch result link title (verifiable 'Current ATM View - S-EST08611: AusTender') plus WebSearch answer snippet summarising the notice; the AusTender detail page and documents were egress-blocked and could not be read directly.",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence/ID confirmed from the verifiable page <title>; GUID 4d90f55e-8d19-48b5-bc5f-1fe7be105c44 is new (not among known keys/GUIDs).",
@@ -216,7 +234,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["new-this-run", "headline-only", "egress-blocked"],
+      "tags": [
+        "new-this-run",
+        "headline-only",
+        "egress-blocked"
+      ],
       "first_seen": "2026-09-22",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence/ID confirmed from the verifiable page <title> 'Current ATM View - AZ 6227: AusTender'. GUID d8830548-df75-41d8-aa43-364fe82e9fc3 is new (not among known keys/GUIDs).",
@@ -264,7 +286,11 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["new-this-run", "headline-only", "egress-blocked"],
+      "tags": [
+        "new-this-run",
+        "headline-only",
+        "egress-blocked"
+      ],
       "first_seen": "2026-09-22",
       "detail_source": "",
       "reasoning": "Discovered via WebSearch of AusTender Current ATM notices; the buyer-originated source is AusTender (tenders.gov.au). Existence/ID confirmed from the verifiable page <title> 'Current ATM View - CASRFI-2026: AusTender'. GUID dbf2a3e6-81e2-49ae-8c21-41fbae305c3c is new (not among known keys/GUIDs).",
