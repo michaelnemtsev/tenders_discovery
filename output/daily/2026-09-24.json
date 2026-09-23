@@ -37,7 +37,9 @@
       "buyer": "Department of Home Affairs",
       "buyer_url": "https://www.homeaffairs.gov.au/",
       "category": "Water safety",
-      "category_codes": ["46161600"],
+      "category_codes": [
+        "46161600"
+      ],
       "procurement_type": "RFT",
       "current_status": "open",
       "description": "The Department of Home Affairs seeks a suitably qualified organisation to provide maintenance and repair, inspection and certification services for navigational aids and mooring equipment.",
@@ -68,7 +70,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "home-affairs", "maritime", "navigational-aids", "maintenance", "nt"],
+      "tags": [
+        "commonwealth",
+        "home-affairs",
+        "maritime",
+        "navigational-aids",
+        "maintenance",
+        "nt"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result title 'Current ATM View - HOMEAFFAIRS/2206/RFT: AusTender' (existence/ID verified) plus WebSearch answer snippets summarising the AusTender notice (category 46161600 Water safety, published 21-Sep-2026, close 16-Oct-2026 2:00pm ACT, NT). Detail page not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth notice on tenders.gov.au. Not present in the routine's known dedup keys.",
@@ -121,7 +130,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "amsa", "maritime", "aids-to-navigation", "maintenance", "multi-region"],
+      "tags": [
+        "commonwealth",
+        "amsa",
+        "maritime",
+        "aids-to-navigation",
+        "maintenance",
+        "multi-region"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result title 'Current ATM View - 26AMSA060: AusTender' (existence/ID verified) plus WebSearch answer snippet summarising the notice (AMSA, Regional AtoN Maintenance Services, close 22-Sep-2026 2:00pm ACT, scope of fixed-price maintenance + reimbursable services, per-region selection). Detail page not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of AusTender current ATMs (AMSA number series); buyer-originated Commonwealth notice. New dedup key vs. prior runs (companion to previously-seen 26AMSA128).",
@@ -169,7 +185,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "amsa", "maritime", "aids-to-navigation", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "amsa",
+        "maritime",
+        "aids-to-navigation",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result title 'Current ATM View - 26AMSA059: AusTender' (existence/ID verified only).",
       "reasoning": "Surfaced alongside 26AMSA060 in the AMSA number-series AusTender search; buyer-originated Commonwealth notice, new dedup key.",
@@ -217,7 +239,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["commonwealth", "amsa", "maritime", "aids-to-navigation", "headline-only"],
+      "tags": [
+        "commonwealth",
+        "amsa",
+        "maritime",
+        "aids-to-navigation",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result title 'Current ATM View - 26AMSA064: AusTender' (existence/ID verified only).",
       "reasoning": "Surfaced alongside 26AMSA060 in the AMSA number-series AusTender search; buyer-originated Commonwealth notice, new dedup key.",
@@ -265,7 +293,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "hvm", "physical-security", "supply-and-delivery", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "hvm",
+        "physical-security",
+        "supply-and-delivery",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result title/snippet for Camden Council Current Tenders page listing T034/2026 (existence + title verified). Detail page and dates not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of NSW council tenders; buyer-originated on the council's own current-tenders page (documents distributed via NSW eTendering). New buyer/source for this routine.",
@@ -313,7 +348,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "construction-materials", "concrete", "supply-and-delivery", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "construction-materials",
+        "concrete",
+        "supply-and-delivery",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result snippet for Camden Council Current Tenders page listing T024/2026 (existence + title verified). Detail page and dates not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of NSW council tenders; buyer-originated on the council's own current-tenders page. New buyer/source for this routine.",
@@ -361,7 +403,13 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "legal-services", "panel", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "legal-services",
+        "panel",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result snippet for Camden Council Current Tenders page listing T033/2026 (existence + title verified). Detail page and dates not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of NSW council tenders; buyer-originated on the council's own current-tenders page. New buyer/source for this routine.",
@@ -409,7 +457,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["local-government", "nsw", "waste", "recycling", "civil-construction", "headline-only"],
+      "tags": [
+        "local-government",
+        "nsw",
+        "waste",
+        "recycling",
+        "civil-construction",
+        "headline-only"
+      ],
       "first_seen": "2026-09-24",
       "detail_source": "WebSearch result snippet for Camden Council Current Tenders page listing T022/2026 (existence + title verified). Detail page and dates not fetched (EGRESS_BLOCKED).",
       "reasoning": "Discovered via WebSearch of NSW council tenders; buyer-originated on the council's own current-tenders page. New buyer/source for this routine.",
