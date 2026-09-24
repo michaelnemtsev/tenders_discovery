@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24",
+  "generated": "2026-09-25",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -92,33 +92,33 @@
     "2026-09-21",
     "2026-09-22",
     "2026-09-23",
-    "2026-09-24"
+    "2026-09-24",
+    "2026-09-25"
   ],
-  "run_count": 92,
+  "run_count": 93,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-24",
-  "latest_coverage_summary": "WebSearch-only discovery run. External WebFetch/egress remained blocked by the organisation egress proxy (EGRESS_BLOCKED, HTTP 403) again this run — reconfirmed with a live WebFetch of https://www.tenders.gov.au/atm (EGRESS_BLOCKED) while the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, recentRelayFailures empty). Per /root/.ccr/README.md a 403 from the proxy is a non-retryable organisation egress-policy denial, so no tender detail page or specification document could be opened directly. Every opportunity below is therefore captured from WebSearch only: existence / ID / open-status from the verifiable result-link <title> text (e.g. 'Current ATM View - <ID>: AusTender', treated as reliable), and any buyer / title / date / scope detail from WebSearch answer snippets (which summarise the target page and are treated as SNIPPET-DERIVED, not independently verified — flagged in each entry's notes and detail_source). Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search (NSW eTendering/buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders). AusTender surfaced buyer-originated Current-ATM notices not present in the routine's known dedup keys: HOMEAFFAIRS/2206/RFT (Home Affairs navigational-aids & mooring-equipment maintenance, NT), and a new set of AMSA regional Aids-to-Navigation maintenance RFTs (26AMSA059, 26AMSA060, 26AMSA064; companion to the previously-seen 26AMSA128). Tier 2 (Sydney Water, WaterNSW, VendorPanel councils) and Tier 3 (SAP Ariba Discovery, NBN Co, BHP/Rio/Fortescue-class buyers) were probed via search but returned only known portals or login-gated boards this run — no publicly-visible, verifiable, still-open corporate opportunity surfaced. Genuinely new buyer-originated sources identified: Camden Council (NSW local gov), Sunshine Coast Council public tenders (VendorPanel), Westport WA (infrastructure/port), and the AMSA aids-to-navigation tender page.",
+  "latest_run": "2026-09-25",
+  "latest_coverage_summary": "WebSearch-only discovery run. External WebFetch/egress remained blocked by the organisation egress proxy (EGRESS_BLOCKED, HTTP 403) again this run — reconfirmed with a live WebFetch of https://www.tenders.gov.au/atm (EGRESS_BLOCKED) while the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, recentRelayFailures empty). Per /root/.ccr/README.md a 403 from the proxy is a non-retryable organisation egress-policy denial, so no tender detail page or specification/RFT document could be opened directly. Every opportunity below is therefore captured from WebSearch only: existence / ID / open-status from the verifiable result-link <title> text (e.g. 'Current ATM View - <ID>: AusTender', treated as reliable), and any buyer / title / date / scope detail from WebSearch answer snippets (which summarise the target page and are treated as SNIPPET-DERIVED, not independently verified — flagged in each entry's notes and detail_source). Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search (NSW buy.nsw/eTendering, VIC Buying for Victoria, QLD QTenders/supply.qld, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders). AusTender surfaced buyer-originated Current-ATM notices not present in the routine's known dedup keys: ASCA-RFT-2026-LDTPM (Defence/ASCA 'Power Challenge' land-force energy, open, closes 15-Oct-2026), OPC-2026-02 and OPC-2026-03 (Office of Parliamentary Counsel — printing & distribution of Australian Government Bills), HOMEAFFAIRS/2165/RFT and ATM_2026_3858 (Department of Home Affairs — the latter an International Business Verification digital solution for Offshore Treatment Providers), and ATM_2026_6786. Several AusTender IDs seen in search were confirmed CLOSED/stale and excluded: OET-DRC-2026 (closed ~28-Aug-2026), PR10031930-RASS (Remote Air Services Subsidy, closed Apr/May 2026), ASCA EDT P2ISR RFP (closed 18-May-2026), ATM_2026_6066 (EOI Strategic Property Purchases, closed 3-Aug-2026). Tier 2 (Sydney Water, WaterNSW, VendorPanel councils) and Tier 3 (SAP Ariba Discovery, BHP/Rio/Fortescue-class buyers) were probed via search but returned only known portals or login-gated boards this run — no publicly-visible, verifiable, still-open corporate opportunity surfaced. Genuinely new buyer-originated corporate sources identified: BlueScope Steel Pty Ltd E-Tendering (TenderLink) and Cleanaway Operations Pty Ltd E-Tendering (TenderLink) + Coupa Supplier Portal.",
   "latest_run_metadata": {
-    "run_date": "2026-09-24",
-    "coverage_summary": "WebSearch-only discovery run. External WebFetch/egress remained blocked by the organisation egress proxy (EGRESS_BLOCKED, HTTP 403) again this run — reconfirmed with a live WebFetch of https://www.tenders.gov.au/atm (EGRESS_BLOCKED) while the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, recentRelayFailures empty). Per /root/.ccr/README.md a 403 from the proxy is a non-retryable organisation egress-policy denial, so no tender detail page or specification document could be opened directly. Every opportunity below is therefore captured from WebSearch only: existence / ID / open-status from the verifiable result-link <title> text (e.g. 'Current ATM View - <ID>: AusTender', treated as reliable), and any buyer / title / date / scope detail from WebSearch answer snippets (which summarise the target page and are treated as SNIPPET-DERIVED, not independently verified — flagged in each entry's notes and detail_source). Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search (NSW eTendering/buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders). AusTender surfaced buyer-originated Current-ATM notices not present in the routine's known dedup keys: HOMEAFFAIRS/2206/RFT (Home Affairs navigational-aids & mooring-equipment maintenance, NT), and a new set of AMSA regional Aids-to-Navigation maintenance RFTs (26AMSA059, 26AMSA060, 26AMSA064; companion to the previously-seen 26AMSA128). Tier 2 (Sydney Water, WaterNSW, VendorPanel councils) and Tier 3 (SAP Ariba Discovery, NBN Co, BHP/Rio/Fortescue-class buyers) were probed via search but returned only known portals or login-gated boards this run — no publicly-visible, verifiable, still-open corporate opportunity surfaced. Genuinely new buyer-originated sources identified: Camden Council (NSW local gov), Sunshine Coast Council public tenders (VendorPanel), Westport WA (infrastructure/port), and the AMSA aids-to-navigation tender page.",
-    "sources_checked": 21,
-    "tenders_found": 8,
-    "new_sources_found": 4,
+    "run_date": "2026-09-25",
+    "coverage_summary": "WebSearch-only discovery run. External WebFetch/egress remained blocked by the organisation egress proxy (EGRESS_BLOCKED, HTTP 403) again this run — reconfirmed with a live WebFetch of https://www.tenders.gov.au/atm (EGRESS_BLOCKED) while the proxy status endpoint reports healthy (enabled:true, bundleCoversEveryHost:true, recentRelayFailures empty). Per /root/.ccr/README.md a 403 from the proxy is a non-retryable organisation egress-policy denial, so no tender detail page or specification/RFT document could be opened directly. Every opportunity below is therefore captured from WebSearch only: existence / ID / open-status from the verifiable result-link <title> text (e.g. 'Current ATM View - <ID>: AusTender', treated as reliable), and any buyer / title / date / scope detail from WebSearch answer snippets (which summarise the target page and are treated as SNIPPET-DERIVED, not independently verified — flagged in each entry's notes and detail_source). Tier 1 Commonwealth (AusTender) and all eight state/territory portals were probed via search (NSW buy.nsw/eTendering, VIC Buying for Victoria, QLD QTenders/supply.qld, WA Tenders WA, SA Tenders SA, TAS Tenders Tasmania, NT QTOL, ACT Tenders). AusTender surfaced buyer-originated Current-ATM notices not present in the routine's known dedup keys: ASCA-RFT-2026-LDTPM (Defence/ASCA 'Power Challenge' land-force energy, open, closes 15-Oct-2026), OPC-2026-02 and OPC-2026-03 (Office of Parliamentary Counsel — printing & distribution of Australian Government Bills), HOMEAFFAIRS/2165/RFT and ATM_2026_3858 (Department of Home Affairs — the latter an International Business Verification digital solution for Offshore Treatment Providers), and ATM_2026_6786. Several AusTender IDs seen in search were confirmed CLOSED/stale and excluded: OET-DRC-2026 (closed ~28-Aug-2026), PR10031930-RASS (Remote Air Services Subsidy, closed Apr/May 2026), ASCA EDT P2ISR RFP (closed 18-May-2026), ATM_2026_6066 (EOI Strategic Property Purchases, closed 3-Aug-2026). Tier 2 (Sydney Water, WaterNSW, VendorPanel councils) and Tier 3 (SAP Ariba Discovery, BHP/Rio/Fortescue-class buyers) were probed via search but returned only known portals or login-gated boards this run — no publicly-visible, verifiable, still-open corporate opportunity surfaced. Genuinely new buyer-originated corporate sources identified: BlueScope Steel Pty Ltd E-Tendering (TenderLink) and Cleanaway Operations Pty Ltd E-Tendering (TenderLink) + Coupa Supplier Portal.",
+    "sources_checked": 20,
+    "tenders_found": 6,
+    "new_sources_found": 2,
     "entries_pending_detail": 6,
     "gaps": [
-      "WebFetch egress fully blocked (EGRESS_BLOCKED / HTTP 403) for every external host this run — confirmed against https://www.tenders.gov.au/atm. No tender detail page or specification/RFT document could be opened, so all deliverables/requirements/evaluation-criteria fields are null unless summarised in a WebSearch snippet, and all snippet-derived detail is unverified.",
+      "WebFetch egress fully blocked (EGRESS_BLOCKED / HTTP 403) for every external host this run — confirmed against https://www.tenders.gov.au/atm. No tender detail page or specification/RFT document could be opened, so all deliverables/requirements/evaluation-criteria fields are null unless summarised in a WebSearch snippet, and ALL snippet-derived detail (including dates, values and scope) is unverified against the source notice.",
       "AusTender current-ATM list, per-jurisdiction search endpoints, and per-tender detail pages were reachable only via WebSearch result titles/snippets, not by direct fetch; pagination could not be walked, so Tier 1 coverage is a sample of what surfaced in search, not exhaustive.",
-      "Camden Council tenders T022/2026, T024/2026, T033/2026, T034/2026 confirmed as current from the council's current-tenders page title text, but publish dates, closing dates, values and deliverables were not visible in snippets — left null (headline-level, pending detail).",
-      "AMSA regional AtoN RFTs 26AMSA059 and 26AMSA064 confirmed to exist as Current ATMs from result titles, but close dates and per-region scope were not returned in snippets — captured headline-level, pending detail.",
-      "Tier 3 corporate: SAP Ariba Discovery, NBN Co, Coles/Woolworths and mining-major (BHP/Rio/Fortescue) boards are login/registration-gated; no publicly-visible current RFx surfaced via WebSearch. Portals recorded in discovered_sources where new; no corporate opportunities fabricated. Invitation-only management-consultancy RFPs remain out of scope.",
-      "Other new AusTender ATM IDs seen in search titles but not examined this run (ATM_2026_6066, AACAP 2026-P04) — deferred to a future run.",
-      "AusTender ID 57097 (Defence/ASIO psychologist-services panel) surfaced but is stale (published 21-Nov-2025, closed 30-Jan-2026) — excluded as not open/recent."
+      "OPC-2026-02, OPC-2026-03, HOMEAFFAIRS/2165/RFT, ATM_2026_3858 and ATM_2026_6786 are confirmed as Current ATMs from result titles, but publish dates, closing dates, values and full deliverables were not returned in snippets — left null (headline-level, pending detail). OPC-2026-02 scope (printing/distribution of Australian Government Bills, services 17-Sep-2026 to 16-Sep-2029) and ATM_2026_3858 scope (OTP International Business Verification digital solution) are snippet-derived only.",
+      "ASCA Mission T-S RFT (Mission Talon-Strike, loitering-munition flight platform vehicles) appears in search as a 'Current ATM View' title, but the answer snippet indicates the RFT opened 9-May-2025 and closed 30-May-2025 — conflicting signals, so it was EXCLUDED as likely stale/closed rather than risk fabricating an open opportunity. Verify status when egress is restored.",
+      "State/territory portals (buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders) returned only portal landing pages and non-specific snippets this run; no individual state RFT could be confirmed with a reliable ID via search, so none were captured to avoid fabrication. Tenders WA snippet referenced 'RAAF Pearce Sewage Works' closing 24-Sep-2026 (already past), and ACT/AusTender referenced building-works ATMs closing 24-Sep-2026 (past) — excluded as closed.",
+      "Tier 3 corporate: SAP Ariba Discovery, Sydney Water (SAP Ariba), NBN Co, Coles/Woolworths and mining-major boards are login/registration-gated; no publicly-visible current RFx surfaced via WebSearch. Portals recorded in discovered_sources where new; no corporate opportunities fabricated. Invitation-only management-consultancy RFPs remain out of scope.",
+      "AusTender IDs seen in search titles but not examined this run (ATM_2026_3500, ATM_2026_3088, RFI_ATM_2026_6026, RFP49875 ASCA EDT DA, ASCA EDT RFP P2ISR) — deferred to a future run.",
+      "Tier 2/3 breadth: only a small rotating sample (BlueScope, Cleanaway, Sydney Water) was probed; hundreds of councils, GBEs, universities and corporate portals were deferred and should rotate on future runs."
     ],
     "recommended_seed_additions": [
-      "Camden Council (NSW) current-tenders page — https://www.camden.nsw.gov.au/guide-to-doing-business-with-council/current-tenders (documents distributed via NSW eTendering)",
-      "Sunshine Coast Council public tenders on VendorPanel — https://www.vendorpanel.com.au/PublicTenders.aspx?emcc=587BF03E3B26",
-      "Westport WA industry tenders — https://westport.wa.gov.au/industry/tenders",
-      "Australian Maritime Safety Authority (AMSA) aids-to-navigation tender page — https://www.amsa.gov.au/safety-navigation/navigation-systems/aids-navigation/tender-opportunity-maintenance-aids-navigation"
+      "BlueScope Steel Pty Ltd — E-Tendering portal (TenderLink): https://portal.tenderlink.com/bluescopesteel/login (free supplier registration; corporate buyer-originated RFx/EOI/quotes)",
+      "Cleanaway Operations Pty Ltd — E-Tendering portal (TenderLink): https://portal.tenderlink.com/cleanaway/login (free registration) plus Coupa Supplier Portal for PO/invoicing (waste & resource-recovery corporate buyer)"
     ]
   },
   "months": [
@@ -139,7 +139,7 @@
     },
     {
       "month": "2026-09",
-      "new_tenders": 163,
+      "new_tenders": 166,
       "active_tenders": 0
     }
   ],
@@ -20670,58 +20670,69 @@
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth",
-      "state": "",
+      "state": "ACT",
       "tender_id": "OPC-2026-02",
       "tender_url": "https://www.tenders.gov.au/Atm/Show/496bf14a-8826-46c9-9af8-da45f1509a3a",
       "access": "public",
-      "title": "Approach to Market OPC-2026-02 (provision of services)",
-      "buyer": "",
-      "buyer_url": "",
-      "category": "",
+      "title": "Printing and distribution services for Australian Government Bills",
+      "buyer": "Office of Parliamentary Counsel (OPC)",
+      "buyer_url": "https://www.opc.gov.au/",
+      "category": "Printing and publishing services",
       "category_codes": [],
-      "procurement_type": "RFx",
+      "procurement_type": "RFT",
       "current_status": "open",
-      "description": "AusTender Approach to Market OPC-2026-02 for the provision of services, with the resulting contract to run from 17 September 2026 until 16 September 2029 (approx. 3 years).",
-      "deliverables_summary": null,
-      "key_deliverables": [],
+      "description": "The Office of Parliamentary Counsel is seeking a supplier able to provide printing and distribution services for Australian Government Bills, with strict security-of-premises and security-of-personnel requirements and the ability to print and deliver at very short notice within tight timeframes, including outside ordinary business hours.",
+      "deliverables_summary": "Provision of printing and distribution services for Australian Government Bills from 17 September 2026 until 16 September 2029, with possible options to extend by up to a further 2 x 1 year periods. The supplier must meet specific premises/personnel security requirements and be able to print and deliver Bills at very short notice and to tight timeframes, including outside ordinary business hours. Snippet-derived from the AusTender notice summary; full RFT/statement of requirement not read (detail page egress-blocked).",
+      "key_deliverables": [
+        "Printing of Australian Government Bills",
+        "Distribution of Australian Government Bills",
+        "Short-notice / out-of-hours print and delivery capability"
+      ],
       "scope_of_work": null,
-      "requirements": [],
+      "requirements": [
+        "Specific security of premises requirements (snippet-derived, unverified)",
+        "Specific security of personnel requirements (snippet-derived, unverified)"
+      ],
       "eligibility": "",
       "evaluation_criteria": [],
       "value": "",
       "value_currency": "AUD",
-      "contract_term": "Approx. 3 years (17 Sep 2026 - 16 Sep 2029)",
+      "contract_term": "3 years (17-Sep-2026 to 16-Sep-2029) with possible options to extend up to a further 2 x 1 year periods (snippet-derived)",
       "contract_start": "2026-09-17",
       "contract_end": "2029-09-16",
-      "publish_date": "",
-      "closing_date": "",
+      "publish_date": null,
+      "closing_date": null,
       "closing_time": "",
       "questions_due": "",
       "briefing": "",
-      "submission_method": "Electronic lodgement via AusTender",
-      "lodgement_url": "https://www.tenders.gov.au",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/496bf14a-8826-46c9-9af8-da45f1509a3a",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "",
+      "delivery_location": "Australia",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
         "commonwealth",
-        "services",
-        "headline-only"
+        "printing",
+        "distribution",
+        "parliament",
+        "bills",
+        "security"
       ],
       "first_seen": "2026-08-29",
-      "detail_source": "",
-      "reasoning": "Discovered via AusTender site-restricted web search for current ATMs closing/commencing September 2026; buyer-originated on the Commonwealth AusTender portal.",
-      "notes": "Headline-level only. Buyer and full title not confirmed (OPC prefix suggests Office of Parliamentary Counsel but this is unverified). Contract dates from search snippet; detail page not fetchable this run (egress blocked). Verify title, buyer, scope, closing date and procurement type on the detail page in a future run.",
-      "last_seen": "2026-08-29",
+      "detail_source": "WebSearch result title 'Current ATM View - OPC- 2026-02: AusTender' (existence/ID/open-status verified) plus WebSearch answer snippet summarising the AusTender notice (OPC printing/distribution of Australian Government Bills, service term 17-Sep-2026 to 16-Sep-2029 with 2x1yr options, security requirements). Detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth notice on tenders.gov.au (buyer inferred as Office of Parliamentary Counsel from the printing of Government Bills scope and the 'OPC' tender-ID prefix). Not present in the routine's known dedup keys.",
+      "notes": "Snippet-derived detail; not independently verified against the tender detail page or documents, which were egress-blocked. Closing date, publish date and estimated value not captured — verify when egress is restored. Buyer name inferred from scope/ID prefix and should be confirmed.",
+      "last_seen": "2026-09-25",
       "seen_dates": [
-        "2026-08-29"
+        "2026-08-29",
+        "2026-09-25"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "AusTender:ATM_2026_3048",
@@ -28601,62 +28612,70 @@
     {
       "dedup_key": "AusTender:ASCA-RFT-2026-LDTPM",
       "source_name": "AusTender",
-      "source_url": "https://www.tenders.gov.au",
+      "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth of Australia",
-      "state": "",
+      "jurisdiction": "Commonwealth",
+      "state": "ACT",
       "tender_id": "ASCA-RFT-2026-LDTPM",
       "tender_url": "https://www.tenders.gov.au/Atm/Show/c83b9592-4ff5-4910-ad3a-01a2d6765912",
       "access": "public",
-      "title": "Advanced Strategic Capabilities Accelerator (ASCA) - Power Challenge",
-      "buyer": "Department of Defence (Advanced Strategic Capabilities Accelerator)",
-      "buyer_url": "https://www.asca.gov.au",
-      "category": "Defence - research and innovation / capability challenge",
+      "title": "ASCA Power Challenge — innovative land-force power generation and management (Land Domain Technology Power Mission)",
+      "buyer": "Department of Defence — Advanced Strategic Capabilities Accelerator (ASCA) / Defence Science and Technology Group (DSRG)",
+      "buyer_url": "https://www.asca.gov.au/",
+      "category": "Military science and research",
       "category_codes": [],
       "procurement_type": "RFT",
-      "current_status": "recently-published",
-      "description": "Defence ASCA 'Power Challenge' approach to market seeking innovation partners; an industry briefing was scheduled to be conducted virtually on 16 September 2026, 11:00-12:00 AEST.",
-      "deliverables_summary": null,
-      "key_deliverables": [],
+      "current_status": "open",
+      "description": "ASCA's 'Power Challenge' is a joint Australia–United Kingdom initiative inviting tenders to develop and demonstrate innovative solutions that address emerging land-force energy requirements, framed around Desired Capability Effects (DCEs).",
+      "deliverables_summary": "Develop and demonstrate innovative power solutions against one or more Desired Capability Effects, including DCE 1 — Company Level Power Generation and Management: a modular, scalable, low-signature power capability supporting dispersed company-level operations for up to 72 hours independently of higher-echelon power sources. Snippet-derived from the AusTender notice summary; full RFT/statement of requirement not read (detail page egress-blocked).",
+      "key_deliverables": [
+        "Innovative solution(s) addressing one or more Desired Capability Effects for land-force power",
+        "DCE 1: modular, scalable, low-signature company-level power generation and management supporting up to 72 hours of dispersed operations",
+        "Demonstration of the developed capability"
+      ],
       "scope_of_work": null,
       "requirements": [],
       "eligibility": "",
       "evaluation_criteria": [],
-      "value": null,
+      "value": "",
       "value_currency": "AUD",
       "contract_term": "",
       "contract_start": null,
       "contract_end": null,
       "publish_date": null,
-      "closing_date": null,
-      "closing_time": "",
-      "questions_due": null,
-      "briefing": "Virtual industry briefing 16 September 2026, 11:00-12:00 Midday AEST",
+      "closing_date": "2026-10-15",
+      "closing_time": "2:00 PM (ACT Local Time)",
+      "questions_due": "",
+      "briefing": "",
       "submission_method": "Online via AusTender",
-      "lodgement_url": "https://www.tenders.gov.au",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/c83b9592-4ff5-4910-ad3a-01a2d6765912",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "Australia",
+      "delivery_location": "Australia (joint AU–UK initiative)",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
         "commonwealth",
         "defence",
+        "asca",
         "innovation",
-        "asca"
+        "energy",
+        "power",
+        "land-force"
       ],
       "first_seen": "2026-09-12",
-      "detail_source": "",
-      "reasoning": "Surfaced via WebSearch of AusTender current ATMs; buyer-originated Defence/ASCA notice on tenders.gov.au.",
-      "notes": "Headline-level only; only the briefing date was in the snippet. Closing date, deliverables and evaluation criteria pending a detail-page pass (egress blocked).",
-      "last_seen": "2026-09-12",
+      "detail_source": "WebSearch result title 'Current ATM View - ASCA-RFT-2026-LDTPM: AusTender' (existence/ID/open-status verified) plus WebSearch answer snippet summarising the AusTender notice (Defence DSRG/ASCA, Power Challenge AU-UK, DCE1 company-level power, close 15-Oct-2026 2:00pm ACT). Detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth (Defence/ASCA) notice on tenders.gov.au. Not present in the routine's known dedup keys.",
+      "notes": "Snippet-derived detail; not independently verified against the tender detail page or RFT documents, which were egress-blocked. Value, publish date, evaluation criteria and mandatory conditions not captured — verify when egress is restored.",
+      "last_seen": "2026-09-25",
       "seen_dates": [
-        "2026-09-12"
+        "2026-09-12",
+        "2026-09-25"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "AusTender:PRN9254",
@@ -29034,30 +29053,30 @@
       "source_name": "AusTender",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth of Australia",
+      "jurisdiction": "Commonwealth",
       "state": "",
       "tender_id": "ATM_2026_6786",
       "tender_url": "https://www.tenders.gov.au/Atm/Show/998e15fe-ea59-434c-9b12-cf38ae0b49d2",
       "access": "public",
-      "title": "Testing Laboratory Services (deed)",
+      "title": "ATM_2026_6786 (Commonwealth approach to market — agency and scope not captured)",
       "buyer": "",
       "buyer_url": "",
-      "category": "Laboratory and testing services",
+      "category": "",
       "category_codes": [],
       "procurement_type": "RFT",
-      "current_status": "recently-published",
-      "description": "Australian Government approach to market (AusTender ATM_2026_6786) for testing laboratory services under a deed of standing offer. The deed is anticipated to commence from 1 November 2026 and conclude on 30 June 2030. Full title, buyer and scope could not be read this run because the detail page is behind the egress block.",
-      "deliverables_summary": "",
+      "current_status": "open",
+      "description": "A current Commonwealth approach to market on AusTender. Buyer agency, title, scope and dates were not returned in search snippets this run.",
+      "deliverables_summary": "Not captured — detail page egress-blocked and not summarised in any WebSearch snippet.",
       "key_deliverables": [],
-      "scope_of_work": "",
+      "scope_of_work": null,
       "requirements": [],
       "eligibility": "",
       "evaluation_criteria": [],
-      "value": null,
+      "value": "",
       "value_currency": "AUD",
-      "contract_term": "Deed anticipated to run from 1 November 2026 to 30 June 2030",
-      "contract_start": "2026-11-01",
-      "contract_end": "2030-06-30",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
       "publish_date": null,
       "closing_date": null,
       "closing_time": "",
@@ -29067,28 +29086,26 @@
       "lodgement_url": "https://www.tenders.gov.au/Atm/Show/998e15fe-ea59-434c-9b12-cf38ae0b49d2",
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "Australia",
+      "delivery_location": "",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
         "commonwealth",
-        "austender",
-        "laboratory",
-        "testing",
         "headline-only"
       ],
       "first_seen": "2026-09-13",
-      "detail_source": "",
-      "reasoning": "Surfaced via WebSearch of AusTender current ATM views; ATM_2026_6786 confirmed to exist on tenders.gov.au. Buyer-originated (AusTender is the Commonwealth's own publication portal).",
-      "notes": "Headline-level only. Title inferred as 'Testing Laboratory Services' and the 1 Nov 2026-30 Jun 2030 deed term taken from a search snippet; buyer, value, closing date, questions-due, documents and contacts could NOT be read because the AusTender detail page is blocked by the environment egress proxy (EGRESS_BLOCKED). Needs a detail pass on an unblocked run to confirm title/buyer/close date.",
-      "last_seen": "2026-09-13",
+      "detail_source": "WebSearch result title 'Current ATM View - ATM_2026_6786: AusTender' (existence/ID/open-status verified). No descriptive snippet returned; detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth notice on tenders.gov.au. Not present in the routine's known dedup keys.",
+      "notes": "Headline-level only — buyer agency, title, scope, dates and value not captured (egress-blocked). Verify full detail when egress is restored.",
+      "last_seen": "2026-09-25",
       "seen_dates": [
-        "2026-09-13"
+        "2026-09-13",
+        "2026-09-25"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "AusTender:ADFFHP IndustryNotice",
@@ -32198,8 +32215,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:26AMSA060",
@@ -32265,8 +32282,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:26AMSA059",
@@ -32326,8 +32343,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:26AMSA064",
@@ -32387,8 +32404,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Camden Council:T034/2026",
@@ -32449,8 +32466,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Camden Council:T024/2026",
@@ -32511,8 +32528,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Camden Council:T033/2026",
@@ -32572,8 +32589,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Camden Council:T022/2026",
@@ -32632,6 +32649,189 @@
       "last_seen": "2026-09-24",
       "seen_dates": [
         "2026-09-24"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "AusTender:OPC-2026-03",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "ACT",
+      "tender_id": "OPC-2026-03",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/7de3a2a6-4efc-4595-b0f1-db6d3164e2e1",
+      "access": "public",
+      "title": "OPC-2026-03 (Office of Parliamentary Counsel approach to market — scope not captured)",
+      "buyer": "Office of Parliamentary Counsel (OPC)",
+      "buyer_url": "https://www.opc.gov.au/",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "A current Office of Parliamentary Counsel approach to market on AusTender, companion to OPC-2026-02. Scope, title and dates were not returned in search snippets this run.",
+      "deliverables_summary": "Not captured — detail page egress-blocked and not summarised in any WebSearch snippet.",
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/7de3a2a6-4efc-4595-b0f1-db6d3164e2e1",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "parliament",
+        "headline-only"
+      ],
+      "first_seen": "2026-09-25",
+      "detail_source": "WebSearch result title 'Current ATM View - OPC- 2026-03: AusTender' (existence/ID/open-status verified). No descriptive snippet returned; detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth notice on tenders.gov.au, companion ID to OPC-2026-02. Not present in the routine's known dedup keys.",
+      "notes": "Headline-level only — title, scope, dates and value not captured (egress-blocked). Buyer inferred from the shared 'OPC' ID prefix and should be confirmed. Verify full detail when egress is restored.",
+      "last_seen": "2026-09-25",
+      "seen_dates": [
+        "2026-09-25"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:HOMEAFFAIRS/2165/RFT",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "HOMEAFFAIRS/2165/RFT",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/91adcb00-941c-493d-a850-7deac6ed289c",
+      "access": "public",
+      "title": "HOMEAFFAIRS/2165/RFT (Department of Home Affairs approach to market — scope not captured)",
+      "buyer": "Department of Home Affairs",
+      "buyer_url": "https://www.homeaffairs.gov.au/",
+      "category": "",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "A current Department of Home Affairs request for tender on AusTender. Scope, title and dates were not returned in search snippets this run.",
+      "deliverables_summary": "Not captured — detail page egress-blocked and not summarised in any WebSearch snippet.",
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/91adcb00-941c-493d-a850-7deac6ed289c",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "home-affairs",
+        "headline-only"
+      ],
+      "first_seen": "2026-09-25",
+      "detail_source": "WebSearch result title 'Current ATM View - HOMEAFFAIRS/2165/RFT: AusTender' (existence/ID/open-status verified). No descriptive snippet returned; detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth (Home Affairs) notice on tenders.gov.au. Not present in the routine's known dedup keys (distinct from previously-seen HOMEAFFAIRS/2206/RFT and HOMEAFFAIRS-2216-RFI).",
+      "notes": "Headline-level only — title, scope, dates and value not captured (egress-blocked). Verify full detail when egress is restored.",
+      "last_seen": "2026-09-25",
+      "seen_dates": [
+        "2026-09-25"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "AusTender:ATM_2026_3858",
+      "source_name": "AusTender",
+      "source_url": "https://www.tenders.gov.au/atm",
+      "source_type": "gov-commonwealth",
+      "jurisdiction": "Commonwealth",
+      "state": "",
+      "tender_id": "ATM_2026_3858",
+      "tender_url": "https://www.tenders.gov.au/Atm/Show/debfe93b-16b6-479f-b583-913510d2968e",
+      "access": "public",
+      "title": "International Business Verification — digital solution for verification of Offshore Treatment Providers (OTPs)",
+      "buyer": "Department of Home Affairs",
+      "buyer_url": "https://www.homeaffairs.gov.au/",
+      "category": "Software / ICT services",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "The Department is approaching the market for a digital solution to automate and streamline the registration, verification, and ongoing monitoring of Offshore Treatment Provider (OTP) businesses (International Business Verification).",
+      "deliverables_summary": "A digital solution to automate and streamline the registration, verification and ongoing monitoring of Offshore Treatment Provider (OTP) businesses. Snippet-derived from the AusTender notice summary; full statement of requirement not read (detail page egress-blocked).",
+      "key_deliverables": [
+        "Digital solution for registration of OTP businesses",
+        "Automated verification of OTP businesses",
+        "Ongoing monitoring of OTP businesses"
+      ],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": "",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Online via AusTender",
+      "lodgement_url": "https://www.tenders.gov.au/Atm/Show/debfe93b-16b6-479f-b583-913510d2968e",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "commonwealth",
+        "home-affairs",
+        "ict",
+        "digital-solution",
+        "verification"
+      ],
+      "first_seen": "2026-09-25",
+      "detail_source": "WebSearch result title 'Current ATM View - ATM_2026_3858: AusTender' (existence/ID/open-status verified) plus WebSearch answer snippet summarising the AusTender notice (International Business Verification digital solution for OTP businesses; buyer identified as Home Affairs). Detail page not fetched (EGRESS_BLOCKED).",
+      "reasoning": "Discovered via WebSearch of AusTender current ATMs; buyer-originated Commonwealth (Home Affairs) notice on tenders.gov.au. Not present in the routine's known dedup keys.",
+      "notes": "Snippet-derived detail; not independently verified against the tender detail page or documents, which were egress-blocked. Closing date, publish date, value and evaluation criteria not captured — verify when egress is restored.",
+      "last_seen": "2026-09-25",
+      "seen_dates": [
+        "2026-09-25"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -32716,7 +32916,7 @@
       ],
       "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "AusTender (Commonwealth)",
@@ -32725,15 +32925,15 @@
       "jurisdiction": "Commonwealth",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
+      "feed_or_api_url": "https://www.tenders.gov.au/atm/search/rss",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed source; re-checked this run via WebSearch (direct fetch egress-blocked).",
+      "how_discovered": "Canonical Tier 1 seed; re-checked this run via WebSearch (direct fetch egress-blocked).",
       "recommended_check_frequency": "daily",
-      "notes": "Primary Commonwealth ATM board; historical open-ATM datasets also on data.gov.au. Current-ATM list and per-tender pages reachable only via WebSearch this run.",
+      "notes": "Primary Commonwealth procurement portal. All six tenders this run originated here (ASCA-RFT-2026-LDTPM, OPC-2026-02, OPC-2026-03, HOMEAFFAIRS/2165/RFT, ATM_2026_3858, ATM_2026_6786). Detail pages were egress-blocked (HTTP 403) so only search titles/snippets were usable.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-24",
+      "last_seen": "2026-09-25",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -32777,9 +32977,10 @@
         "2026-09-18",
         "2026-09-19",
         "2026-09-23",
-        "2026-09-24"
+        "2026-09-24",
+        "2026-09-25"
       ],
-      "seen_count": 43,
+      "seen_count": 44,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -37434,7 +37635,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Wollongong City Council e-Tendering (TenderLink)",
@@ -40723,8 +40924,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Westport WA — Industry Tenders / Contract Opportunities",
@@ -40745,8 +40946,8 @@
         "2026-09-24"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "AMSA — Aids to Navigation Maintenance Tender Opportunity",
@@ -40765,6 +40966,50 @@
       "last_seen": "2026-09-24",
       "seen_dates": [
         "2026-09-24"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "BlueScope Steel Pty Ltd — E-Tendering (TenderLink)",
+      "source_url": "https://portal.tenderlink.com/bluescopesteel/login",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (national; NSW HQ)",
+      "platform": "TenderLink",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for large Australian corporate suppliers/procurement portals surfaced BlueScope's own buyer-originated e-tendering portal on TenderLink, used to promote tenders, EOIs, quotes and other purchasing requirements through to contract award.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated corporate e-sourcing portal (steel manufacturing). Free supplier registration; opportunities and documents are viewable/actionable only after registration, so individual RFx are login-gated (access=free-registration). No corporate opportunity captured this run — portal recorded only. General enquiries: procurementsupport@bluescope.com. Not previously in the routine's known source list.",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "seen_dates": [
+        "2026-09-25"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Cleanaway Operations Pty Ltd — E-Tendering (TenderLink) + Coupa Supplier Portal",
+      "source_url": "https://portal.tenderlink.com/cleanaway/login",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (national; VIC HQ)",
+      "platform": "TenderLink / Coupa",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Cleanaway suppliers/procurement surfaced the company's own buyer-originated TenderLink e-tendering portal (free registration; registered suppliers receive email notification of new opportunities) plus its Coupa Supplier Portal for PO/invoicing.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated corporate e-sourcing portal (waste management & resource recovery). Free supplier registration; individual RFx are login-gated (access=free-registration). No corporate opportunity captured this run — portal recorded only. Not previously in the routine's known source list.",
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "seen_dates": [
+        "2026-09-25"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
