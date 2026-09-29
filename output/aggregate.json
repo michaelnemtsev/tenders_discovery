@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29",
+  "generated": "2026-09-30",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -97,33 +97,46 @@
     "2026-09-26",
     "2026-09-27",
     "2026-09-28",
-    "2026-09-29"
+    "2026-09-29",
+    "2026-09-30"
   ],
-  "run_count": 97,
+  "run_count": 98,
   "first_run": "2026-06-25",
-  "latest_run": "2026-09-29",
-  "latest_coverage_summary": "Tier 1 swept across all nine jurisdictions via WebSearch (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders). Seven genuinely-new, currently-open opportunities were captured: five Commonwealth via AusTender (NEMA off-grid diesel power generation D2026/72032; National Capital Authority Scrivener Dam Independent Technical Advisor A26/21; ABC National Cleaning Services NS1333; Home Affairs Online-Offline Diversions Project HOMEAFFAIRS/2219/RFT; Australian Antarctic Division Macquarie Island SAB bulk fuel storage ATM25/3151), one NSW via buy.nsw (Transport Asset Manager of NSW - St James Tunnels tour-operator RFP, evolved from RFI WS5525246815, closing 1-Oct-2026), and one WA GBE via Tenders WA (Water Corporation Cocos West Island SWRO plant WC7000015480). Tier 2 sampled: universities (University of Sydney and ANU TenderLink portals), local government (VendorPanel public tenders) and GBEs/utilities (Water Corporation captured). Tier 3 corporate e-sourcing checked (SAP Business Network / Ariba Discovery, EstimateOne construction, BHP/Woolworths/Coles supplier channels) - all registration- or login-gated with no publicly-advertised RFx visible this run, so only portals were noted and no corporate tenders were fabricated. Five new sources/buyers were recorded, including the ABC Procure Hub e-sourcing platform. As on prior runs, the egress proxy blocked every WebFetch call, so all detail is WebSearch-snippet-derived - no tender detail pages or specification documents could be opened, and every captured tender still needs an authenticated/unblocked detail pass.",
+  "latest_run": "2026-09-30",
+  "latest_coverage_summary": "All source tiers were attempted this run via five parallel research passes (Tier 1 Commonwealth; Tier 1 states NSW/VIC/QLD; Tier 1 states/territories WA/SA/TAS/NT/ACT; Tier 2 councils/GBEs/universities/health; Tier 3 private sector/construction). However, NO opportunity could be verified: outbound HTTPS page fetching is blocked by the session's organization egress policy. Every WebFetch call returned EGRESS_BLOCKED and every direct curl returned '403 CONNECT tunnel failed' for all hosts, including a neutral control request to en.wikipedia.org — confirming a session-wide egress block rather than a portal login wall. WebSearch (which routes through the Anthropic API, not the egress proxy) still worked and surfaced candidate opportunities and source leads, but the spec's fidelity rule requires every detail to come from the actual notice or its documents. Because no notice page could be opened, all such candidates are unverified (and several carry demonstrably stale/past close dates), so this run records ZERO tenders and ZERO confirmed new sources. The strongest unverified candidates and new-source leads are preserved in gaps and recommended_seed_additions for a future unblocked run. No data was invented.",
   "latest_run_metadata": {
-    "run_date": "2026-09-29",
-    "coverage_summary": "Tier 1 swept across all nine jurisdictions via WebSearch (AusTender, buy.nsw/NSW eTendering, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders). Seven genuinely-new, currently-open opportunities were captured: five Commonwealth via AusTender (NEMA off-grid diesel power generation D2026/72032; National Capital Authority Scrivener Dam Independent Technical Advisor A26/21; ABC National Cleaning Services NS1333; Home Affairs Online-Offline Diversions Project HOMEAFFAIRS/2219/RFT; Australian Antarctic Division Macquarie Island SAB bulk fuel storage ATM25/3151), one NSW via buy.nsw (Transport Asset Manager of NSW - St James Tunnels tour-operator RFP, evolved from RFI WS5525246815, closing 1-Oct-2026), and one WA GBE via Tenders WA (Water Corporation Cocos West Island SWRO plant WC7000015480). Tier 2 sampled: universities (University of Sydney and ANU TenderLink portals), local government (VendorPanel public tenders) and GBEs/utilities (Water Corporation captured). Tier 3 corporate e-sourcing checked (SAP Business Network / Ariba Discovery, EstimateOne construction, BHP/Woolworths/Coles supplier channels) - all registration- or login-gated with no publicly-advertised RFx visible this run, so only portals were noted and no corporate tenders were fabricated. Five new sources/buyers were recorded, including the ABC Procure Hub e-sourcing platform. As on prior runs, the egress proxy blocked every WebFetch call, so all detail is WebSearch-snippet-derived - no tender detail pages or specification documents could be opened, and every captured tender still needs an authenticated/unblocked detail pass.",
-    "sources_checked": 22,
-    "tenders_found": 7,
-    "new_sources_found": 5,
-    "entries_pending_detail": 7,
+    "run_date": "2026-09-30",
+    "coverage_summary": "All source tiers were attempted this run via five parallel research passes (Tier 1 Commonwealth; Tier 1 states NSW/VIC/QLD; Tier 1 states/territories WA/SA/TAS/NT/ACT; Tier 2 councils/GBEs/universities/health; Tier 3 private sector/construction). However, NO opportunity could be verified: outbound HTTPS page fetching is blocked by the session's organization egress policy. Every WebFetch call returned EGRESS_BLOCKED and every direct curl returned '403 CONNECT tunnel failed' for all hosts, including a neutral control request to en.wikipedia.org — confirming a session-wide egress block rather than a portal login wall. WebSearch (which routes through the Anthropic API, not the egress proxy) still worked and surfaced candidate opportunities and source leads, but the spec's fidelity rule requires every detail to come from the actual notice or its documents. Because no notice page could be opened, all such candidates are unverified (and several carry demonstrably stale/past close dates), so this run records ZERO tenders and ZERO confirmed new sources. The strongest unverified candidates and new-source leads are preserved in gaps and recommended_seed_additions for a future unblocked run. No data was invented.",
+    "sources_checked": 0,
+    "tenders_found": 0,
+    "new_sources_found": 0,
+    "entries_pending_detail": 0,
     "gaps": [
-      "WebFetch was egress-blocked for every tender domain tested this run (www.tenders.gov.au and buy.nsw.gov.au both returned EGRESS_BLOCKED via the network egress proxy, which only whitelists package registries and the Anthropic API). All opportunity detail is therefore WebSearch-snippet-derived; every captured tender still needs an authenticated/unblocked pass to read the notice detail page, specification documents, evaluation criteria, exact closing time/timezone and contacts.",
-      "Two captured tenders have unverified closing dates because the notice pages could not be opened: Water Corporation Cocos SWRO (Tenders WA WC7000015480) and Australian Antarctic Division Macquarie Island SAB bulk fuel storage (AusTender ATM25/3151). Both are recorded at headline level with closing_date=null and flagged for a detail pass.",
-      "Tier 3 corporate: SAP Business Network Discovery (Ariba Discovery), EstimateOne (construction subcontractor packages), BHP, Woolworths, Coles and the major banks were checked; their live RFx are registration- or login-gated and no publicly-advertised corporate tender surfaced this run. Portals/platforms recorded only; no corporate opportunities invented. Management-consultancy and panel RFPs remain invitation-only and out of scope.",
-      "NT QTOL: a Department of Logistics and Infrastructure tender closing 26-Oct-2026 (02:00 PM ACST) was visible in search but no confirmable title or tender ID surfaced; deferred to a future run with a working detail fetch.",
-      "ACT Tenders (tenders.act.gov.au): no clearly-new opportunity closing October 2026 surfaced via search this run (results were dominated by October-2025 items); coverage deferred to a future run.",
-      "University of Sydney (TenderLink) shows several current opportunities (e.g. PROC-2026-293 chiller/cooling-tower replacement, Curriculum Management Technologies EOI, Student Accommodation 2031 EOI, Unified Hybrid Campus Management System - Sensors) but closing dates could not be confirmed via search snippets; deferred to a detail pass rather than captured without dates.",
-      "Local government: VendorPanel public tenders could not be individually enumerated via search this run (platform landing pages only); council coverage rotated/deferred to a future run."
+      "CRITICAL BLOCKER: Outbound HTTPS is blocked for this session. WebFetch returns {\"error_type\":\"EGRESS_BLOCKED\"} for all hosts and direct curl returns 'curl: (56) CONNECT tunnel failed, response 403'. A neutral control fetch to https://en.wikipedia.org also returned 403, proving the block is session-wide (organization egress policy), not portal-specific. The proxy README (/root/.ccr/README.md) states a 403/EGRESS_BLOCKED means the destination is not on the egress allowlist and must be reported, not retried or routed around. Proxy status shows enabled=true, bundleCoversEveryHost=true, no relay failures — consistent with a deny-by-default allowlist permitting only infrastructure hosts (Anthropic API, npm, pypi, crates) and no external tender domains.",
+      "Tier 1 Commonwealth — AusTender (https://www.tenders.gov.au), help.tenders.gov.au, ausconnect.dfat.gov.au, www.dfat.gov.au all EGRESS_BLOCKED. No ATM verifiable.",
+      "Tier 1 NSW/VIC/QLD — tenders.nsw.gov.au, buy.nsw.gov.au, tenders.vic.gov.au, buyingfor.vic.gov.au, etender.hpw.qld.gov.au (formerly qtenders.hpw.qld.gov.au), supply.qld.gov.au all EGRESS_BLOCKED.",
+      "Tier 1 WA/SA/TAS/NT/ACT — tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au (QTOL), tenders.act.gov.au all EGRESS_BLOCKED. No portal URL changes detected; NT is branded 'Quotations and Tenders Online (QTOL)', TAS is 'eTendering', both at the expected URLs.",
+      "Tier 2 (councils/GBEs/universities/health) — VendorPanel public tenders, brisbane.qld.gov.au, sydneywater.com.au, portal.tenderlink.com (Melbourne/Monash/etc.), NSW Health Gateway, CSIRO procurement all EGRESS_BLOCKED.",
+      "Tier 3 (private sector/construction) — service.ariba.com (SAP Ariba Discovery), bhp.com, estimateone.com, gateway.icn.org.au and all major-buyer supplier portals EGRESS_BLOCKED. Invitation-only consultancy RFPs remain out of scope by definition; registration/login-gated corporate RFx could not be recorded because even the public portal pages were unreachable. No corporate tenders were invented.",
+      "UNVERIFIED CANDIDATE OPPORTUNITIES (surfaced by WebSearch only; NOT fetched, NOT recorded as tenders, must be confirmed on the notice page before use): (1) Tasmania — 'Aged Care Greenfield Sites' EOI, Dept of Health TAS, ~opened 26 Sep / closes 6 Nov 2026, up to 13 sites, news-corroborated (tenders.tas.gov.au). (2) Victoria — Melbourne Water 'Field Services Panel (FSP) renewal' RFT, ~opened 10 Sep / closes 27 Oct 2026, via Buying for Victoria. (3) National — Australia Post 'EOI New Over-the-Counter (OTC) Services', ~released 14 Sep / closes 14 Oct 2026 (auspost.com.au EOI PDF). (4) NT/QTOL — T26-1272 Hidden Valley Motorsport pit garage shade structure (close 26 Oct), RFT0791 Power & Water bulk bottled water (close 21 Oct), T26-1192 Yuendumu Police Station water upgrade (close 13 Oct), RFF26-0130 network management RFF (close 9 Oct). (5) QLD — Brisbane City Council: ex-TC Alfred sports field remediation (close 21 Oct), traffic signal hardware supply (close 22 Oct), City Hall Precinct Model (close 23 Oct). (6) VIC — City of Melbourne CN102954 Stolen Generations Marker bronze casting (close 5 Oct), CN102988 nitrous oxide/gas cylinder recycling (close 12 Oct). (7) NSW — HealthShare NSW HSSP_HC25_979 pharmaceuticals RFT supplementary (close 8 Nov; possibly stale). (8) VIC — Monash University unoccupied site maintenance (close 31 Oct).",
+      "The proxy status diagnostic (curl to the __agentproxy/status endpoint) was denied by the sandbox classifier as credential exploration when a subagent attempted it, though it succeeded at the top level and reported no relay failures.",
+      "RECOMMENDATION TO RESTORE COVERAGE: Add the tender-portal domains to this environment's egress allowlist (or run the routine where WebFetch is permitted). Until then daily runs can only produce empty, honest results because no notice can be verified."
     ],
     "recommended_seed_additions": [
-      "ABC Procure Hub - the Australian Broadcasting Corporation e-sourcing/lodgement platform (respondents to ABC RFPs lodge here). Confirm the canonical Procure Hub URL and track as a corporate/GBE e-sourcing portal.",
-      "National Capital Authority (AusTender buyer) - recurring Canberra national-land and dam-safety engineering procurement (e.g. Scrivener Dam).",
-      "Transport Asset Manager of NSW (TAM) (buy.nsw buyer) - legacy transport-asset activation projects (e.g. St James tunnels); track as a NSW gov-state buyer.",
-      "Australian Antarctic Division / DCCEEW (AusTender buyer) - Antarctic and subantarctic station infrastructure procurement (Macquarie Island Station Project)."
+      "[UNVERIFIED lead — confirm when egress restored] ICN Gateway (https://gateway.icn.org.au) — national marketplace where government-funded AND private project owners (e.g. Fortescue, Woodside) list projects and work packages; project/work-package listings reported as partially browsable without login. High potential value for private-project subcontract discovery.",
+      "[UNVERIFIED lead] TenderLink (illion) hosted e-tendering (https://illion.tenderlink.com) — SaaS platform hosting many individual buyer e-tendering rooms (e.g. City of Melbourne portal.tenderlink.com/melbourne, Monash portal.tenderlink.com/monashuni, Sydney Airport tenderlink.com/sacl). Registration-gated per buyer; useful multi-buyer entry point.",
+      "[UNVERIFIED lead] Sydney Airport Corporation e-tendering (https://www.tenderlink.com/sacl) — large private infrastructure buyer, supplier registration required.",
+      "[UNVERIFIED lead] Macquarie Group suppliers (https://www.macquarie.com/au/en/about/suppliers.html) — reported to use Coupa (Coupa Supplier Portal) + MySupplier.",
+      "[UNVERIFIED lead] Bendigo and Adelaide Bank sustainable procurement (https://www.bendigobank.com.au/about-us/sustainability/sustainable-procurement/) — reported Coupa go-live May 2025.",
+      "[UNVERIFIED lead] South32 suppliers (https://www.south32.net/suppliers) — reported SAP Ariba Network.",
+      "[UNVERIFIED lead] Newmont suppliers (https://www.newmont.com/suppliers/) — major AU gold-mining ops post-Newcrest; reported SAP Ariba.",
+      "[UNVERIFIED lead] Whitehaven Coal procurement (https://whitehavencoal.com.au) — e-sourcing platform unconfirmed.",
+      "[UNVERIFIED lead] Zycus Supplier Network — Seqwater supplier interface (https://www.seqwater.com.au/supplier-information); open-market tenders also via QLD Government Supplier Portal.",
+      "[UNVERIFIED lead] eProcure — Yarra Valley Water electronic tender box (https://www.yvw.com.au/about-us/suppliers/tenders).",
+      "[UNVERIFIED lead] Australia Post EOI/supplier pages (https://auspost.com.au/about-us/supplier-information) — publishes campaign EOIs as downloadable PDFs off the standard gov portals; worth crawling directly.",
+      "[UNVERIFIED lead] Sunshine Coast Council public tenders via VendorPanel (buyer-scoped deep link) and Logan City Council via VendorPanel (https://www.vendorpanel.com.au/logancity/tenders).",
+      "[NOTE — grants, not procurement] Transgrid Community Partnerships via SmartyGrants (https://transgrid.smartygrants.com.au/) — grant-style EOIs, distinct from procurement; recorded for completeness only.",
+      "[DISCOVERY SIGNAL ONLY — not a source of truth] Aggregators TenderTracker (https://tendertracker.com.au) and GovMarket (https://govmarket.com.au) index public-sector tenders (CSIRO, Seqwater, Metro North Health); use only to spot buyers/portals, then pivot to the buyer's own source."
     ]
   },
   "months": [
@@ -27710,7 +27723,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ADF Family Health Program Industry Notice",
@@ -34237,8 +34250,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:A26/21",
@@ -34304,8 +34317,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:NS1333",
@@ -34370,8 +34383,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:WS5525246815",
@@ -34435,8 +34448,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersWA:WC7000015480",
@@ -34500,8 +34513,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "AusTender:ATM25/3151",
@@ -34565,8 +34578,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ],
   "discovered_sources": [
@@ -42995,8 +43008,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "National Emergency Management Agency (NEMA) — AusTender buyer",
@@ -43017,8 +43030,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "National Capital Authority (NCA) — AusTender buyer",
@@ -43039,8 +43052,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Transport Asset Manager of NSW (TAM) — buy.nsw buyer",
@@ -43061,8 +43074,8 @@
         "2026-09-29"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ]
 }
