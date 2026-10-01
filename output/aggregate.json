@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -99,37 +99,40 @@
     "2026-09-28",
     "2026-09-29",
     "2026-09-30",
-    "2026-10-01"
+    "2026-10-01",
+    "2026-10-02"
   ],
-  "run_count": 99,
+  "run_count": 100,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-01",
-  "latest_coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a source-discovery sweep). Connectivity was re-tested at the start of the run: WebFetch returned EGRESS_BLOCKED for every host, including a neutral control fetch to en.wikipedia.org, confirming a session-wide organisation egress block rather than a portal login wall (same condition as the 2026-09-30 run). WebSearch still works (it routes through the Anthropic API, not the egress proxy) and surfaced candidate opportunities and source leads, but the spec's fidelity rule requires every detail to come from the actual notice or its documents. Because no notice page could be opened, no opportunity could be verified, so this run records ZERO tenders and ZERO confirmed new sources. Every source lead surfaced by WebSearch this run (East Gippsland / Forbes / Hinchinbrook councils on VendorPanel, etc.) was already discovered in earlier runs, so there is nothing genuinely new to add. Candidate opportunities and any noteworthy landscape changes are preserved in gaps / recommended_seed_additions for a future unblocked run. No data was invented.",
+  "latest_run": "2026-10-02",
+  "latest_coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a source-discovery sweep). Connectivity was re-tested at the start of the run: WebFetch returned EGRESS_BLOCKED for every host, including a neutral control fetch to en.wikipedia.org, confirming a session-wide organisation egress block rather than a portal login wall (same condition as the 2026-09-30 and 2026-10-01 runs — now three consecutive days). Proxy status (/root/.ccr/__agentproxy/status) shows enabled=true, bundleCoversEveryHost=true and recentRelayFailures=[], consistent with a deny-by-default allowlist that permits only infrastructure hosts and no external tender domains. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and surfaced candidate opportunities and source leads. Because the spec's fidelity rule requires every tender detail to come from the actual notice or its documents, and no notice page could be opened, no opportunity could be verified — so this run records ZERO tenders. The source-discovery sweep did surface two buyer-originated council procurement pages not present in any prior run (Noosa Shire Council and Toowoomba Regional Council, both on VendorPanel); these are recorded in discovered_sources at medium confidence with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
   "latest_run_metadata": {
-    "run_date": "2026-10-01",
-    "coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a source-discovery sweep). Connectivity was re-tested at the start of the run: WebFetch returned EGRESS_BLOCKED for every host, including a neutral control fetch to en.wikipedia.org, confirming a session-wide organisation egress block rather than a portal login wall (same condition as the 2026-09-30 run). WebSearch still works (it routes through the Anthropic API, not the egress proxy) and surfaced candidate opportunities and source leads, but the spec's fidelity rule requires every detail to come from the actual notice or its documents. Because no notice page could be opened, no opportunity could be verified, so this run records ZERO tenders and ZERO confirmed new sources. Every source lead surfaced by WebSearch this run (East Gippsland / Forbes / Hinchinbrook councils on VendorPanel, etc.) was already discovered in earlier runs, so there is nothing genuinely new to add. Candidate opportunities and any noteworthy landscape changes are preserved in gaps / recommended_seed_additions for a future unblocked run. No data was invented.",
+    "run_date": "2026-10-02",
+    "coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a source-discovery sweep). Connectivity was re-tested at the start of the run: WebFetch returned EGRESS_BLOCKED for every host, including a neutral control fetch to en.wikipedia.org, confirming a session-wide organisation egress block rather than a portal login wall (same condition as the 2026-09-30 and 2026-10-01 runs — now three consecutive days). Proxy status (/root/.ccr/__agentproxy/status) shows enabled=true, bundleCoversEveryHost=true and recentRelayFailures=[], consistent with a deny-by-default allowlist that permits only infrastructure hosts and no external tender domains. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and surfaced candidate opportunities and source leads. Because the spec's fidelity rule requires every tender detail to come from the actual notice or its documents, and no notice page could be opened, no opportunity could be verified — so this run records ZERO tenders. The source-discovery sweep did surface two buyer-originated council procurement pages not present in any prior run (Noosa Shire Council and Toowoomba Regional Council, both on VendorPanel); these are recorded in discovered_sources at medium confidence with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
     "sources_checked": 0,
     "tenders_found": 0,
-    "new_sources_found": 0,
+    "new_sources_found": 2,
     "entries_pending_detail": 0,
     "gaps": [
-      "CRITICAL BLOCKER (recurring): Outbound HTTPS page fetching is blocked for this session. WebFetch returns {\"error_type\":\"EGRESS_BLOCKED\"} for all hosts and a direct control fetch to https://en.wikipedia.org also failed, proving a session-wide (organisation egress allowlist) block, not a portal-specific wall. Proxy status (/root/.ccr/__agentproxy/status) shows enabled=true, bundleCoversEveryHost=true and recentRelayFailures=[], consistent with a deny-by-default allowlist that permits only infrastructure hosts (Anthropic API, npm, pypi, crates, go, gcloud/gh) and no external tender domains. Per the proxy README a 403/EGRESS_BLOCKED must be reported, not retried or routed around.",
+      "CRITICAL BLOCKER (recurring, 3rd consecutive run): Outbound HTTPS page fetching is blocked for this session. WebFetch returns {\"error_type\":\"EGRESS_BLOCKED\"} for all hosts and a direct control fetch to https://en.wikipedia.org also failed, proving a session-wide (organisation egress allowlist) block, not a portal-specific wall. Proxy status shows enabled=true, bundleCoversEveryHost=true, recentRelayFailures=[], consistent with a deny-by-default allowlist that permits only infrastructure hosts (Anthropic API, npm, pypi, crates, go, gcloud/gh) and no external tender domains. Per the proxy README a 403/EGRESS_BLOCKED must be reported, not retried or routed around.",
       "Tier 1 Commonwealth — AusTender (https://www.tenders.gov.au, /atm) EGRESS_BLOCKED; no ATM verifiable this run.",
       "Tier 1 states/territories — tenders.nsw.gov.au / buy.nsw.gov.au, tenders.vic.gov.au / buyingfor.vic.gov.au, etender.hpw.qld.gov.au (formerly qtenders) / supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au (QTOL), tenders.act.gov.au — all EGRESS_BLOCKED. No portal URL changes could be verified because none could be opened.",
-      "Tier 2 (councils/GBEs/universities/health) — VendorPanel public tenders, individual council sites, Sydney Water / Melbourne Water / SA Water, CSIRO procurement, university and Local Health District tender pages — all EGRESS_BLOCKED.",
+      "Tier 2 (councils/GBEs/universities/health) — VendorPanel public tenders, individual council sites, Sydney Water / Melbourne Water / SA Water / Water Corporation WA / Power and Water NT, CSIRO procurement, university and Local Health District tender pages — all EGRESS_BLOCKED. Water-corporation supplier portals (WA eProcurement, SA Water Supplier Portal, Melbourne Water via Buying for Victoria, Power & Water via NT QTOL) were re-confirmed by WebSearch as still-active channels but could not be opened to read live opportunities.",
       "Tier 3 (private sector/construction) — service.ariba.com (SAP Ariba Discovery), BHP/Rio Tinto/Fortescue/Woodside/Santos supplier portals, Woolworths Partner Hub, Coles/Wesfarmers supplier pages, Qantas (Coupa), CBA/Westpac/NAB/ANZ, Telstra/Optus/TPG, AGL/Origin, EstimateOne, ICN Gateway — all EGRESS_BLOCKED. Invitation-only consultancy RFPs remain out of scope by definition; registration/login-gated corporate RFx could not be recorded because even the public portal landing pages were unreachable. No corporate tenders were invented.",
-      "LANDSCAPE NOTE (unverified, WebSearch-only): search snippets indicate an SAP Ariba Business Network -> Coupa migration wave affecting some Australian buyers, with Ariba being phased down through March 2026. Confirm the current e-sourcing platform for affected buyers (which portal to register on) once egress is restored before relying on it.",
-      "UNVERIFIED CANDIDATE OPPORTUNITIES (surfaced by WebSearch only; NOT fetched, NOT recorded as tenders; several likely stale/closed by 2026-10-01 and must be confirmed on the notice page before use): DFAT/Palladium Quad Infrastructure Fellowship RFTs (RFT26-002/003/005) were published early Sep 2026 with 13 Sep 2026 close dates and appear CLOSED; carry-over candidates from prior runs (Tasmania aged-care greenfield EOI ~closes 6 Nov; Melbourne Water Field Services Panel RFT ~closes 27 Oct; Australia Post OTC Services EOI ~closes 14 Oct; various NT QTOL and Brisbane City Council items ~closing mid-late Oct) could not be re-verified this run. Treat all as leads, not confirmed opportunities.",
-      "SOURCE DISCOVERY — every buyer-originated source lead returned by WebSearch this run (East Gippsland Shire Council and Forbes Shire Council migrating to VendorPanel in 2026; Hinchinbrook Shire Council E-Procurement Portal; Sunshine Coast and Logan councils on VendorPanel) was already recorded in earlier runs' discovered_sources, so no genuinely new source could be added. No new source could be confirmed because none could be fetched.",
-      "RECOMMENDATION TO RESTORE COVERAGE: add the tender-portal domains to this environment's egress allowlist (or run the routine where WebFetch is permitted). Until then daily runs can only produce empty, honest results because no notice can be verified."
+      "LANDSCAPE NOTE (WebSearch-only, re-confirmed this run): Queensland is running a phased replacement of QTenders by VendorPanel Marketplace (supply.qld.gov.au) as its single procurement solution; the two systems run in parallel during transition, with ~90 state agencies and ~70 QLD councils already onboarded. Suppliers must keep a QTenders registration until QTenders fully integrates with VendorPanel. Confirm the live state per buyer on the notice page once egress is restored.",
+      "LANDSCAPE NOTE (WebSearch-only, carry-over): search snippets continue to indicate an SAP Ariba Business Network -> Coupa migration wave affecting some Australian buyers, with Ariba being phased down through March 2026. Confirm the current e-sourcing platform for affected buyers (which portal to register on) once egress is restored before relying on it.",
+      "UNVERIFIED CANDIDATE OPPORTUNITIES (surfaced by WebSearch only; NOT fetched, NOT recorded as tenders; likely stale/closed and must be confirmed on the notice page before use): a DFAT RFT snippet showed a 1 Oct 2026 close date and a 'Western Province Partnership Mid-Term Review' RFT showed a 28 Sep 2026 close (appears CLOSED). Prior-run carry-over leads (Tasmania aged-care greenfield EOI; Melbourne Water Field Services Panel RFT; Australia Post OTC Services EOI; various NT QTOL and Brisbane City Council items) could not be re-verified this run. Treat all as leads, not confirmed opportunities.",
+      "RECOMMENDATION TO RESTORE COVERAGE: add the tender-portal domains to this environment's egress allowlist (or run the routine where WebFetch is permitted). Until then daily runs can only produce empty-but-honest tender results because no notice can be verified; only WebSearch-level source discovery is possible."
     ],
     "recommended_seed_additions": [
+      "[NEW this run — recorded in discovered_sources] Noosa Shire Council VendorPanel Marketplace procurement page (https://www.noosa.qld.gov.au/Business/Tenders-and-procurement/VendorPanel-marketplace) — QLD local government buyer-originated source; not previously in the known-source list. Verify opportunities once egress restored.",
+      "[NEW this run — recorded in discovered_sources] Toowoomba Regional Council supplier registration / procurement page (https://www.tr.qld.gov.au/community-business/business-support/doing-business-with-council/13512-procurement-registration-process-for-suppliers) — QLD local government buyer-originated source; not previously in the known-source list.",
+      "[LANDSCAPE — confirm when egress restored] Queensland QTenders -> VendorPanel (supply.qld.gov.au) consolidation: a single platform now carries both QLD state-agency and council tenders; treat supply.qld.gov.au + VendorPanel Marketplace as the primary QLD entry point going forward.",
       "[LANDSCAPE — confirm platform when egress restored] Track the SAP Ariba Network -> Coupa migration for Australian buyers (Ariba phased down ~March 2026); the correct supplier portal to register on may have changed for some major buyers.",
       "[UNVERIFIED lead — carry-over] ICN Gateway (https://gateway.icn.org.au) — national marketplace where government-funded AND private project owners (e.g. Fortescue, Woodside) list projects and work packages; reported partially browsable without login. High value for private-project subcontract discovery.",
       "[UNVERIFIED lead — carry-over] TenderLink (illion) hosted e-tendering (https://illion.tenderlink.com) — SaaS hosting many individual buyer e-tendering rooms (City of Melbourne, Monash, Sydney Airport); registration-gated per buyer; useful multi-buyer entry point.",
       "[UNVERIFIED lead — carry-over] Australia Post supplier/EOI pages (https://auspost.com.au/about-us/supplier-information) — publishes campaign EOIs as downloadable PDFs off the standard gov portals; worth crawling directly.",
-      "[UNVERIFIED lead — carry-over] Macquarie Group suppliers (Coupa), South32 / Newmont / Whitehaven (SAP Ariba), Seqwater (Zycus) and Yarra Valley Water (eProcure) — confirm each buyer's current portal and access model when egress is restored.",
-      "[DISCOVERY SIGNAL ONLY — not a source of truth] Aggregators (TenderTracker, GovMarket, australiantenders.com.au, australiatenderalerts.com) index public-sector tenders; use only to spot buyers/portals, then pivot to the buyer's own source."
+      "[DISCOVERY SIGNAL ONLY — not a source of truth] Aggregators (australiantenders.com.au, tendersinfo.com, australiatenderalerts.com, awardedtenders.au) index public-sector tenders; use only to spot buyers/portals, then pivot to the buyer's own source."
     ]
   },
   "months": [
@@ -43069,6 +43072,50 @@
       "seen_count": 1,
       "is_new_in_latest": false,
       "active_in_latest": false
+    },
+    {
+      "source_name": "Noosa Shire Council — Tenders & Procurement (VendorPanel Marketplace)",
+      "source_url": "https://www.noosa.qld.gov.au/Business/Tenders-and-procurement/VendorPanel-marketplace",
+      "source_type": "gov-local",
+      "jurisdiction": "QLD — Noosa Shire (local government)",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch source-discovery sweep for Australian council VendorPanel portals; the council's own procurement page URL was returned. Not present in any of the 99 prior runs' discovered_sources (checked against output/aggregate.json). Could NOT be fetch-verified this run because WebFetch is EGRESS_BLOCKED session-wide; confidence held at medium until the page can be opened.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated QLD local-government procurement channel; routes RFQs/tenders through the VendorPanel Marketplace (free supplier registration). Verify live opportunities and exact listing URL once egress is restored.",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "seen_dates": [
+        "2026-10-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Toowoomba Regional Council — Doing business with Council (supplier registration / procurement)",
+      "source_url": "https://www.tr.qld.gov.au/community-business/business-support/doing-business-with-council/13512-procurement-registration-process-for-suppliers",
+      "source_type": "gov-local",
+      "jurisdiction": "QLD — Toowoomba Region (local government)",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch source-discovery sweep for Australian council e-procurement / supplier-registration portals; the council's own supplier-registration page URL was returned. Not present in any of the 99 prior runs' discovered_sources (checked against output/aggregate.json). Could NOT be fetch-verified this run because WebFetch is EGRESS_BLOCKED session-wide; confidence held at medium until the page can be opened.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated QLD local-government procurement channel with a supplier-registration process. Confirm the exact live tender-listing platform (council site vs VendorPanel vs supply.qld.gov.au) and current opportunities once egress is restored.",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "seen_dates": [
+        "2026-10-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
     }
   ]
 }
