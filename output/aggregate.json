@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07",
+  "generated": "2026-10-08",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -105,36 +105,38 @@
     "2026-10-04",
     "2026-10-05",
     "2026-10-06",
-    "2026-10-07"
+    "2026-10-07",
+    "2026-10-08"
   ],
-  "run_count": 105,
+  "run_count": 106,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-07",
-  "latest_coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a dedicated source-discovery sweep). Connectivity was re-tested at the start of the run exactly as on prior days: WebFetch returned EGRESS_BLOCKED for the Tier 1 control fetch to www.tenders.gov.au, a second WebFetch to www.vendorpanel.com.au/publictenders.aspx also returned EGRESS_BLOCKED, and a direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only infrastructure hosts in noProxy - Anthropic API, npm/PyPI/crates/go package registries - are reachable). The proxy README confirms a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05 and 2026-10-06 runs - now EIGHT consecutive days. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a source-discovery sweep across Tiers 1-3. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced five buyer-originated procurement sources not present in any prior run (Brisbane Airport Corporation; Melbourne Airport / Australia Pacific Airports Corporation; University of Western Australia; Mineral Resources Ltd (MinRes); Lockheed Martin Australia); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
+  "latest_run": "2026-10-08",
+  "latest_coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a dedicated source-discovery sweep). Connectivity was re-tested at the start of the run exactly as on prior days: WebFetch to the Tier 1 control host www.tenders.gov.au returned EGRESS_BLOCKED, and a direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only infrastructure hosts in noProxy - Anthropic API, npm/PyPI/crates/go package registries - are reachable). The proxy README confirms a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30 through 2026-10-07 runs - now NINE consecutive days. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a source-discovery sweep across Tiers 1-3. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced nine buyer-originated procurement sources not present in any prior run (Livingstone Shire Council QLD; Woollahra Municipal Council NSW; Hay Shire Council NSW; City of South Perth WA; University of South Australia; CQUniversity; University of Southern Queensland; Ballarat Health Services VIC; PanAust mining); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
   "latest_run_metadata": {
-    "run_date": "2026-10-07",
-    "coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a dedicated source-discovery sweep). Connectivity was re-tested at the start of the run exactly as on prior days: WebFetch returned EGRESS_BLOCKED for the Tier 1 control fetch to www.tenders.gov.au, a second WebFetch to www.vendorpanel.com.au/publictenders.aspx also returned EGRESS_BLOCKED, and a direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only infrastructure hosts in noProxy - Anthropic API, npm/PyPI/crates/go package registries - are reachable). The proxy README confirms a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30, 2026-10-01, 2026-10-02, 2026-10-03, 2026-10-04, 2026-10-05 and 2026-10-06 runs - now EIGHT consecutive days. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a source-discovery sweep across Tiers 1-3. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced five buyer-originated procurement sources not present in any prior run (Brisbane Airport Corporation; Melbourne Airport / Australia Pacific Airports Corporation; University of Western Australia; Mineral Resources Ltd (MinRes); Lockheed Martin Australia); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
+    "run_date": "2026-10-08",
+    "coverage_summary": "All source tiers were attempted (Tier 1 Commonwealth + all states/territories; Tier 2 councils/GBEs/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals; plus a dedicated source-discovery sweep). Connectivity was re-tested at the start of the run exactly as on prior days: WebFetch to the Tier 1 control host www.tenders.gov.au returned EGRESS_BLOCKED, and a direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only infrastructure hosts in noProxy - Anthropic API, npm/PyPI/crates/go package registries - are reachable). The proxy README confirms a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30 through 2026-10-07 runs - now NINE consecutive days. WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a source-discovery sweep across Tiers 1-3. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced nine buyer-originated procurement sources not present in any prior run (Livingstone Shire Council QLD; Woollahra Municipal Council NSW; Hay Shire Council NSW; City of South Perth WA; University of South Australia; CQUniversity; University of Southern Queensland; Ballarat Health Services VIC; PanAust mining); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
     "sources_checked": 0,
     "tenders_found": 0,
-    "new_sources_found": 5,
+    "new_sources_found": 9,
     "entries_pending_detail": 0,
     "gaps": [
-      "Session-wide organisation egress block (8th consecutive day): WebFetch returns EGRESS_BLOCKED and direct curl returns 'CONNECT tunnel failed, response 403' for external hosts (control fetches to www.tenders.gov.au and www.vendorpanel.com.au both rejected). No external website could be opened or verified this run. Per /root/.ccr/README.md this is an organisation egress-policy denial (403/407) that must be reported, not retried or routed around.",
-      "Tier 1 (AusTender, NSW eTendering/buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, ACT Tenders): attempted but UNREACHABLE - every notice/detail page blocked by egress policy; zero tenders could be verified.",
-      "Tier 2 (councils via VendorPanel, GBEs/government-owned corporations, universities/TAFEs, public health): attempted via WebSearch only; no detail page could be fetched to verify an opportunity.",
-      "Tier 3 (SAP Ariba Discovery, Coupa/Jaggaer/GEP/Ivalua, RangeMe, and major-buyer portals BHP/Rio Tinto/Woodside/Woolworths/Coles etc.): attempted via WebSearch only; all portals remain unreachable for fetch. No corporate opportunity could be verified; none invented. Login/registration-gated and invitation-only corporate RFx remain out of scope per spec.",
-      "Opportunities surfaced only as WebSearch signals and NOT recorded as tenders (could not be fetch-verified, so treated as discovery signal only, not source-of-truth): a Brisbane Airport Corporation capital-delivery-program Expression of Interest reportedly opened early 2026 with a transition to panel-based procurement from June 2026; a University of Western Australia EOI for Hydraulic Services (reportedly published ~19 Feb 2026) and an EOI for Brick Paving Services (reportedly published ~26 Sep 2025, closing ~8 Oct 2025 - likely closed). Each needs a detail-page fetch to confirm IDs, scope, deliverables, dates and contacts before it could be recorded as a tender; none were recorded.",
-      "Detail/deliverables extraction: not possible for any opportunity this run because no notice or tender document could be opened.",
-      "Discovered sources this run could not be fetch-verified (URL resolution, feed/API presence, and current-opportunity confirmation all pending) due to the egress block; each is noted accordingly and should be re-checked once egress is restored.",
-      "Proxy status checked (curl $HTTPS_PROXY/__agentproxy/status): enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, but no external tender domain is permitted - consistent with an allowlist that admits only infrastructure hosts (Anthropic API, package registries). This is an environment/configuration issue, not a transient network error, and has now persisted for eight days."
+      "Session-wide organisation egress block (9th consecutive day, 2026-09-30 to 2026-10-08): WebFetch returns EGRESS_BLOCKED and direct curl returns 'CONNECT tunnel failed, response 403' for every external host. Only noProxy infrastructure hosts (Anthropic API, npm/PyPI/crates/go registries) are reachable.",
+      "Tier 1 (AusTender + all 8 state/territory portals): could NOT be fetched or verified - every detail page and feed/API is behind the egress block. No opportunities confirmed.",
+      "Tier 2 (councils/VendorPanel, GBEs, water corps, universities, health): could NOT be fetched or verified. Candidate sources were only surfaced via WebSearch snippets.",
+      "Tier 3 (SAP Ariba Discovery, Coupa, major-buyer portals BHP/Rio/Woodside/Woolworths/Coles/Qantas/banks/telcos): could NOT be fetched or verified. Ariba Discovery and all corporate portals are unreachable; no publicly-advertised corporate RFx could be confirmed, so none recorded as tenders (per spec, gated/invitation-only corporate RFx are not invented).",
+      "WebSearch returns titles/snippets only and cannot substitute for opening the buyer's own notice; per the fidelity rule, snippet-only data is not treated as a confirmed opportunity.",
+      "New sources below were discovered via WebSearch only and are NOT fetch-verified this run; confidence is set accordingly and they should be re-verified once egress is restored."
     ],
     "recommended_seed_additions": [
-      "ENVIRONMENT FIX (highest priority, now EIGHT consecutive days): the daily routine cannot fulfil its core mission while the egress proxy blocks all external hosts. The routine has produced ZERO verified tenders for eight straight days solely because of this block. Allowlist the Tier 1 government tender domains (tenders.gov.au, tenders.nsw.gov.au, buy.nsw.gov.au, tenders.vic.gov.au/buyingfor.vic.gov.au, qtenders.hpw.qld.gov.au/supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au), plus vendorpanel.com.au, portal.tenderlink.com and service.ariba.com, so WebFetch can open and verify notices.",
-      "Brisbane Airport Corporation - Industry Partnerships / capital delivery procurement (https://www.bne.com.au/corporate/projects/industry-partnerships) - Queensland airport corporation investing >$5B over five years; opened a capital-delivery-program EOI in early 2026 and is moving to a panel-based procurement model (first panel transition from June 2026). Buyer-originated airport-corporation source; airport GBE coverage previously included Perth/Sydney/Newcastle/WSA but not Brisbane.",
-      "Melbourne Airport (Australia Pacific Airports Corporation, APAC/APAM) - Suppliers & procurement (https://www.melbourneairport.com.au) - Victoria's primary airport corporation; runs major infrastructure procurement (e.g. third runway / Melbourne Airport programs). Buyer-originated airport-corporation source not previously tracked; exact procurement-page path to be confirmed once egress is restored.",
-      "University of Western Australia (UWA) - Procurement / Supplying to UWA (https://www.uwa.edu.au) - WA public university; runs its own tenders and EOIs (pre-tender questions, site-visit registration and submissions via sourcing-finserv@uwa.edu.au). Buyer-originated university source; WA university coverage previously included Curtin but not UWA. Confirm the live tender page / e-tendering platform once egress is restored.",
-      "Mineral Resources Ltd (MinRes) - Working with Us / supplier registration (https://www.mineralresources.com.au) - WA-headquartered mining-services and lithium/iron-ore company; invites suppliers to register interest and lists major-project opportunities via ICN Gateway. Buyer-originated mining source not previously tracked (BHP/Rio/Fortescue/South32/Newmont/Glencore were tracked; MinRes was not).",
-      "Lockheed Martin Australia - Supplier engagement via ICN Gateway (https://gateway.icn.org.au) - defence prime; calls for Australian suppliers (aero-mechanical components, aerostructures, MRO, logistics/engineering tooling) through the ICN Gateway for rotary-wing sovereign sustainment (MH-60R Seahawk / UH-60M Black Hawk). Buyer-originated defence-prime source not previously tracked (BAE/Hanwha/Thales/Boeing/Ventia were tracked; Lockheed Martin Australia was not). Opportunities are registration/EOI-gated."
+      "Livingstone Shire Council (QLD) - VendorPanel public tenders",
+      "Woollahra Municipal Council (NSW) - VendorPanel public tenders",
+      "Hay Shire Council (NSW) - own-site tenders/EOI",
+      "City of South Perth (WA) - own-site tenders",
+      "University of South Australia (UniSA) - e-tendering portal",
+      "CQUniversity - tenders via QTenders",
+      "University of Southern Queensland (UniSQ) - tenders via QTenders",
+      "Ballarat Health Services (VIC) - Supplier Relationship Management portal (needs re-verification; last public reference is dated)",
+      "PanAust (mining, QLD/Laos ops) - SAP Ariba supplier/sourcing portal"
     ]
   },
   "months": [
@@ -43512,8 +43514,8 @@
         "2026-10-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Melbourne Airport (Australia Pacific Airports Corporation) - Suppliers & procurement",
@@ -43534,8 +43536,8 @@
         "2026-10-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "University of Western Australia (UWA) - Procurement / Supplying to UWA",
@@ -43556,8 +43558,8 @@
         "2026-10-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Mineral Resources Ltd (MinRes) - Working with Us / supplier registration",
@@ -43578,8 +43580,8 @@
         "2026-10-07"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Lockheed Martin Australia - Supplier engagement (ICN Gateway)",
@@ -43598,6 +43600,204 @@
       "last_seen": "2026-10-07",
       "seen_dates": [
         "2026-10-07"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Livingstone Shire Council (QLD) - Contracts and Tenders",
+      "source_url": "https://www.livingstone.qld.gov.au/Doing-Business/Business-and-Regulations/Contracts-and-Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland - Local Government",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for QLD councils using VendorPanel; council page links to VendorPanel's list of all current open tenders. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated local government source. Could not open the live tender list this run; verify current open tenders via VendorPanel once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Woollahra Municipal Council (NSW) - Procurement / Current Tenders",
+      "source_url": "https://woollahra.nsw.gov.au/council/procurement",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales - Local Government",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for NSW councils on VendorPanel; documents are downloaded from VendorPanel. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated local government source. A Lyne Park Tennis Centre lease (SC8316) was referenced in snippets but is historic; confirm live listings when egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Hay Shire Council (NSW) - Tenders",
+      "source_url": "https://www.hay.nsw.gov.au/Inside-Hay-Shire-Council/Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales - Local Government",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for NSW council tender pages. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated local government source publishing on its own website. Verify current tenders once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "City of South Perth (WA) - Tenders",
+      "source_url": "https://southperth.wa.gov.au/about-us/our-organisation/tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Western Australia - Local Government",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for WA council procurement pages. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated local government source. Distinct from City of Perth (already known). Verify current tenders once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "University of South Australia (UniSA) - Information for Suppliers / e-tendering",
+      "source_url": "https://www.unisa.edu.au/about-unisa/supplier-information/",
+      "source_type": "university",
+      "jurisdiction": "South Australia",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for Australian university procurement; UniSA requires submissions via its tendering Portal. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated university source. Landing URL inferred from search context and NOT verified; confirm the exact supplier/tender page once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "CQUniversity - CQU Supplier (tenders via QTenders)",
+      "source_url": "https://cqu.edu.au/engage/cqu-supplier",
+      "source_type": "university",
+      "jurisdiction": "Queensland",
+      "platform": "QTenders",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for Australian university procurement; CQUniversity receives tender submissions through the Queensland Government QTenders portal. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated university source routing tenders via QTenders. Verify once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "University of Southern Queensland (UniSQ) - Tenders (via QTenders)",
+      "source_url": "https://www.unisq.edu.au/about-unisq/contributing-to-communities/tenders",
+      "source_type": "university",
+      "jurisdiction": "Queensland",
+      "platform": "QTenders",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for Australian university procurement; UniSQ lists its open tenders on QTenders. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated university source routing tenders via QTenders. Verify once egress is restored.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Ballarat Health Services (VIC) - Supplier Relationship Management Portal",
+      "source_url": "https://www.australiantenders.com.au/tenders/304230/ballarat-health-services-supplier-relationship-management-portal",
+      "source_type": "health",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "low",
+      "how_discovered": "WebSearch sweep for Australian health service supplier portals; only reference found was a dated (~2017) aggregator listing pointing to a Ballarat Health Services SRM portal. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated health source but the only public reference is old and surfaced via an aggregator (used only as a discovery signal). The organisation has since been restructured (Grampians Health). Treat as low confidence and re-verify the buyer's own current portal once egress is restored; the source_url is the discovery signal, not a confirmed live buyer page.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "PanAust - Supplier procurement via SAP Ariba Network",
+      "source_url": "https://panaust.com.au/ariba",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (mining; QLD HQ, operations incl. Laos)",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch sweep for Australian mining/energy companies on SAP Ariba; PanAust and subsidiaries (incl. Phu Bia Mining) run supplier registration, RFQ/RFP and contract management through SAP Ariba. Not fetch-verified this run due to egress block.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated corporate e-sourcing channel. Individual opportunities are registration-gated on SAP Ariba (free supplier account); capture individual RFx only from an authenticated session. Portal recorded per Tier 3 requirement; no opportunity invented.",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "seen_dates": [
+        "2026-10-08"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
