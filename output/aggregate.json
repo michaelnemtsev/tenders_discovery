@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-10",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -107,38 +107,35 @@
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
   ],
-  "run_count": 107,
+  "run_count": 108,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-09",
-  "latest_coverage_summary": "All source tiers were attempted exactly as on prior runs (Tier 1 Commonwealth + all 8 state/territory portals; Tier 2 councils/VendorPanel/GBEs/water corps/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals), plus a dedicated source-discovery sweep. Connectivity was re-tested fresh at the start of this run: WebFetch to the Tier 1 control host www.tenders.gov.au returned EGRESS_BLOCKED; direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'; WebFetch to www.vendorpanel.com.au and to data.gov.au also returned EGRESS_BLOCKED. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only noProxy infrastructure hosts - Anthropic API, npm/PyPI/crates/go registries - are reachable). The proxy README states a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30 through 2026-10-08 runs - now the TENTH consecutive day (2026-09-30 to 2026-10-09). WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a Tier 1-3 source-discovery sweep. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced nine buyer-originated procurement sources not present in any prior run (Austal Australia; Luerssen Australia SEA 1180 supplier portal; Civmec supplier portal; St John of God Health Care; Shire of East Pilbara WA; Shire of Ashburton WA; Quilpie Shire Council QLD; Adelaide Plains Council SA; Hobart International Airport); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
+  "latest_run": "2026-10-10",
+  "latest_coverage_summary": "Discovery was severely constrained by the execution environment's network egress policy: all direct page fetches (WebFetch) to tender portals and buyer websites were blocked at the proxy (EGRESS_BLOCKED), including every Tier 1 government portal (AusTender, NSW, VIC, QLD, WA, SA, TAS, NT, ACT), VendorPanel, data.gov.au, and even generic domains. Only the WebSearch tool (which routes through Anthropic infrastructure, not the egress proxy) was available. WebSearch returned real buyer-originated source pages but no verifiably-current open opportunities: every dated tender surfaced had a closing date already in the past (ranging from March to early September 2026), so none could honestly be recorded as open. No tender detail pages or specification documents could be opened, so no deliverables/requirements extraction was possible this run. Tier 3 corporate channels were confirmed as login/registration-gated (SAP Ariba / SAP Business Network Discovery, Coupa, Tenderlink, EstimateOne) and are recorded as sources only, not fabricated as tenders. The run's useful yield was source discovery: several genuinely new buyer-originated public-sector sources were identified via search.",
   "latest_run_metadata": {
-    "run_date": "2026-10-09",
-    "coverage_summary": "All source tiers were attempted exactly as on prior runs (Tier 1 Commonwealth + all 8 state/territory portals; Tier 2 councils/VendorPanel/GBEs/water corps/universities/health; Tier 3 private-sector e-sourcing hubs and major-buyer portals), plus a dedicated source-discovery sweep. Connectivity was re-tested fresh at the start of this run: WebFetch to the Tier 1 control host www.tenders.gov.au returned EGRESS_BLOCKED; direct curl to www.tenders.gov.au returned 'CONNECT tunnel failed, response 403'; WebFetch to www.vendorpanel.com.au and to data.gov.au also returned EGRESS_BLOCKED. The agent-proxy status endpoint reports enabled=true, selective=false, bundleCoversEveryHost=true, recentRelayFailures empty, yet every external CONNECT is rejected (only noProxy infrastructure hosts - Anthropic API, npm/PyPI/crates/go registries - are reachable). The proxy README states a 403/407 from the proxy is an organisation egress-policy denial that must be reported and must NOT be retried or routed around. This is the SAME session-wide deny-by-default egress block seen on the 2026-09-30 through 2026-10-08 runs - now the TENTH consecutive day (2026-09-30 to 2026-10-09). WebSearch still works (it routes through the Anthropic API, not the egress proxy) and was used for a Tier 1-3 source-discovery sweep. Because the spec's fidelity rule requires every tender detail to be taken from the actual notice or its documents, and no notice or tender-detail page could be opened or verified, NO opportunity could be confirmed - so this run records ZERO tenders rather than repeating unverified aggregator/search snippets. The source-discovery sweep surfaced nine buyer-originated procurement sources not present in any prior run (Austal Australia; Luerssen Australia SEA 1180 supplier portal; Civmec supplier portal; St John of God Health Care; Shire of East Pilbara WA; Shire of Ashburton WA; Quilpie Shire Council QLD; Adelaide Plains Council SA; Hobart International Airport); all are recorded in discovered_sources with a clear note that they were surfaced via WebSearch and could NOT be fetch-verified this run due to the egress block. No tenders, deliverables, dates, contacts, or corporate opportunities were invented.",
-    "sources_checked": 0,
+    "run_date": "2026-10-10",
+    "coverage_summary": "Discovery was severely constrained by the execution environment's network egress policy: all direct page fetches (WebFetch) to tender portals and buyer websites were blocked at the proxy (EGRESS_BLOCKED), including every Tier 1 government portal (AusTender, NSW, VIC, QLD, WA, SA, TAS, NT, ACT), VendorPanel, data.gov.au, and even generic domains. Only the WebSearch tool (which routes through Anthropic infrastructure, not the egress proxy) was available. WebSearch returned real buyer-originated source pages but no verifiably-current open opportunities: every dated tender surfaced had a closing date already in the past (ranging from March to early September 2026), so none could honestly be recorded as open. No tender detail pages or specification documents could be opened, so no deliverables/requirements extraction was possible this run. Tier 3 corporate channels were confirmed as login/registration-gated (SAP Ariba / SAP Business Network Discovery, Coupa, Tenderlink, EstimateOne) and are recorded as sources only, not fabricated as tenders. The run's useful yield was source discovery: several genuinely new buyer-originated public-sector sources were identified via search.",
+    "sources_checked": 26,
     "tenders_found": 0,
-    "new_sources_found": 9,
+    "new_sources_found": 10,
     "entries_pending_detail": 0,
     "gaps": [
-      "Session-wide organisation egress block (10th consecutive day, 2026-09-30 to 2026-10-09): WebFetch returns EGRESS_BLOCKED and direct curl returns 'CONNECT tunnel failed, response 403' for every external host tested (www.tenders.gov.au, www.vendorpanel.com.au, data.gov.au). Only noProxy infrastructure hosts (Anthropic API, npm/PyPI/crates/go registries) are reachable.",
-      "Tier 1 (AusTender + all 8 state/territory portals): could NOT be fetched or verified - every detail page and feed/API is behind the egress block. No opportunities confirmed.",
-      "Tier 2 (councils/VendorPanel, GBEs, water corps, universities, health): could NOT be fetched or verified. Candidate sources were only surfaced via WebSearch snippets.",
-      "Tier 3 (SAP Ariba Discovery, Coupa, major-buyer portals BHP/Rio/Woodside/Woolworths/Coles/Qantas/banks/telcos/defence primes): could NOT be fetched or verified. Ariba Discovery and all corporate portals are unreachable; no publicly-advertised corporate RFx could be confirmed, so none recorded as tenders (per spec, gated/invitation-only corporate RFx are not invented).",
-      "WebSearch returns titles/snippets only and cannot substitute for opening the buyer's own notice; per the fidelity rule, snippet-only data is not treated as a confirmed opportunity.",
-      "New sources below were discovered via WebSearch only and are NOT fetch-verified this run; confidence is set accordingly and they should be re-verified once egress is restored.",
-      "Invitation-only corporate RFx (e.g. management-consultancy RFPs to Accenture/KPMG/Deloitte) remain out of scope and are not discoverable; noted here rather than fabricated."
+      "CRITICAL: WebFetch outbound egress is fully blocked by the environment's network policy. Every attempted fetch returned EGRESS_BLOCKED, including www.tenders.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au, www.vendorpanel.com.au, data.gov.au and en.wikipedia.org. No tender portal, detail page, or specification document could be retrieved. This is the same constraint that produced 0 tenders on the preceding daily runs (2026-10-05 to 2026-10-09).",
+      "Tier 1 government portals (AusTender + all 8 state/territory eTendering sites) could not be queried live. Their current open-tender lists were not retrievable; WebSearch only returned stale cached snapshots whose closing dates have passed.",
+      "No opportunity could be confirmed as currently open or published/updated in the last 7 days. All dated tenders found via search had closing dates in the past (e.g. WA regional bulletin items closing 8-9 Sep 2026; Victorian cached items closing Jul 2026; various council RFTs closing Feb-Mar 2026). None were recorded, to avoid presenting closed tenders as open.",
+      "Deliverables / requirements / evaluation-criteria extraction was impossible this run: detail pages and tender documents are only reachable via WebFetch, which is blocked.",
+      "Tier 3 private sector: SAP Ariba / SAP Business Network Discovery could not be queried for live Australian RFx (blocked + registration-gated). Major-buyer portals (BHP, Rio Tinto, Fortescue, Woolworths, Coles, Wesfarmers, Qantas, banks, telcos) expose opportunities only behind free supplier registration or invitation; no publicly-visible corporate RFx was confirmed. Invitation-only consultancy RFPs remain out of scope by definition.",
+      "VendorPanel public tenders (councils) could not be fetched; only individual council pages surfaced via search, all with past closing dates.",
+      "WebSearch is US-indexed and does not reliably reflect the current state of Australian tender portals, so even the source-discovery results may lag the live portals."
     ],
     "recommended_seed_additions": [
-      "Austal Australia - supplier registration via Gateway by ICN (australia.austal.com / austal.com/suppliers)",
-      "Luerssen Australia - SEA 1180 Offshore Patrol Vessels supplier portal (portal.luerssen.de)",
-      "Civmec - supplier portal (supplierportal.civmec.com.au)",
-      "St John of God Health Care - Supplying to SJOG (sjog.org.au)",
-      "Shire of East Pilbara (WA) - tenders via illion TenderLink (Newman Airport and other works)",
-      "Shire of Ashburton (WA) - public tender register (own site)",
-      "Quilpie Shire Council (QLD) - tenders via VendorPanel",
-      "Adelaide Plains Council (SA) - VendorPanel / LGA Procurement panels + SA Tenders and Contracts",
-      "Hobart International Airport Pty Ltd (TAS) - airfield/airport capital works procurement (needs a confirmed supplier/tender page)"
+      "Whitelist the Tier 1 tender domains (tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, qtenders.hpw.qld.gov.au, supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au) and vendorpanel.com.au in the environment's network egress policy so WebFetch can reach them — without this the routine cannot discover or detail tenders.",
+      "AusTender Supplier Portal (new federal supplier database; first tranche released Oct 2025, opening to all Australian businesses from 1 July 2026) — track as a Commonwealth source/channel change.",
+      "WA regional Development Commission tender bulletins (Kimberley, Goldfields-Esperance, Pilbara) as recurring regional discovery-signal publications pointing to buyer-originated listings.",
+      "Gippsland Water (gww.com.au) as a Victorian government-business-enterprise (water corporation) procurement source.",
+      "Wentworth Shire Council (NSW) local-government tenders page."
     ]
   },
   "months": [
@@ -38526,20 +38523,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender",
+      "source_name": "AusTender Supplier Portal (Commonwealth supplier database)",
       "source_url": "https://www.tenders.gov.au",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth of Australia",
+      "jurisdiction": "Commonwealth",
       "platform": "AusTender",
-      "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.gov.au/atm",
-      "is_new_source": false,
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; probed via WebSearch (Current ATM list). Verifiable Current-ATM page titles are the basis of all five captured tenders this run.",
-      "recommended_check_frequency": "daily",
-      "notes": "Detail pages (Atm/Show/<GUID>) are egress-blocked this run; only page <title> link text and WebSearch snippets are available.",
+      "how_discovered": "WebSearch for new Australian government procurement portals revealed the Department of Finance's new AusTender Supplier Portal (first tranche released October 2025; reported to open to all Australian businesses from 1 July 2026).",
+      "recommended_check_frequency": "monthly",
+      "notes": "A new searchable supplier database that agencies browse before going to market; it supplements, not replaces, AusTender approach-to-market publication. Tracks a material change to the Commonwealth procurement channel. Portal itself not fetchable this run (egress blocked).",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-10-10",
       "seen_dates": [
         "2026-07-26",
         "2026-08-15",
@@ -38552,11 +38549,12 @@
         "2026-09-15",
         "2026-09-20",
         "2026-09-21",
-        "2026-09-22"
+        "2026-09-22",
+        "2026-10-10"
       ],
-      "seen_count": 12,
+      "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -43824,8 +43822,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Luerssen Australia - SEA 1180 Offshore Patrol Vessels supplier portal",
@@ -43846,8 +43844,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Civmec - Supplier Portal",
@@ -43868,8 +43866,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "St John of God Health Care - Supplying to St John of God",
@@ -43890,8 +43888,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Shire of East Pilbara (WA) - Tenders (illion TenderLink)",
@@ -43912,8 +43910,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Shire of Ashburton (WA) - Public Tender Register",
@@ -43934,8 +43932,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Quilpie Shire Council (QLD) - Tenders (VendorPanel)",
@@ -43956,8 +43954,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Adelaide Plains Council (SA) - Supplying to Council (VendorPanel / LGA Procurement)",
@@ -43978,8 +43976,8 @@
         "2026-10-09"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Hobart International Airport (HIAPL) - Airport capital works procurement",
@@ -43998,6 +43996,204 @@
       "last_seen": "2026-10-09",
       "seen_dates": [
         "2026-10-09"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Wentworth Shire Council — Tenders",
+      "source_url": "https://www.wentworth.nsw.gov.au/",
+      "source_type": "gov-local",
+      "jurisdiction": "New South Wales",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced a current Wentworth Shire Council tender (Contract Reference PT2526/05) on the council's own website while searching NSW RFTs; the council publishes tenders directly on its own site.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated NSW local-government tender page. Could not be fetched this run (egress blocked); existence confirmed via search result only. The one item seen (PT2526/05) had already closed (2 Mar 2026).",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Gippsland Water — Suppliers & Contractors",
+      "source_url": "https://www.gww.com.au/about/corporate-information/suppliers-contractors",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Surfaced via WebSearch for Victorian water-corporation procurement; Gippsland Water (Central Gippsland Region Water Corporation) publishes supplier/contractor and tender information on its own corporate site.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Victorian government-owned water corporation (GBE). Buyer-originated. Page not fetchable this run due to egress block.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Murdoch University — Tenders",
+      "source_url": "https://www.murdoch.edu.au/explore/leadership-governance/supplying-to-murdoch/tenders",
+      "source_type": "university",
+      "jurisdiction": "Western Australia",
+      "platform": "Tenders WA",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian university procurement; Murdoch University runs its tenders through Tenders WA (free registration required) and documents this on its own 'Supplying to Murdoch' page.",
+      "recommended_check_frequency": "monthly",
+      "notes": "University buyer that publishes via the WA government portal. Individual opportunities require free Tenders WA registration. Not fetchable this run.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "University of the Sunshine Coast (UniSC) — Tenders",
+      "source_url": "https://www.unisc.edu.au/about/structure/divisions/financial-services/tenders",
+      "source_type": "university",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian university procurement portals; UniSC directs suppliers to register on VendorPanel via the Queensland Government supplier portal and lists tenders on its own Financial Services tenders page.",
+      "recommended_check_frequency": "monthly",
+      "notes": "University buyer publishing via VendorPanel / QLD supplier portal. Search surfaced a *wwwtest* staging URL; the canonical production path is used here. Not fetchable this run.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Australian Curriculum, Assessment and Reporting Authority (ACARA) — Tenders",
+      "source_url": "https://www.acara.edu.au/about-us/tenders",
+      "source_type": "public-sector-other",
+      "jurisdiction": "Commonwealth",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian education-sector procurement; ACARA (a Commonwealth statutory authority) maintains its own tenders page.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Commonwealth statutory authority (education). Buyer-originated tenders page. Not fetchable this run due to egress block.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Queensland Government — Resources public notices & tenders (business.qld.gov.au)",
+      "source_url": "https://www.business.qld.gov.au/industries/mining-energy-water/resources/landholders/public-notices-tenders/current-tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "Queensland",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for Queensland tenders; the QLD resources portal publishes competitive tenders for resource authorities / land areas separately from QTenders.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Niche QLD state channel for mining/resources authority tenders (competitive land-release / resource authority tenders), distinct from the main QTenders portal. Not fetchable this run.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Kimberley Development Commission — Regional Tender Opportunities bulletins",
+      "source_url": "https://www.kdc.wa.gov.au/",
+      "source_type": "public-sector-other",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "low",
+      "how_discovered": "WebSearch surfaced recurring 'Kimberley Tender Opportunities' PDF bulletins (most recent seen dated 07.09.2026) published by the Kimberley Development Commission, a WA statutory body.",
+      "recommended_check_frequency": "weekly",
+      "notes": "A WA government regional-development body that periodically publishes a consolidated bulletin of regional tender opportunities pointing to buyer-originated listings (Main Roads WA, WA Police, Dept of Housing, etc.). Use as a discovery signal — pivot to each buyer's own source. Items in the 07.09.2026 bulletin had already closed by run date.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Goldfields-Esperance Development Commission — Tender & Grant Opportunities bulletins",
+      "source_url": "https://www.gedc.wa.gov.au/",
+      "source_type": "public-sector-other",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "low",
+      "how_discovered": "WebSearch surfaced recurring 'Tender and grant opportunities' PDF bulletins published by the Goldfields-Esperance Development Commission (WA statutory body).",
+      "recommended_check_frequency": "weekly",
+      "notes": "WA regional-development body publishing periodic consolidated tender/grant bulletins. Discovery signal only — pivot to each named buyer's own source. Not fetchable this run.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Pilbara Development Commission — Tender Opportunities bulletins",
+      "source_url": "https://www.pdc.wa.gov.au/",
+      "source_type": "public-sector-other",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "low",
+      "how_discovered": "WebSearch surfaced 'Pilbara Tender Opportunities' bulletins published by the Pilbara Development Commission (WA statutory body).",
+      "recommended_check_frequency": "weekly",
+      "notes": "WA regional-development body publishing periodic consolidated tender bulletins. Discovery signal only — pivot to each named buyer's own source. Most recent example surfaced was dated 2025; not fetchable this run.",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "seen_dates": [
+        "2026-10-10"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
