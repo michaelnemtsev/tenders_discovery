@@ -65,7 +65,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ICT", "policing", "data-analytics", "nsw", "headline-only", "unverified-closing-date"],
+      "tags": [
+        "ICT",
+        "policing",
+        "data-analytics",
+        "nsw",
+        "headline-only",
+        "unverified-closing-date"
+      ],
       "first_seen": "2026-10-11",
       "detail_source": "",
       "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 626782, reference YR-2026-0162_B, marked 'Current Invited'); pivoted to the buyer-originated source (NSW Police Force on NSW eTendering / buy.nsw). Buyer reference pattern (YR-2026-...) is consistent with current NSW Police procurements.",
@@ -113,7 +120,15 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["professional-services", "commercial-advisory", "panel", "transport", "nsw", "headline-only", "unverified-closing-date"],
+      "tags": [
+        "professional-services",
+        "commercial-advisory",
+        "panel",
+        "transport",
+        "nsw",
+        "headline-only",
+        "unverified-closing-date"
+      ],
       "first_seen": "2026-10-11",
       "detail_source": "",
       "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 626903, marked current); pivoted to the buyer-originated source (Sydney Metro / Transport for NSW on NSW eTendering / buy.nsw).",
@@ -161,7 +176,14 @@
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
-      "tags": ["ppe", "safety-eyewear", "policing", "vic", "headline-only", "unverified-closing-date"],
+      "tags": [
+        "ppe",
+        "safety-eyewear",
+        "policing",
+        "vic",
+        "headline-only",
+        "unverified-closing-date"
+      ],
       "first_seen": "2026-10-11",
       "detail_source": "",
       "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 627671); pivoted to the buyer-originated source (Victoria Police on Buying for Victoria / tenders.vic.gov.au). Consistent with Victoria Police's published annual procurement plan.",

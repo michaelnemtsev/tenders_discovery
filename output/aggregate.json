@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -108,34 +108,34 @@
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
   ],
-  "run_count": 108,
+  "run_count": 109,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-10",
-  "latest_coverage_summary": "Discovery was severely constrained by the execution environment's network egress policy: all direct page fetches (WebFetch) to tender portals and buyer websites were blocked at the proxy (EGRESS_BLOCKED), including every Tier 1 government portal (AusTender, NSW, VIC, QLD, WA, SA, TAS, NT, ACT), VendorPanel, data.gov.au, and even generic domains. Only the WebSearch tool (which routes through Anthropic infrastructure, not the egress proxy) was available. WebSearch returned real buyer-originated source pages but no verifiably-current open opportunities: every dated tender surfaced had a closing date already in the past (ranging from March to early September 2026), so none could honestly be recorded as open. No tender detail pages or specification documents could be opened, so no deliverables/requirements extraction was possible this run. Tier 3 corporate channels were confirmed as login/registration-gated (SAP Ariba / SAP Business Network Discovery, Coupa, Tenderlink, EstimateOne) and are recorded as sources only, not fabricated as tenders. The run's useful yield was source discovery: several genuinely new buyer-originated public-sector sources were identified via search.",
+  "latest_run": "2026-10-11",
+  "latest_coverage_summary": "This run was again constrained by the environment's network egress policy: every direct page fetch (WebFetch) to tender portals and buyer websites failed at the proxy with DNS/egress errors (ENOTFOUND), including all Tier 1 government portals (AusTender and the 8 state/territory eTendering sites), VendorPanel, buy.nsw, tenders.vic and data.gov.au. Only WebSearch (which routes through Anthropic infrastructure, not the egress proxy) was available, and it is US-indexed so it reflects buyer portals imperfectly and with a lag. Within that limit the run did two useful things. (1) Opportunity discovery: WebSearch surfaced several buyer-originated procurements that discovery-signal aggregators list as currently active; three were corroborated enough to record at headline level (NSW Police Stage 2 CPS/CDAS, Sydney Metro Commercial Advisory Services Panel, Victoria Police prescription safety eyewear). Because no detail page could be opened and the specific closing dates traced back to aggregators (not the buyer notice), closing dates and IDs that could not be verified were left null and the reported values noted. All three are counted in entries_pending_detail. (2) Source discovery: three genuinely new buyer-originated sources were identified with real URLs (CBH Group e-tender portal, Ports Victoria procurement, Victoria Police Annual Procurement Plan). Tier 3 was checked (SAP Ariba/Business Network Discovery, BHP GCMS+Ariba, Fortescue Ariba, CBH) and found registration/invitation-gated; no publicly-visible corporate RFx was confirmed, so none were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-10-10",
-    "coverage_summary": "Discovery was severely constrained by the execution environment's network egress policy: all direct page fetches (WebFetch) to tender portals and buyer websites were blocked at the proxy (EGRESS_BLOCKED), including every Tier 1 government portal (AusTender, NSW, VIC, QLD, WA, SA, TAS, NT, ACT), VendorPanel, data.gov.au, and even generic domains. Only the WebSearch tool (which routes through Anthropic infrastructure, not the egress proxy) was available. WebSearch returned real buyer-originated source pages but no verifiably-current open opportunities: every dated tender surfaced had a closing date already in the past (ranging from March to early September 2026), so none could honestly be recorded as open. No tender detail pages or specification documents could be opened, so no deliverables/requirements extraction was possible this run. Tier 3 corporate channels were confirmed as login/registration-gated (SAP Ariba / SAP Business Network Discovery, Coupa, Tenderlink, EstimateOne) and are recorded as sources only, not fabricated as tenders. The run's useful yield was source discovery: several genuinely new buyer-originated public-sector sources were identified via search.",
-    "sources_checked": 26,
-    "tenders_found": 0,
-    "new_sources_found": 10,
-    "entries_pending_detail": 0,
+    "run_date": "2026-10-11",
+    "coverage_summary": "This run was again constrained by the environment's network egress policy: every direct page fetch (WebFetch) to tender portals and buyer websites failed at the proxy with DNS/egress errors (ENOTFOUND), including all Tier 1 government portals (AusTender and the 8 state/territory eTendering sites), VendorPanel, buy.nsw, tenders.vic and data.gov.au. Only WebSearch (which routes through Anthropic infrastructure, not the egress proxy) was available, and it is US-indexed so it reflects buyer portals imperfectly and with a lag. Within that limit the run did two useful things. (1) Opportunity discovery: WebSearch surfaced several buyer-originated procurements that discovery-signal aggregators list as currently active; three were corroborated enough to record at headline level (NSW Police Stage 2 CPS/CDAS, Sydney Metro Commercial Advisory Services Panel, Victoria Police prescription safety eyewear). Because no detail page could be opened and the specific closing dates traced back to aggregators (not the buyer notice), closing dates and IDs that could not be verified were left null and the reported values noted. All three are counted in entries_pending_detail. (2) Source discovery: three genuinely new buyer-originated sources were identified with real URLs (CBH Group e-tender portal, Ports Victoria procurement, Victoria Police Annual Procurement Plan). Tier 3 was checked (SAP Ariba/Business Network Discovery, BHP GCMS+Ariba, Fortescue Ariba, CBH) and found registration/invitation-gated; no publicly-visible corporate RFx was confirmed, so none were fabricated.",
+    "sources_checked": 24,
+    "tenders_found": 3,
+    "new_sources_found": 3,
+    "entries_pending_detail": 3,
     "gaps": [
-      "CRITICAL: WebFetch outbound egress is fully blocked by the environment's network policy. Every attempted fetch returned EGRESS_BLOCKED, including www.tenders.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au, www.vendorpanel.com.au, data.gov.au and en.wikipedia.org. No tender portal, detail page, or specification document could be retrieved. This is the same constraint that produced 0 tenders on the preceding daily runs (2026-10-05 to 2026-10-09).",
-      "Tier 1 government portals (AusTender + all 8 state/territory eTendering sites) could not be queried live. Their current open-tender lists were not retrievable; WebSearch only returned stale cached snapshots whose closing dates have passed.",
-      "No opportunity could be confirmed as currently open or published/updated in the last 7 days. All dated tenders found via search had closing dates in the past (e.g. WA regional bulletin items closing 8-9 Sep 2026; Victorian cached items closing Jul 2026; various council RFTs closing Feb-Mar 2026). None were recorded, to avoid presenting closed tenders as open.",
-      "Deliverables / requirements / evaluation-criteria extraction was impossible this run: detail pages and tender documents are only reachable via WebFetch, which is blocked.",
-      "Tier 3 private sector: SAP Ariba / SAP Business Network Discovery could not be queried for live Australian RFx (blocked + registration-gated). Major-buyer portals (BHP, Rio Tinto, Fortescue, Woolworths, Coles, Wesfarmers, Qantas, banks, telcos) expose opportunities only behind free supplier registration or invitation; no publicly-visible corporate RFx was confirmed. Invitation-only consultancy RFPs remain out of scope by definition.",
-      "VendorPanel public tenders (councils) could not be fetched; only individual council pages surfaced via search, all with past closing dates.",
-      "WebSearch is US-indexed and does not reliably reflect the current state of Australian tender portals, so even the source-discovery results may lag the live portals."
+      "CRITICAL: WebFetch outbound egress is fully blocked by the environment's network policy. Every attempted fetch returned a DNS failure (ENOTFOUND), including www.tenders.gov.au and www.vendorpanel.com.au. No tender portal, detail page, or specification document could be retrieved. This is the same constraint that produced 0 tenders on 2026-10-05 through 2026-10-10.",
+      "Tier 1 government portals (AusTender + all 8 state/territory eTendering sites) could not be queried live; buy.nsw and tenders.vic are JavaScript-rendered so WebSearch returned only partial/stale snippets of their open-tender lists.",
+      "Detail/deliverables/requirements/evaluation-criteria extraction was impossible this run (detail pages and tender documents are only reachable via WebFetch, which is blocked). The three recorded tenders are headline-level only.",
+      "Closing dates and tender IDs for the recorded tenders could NOT be verified against the buyer's own notice. Specific dates surfaced by WebSearch traced back to discovery-signal aggregators (australiantenders.com.au), which must not be treated as source of truth; those dates were therefore left null in the date fields and reported in notes as unverified.",
+      "Tier 3 private sector: SAP Ariba / SAP Business Network Discovery, BHP (GCMS + SAP Ariba), Fortescue (SAP Ariba Network), Rio Tinto and CBH expose opportunities only behind free supplier registration or invitation; no publicly-visible corporate RFx was confirmed. Invitation-only consultancy RFPs remain out of scope by definition.",
+      "Leads seen via search but NOT corroborated as currently open, so deliberately not recorded as tenders: Brisbane City Council November items (Botanic Gardens river access, Walter Taylor Bridge scaffold, ex-TC Alfred sports-field remediation pkg 3, traffic signal hardware) — a targeted follow-up could only confirm Aug 2026 closings and BCC's move to SAP Ariba; Fraser Coast Regional Council water-reservoir roof replacements (reported closing 11 Nov 2026); DEECA property cleaning (reported 10 Dec 2026); Ports Victoria Station Pier fender upgrade (reported 30 Nov 2026); South Gippsland Water Riflebutts Rd SPS (reported 17 Nov 2026); NSW Premier's Department Facilities Management (could not corroborate — likely a mismatch); CFA Cann Valley Fire Station alterations (could not corroborate).",
+      "WebSearch is US-indexed and does not reliably reflect the live state of Australian tender portals, so even the source-discovery and opportunity results may lag the portals."
     ],
     "recommended_seed_additions": [
-      "Whitelist the Tier 1 tender domains (tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, qtenders.hpw.qld.gov.au, supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au) and vendorpanel.com.au in the environment's network egress policy so WebFetch can reach them — without this the routine cannot discover or detail tenders.",
-      "AusTender Supplier Portal (new federal supplier database; first tranche released Oct 2025, opening to all Australian businesses from 1 July 2026) — track as a Commonwealth source/channel change.",
-      "WA regional Development Commission tender bulletins (Kimberley, Goldfields-Esperance, Pilbara) as recurring regional discovery-signal publications pointing to buyer-originated listings.",
-      "Gippsland Water (gww.com.au) as a Victorian government-business-enterprise (water corporation) procurement source.",
-      "Wentworth Shire Council (NSW) local-government tenders page."
+      "Whitelist the Tier 1 tender domains (tenders.gov.au, tenders.nsw.gov.au/buy.nsw.gov.au, tenders.vic.gov.au, qtenders.hpw.qld.gov.au, supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au) and vendorpanel.com.au in the environment's network egress policy — without WebFetch access the routine cannot detail or verify tenders.",
+      "CBH Group e-tender portal (cbh.com.au/suppliers/e-tender-portal) — WA grain-handling co-operative; buyer-originated corporate e-tender channel.",
+      "Ports Victoria procurement (ports.vic.gov.au) — Victorian port GBE publishing a FY26-FY27 procurement activity plan; open tenders listed on Buying for Victoria; contact procurement@ports.vic.gov.au.",
+      "Victoria Police Annual Procurement Plan (police.vic.gov.au/annual-procurement-plan) — buyer-originated forward procurement plan / market-sounding signal."
     ]
   },
   "months": [
@@ -157,6 +157,11 @@
     {
       "month": "2026-09",
       "new_tenders": 193,
+      "active_tenders": 0
+    },
+    {
+      "month": "2026-10",
+      "new_tenders": 3,
       "active_tenders": 0
     }
   ],
@@ -34579,6 +34584,193 @@
       "seen_count": 1,
       "is_new_in_latest": false,
       "active_in_latest": false
+    },
+    {
+      "dedup_key": "NSW-eTendering:YR-2026-0162_B",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": "YR-2026-0162_B",
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "free-registration",
+      "title": "Stage 2 — Core Policing Solution (CPS) and Core Data and Analytics Services (CDAS)",
+      "buyer": "NSW Police Force",
+      "buyer_url": "https://www.police.nsw.gov.au/",
+      "category": "ICT — core policing / data and analytics services",
+      "category_codes": [],
+      "procurement_type": "RFP",
+      "current_status": "open",
+      "description": "NSW Police Force procurement for Stage 2 of its Core Policing Solution (CPS) and Core Data and Analytics Services (CDAS). Listed by a discovery-signal aggregator as a current 'invited' opportunity open to CDAS suppliers.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Selective — listed as 'Current Invited'; appears open to CDAS panel / invited suppliers rather than fully open to the market.",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": null,
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via NSW eTendering / buy.nsw (registration required)",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "ICT",
+        "policing",
+        "data-analytics",
+        "nsw",
+        "headline-only",
+        "unverified-closing-date"
+      ],
+      "first_seen": "2026-10-11",
+      "detail_source": "",
+      "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 626782, reference YR-2026-0162_B, marked 'Current Invited'); pivoted to the buyer-originated source (NSW Police Force on NSW eTendering / buy.nsw). Buyer reference pattern (YR-2026-...) is consistent with current NSW Police procurements.",
+      "notes": "Headline-level only. WebFetch egress is blocked, so the buy.nsw detail page could not be opened and no deliverables/requirements could be extracted. The closing date reported by the discovery-signal source (~20 Oct 2026) could not be verified against the live notice and is therefore left null. tender_id is taken from the aggregator reference and should be reconfirmed on buy.nsw.",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "NSW-eTendering:sydney-metro-commercial-advisory-services-panel-2026",
+      "source_name": "buy.nsw / NSW eTendering",
+      "source_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "source_type": "gov-state",
+      "jurisdiction": "New South Wales",
+      "state": "NSW",
+      "tender_id": null,
+      "tender_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "access": "free-registration",
+      "title": "Commercial Advisory Services Panel",
+      "buyer": "Sydney Metro (Transport for NSW)",
+      "buyer_url": "https://www.sydneymetro.info/",
+      "category": "Professional services — commercial advisory",
+      "category_codes": [],
+      "procurement_type": "panel",
+      "current_status": "open",
+      "description": "Sydney Metro establishment of a panel of specialist commercial advisors to assist in preventing, managing and resolving claims and variations on its projects (per discovery-signal listing). Listed as a current request for tender / panel arrangement.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open to the market (panel establishment).",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": null,
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via NSW eTendering / buy.nsw (registration required)",
+      "lodgement_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "New South Wales (Sydney Metro program)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "professional-services",
+        "commercial-advisory",
+        "panel",
+        "transport",
+        "nsw",
+        "headline-only",
+        "unverified-closing-date"
+      ],
+      "first_seen": "2026-10-11",
+      "detail_source": "",
+      "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 626903, marked current); pivoted to the buyer-originated source (Sydney Metro / Transport for NSW on NSW eTendering / buy.nsw).",
+      "notes": "Headline-level only. WebFetch egress is blocked, so the detail page could not be opened. A reference of SMC-26-1594 and a closing date of ~26 Oct 2026 were reported by the first broad search but could NOT be corroborated on follow-up, so both tender_id and closing_date are left null pending verification on buy.nsw.",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "Buying-for-Victoria:victoria-police-prescription-safety-eyewear-2026",
+      "source_name": "Buying for Victoria (tenders.vic.gov.au)",
+      "source_url": "https://www.tenders.vic.gov.au/tenders/open",
+      "source_type": "gov-state",
+      "jurisdiction": "Victoria",
+      "state": "VIC",
+      "tender_id": null,
+      "tender_url": "https://www.tenders.vic.gov.au/tenders/open",
+      "access": "public",
+      "title": "Prescription Safety Eyewear",
+      "buyer": "Victoria Police",
+      "buyer_url": "https://www.police.vic.gov.au/",
+      "category": "Personal protective equipment — prescription safety eyewear",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Victoria Police procurement for the supply of prescription safety eyewear for eligible Victoria Police members (per discovery-signal listing).",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open to the market.",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": null,
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via Buying for Victoria (tenders.vic.gov.au)",
+      "lodgement_url": "https://www.tenders.vic.gov.au/tenders/open",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Victoria",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "ppe",
+        "safety-eyewear",
+        "policing",
+        "vic",
+        "headline-only",
+        "unverified-closing-date"
+      ],
+      "first_seen": "2026-10-11",
+      "detail_source": "",
+      "reasoning": "Discovered via discovery-signal aggregator (australiantenders.com.au listing ID 627671); pivoted to the buyer-originated source (Victoria Police on Buying for Victoria / tenders.vic.gov.au). Consistent with Victoria Police's published annual procurement plan.",
+      "notes": "Headline-level only. WebFetch egress is blocked, so the tenders.vic detail page could not be opened. No closing date was shown on the discovery-signal listing; a value of ~9 Nov 2026 reported by the first broad search could not be verified, so closing_date is left null.",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
     }
   ],
   "discovered_sources": [
@@ -35231,27 +35423,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Fortescue — Supplier Centre",
+      "source_name": "Fortescue — Supplier Centre (SAP Ariba Network)",
       "source_url": "https://fortescue.com/suppliers",
       "source_type": "corporate",
-      "jurisdiction": "Australia (global buyer)",
-      "platform": "SAP-Ariba / prequalification",
+      "jurisdiction": "Western Australia",
+      "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 mining sweep; Fortescue requires supplier pre-qualification and sources local suppliers via ICN/ePilbara for projects (Iron Bridge, Decarbonisation, Gibson Island).",
-      "recommended_check_frequency": "weekly",
-      "notes": "Registration-gated; individual sourcing events require an authenticated account. No public RFx captured.",
+      "how_discovered": "Tier 3 mandatory check: reconfirmed via WebSearch that Fortescue is a member of the SAP Ariba Network and runs supplier onboarding/RFx through it.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Known Tier 3 buyer portal, recorded to document Tier 3 coverage. Registration-gated; no publicly-visible RFx confirmed this run.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-10-11",
       "seen_dates": [
         "2026-06-26",
-        "2026-06-27"
+        "2026-06-27",
+        "2026-10-11"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Woodside Energy — Suppliers",
@@ -38554,7 +38747,7 @@
       ],
       "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -44020,8 +44213,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Gippsland Water — Suppliers & Contractors",
@@ -44042,8 +44235,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Murdoch University — Tenders",
@@ -44064,8 +44257,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "University of the Sunshine Coast (UniSC) — Tenders",
@@ -44086,8 +44279,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Australian Curriculum, Assessment and Reporting Authority (ACARA) — Tenders",
@@ -44108,8 +44301,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Queensland Government — Resources public notices & tenders (business.qld.gov.au)",
@@ -44130,8 +44323,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Kimberley Development Commission — Regional Tender Opportunities bulletins",
@@ -44152,8 +44345,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Goldfields-Esperance Development Commission — Tender & Grant Opportunities bulletins",
@@ -44174,8 +44367,8 @@
         "2026-10-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Pilbara Development Commission — Tender Opportunities bulletins",
@@ -44194,6 +44387,94 @@
       "last_seen": "2026-10-10",
       "seen_dates": [
         "2026-10-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "CBH Group — E-Tender Portal",
+      "source_url": "https://cbh.com.au/suppliers/e-tender-portal",
+      "source_type": "corporate",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian resource/agribusiness supplier portals surfaced CBH Group's dedicated 'E-Tender Portal' on its own suppliers site while searching mining/resources buyers.",
+      "recommended_check_frequency": "monthly",
+      "notes": "CBH Group is a large WA grain-handling and marketing co-operative. Buyer-originated corporate e-tender channel; individual opportunities are behind portal registration. Could not be fetched this run (egress blocked); existence confirmed via search result only.",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Ports Victoria — Procurement / Procurement Activity Plan",
+      "source_url": "https://ports.vic.gov.au/",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Victorian port/water GBE procurement surfaced Ports Victoria's published FY26-FY27 procurement activity plan (ports.vic.gov.au) listing upcoming invitations to tender (e.g. Station Pier security/traffic management, operational technology maintenance).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Victorian port corporation (GBE). Publishes a forward procurement activity plan on its own site and lists open tenders on Buying for Victoria; procurement contact procurement@ports.vic.gov.au. Buyer-originated. Plan PDF not fetchable this run (egress blocked).",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Victoria Police — Annual Procurement Plan",
+      "source_url": "https://www.police.vic.gov.au/annual-procurement-plan",
+      "source_type": "gov-state",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Victoria Police procurement surfaced the force's own 'Annual Procurement Plan' page listing planned sourcing activity; it complements the opportunities Victoria Police publishes on Buying for Victoria.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated forward procurement plan (market-sounding / discovery signal) for a major Victorian buyer. Use to anticipate upcoming RFx, then pivot to tenders.vic for the live notice. Not fetchable this run (egress blocked).",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "BHP — Supplier opportunities (GCMS + SAP Ariba / SAP Business Network)",
+      "source_url": "https://www.bhp.com/suppliers/new-and-existing-suppliers",
+      "source_type": "corporate",
+      "jurisdiction": "Australia (national / global)",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Tier 3 mandatory check: reconfirmed via WebSearch that BHP runs RFQ/tender activity through GCMS (Global Contract Management System) with an SAP Business Network (Ariba) account; invitations are issued to the portal by email.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Known Tier 3 buyer portal, recorded to document that Tier 3 was checked. Opportunities are registration/invitation-gated; no publicly-visible RFx was confirmed this run and none were fabricated.",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
