@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20",
+  "generated": "2026-10-21",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -118,40 +118,35 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ],
-  "run_count": 118,
+  "run_count": 119,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-20",
-  "latest_coverage_summary": "WebSearch-only run under the environment's unchanged global outbound-egress block (re-verified this run: WebFetch to www.tenders.gov.au and www.tenders.vic.gov.au both failed with DNS ENOTFOUND; the agent-proxy status endpoint reports enabled=true with zero recent relay failures - a deliberate network-policy denial, not a transient fault). Consequently NO live tender detail page or specification document could be opened on ANY portal, so all 25 recorded opportunities are headline-level only (all counted in entries_pending_detail) with no deliverables/requirements/evaluation-criteria/documents/contacts extraction. WebSearch (routed via Anthropic infrastructure, not the egress proxy) was the only working tool; it is US-indexed and lags the live Australian portals, so IDs and closing dates come from cached snippets and must be re-confirmed. Captured 25 open opportunities (10 newly-seen this run, 15 carried from prior runs and re-confirmed open). New this run: Victoria/Buying for Victoria (3: Ports Victoria Station Pier marine infrastructure maintenance T421508, DEECA property-portfolio cleaning T2026-0812, Mallee CMA hydrological investigations RFT00000031), NSW/buy.nsw (1: Service NSW Small Business Advisory Services SNSW/9635), WA/Tenders WA (2: Water Corporation Engineering Design Services Panel 7000015483, Dept of Communities Perth Aboriginal Short Stay Accommodation DOC202226457), local government (4: Mildura RCC Meridian Road reconstruction 2027/333 via VendorPanel, Bundaberg RCC Supply of Bedding Sand TEN/3093 via VendorPanel, Brisbane City Council landscaping RFP and road-construction RFP via the council's own current-tenders channel). Carried/re-confirmed open: VIC Victoria Police eyewear T5956; NSW Homes NSW Granville (LAHC 2026/534) and Grafton (LAHC 2026/510), Blacktown cleaning C41/2026, Local Land Services statewide pest-animal panel P_2621542; QLD Bundaberg TEN/3109 and TEN/3131; WA Police WAPOL13726 and two PTA works (PROPTA26020, PTA260048); NT/QTOL five (T26-1265, T26-1274, NTG26-0202, T26-1314, NT Police/Fire vessel-packages panel). Tier 3 (mandatory) was checked: SAP Ariba Discovery / SAP Business Network Discovery exposed no publicly-visible Australian RFx (registration-gated); the major retail/energy buyers (Woolworths, Coles, AGL, Origin) and EstimateOne construction packages (one Marsden Park Anglican College scaffolding package, close 30 Oct, login-gated) exposed no publicly-readable open RFx - corporate portals are retained in the known source set and NO corporate opportunities were fabricated. Source discovery: four genuinely new buyer-originated sources recorded (Mildura Rural City Council, Capital Health Network/ACT PHN, Horizon Power/WA GBE, Toward Home Alliance/SA NFP), plus a note on the 2026 Commonwealth contractor-panel reform.",
+  "latest_run": "2026-10-21",
+  "latest_coverage_summary": "SEVERELY DEGRADED RUN. The execution environment enforced a global outbound-egress block: WebFetch failed DNS resolution for every host and direct HTTPS (curl) returned 403 CONNECT-rejected for all destinations including google.com, so NO tender portal or detail page could be opened. The only working external channel was WebSearch (routed via Anthropic infrastructure), which returns titles/URLs and model-summarised snippets but cannot query live portals, follow pagination, or open detail/specification documents. Tier 1 (AusTender, buy.nsw, Buying for Victoria, Tenders ACT/WA/SA, QTenders, NT QTOL), Tier 2 (VendorPanel, councils, GBEs) and Tier 3 (SAP Ariba/Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, Woolworths/Coles) were all attempted via WebSearch only. Five currently-open opportunities previously captured (when WebFetch worked) were independently re-corroborated as still open via WebSearch and are carried forward at headline level; no new deliverables detail could be extracted. Five new buyer-originated local-government sources were identified.",
   "latest_run_metadata": {
-    "run_date": "2026-10-20",
-    "coverage_summary": "WebSearch-only run under the environment's unchanged global outbound-egress block (re-verified this run: WebFetch to www.tenders.gov.au and www.tenders.vic.gov.au both failed with DNS ENOTFOUND; the agent-proxy status endpoint reports enabled=true with zero recent relay failures - a deliberate network-policy denial, not a transient fault). Consequently NO live tender detail page or specification document could be opened on ANY portal, so all 25 recorded opportunities are headline-level only (all counted in entries_pending_detail) with no deliverables/requirements/evaluation-criteria/documents/contacts extraction. WebSearch (routed via Anthropic infrastructure, not the egress proxy) was the only working tool; it is US-indexed and lags the live Australian portals, so IDs and closing dates come from cached snippets and must be re-confirmed. Captured 25 open opportunities (10 newly-seen this run, 15 carried from prior runs and re-confirmed open). New this run: Victoria/Buying for Victoria (3: Ports Victoria Station Pier marine infrastructure maintenance T421508, DEECA property-portfolio cleaning T2026-0812, Mallee CMA hydrological investigations RFT00000031), NSW/buy.nsw (1: Service NSW Small Business Advisory Services SNSW/9635), WA/Tenders WA (2: Water Corporation Engineering Design Services Panel 7000015483, Dept of Communities Perth Aboriginal Short Stay Accommodation DOC202226457), local government (4: Mildura RCC Meridian Road reconstruction 2027/333 via VendorPanel, Bundaberg RCC Supply of Bedding Sand TEN/3093 via VendorPanel, Brisbane City Council landscaping RFP and road-construction RFP via the council's own current-tenders channel). Carried/re-confirmed open: VIC Victoria Police eyewear T5956; NSW Homes NSW Granville (LAHC 2026/534) and Grafton (LAHC 2026/510), Blacktown cleaning C41/2026, Local Land Services statewide pest-animal panel P_2621542; QLD Bundaberg TEN/3109 and TEN/3131; WA Police WAPOL13726 and two PTA works (PROPTA26020, PTA260048); NT/QTOL five (T26-1265, T26-1274, NTG26-0202, T26-1314, NT Police/Fire vessel-packages panel). Tier 3 (mandatory) was checked: SAP Ariba Discovery / SAP Business Network Discovery exposed no publicly-visible Australian RFx (registration-gated); the major retail/energy buyers (Woolworths, Coles, AGL, Origin) and EstimateOne construction packages (one Marsden Park Anglican College scaffolding package, close 30 Oct, login-gated) exposed no publicly-readable open RFx - corporate portals are retained in the known source set and NO corporate opportunities were fabricated. Source discovery: four genuinely new buyer-originated sources recorded (Mildura Rural City Council, Capital Health Network/ACT PHN, Horizon Power/WA GBE, Toward Home Alliance/SA NFP), plus a note on the 2026 Commonwealth contractor-panel reform.",
-    "sources_checked": 24,
-    "tenders_found": 25,
-    "new_sources_found": 4,
-    "entries_pending_detail": 25,
+    "run_date": "2026-10-21",
+    "coverage_summary": "SEVERELY DEGRADED RUN. The execution environment enforced a global outbound-egress block: WebFetch failed DNS resolution for every host and direct HTTPS (curl) returned 403 CONNECT-rejected for all destinations including google.com, so NO tender portal or detail page could be opened. The only working external channel was WebSearch (routed via Anthropic infrastructure), which returns titles/URLs and model-summarised snippets but cannot query live portals, follow pagination, or open detail/specification documents. Tier 1 (AusTender, buy.nsw, Buying for Victoria, Tenders ACT/WA/SA, QTenders, NT QTOL), Tier 2 (VendorPanel, councils, GBEs) and Tier 3 (SAP Ariba/Business Network Discovery, BHP/Rio Tinto/Fortescue/Woodside, Woolworths/Coles) were all attempted via WebSearch only. Five currently-open opportunities previously captured (when WebFetch worked) were independently re-corroborated as still open via WebSearch and are carried forward at headline level; no new deliverables detail could be extracted. Five new buyer-originated local-government sources were identified.",
+    "sources_checked": 14,
+    "tenders_found": 5,
+    "new_sources_found": 5,
+    "entries_pending_detail": 5,
     "gaps": [
-      "EGRESS POLICY BLOCK (global, unchanged): the environment network policy denies all outbound HTTPS to external hosts. WebFetch to www.tenders.gov.au/atm and www.tenders.vic.gov.au both failed with DNS ENOTFOUND; the proxy status endpoint reports enabled=true with zero recent relay failures, confirming a policy denial, not a transient error. Not retried per proxy guidance.",
-      "No tender detail page, specification document or portal listing page could be opened on ANY source, so all 25 recorded opportunities are headline-level only - deliverables, requirements, evaluation criteria, documents, contacts and exact value/contract terms could not be extracted from primary sources. Every opportunity is flagged UNVERIFIED-AT-DETAIL; IDs and closing dates come from WebSearch cached snippets and should be re-confirmed on the live portal when connectivity is restored.",
-      "Commonwealth AusTender (tenders.gov.au): no currently-open Commonwealth approach-to-market closing in the target window could be confirmed this run - WebSearch returned only general guidance, reform notices and older/closed ATMs, and the live portal is unreachable under the egress block. Commonwealth Tier 1 effectively deferred this run.",
-      "Tenders SA (tenders.sa.gov.au): the live portal is unreachable and searches collided with South African tender sites and aggregators; no open South Australian STATE government tender could be confirmed against the buyer portal. SA state Tier 1 deferred.",
-      "Tenders Tasmania (tenders.tas.gov.au) and Tenders ACT (tenders.act.gov.au): only closed/awarded items or aggregator pages surfaced; no open state/territory tender with a confirmable November-December 2026 close could be captured against the buyer portal. An aggregator-listed City of Launceston 'Blue Cafe and Deck Renewal' (~13 Nov 2026) could not be confirmed and was NOT captured. TAS and ACT state/territory Tier 1 deferred.",
-      "Queensland state (QTenders / supply.qld.gov.au): WebSearch surfaced mostly aggregators and closed listings (e.g. VP5xxxxx references); no open QTenders STATE tender with a confirmable Nov-Dec 2026 close could be captured against the buyer portal. Only Brisbane City Council's own current-tenders channel yielded capturable (reference-less) local-government items. QLD state Tier 1 deferred.",
-      "GBEs / government-owned corporations (Sydney Water, Melbourne Water, Transgrid, Ausgrid, Australia Post, NBN Co, SA Water, etc.) were searched but returned only closed, awarded or stale listings via aggregators; only Water Corporation (WA) Engineering Design Services Panel (via Tenders WA) and an unconfirmed Horizon Power PPA EOI could be associated with a buyer portal. The rest deferred to future runs when live-portal access is available.",
-      "Universities, TAFEs and CSIRO: searched but returned only closed/stale aggregator listings (CQUniversity, Monash, Adelaide, QUT, UTS, ANU) with no confirmable open closing date against a buyer portal. Deferred.",
-      "Public health (HealthShare NSW, state Local Health Districts, Queensland Health): searched but only aggregator pages with ambiguous dates surfaced (e.g. a HealthShare NSW pharmaceuticals RFT ~8 Nov 2026 and a WA anaesthetic-workstations panel ~6 Nov 2026 with no confirmable buyer-portal IDs); none captured to avoid fabricating detail. Deferred.",
-      "Tier 3 corporate: SAP Ariba Discovery / SAP Business Network Discovery exposed no publicly-visible open Australian RFx via search (registration-gated); major retail/energy/bank/telco buyers (Woolworths, Coles, AGL, Origin, CBA, Telstra et al.) exposed no publicly-readable open RFx; EstimateOne construction packages are login-gated (one Marsden Park Anglican College scaffolding package ~30 Oct 2026 seen at headline but not readable). Portals retained in the known source set only; invitation-only consultancy RFPs remain out of scope and were not fabricated.",
-      "Carried first_seen marker: the 15 carried opportunities are written with first_seen=2026-10-19 as a 'previously seen' placeholder; scripts/aggregate.js recomputes true first_seen from the earliest daily snapshot containing each dedup_key, so aggregate.json remains accurate.",
-      "Restore live-portal access (lift the outbound-egress block, or run an authenticated/unblocked pass) so detail pages and specification documents can be opened - without it every run is limited to headline-level, search-cached rows and cannot extract deliverables, requirements or evaluation criteria."
+      "CRITICAL TOOLING OUTAGE: WebFetch returned getaddrinfo ENOTFOUND for every host (including en.wikipedia.org); curl via the agent proxy returned 403 connect_rejected for every destination tested including www.google.com, www.tenders.gov.au and www.tenders.nsw.gov.au. Outbound egress is blocked for this session, so no live tender portal, detail page or specification document could be opened. Only WebSearch was available.",
+      "Because detail pages were unreachable, NO deliverables/requirements/evaluation/document extraction was possible this run. All 5 tenders are headline-level only and counted in entries_pending_detail; their headline fields were re-confirmed from WebSearch snippets of buyer-originated portals and must be re-verified on the live portals.",
+      "Tier 1 live portals (AusTender, buy.nsw, tenders.vic, tenders.act, tenders.wa, tenders.sa, QTenders/supply.qld, NT QTOL) could not be crawled; only cached search snippets were visible. Exhaustive Tier 1 coverage was NOT achieved this run.",
+      "WA: an official tenders.wa.gov.au snippet showed only a maintenance/closure notice; specific WA opportunities (e.g. Dept of Justice waste-disposal tenders, Gold Corporation geotechnical assessments) appeared ONLY via third-party aggregators (australiantenders.com.au, govmarket.com.au, govscanner.com.au) and could not be confirmed on the buyer portal, so they were NOT recorded as tenders (aggregator data is a discovery signal only).",
+      "Tier 3 private sector: SAP Business Network Discovery (formerly SAP Ariba Discovery, service.ariba.com/Discovery.aw) and major-buyer portals (BHP, Rio Tinto, Fortescue, Woodside, Woolworths, Coles) are registration/login-gated and were not reachable; no publicly-visible corporate RFx could be confirmed. No corporate opportunities were invented. These portals remain recorded in prior discovered_sources.",
+      "Invitation-only corporate RFx (e.g. management-consultancy RFPs) remain out of scope and were not fabricated.",
+      "De-duplication: the 5 carried-forward tenders reuse their existing dedup_keys; the aggregate retains their original first_seen (2026-10-16..2026-10-20) via min-date folding even though first_seen is set to the run date in this file."
     ],
     "recommended_seed_additions": [
-      "Mildura Rural City Council (VIC) - publishes civil/flood-recovery works via VendorPanel; a regional-Victorian local-government channel that returned a concrete, well-dated open tender this run (ref 2027/333). Worth adding as a weekly-checked source.",
-      "Capital Health Network (chnact.org.au/tenders) - the ACT Primary Health Network; publishes buyer-originated health/community-services tenders and EOIs. Completes PHN coverage alongside WAPHA and NT PHN.",
-      "Horizon Power (horizonpower.com.au) - WA's regional electricity GBE; procurement/EOI channel (e.g. long-term PPA EOI) distinct from the core Tenders WA portal. Monitor monthly.",
-      "Toward Home Alliance (towardhome.org.au) - SA homelessness alliance running buyer-originated EOIs for ACCO/ACCHO partners; an NFP/alliance channel worth monitoring monthly.",
-      "Commonwealth procurement reform (Dept of Finance): the AusTender Supplier Portal opened to all businesses from 1 July 2026 and a single whole-of-government professional-contractor panel replaced 20+ agency arrangements from 1 July 2026 - track for how open ATMs are now routed.",
-      "Restore live-portal / authenticated access so the routine can extract deliverables, requirements and evaluation criteria rather than headline-level search snippets."
+      "Mackay Regional Council (QLD) - VendorPanel (all procurement released via VendorPanel)",
+      "Cassowary Coast Regional Council (QLD) - Tenders and Quotes",
+      "Gympie Regional Council (QLD) - Current Tenders",
+      "Burke Shire Council (QLD) - Tenders and RFQs (VendorPanel)",
+      "Central Goldfields Shire Council (VIC) - Council Tenders"
     ]
   },
   "months": [
@@ -36546,17 +36541,18 @@
       ],
       "first_seen": "2026-10-17",
       "detail_source": "",
-      "reasoning": "First surfaced in the 2026-10-17 run; re-confirmed still open this run via WebSearch (extended) on Buying for Victoria (opened 16 Oct, closing 20 Nov 2026).",
+      "reasoning": "First surfaced in the 2026-10-17 run; re-confirmed still open this run via WebSearch (extended) on Buying for Victoria (opened 16 Oct, closing 20 Nov 2026). Re-confirmed still open via WebSearch (extended) on 2026-10-21.",
       "notes": "UNVERIFIED AT DETAIL: captured from a cached search snippet of tenders.vic.gov.au under a global egress block; the live detail page could not be opened, so deliverables, requirements, documents, value and contacts are not yet extracted. first_seen retained as 2026-10-17 (prior run).",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-21",
       "seen_dates": [
         "2026-10-17",
         "2026-10-18",
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-21"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "Buying-for-Victoria:cfa-2025-0198-cann-valley-fire-station-2026",
@@ -36793,15 +36789,16 @@
       ],
       "first_seen": "2026-10-17",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch of Buying for Victoria; Victorian WorkCover Authority publishes via the state portal.",
+      "reasoning": "Discovered via WebSearch of Buying for Victoria; Victorian WorkCover Authority publishes via the state portal. Re-confirmed still open via WebSearch (extended) on 2026-10-21.",
       "notes": "Headline-level only (egress block). Advance tender notice (ATN). Opening date not captured; closing 30 Nov 2026 2pm from a tenders.vic.gov.au snippet; UNVERIFIED on live portal.",
-      "last_seen": "2026-10-17",
+      "last_seen": "2026-10-21",
       "seen_dates": [
-        "2026-10-17"
+        "2026-10-17",
+        "2026-10-21"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "Buying-for-Victoria:rft00000031-mallee-cma-hydrological-investigations-2026",
@@ -37474,7 +37471,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "Buying-for-Victoria:CFA-2025-0198-cann-valley-fire-station",
@@ -37653,15 +37650,16 @@
       ],
       "first_seen": "2026-10-19",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch (extended) on buyer-originated Buying for Victoria listings; Latrobe Regional Health publishes its procurement through the Victorian government portal. Closing 18 Nov 2026 per the cached portal snippet (listed with an RFQ number but advertised as a tender).",
+      "reasoning": "Discovered via WebSearch (extended) on buyer-originated Buying for Victoria listings; Latrobe Regional Health publishes its procurement through the Victorian government portal. Closing 18 Nov 2026 per the cached portal snippet (listed with an RFQ number but advertised as a tender). Re-confirmed still open via WebSearch (extended) on 2026-10-21.",
       "notes": "UNVERIFIED AT DETAIL: captured from a cached search snippet of tenders.vic.gov.au under a global egress block; the live detail page could not be opened, so publish date, deliverables, requirements, documents, value and contacts are not yet extracted. Procurement type recorded as RFQ per the reference number; re-confirm on the portal.",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-21",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-21"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "Buying-for-Victoria:T421509-ports-victoria-station-pier-fender-upgrade",
@@ -37783,7 +37781,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:LAHC-2026-510-homes-nsw-grafton-design-finalisation-construction",
@@ -37843,7 +37841,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:C41-2026-blacktown-city-council-cleaning-services",
@@ -37903,7 +37901,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:T-2026-25-wingecarribee-sports-field-lighting-upgrades",
@@ -38087,7 +38085,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:TEN-3109-bundaberg-mcilwraith-road-upgrade-stage-2",
@@ -38147,7 +38145,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:TEN-3131-bundaberg-airport-sites-for-lease-2026",
@@ -38208,7 +38206,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-WA:WAPOL13726-wa-police-acoustic-camera-ai-system",
@@ -38269,7 +38267,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-WA:PROPTA26020-pta-multi-site-bus-station-dda-compliance",
@@ -38332,7 +38330,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-WA:PTA260048-vertical-transport-asset-replacement-stage-1",
@@ -38395,7 +38393,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:T26-1314-darwin-seconded-legal-engagements-panel",
@@ -38455,7 +38453,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:T26-1265-alice-springs-mereenie-loop-water-bore-drilling",
@@ -38516,7 +38514,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:T26-1274-alice-springs-hospital-ed-ceiling-remediation",
@@ -38579,7 +38577,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:NTG26-0202-tennant-creek-police-complex-and-housing-design",
@@ -38640,7 +38638,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT-QTOL:darwin-ntpol-vessel-packages-and-marine-equipment-panel",
@@ -38701,7 +38699,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-ACT:PICE0014839-solar-carpark-ev-charging-eoi",
@@ -38817,15 +38815,16 @@
       ],
       "first_seen": "2026-10-19",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch (extended) on the buyer-originated Tenders ACT open list; released 8 Oct, closing 12 Nov 2026 2:00 PM per the cached snippet.",
+      "reasoning": "Discovered via WebSearch (extended) on the buyer-originated Tenders ACT open list; released 8 Oct, closing 12 Nov 2026 2:00 PM per the cached snippet. Re-confirmed still open via WebSearch (extended) on 2026-10-21.",
       "notes": "UNVERIFIED AT DETAIL: captured from a cached search snippet of tenders.act.gov.au under a global egress block; the live detail page could not be opened, so deliverables, requirements, documents, value and contacts are not yet extracted.",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-21",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-10-21"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "PortLincoln-Council:nautilus-arts-centre-ground-floor-tenancy-eoi-2026",
@@ -38946,14 +38945,15 @@
       ],
       "first_seen": "2026-10-20",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch of the Buying for Victoria open-tenders portal (buyer-originated). Distinct from the Station Pier Outer West Berth Fender Upgrade (T421509) captured in the prior run.",
+      "reasoning": "Discovered via WebSearch of the Buying for Victoria open-tenders portal (buyer-originated). Distinct from the Station Pier Outer West Berth Fender Upgrade (T421509) captured in the prior run. Re-confirmed still open via WebSearch (extended) on 2026-10-21.",
       "notes": "HEADLINE-LEVEL / UNVERIFIED-AT-DETAIL: the environment's global outbound-egress block prevented opening the live tender detail page or any specification document; headline fields (id, title, buyer, closing date) are from WebSearch cached snippets of the buyer portal and must be re-confirmed on the live portal. Deliverables, requirements, evaluation criteria, documents, exact value and contacts could not be extracted.",
-      "last_seen": "2026-10-20",
+      "last_seen": "2026-10-21",
       "seen_dates": [
-        "2026-10-20"
+        "2026-10-20",
+        "2026-10-21"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -39014,8 +39014,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Buying-for-Victoria:RFT00000031-mallee-cma-hydrological-investigations",
@@ -39074,8 +39074,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:SNSW-9635-service-nsw-small-business-advisory-services",
@@ -39133,8 +39133,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-WA:7000015483-water-corporation-engineering-design-services-panel",
@@ -39194,8 +39194,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Tenders-WA:DOC202226457-communities-perth-aboriginal-short-stay-accommodation",
@@ -39254,8 +39254,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:2027-333-mildura-meridian-road-reconstruction",
@@ -39314,8 +39314,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "VendorPanel:TEN-3093-bundaberg-supply-of-bedding-sand",
@@ -39374,8 +39374,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Brisbane-City-Council:landscaping-services-rfp-2026-11",
@@ -39433,8 +39433,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "Brisbane-City-Council:road-construction-rfp-2026-12",
@@ -39493,8 +39493,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     }
   ],
   "discovered_sources": [
@@ -43496,7 +43496,7 @@
       ],
       "seen_count": 14,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -49872,8 +49872,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Capital Health Network (ACT Primary Health Network) - Tenders",
@@ -49894,8 +49894,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Horizon Power - Supplier / procurement opportunities",
@@ -49916,8 +49916,8 @@
         "2026-10-20"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Toward Home Alliance - Expressions of Interest (ACCO/ACCHO partnerships)",
@@ -49936,6 +49936,116 @@
       "last_seen": "2026-10-20",
       "seen_dates": [
         "2026-10-20"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Mackay Regional Council (QLD) - Tender Opportunities (VendorPanel)",
+      "source_url": "https://www.mackay.qld.gov.au/Business/Procurement-and-Tenders/Tender-Opportunities",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for VendorPanel council RFTs; council page states all procurement initiatives are released via VendorPanel.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated local-government source; opportunities lodged through VendorPanel Marketplace. Live list not reachable this run (egress block).",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "seen_dates": [
+        "2026-10-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Cassowary Coast Regional Council (QLD) - Tenders and Quotes",
+      "source_url": "https://www.cassowarycoast.qld.gov.au/tenders-quotes",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "custom/VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for VendorPanel/council tenders.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated council procurement page. Current listings not reachable this run (egress block).",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "seen_dates": [
+        "2026-10-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Gympie Regional Council (QLD) - Current Tenders",
+      "source_url": "https://www.gympie.qld.gov.au/current-tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for current council tenders.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated council procurement page. Current listings not reachable this run (egress block).",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "seen_dates": [
+        "2026-10-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Burke Shire Council (QLD) - Tenders and RFQs (VendorPanel)",
+      "source_url": "https://www.burke.qld.gov.au/Our-council/Tenders-and-RFQs",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch; council directs tender documents and lodgement through VendorPanel.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Small remote-QLD council; buyer-originated via VendorPanel. Not reachable at detail this run (egress block).",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "seen_dates": [
+        "2026-10-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Central Goldfields Shire Council (VIC) - Council Tenders",
+      "source_url": "https://www.centralgoldfields.vic.gov.au/About-Us/Jobs-and-Careers/Council-Tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Victoria",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "WebSearch for Victorian council tenders.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated council procurement page. Current listings not reachable this run (egress block).",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "seen_dates": [
+        "2026-10-21"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
