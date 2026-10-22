@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22",
+  "generated": "2026-10-23",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -120,32 +120,34 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
   ],
-  "run_count": 120,
+  "run_count": 121,
   "first_run": "2026-06-25",
-  "latest_run": "2026-10-22",
-  "latest_coverage_summary": "SEVERELY DEGRADED RUN (same outbound-egress outage as the 2026-10-21 run). The execution environment blocks outbound HTTPS: WebFetch returns getaddrinfo ENOTFOUND for every host (DNS not resolvable), and the agent proxy rejects direct CONNECTs, so NO tender portal, detail page or specification document could be opened. The only working external channel was WebSearch (routed via Anthropic infrastructure), which returns titles, URLs and model-summarised snippets but is dominated by stale cached data (mostly mid-2026) and cannot read JavaScript-rendered live portals (tenders.vic.gov.au, buy.nsw, QTenders, NT QTOL all render client-side and returned only 'JavaScript Disabled' shells), follow pagination, or open attachments. Tier 1 (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA/SA/TAS/ACT, NT QTOL), Tier 2 (VendorPanel public tenders, councils, water/energy GBEs, universities) and Tier 3 (SAP Business Network Discovery, Transgrid/ICN, NFP/aged-care, private transport/logistics) were all attempted via WebSearch only. No fresh (last-7-day) opportunity could be confirmed on any buyer-originated portal this run. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) place them within their open windows today; one (Ports Victoria Station Pier) was independently re-corroborated this run from the buyer's own FY26-FY27 procurement activity plan PDF. No new sources were found this run: every buyer and portal surfaced (Forbes/East Gippsland/Woollahra/Gunnedah/Logan/Bundaberg councils, ICN, the QTenders EPW URL, Ariba Discovery) is already in the known source set.",
+  "latest_run": "2026-10-23",
+  "latest_coverage_summary": "SEVERELY DEGRADED RUN — THIRD CONSECUTIVE egress outage (same condition as 2026-10-21 and 2026-10-22). The execution environment's network policy blocks ALL outbound HTTPS: WebFetch returns getaddrinfo ENOTFOUND for every host, and the agent proxy answers 403 to every CONNECT — confirmed this run against both www.tenders.gov.au and example.com (recentRelayFailures: connect_rejected / 'gateway answered 403 to CONNECT (policy denial or upstream failure)'). So NO tender portal, detail page or specification document could be opened on any tier. The only working external channel is WebSearch (routed via Anthropic infrastructure), which returns titles/URLs/model-summarised snippets dominated by stale cached data (mostly mid-2026, largely closed listings) and cannot read JavaScript-rendered live portals (buy.nsw, tenders.vic, QTenders, NT QTOL), follow pagination, or open attachments. Tier 1 (AusTender + all state/territory portals), Tier 2 (VendorPanel public tenders, councils, GBE water/energy, universities) and Tier 3 (SAP Business Network Discovery, EstimateOne, major-buyer portals) were all ATTEMPTED via WebSearch only. No fresh (last-7-day) opportunity could be confirmed on any buyer-originated portal this run, and no corporate RFx was publicly visible. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) place them within their open windows today. No new sources were found: every buyer/portal surfaced via WebSearch (Logan/Forbes/Cessnock/Canada Bay/Gunnedah/East Gippsland/South Perth/Brisbane councils, UniSQ, EstimateOne, SAP Business Network Discovery, ICN, VendorPanel) is already in the known source set, and the only private-sector hits (Thales/Austal) came via a paid aggregator (australiantenders.com.au), which is used as a discovery signal only, never as a source of truth.",
   "latest_run_metadata": {
-    "run_date": "2026-10-22",
-    "coverage_summary": "SEVERELY DEGRADED RUN (same outbound-egress outage as the 2026-10-21 run). The execution environment blocks outbound HTTPS: WebFetch returns getaddrinfo ENOTFOUND for every host (DNS not resolvable), and the agent proxy rejects direct CONNECTs, so NO tender portal, detail page or specification document could be opened. The only working external channel was WebSearch (routed via Anthropic infrastructure), which returns titles, URLs and model-summarised snippets but is dominated by stale cached data (mostly mid-2026) and cannot read JavaScript-rendered live portals (tenders.vic.gov.au, buy.nsw, QTenders, NT QTOL all render client-side and returned only 'JavaScript Disabled' shells), follow pagination, or open attachments. Tier 1 (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA/SA/TAS/ACT, NT QTOL), Tier 2 (VendorPanel public tenders, councils, water/energy GBEs, universities) and Tier 3 (SAP Business Network Discovery, Transgrid/ICN, NFP/aged-care, private transport/logistics) were all attempted via WebSearch only. No fresh (last-7-day) opportunity could be confirmed on any buyer-originated portal this run. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) place them within their open windows today; one (Ports Victoria Station Pier) was independently re-corroborated this run from the buyer's own FY26-FY27 procurement activity plan PDF. No new sources were found this run: every buyer and portal surfaced (Forbes/East Gippsland/Woollahra/Gunnedah/Logan/Bundaberg councils, ICN, the QTenders EPW URL, Ariba Discovery) is already in the known source set.",
-    "sources_checked": 18,
+    "run_date": "2026-10-23",
+    "coverage_summary": "SEVERELY DEGRADED RUN — THIRD CONSECUTIVE egress outage (same condition as 2026-10-21 and 2026-10-22). The execution environment's network policy blocks ALL outbound HTTPS: WebFetch returns getaddrinfo ENOTFOUND for every host, and the agent proxy answers 403 to every CONNECT — confirmed this run against both www.tenders.gov.au and example.com (recentRelayFailures: connect_rejected / 'gateway answered 403 to CONNECT (policy denial or upstream failure)'). So NO tender portal, detail page or specification document could be opened on any tier. The only working external channel is WebSearch (routed via Anthropic infrastructure), which returns titles/URLs/model-summarised snippets dominated by stale cached data (mostly mid-2026, largely closed listings) and cannot read JavaScript-rendered live portals (buy.nsw, tenders.vic, QTenders, NT QTOL), follow pagination, or open attachments. Tier 1 (AusTender + all state/territory portals), Tier 2 (VendorPanel public tenders, councils, GBE water/energy, universities) and Tier 3 (SAP Business Network Discovery, EstimateOne, major-buyer portals) were all ATTEMPTED via WebSearch only. No fresh (last-7-day) opportunity could be confirmed on any buyer-originated portal this run, and no corporate RFx was publicly visible. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) place them within their open windows today. No new sources were found: every buyer/portal surfaced via WebSearch (Logan/Forbes/Cessnock/Canada Bay/Gunnedah/East Gippsland/South Perth/Brisbane councils, UniSQ, EstimateOne, SAP Business Network Discovery, ICN, VendorPanel) is already in the known source set, and the only private-sector hits (Thales/Austal) came via a paid aggregator (australiantenders.com.au), which is used as a discovery signal only, never as a source of truth.",
+    "sources_checked": 16,
     "tenders_found": 5,
     "new_sources_found": 0,
     "entries_pending_detail": 5,
     "gaps": [
-      "CRITICAL TOOLING OUTAGE (unchanged from 2026-10-21): WebFetch returned getaddrinfo ENOTFOUND for every host attempted (including www.tenders.gov.au); the agent-proxy status endpoint could not be queried (blocked). Outbound egress is blocked for this session, so no live tender portal, detail page or specification document could be opened. Only WebSearch was available.",
-      "Because detail pages were unreachable, NO deliverables / requirements / evaluation-criteria / document / contact extraction was possible this run. All 5 tenders are headline-level only and counted in entries_pending_detail; their headline fields derive from prior runs (2026-10-16..20) and must be re-verified on the live portals once egress is restored.",
-      "WebSearch index is stale: queries for 'October/November 2026' closings on every Tier 1 portal returned predominantly mid-2026 (closed) listings. Tier 1 live portals could not be crawled; exhaustive Tier 1 coverage was NOT achieved this run.",
-      "Tier 1 state portals (buy.nsw, tenders.vic, QTenders/supply.qld, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) are JavaScript-rendered; search snippets showed only 'JavaScript Disabled' shells or cached pages, so current open-tender lists were not visible.",
-      "Of the 5 carried-forward tenders, only Ports Victoria Station Pier (T421508) was independently re-corroborated this run (via the buyer's FY26-FY27 procurement activity plan on ports.vic.gov.au). The other 4 (GPSnet EOI DOT46088, WorkCover occupational rehabilitation FOL26-3030, Latrobe Regional Health payroll RFQ2262, ACT Healthy Waterways PICE0014602) could not be re-confirmed on their live portals this run and are carried forward on the basis of their previously-captured, still-open published closing dates only.",
-      "Tier 3 private sector: SAP Business Network Discovery (service.ariba.com/Discovery.aw), Transgrid/ICN project opportunities, BHP/Rio Tinto/Fortescue/Woodside, Woolworths/Coles, Qantas/Transurban and NFP/aged-care supplier portals are registration/login-gated and/or not readable via WebSearch; no publicly-visible corporate RFx could be confirmed. No corporate opportunities were invented. These portals remain recorded in prior discovered_sources.",
+      "CRITICAL TOOLING OUTAGE (3rd consecutive run; unchanged from 2026-10-21 and 2026-10-22): outbound HTTPS is blocked by the environment's network policy. WebFetch returns getaddrinfo ENOTFOUND for every host; the agent proxy answers 403 to every CONNECT. Verified this run via the proxy status endpoint: recentRelayFailures records connect_rejected 403 for both www.tenders.gov.au:443 AND example.com:443, i.e. the denial is universal, not host-specific. Per the proxy README a 403 CONNECT is a policy denial that must be reported, not routed around. No live tender portal, detail page or document could be opened.",
+      "Because detail pages were unreachable, NO deliverables / requirements / evaluation-criteria / document / contact extraction was possible this run. All 5 tenders are headline-level only (counted in entries_pending_detail); their fields derive from prior runs (2026-10-16..20) and must be re-verified on the live portals once egress is restored.",
+      "WebSearch index is stale: queries for Oct/Nov-2026 closings on every Tier 1 portal returned predominantly mid-2026 (closed) listings or platform/landing/help pages. Exhaustive Tier 1 coverage was NOT achieved this run.",
+      "Tier 1 state portals (buy.nsw, tenders.vic, QTenders/supply.qld, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) are JavaScript-rendered; WebSearch snippets showed only cached shells, so current open-tender lists were not visible.",
+      "None of the 5 carried-forward tenders could be independently re-confirmed on their live portals this run (egress blocked). They are carried forward solely on the basis of their previously-captured, still-open published closing dates (GPSnet EOI DOT46088 closes 2026-11-20; WorkCover occupational rehab FOL26-3030 2026-11-30; Latrobe Regional Health payroll RFQ2262 2026-11-18; ACT Healthy Waterways PICE0014602 2026-11-12; Ports Victoria Station Pier T421508 2026-12-11).",
+      "Tier 3 private sector: SAP Business Network Discovery, EstimateOne, BHP/Rio Tinto/Fortescue/Woodside/Santos, Woolworths/Coles, Qantas and NFP/health supplier portals are registration/login-gated and/or not readable via WebSearch; no publicly-visible corporate RFx could be confirmed. No corporate opportunities were invented. These portals remain recorded in prior discovered_sources.",
       "Invitation-only corporate RFx (e.g. management-consultancy RFPs) remain out of scope and were not fabricated.",
-      "Source discovery: every buyer/portal surfaced via WebSearch this run was already present in the known source set (458 sources), so new_sources_found = 0. This is an honest nil result under degraded conditions, not a skipped step.",
+      "Source discovery: every buyer/portal surfaced via WebSearch this run was already present in the known source set (461 sources); private-sector hits came only via a paid aggregator used as a discovery signal. new_sources_found = 0 — an honest nil result under degraded conditions, not a skipped step.",
       "De-duplication: the 5 carried-forward tenders reuse their existing dedup_keys and retain their original first_seen dates (2026-10-17..20); the aggregator folds by min-date so lineage is preserved."
     ],
     "recommended_seed_additions": [
-      "No new sources to add this run. Confirmed (already-known) URL note: Queensland's QTenders now resolves under the Department of Energy and Public Works at https://qtenders.epw.qld.gov.au/ (the older hpw.qld.gov.au host is a prior department name); suppliers must register in VendorPanel via https://www.supply.qld.gov.au/ to access documents. Both the EPW host and supply.qld are already in discovered_sources."
+      "No new sources to add this run.",
+      "OPERATIONAL (not a tender source): This routine has now been unable to reach any live portal for THREE consecutive runs (2026-10-21/22/23). The environment network policy is denying all outbound CONNECTs (403) and WebFetch DNS. The routine cannot perform its core job (open buyer portals and extract deliverables) until the environment is reconfigured with outbound HTTPS access to the tender-portal hosts (or an allow-list added). Human action required: review the environment's network policy at https://code.claude.com/docs/en/claude-code-on-the-web."
     ]
   },
   "months": [
@@ -36540,16 +36542,17 @@
       "first_seen": "2026-10-17",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-17 from the Buying for Victoria portal. Could not be re-opened this run (egress blocked); WebSearch returned only general GPSnet background, not the DOT46088 notice.",
-      "notes": "Carried forward as still-open (closes 2026-11-20). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored.",
-      "last_seen": "2026-10-22",
+      "notes": "Carried forward as still-open (closes 2026-11-20). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-23: still within its published open window (closes 2026-11-20), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (3rd consecutive egress outage). Headline-level only; re-verify on the buyer portal once egress is restored.",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-10-17",
         "2026-10-18",
         "2026-10-19",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -36790,14 +36793,15 @@
       "first_seen": "2026-10-17",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-17 from the Buying for Victoria portal. Could not be re-opened this run (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-30). Headline-level only; not independently re-corroborated this run. Procurement type recorded as market-sounding from prior capture; re-verify on the live portal when egress is restored.",
-      "last_seen": "2026-10-22",
+      "notes": "Carried forward as still-open (closes 2026-11-30). Headline-level only; not independently re-corroborated this run. Procurement type recorded as market-sounding from prior capture; re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-23: still within its published open window (closes 2026-11-30), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (3rd consecutive egress outage). Headline-level only; re-verify on the buyer portal once egress is restored.",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-10-17",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -37652,14 +37656,15 @@
       "first_seen": "2026-10-19",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-19 from the Buying for Victoria portal. Could not be re-opened this run (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-18). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored.",
-      "last_seen": "2026-10-22",
+      "notes": "Carried forward as still-open (closes 2026-11-18). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-23: still within its published open window (closes 2026-11-18), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (3rd consecutive egress outage). Headline-level only; re-verify on the buyer portal once egress is restored.",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-10-19",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -38818,14 +38823,15 @@
       "first_seen": "2026-10-19",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-19 from the Tenders ACT portal. Could not be re-opened this run (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-12). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored.",
-      "last_seen": "2026-10-22",
+      "notes": "Carried forward as still-open (closes 2026-11-12). Headline-level only; not independently re-corroborated this run. Re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-23: still within its published open window (closes 2026-11-12), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (3rd consecutive egress outage). Headline-level only; re-verify on the buyer portal once egress is restored.",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-10-19",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -38944,14 +38950,15 @@
       "first_seen": "2026-10-20",
       "detail_source": "Ports Victoria FY26-FY27 procurement activity plan (https://ports.vic.gov.au/wp-content/uploads/FY26-FY27-procurement-activity-plan.pdf) via WebSearch snippet; the live tender detail page could not be opened this run.",
       "reasoning": "Previously captured 2026-10-20 from the Buying for Victoria portal; re-corroborated this run via the Ports Victoria (buyer) FY26-FY27 procurement activity plan which confirms the Station Pier pile-rehabilitation/marine-maintenance procurement and its Q4 FY26 release and 5+3+2 term.",
-      "notes": "Carried forward as still-open (closes 2026-12-11). Contract term and deliverables are taken from the buyer's procurement activity plan, NOT from the live tender notice (unreadable this run). Headline-level only; full deliverables/requirements/documents extraction still pending.",
-      "last_seen": "2026-10-22",
+      "notes": "Carried forward as still-open (closes 2026-12-11). Contract term and deliverables are taken from the buyer's procurement activity plan, NOT from the live tender notice (unreadable this run). Headline-level only; full deliverables/requirements/documents extraction still pending. Carried forward unchanged on 2026-10-23: still within its published open window (closes 2026-12-11), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (3rd consecutive egress outage). Headline-level only; re-verify on the buyer portal once egress is restored.",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-10-20",
         "2026-10-21",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -39767,7 +39774,7 @@
       "notes": "Registration-gated; already known. No corporate opportunities captured (none publicly visible; none invented).",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -39832,9 +39839,10 @@
         "2026-10-16",
         "2026-10-17",
         "2026-10-19",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 64,
+      "seen_count": 65,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -40337,7 +40345,7 @@
       "notes": "Primary aggregation point for Australian council public tenders. Already known; no new council buyers identified this run.",
       "state": "",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -40375,9 +40383,10 @@
         "2026-09-26",
         "2026-10-15",
         "2026-10-16",
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 37,
+      "seen_count": 38,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -50066,12 +50075,13 @@
       "recommended_check_frequency": "daily",
       "notes": "URL-health confirmation only (self-heal note): qtenders.hpw.qld.gov.au reflects a prior department name; qtenders.epw.qld.gov.au is current. Not a new source.",
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "seen_dates": [
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -50088,12 +50098,13 @@
       "recommended_check_frequency": "weekly",
       "notes": "Buyer-facilitated industry participation network used by major infrastructure projects (e.g. Transgrid) to publish work packages. Already known; recorded for completeness of Tier 2/3 coverage this run.",
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "seen_dates": [
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -50110,12 +50121,13 @@
       "recommended_check_frequency": "monthly",
       "notes": "Buyer-originated forward procurement plan; useful for pre-tender signals. Already known.",
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-23",
       "seen_dates": [
-        "2026-10-22"
+        "2026-10-22",
+        "2026-10-23"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     }
   ]
