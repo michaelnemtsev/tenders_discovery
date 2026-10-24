@@ -1,25 +1,26 @@
 {
   "run_metadata": {
-    "run_date": "2026-10-24",
-    "coverage_summary": "SEVERELY DEGRADED RUN — FOURTH CONSECUTIVE egress outage (same condition as 2026-10-21, 2026-10-22 and 2026-10-23). The execution environment's network policy blocks ALL outbound HTTPS: WebFetch returns getaddrinfo ENOTFOUND for every host (verified this run against www.tenders.gov.au AND example.com), and a direct proxy CONNECT answers 403 (policy denial; per /root/.ccr/README.md a 403 CONNECT must be reported, not routed around). So NO tender portal, detail page or specification document could be opened on any tier. The only working external channel is WebSearch (routed via Anthropic infrastructure), which returns titles/URLs/model-summarised snippets dominated by stale cached data and cannot read JavaScript-rendered live portals (buy.nsw, tenders.vic, QTenders, NT QTOL), follow pagination, or open attachments. Tier 1 (AusTender + all state/territory portals), Tier 2 (VendorPanel public tenders, councils, GBE water/energy, universities) and Tier 3 (SAP Business Network Discovery, EstimateOne, BHP/Rio/Fortescue major-buyer portals) were all ATTEMPTED via WebSearch only (8 queries across tiers). WebSearch DID surface several plausible new ACT/VIC/NSW/Federal candidate opportunities this run (ACT RFT PICE0014832 Thermal Assisted Aerial Control; ACT PIJC0012268 Interpreting & Translating Services; Ports Victoria T421509 Station Pier fender upgrade; Goulburn Valley Water Shepparton WTP disinfection upgrade; NSW New Electric Bus Program Technical Advisor Services; Federal ANNPSR commercial pressurised-water-reactor technical support) — but NONE could be opened or independently corroborated on its buyer-originated portal (a targeted confirmation search for the two ACT tender IDs returned zero matching results, and GVW/Ports hits came only via a paid aggregator). Per the fidelity rule these unverified WebSearch-only candidates are recorded in gaps for verification once egress is restored, NOT captured as confirmed tenders. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) remain within their open windows today (2026-10-24). TWO genuinely new buyer-originated sources were identified this run: the Goulburn Valley Water tender channel (surfaced via aggregator discovery signal, then recorded as the buyer's own source) and the Commonwealth Supplier Portal (a new federal procurement system rolling out through 2026, confirmed via finance.gov.au / digital.nsw).",
-    "sources_checked": 18,
+    "run_date": "2026-10-25",
+    "coverage_summary": "SEVERELY DEGRADED RUN — FIFTH CONSECUTIVE egress outage (same condition as 2026-10-21, 2026-10-22, 2026-10-23 and 2026-10-24). The execution environment's network policy still blocks ALL outbound HTTPS. The agent proxy reports enabled:true with no recent relay failures, but a direct proxy CONNECT to every host answers 403 (policy denial — verified this run against www.tenders.gov.au, www.tenders.vic.gov.au AND example.com, all 403 'CONNECT tunnel failed'), and WebFetch returns getaddrinfo ENOTFOUND for every host (verified against www.tenders.gov.au). Per /root/.ccr/README.md a 403 CONNECT is a policy denial that must be reported, not routed around. So NO tender portal, detail page or specification document could be opened on any tier. The only working external channel is WebSearch (routed via Anthropic infrastructure, which sits on the proxy no-proxy allow-list), returning titles/URLs/model-summarised snippets dominated by stale cached data; it cannot read JavaScript-rendered live portals (buy.nsw, tenders.vic, QTenders, NT QTOL, Tenders ACT all returned 'JavaScript Disabled' shells this run), follow pagination, or open attachments. Tier 1 (AusTender + all state/territory portals), Tier 2 (VendorPanel public tenders, councils, GBE water/energy, universities) and Tier 3 (SAP Business Network Discovery, EstimateOne, BHP/Rio/Fortescue major-buyer portals) were all ATTEMPTED via WebSearch only (6 queries across tiers plus a targeted confirmation search). WebSearch surfaced NO new buyer-originated opportunity that could be opened or corroborated on its own portal this run; the two prior-run unconfirmed ACT/Ports-Victoria candidates (PICE0014832 'Thermal Assisted Aerial Control'; Ports Victoria T421509 Station Pier fender upgrade) were re-checked and STILL could not be corroborated — a targeted search for those exact IDs returned zero matching live results (only stale 2023/2025 Station Pier fender notices and paid-aggregator rows). Per the fidelity rule nothing unverified is captured as a confirmed tender. The 5 currently-open opportunities previously captured on 2026-10-16..20 (when WebFetch worked) are carried forward at headline level because their published closing dates (2026-11-12 .. 2026-12-11) remain within their open windows today (2026-10-25). NO genuinely new buyer-originated source could be confirmed this run (WebSearch-only); new_sources_found is therefore 0 and this is noted honestly in gaps.",
+    "sources_checked": 16,
     "tenders_found": 5,
-    "new_sources_found": 2,
+    "new_sources_found": 0,
     "entries_pending_detail": 5,
     "gaps": [
-      "CRITICAL TOOLING OUTAGE (4th consecutive run; unchanged from 2026-10-21/22/23): outbound HTTPS is blocked by the environment's network policy. WebFetch returns getaddrinfo ENOTFOUND for every host; a direct proxy CONNECT answers 403. Verified this run via WebFetch against both www.tenders.gov.au and example.com (both ENOTFOUND) and via curl to the proxy (403 CONNECT tunnel failed). Per the proxy README a 403 CONNECT is a policy denial that must be reported, not routed around. No live tender portal, detail page or document could be opened.",
+      "CRITICAL TOOLING OUTAGE (5th consecutive run; unchanged from 2026-10-21/22/23/24): outbound HTTPS is blocked by the environment's network policy. A direct proxy CONNECT answers 403 ('CONNECT tunnel failed, response 403') for every host tested this run — www.tenders.gov.au, www.tenders.vic.gov.au and example.com — and WebFetch returns getaddrinfo ENOTFOUND. The proxy /__agentproxy/status endpoint reports enabled:true, bundleCoversEveryHost:true and recentRelayFailures:[] (i.e. the proxy itself is healthy; the 403 is an upstream egress-policy denial, not a proxy fault). Per the proxy README a 403 CONNECT is a policy denial that must be reported, not routed around. No live tender portal, detail page or document could be opened on any tier.",
       "Because detail pages were unreachable, NO deliverables / requirements / evaluation-criteria / document / contact extraction was possible this run. All 5 tenders are headline-level only (counted in entries_pending_detail); their fields derive from prior runs (2026-10-16..20) and must be re-verified on the live portals once egress is restored.",
-      "UNCONFIRMED CANDIDATE OPPORTUNITIES surfaced via WebSearch this run but NOT captured as tenders (could not be opened or corroborated on their buyer portals; recorded here so an egress-restored run can verify them): (1) ACT RFT PICE0014832 'Thermal Assisted Aerial Control', City & Environment Directorate, reportedly released 2026-10-19, closing ~2026-11-24 — a targeted confirmation search for this ID returned ZERO matching results, so the ID/dates are unverified and may be search-index artefacts; (2) ACT PIJC0012268 'Interpreting and Translating Services', Justice & Community Safety Directorate, reportedly released 2026-10-20, closing ~2026-11-17 — likewise not independently corroborated; (3) Ports Victoria T421509 'Station Pier fender upgrade' (distinct from the carried-forward T421508 pile-rehab tender), reportedly closing ~2026-11-30 — buyer-originated (Buying for Victoria) but unopened; (4) Goulburn Valley Water 'Design & Construction of Disinfection Upgrades at Shepparton WTP' (aggregator tender id 611046, marked 'Current') — confirmable ONLY via a paid aggregator (discovery signal), buyer portal unreadable, closing date unverified; (5) NSW 'New Electric Bus Program — Technical Advisor Services', reportedly closing 2026-11-04 — no tender id captured, buy.nsw unreadable; (6) Federal — Australian Naval Nuclear Power Safety Regulator 'Commercial Pressurised Water Reactor Technical Support Services', reportedly closing 2026-11-10 — surfaced only via a paid aggregator with no publish date, AusTender unreadable. None invented; all require live-portal verification.",
-      "WebSearch index is stale: queries for Oct/Nov-2026 closings on every Tier 1 portal returned predominantly mid-2026 (closed) listings or platform/landing/help pages. Exhaustive Tier 1 coverage was NOT achieved this run.",
-      "Tier 1 state portals (buy.nsw, tenders.vic, QTenders/supply.qld, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) are JavaScript-rendered; WebSearch snippets showed only cached shells (and in buy.nsw's case a demo.buy.nsw.gov.au sandbox with sample data), so current open-tender lists were not visible.",
-      "None of the 5 carried-forward tenders could be independently re-confirmed on their live portals this run (egress blocked). They are carried forward solely on the basis of their previously-captured, still-open published closing dates (GPSnet EOI DOT46088 closes 2026-11-20; WorkCover occupational rehab FOL26-3030 2026-11-30; Latrobe Regional Health payroll RFQ2262 2026-11-18; ACT Healthy Waterways PICE0014602 2026-11-12; Ports Victoria Station Pier T421508 2026-12-11).",
+      "SOURCE DISCOVERY DEGRADED: the mandatory hunt for NEW buyer-originated sources could only run through WebSearch this run. No genuinely new buyer-originated source could be confirmed (WebSearch surfaced only already-known portals/platforms — AusTender Supplier Portal/women-owned-business register, which is the already-recorded Commonwealth Supplier Portal; VendorPanel council migrations already in the known set; SAP Ariba used by Endeavour Energy / Brisbane City Council / Metro Trains, all already known). new_sources_found = 0 this run (honest). Source discovery to be resumed properly once a live portal can be opened.",
+      "PRIOR-RUN UNCONFIRMED CANDIDATES re-checked and STILL unverified this run (recorded here, NOT captured as tenders): (1) ACT RFT PICE0014832 'Thermal Assisted Aerial Control' — a targeted search for this exact ID again returned ZERO matching live results; (2) ACT PIJC0012268 'Interpreting and Translating Services' — not re-corroborated; (3) Ports Victoria T421509 'Station Pier fender upgrade' — a targeted search returned only stale 2023 Notices-to-Mariners and a closed 2025 pile-rehab/fender tender (T110173, closed 2025-12-01), NOT a current T421509 notice; (4) Goulburn Valley Water Shepparton WTP disinfection upgrade (aggregator id 611046) — buyer portal unreadable; (5) NSW 'New Electric Bus Program — Technical Advisor Services'; (6) Federal ANNPSR 'Commercial Pressurised Water Reactor Technical Support Services'. All require live-portal verification once egress is restored. None invented.",
+      "WebSearch index is stale: queries for Oct/Nov-2026 closings on every Tier 1 portal returned predominantly mid-2026 (closed) listings, paid-aggregator rows (australiantenders.com.au, projectory.com.au) or platform/landing/'JavaScript Disabled' shells. Exhaustive Tier 1 coverage was NOT achieved this run.",
+      "Tier 1 state portals (buy.nsw, tenders.vic, QTenders/supply.qld, Tenders WA/SA/TAS, NT QTOL, Tenders ACT) are JavaScript-rendered; WebSearch returned only cached shells (Tenders ACT and Buying for Victoria both returned literal 'JavaScript Disabled' pages this run), so current open-tender lists were not visible.",
+      "None of the 5 carried-forward tenders could be independently re-confirmed on their live portals this run (egress blocked). They are carried forward solely on the basis of their previously-captured, still-open published closing dates (GPSnet EOI DOT46088 closes 2026-11-20; WorkCover occupational rehab FOL26-3030 2026-11-30; Latrobe Regional Health payroll RFQ2262 2026-11-18; ACT Healthy Waterways PICE0014602 2026-11-12; Ports Victoria Station Pier T421508 2026-12-11) — all still within their open windows as of 2026-10-25.",
       "Tier 3 private sector: SAP Business Network Discovery, EstimateOne, BHP/Rio Tinto/Fortescue/Woodside/Santos, Woolworths/Coles, Qantas and NFP/health supplier portals are registration/login-gated and/or not readable via WebSearch; no publicly-visible corporate RFx could be confirmed. No corporate opportunities were invented. These portals remain recorded in prior discovered_sources.",
       "Invitation-only corporate RFx (e.g. management-consultancy RFPs) remain out of scope and were not fabricated."
     ],
     "recommended_seed_additions": [
-      "Goulburn Valley Water (Victorian regional water corporation / GBE) tender channel — gvwater.vic.gov.au; enquiries tenders.contracts@gvwater.vic.gov.au. Active rolling disinfection-upgrade RFT program across its WTPs (Shepparton, Barmah, Seymour, Cobram, Murchison, Yea, Kyabram). Worth adding to the permanent known-source list if not already present; verify its posting platform on the live portal once egress is restored.",
-      "Commonwealth Supplier Portal (finance.gov.au) — new federal procurement system rolling out through 2026 (MAS Panel and People Panel first; open to all businesses from July 2026), launched alongside the updated Commonwealth Procurement Rules. A supplier-registration/discovery database rather than an opportunity feed, but a material new Commonwealth channel to monitor.",
-      "OPERATIONAL (not a tender source): This routine has now been unable to reach any live portal for FOUR consecutive runs (2026-10-21/22/23/24). The environment network policy is denying all outbound CONNECTs (403) and WebFetch DNS. The routine cannot perform its core job (open buyer portals and extract deliverables) until the environment is reconfigured with outbound HTTPS access to the tender-portal hosts (or an allow-list added). Human action required: review the environment's network policy at https://code.claude.com/docs/en/claude-code-on-the-web."
+      "OPERATIONAL (not a tender source) — ESCALATION: This routine has now been unable to reach ANY live portal for FIVE consecutive runs (2026-10-21/22/23/24/25). The environment network policy is denying all outbound CONNECTs (403) and WebFetch DNS resolution, while the agent proxy itself reports healthy. The routine CANNOT perform its core job (open buyer portals and extract deliverables) until the environment is reconfigured with outbound HTTPS access to the tender-portal hosts (or an allow-list added). HUMAN ACTION REQUIRED: review and update the environment's network policy at https://code.claude.com/docs/en/claude-code-on-the-web so that outbound HTTPS to the tender-portal hosts is permitted.",
+      "Goulburn Valley Water (Victorian regional water corporation / GBE) tender channel — gvwater.vic.gov.au; enquiries tenders.contracts@gvwater.vic.gov.au. Active rolling disinfection-upgrade RFT program across its WTPs. Added on 2026-10-24; verify its posting platform on the live portal once egress is restored.",
+      "Commonwealth Supplier Portal / AusTender Supplier Portal (finance.gov.au) — federal supplier-registration/discovery database rolled out through 2025-26 (MAS Panel and People Panels first; general availability for all suppliers from July 2026; includes an optional women-owned-business register). Added on 2026-10-24; a supplier-registration database rather than an opportunity feed (AusTender remains the opportunity channel), but a material new Commonwealth channel to monitor."
     ]
   },
   "tenders": [
@@ -74,8 +75,8 @@
       ],
       "first_seen": "2026-10-20",
       "detail_source": "Ports Victoria FY26-FY27 procurement activity plan (https://ports.vic.gov.au/wp-content/uploads/FY26-FY27-procurement-activity-plan.pdf) via WebSearch snippet on a prior run; the live tender detail page could not be opened this run.",
-      "reasoning": "Previously captured 2026-10-20 from the Buying for Victoria portal; re-corroborated on a prior run via the Ports Victoria (buyer) FY26-FY27 procurement activity plan which confirms the Station Pier pile-rehabilitation/marine-maintenance procurement and its Q4 FY26 release and 5+3+2 term. NOTE: WebSearch this run also surfaced a separate Ports Victoria tender T421509 'Station Pier fender upgrade' (closing ~2026-11-30) — recorded in run_metadata.gaps as an unconfirmed candidate, not captured here.",
-      "notes": "Carried forward as still-open (closes 2026-12-11). Contract term and deliverables are taken from the buyer's procurement activity plan, NOT from the live tender notice (unreadable). Headline-level only; full deliverables/requirements/documents extraction still pending. Carried forward unchanged on 2026-10-24: still within its published open window (closes 2026-12-11), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (4th consecutive egress outage). Re-verify on the buyer portal once egress is restored."
+      "reasoning": "Previously captured 2026-10-20 from the Buying for Victoria portal; re-corroborated on a prior run via the Ports Victoria (buyer) FY26-FY27 procurement activity plan which confirms the Station Pier pile-rehabilitation/marine-maintenance procurement and its Q4 FY26 release and 5+3+2 term. A separate Ports Victoria tender T421509 'Station Pier fender upgrade' remains an unconfirmed candidate (see run_metadata.gaps) and is NOT captured here.",
+      "notes": "Carried forward as still-open (closes 2026-12-11). Contract term and deliverables are taken from the buyer's procurement activity plan, NOT from the live tender notice (unreadable). Headline-level only. Carried forward unchanged on 2026-10-25: still within its published open window (closes 2026-12-11), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (5th consecutive egress outage). Re-verify on the buyer portal once egress is restored."
     },
     {
       "dedup_key": "Buying-for-Victoria:dot46088-gpsnet-network-rtk-positioning-eoi-2026",
@@ -130,7 +131,7 @@
       "first_seen": "2026-10-17",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-17 from the Buying for Victoria portal. Could not be re-opened this run (egress blocked); WebSearch returned only general GPSnet background, not the DOT46088 notice.",
-      "notes": "Carried forward as still-open (closes 2026-11-20). Headline-level only; not independently re-corroborated this run. Carried forward unchanged on 2026-10-24: still within its published open window (closes 2026-11-20), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (4th consecutive egress outage). Re-verify on the buyer portal once egress is restored."
+      "notes": "Carried forward as still-open (closes 2026-11-20). Headline-level only; not independently re-corroborated this run. Carried forward unchanged on 2026-10-25: still within its published open window (closes 2026-11-20), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (5th consecutive egress outage). Re-verify on the buyer portal once egress is restored."
     },
     {
       "dedup_key": "Buying-for-Victoria:fol26-3030-workcover-occupational-rehabilitation-2026",
@@ -185,7 +186,7 @@
       "first_seen": "2026-10-17",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-17 from the Buying for Victoria portal. Could not be re-opened this run (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-30). Headline-level only; not independently re-corroborated this run. Procurement type recorded as market-sounding from prior capture; re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-24: still within its published open window (closes 2026-11-30), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (4th consecutive egress outage)."
+      "notes": "Carried forward as still-open (closes 2026-11-30). Headline-level only; not independently re-corroborated this run. Procurement type recorded as market-sounding from prior capture; re-verify on the live portal when egress is restored. Carried forward unchanged on 2026-10-25: still within its published open window (closes 2026-11-30), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (5th consecutive egress outage)."
     },
     {
       "dedup_key": "Buying-for-Victoria:RFQ2262-latrobe-regional-health-payroll-upgrade",
@@ -239,8 +240,8 @@
       ],
       "first_seen": "2026-10-19",
       "detail_source": "",
-      "reasoning": "Previously captured 2026-10-19 from the Buying for Victoria portal (confirmed via WebSearch this run — RFQ2262 'Payroll Upgrade', Gippsland Health Alliance, opened 2026-10-19, closes 2026-11-18 2:00pm). Live detail page could not be opened (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-18). Headline-level only. WebSearch this run re-echoed the opening/closing dates (opened 2026-10-19, closes 2026-11-18), consistent with the prior capture, but the live detail page could not be opened. Re-verify deliverables on the buyer portal once egress is restored (4th consecutive egress outage)."
+      "reasoning": "Previously captured 2026-10-19 from the Buying for Victoria portal (confirmed via WebSearch on a prior run — RFQ2262 'Payroll Upgrade', Gippsland Health Alliance, opened 2026-10-19, closes 2026-11-18 2:00pm). Live detail page could not be opened this run (egress blocked).",
+      "notes": "Carried forward as still-open (closes 2026-11-18). Headline-level only. Carried forward unchanged on 2026-10-25: still within its published open window (closes 2026-11-18), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (5th consecutive egress outage). Re-verify deliverables on the buyer portal once egress is restored."
     },
     {
       "dedup_key": "Tenders-ACT:PICE0014602-act-healthy-waterways-catchment-research",
@@ -295,7 +296,7 @@
       "first_seen": "2026-10-19",
       "detail_source": "",
       "reasoning": "Previously captured 2026-10-19 from the Tenders ACT portal. Could not be re-opened this run (egress blocked).",
-      "notes": "Carried forward as still-open (closes 2026-11-12). Headline-level only; not independently re-corroborated this run. Carried forward unchanged on 2026-10-24: still within its published open window (closes 2026-11-12), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (4th consecutive egress outage). Note: WebSearch surfaced two further ACT candidates this run (PICE0014832, PIJC0012268) that could not be corroborated — see run_metadata.gaps. Re-verify on the buyer portal once egress is restored."
+      "notes": "Carried forward as still-open (closes 2026-11-12). Headline-level only; not independently re-corroborated this run. Carried forward unchanged on 2026-10-25: still within its published open window (closes 2026-11-12), but NOT re-confirmed on the live portal this run because outbound HTTPS remained blocked (5th consecutive egress outage). Note: WebSearch surfaced two further ACT candidates on prior runs (PICE0014832, PIJC0012268) that again could not be corroborated this run — see run_metadata.gaps. Re-verify on the buyer portal once egress is restored."
     }
   ],
   "discovered_sources": [
@@ -307,39 +308,25 @@
       "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "medium",
-      "how_discovered": "Surfaced via WebSearch while hunting Tier 2 GBE water-corporation opportunities: a paid aggregator (used only as a discovery signal) listed an active Goulburn Valley Water 'Design & Construction of Disinfection Upgrades at Shepparton WTP' (marked Current) plus a rolling series of GVW disinfection-upgrade RFTs (Barmah RFT32-7604-25, Seymour/Cobram/Murchison RFT31-7604-25, Yea/Kyabram). Pivoted from the aggregator to the buyer's own channel. Enquiry contact in the listings: tenders.contracts@gvwater.vic.gov.au.",
+      "how_discovered": "First surfaced 2026-10-24 via a WebSearch discovery signal (a paid aggregator listing an active GVW Shepparton WTP disinfection-upgrade RFT plus a rolling series of GVW disinfection-upgrade RFTs); recorded as the buyer's own channel. Not re-corroborated this run (egress blocked). Now a known source (no longer new).",
       "recommended_check_frequency": "weekly",
-      "notes": "Victorian regional water corporation (government business enterprise) running an active multi-site water-treatment disinfection-upgrade procurement program. Buyer-originated source. Marked new this run; if already present in the known 461-source set, treat as a confidence/coverage confirmation. The buyer's exact posting platform (own site vs. a third-party e-sourcing tool) could not be confirmed because the live portal was unreachable (egress blocked) — verify on restoration."
+      "notes": "Victorian regional water corporation (GBE) running an active multi-site water-treatment disinfection-upgrade procurement program. Buyer-originated source. The buyer's exact posting platform (own site vs. a third-party e-sourcing tool) still could not be confirmed because the live portal was unreachable (egress blocked) — verify on restoration."
     },
     {
-      "source_name": "Commonwealth Supplier Portal (Department of Finance)",
+      "source_name": "Commonwealth Supplier Portal / AusTender Supplier Portal (Department of Finance)",
       "source_url": "https://www.finance.gov.au/government/procurement/commonwealth-supplier-portal",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth (Australia)",
       "platform": "custom",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
-      "confidence": "high",
-      "how_discovered": "Surfaced via WebSearch (finance.gov.au 'Commonwealth Procurement Rules are changing' and digital.nsw coverage) while searching for new/changed government procurement platforms. A publicly-searchable database of potential Commonwealth suppliers launched alongside the updated Commonwealth Procurement Rules; initial rollout to the MAS Panel and People Panel, incrementally extended, open to all businesses from July 2026.",
-      "recommended_check_frequency": "monthly",
-      "notes": "New federal procurement system rolling out through 2026. It is primarily a supplier-registration/discovery database rather than an opportunity feed (AusTender remains the opportunity publication channel), but it is a material new Commonwealth channel to monitor. URL is the canonical Finance landing area; exact live URL to be confirmed once egress is restored."
-    },
-    {
-      "source_name": "QTenders (Queensland Government, Department of Energy and Public Works)",
-      "source_url": "https://qtenders.epw.qld.gov.au/",
-      "source_type": "gov-state",
-      "jurisdiction": "Queensland",
-      "platform": "VendorPanel",
-      "access_method": "html",
-      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "WebSearch confirmed QTenders now resolves under the EPW (Energy and Public Works) host and that documents/responses route through VendorPanel via supply.qld.gov.au. Both URLs already present in the known source set. The enhanced QTenders website is referenced under the Queensland Procurement Policy 2026.",
-      "recommended_check_frequency": "daily",
-      "notes": "URL-health confirmation only (self-heal note): qtenders.hpw.qld.gov.au reflects a prior department name; qtenders.epw.qld.gov.au is current. Not a new source."
+      "how_discovered": "First recorded 2026-10-24. Re-surfaced this run via WebSearch (ministers.finance.gov.au / Katy Gallagher media release): the federal Supplier Portal began rollout in October 2025 to the ~645 suppliers on the Management Advisory Panel and People Panels, with general availability for all suppliers from July 2026, and includes an optional publicly-searchable women-owned-business register. Already known (no longer new).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Primarily a supplier-registration/discovery database rather than an opportunity feed (AusTender remains the opportunity publication channel), but a material Commonwealth channel to monitor. Exact live URL to be confirmed once egress is restored."
     },
     {
       "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
@@ -351,7 +338,7 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 mandatory check. WebSearch confirmed the public posting board matches buyers' RFIs to suppliers by category/location; full RFx detail requires a (free) SAP Business Network supplier account. Brisbane City Council confirmed to run its sourcing through SAP Ariba (registered account required). No publicly-visible Australian RFx could be read this run.",
+      "how_discovered": "Tier 3 mandatory check. WebSearch this run re-confirmed Australian buyers running sourcing through SAP Ariba (Endeavour Energy states it uses SAP Ariba for all tenders with free supplier registration; Brisbane City Council invites suppliers to tender via SAP Ariba by nominated UNSPSC; Metro Trains uses Ariba RFQ). Full RFx detail requires a free SAP Business Network supplier account. No publicly-visible Australian RFx could be read this run.",
       "recommended_check_frequency": "daily",
       "notes": "Registration-gated; already known. No corporate opportunities captured (none publicly visible; none invented)."
     },
@@ -365,9 +352,9 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 2 check. WebSearch re-confirmed widespread council migration to VendorPanel (Forbes, East Gippsland, Balranald, Gunnedah, Logan, Noosa, Cassowary Coast, Bogan) - all already in the known source set.",
+      "how_discovered": "Tier 2 check. WebSearch re-confirmed widespread council migration to VendorPanel (Forbes, East Gippsland, Woollahra, Mackay, Bundaberg, Gunnedah) - all already in the known source set.",
       "recommended_check_frequency": "daily",
-      "notes": "Primary aggregation point for Australian council public tenders. Already known; no new council buyers identified this run."
+      "notes": "Primary aggregation point for Australian council public tenders. Already known; no new council buyers identified this run. Live marketplace rows were not readable via WebSearch (registration-gated / JS-rendered)."
     },
     {
       "source_name": "buy.nsw - Opportunities (eTendering)",
@@ -379,9 +366,9 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 1 check. WebSearch returned the live buy.nsw opportunity-search URL plus a demo.buy.nsw.gov.au sandbox (sample data only). buy.nsw is being transformed into a centralised procurement gateway; ProcurePoint is being gradually replaced by a new guided buying experience but remains operational during transition.",
+      "how_discovered": "Tier 1 check. Already known. The live opportunity list is JavaScript-rendered and was not readable via WebSearch this run.",
       "recommended_check_frequency": "daily",
-      "notes": "Already known. The live opportunity list is JavaScript-rendered and was not readable via WebSearch this run; the demo sandbox must not be mistaken for live data."
+      "notes": "Already known. Live opportunity list not readable this run (JS-rendered; egress blocked)."
     },
     {
       "source_name": "EstimateOne (construction subcontractor tendering)",
@@ -393,7 +380,7 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 construction check. WebSearch re-confirmed EstimateOne as the dominant Australian commercial-construction subcontractor tendering platform (900+ builders, tens of thousands of subbies/suppliers). No specific Tier-1-builder trade packages (Lendlease/Multiplex/John Holland) were readable this run; subcontractor detail is registration-gated.",
+      "how_discovered": "Tier 3 construction check. WebSearch re-confirmed EstimateOne as the dominant Australian commercial-construction subcontractor tendering platform. No specific Tier-1-builder trade packages were readable this run; subcontractor detail is registration-gated.",
       "recommended_check_frequency": "weekly",
       "notes": "Registration-gated; already known. No publicly-visible subcontractor package captured this run (none invented)."
     }
