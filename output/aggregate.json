@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02",
+  "generated": "2026-11-03",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -131,32 +131,32 @@
     "2026-10-30",
     "2026-10-31",
     "2026-11-01",
-    "2026-11-02"
+    "2026-11-02",
+    "2026-11-03"
   ],
-  "run_count": 131,
+  "run_count": 132,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-02",
-  "latest_coverage_summary": "Tier-1 government portals queried for all jurisdictions. Fresh, current (Nov 2026) opportunities were recoverable for NSW (buy.nsw), VIC (Buying for Victoria), NT (QTOL) and ACT (Tenders ACT); the search index returned only stale/cached pages for AusTender (Cth), QLD (QTenders/supply.qld), WA, SA and TAS, so no current opportunities could be confirmed there this run. Tier-2 (water GBEs, universities, health/LHDs) and Tier-3 (SAP Ariba Discovery, mining, retail, construction/E1, charities) were scanned: these are predominantly registration- or login-gated, so portals were recorded in discovered_sources but no gated opportunities were invented. IMPORTANT: this session's network policy blocks direct access to every tender domain, so ALL captured opportunities are headline-level from WebSearch summaries and were NOT verified against live detail pages or documents.",
+  "latest_run": "2026-11-03",
+  "latest_coverage_summary": "Tier-1 government portals (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch for all jurisdictions. Tier-2 (water GBEs, universities/CSIRO, NSW Health/LHDs) and Tier-3 (SAP Ariba Discovery, defence primes, construction) were scanned, and source discovery was run for portal rebrands/migrations. IMPORTANT: this session's network policy blocks outbound DNS to every external domain (tender portals AND buyer sites such as acara.edu.au), so WebFetch returned 'getaddrinfo ENOTFOUND' for every URL tried and NO detail page or document could be opened. Everything captured is headline-level from WebSearch result summaries only. On this run the search index returned predominantly stale/cached pages for the Tier-1 portals, so clean current portal listings were largely not recoverable; only a small number of opportunities could be confirmed as genuinely current and buyer-originated (ACARA Website Development RFT closing 9 Nov 2026; Defence LAND 6504 EOI closing 26 Nov 2026; ACT Canberra Light Rail Specialist Advisors Panel). Open items captured on the 2026-11-02 run (buy.nsw/VIC/QTOL/ACT) were NOT re-observed this run and have not been re-asserted; they remain in the aggregate from their earlier runs. No opportunities were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-11-02",
-    "coverage_summary": "Tier-1 government portals queried for all jurisdictions. Fresh, current (Nov 2026) opportunities were recoverable for NSW (buy.nsw), VIC (Buying for Victoria), NT (QTOL) and ACT (Tenders ACT); the search index returned only stale/cached pages for AusTender (Cth), QLD (QTenders/supply.qld), WA, SA and TAS, so no current opportunities could be confirmed there this run. Tier-2 (water GBEs, universities, health/LHDs) and Tier-3 (SAP Ariba Discovery, mining, retail, construction/E1, charities) were scanned: these are predominantly registration- or login-gated, so portals were recorded in discovered_sources but no gated opportunities were invented. IMPORTANT: this session's network policy blocks direct access to every tender domain, so ALL captured opportunities are headline-level from WebSearch summaries and were NOT verified against live detail pages or documents.",
+    "run_date": "2026-11-03",
+    "coverage_summary": "Tier-1 government portals (AusTender, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch for all jurisdictions. Tier-2 (water GBEs, universities/CSIRO, NSW Health/LHDs) and Tier-3 (SAP Ariba Discovery, defence primes, construction) were scanned, and source discovery was run for portal rebrands/migrations. IMPORTANT: this session's network policy blocks outbound DNS to every external domain (tender portals AND buyer sites such as acara.edu.au), so WebFetch returned 'getaddrinfo ENOTFOUND' for every URL tried and NO detail page or document could be opened. Everything captured is headline-level from WebSearch result summaries only. On this run the search index returned predominantly stale/cached pages for the Tier-1 portals, so clean current portal listings were largely not recoverable; only a small number of opportunities could be confirmed as genuinely current and buyer-originated (ACARA Website Development RFT closing 9 Nov 2026; Defence LAND 6504 EOI closing 26 Nov 2026; ACT Canberra Light Rail Specialist Advisors Panel). Open items captured on the 2026-11-02 run (buy.nsw/VIC/QTOL/ACT) were NOT re-observed this run and have not been re-asserted; they remain in the aggregate from their earlier runs. No opportunities were fabricated.",
     "sources_checked": 22,
-    "tenders_found": 37,
-    "new_sources_found": 2,
-    "entries_pending_detail": 37,
+    "tenders_found": 3,
+    "new_sources_found": 1,
+    "entries_pending_detail": 3,
     "gaps": [
-      "CRITICAL - NETWORK: This session's network policy blocks outbound DNS to all tender domains (tenders.gov.au, tenders.nsw.gov.au/buy.nsw, tenders.vic.gov.au, qtenders/supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au, vendorpanel.com.au, data.gov.au, service.ariba.com, estimateone.com and corporate supplier portals). Every WebFetch returned 'getaddrinfo ENOTFOUND'. Consequently NO opportunity could be opened or verified: all entries were captured from WebSearch result summaries only, all are headline-level, and deliverables, requirements, evaluation criteria, documents, exact values and contacts could not be obtained. These domains must be allow-listed in the session's network settings for a verified run.",
-      "AusTender (Commonwealth), QTenders/supply.qld (QLD), Tenders WA, Tenders SA and Tenders Tasmania: WebSearch returned only stale/cached pages (2020-2022 or mid-2026) - no current (Nov 2026) opportunities could be confirmed; deferred to a future run or an authenticated/allow-listed session.",
-      "Tier-3 corporate (SAP Ariba Discovery; Woolworths/Coles; BHP/Rio Tinto/Fortescue/Woodside/Santos; CBA/Westpac/NAB/ANZ; Telstra/Optus/TPG; AGL/Origin/EnergyAustralia; Qantas): no publicly-visible open RFx found via WebSearch. Posting boards are registration-gated and buyer events are often invitation-only (out of scope). Portals recorded in discovered_sources; no corporate tenders fabricated.",
-      "Construction head-contractor -> subcontractor packages (EstimateOne/E1, iTWOcx, BidContender): platform requires a free login; trade-package invitations are not publicly verifiable and were not captured this run.",
-      "Universities: UTS (TenderLink) and University of Adelaide show open items but no closing dates were visible and pages were unreachable for verification; deferred.",
-      "A fresh NSW item - 'Milton Ulladulla Hospital Emergency Department overnight medical workforce' (Illawarra Shoalhaven LHD, listed ~2 Nov 2026) - was seen only via a third-party aggregator with no verifiable closing date; per the buyer-originated rule it was NOT recorded as a confirmed tender.",
-      "Sydney Water abrasive blasting & coating EOI (SWC-WS4645974632) and a bulk chemicals sourcing activity (WS5456313187) were surfaced but only via aggregators/old cache with no verifiable closing date; not recorded as confirmed tenders. Sydney Water sources (SAP Ariba) already in the known set."
+      "CRITICAL - NETWORK: The session network policy blocks outbound DNS to all external domains. Every WebFetch (tenders.gov.au, acara.edu.au, and others) returned 'getaddrinfo ENOTFOUND'. Consequently NO tender detail page or document could be opened or verified: all three captured entries are headline-level from WebSearch summaries only, and deliverables, requirements, evaluation criteria, documents, exact values, submission mechanics and contacts could not be obtained. These domains must be allow-listed in the session network settings for a verified run.",
+      "Tier-1 portals (buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT): WebSearch returned mostly stale/cached listings (closing dates in mid-2026 or earlier) this run. Unlike the 2026-11-02 run, current (Nov 2026) portal summaries were largely not recoverable via the search index, so current opportunities on those portals could not be confirmed and were not recorded. Deferred to a future run or an allow-listed/authenticated session.",
+      "Tenders SA search returned almost entirely South African (tenders.sa / SANRAL) results, not South Australian; no SA opportunity could be confirmed. NT QTOL returned no current items.",
+      "Tier-2 (Sydney/Melbourne/SA Water; universities/CSIRO; NSW Health/HealthShare/LHDs): only closed (pre-November 2026) opportunities or aggregator-only listings surfaced; no current opportunity could be confirmed buyer-originated. Water utilities (SA Water Source-to-Contract, Sydney Water SAP Ariba) and university procurement are predominantly registration/login-gated.",
+      "Tier-3 corporate: SAP Ariba Discovery and major-buyer portals (BHP/Rio/Fortescue/Woodside/Santos; Woolworths/Coles; CBA/Westpac/NAB/ANZ; Telstra/Optus; AGL/Origin; Qantas) returned no publicly-visible open RFx via WebSearch; posting boards are registration-gated and buyer events often invitation-only (out of scope). Portals recorded in discovered_sources; no corporate tenders fabricated.",
+      "Australian Museum 'Data Centre Infrastructure & Managed Services Provider' EOI (EOI-2014604) surfaced but closed 28 April 2026 - not current; not recorded.",
+      "Aggregator signals only (NOT recorded as confirmed tenders, per the buyer-originated rule): numerous australiantenders.com.au / bidsfactory / projectory / tenderalerts.au listings for NSW/VIC/QLD/WA councils and agencies with no verifiable buyer-originated detail page reachable this run (e.g. Cloncurry Shire T2026-024 Railway Street Watermain closing ~2 Nov 2026 via Tenderlink)."
     ],
     "recommended_seed_additions": [
-      "Murrumbidgee PHN tenders portal (TenderLink) - https://mphn.squarespace.com/tenders (contact tenders@mphn.org.au)",
-      "Western NSW PHN tenders & grants - https://wnswphn.org.au/grants",
-      "Allow-list the Tier-1 tender domains in the session network policy so future runs can open and verify detail pages (currently all DNS-blocked)."
+      "National Heavy Vehicle Regulator (NHVR) - procurement via VendorPanel - https://wws.nhvr.gov.au/about-us/procurement (buyer-originated; new this run).",
+      "Allow-list the Tier-1 tender domains AND buyer domains (e.g. acara.edu.au) in the session network policy so future runs can open and verify detail pages and documents - currently all DNS-blocked, forcing headline-level-only capture."
     ]
   },
   "months": [
@@ -187,7 +187,7 @@
     },
     {
       "month": "2026-11",
-      "new_tenders": 70,
+      "new_tenders": 71,
       "active_tenders": 0
     }
   ],
@@ -45238,20 +45238,20 @@
       "source_type": "gov-state",
       "jurisdiction": "Australian Capital Territory",
       "state": "ACT",
-      "tender_id": "CLR-N2300-PANEL",
+      "tender_id": "",
       "tender_url": "https://www.tenders.act.gov.au/tenders/open",
       "access": "public",
       "title": "Canberra Light Rail Specialist Advisors Panel",
-      "buyer": "Major Projects Canberra",
-      "buyer_url": "https://www.act.gov.au",
-      "category": "Infrastructure advisory panel",
+      "buyer": "ACT Government (Canberra Light Rail / Major Projects Canberra)",
+      "buyer_url": "https://www.tenders.act.gov.au",
+      "category": "Professional services - specialist advisory panel",
       "category_codes": [],
       "procurement_type": "panel",
       "current_status": "open",
-      "description": "Panel of specialist advisors for the Canberra Light Rail program.",
-      "deliverables_summary": "",
+      "description": "Standing panel to provide specialist advisory services to the Canberra Light Rail project. Listed as open on Tenders ACT with tender responses accepted at any time up to the prescribed closing date of 29 July 2027.",
+      "deliverables_summary": null,
       "key_deliverables": [],
-      "scope_of_work": "",
+      "scope_of_work": null,
       "requirements": [],
       "eligibility": "",
       "evaluation_criteria": [],
@@ -45260,37 +45260,38 @@
       "contract_term": "",
       "contract_start": null,
       "contract_end": null,
-      "publish_date": "2026-10-19",
-      "closing_date": "2026-11-24",
-      "closing_time": "2:00 PM",
+      "publish_date": null,
+      "closing_date": "2027-07-29",
+      "closing_time": "",
       "questions_due": null,
       "briefing": "",
-      "submission_method": "",
-      "lodgement_url": "",
+      "submission_method": "Lodge in Tenders ACT portal",
+      "lodgement_url": null,
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "",
+      "delivery_location": "Australian Capital Territory",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
-        "act",
         "light-rail",
-        "advisory",
         "panel",
-        "infrastructure"
+        "professional-services",
+        "act",
+        "headline-only"
       ],
       "first_seen": "2026-10-31",
       "detail_source": "",
-      "reasoning": "Surfaced from Tenders ACT open-tenders listing (released 19 Oct 2026 - recent); buyer-originated.",
-      "notes": "Headline-level only: direct page/document fetch is blocked in this cloud session (getaddrinfo ENOTFOUND for all non-allowlisted hosts), so deliverables, requirements, evaluation criteria, documents, value and contacts could not be extracted. Closing date/status surfaced from search-engine summaries and should be confirmed on the buyer's official portal.",
-      "last_seen": "2026-10-31",
+      "reasoning": "Re-confirmed as an open panel via WebSearch (surfaced through an aggregator mention; buyer-originated source is Tenders ACT, tenders.act.gov.au). Continuous-open panel accepting responses until 29 July 2027. Already tracked in the aggregate since 2026-10-31; recorded here to refresh last-seen.",
+      "notes": "HEADLINE-LEVEL ONLY. The Tenders ACT detail page could not be opened (tenders.act.gov.au is DNS-blocked and the page is JavaScript-rendered). tender_id not re-verified this run. Needs a deliverables/detail pass in an allow-listed session.",
+      "last_seen": "2026-11-03",
       "seen_dates": [
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-03"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "tenders.act:InterpretingTranslating-PIJC0012268",
@@ -45413,63 +45414,66 @@
     },
     {
       "dedup_key": "AusTender:AIR/EOI/102637/1",
-      "source_name": "AusTender",
+      "source_name": "AusTender (Commonwealth)",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Commonwealth",
-      "state": "National",
+      "state": "",
       "tender_id": "AIR/EOI/102637/1",
       "tender_url": "https://www.tenders.gov.au/atm",
       "access": "public",
       "title": "LAND 6504 - Army Medium-Range Ground-Based Air and Missile Defence System (EOI)",
-      "buyer": "Department of Defence - Capability Acquisition and Sustainment Group",
-      "buyer_url": "https://www.defence.gov.au/business-industry/finding-opportunities/austender",
-      "category": "Defence",
+      "buyer": "Department of Defence - Capability Acquisition and Sustainment Group (CASG)",
+      "buyer_url": "https://www.defence.gov.au",
+      "category": "Defence - air and missile defence capability",
       "category_codes": [],
       "procurement_type": "EOI",
-      "current_status": "open",
-      "description": "Expression of interest for an Army medium-range ground-based air and missile defence system under project LAND 6504.",
-      "deliverables_summary": "",
+      "current_status": "closing-soon",
+      "description": "Expression of Interest for the Australian Army's medium-range ground-based air and missile defence capability (project LAND 6504). Opened 13 October 2026 under AusTender ATM ID AIR/EOI/102637/1; bids close 26 November 2026, 12:00 PM ACT local time. Reporting indicates a supplier is targeted to be selected by the end of 2027.",
+      "deliverables_summary": null,
       "key_deliverables": [],
-      "scope_of_work": "",
+      "scope_of_work": null,
       "requirements": [],
       "eligibility": "",
       "evaluation_criteria": [],
-      "value": "",
+      "value": null,
       "value_currency": "AUD",
       "contract_term": "",
-      "contract_start": "",
-      "contract_end": "",
-      "publish_date": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-10-13",
       "closing_date": "2026-11-26",
       "closing_time": "12:00 PM ACT local time",
-      "questions_due": "",
+      "questions_due": null,
       "briefing": "",
-      "submission_method": "Online via AusTender",
-      "lodgement_url": "",
+      "submission_method": "Via AusTender",
+      "lodgement_url": null,
       "documents": [],
       "mandatory_conditions": [],
-      "delivery_location": "",
+      "delivery_location": "Australia",
       "contact_name": "",
       "contact_email": "",
       "contact_phone": "",
       "tags": [
         "defence",
         "air-defence",
-        "EOI",
-        "LAND6504"
+        "land-6504",
+        "commonwealth",
+        "eoi",
+        "headline-only"
       ],
       "first_seen": "2026-11-01",
       "detail_source": "",
-      "reasoning": "Surfaced via WebSearch (trade-news article citing the AusTender notice); buyer-originated on AusTender.",
-      "notes": "Headline-level only. This cloud session's network policy blocks direct page fetches (WebFetch returns ENOTFOUND for all non-allowlisted hosts; re-confirmed this run against tenders.gov.au), so the tender detail page and specification documents could not be opened. Deliverables, requirements, evaluation criteria, documents, values and contacts are left null/empty. ATM ID and closing date reported by a single trade-news source (the-arsenal-report.com) citing the AusTender listing; not verified against the AusTender notice itself this run.",
-      "last_seen": "2026-11-01",
+      "reasoning": "Re-confirmed as still open via WebSearch (defence-sector news plus the AusTender ATM ID AIR/EOI/102637/1). Buyer-originated via AusTender. Already tracked in the aggregate since 2026-11-01; recorded here to refresh last-seen because it remains open (closes 26 Nov 2026).",
+      "notes": "HEADLINE-LEVEL ONLY. The AusTender notice could not be opened to verify deliverables, requirements, evaluation criteria, value or documents - tenders.gov.au is DNS-blocked in this session. Dates/ID taken from WebSearch summaries of the notice and news coverage.",
+      "last_seen": "2026-11-03",
       "seen_dates": [
-        "2026-11-01"
+        "2026-11-01",
+        "2026-11-03"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "dedup_key": "buy.nsw:SR00908",
@@ -45530,7 +45534,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:FutureFleetHorizon1",
@@ -45709,7 +45713,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:SutherlandShire-MinorConstructionPanel",
@@ -45829,7 +45833,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:GMS027",
@@ -46126,7 +46130,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:CFA-2025-0198",
@@ -47311,7 +47315,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTOL:VictoriaHwy-PavementWidening-Katherine",
@@ -47371,7 +47375,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTOL:WeedControl-Darwin-36months",
@@ -47431,7 +47435,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTOL:TrafficManagement-AllNT-36months",
@@ -47490,7 +47494,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:SuburbanLandAgency-2026-12-03",
@@ -47902,8 +47906,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:26.0000139264.0810",
@@ -47962,8 +47966,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BlacktownCityCouncil:C48-2026",
@@ -48022,8 +48026,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:NewElectricBusProgram-TechnicalAdvisor",
@@ -48081,8 +48085,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:PRJ_1584",
@@ -48140,8 +48144,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:eHealthNSW-LinenManagement-EOI",
@@ -48200,8 +48204,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:NSWPolice-GeospatialIntelligence-EOI",
@@ -48260,8 +48264,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "buy.nsw:RailSafe-DigitalPlatform-EOI",
@@ -48321,8 +48325,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:DOT45943",
@@ -48383,8 +48387,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:DOT45917",
@@ -48442,8 +48446,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:DOT45539",
@@ -48501,8 +48505,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:DOT32008",
@@ -48560,8 +48564,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:ATN35534",
@@ -48619,8 +48623,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:FOL26-8005",
@@ -48678,8 +48682,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:FOL26-3030",
@@ -48737,8 +48741,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "BuyingForVictoria:GP-01-2026",
@@ -48797,8 +48801,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "QTOL:NTG26-0244",
@@ -48857,8 +48861,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICS0011794",
@@ -48916,8 +48920,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICM0011413",
@@ -48975,8 +48979,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICE0014602",
@@ -49034,8 +49038,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:39158-RFT-400",
@@ -49092,8 +49096,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PISL0011997",
@@ -49152,8 +49156,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICE0014704",
@@ -49210,8 +49214,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:39219-RFT-400",
@@ -49268,8 +49272,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PIJC0014526",
@@ -49327,8 +49331,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PIJC0012268",
@@ -49386,8 +49390,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICE0014839",
@@ -49446,8 +49450,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:PICE0014832",
@@ -49504,8 +49508,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "TendersACT:SL20261015",
@@ -49559,6 +49563,68 @@
       "last_seen": "2026-11-02",
       "seen_dates": [
         "2026-11-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "ACARA:RFT-WebsiteDevelopmentServices-2026-11-09",
+      "source_name": "Australian Curriculum, Assessment and Reporting Authority (ACARA) - Tenders",
+      "source_url": "https://www.acara.edu.au/about-us/tenders",
+      "source_type": "public-sector-other",
+      "jurisdiction": "Commonwealth (national)",
+      "state": "",
+      "tender_id": "",
+      "tender_url": "https://www.acara.edu.au/about-us/tenders",
+      "access": "public",
+      "title": "Website Development Services",
+      "buyer": "Australian Curriculum, Assessment and Reporting Authority (ACARA)",
+      "buyer_url": "https://www.acara.edu.au",
+      "category": "ICT - Website / digital development",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "ACARA has an open Request for Tender for Website Development Services, listed on its own tenders page with a closing date of Monday 9 November 2026, 3:00 PM (Sydney time). Scope beyond 'website development services' could not be confirmed this run.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-11-09",
+      "closing_time": "3:00 PM (Sydney time)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": null,
+      "lodgement_url": null,
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "ict",
+        "website",
+        "digital",
+        "acara",
+        "commonwealth",
+        "headline-only"
+      ],
+      "first_seen": "2026-11-03",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch of ACARA's own tenders page (acara.edu.au/about-us/tenders), which lists 'Request for tender: Website Development Services' closing Monday 9 November 2026, 3pm Sydney time. Buyer-originated. ACARA is a Commonwealth statutory authority that runs its own RFTs rather than publishing solely on AusTender.",
+      "notes": "HEADLINE-LEVEL ONLY. The ACARA tenders page and its tender documents could not be opened to verify scope, deliverables, requirements, evaluation criteria, value, submission method or contacts - the session network policy blocks acara.edu.au (getaddrinfo ENOTFOUND). Needs a deliverables/detail pass in an allow-listed session.",
+      "last_seen": "2026-11-03",
+      "seen_dates": [
+        "2026-11-03"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -49650,18 +49716,18 @@
       "source_name": "AusTender (Commonwealth)",
       "source_url": "https://www.tenders.gov.au/atm",
       "source_type": "gov-commonwealth",
-      "jurisdiction": "Commonwealth of Australia",
+      "jurisdiction": "Commonwealth",
       "platform": "AusTender",
       "access_method": "html",
-      "feed_or_api_url": "https://data.gov.au/data/dataset/57ecafd2-fc67-4277-b39a-4758cd4e9083",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 1 canonical portal re-checked this run (could not be opened directly; host blocked). data.gov.au carries an 'AusTender Open Approaches to Market' dataset that may offer a machine-readable route on an unblocked run.",
+      "how_discovered": "Canonical Tier-1 seed; re-checked this run (confirmed Defence LAND 6504 EOI AIR/EOI/102637/1).",
       "recommended_check_frequency": "daily",
-      "notes": "Known source. Note the data.gov.au 'AusTender Open Approaches to Market' dataset as a potential machine-readable feed to try when egress is unblocked.",
+      "notes": "Primary Commonwealth portal. Detail pages DNS-blocked this run; headline-level only. A new AusTender Supplier Portal was reported rolling out to all businesses from 1 July 2026.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-11-03",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -49709,11 +49775,12 @@
         "2026-09-25",
         "2026-10-15",
         "2026-10-16",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-11-03"
       ],
-      "seen_count": 47,
+      "seen_count": 48,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Buying for Victoria (Tenders VIC)",
@@ -49745,7 +49812,7 @@
       ],
       "seen_count": 11,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders WA",
@@ -49827,18 +49894,18 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "National (multi-buyer)",
+      "jurisdiction": "National / global (AU buyers)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier-3 mandatory check.",
+      "how_discovered": "Tier-3 mandatory check. Public posting board where buyers post open RFx; full detail requires a (free) supplier account.",
       "recommended_check_frequency": "daily",
-      "notes": "Public posting board for corporate RFx; viewing full detail requires a free supplier account. No publicly-visible Australian corporate opportunity found this run; nothing fabricated.",
+      "notes": "Registration-gated; no publicly-visible open AU RFx recoverable via WebSearch this run and portal not openable (DNS-blocked). Recorded for source completeness; no opportunities fabricated. An authenticated run is needed to read gated events.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -49911,9 +49978,10 @@
         "2026-10-28",
         "2026-10-30",
         "2026-11-01",
-        "2026-11-02"
+        "2026-11-02",
+        "2026-11-03"
       ],
-      "seen_count": 72,
+      "seen_count": 73,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -50071,7 +50139,7 @@
       ],
       "seen_count": 22,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Water Corporation (WA) — Suppliers & contractors",
@@ -50169,7 +50237,7 @@
       ],
       "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Australia Post — Tendering & supply opportunities",
@@ -50781,16 +50849,16 @@
       "source_url": "https://www.tenders.act.gov.au/tenders/open",
       "source_type": "gov-state",
       "jurisdiction": "Australian Capital Territory",
-      "platform": "Tenders ACT",
+      "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Core Tier-1 portal; queried this run.",
+      "how_discovered": "Canonical Tier-1 seed; re-checked this run (Canberra Light Rail Specialist Advisors Panel listed open).",
       "recommended_check_frequency": "daily",
-      "notes": "Returned fresh current listings via WebSearch; live pages unreachable this session.",
+      "notes": "ACT government portal. JavaScript-rendered and DNS-blocked this run; headline-level only.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "seen_dates": [
         "2026-06-28",
         "2026-07-18",
@@ -50798,9 +50866,10 @@
         "2026-08-25",
         "2026-08-27",
         "2026-10-28",
-        "2026-11-02"
+        "2026-11-02",
+        "2026-11-03"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -53114,7 +53183,7 @@
       ],
       "seen_count": 11,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders ACT",
@@ -59147,26 +59216,27 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Australian Curriculum, Assessment and Reporting Authority (ACARA) — Tenders",
+      "source_name": "Australian Curriculum, Assessment and Reporting Authority (ACARA) - Tenders",
       "source_url": "https://www.acara.edu.au/about-us/tenders",
       "source_type": "public-sector-other",
-      "jurisdiction": "Commonwealth",
+      "jurisdiction": "Commonwealth (national)",
       "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "WebSearch for Australian education-sector procurement; ACARA (a Commonwealth statutory authority) maintains its own tenders page.",
-      "recommended_check_frequency": "monthly",
-      "notes": "Commonwealth statutory authority (education). Buyer-originated tenders page. Not fetchable this run due to egress block.",
+      "how_discovered": "WebSearch; ACARA publishes RFTs/EOIs on its own tenders page (currently an open Website Development Services RFT closing 9 Nov 2026).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated. Already known. Detail pages/documents DNS-blocked this run.",
       "first_seen": "2026-10-10",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-11-03",
       "seen_dates": [
-        "2026-10-10"
+        "2026-10-10",
+        "2026-11-03"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Queensland Government — Resources public notices & tenders (business.qld.gov.au)",
@@ -60779,8 +60849,8 @@
         "2026-11-02"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Western NSW Primary Health Network (WNSW PHN) - Tenders & Grants",
@@ -60799,6 +60869,50 @@
       "last_seen": "2026-11-02",
       "seen_dates": [
         "2026-11-02"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "National Heavy Vehicle Regulator (NHVR) - Procurement",
+      "source_url": "https://wws.nhvr.gov.au/about-us/procurement",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Commonwealth / national (NHVR)",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for VendorPanel migrations; NHVR's procurement page ('Implementation of VendorPanel Solution') and a June 2025 supplier letter direct suppliers to VendorPanel for its tender opportunities.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated; NHVR releases tender opportunities via VendorPanel. Not previously in the known source set. Individual opportunities are advertised on VendorPanel public tenders.",
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "seen_dates": [
+        "2026-11-03"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Queensland Rail - Supplying to QR (Procurement)",
+      "source_url": "https://www.queenslandrail.com.au/forbusiness/supplyingtoQR/opportunities",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland",
+      "platform": "VendorPanel + SAP Ariba",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "WebSearch; Queensland Rail advertises all open tender opportunities on VendorPanel and uses SAP Ariba for invited events/RFQs.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated GBE. Open market tenders on VendorPanel; Ariba events are invitation-only. Already known to the routine.",
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "seen_dates": [
+        "2026-11-03"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
