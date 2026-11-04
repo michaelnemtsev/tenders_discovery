@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -133,29 +133,33 @@
     "2026-11-01",
     "2026-11-02",
     "2026-11-03",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05"
   ],
-  "run_count": 133,
+  "run_count": 134,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-04",
-  "latest_coverage_summary": "Tier-1 government portals (AusTender/Defence, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch across all jurisdictions. Tier-2 (airport/port/water GBEs, universities/CSIRO, NSW Health/HealthShare) and Tier-3 (SAP Ariba Discovery, Jaggaer/GEP/Ivalua, BHP/Rio/Woodside, EstimateOne construction) were scanned, and dedicated source-discovery searches were run for new/rebranded portals. TWO HARD LIMITS applied this run: (1) the session network policy blocks outbound DNS to every external domain, so every WebFetch returned 'getaddrinfo ENOTFOUND' and NO tender detail page or document could be opened - everything is headline-level from WebSearch summaries only; (2) the search index returned predominantly stale/cached pages (closing dates clustered Feb-Aug 2026) dominated by paid aggregators, so current (Nov 2026) buyer-originated portal listings were largely not recoverable. Only one still-open buyer-originated opportunity could be re-confirmed this run (Defence LAND 6504 EOI, closes 26 Nov 2026). No new sources could be confirmed - every source-discovery candidate surfaced this run (AusTender GovPanels Supplier Portal, ICN Gateway, NHVR, supply.qld/VendorPanel, Mount Alexander & East Gippsland councils on VendorPanel) is already in the known source set. No opportunities, sources, dates, values or contacts were fabricated.",
+  "latest_run": "2026-11-05",
+  "latest_coverage_summary": "Tier-1 government portals (AusTender/Defence, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch across jurisdictions; an extended-mode sweep for November-2026 closing dates recovered a batch of current buyer-originated listings on the official state portals. Tier-2 (water corporations/GBEs, universities, health purchasing) and Tier-3 (SAP Ariba Discovery, Brisbane City Council Ariba portal, EstimateOne construction) were scanned, and dedicated source-discovery searches were run for new/rebranded portals and council VendorPanel migrations. HARD NETWORK LIMIT (unchanged from the 2026-11-04 run): the session blocks outbound DNS to every external domain, so every WebFetch returned 'getaddrinfo ENOTFOUND' and NO tender detail page or document could be opened. All captured entries are therefore HEADLINE-LEVEL ONLY from WebSearch result summaries; deliverables, requirements, evaluation criteria, documents, values, submission mechanics and contacts could not be obtained and are left null. Three buyer-originated opportunities were captured with multi-signal corroboration: Defence LAND 6504 EOI (strongly corroborated, closes 26 Nov 2026), HealthShare Victoria Monitoring Products HPVITS2027-021, and Goulburn Valley Water Shepparton WTP disinfection upgrades. Several further November-2026 items surfaced in a single extended search but could not be corroborated or opened, so they were deliberately left out (listed in gaps) rather than recorded with unverified detail. One genuinely NEW source was confirmed: Forbes Shire Council (NSW) migrating all quotes and tenders to VendorPanel in 2026. No opportunities, sources, dates, values or contacts were fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-11-04",
-    "coverage_summary": "Tier-1 government portals (AusTender/Defence, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch across all jurisdictions. Tier-2 (airport/port/water GBEs, universities/CSIRO, NSW Health/HealthShare) and Tier-3 (SAP Ariba Discovery, Jaggaer/GEP/Ivalua, BHP/Rio/Woodside, EstimateOne construction) were scanned, and dedicated source-discovery searches were run for new/rebranded portals. TWO HARD LIMITS applied this run: (1) the session network policy blocks outbound DNS to every external domain, so every WebFetch returned 'getaddrinfo ENOTFOUND' and NO tender detail page or document could be opened - everything is headline-level from WebSearch summaries only; (2) the search index returned predominantly stale/cached pages (closing dates clustered Feb-Aug 2026) dominated by paid aggregators, so current (Nov 2026) buyer-originated portal listings were largely not recoverable. Only one still-open buyer-originated opportunity could be re-confirmed this run (Defence LAND 6504 EOI, closes 26 Nov 2026). No new sources could be confirmed - every source-discovery candidate surfaced this run (AusTender GovPanels Supplier Portal, ICN Gateway, NHVR, supply.qld/VendorPanel, Mount Alexander & East Gippsland councils on VendorPanel) is already in the known source set. No opportunities, sources, dates, values or contacts were fabricated.",
-    "sources_checked": 23,
-    "tenders_found": 1,
-    "new_sources_found": 0,
-    "entries_pending_detail": 1,
+    "run_date": "2026-11-05",
+    "coverage_summary": "Tier-1 government portals (AusTender/Defence, buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) were queried via WebSearch across jurisdictions; an extended-mode sweep for November-2026 closing dates recovered a batch of current buyer-originated listings on the official state portals. Tier-2 (water corporations/GBEs, universities, health purchasing) and Tier-3 (SAP Ariba Discovery, Brisbane City Council Ariba portal, EstimateOne construction) were scanned, and dedicated source-discovery searches were run for new/rebranded portals and council VendorPanel migrations. HARD NETWORK LIMIT (unchanged from the 2026-11-04 run): the session blocks outbound DNS to every external domain, so every WebFetch returned 'getaddrinfo ENOTFOUND' and NO tender detail page or document could be opened. All captured entries are therefore HEADLINE-LEVEL ONLY from WebSearch result summaries; deliverables, requirements, evaluation criteria, documents, values, submission mechanics and contacts could not be obtained and are left null. Three buyer-originated opportunities were captured with multi-signal corroboration: Defence LAND 6504 EOI (strongly corroborated, closes 26 Nov 2026), HealthShare Victoria Monitoring Products HPVITS2027-021, and Goulburn Valley Water Shepparton WTP disinfection upgrades. Several further November-2026 items surfaced in a single extended search but could not be corroborated or opened, so they were deliberately left out (listed in gaps) rather than recorded with unverified detail. One genuinely NEW source was confirmed: Forbes Shire Council (NSW) migrating all quotes and tenders to VendorPanel in 2026. No opportunities, sources, dates, values or contacts were fabricated.",
+    "sources_checked": 20,
+    "tenders_found": 3,
+    "new_sources_found": 1,
+    "entries_pending_detail": 3,
     "gaps": [
-      "CRITICAL - NETWORK: The session network policy blocks outbound DNS to all external domains. Every WebFetch (tenders.gov.au and all others) returned 'getaddrinfo ENOTFOUND'. Consequently NO tender detail page or document could be opened or verified this run: the single captured entry is headline-level from WebSearch summaries only, and deliverables, requirements, evaluation criteria, documents, exact values, submission mechanics and contacts could not be obtained. These domains must be allow-listed in the session network settings for a verified run.",
-      "SEARCH INDEX STALE: Tier-1 portals (buy.nsw, Buying for Victoria, QTenders/supply.qld, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL, Tenders ACT) returned almost entirely stale/cached listings via WebSearch (closing dates in Feb-Aug 2026). Current November 2026 portal summaries were not recoverable through the search index, so current opportunities on those portals could not be confirmed and were not recorded. Deferred to a future run or an allow-listed/authenticated session.",
-      "Tenders SA search returned almost entirely South African (tenders.sa / SANRAL / Tenderflow) results, not South Australian; no SA opportunity could be confirmed. NT QTOL and ACT returned only pre-November or aggregator-only items.",
-      "Tier-2 (airport/port corporations, Water Corporation/South East Water/Sydney Water, universities/CSIRO, NSW Health/HealthShare/LHDs): only closed (pre-November 2026) opportunities or aggregator-only listings surfaced; no current opportunity could be confirmed buyer-originated. Water utilities (Sydney Water SAP Ariba) and university procurement are predominantly registration/login-gated.",
-      "Tier-3 corporate (MANDATORY scan performed): SAP Ariba Discovery, Jaggaer/GEP/Ivalua, and major-buyer portals (BHP/Rio Tinto/Woodside/Fortescue/Santos; Woolworths/Coles; CBA/Westpac/NAB/ANZ; Telstra/Optus; AGL/Origin; Qantas) returned no publicly-visible open RFx via WebSearch. Posting boards are registration-gated and buyer-specific events are often invitation-only (out of scope). All relevant corporate portals are already recorded in discovered_sources from prior runs; no corporate tenders were fabricated.",
-      "SOURCE DISCOVERY attempted but no NEW source confirmed: candidates surfaced this run (AusTender GovPanels/Supplier Portal, ICN Gateway, NHVR procurement, supply.qld/Queensland Procurement Solution on VendorPanel, Mount Alexander Shire & East Gippsland Shire councils migrating to VendorPanel, Logan City Council) are all already in the known 489-source set. The search index surfaced no genuinely new buyer-originated portal or rebrand this run.",
-      "Aggregator-only signals (NOT recorded as confirmed tenders, per the buyer-originated rule): higher-numbered australiantenders.com.au listings suggesting recent activity, e.g. 'Whitsunday Coast Airport (WCA) Sewage System - Operate and Maintain' (issuer Whitsunday Regional Council, listing 619019) and 'Superintendent and Principal Representative Services PSP002-011' (listing 616582). The buyer's own source could not be reached (DNS blocked) to confirm currency/detail, so these are left as discovery signals only and not captured."
+      "CRITICAL - NETWORK: The session network policy blocks outbound DNS to all external domains. Every WebFetch (tenders.gov.au, tenders.vic.gov.au, buy.nsw.gov.au, hpv.org.au and all others) returned 'getaddrinfo ENOTFOUND'. Consequently NO tender detail page or document could be opened or verified this run: all three captured entries are headline-level from WebSearch summaries only, and deliverables, requirements, evaluation criteria, documents, exact values, submission mechanics and contacts could not be obtained. These domains must be allow-listed in the session network settings for a verified, detail-level run.",
+      "UNVERIFIED CLOSING DATES: The closing dates and tender IDs on the three captured entries come from WebSearch result summaries of the official portal pages, not from opening the primary notice (DNS-blocked). They need verification against the primary notice before being relied upon.",
+      "SURFACED-BUT-NOT-CAPTURED: An extended-mode search attributed several additional current (November 2026) listings to the official portals - buy.nsw (enterprise desk booking & space management system ~6 Nov; card design & printing ~12 Nov; Sydney Opera House vending machines ~17 Nov; Aerotropolis Bus Depot technical advisor ~19 Nov; Henry Lawson Drive pedestrian refuge ~24 Nov), Buying for Victoria (Box Hill Institute grounds maintenance ~26 Nov), Tenders ACT (JACS interpreting & translating services ~17 Nov; ACT Healthy Waterways catchment research ~12 Nov), and Queensland (Townsville sewage rising main D&C; QBuild/Transport and Main Roads works). Follow-up corroboration searches either returned only older/closed versions (Opera House vending #2025/CSS1 closed Jun 2025; Aerotropolis/Transport for NSW ZEB Tranche-2 advisor closed Feb 2025) or found nothing, and none could be opened (DNS-blocked). These were deliberately NOT recorded as confirmed tenders to avoid logging unverified or possibly conflated detail; they are candidates for an allow-listed/authenticated future run.",
+      "Tier-3 corporate (MANDATORY scan performed): SAP Ariba Discovery returned no publicly-visible open AU RFx via WebSearch; the posting board is registration-gated. Brisbane City Council's SAP Ariba supplier portal confirmed registration was paused 23 Oct - 1 Nov 2026, resuming 2 Nov 2026 (buyer-specific sourcing events remain registration-gated). Major-buyer portals (BHP/Rio Tinto/Woodside/Fortescue/Santos; Woolworths/Coles; CBA/Westpac/NAB/ANZ; Telstra/Optus; AGL/Origin; Qantas) surfaced no publicly-visible open RFx; invitation-only consultancy RFPs are out of scope. Relevant corporate portals are recorded in discovered_sources; no corporate tenders were fabricated.",
+      "Tier-2 universities / TAFEs / public research bodies (e.g. CSIRO): no current buyer-originated opportunity could be confirmed via WebSearch this run; university procurement is predominantly on each institution's own portal and largely not recovered through the search index. Deferred to a future run.",
+      "Tenders SA, NT QTOL and Tenders Tasmania: no current November-2026 buyer-originated opportunity could be confirmed via WebSearch (results were stale, South-African 'tenders.sa', or aggregator-only). Deferred."
     ],
-    "recommended_seed_additions": []
+    "recommended_seed_additions": [
+      "Forbes Shire Council (NSW) - Tenders & EOI via VendorPanel Marketplace (https://www.forbes.nsw.gov.au/council/tenders-public-exhibitions-and-expressions-of-interest/tenders-and-eoi)",
+      "HealthShare Victoria / Health Purchasing Victoria procurement portal (https://hpv.org.au/contracts-and-tenders) - Victorian public-health category sourcing (Jaggaer)",
+      "Goulburn Valley Water - capital works tenders via Buying for Victoria (tenders.vic.gov.au) - regional water corporation GBE"
+    ]
   },
   "months": [
     {
@@ -185,7 +189,7 @@
     },
     {
       "month": "2026-11",
-      "new_tenders": 71,
+      "new_tenders": 73,
       "active_tenders": 0
     }
   ],
@@ -45426,8 +45430,8 @@
       "category": "Defence - air and missile defence capability",
       "category_codes": [],
       "procurement_type": "EOI",
-      "current_status": "closing-soon",
-      "description": "Expression of Interest for the Australian Army's medium-range ground-based air and missile defence capability (project LAND 6504). Opened 13 October 2026 under AusTender ATM ID AIR/EOI/102637/1; bids close 26 November 2026, 12:00 PM ACT local time. Reporting indicates a supplier is targeted to be selected by the end of 2027.",
+      "current_status": "open",
+      "description": "Expression of Interest for the Australian Army's medium-range ground-based air and missile defence capability (project LAND 6504 / MRGBAD). Announced 13 October 2026 and issued via AusTender under ATM ID AIR/EOI/102637/1; responses close 26 November 2026. Reporting indicates the procurement will progress to an RFP/Competitive Evaluation Process in 2027 with a platform selection targeted for late 2027.",
       "deliverables_summary": null,
       "key_deliverables": [],
       "scope_of_work": null,
@@ -45456,21 +45460,23 @@
         "defence",
         "air-defence",
         "land-6504",
+        "mrgbad",
         "commonwealth",
         "eoi",
         "headline-only"
       ],
       "first_seen": "2026-11-01",
       "detail_source": "",
-      "reasoning": "Re-confirmed as still open via WebSearch (defence-sector news coverage plus the AusTender ATM ID AIR/EOI/102637/1) on this run's Defence/AusTender query. Buyer-originated via AusTender. Already tracked in the aggregate since 2026-11-01; recorded again to refresh last-seen because it remains open (closes 26 Nov 2026).",
-      "notes": "HEADLINE-LEVEL ONLY (entries_pending_detail). The AusTender notice could not be opened to verify deliverables, requirements, evaluation criteria, value, submission mechanics or documents - tenders.gov.au is DNS-blocked in this session. Dates/ID taken from WebSearch summaries of the notice and sector news coverage; not yet verified against the primary notice.",
-      "last_seen": "2026-11-04",
+      "reasoning": "Re-confirmed as still open via WebSearch on this run's Defence/AusTender query. Corroborated across multiple defence-sector news outlets (Breaking Defense, Janes, Defence Connect, Army Recognition) plus an aggregator listing showing posting date 13 Oct 2026 and deadline 26 Nov 2026. Buyer-originated via AusTender (ATM ID AIR/EOI/102637/1). Already tracked in the aggregate since 2026-11-01; recorded again to refresh last-seen because it remains open.",
+      "notes": "HEADLINE-LEVEL ONLY (entries_pending_detail). The AusTender notice could not be opened to verify deliverables, requirements, evaluation criteria, value, submission mechanics or documents - tenders.gov.au is DNS-blocked in this session. Sources differ on the exact stage label (EOI vs Competitive Evaluation Process); dates/ID taken from WebSearch summaries and sector news, not yet verified against the primary notice.",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-11-01",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -49628,6 +49634,131 @@
       "seen_count": 1,
       "is_new_in_latest": false,
       "active_in_latest": false
+    },
+    {
+      "dedup_key": "HealthShare Victoria:HPVITS2027-021",
+      "source_name": "HealthShare Victoria (Health Purchasing Victoria)",
+      "source_url": "https://hpv.org.au/contracts-and-tenders/tenders",
+      "source_type": "health",
+      "jurisdiction": "Victoria",
+      "state": "VIC",
+      "tender_id": "HPVITS2027-021",
+      "tender_url": "https://hpv.org.au/contracts-and-tenders/tenders",
+      "access": "free-registration",
+      "title": "HPVITS2027-021 - Monitoring Products",
+      "buyer": "HealthShare Victoria (HSV)",
+      "buyer_url": "https://hpv.org.au",
+      "category": "Health - medical devices / patient monitoring products",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "HealthShare Victoria is seeking to establish supply arrangements for the provision of Monitoring Products (patient / physiological monitoring) to participating Victorian public health services, under tender reference HPVITS2027-021. Also surfaced on the Buying for Victoria portal with an indicated closing date of 26 November 2026.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-11-26",
+      "closing_time": "2:00 PM (AEDT) - unverified",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via HealthShare Victoria procurement portal (Jaggaer)",
+      "lodgement_url": null,
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Victoria (participating public health services)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "health",
+        "patient-monitoring",
+        "victoria",
+        "healthshare-victoria",
+        "rft",
+        "headline-only"
+      ],
+      "first_seen": "2026-11-05",
+      "detail_source": "",
+      "reasoning": "Surfaced via a Tier-1/Tier-2 health-procurement search attributing a HealthShare Victoria patient-monitoring tender (closing 26 Nov 2026) to the Buying for Victoria portal, and independently corroborated by a second search returning tender HPVITS2027-021 'Monitoring Products' issued by HealthShare Victoria on its own HPV procurement site (buyer-originated, not an aggregator).",
+      "notes": "HEADLINE-LEVEL ONLY (entries_pending_detail). The notice could not be opened to confirm the closing date/time, scope, deliverables, requirements, evaluation criteria, value or contacts - hpv.org.au and tenders.vic.gov.au are DNS-blocked in this session. The 26 Nov 2026 closing date and 2:00 PM time come from a WebSearch summary and are UNVERIFIED against the primary notice; the tender ID HPVITS2027-021 is corroborated across two searches. Full opportunity detail on HPV typically requires free supplier registration.",
+      "last_seen": "2026-11-05",
+      "seen_dates": [
+        "2026-11-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "Goulburn Valley Water:disinfection-upgrades-shepparton-wtp",
+      "source_name": "Buying for Victoria (Goulburn Valley Water)",
+      "source_url": "https://www.tenders.vic.gov.au/tenders/open",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "state": "VIC",
+      "tender_id": "",
+      "tender_url": "https://www.tenders.vic.gov.au/tenders/open",
+      "access": "public",
+      "title": "Design and Construction of Disinfection Upgrades at Shepparton Water Treatment Plant (WTP)",
+      "buyer": "Goulburn Valley Water",
+      "buyer_url": "https://gvwater.vic.gov.au",
+      "category": "Water infrastructure - design and construction (water treatment)",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Goulburn Valley Water (a Victorian regional water corporation) is seeking a contractor for the design and construction of disinfection upgrades at the Shepparton Water Treatment Plant. Part of a broader GVW disinfection-upgrade program spanning several of its treatment plants (Yea/Kyabram, Seymour/Cobram/Murchison, Barmah). Listed as a current opportunity; an indicated closing date of 24 November 2026 was reported.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-11-24",
+      "closing_time": "2:00 PM (AEDT) - unverified",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge via Buying for Victoria (tenders.vic.gov.au)",
+      "lodgement_url": null,
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Shepparton, Victoria",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "water",
+        "design-and-construct",
+        "disinfection",
+        "victoria",
+        "goulburn-valley-water",
+        "gbe",
+        "headline-only"
+      ],
+      "first_seen": "2026-11-05",
+      "detail_source": "",
+      "reasoning": "Surfaced via a Tier-1 Victoria search attributing a Goulburn Valley Water Shepparton WTP disinfection-upgrade tender (closing 24 Nov 2026) to the Buying for Victoria portal, and corroborated by a second search returning the same GVW Shepparton disinfection-upgrade opportunity marked 'Current', consistent with GVW's known program of disinfection upgrades across its plants (buyer-originated GBE procurement).",
+      "notes": "HEADLINE-LEVEL ONLY (entries_pending_detail). The notice could not be opened to confirm the tender ID, closing date/time, scope, deliverables, requirements, evaluation criteria, value, documents or contacts - tenders.vic.gov.au is DNS-blocked in this session. The 24 Nov 2026 closing date and 2:00 PM time come from a WebSearch summary and are UNVERIFIED against the primary notice; no buyer tender ID could be recovered.",
+      "last_seen": "2026-11-05",
+      "seen_dates": [
+        "2026-11-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
     }
   ],
   "discovered_sources": [
@@ -49721,12 +49852,12 @@
       "feed_or_api_url": "https://www.tenders.gov.au/public_data",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Re-checked this run for Defence/Commonwealth approaches to market; buyer-originated central Commonwealth procurement portal.",
+      "how_discovered": "Re-checked this run for Defence/Commonwealth approaches to market; buyer-originated central Commonwealth procurement portal. Carries the LAND 6504 EOI captured this run.",
       "recommended_check_frequency": "daily",
-      "notes": "Primary Commonwealth source. Carries the LAND 6504 EOI captured this run. Not reachable for detail (DNS blocked) this run.",
+      "notes": "Already known. Primary Commonwealth source. Not reachable for detail (DNS blocked) this run.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -49776,27 +49907,28 @@
         "2026-10-16",
         "2026-10-28",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
-      "seen_count": 49,
+      "seen_count": 50,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "Buying for Victoria (Tenders VIC)",
+      "source_name": "Buying for Victoria (tenders.vic.gov.au)",
       "source_url": "https://www.tenders.vic.gov.au/tenders/open",
       "source_type": "gov-state",
       "jurisdiction": "Victoria",
-      "platform": "Buying for Victoria",
+      "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Core Tier-1 portal; queried this run.",
+      "how_discovered": "Tier-1 sweep for November-2026 open tenders; the official open-tenders page surfaced current listings for Victorian buyers including HealthShare Victoria and Goulburn Valley Water.",
       "recommended_check_frequency": "daily",
-      "notes": "Returned fresh current listings (incl. detail-page ids) via WebSearch; live pages unreachable this session.",
+      "notes": "Already known. Carries the Victorian state, GBE and health-service opportunities (incl. HealthShare Victoria and Goulburn Valley Water) captured/flagged this run. Detail pages DNS-blocked this run.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -49808,11 +49940,12 @@
         "2026-09-23",
         "2026-10-16",
         "2026-10-17",
-        "2026-11-02"
+        "2026-11-02",
+        "2026-11-05"
       ],
-      "seen_count": 11,
+      "seen_count": 12,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Tenders WA",
@@ -49900,12 +50033,12 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier-3 scan. Public posting board where buyers post open RFx; matched suppliers respond. No publicly-visible AU open posting recoverable via WebSearch this run.",
+      "how_discovered": "Mandatory Tier-3 scan. Public posting board where buyers post open RFx (RFI/RFP) and matched suppliers respond. No publicly-visible AU open posting recoverable via WebSearch this run.",
       "recommended_check_frequency": "daily",
       "notes": "Already known. Full opportunity detail requires a free supplier account; capture individual postings only with an authenticated session. Australian buyers confirmed to use Ariba include Brisbane City Council and Airservices Australia.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -49980,9 +50113,10 @@
         "2026-11-01",
         "2026-11-02",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
-      "seen_count": 74,
+      "seen_count": 75,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -50239,7 +50373,7 @@
       ],
       "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Australia Post — Tendering & supply opportunities",
@@ -50482,18 +50616,18 @@
       "source_name": "VendorPanel Public Tenders",
       "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
       "source_type": "gov-local",
-      "jurisdiction": "Australia (local government, multi-state)",
+      "jurisdiction": "Australia",
       "platform": "VendorPanel",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 2 local-government channel re-checked; many councils (incl. QLD agencies migrating from QTenders) are moving all quotes/tenders to VendorPanel. Public tenders page is poorly indexed and could not be opened directly.",
-      "recommended_check_frequency": "daily",
-      "notes": "Known source; Queensland Government is phasing QTenders over to VendorPanel (register via supply.qld.gov.au to access documents).",
+      "how_discovered": "Local-government source-discovery. Hundreds of Australian councils (incl. Forbes, Cook Shire, Bayside, East Gippsland, Mount Alexander) route quotes and tenders through VendorPanel; the public tenders page lists openly-advertised council opportunities.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Already known. Buyer-originated platform (not an aggregator); many councils issue all quotes/tenders only to registered Marketplace suppliers, so some opportunities require free registration to view in full.",
       "state": "",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -50537,11 +50671,12 @@
         "2026-10-25",
         "2026-10-26",
         "2026-10-27",
-        "2026-10-28"
+        "2026-10-28",
+        "2026-11-05"
       ],
-      "seen_count": 43,
+      "seen_count": 44,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Transgrid — Suppliers (iBuy / SAP Ariba)",
@@ -52091,7 +52226,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Mid West Ports Authority — Tenders",
@@ -56413,15 +56548,16 @@
       "recommended_check_frequency": "weekly",
       "notes": "Already known. Buyer- (head-contractor-) originated subcontractor tenders; access requires a subcontractor account.",
       "first_seen": "2026-08-30",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "seen_dates": [
         "2026-08-30",
         "2026-10-16",
         "2026-10-24",
         "2026-10-25",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-05"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -57539,7 +57675,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Rio Tinto - Buy Local Australia (local suppliers)",
@@ -57743,26 +57879,27 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Forbes Shire Council (NSW) — Tenders and EOI",
+      "source_name": "Forbes Shire Council (NSW) - Tenders & EOI via VendorPanel Marketplace",
       "source_url": "https://www.forbes.nsw.gov.au/council/tenders-public-exhibitions-and-expressions-of-interest/tenders-and-eoi",
       "source_type": "gov-local",
-      "jurisdiction": "New South Wales (local government)",
-      "platform": "custom",
-      "access_method": "html",
+      "jurisdiction": "New South Wales",
+      "platform": "VendorPanel",
+      "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": true,
-      "confidence": "medium",
-      "how_discovered": "Surfaced in a WebSearch for VendorPanel / council RFQ activity; forbes.nsw.gov.au publishes its own tenders and EOIs page (buyer-originated). Not present in the routine's 345 known sources.",
-      "recommended_check_frequency": "weekly",
-      "notes": "Page existence confirmed from the result-link title only; contents could not be fetched (EGRESS_BLOCKED 403). Confirm whether it also mirrors to VendorPanel.",
+      "confidence": "high",
+      "how_discovered": "Source-discovery search on council VendorPanel migrations. Forbes Shire Council's own tenders page states it is switching to VendorPanel to issue ALL quotes and tenders to registered Marketplace suppliers in 2026 (catering sourced exclusively via the panel from 1 January 2026). A VendorPanel-sourced Forbes 'Provision of Welding Services - Preferred Supplier Panel' opportunity (published 24 Apr 2026) was seen via an aggregator discovery signal; the buyer's own source is recorded here.",
+      "recommended_check_frequency": "monthly",
+      "notes": "NEW source this run. Buyer-originated local-government procurement moving onto VendorPanel; Marketplace registration is free for suppliers. Governance contact per council page: 02 6850 2300 / forbes@forbes.nsw.gov.au.",
       "first_seen": "2026-09-23",
-      "last_seen": "2026-09-23",
+      "last_seen": "2026-11-05",
       "seen_dates": [
-        "2026-09-23"
+        "2026-09-23",
+        "2026-11-05"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Cumberland City Council (NSW) — Tenders / Record of tenders",
@@ -59640,7 +59777,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Narrabri Shire Council (NSW) - Tenders, Quotations & Expressions of Interest",
@@ -60027,17 +60164,18 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Re-checked this run; Brisbane City Council runs supplier registration and sourcing on SAP Ariba (self-registration + council approval, ~2 business days). Note a tender-publishing and onboarding pause from 5pm 23 Oct to 2 Nov 2026.",
+      "how_discovered": "Tier-3 Ariba scan surfaced Brisbane City Council's SAP Ariba supplier portal; the page confirmed supplier registration was paused 23 Oct - 1 Nov 2026 and resumed 2 Nov 2026, and that sourcing events are run through Ariba.",
       "recommended_check_frequency": "weekly",
-      "notes": "Known local-government Ariba channel; opportunities are registration-gated. Publishing pause 23 Oct - 2 Nov 2026 means fewer new postings in that window.",
+      "notes": "Already known. Buyer-originated local-government sourcing via SAP Ariba; opportunities and events are registration-gated.",
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-11-05",
       "seen_dates": [
-        "2026-10-19"
+        "2026-10-19",
+        "2026-11-05"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Mildura Rural City Council (VendorPanel public tenders)",
@@ -60901,7 +61039,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Queensland Rail - Supplying to QR (Procurement)",
@@ -60924,6 +61062,28 @@
       "seen_count": 1,
       "is_new_in_latest": false,
       "active_in_latest": false
+    },
+    {
+      "source_name": "HealthShare Victoria / Health Purchasing Victoria (procurement portal)",
+      "source_url": "https://hpv.org.au/contracts-and-tenders/tenders",
+      "source_type": "health",
+      "jurisdiction": "Victoria",
+      "platform": "Jaggaer",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Health-procurement search; HealthShare Victoria (HSV) publishes category sourcing (e.g. HPVITS2027-021 Monitoring Products) on its own HPV procurement site and mirrors to Buying for Victoria.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated Victorian public-health purchasing body. Full opportunity detail typically requires free supplier registration (Jaggaer). Carries the HPVITS2027-021 entry captured this run. Recommended for the permanent seed list if not already present (distinct from NSW HealthShare).",
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05",
+      "seen_dates": [
+        "2026-11-05"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
     }
   ]
 }
