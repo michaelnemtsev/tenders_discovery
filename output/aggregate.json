@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-08",
+  "generated": "2026-11-09",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -137,33 +137,36 @@
     "2026-11-05",
     "2026-11-06",
     "2026-11-07",
-    "2026-11-08"
+    "2026-11-08",
+    "2026-11-09"
   ],
-  "run_count": 137,
+  "run_count": 138,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-08",
-  "latest_coverage_summary": "Degraded, search-index-only run (same network constraint as recent runs). The session's network policy again blocked ALL direct HTTPS egress to tender portals and detail pages: WebFetch/DNS failed with ENOTFOUND for every .gov.au host (tenders.gov.au, tenders.vic.gov.au, etc.) and every e-sourcing platform, so discovery was limited to the WebSearch tool. WebSearch is US-indexed and returned mostly stale (mid-2026) cached snapshots, JavaScript-disabled portal shells, and third-party aggregator pages. Tier 1 (Commonwealth AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS/NT/ACT) were all swept via search; no directly-verifiable NEW open government notices from the last 7 days could be confirmed. Tier 2 (councils, universities, water/energy utilities) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Woodside/Fortescue, Woolworths/Coles, Qantas, Telstra, EstimateOne) were checked via search; all corporate channels remained login/registration-gated with no publicly-visible open RFx. Only two opportunities could be captured responsibly this run: one confirmed closing-soon (ACARA Website Development Services, closing 9 Nov 2026 per ACARA's own tenders page) and one fresh buyer-originated panel signal (DTA Digital Marketplace Panel 2 reopening). An ACARA NAP-ICTL 2028 RFT surfaced but its own RFT document states tenderers must have received an email invitation, so it is invitation-only and OUT OF SCOPE (not captured). Two genuinely new buyer-originated council sources were identified for the source set.",
+  "latest_run": "2026-11-09",
+  "latest_coverage_summary": "Degraded, search-index-only run (same network constraint as all recent runs). The session's network policy again blocked ALL direct HTTPS egress: WebFetch/DNS failed with ENOTFOUND for every target host tested, including www.tenders.gov.au, data.gov.au and www.vendorpanel.com.au. No tender portal, detail page, feed/API, or tender document could be opened directly, so discovery was limited to the WebSearch tool, which is US-indexed and returned mostly stale (mid-2026) cached snapshots, JavaScript-disabled portal shells, and third-party aggregator pages. Tier 1 (Commonwealth AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS/NT/ACT) were swept via search; no directly-verifiable NEW open government notice from the last 7 days could be confirmed against a buyer-originated primary source. Tier 2 (councils via VendorPanel/TenderLink, universities/TAFEs, water/energy GBEs, ports/airports, public health/HealthShare) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Woodside/Fortescue, Woolworths/Coles, Qantas, Telstra, EstimateOne) were checked via search; all corporate channels remained login/registration-gated with no publicly-visible open RFx. Several promising leads surfaced but could not be captured responsibly: a Home Affairs 'JRAS' panel lead resolved to a mis-dated 2007 notice; a Defence Land 6504 item is market research, not an RFT; DFAT-1039 (PNG ESIP 2) is shortlisted/invitation-only (out of scope); and a Tasmanian Government 13-site greenfield aged-care EOI had already closed (6 Nov 2026). Only two buyer-originated opportunities could be carried responsibly this run, both headline-level: ACARA RFT 8-26 (Website Development Services, closing today 9 Nov 2026) and the DTA Digital Marketplace Panel 2 (BuyICT) application channel. One genuinely new buyer-originated council source (Shire of Northam, WA) was identified and verified as absent from the existing 504-source set.",
   "latest_run_metadata": {
-    "run_date": "2026-11-08",
-    "coverage_summary": "Degraded, search-index-only run (same network constraint as recent runs). The session's network policy again blocked ALL direct HTTPS egress to tender portals and detail pages: WebFetch/DNS failed with ENOTFOUND for every .gov.au host (tenders.gov.au, tenders.vic.gov.au, etc.) and every e-sourcing platform, so discovery was limited to the WebSearch tool. WebSearch is US-indexed and returned mostly stale (mid-2026) cached snapshots, JavaScript-disabled portal shells, and third-party aggregator pages. Tier 1 (Commonwealth AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS/NT/ACT) were all swept via search; no directly-verifiable NEW open government notices from the last 7 days could be confirmed. Tier 2 (councils, universities, water/energy utilities) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Woodside/Fortescue, Woolworths/Coles, Qantas, Telstra, EstimateOne) were checked via search; all corporate channels remained login/registration-gated with no publicly-visible open RFx. Only two opportunities could be captured responsibly this run: one confirmed closing-soon (ACARA Website Development Services, closing 9 Nov 2026 per ACARA's own tenders page) and one fresh buyer-originated panel signal (DTA Digital Marketplace Panel 2 reopening). An ACARA NAP-ICTL 2028 RFT surfaced but its own RFT document states tenderers must have received an email invitation, so it is invitation-only and OUT OF SCOPE (not captured). Two genuinely new buyer-originated council sources were identified for the source set.",
-    "sources_checked": 20,
+    "run_date": "2026-11-09",
+    "coverage_summary": "Degraded, search-index-only run (same network constraint as all recent runs). The session's network policy again blocked ALL direct HTTPS egress: WebFetch/DNS failed with ENOTFOUND for every target host tested, including www.tenders.gov.au, data.gov.au and www.vendorpanel.com.au. No tender portal, detail page, feed/API, or tender document could be opened directly, so discovery was limited to the WebSearch tool, which is US-indexed and returned mostly stale (mid-2026) cached snapshots, JavaScript-disabled portal shells, and third-party aggregator pages. Tier 1 (Commonwealth AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS/NT/ACT) were swept via search; no directly-verifiable NEW open government notice from the last 7 days could be confirmed against a buyer-originated primary source. Tier 2 (councils via VendorPanel/TenderLink, universities/TAFEs, water/energy GBEs, ports/airports, public health/HealthShare) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Woodside/Fortescue, Woolworths/Coles, Qantas, Telstra, EstimateOne) were checked via search; all corporate channels remained login/registration-gated with no publicly-visible open RFx. Several promising leads surfaced but could not be captured responsibly: a Home Affairs 'JRAS' panel lead resolved to a mis-dated 2007 notice; a Defence Land 6504 item is market research, not an RFT; DFAT-1039 (PNG ESIP 2) is shortlisted/invitation-only (out of scope); and a Tasmanian Government 13-site greenfield aged-care EOI had already closed (6 Nov 2026). Only two buyer-originated opportunities could be carried responsibly this run, both headline-level: ACARA RFT 8-26 (Website Development Services, closing today 9 Nov 2026) and the DTA Digital Marketplace Panel 2 (BuyICT) application channel. One genuinely new buyer-originated council source (Shire of Northam, WA) was identified and verified as absent from the existing 504-source set.",
+    "sources_checked": 24,
     "tenders_found": 2,
-    "new_sources_found": 2,
+    "new_sources_found": 1,
     "entries_pending_detail": 2,
     "gaps": [
-      "CRITICAL ACCESS LIMITATION (repeat of prior runs): the session's network policy blocked all direct HTTPS egress and WebFetch. DNS did not resolve (ENOTFOUND) for www.tenders.gov.au and every other tender host, meaning they are outside the session's allowed network domains. No tender portal, detail page or tender document could be opened directly. Hosts needing allow-listing include www.tenders.gov.au, www.tenders.nsw.gov.au / buy.nsw.gov.au, www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, estimateone.com, buyict.gov.au, acara.edu.au and all illion TenderLink council portals.",
-      "Because direct access was blocked, ALL discovery was via the WebSearch tool only. Both captured entries are headline-level: deliverables, requirements, evaluation criteria, documents and contacts could not be extracted from source documents and are null. They need a deliverables/detail pass on the live buyer portal once access is available.",
-      "The web-search index was heavily skewed to stale/cached snapshots (mostly mid-2026). Live portal pages returned JavaScript-disabled shells with no listing content. Very few opportunities could be confirmed as open or published in the last 7 days.",
-      "AusTender (Commonwealth): no confirmable NEW November-2026 ATM found via search; recent ATM examples in the index were from 2024-2025. Federal coverage is a gap this run, deferred to a future run with portal access.",
-      "Tenders SA: search again largely returned South African ('SA') and stale closed items; no confirmable open South Australian government RFT. SA coverage is a gap this run.",
-      "ACARA NAP-ICTL 2028 Technology Solution (RFT 5-26) surfaced in search (aggregator ID 625217), but ACARA's own RFT document states 'tenderers must have received an email invitation to Tender from ACARA to participate' — this is an invitation-only / closed RFx and is therefore OUT OF SCOPE. It was deliberately NOT captured as a tender (no fabrication).",
-      "DTA Digital Marketplace Panel 2 (DMP2) reopening: captured from a buyer-originated announcement, but the exact November-2026 application window (open/close dates and the industry-briefing date) could NOT be confirmed via search (the index mixed 2024/2025 DMP2 rounds). The entry is flagged recently-published/panel with dates null pending verification on buyict.gov.au.",
-      "Tier 3 corporate (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside, Woolworths/Coles, Qantas, Telstra) mandatory check completed: no publicly-visible open RFx found; all are login/registration-gated. Portals already recorded in the known source set (access_method=portal-registration). Invitation-only consultancy RFPs remain out of scope and were not fabricated.",
-      "Tier 2 councils/utilities: several VendorPanel/TenderLink councils and water/energy GBEs (Sydney Water, Melbourne Water, Transgrid, Ausgrid) were checked via search; only closed/older EOIs were visible. No current open opportunity could be confirmed. Deferred to a future run with portal access."
+      "CRITICAL ACCESS LIMITATION (repeat of every recent run): the session's network policy blocked all direct HTTPS egress and WebFetch. DNS did not resolve (ENOTFOUND) for www.tenders.gov.au, data.gov.au and www.vendorpanel.com.au on direct test, meaning tender hosts are outside the session's allowed network domains. No tender portal, feed/API, detail page or tender document could be opened directly. Hosts needing allow-listing include www.tenders.gov.au (and its data.gov.au 'AusTender Open Approaches to Market' export), www.tenders.nsw.gov.au / buy.nsw.gov.au, www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, portal.tenderlink.com, service.ariba.com, estimateone.com, buyict.gov.au, healthsharevic.org.au, watercorporation.com.au and acara.edu.au.",
+      "Because direct access was blocked, ALL discovery was via the WebSearch tool only. Both captured entries are headline-level: deliverables, requirements, evaluation criteria, documents and contacts could not be extracted from source documents and are null. They need a deliverables/detail pass on the live buyer portal once network access is available.",
+      "The web-search index was heavily skewed to stale/cached snapshots (mostly mid-2026) and to paid aggregators (australiantenders.com.au, bidsfactory.com, projectory.com.au, tendersontime.com). Live portal pages returned JavaScript-disabled shells with no listing content. Very few opportunities could be confirmed as open or published in the last 7 days from a buyer-originated source.",
+      "AusTender (Commonwealth): no confirmable NEW November-2026 ATM could be verified against the primary source; search returned 2024-2025 ATM examples and aggregator rows. A 'HOMEAFFAIRS/2195/RFT JRAS panel closing 17 Nov 2026' lead appeared via an aggregator but could NOT be corroborated - the only matching AusTender notice was a closed 2007 JRAS panel - so it was NOT captured (no fabrication). Federal coverage remains a gap this run, deferred to a future run with portal access.",
+      "Defence/CASG: the closest November item (Project Land 6504, published 13 Oct 2026) is market research / an RFI with capability statements due 5 Nov 2026, not an open RFT; not captured. DFAT-1039 (PNG Economic and Social Infrastructure Program ESIP 2, closing ~18 Nov 2026) is released only to shortlisted organisations - invitation-only and OUT OF SCOPE.",
+      "Tenders SA, Tenders WA, Tenders Tasmania, QTOL (NT), ACT Tenders: search again returned stale/closed items or South African ('SA') noise; no confirmable open state RFT within the 7-day window. State coverage is a gap this run, deferred.",
+      "LEAD for a future run (buyer-originated, could not be captured this run): Tasmanian Government offered 13 government-owned greenfield sites to aged-care/assisted-living providers via an EOI that opened 26 Sep 2026 and CLOSED 6 Nov 2026 - now closed, so out of the open window and not captured. Also City of Sydney 'build and run an affordable residential aged care facility in Redfern' EOI (cityofsydney.nsw.gov.au/opportunities) surfaced but with no verifiable current closing date. Verify both on their buyer portals once access is available.",
+      "Tier 3 corporate (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside, Woolworths/Coles, Qantas, Telstra, EstimateOne) mandatory check completed via search: no publicly-visible open RFx found; all are login/registration-gated. Portals already recorded in the known source set (access_method=portal-registration). Invitation-only consultancy RFPs remain out of scope and were not fabricated.",
+      "Tier 2 councils/utilities/ports/health: a wide sample was checked via search (Canada Bay, Tamworth, Wollongong, Central Coast, Gunnedah, Lachlan, Cloncurry, Gold Coast councils; Water Corporation WA, South East Water, Greater Western Water; Pilbara/Southern/Gladstone ports; HealthShare Victoria). All were already in the 504-source aggregate and showed only closed/older opportunities via search; none could be confirmed as currently open. Deferred to a future run with portal access.",
+      "Source discovery is approaching saturation on the free-search channel: the known-source aggregate already holds 504 buyer-originated sources, so most council/utility/port candidates surfaced this run were already recorded. Only Shire of Northam (WA) was genuinely new. Finding further new sources will increasingly require authenticated portal crawls rather than web search."
     ],
     "recommended_seed_additions": [
-      "City of Parramatta (NSW) - Tenders & Procurement (TenderLink portal) - buyer-originated council source, not previously in the known set",
-      "Torres Strait Island Regional Council (QLD) - Procurement - buyer-originated council source, not previously in the known set"
+      "Shire of Northam (WA) - Tenders & Procurement (own portal at northam.wa.gov.au/tenders + VendorPanel for enquiries) - buyer-originated council source, not previously in the known 504-source set.",
+      "Tasmanian Government greenfield aged-care sites EOI process (lead) - a recurring state-government EOI channel for aged-care/assisted-living development; the 2026 round closed 6 Nov 2026. Worth monitoring for the next round via Tenders Tasmania / health.tas.gov.au.",
+      "City of Sydney - Opportunities (cityofsydney.nsw.gov.au/opportunities) as a buyer-originated EOI channel distinct from the council's routine procurement portal - confirm and record on a run with portal access."
     ]
   },
   "months": [
@@ -51685,14 +51688,15 @@
       ],
       "first_seen": "2026-11-07",
       "detail_source": "",
-      "reasoning": "Surfaced via WebSearch against ACARA's own tenders page (acara.edu.au/about-us/tenders), which lists a closing date of Monday 9 November 2026, 3pm Sydney time for Website Development Services. Buyer-originated source. Carried forward from the 2026-11-07 run as still open / closing-soon.",
-      "notes": "Headline-level only: direct portal/document access was blocked this run (ENOTFOUND for acara.edu.au), so deliverables, requirements, evaluation criteria, value and contacts could not be extracted and are null. Closing date/time confirmed from ACARA's own tenders page listing. Distinct from ACARA's NAP-ICTL 2028 RFT (RFT 5-26), which is invitation-only and out of scope.",
-      "last_seen": "2026-11-08",
+      "reasoning": "Surfaced again via WebSearch against ACARA's own tenders page (acara.edu.au/about-us/tenders), which lists a closing date of Monday 9 November 2026, 3pm Sydney time for Website Development Services. Buyer-originated source. Carried forward from the 2026-11-07 / 2026-11-08 runs; today (9 Nov) is its closing day, so it is closing-soon/closing today.",
+      "notes": "Headline-level only: direct portal/document access was blocked this run (ENOTFOUND for acara.edu.au), so deliverables, requirements, evaluation criteria, value and contacts could not be extracted and are null. Closing date/time confirmed from ACARA's own tenders page listing as re-surfaced in search. Distinct from ACARA's NAP-ICTL 2028 RFT (RFT 5-26), which is invitation-only and out of scope.",
+      "last_seen": "2026-11-09",
       "seen_dates": [
         "2026-11-07",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -51894,7 +51898,7 @@
       "category_codes": [],
       "procurement_type": "panel",
       "current_status": "recently-published",
-      "description": "The DTA is reopening its Digital Marketplace Panel 2 (DMP2) in November 2026 for new seller applications, including under the Software and Cloud module. Existing sellers on the expiring Software and ERP Marketplace and Cloud Marketplace arrangements are expected to re-apply to DMP2 to continue selling to government.",
+      "description": "The DTA's Digital Marketplace Panel 2 (DMP2) is open for new seller applications, including under the Software and Cloud module. Existing sellers on the expiring Software and ERP Marketplace and Cloud Marketplace arrangements are expected to re-apply to DMP2 to continue selling to government.",
       "deliverables_summary": null,
       "key_deliverables": [],
       "scope_of_work": null,
@@ -51910,7 +51914,7 @@
       "closing_date": null,
       "closing_time": "",
       "questions_due": null,
-      "briefing": "An industry briefing was referenced in reporting but the date could not be confirmed for the 2026 window.",
+      "briefing": "An industry briefing was referenced in prior reporting but the date could not be confirmed for the current window.",
       "submission_method": "Apply online via BuyICT.gov.au (DTA Digital Marketplace Panel 2)",
       "lodgement_url": "https://www.buyict.gov.au",
       "documents": [],
@@ -51931,14 +51935,15 @@
       ],
       "first_seen": "2026-11-08",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch of DTA/BuyICT buyer-originated announcements and corroborating trade reporting (techpartner.news) indicating DMP2 is reopening in November 2026 for new seller applications. Buyer-originated federal panel (not an aggregator). Pivoted from the news signal to the DTA/BuyICT source of truth.",
-      "notes": "Headline-level only; buyict.gov.au and DTA pages could not be opened directly this run (network egress blocked). The exact November-2026 application window (open date, closing date, industry-briefing date) could NOT be confirmed via search and is left null/unverified. DMP2 is a recurring panel that opens for applications more frequently than the original; verify the current window on buyict.gov.au before relying on dates.",
-      "last_seen": "2026-11-08",
+      "reasoning": "Buyer-originated federal ICT panel (DTA/BuyICT), carried forward from the 2026-11-08 run as a standing application channel. DMP2 is a recurring panel that reopens for seller applications periodically; pivoted from trade reporting to the DTA/BuyICT source of truth.",
+      "notes": "Headline-level only; buyict.gov.au and DTA pages could not be opened directly this run (network egress blocked). The exact current application window (open date, closing date, industry-briefing date) could NOT be confirmed via search and is left null/unverified. Verify the current window on buyict.gov.au before relying on dates.",
+      "last_seen": "2026-11-09",
       "seen_dates": [
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     }
   ],
@@ -52216,12 +52221,12 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 re-check. Public posting board where buyers post open RFx; a free SAP Business Network supplier account is required to view full opportunity detail. No publicly-visible Australian open RFx could be confirmed via search this run.",
+      "how_discovered": "Mandatory Tier 3 re-check. Public posting board where buyers post open RFx; a free SAP Business Network supplier account is required to view full opportunity detail. No publicly-visible Australian open RFx could be confirmed via search this run (the platform is being rebranded to SAP Business Network Discovery).",
       "recommended_check_frequency": "daily",
       "notes": "Known source, re-confirmed. Login/registration-gated; capture individual opportunities only with an authenticated session.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -52299,9 +52304,10 @@
         "2026-11-04",
         "2026-11-05",
         "2026-11-07",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
-      "seen_count": 77,
+      "seen_count": 78,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -52808,12 +52814,12 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Standing Tier 2 channel for local-government public tenders; re-checked via search. Many QLD/VIC/NSW councils (e.g. Logan, Forbes, Mount Alexander, East Gippsland) continue migrating to it.",
+      "how_discovered": "Standing Tier 2 channel for local-government public tenders; re-checked via search. Many NSW/QLD/VIC/WA councils (e.g. Canada Bay, Gunnedah, Cloncurry, and Shire of Northam enquiries) continue to use it.",
       "recommended_check_frequency": "daily",
-      "notes": "Known source, re-confirmed. Buyer-chosen e-sourcing platform, not an aggregator. Live listing content not directly accessible this run.",
+      "notes": "Known source, re-confirmed. Buyer-chosen e-sourcing platform, not an aggregator. Direct test of www.vendorpanel.com.au returned ENOTFOUND this run; live listing content not accessible.",
       "state": "",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -52859,9 +52865,10 @@
         "2026-10-27",
         "2026-10-28",
         "2026-11-05",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
-      "seen_count": 45,
+      "seen_count": 46,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -53692,23 +53699,24 @@
       "source_name": "HealthShare Victoria - JAGGAER Procurement Portal",
       "source_url": "https://healthsharevic.org.au/procurement-guidance/procurement-portal/",
       "source_type": "health",
-      "jurisdiction": "Victoria",
+      "jurisdiction": "Victoria (public health)",
       "platform": "JAGGAER",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "WebSearch for Australian buyers on Jaggaer/GEP/Ivalua e-sourcing platforms surfaced HealthShare Victoria running its end-to-end tender process on the JAGGAER Procurement Portal.",
+      "how_discovered": "Re-surfaced via a Tier 2 public-health search; HealthShare Victoria runs Victorian public-hospital procurement (e.g. Eastern Health, Barwon Health) through its JAGGAER Procurement Portal (free registration to respond). Confirmed already present in the known source set.",
       "recommended_check_frequency": "weekly",
-      "notes": "Victorian public-sector health procurement aggregator (buyer-originated). Buyer-hosted on JAGGAER. Useful as a seed to detect JAGGAER sibling buyers (health and higher-education). Detail page was not fetchable this run (egress 403).",
+      "notes": "Known source, re-confirmed. Registration-gated; capture individual opportunities only with an authenticated session.",
       "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-11-09",
       "seen_dates": [
-        "2026-06-30"
+        "2026-06-30",
+        "2026-11-09"
       ],
-      "seen_count": 1,
+      "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Sydney Harbour Federation Trust (Harbour Trust) - AusTender buyer",
@@ -59702,16 +59710,17 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Checked for the DMP2 November reopening; buyer-originated federal ICT panel portal, free seller registration. Source of the DMP2 panel opportunity captured this run.",
+      "how_discovered": "Re-checked the DMP2 seller-application channel; buyer-originated federal ICT panel portal with free seller registration. Source of the DMP2 panel opportunity carried this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "Known source, re-confirmed as active (DMP2 reopening for new seller applications November 2026).",
+      "notes": "Known source, re-confirmed as an active seller-application channel.",
       "first_seen": "2026-09-11",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "seen_dates": [
         "2026-09-11",
-        "2026-11-08"
+        "2026-11-08",
+        "2026-11-09"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -63565,8 +63574,8 @@
         "2026-11-08"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Torres Strait Island Regional Council (QLD) - Procurement",
@@ -63585,6 +63594,28 @@
       "last_seen": "2026-11-08",
       "seen_dates": [
         "2026-11-08"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Shire of Northam (WA) - Tenders & Procurement",
+      "source_url": "https://www.northam.wa.gov.au/tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Western Australia (local government)",
+      "platform": "custom council portal (electronic lodgement) + VendorPanel for enquiries",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for WA council procurement pages not already in the known set. The Shire of Northam advertises Requests for Tender on its own website (northam.wa.gov.au/tenders), where documents are obtained and submissions lodged electronically, and routes some enquiries through VendorPanel (Procurement Coordinator). Verified as absent from the existing 504-source aggregate. Buyer-originated council source.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Not previously in the known source set. Recent examples include RFT 04 of 2026 (cemetery services) and PR03 of 2026 (land disposal). Buyer-chosen channel, not an aggregator. Live page not directly accessible this run (network egress blocked); identified via search.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "seen_dates": [
+        "2026-11-09"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
