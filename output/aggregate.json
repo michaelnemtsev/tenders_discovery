@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10",
+  "generated": "2026-11-11",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -139,31 +139,34 @@
     "2026-11-07",
     "2026-11-08",
     "2026-11-09",
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-11"
   ],
-  "run_count": 139,
+  "run_count": 140,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-10",
-  "latest_coverage_summary": "Degraded, SEARCH-ONLY run — identical network constraint to all recent runs. The session egress proxy denied every direct HTTPS connection to tender hosts: curl returned \"403 CONNECT tunnel failed\" for www.tenders.nsw.gov.au, www.vendorpanel.com.au and service.ariba.com, and WebFetch returned DNS ENOTFOUND for www.tenders.gov.au. No buyer-originated portal, detail page, feed/API or tender document could be opened, so discovery was limited to the WebSearch tool (US-indexed, returning mostly stale mid-2026 cached snapshots, JavaScript-disabled portal shells and third-party aggregator pages). Tier 1 (AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS, NT QTOL, ACT) were swept via search. Tier 2 (councils via VendorPanel/TenderLink, universities/NCI, water/energy GBEs such as Sydney Water/Melbourne Water/Transgrid, Australia Post, public health) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside NeoSmelt JV, Brisbane City Council Ariba) were checked via search. Every corporate channel remained registration/login-gated with no publicly-visible open RFx. Three future-dated, buyer-originated government opportunities were surfaced via aggregator/cached snippets and are carried at headline level only, explicitly flagged as UNVERIFIED against the primary portal. No opportunity was fabricated; leads that resolved to closed or invitation-only notices were excluded and noted in gaps.",
+  "latest_run": "2026-11-11",
+  "latest_coverage_summary": "Degraded, SEARCH-ONLY run — same hard egress constraint as all recent runs. The session network policy denied every direct HTTPS connection to tender hosts: curl to www.tenders.gov.au returned '403 CONNECT tunnel failed' (a policy denial, not retried per proxy guidance) and WebFetch returned DNS ENOTFOUND for www.tenders.gov.au and www.business.tas.gov.au (hosts outside the session's allowed network domains). No buyer-originated portal, detail page, feed/API or tender document could be opened, so discovery was limited to the WebSearch tool (US-indexed, returning mostly cached mid-2026 snapshots, JavaScript-disabled portal shells, and third-party aggregator pages). Tier 1 (AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS, NT QTOL, ACT) were swept via search only. Tier 2 (councils via VendorPanel/TenderLink; universities/TAFEs; water/energy GBEs such as Sydney Water/Melbourne Water/Transgrid; Australia Post; public health) and Tier 3 (SAP Ariba Discovery/Business Network, BHP/Rio Tinto/Fortescue/Woodside, Brisbane City Council Ariba, Endeavour Energy Ariba) were checked via search. Every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx. Three buyer-originated government/public-sector opportunities were surfaced from cached search snippets and are carried at headline level only, explicitly flagged UNVERIFIED against the primary portal. No opportunity was fabricated; leads that resolved to closed or invitation-only notices were excluded and noted in gaps.",
   "latest_run_metadata": {
-    "run_date": "2026-11-10",
-    "coverage_summary": "Degraded, SEARCH-ONLY run — identical network constraint to all recent runs. The session egress proxy denied every direct HTTPS connection to tender hosts: curl returned \"403 CONNECT tunnel failed\" for www.tenders.nsw.gov.au, www.vendorpanel.com.au and service.ariba.com, and WebFetch returned DNS ENOTFOUND for www.tenders.gov.au. No buyer-originated portal, detail page, feed/API or tender document could be opened, so discovery was limited to the WebSearch tool (US-indexed, returning mostly stale mid-2026 cached snapshots, JavaScript-disabled portal shells and third-party aggregator pages). Tier 1 (AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS, NT QTOL, ACT) were swept via search. Tier 2 (councils via VendorPanel/TenderLink, universities/NCI, water/energy GBEs such as Sydney Water/Melbourne Water/Transgrid, Australia Post, public health) and Tier 3 (SAP Ariba Discovery, BHP/Rio Tinto/Fortescue/Woodside NeoSmelt JV, Brisbane City Council Ariba) were checked via search. Every corporate channel remained registration/login-gated with no publicly-visible open RFx. Three future-dated, buyer-originated government opportunities were surfaced via aggregator/cached snippets and are carried at headline level only, explicitly flagged as UNVERIFIED against the primary portal. No opportunity was fabricated; leads that resolved to closed or invitation-only notices were excluded and noted in gaps.",
-    "sources_checked": 34,
+    "run_date": "2026-11-11",
+    "coverage_summary": "Degraded, SEARCH-ONLY run — same hard egress constraint as all recent runs. The session network policy denied every direct HTTPS connection to tender hosts: curl to www.tenders.gov.au returned '403 CONNECT tunnel failed' (a policy denial, not retried per proxy guidance) and WebFetch returned DNS ENOTFOUND for www.tenders.gov.au and www.business.tas.gov.au (hosts outside the session's allowed network domains). No buyer-originated portal, detail page, feed/API or tender document could be opened, so discovery was limited to the WebSearch tool (US-indexed, returning mostly cached mid-2026 snapshots, JavaScript-disabled portal shells, and third-party aggregator pages). Tier 1 (AusTender, NSW buy.nsw, VIC Buying for Victoria, QLD QTenders/supply.qld.gov.au, WA/SA/TAS, NT QTOL, ACT) were swept via search only. Tier 2 (councils via VendorPanel/TenderLink; universities/TAFEs; water/energy GBEs such as Sydney Water/Melbourne Water/Transgrid; Australia Post; public health) and Tier 3 (SAP Ariba Discovery/Business Network, BHP/Rio Tinto/Fortescue/Woodside, Brisbane City Council Ariba, Endeavour Energy Ariba) were checked via search. Every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx. Three buyer-originated government/public-sector opportunities were surfaced from cached search snippets and are carried at headline level only, explicitly flagged UNVERIFIED against the primary portal. No opportunity was fabricated; leads that resolved to closed or invitation-only notices were excluded and noted in gaps.",
+    "sources_checked": 31,
     "tenders_found": 3,
-    "new_sources_found": 3,
+    "new_sources_found": 5,
     "entries_pending_detail": 3,
     "gaps": [
-      "HARD EGRESS BLOCK: all direct HTTPS to tender hosts denied by the session network policy (403 CONNECT tunnel failed / DNS ENOTFOUND). To restore full discovery, the following hosts (at minimum) must be allowed in the session network settings: www.tenders.gov.au, www.tenders.nsw.gov.au (buy.nsw.gov.au), www.tenders.vic.gov.au, qtenders.epw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com.",
-      "All three carried tenders are UNVERIFIED headline-level entries from aggregator/cached search snippets; their tender_id, dates, buyer and scope could not be confirmed on the buyer-originated primary portal this run. They need a detail/verification pass once egress is restored.",
+      "HARD EGRESS BLOCK: all direct HTTPS to tender hosts denied by the session network policy (403 CONNECT tunnel failed / DNS ENOTFOUND — hosts outside allowed domains). To restore full discovery, at minimum these hosts must be allowed in the session network settings: www.tenders.gov.au, www.tenders.nsw.gov.au (buy.nsw.gov.au), www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, and individual council/university sites (e.g. colacotway.vic.gov.au, notredame.edu.au, sunitafe.edu.au).",
+      "All three carried tenders are UNVERIFIED headline-level entries from cached search snippets; their tender_id, buyer, dates and scope could not be confirmed on the buyer-originated primary portal this run. They need a detail/verification pass once egress is restored.",
       "No deliverables/requirements/evaluation-criteria extraction was possible for any opportunity — every detail page and tender document was unreachable.",
-      "Tier 3 corporate (SAP Ariba Discovery, BHP, Rio Tinto, Fortescue, Woodside, Woolworths, Coles, Qantas, Telstra, EstimateOne) remained registration/login-gated; no authenticated supplier session is available, so no corporate opportunity could be read. Recorded as portals only.",
-      "Excluded leads (not fabricated): DFAT-1096 Australian Volunteers Program REOI appears to close 9 Nov 2026 (effectively closed as of the run date); DFAT-1039 PNG ESIP 2 is to shortlisted/invitation-only organisations (out of scope); NeoSmelt JV procurement (BlueScope/BHP/Rio Tinto/Mitsui/Woodside) earlier EOI closed Dec 2025 and main procurement is a future (post-FID) activity.",
-      "WebSearch is US-indexed and returned predominantly stale or aggregator data; recent (last 24-48h) buyer-originated notices are almost certainly undercounted this run."
+      "Tier 3 corporate (SAP Ariba Discovery, BHP, Rio Tinto, Fortescue, Woodside, Woolworths, Coles, Qantas, Telstra, Endeavour Energy) remained registration-gated or invitation-only; no authenticated supplier session is available, so no corporate opportunity could be read. Recorded as portals only, consistent with prior runs.",
+      "Excluded leads (not fabricated): Maranoa Regional Council (QLD) DRFA flood-restoration tenders MRC 27016 and MRC 27015 appear to close 9 Nov 2026 — already closed as of the 11 Nov run date; MRC 27017 land sale closed 4 Nov 2026. These were excluded as closed.",
+      "WebSearch is US-indexed and returned predominantly stale or aggregator (australiantenders.com.au, projectory.com.au) data; recent (last 24-48h) buyer-originated notices are almost certainly undercounted this run."
     ],
     "recommended_seed_additions": [
-      "Colac Otway Shire Council (VIC) — https://www.colacotway.vic.gov.au/Council-the-shire/Tenders-Procurement",
-      "Longreach Regional Council (QLD) — https://www.longreach.qld.gov.au/Business-and-Development/Tenders-and-Quotes",
-      "NCI Australia (National Computational Infrastructure) procurement — https://nci.org.au"
+      "Byron Shire Council (NSW) — https://www.byron.nsw.gov.au/Development-Business/Doing-business-with-Council/Tenders-Awarded-Received",
+      "Northern Beaches Council (NSW) — https://www.northernbeaches.nsw.gov.au/council/tenders",
+      "SuniTAFE (VIC) — https://www.sunitafe.edu.au/About/Procurement/Tenders",
+      "The Gordon (Gordon TAFE, VIC) — https://www.thegordon.edu.au (procurement activity plan / tenders)",
+      "University of Notre Dame Australia — https://www.notredame.edu.au/staff/support/finance/procurement/suppliers"
     ]
   },
   "months": [
@@ -194,7 +197,7 @@
     },
     {
       "month": "2026-11",
-      "new_tenders": 115,
+      "new_tenders": 118,
       "active_tenders": 0
     }
   ],
@@ -52000,8 +52003,8 @@
         "2026-11-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT QTOL:alice-springs-building-management-systems-2026-11-11",
@@ -52059,8 +52062,8 @@
         "2026-11-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "dedup_key": "NT QTOL:T26-1304",
@@ -52117,6 +52120,190 @@
       "last_seen": "2026-11-10",
       "seen_dates": [
         "2026-11-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "Colac Otway Shire Council:RFT-2717",
+      "source_name": "Colac Otway Shire Council — Tenders & Procurement",
+      "source_url": "https://www.colacotway.vic.gov.au/Council-the-shire/Tenders-Procurement",
+      "source_type": "gov-local",
+      "jurisdiction": "Australia / Victoria / Colac Otway Shire",
+      "state": "VIC",
+      "tender_id": "RFT 2717",
+      "tender_url": "https://www.colacotway.vic.gov.au/Council-the-shire/Tenders-Procurement",
+      "access": "public",
+      "title": "RFT 2717 — Bridge Renewal, Boundary Road, Forrest",
+      "buyer": "Colac Otway Shire Council",
+      "buyer_url": "https://www.colacotway.vic.gov.au",
+      "category": "Construction / civil infrastructure — bridge renewal",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Request for Tender for the renewal of a road bridge on Boundary Road, Forrest, in the Colac Otway Shire (regional Victoria). Surfaced from a cached search snippet of the council's tenders page; could not be opened to verify.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2026-11-18",
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via council tender portal",
+      "lodgement_url": "https://www.colacotway.vic.gov.au/Council-the-shire/Tenders-Procurement",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Boundary Road, Forrest, VIC",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "construction",
+        "bridge",
+        "civil-works",
+        "local-government",
+        "victoria",
+        "UNVERIFIED"
+      ],
+      "first_seen": "2026-11-11",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch; buyer-originated listing on the Colac Otway Shire Council tenders page. The council portal could not be opened (hard egress block), so this is a headline-level, UNVERIFIED entry.",
+      "notes": "UNVERIFIED — headline-level only. Closing date 18 Nov 2026 taken from a cached search snippet and not confirmed on the live council portal. tender_id may differ. Needs a verification/detail pass once egress is restored. A sibling RFT 2714 (sealed road major patching) was also mentioned in search but with no closing date and is not carried.",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "University of Notre Dame Australia:RFT-Managed-SOC-Services",
+      "source_name": "University of Notre Dame Australia — Procurement / Suppliers",
+      "source_url": "https://www.notredame.edu.au/staff/support/finance/procurement/suppliers",
+      "source_type": "university",
+      "jurisdiction": "Australia / Western Australia & NSW (multi-campus)",
+      "state": "WA",
+      "tender_id": "",
+      "tender_url": "https://www.notredame.edu.au/staff/support/finance/procurement/suppliers/rft-managed-security-operations-centre-soc-services",
+      "access": "public",
+      "title": "RFT — Managed Security Operations Centre (SOC) Services",
+      "buyer": "University of Notre Dame Australia",
+      "buyer_url": "https://www.notredame.edu.au",
+      "category": "ICT / cyber security — managed security operations",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "Request for Tender for managed Security Operations Centre (SOC) services for the University of Notre Dame Australia. Surfaced from a cached search snippet of the university's procurement/suppliers section; detail page could not be opened to verify.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via university procurement portal / email per RFT instructions",
+      "lodgement_url": "https://www.notredame.edu.au/staff/support/finance/procurement/suppliers/rft-managed-security-operations-centre-soc-services",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "University of Notre Dame Australia (Fremantle / Sydney campuses)",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "ict",
+        "cyber-security",
+        "soc",
+        "university",
+        "UNVERIFIED"
+      ],
+      "first_seen": "2026-11-11",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch; buyer-originated RFT page on the University of Notre Dame Australia procurement site. The detail page could not be opened (hard egress block), so this is a headline-level, UNVERIFIED entry.",
+      "notes": "UNVERIFIED — headline-level only. No closing date, value, tender_id or scope could be confirmed; the RFT may already be closed. Needs a verification/detail pass once egress is restored. Included because it is a buyer-originated RFT page; not fabricated.",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "dedup_key": "SuniTAFE:tender-000531",
+      "source_name": "SuniTAFE — Tenders / Procurement",
+      "source_url": "https://www.sunitafe.edu.au/About/Procurement/Tenders",
+      "source_type": "university",
+      "jurisdiction": "Australia / Victoria (Sunraysia / Mildura region)",
+      "state": "VIC",
+      "tender_id": "000531",
+      "tender_url": "https://www.sunitafe.edu.au/About/Procurement/Tenders",
+      "access": "public",
+      "title": "Tender 000531 — Electrical switchboard works",
+      "buyer": "SuniTAFE",
+      "buyer_url": "https://www.sunitafe.edu.au",
+      "category": "Construction / electrical — switchboard works",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "open",
+      "description": "Tender (reference 000531) for electrical switchboard works at SuniTAFE in regional Victoria. Surfaced from a cached search snippet listing the tender as open; detail page could not be opened to verify.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": "2026-12-18",
+      "contract_end": "2027-01-03",
+      "publish_date": null,
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Lodge via SuniTAFE tender portal",
+      "lodgement_url": "https://www.sunitafe.edu.au/About/Procurement/Tenders",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "SuniTAFE campus(es), Mildura / Sunraysia region, VIC",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "construction",
+        "electrical",
+        "tafe",
+        "victoria",
+        "UNVERIFIED"
+      ],
+      "first_seen": "2026-11-11",
+      "detail_source": "",
+      "reasoning": "Discovered via WebSearch; buyer-originated listing on the SuniTAFE tenders page. The portal could not be opened (hard egress block), so this is a headline-level, UNVERIFIED entry.",
+      "notes": "UNVERIFIED — headline-level only. The works window (18 Dec 2026 – 3 Jan 2027) comes from a cached search snippet; no closing date was shown, so it is unclear whether the tender is still open. tender_id and scope unconfirmed. Needs a verification/detail pass once egress is restored.",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -62557,7 +62744,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Mildura Rural City Council (VendorPanel public tenders)",
@@ -63555,7 +63742,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "City of Albany (WA) - Tenders & Quotes",
@@ -63818,8 +64005,8 @@
         "2026-11-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Longreach Regional Council (QLD) — Tenders & Quotes",
@@ -63840,8 +64027,8 @@
         "2026-11-10"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "NCI Australia (National Computational Infrastructure) — Procurement",
@@ -63860,6 +64047,116 @@
       "last_seen": "2026-11-10",
       "seen_dates": [
         "2026-11-10"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Byron Shire Council — Tenders",
+      "source_url": "https://www.byron.nsw.gov.au/Development-Business/Doing-business-with-Council/Tenders-Awarded-Received",
+      "source_type": "gov-local",
+      "jurisdiction": "Australia / New South Wales / Byron Shire",
+      "platform": "custom (council website)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for NSW council tenders closing November 2026; buyer-originated council procurement page.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Could not be opened this run (egress block). Byron Shire also commonly uses VendorPanel/TenderLink for lodgement; verify the live channel once reachable.",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Northern Beaches Council — Tenders",
+      "source_url": "https://www.northernbeaches.nsw.gov.au/council/tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Australia / New South Wales / Northern Beaches",
+      "platform": "custom (council website)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced a specific Northern Beaches Council tender detail page (roof membrane upgrade, Dee Why Civic Centre); buyer-originated.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Could not be opened this run (egress block). Individual tender detail pages are published on the council's own domain.",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "SuniTAFE — Tenders / Procurement",
+      "source_url": "https://www.sunitafe.edu.au/About/Procurement/Tenders",
+      "source_type": "university",
+      "jurisdiction": "Australia / Victoria (Sunraysia / Mildura)",
+      "platform": "custom (institution website)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Australian TAFE tenders; buyer-originated TAFE procurement page listing open tenders (e.g. 000531).",
+      "recommended_check_frequency": "monthly",
+      "notes": "Could not be opened this run (egress block). Lists tender numbers and status directly on the institution site.",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "The Gordon (Gordon TAFE) — Procurement / Tenders",
+      "source_url": "https://www.thegordon.edu.au",
+      "source_type": "university",
+      "jurisdiction": "Australia / Victoria (Geelong)",
+      "platform": "custom (institution website)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced The Gordon's 'Procurement activity plan August 2026' (PDF) listing planned open-market RFTs (e.g. RFT 202610 HVAC maintenance); buyer-originated.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Could not be opened this run (egress block). Publishes a forward procurement activity plan useful for pipeline visibility.",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "University of Notre Dame Australia — Procurement / Suppliers",
+      "source_url": "https://www.notredame.edu.au/staff/support/finance/procurement/suppliers",
+      "source_type": "university",
+      "jurisdiction": "Australia / Western Australia & NSW (multi-campus)",
+      "platform": "custom (institution website)",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch surfaced a buyer-originated RFT detail page (Managed SOC Services) under the university's procurement/suppliers section.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Could not be opened this run (egress block). Publishes individual RFT pages on its own domain.",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "seen_dates": [
+        "2026-11-11"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
