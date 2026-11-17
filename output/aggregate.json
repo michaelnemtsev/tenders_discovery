@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-18",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -146,33 +146,34 @@
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
-  "run_count": 146,
+  "run_count": 147,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-17",
-  "latest_coverage_summary": "Degraded, SEARCH-ONLY run. The hard egress block seen on recent runs persisted: the session network policy denies direct HTTPS to tender hosts (WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND; per environment guidance no further direct buyer fetches were attempted once the failure was confirmed). No buyer-originated detail page, feed/API or tender document could be opened; discovery was limited to WebSearch (US-indexed, lagging the run date and returning mostly cached snippets and third-party aggregator pages). Tier 1 (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD Brisbane/QTenders->VendorPanel; WA; SA; TAS; NT QTOL; ACT Tenders) swept by search. Tier 2 (local government via VendorPanel and council sites - Colac Otway, Logan, Central Coast, Ipswich, Noosa, East Gippsland; universities - Univ. of Sydney, UWA; water corporations - Sydney/Melbourne Water, Greater Western Water, Power & Water NT) swept by search. Tier 3 MANDATORY check done by search (SAP Ariba Discovery; BHP GCMS; Rio Tinto Ariba; Fortescue/Woodside; ICN Gateway) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net: the four still-open, buyer-corroborated carryover opportunities were re-confirmed and re-asserted (NSW ~$80M Master Media RFT closing 27 Nov; Brisbane Gardner Road closing 7 Dec and Prebble St Bikeway closing 11 Dec; TfNSW New England Hwy Maitland Westbound ROI closing 11 Dec, publish date 9 Nov now captured), and two new buyer-portal-listed ACT opportunities were surfaced at headline level (Tenders ACT SL20260630 closing 1 Dec; PIMA0014211 closing 3 Dec). Three genuinely new sources recorded (ICN Gateway; Colac Otway Shire Council; Logan City Council VendorPanel migration). All six tenders are headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
+  "latest_run": "2026-11-18",
+  "latest_coverage_summary": "Degraded, SEARCH-ONLY run. The hard egress block seen on recent runs persists: the session network policy denies direct HTTPS to tender hosts (WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND; curl CONNECT tunnels to tenders.gov.au, vendorpanel.com.au and tenders.nsw.gov.au were refused with proxy 403). No buyer-originated detail page, feed/API or tender document could be opened; discovery was limited to WebSearch (US-indexed, lagging the run date, returning mostly cached snippets and third-party aggregator pages). Tier 1 (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au; WA; SA; TAS; NT QTOL; ACT Tenders) swept by search. Tier 2 (local government via VendorPanel and council sites; universities; water corporations - Sydney Water, Melbourne Water, SA Water, Water Corporation WA, Greater Western Water) swept by search. Tier 3 MANDATORY check done by search (SAP Ariba Discovery / SAP Business Network Discovery; BHP GCMS; Rio Tinto Ariba) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net: the six still-open, buyer-corroborated opportunities carried from the 2026-11-17 run were re-confirmed as still open and re-asserted (NSW ~$80M Master Media RFT closing 27 Nov re-corroborated by trade press; Brisbane Gardner Road Doc115483155 closing 7 Dec and Prebble St Bikeway Doc118000917 closing 11 Dec re-corroborated against the BCC current-tenders listing; TfNSW New England Hwy Maitland Westbound ROI 26.0000139291.0941.ROI publish 9 Nov closing 11 Dec re-corroborated; Tenders ACT SL20260630 closing 1 Dec and PIMA0014211 closing 3 Dec carried forward). No genuinely new buyer-originated opportunity could be verified beyond these carryovers. Three new source signals were surfaced and recorded (Melbourne Water via the Zycus Supplier Network; SA Water Supplier Portal; Water Corporation WA supplier/bidder portal). All six tenders remain headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
   "latest_run_metadata": {
-    "run_date": "2026-11-17",
-    "coverage_summary": "Degraded, SEARCH-ONLY run. The hard egress block seen on recent runs persisted: the session network policy denies direct HTTPS to tender hosts (WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND; per environment guidance no further direct buyer fetches were attempted once the failure was confirmed). No buyer-originated detail page, feed/API or tender document could be opened; discovery was limited to WebSearch (US-indexed, lagging the run date and returning mostly cached snippets and third-party aggregator pages). Tier 1 (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD Brisbane/QTenders->VendorPanel; WA; SA; TAS; NT QTOL; ACT Tenders) swept by search. Tier 2 (local government via VendorPanel and council sites - Colac Otway, Logan, Central Coast, Ipswich, Noosa, East Gippsland; universities - Univ. of Sydney, UWA; water corporations - Sydney/Melbourne Water, Greater Western Water, Power & Water NT) swept by search. Tier 3 MANDATORY check done by search (SAP Ariba Discovery; BHP GCMS; Rio Tinto Ariba; Fortescue/Woodside; ICN Gateway) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net: the four still-open, buyer-corroborated carryover opportunities were re-confirmed and re-asserted (NSW ~$80M Master Media RFT closing 27 Nov; Brisbane Gardner Road closing 7 Dec and Prebble St Bikeway closing 11 Dec; TfNSW New England Hwy Maitland Westbound ROI closing 11 Dec, publish date 9 Nov now captured), and two new buyer-portal-listed ACT opportunities were surfaced at headline level (Tenders ACT SL20260630 closing 1 Dec; PIMA0014211 closing 3 Dec). Three genuinely new sources recorded (ICN Gateway; Colac Otway Shire Council; Logan City Council VendorPanel migration). All six tenders are headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
-    "sources_checked": 30,
+    "run_date": "2026-11-18",
+    "coverage_summary": "Degraded, SEARCH-ONLY run. The hard egress block seen on recent runs persists: the session network policy denies direct HTTPS to tender hosts (WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND; curl CONNECT tunnels to tenders.gov.au, vendorpanel.com.au and tenders.nsw.gov.au were refused with proxy 403). No buyer-originated detail page, feed/API or tender document could be opened; discovery was limited to WebSearch (US-indexed, lagging the run date, returning mostly cached snippets and third-party aggregator pages). Tier 1 (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au; WA; SA; TAS; NT QTOL; ACT Tenders) swept by search. Tier 2 (local government via VendorPanel and council sites; universities; water corporations - Sydney Water, Melbourne Water, SA Water, Water Corporation WA, Greater Western Water) swept by search. Tier 3 MANDATORY check done by search (SAP Ariba Discovery / SAP Business Network Discovery; BHP GCMS; Rio Tinto Ariba) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net: the six still-open, buyer-corroborated opportunities carried from the 2026-11-17 run were re-confirmed as still open and re-asserted (NSW ~$80M Master Media RFT closing 27 Nov re-corroborated by trade press; Brisbane Gardner Road Doc115483155 closing 7 Dec and Prebble St Bikeway Doc118000917 closing 11 Dec re-corroborated against the BCC current-tenders listing; TfNSW New England Hwy Maitland Westbound ROI 26.0000139291.0941.ROI publish 9 Nov closing 11 Dec re-corroborated; Tenders ACT SL20260630 closing 1 Dec and PIMA0014211 closing 3 Dec carried forward). No genuinely new buyer-originated opportunity could be verified beyond these carryovers. Three new source signals were surfaced and recorded (Melbourne Water via the Zycus Supplier Network; SA Water Supplier Portal; Water Corporation WA supplier/bidder portal). All six tenders remain headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
+    "sources_checked": 28,
     "tenders_found": 6,
     "new_sources_found": 3,
     "entries_pending_detail": 6,
     "gaps": [
-      "HARD EGRESS BLOCK (unchanged from recent runs): all direct HTTPS to tender hosts is denied by the session network policy. WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND, and the same failure mode applies to every other buyer portal, so no buyer-originated detail page, feed/API or tender document could be opened. To restore full discovery these hosts should be allowed in the session network settings: www.tenders.gov.au, buy.nsw.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, gateway.icn.org.au, www.brisbane.qld.gov.au, estimateone.com, and individual council/university/utility/corporate sites.",
-      "Every tender captured this run is headline-only and UNVERIFIED on the buyer own page. Titles, reference numbers and closing dates come from WebSearch snippets of trade press, buyer-page snapshots and aggregators, not from an opened buyer detail page. Deliverables, requirements, eligibility, evaluation criteria, submission mechanics, value and contacts are therefore null and still need a detail pass once egress is restored.",
-      "WebSearch index lags the run date (2026-11-17) and is US-indexed. Almost all other surfaced notices had already closed (e.g. Mona Vale Road West EOI, NSW sustainable-energy EOI closed 5 Mar 2026, Colac Otway grazing-licence EOI closed 30 Oct 2026, HealthShare solar maintenance, NeoSmelt JV closed 18 Dec 2025) and were correctly excluded, NOT captured. Genuinely recent (last 24-48h) buyer-originated notices are almost certainly undercounted.",
-      "The two new ACT entries (Tenders ACT SL20260630, PIMA0014211) come from a WebSearch summary of the Tenders ACT open-tenders listing, not an opened record; that same listing snapshot contained at least one garbled release/closing date, so both close dates and the PIMA0014211 procurement_type need confirmation on the live portal once egress is restored.",
-      "Several buy.nsw items were surfaced only in a WebSearch summary and could NOT be tied to a citable buyer-page snippet, so they were NOT captured as tenders and must be verified on the buy.nsw Opportunities Hub once egress is restored: a Solar PV Design/Supply/Installation/Maintenance contract reportedly closing 9 Dec 2026; a DPIRD Monitoring, Evaluation, Reporting & Improvement (MERI) Panel reportedly closing 8 Dec 2026; a McMahons Park play-space upgrade reportedly closing 3 Dec 2026; and a DPIRD \"Solar carpark awning and ground mounted batteries\" RFT (no close date seen). Also unconfirmed: Univ. of Sydney chiller/cooling-tower 2027 EOI; UWA hydraulic/gas services RFT; Greater Western Water RFT26-004 \"Sustaining Infrastructure\" EOI.",
-      "Tier 3 corporate (SAP Ariba Discovery, BHP GCMS, Rio Tinto Ariba, Fortescue, Woodside, ICN Gateway, major retail/bank/telco) remained registration-gated or invitation-only; no authenticated supplier session is available, so no corporate opportunity could be read. Recorded as portals only; no corporate tender fabricated. Management-consultancy / invitation-only RFPs are out of scope by definition and were not invented.",
-      "The four re-asserted opportunities are carryovers from earlier runs (existing dedup_keys) re-confirmed as still open via this run searches; they were not freshly discovered this run."
+      "HARD EGRESS BLOCK (unchanged from recent runs): all direct HTTPS to tender hosts is denied by the session network policy. WebFetch to https://www.tenders.gov.au/atm returned DNS ENOTFOUND, and curl CONNECT tunnels to www.tenders.gov.au, www.vendorpanel.com.au and www.tenders.nsw.gov.au were refused by the proxy with HTTP 403, so no buyer-originated detail page, feed/API or tender document could be opened. To restore full discovery these hosts should be allowed in the session network settings: www.tenders.gov.au, buy.nsw.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au, qtenders.hpw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, gateway.icn.org.au, www.brisbane.qld.gov.au, estimateone.com, and individual council/university/utility/corporate sites.",
+      "Every tender captured this run is headline-only and UNVERIFIED on the buyer's own page. Titles, reference numbers and closing dates come from WebSearch snippets of trade press, buyer-page snapshots and aggregators, not from an opened buyer detail page. Deliverables, requirements, eligibility, evaluation criteria, submission mechanics, value and contacts are therefore null and still need a detail pass once egress is restored.",
+      "WebSearch index lags the run date (2026-11-18) and is US-indexed. Almost all other surfaced notices had already closed (e.g. NSW Health linen-services consultant HI26363 closed 2 Oct; Univ. of Sydney Curriculum Management Technologies closed 4 Sep; numerous university EOIs closed earlier in 2026) and were correctly excluded, NOT captured. Genuinely recent (last 24-48h) buyer-originated notices are almost certainly undercounted.",
+      "The two ACT entries (Tenders ACT SL20260630, PIMA0014211) were carried from the 2026-11-17 run; they derive from a WebSearch summary of the Tenders ACT open-tenders listing, not an opened record, and that snapshot contained at least one garbled release/closing date, so both close dates and the PIMA0014211 procurement_type still need confirmation on the live portal once egress is restored.",
+      "Unconfirmed items seen only in aggregator/search summaries and therefore NOT captured as tenders, pending verification on the buyer's own portal once egress is restored: buy.nsw Solar PV Design/Supply/Install/Maintenance (reported closing ~9 Dec 2026); DPIRD MERI Panel (reported closing ~8 Dec 2026); Greater Western Water potable-water-service-upgrade RFT (foreshadowed for release Aug 2026); Wannon Water 2026/27 forward tender schedule items.",
+      "Tier 3 corporate (SAP Ariba Discovery / SAP Business Network Discovery, BHP GCMS, Rio Tinto Ariba, and major retail/bank/telco e-sourcing hubs) remained registration-gated or invitation-only; no authenticated supplier session is available, so no corporate opportunity could be read. Recorded as portals only; no corporate tender fabricated. Management-consultancy / invitation-only RFPs are out of scope by definition and were not invented.",
+      "All six re-asserted opportunities are carryovers from earlier runs (existing dedup_keys) re-confirmed as still open via this run's searches; they were not freshly discovered this run."
     ],
     "recommended_seed_additions": [
-      "ICN Gateway (https://gateway.icn.org.au/) - Industry Capability Network portal where major Australian project owners (mining JVs, state infrastructure programs) publish supplier and work-package opportunities; buyer/project-originated, free registration. Not previously in the known-source set.",
-      "Colac Otway Shire Council - Tenders & Procurement (https://www.colacotway.vic.gov.au/Council-the-shire/Tenders-Procurement) - Victorian local-government buyer-originated tenders page; add to the local-government sample rotation.",
-      "Logan City Council - Tenders and EOI via VendorPanel (https://www.logan.qld.gov.au/business-and-investment/doing-business-with-council/request-for-tenders-and-eoi) - QLD council migrated from TenderLink to VendorPanel; track via its VendorPanel listings.",
-      "Once egress is restored, open the buyer detail pages for all six carried/surfaced opportunities (buy.nsw NSW Master Media RFT; Brisbane Doc115483155 and Doc118000917; TfNSW 26.0000139291.0941.ROI; Tenders ACT SL20260630 and PIMA0014211) and the unconfirmed buy.nsw items listed in gaps, and complete the deliverables/requirements detail pass."
+      "Melbourne Water - Zycus Supplier Network: Melbourne Water runs supplier registration and sourcing through the Zycus Supplier Network (a distinct e-sourcing platform not previously recorded by this routine); worth tracking as a buyer-originated GBE channel.",
+      "SA Water - Supplier Portal (https://www.sawater.com.au/): SA Water conducts its tender process and proposal lodgement exclusively through its own Supplier Portal; add to the water-corporation sample rotation.",
+      "Water Corporation (WA) - Supplier/Bidder Portal: Water Corporation distributes bid documents via its own supplier/bidder portal for registered suppliers; add to the water-corporation sample rotation.",
+      "Once egress is restored, open the buyer detail pages for all six carried opportunities (buy.nsw NSW Master Media RFT; Brisbane Doc115483155 and Doc118000917; TfNSW 26.0000139291.0941.ROI; Tenders ACT SL20260630 and PIMA0014211) and the unconfirmed buy.nsw / GWW / Wannon Water items listed in gaps, and complete the deliverables/requirements detail pass."
     ]
   },
   "months": [
@@ -52496,16 +52497,17 @@
       ],
       "first_seen": "2026-11-13",
       "detail_source": "",
-      "reasoning": "Carryover re-confirmed again this run (2026-11-17) via WebSearch of trade press reporting the ~$80M NSW Government master media RFT as open and closing 27 November 2026. Buyer-originated channel is NSW eTendering/buy.nsw; the buyer detail page could not be opened due to the persistent egress block.",
-      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer own page. Value (~$80M) and closing date (27 Nov 2026) from corroborating trade-press reports, not an opened buy.nsw record. Closes in ~10 days; marked closing-soon. Tender id, closing time, documents and contacts still null (egress block).",
-      "last_seen": "2026-11-17",
+      "reasoning": "Carryover re-confirmed again this run (2026-11-18) via WebSearch of trade press (B&T, Mediaweek, Marketing-Interactive) reporting the ~$80M NSW Government master media RFT as open and closing 27 November 2026, with a shortlist expected Jan 2027 and a second RFT stage from Feb 2027. Buyer-originated channel is NSW eTendering/buy.nsw; the buyer detail page could not be opened due to the persistent egress block.",
+      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer's own page. Value (~$80M) and closing date (27 Nov 2026) from corroborating trade-press reports, not an opened buy.nsw record. Closes in ~9 days; marked closing-soon. Tender id, closing time, documents and contacts still null (egress block).",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-11-13",
         "2026-11-15",
         "2026-11-16",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -52526,7 +52528,7 @@
       "category_codes": [],
       "procurement_type": "ROI",
       "current_status": "open",
-      "description": "Transport for NSW Registration of Interest for the New England Highway Maitland Westbound Upgrade, reported closing 11 December 2026 at 3:00 PM, with submissions by email to MWU_Procurement@transport.nsw.gov.au.",
+      "description": "Transport for NSW Registration of Interest for the New England Highway Maitland Westbound Upgrade (a ~$100M, Australian-Government-funded westbound upgrade at the Cessnock Road roundabout, Maitland), reported published 9 November 2026 and closing 11 December 2026 at 3:00 PM, with submissions by email to a TfNSW procurement address. It is the first phase of a reported three-phase procurement (concept design, then design and construction).",
       "deliverables_summary": null,
       "key_deliverables": [],
       "scope_of_work": null,
@@ -52564,15 +52566,16 @@
       ],
       "first_seen": "2026-11-13",
       "detail_source": "",
-      "reasoning": "Carryover re-confirmed this run (2026-11-17) via WebSearch; the ROI (ref 26.0000139291.0941.ROI) for the New England Highway Maitland Westbound Upgrade is reported published 9 November 2026 and closing 11 December 2026, 3:00 PM, email submission to a TfNSW procurement address. Buyer-originated channel is TfNSW via NSW eTendering; buyer detail page not openable (egress block).",
-      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer own page. Reference, publish/closing dates and contact email come from an aggregator (australiantenders.com.au) snapshot used only as a discovery signal; the buy.nsw record was not opened (egress block). Scope, value, documents null.",
-      "last_seen": "2026-11-17",
+      "reasoning": "Carryover re-confirmed this run (2026-11-18) via WebSearch; the ROI (ref 26.0000139291.0941.ROI) for the New England Highway Maitland Westbound Upgrade is reported published 9 November 2026 and closing 11 December 2026, 3:00 PM, email submission to a TfNSW procurement address, cross-referenced against the TfNSW project page. Buyer-originated channel is TfNSW via NSW eTendering; buyer detail page not openable (egress block).",
+      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer's own page. Reference, publish/closing dates and contact email come from an aggregator (australiantenders.com.au) snapshot used only as a discovery signal; the buy.nsw record was not opened (egress block). Scope, value, documents null. Submission reportedly requires completed ROI Returnable Schedules and a signed Corporate Confidentiality Deed (needs verification on the buyer page).",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-11-13",
         "2026-11-16",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -52758,15 +52761,16 @@
       ],
       "first_seen": "2026-11-15",
       "detail_source": "",
-      "reasoning": "Carryover re-confirmed this run (2026-11-17) via WebSearch of Brisbane City Council current-tenders page, which still lists RFx Doc118000917 (Prebble Street Bikeway) closing 11 December 2026, 12 noon. Buyer-originated local-government source; detail page not openable (egress block).",
-      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer's own page. Close date/time from the council current-tenders snapshot (the snapshot was jumbled and the category label was unclear); scope, value, documents, contacts null (egress block).",
-      "last_seen": "2026-11-17",
+      "reasoning": "Carryover re-confirmed this run (2026-11-18) via WebSearch of the Brisbane City Council current-tenders page, which still lists RFx Doc118000917 (Prebble Street Bikeway) closing 11 December 2026, 12 noon. Buyer-originated local-government source; detail page not openable (egress block).",
+      "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer's own page. Close date/time from the council current-tenders snapshot; scope, value, documents, contacts null (egress block).",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-11-15",
         "2026-11-16",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -52787,7 +52791,7 @@
       "category_codes": [],
       "procurement_type": "RFP",
       "current_status": "open",
-      "description": "Brisbane City Council construction tender for roadworks on Gardner Road between Priestdale Road and Underwood Road, listed on the council's current tenders page with a close date of 7 December 2026 (12 noon).",
+      "description": "Brisbane City Council construction tender for roadworks on Gardner Road between Priestdale Road and Underwood Road, listed on the council's current tenders page with a close date of 7 December 2026 (12 noon). The project is jointly funded by the Queensland Government and Brisbane City Council per the council's March 2026 project update.",
       "deliverables_summary": null,
       "key_deliverables": [],
       "scope_of_work": null,
@@ -52824,15 +52828,16 @@
       ],
       "first_seen": "2026-11-15",
       "detail_source": "",
-      "reasoning": "Carryover re-confirmed this run (2026-11-17) via WebSearch of Brisbane City Council current-tenders page, which still lists RFx Doc115483155 (Gardner Road construction) closing 7 December 2026, 12 noon. Buyer-originated local-government source; detail page not openable (egress block).",
+      "reasoning": "Carryover re-confirmed this run (2026-11-18) via WebSearch of the Brisbane City Council current-tenders page, which still lists RFx Doc115483155 (Gardner Road construction) closing 7 December 2026, 12 noon. Buyer-originated local-government source; detail page not openable (egress block).",
       "notes": "HEADLINE-ONLY and UNVERIFIED on the buyer's own page. Close date/time from the council current-tenders snapshot; scope, value, documents, contacts null (egress block). The council page itself states listed dates are indicative and subject to change.",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-11-15",
         "2026-11-16",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -53131,18 +53136,20 @@
         "construction",
         "rft",
         "open",
+        "carryover",
         "headline-only",
         "unverified-on-buyer-page",
         "search-surfaced"
       ],
-      "reasoning": "Newly surfaced this run via WebSearch of the Tenders ACT open-tenders listing (tenders.act.gov.au/tenders/open), which showed RFT SL20260630 closing 1 December 2026. Buyer-originated ACT government portal; the live detail page could not be opened due to the egress block.",
-      "notes": "HEADLINE-ONLY and UNVERIFIED on an opened buyer page. Reference and closing date come from a WebSearch summary of the Tenders ACT listing, not an opened record. The same listing snapshot contained at least one garbled release/closing date, so the close date needs confirmation on the live portal once egress is restored. Scope, value, documents and contacts null.",
-      "last_seen": "2026-11-17",
+      "reasoning": "Carryover from the 2026-11-17 run (first surfaced via WebSearch of the Tenders ACT open-tenders listing showing RFT SL20260630 closing 1 December 2026). Re-asserted this run as still within its open window. Buyer-originated ACT government portal; the live detail page could not be opened due to the egress block.",
+      "notes": "HEADLINE-ONLY and UNVERIFIED on an opened buyer page. Reference and closing date come from a WebSearch summary of the Tenders ACT listing, not an opened record. That listing snapshot contained at least one garbled release/closing date, so the close date needs confirmation on the live portal once egress is restored. Scope, value, documents and contacts null.",
+      "last_seen": "2026-11-18",
       "seen_dates": [
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -53195,18 +53202,20 @@
         "property",
         "construction",
         "open",
+        "carryover",
         "headline-only",
         "unverified-on-buyer-page",
         "search-surfaced"
       ],
-      "reasoning": "Newly surfaced this run via WebSearch of the Tenders ACT open-tenders listing, which showed reference PIMA0014211 closing 3 December 2026. Buyer-originated ACT government portal; the live detail page could not be opened due to the egress block.",
+      "reasoning": "Carryover from the 2026-11-17 run (first surfaced via WebSearch of the Tenders ACT open-tenders listing showing reference PIMA0014211 closing 3 December 2026). Re-asserted this run as still within its open window. Buyer-originated ACT government portal; the live detail page could not be opened due to the egress block.",
       "notes": "HEADLINE-ONLY and UNVERIFIED on an opened buyer page. Reference and closing date come from a WebSearch summary of the Tenders ACT listing, not an opened record; procurement_type assumed RFT from the listing context and needs confirmation. The listing snapshot contained at least one garbled date, so confirm on the live portal once egress is restored. Scope, value, documents and contacts null.",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     }
   ],
@@ -53478,18 +53487,18 @@
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national) / global",
+      "jurisdiction": "Australia (and global)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check this run. Searched for publicly-visible open Australian RFx on Ariba Discovery; none were visible without a supplier login. Australian buyers (e.g. Opal/Paper Australia, Sydney Water, Brisbane City Council) run sourcing events on Ariba but access is at the invited-supplier-contact level.",
+      "how_discovered": "Tier 3 MANDATORY corporate channel; checked by WebSearch this run. Now branded SAP Business Network Discovery.",
       "recommended_check_frequency": "daily",
-      "notes": "Largest single corporate opportunity channel. Registration-gated: individual RFx require a free supplier account and, typically, a buyer invitation. No publicly-visible open opportunity captured this run; recorded as a portal only, none fabricated.",
+      "notes": "Free supplier registration required to view full opportunity detail; no authenticated session available this run, so no individual corporate RFx was read or captured. Portal recorded only; nothing fabricated.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -53574,27 +53583,28 @@
         "2026-11-14",
         "2026-11-15",
         "2026-11-16",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 84,
+      "seen_count": 85,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
-      "source_name": "BHP - Global Contract Management System (GCMS)",
+      "source_name": "BHP - Global Contract Management System (GCMS) / Find Opportunities",
       "source_url": "https://www.bhp.com/suppliers/find-opportunities",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national) / global",
-      "platform": "BHP GCMS",
+      "jurisdiction": "Australia (and global)",
+      "platform": "SAP-Ariba + GCMS",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check this run. BHP supplier pages confirm tenders/RFx run through GCMS; suppliers must register a vendor profile and be onboarded before responding. No public list of open opportunities is visible without a login.",
+      "how_discovered": "Tier 3 MANDATORY corporate channel; checked by WebSearch this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "Registration-gated corporate buyer portal. Opportunities invitation/registration-based; none publicly visible this run. Recorded as a portal only.",
+      "notes": "Registration/invitation-gated; no publicly-visible open RFx readable this run. Portal recorded only; nothing fabricated.",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -53616,9 +53626,10 @@
         "2026-09-26",
         "2026-10-13",
         "2026-10-19",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 21,
+      "seen_count": 22,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -54010,24 +54021,25 @@
       "source_name": "Rio Tinto - Supplier Portal (SAP Ariba)",
       "source_url": "https://www.riotinto.com/en/about/suppliers/supplier-portals",
       "source_type": "corporate",
-      "jurisdiction": "Australia (national) / global",
+      "jurisdiction": "Australia (and global)",
       "platform": "SAP-Ariba",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Mandatory Tier 3 check this run. Rio Tinto supplier-portals page directs suppliers to SAP Ariba for sourcing tools; no publicly-visible open RFx without a supplier login.",
+      "how_discovered": "Tier 3 MANDATORY corporate channel; checked by WebSearch this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "Registration-gated corporate buyer portal on SAP Ariba. No public opportunity captured; recorded as a portal only.",
+      "notes": "Registration/invitation-gated; no publicly-visible open RFx readable this run. Portal recorded only; nothing fabricated.",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
         "2026-08-26",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 4,
+      "seen_count": 5,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -54080,18 +54092,18 @@
       "source_name": "VendorPanel - Public Tenders",
       "source_url": "https://www.vendorpanel.com.au/publictenders.aspx",
       "source_type": "gov-local",
-      "jurisdiction": "Australia (councils and public sector)",
+      "jurisdiction": "Australia (multi-jurisdiction)",
       "platform": "VendorPanel",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Standing Tier 2 channel for local-government public tenders; re-checked via search. Many NSW/QLD/VIC/WA councils (e.g. Canada Bay, Gunnedah, Cloncurry, and Shire of Northam enquiries) continue to use it.",
+      "how_discovered": "Tier 2 known platform aggregating many councils' buyer-originated tenders; re-swept by WebSearch this run (councils confirmed using VendorPanel include Tamworth, Inner West, Byron, Boroondara, Logan).",
       "recommended_check_frequency": "daily",
-      "notes": "Known source, re-confirmed. Buyer-chosen e-sourcing platform, not an aggregator. Direct test of www.vendorpanel.com.au returned ENOTFOUND this run; live listing content not accessible.",
+      "notes": "Buyer-originated platform (not an aggregator/reseller). Could not be opened directly this run (curl CONNECT refused with proxy 403).",
       "state": "",
       "first_seen": "2026-06-26",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-06-26",
         "2026-06-27",
@@ -54138,11 +54150,12 @@
         "2026-10-28",
         "2026-11-05",
         "2026-11-08",
-        "2026-11-09"
+        "2026-11-09",
+        "2026-11-18"
       ],
-      "seen_count": 46,
+      "seen_count": 47,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Transgrid — Suppliers (iBuy / SAP Ariba)",
@@ -54449,20 +54462,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Tenders ACT",
+      "source_name": "ACT Tenders (Tenders ACT)",
       "source_url": "https://www.tenders.act.gov.au/tenders/open",
       "source_type": "gov-state",
       "jurisdiction": "Australian Capital Territory",
-      "platform": "Tenders ACT",
+      "platform": "custom (Tenders ACT)",
       "access_method": "html",
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Primary ACT portal; City & Environment and JACS items captured.",
+      "how_discovered": "Tier 1 known portal; re-swept by WebSearch this run. Hosts SL20260630 and PIMA0014211 carried in this run's tenders.",
       "recommended_check_frequency": "daily",
-      "notes": "Known Tier 1 portal.",
+      "notes": "Could not be opened directly this run (egress block); listing snapshots via search have had garbled dates.",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-11-06",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-06-28",
         "2026-07-18",
@@ -54472,11 +54485,12 @@
         "2026-10-28",
         "2026-11-02",
         "2026-11-03",
-        "2026-11-06"
+        "2026-11-06",
+        "2026-11-18"
       ],
-      "seen_count": 9,
+      "seen_count": 10,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Sydney Trains — NSW eTendering",
@@ -55134,29 +55148,30 @@
       "active_in_latest": false
     },
     {
-      "source_name": "ICN Gateway",
+      "source_name": "ICN Gateway (Industry Capability Network)",
       "source_url": "https://gateway.icn.org.au/",
       "source_type": "public-sector-other",
-      "jurisdiction": "Australia (national)",
-      "platform": "ICN Gateway (custom)",
+      "jurisdiction": "Australia (multi-jurisdiction)",
+      "platform": "custom (ICN Gateway)",
       "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "medium",
-      "how_discovered": "Surfaced repeatedly across this run searches (TfNSW \"Transport for Tomorrow\" project page, BHP/Rio/Woodside NeoSmelt joint-venture supplier opportunities) as the portal where major Australian project owners publish work-package and supplier opportunities. Project/buyer-originated, not a paywalled reseller.",
+      "how_discovered": "Added to the known-source set on the 2026-11-17 run; project owners (mining JVs, state infrastructure programs) publish supplier/work-package opportunities here. Re-noted this run.",
       "recommended_check_frequency": "weekly",
-      "notes": "Industry Capability Network portal where major project owners (incl. mining JVs and state infrastructure programs) post supplier and work-package opportunities. Free registration to view full detail. Legitimate buyer/project-originated channel; capture individual opportunities once an authenticated session and egress are available.",
+      "notes": "Free registration required for full detail; not openable this run (egress block).",
       "first_seen": "2026-07-03",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-07-03",
         "2026-08-27",
         "2026-09-09",
         "2026-10-13",
         "2026-10-27",
-        "2026-11-17"
+        "2026-11-17",
+        "2026-11-18"
       ],
-      "seen_count": 6,
+      "seen_count": 7,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -59362,26 +59377,27 @@
       "source_url": "https://www.tenders.nsw.gov.au/",
       "source_type": "gov-state",
       "jurisdiction": "New South Wales",
-      "platform": "buy.nsw",
+      "platform": "custom (NSW eTendering / buy.nsw Opportunities Hub)",
       "access_method": "html",
-      "feed_or_api_url": "https://buy.nsw.gov.au/opportunity/search?types=Tenders",
+      "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Known Tier 1 seed; re-confirmed via WebSearch (buy.nsw opportunity link titles including PD2025046-A).",
+      "how_discovered": "Tier 1 known portal; re-swept by WebSearch this run. NSW now mandates publication of all open tender opportunities on buy.nsw.",
       "recommended_check_frequency": "daily",
-      "notes": "Supplier Hub at suppliers.buy.nsw.gov.au; detail pages egress-blocked this run.",
+      "notes": "Could not be opened directly this run (egress block). Hosts the NSW Master Media RFT and TfNSW Maitland Westbound ROI carried in this run's tenders.",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-18",
+      "last_seen": "2026-11-18",
       "seen_dates": [
         "2026-08-25",
         "2026-08-26",
         "2026-09-01",
         "2026-09-16",
-        "2026-09-18"
+        "2026-09-18",
+        "2026-11-18"
       ],
-      "seen_count": 5,
+      "seen_count": 6,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Greater Western Water",
@@ -64923,7 +64939,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Longreach Regional Council (QLD) — Tenders & Quotes",
@@ -65448,6 +65464,94 @@
       "last_seen": "2026-11-17",
       "seen_dates": [
         "2026-11-17"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Brisbane City Council - Current Tenders",
+      "source_url": "https://www.brisbane.qld.gov.au/about-council/governance-and-strategy/business-in-brisbane/business-opportunities/selling-to-council/tender-opportunities/current-tenders",
+      "source_type": "gov-local",
+      "jurisdiction": "Queensland",
+      "platform": "custom (council site) + SAP Ariba lodgement",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Known local-government buyer; re-swept by WebSearch this run, which re-corroborated RFx Doc115483155 and Doc118000917 on the current-tenders page.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Listing visible via search; lodgement via the council's SAP Ariba supplier portal. Detail pages not openable this run (egress block).",
+      "first_seen": "2026-11-18",
+      "last_seen": "2026-11-18",
+      "seen_dates": [
+        "2026-11-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Melbourne Water - Supplier registration & sourcing (Zycus Supplier Network)",
+      "source_url": "https://www.melbournewater.com.au/building-and-works/doing-business-us",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "Zycus",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Surfaced this run via a WebSearch of Australian water-utility procurement channels: Melbourne Water asks suppliers to register in the Zycus Supplier Network, a cloud-based e-sourcing portal not previously recorded by this routine.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated GBE channel on the Zycus platform (a distinct e-sourcing hub). Registration-gated; not openable this run (egress block). Captures the platform signal, not a fabricated opportunity.",
+      "first_seen": "2026-11-18",
+      "last_seen": "2026-11-18",
+      "seen_dates": [
+        "2026-11-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "SA Water - Supplier Portal",
+      "source_url": "https://www.sawater.com.au/",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "South Australia",
+      "platform": "custom (SA Water Supplier Portal)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Surfaced this run via a WebSearch of Australian water-utility procurement channels: SA Water conducts its tender process and requires proposals to be uploaded exclusively through its own Supplier Portal.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated GBE channel. Registration-gated; not openable this run (egress block). Captures the source, not a fabricated opportunity.",
+      "first_seen": "2026-11-18",
+      "last_seen": "2026-11-18",
+      "seen_dates": [
+        "2026-11-18"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": true,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Water Corporation (WA) - Supplier/Bidder Portal",
+      "source_url": "https://www.watercorporation.com.au/Home/Builders-and-developers/Tenders-and-contracts",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Western Australia",
+      "platform": "custom (Water Corporation supplier/bidder portal)",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "medium",
+      "how_discovered": "Surfaced this run via a WebSearch of Australian water-utility procurement channels: Water Corporation distributes bid documents via its own supplier/bidder portal for registered suppliers/bidders.",
+      "recommended_check_frequency": "weekly",
+      "notes": "Buyer-originated GBE channel. Registration-gated; not openable this run (egress block). Captures the source, not a fabricated opportunity.",
+      "first_seen": "2026-11-18",
+      "last_seen": "2026-11-18",
+      "seen_dates": [
+        "2026-11-18"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
