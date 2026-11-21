@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21",
+  "generated": "2026-11-22",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -150,37 +150,34 @@
     "2026-11-18",
     "2026-11-19",
     "2026-11-20",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
   ],
-  "run_count": 150,
+  "run_count": 151,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-21",
-  "latest_coverage_summary": "Degraded, SEARCH-ONLY run (2026-11-21). The hard egress block seen on all recent runs persists and was re-tested this run: WebFetch to https://www.tenders.gov.au/atm and https://www.tenders.nsw.gov.au both returned DNS ENOTFOUND, so no buyer-originated detail page, feed/API or tender document could be opened. Discovery was limited to WebSearch (US-indexed, lagging the 2026-11-21 run date, returning mostly cached snapshots, buyer-page snapshots, trade press and third-party aggregator pages). Tier 1 swept by search (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au and Qld Health; WA Tenders WA/regional development-commission bulletins; SA Tenders SA; TAS Tenders Tasmania; NT QTOL; ACT Tenders). Tier 2 swept by search (Brisbane City Council; councils on VendorPanel; universities incl. University of Notre Dame Australia and James Cook University; GBEs incl. Australia Post, NBN Co, Transgrid, EnergyCo NSW and water corporations). Tier 3 MANDATORY check done by search (SAP Business Network Discovery / SAP Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net result this run: ONE genuinely new buyer-originated opportunity was captured at headline level (ACT Tenders RFT PIDC0014871, Digital Canberra, double-sourced via the Tenders ACT listing and an aggregator), and TWO new buyer-originated sources were recorded (EnergyCo NSW / NSW Electricity Infrastructure Roadmap tenders; Queensland Government Procurement Spend Portal). Four carryover opportunities were re-corroborated this run via buyer-page snapshots / trade press (DFAT-1113 PNG Health ENABLE managing-contractor REOI, DFAT business notification + DevelopmentAid updated 5 Nov, open; NSW ~$80M Master Media RFT closing 27 Nov 2026, strongly re-confirmed by B&T, Mediaweek, Mumbrella, Marketing-Interactive; Brisbane City Council Gardner Road Doc115483155 closing 7 Dec 2026 12 noon with enquiries to Michael Devitt and Prebble Street Bikeway Doc118000917 closing 11 Dec 2026 12 noon with enquiries to Corina Petre-Czibesz - both re-confirmed present on the BCC current-tenders page with contact names newly captured). Three carryovers were carried forward within their open window but NOT independently re-corroborated this run (TfNSW New England Hwy Maitland Westbound ROI 26.0000139291.0941.ROI closing 11 Dec; Tenders ACT SL20260630 and PIMA0014211). HONESTY NOTE: an initial NT QTOL WebSearch again surfaced a detailed set of December-closing NT tenders (AGC26-0118 advisory services; C11 Channel Island synchronous condenser; T26-1400 Peter McAulay Centre refurb; RFT0763 Power & Water incident management; T26-1062 lifts; T26-1246 MAGNT switchboard; NTG26-0127 vehicle rental; T26-1225 Alice Springs landscaping), but a targeted follow-up search could NOT re-corroborate AGC26-0118 or RFT0763 (it returned different/older PWC and AGC tender numbers) and NTG26-0127 carried a title conflict (vehicle rental vs aerial-photography/LiDAR on different snapshots). As on prior runs these NT items were therefore treated as an unverified search summary and were NOT captured as tenders (no fabrication of IDs, dates or scope); they are recorded in gaps. All 8 captured tenders remain headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
+  "latest_run": "2026-11-22",
+  "latest_coverage_summary": "Degraded, SEARCH-ONLY run (2026-11-22). The hard outbound-network block seen on recent runs persists and was re-tested at the start of this run: WebFetch to https://www.tenders.gov.au/atm, https://www.tenders.act.gov.au/tenders/open and https://www.vendorpanel.com.au/publictenders.aspx all returned DNS ENOTFOUND (host outside the session's allowed network domains). No buyer-originated detail page, RSS/JSON feed, API endpoint, or tender document could be opened this run. Discovery was therefore limited to WebSearch, which is US-indexed and lagging the 2026-11-22 run date, returning mostly cached snapshots, buyer-page snapshots, trade press, and third-party aggregator pages. Tier 1 swept by search (AusTender/Defence; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au; WA Tenders WA + regional development-commission bulletins; SA Tenders SA; TAS Tenders Tasmania/Business Tasmania; NT QTOL; ACT Tenders). Tier 2 swept by search (councils on VendorPanel/eTenderBox/TenderLink; GBEs incl. Sydney Water, Melbourne Water, NBN Co, Transgrid; universities; CSIRO). Tier 3 MANDATORY check done by search (SAP Business Network / Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne, Coupa) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx this run; all are already in the known-source set, none fabricated. Net result: ONE genuinely new buyer-originated opportunity captured at headline level - the Western Australia Service Alliance 2012 (SA12) regional building-maintenance registration arrangement (Dept of Housing and Works), whose November 2026 invitation PDF is publicly published on wa.gov.au - recorded as both a new tender and a new source. All other search hits were already in the baseline, had closed, or were aggregator-only (do-not-rely) listings and were not re-captured.",
   "latest_run_metadata": {
-    "run_date": "2026-11-21",
-    "coverage_summary": "Degraded, SEARCH-ONLY run (2026-11-21). The hard egress block seen on all recent runs persists and was re-tested this run: WebFetch to https://www.tenders.gov.au/atm and https://www.tenders.nsw.gov.au both returned DNS ENOTFOUND, so no buyer-originated detail page, feed/API or tender document could be opened. Discovery was limited to WebSearch (US-indexed, lagging the 2026-11-21 run date, returning mostly cached snapshots, buyer-page snapshots, trade press and third-party aggregator pages). Tier 1 swept by search (AusTender; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au and Qld Health; WA Tenders WA/regional development-commission bulletins; SA Tenders SA; TAS Tenders Tasmania; NT QTOL; ACT Tenders). Tier 2 swept by search (Brisbane City Council; councils on VendorPanel; universities incl. University of Notre Dame Australia and James Cook University; GBEs incl. Australia Post, NBN Co, Transgrid, EnergyCo NSW and water corporations). Tier 3 MANDATORY check done by search (SAP Business Network Discovery / SAP Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx; recorded as portals only, none fabricated. Net result this run: ONE genuinely new buyer-originated opportunity was captured at headline level (ACT Tenders RFT PIDC0014871, Digital Canberra, double-sourced via the Tenders ACT listing and an aggregator), and TWO new buyer-originated sources were recorded (EnergyCo NSW / NSW Electricity Infrastructure Roadmap tenders; Queensland Government Procurement Spend Portal). Four carryover opportunities were re-corroborated this run via buyer-page snapshots / trade press (DFAT-1113 PNG Health ENABLE managing-contractor REOI, DFAT business notification + DevelopmentAid updated 5 Nov, open; NSW ~$80M Master Media RFT closing 27 Nov 2026, strongly re-confirmed by B&T, Mediaweek, Mumbrella, Marketing-Interactive; Brisbane City Council Gardner Road Doc115483155 closing 7 Dec 2026 12 noon with enquiries to Michael Devitt and Prebble Street Bikeway Doc118000917 closing 11 Dec 2026 12 noon with enquiries to Corina Petre-Czibesz - both re-confirmed present on the BCC current-tenders page with contact names newly captured). Three carryovers were carried forward within their open window but NOT independently re-corroborated this run (TfNSW New England Hwy Maitland Westbound ROI 26.0000139291.0941.ROI closing 11 Dec; Tenders ACT SL20260630 and PIMA0014211). HONESTY NOTE: an initial NT QTOL WebSearch again surfaced a detailed set of December-closing NT tenders (AGC26-0118 advisory services; C11 Channel Island synchronous condenser; T26-1400 Peter McAulay Centre refurb; RFT0763 Power & Water incident management; T26-1062 lifts; T26-1246 MAGNT switchboard; NTG26-0127 vehicle rental; T26-1225 Alice Springs landscaping), but a targeted follow-up search could NOT re-corroborate AGC26-0118 or RFT0763 (it returned different/older PWC and AGC tender numbers) and NTG26-0127 carried a title conflict (vehicle rental vs aerial-photography/LiDAR on different snapshots). As on prior runs these NT items were therefore treated as an unverified search summary and were NOT captured as tenders (no fabrication of IDs, dates or scope); they are recorded in gaps. All 8 captured tenders remain headline-only and UNVERIFIED on an opened buyer page. No opportunity, deliverable, date, value or contact was fabricated.",
-    "sources_checked": 28,
-    "tenders_found": 8,
-    "new_sources_found": 2,
-    "entries_pending_detail": 8,
+    "run_date": "2026-11-22",
+    "coverage_summary": "Degraded, SEARCH-ONLY run (2026-11-22). The hard outbound-network block seen on recent runs persists and was re-tested at the start of this run: WebFetch to https://www.tenders.gov.au/atm, https://www.tenders.act.gov.au/tenders/open and https://www.vendorpanel.com.au/publictenders.aspx all returned DNS ENOTFOUND (host outside the session's allowed network domains). No buyer-originated detail page, RSS/JSON feed, API endpoint, or tender document could be opened this run. Discovery was therefore limited to WebSearch, which is US-indexed and lagging the 2026-11-22 run date, returning mostly cached snapshots, buyer-page snapshots, trade press, and third-party aggregator pages. Tier 1 swept by search (AusTender/Defence; NSW buy.nsw/eTendering; VIC Buying for Victoria; QLD QTenders->VendorPanel/supply.qld.gov.au; WA Tenders WA + regional development-commission bulletins; SA Tenders SA; TAS Tenders Tasmania/Business Tasmania; NT QTOL; ACT Tenders). Tier 2 swept by search (councils on VendorPanel/eTenderBox/TenderLink; GBEs incl. Sydney Water, Melbourne Water, NBN Co, Transgrid; universities; CSIRO). Tier 3 MANDATORY check done by search (SAP Business Network / Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne, Coupa) - every corporate channel remained registration-gated or invitation-only with no publicly-visible open RFx this run; all are already in the known-source set, none fabricated. Net result: ONE genuinely new buyer-originated opportunity captured at headline level - the Western Australia Service Alliance 2012 (SA12) regional building-maintenance registration arrangement (Dept of Housing and Works), whose November 2026 invitation PDF is publicly published on wa.gov.au - recorded as both a new tender and a new source. All other search hits were already in the baseline, had closed, or were aggregator-only (do-not-rely) listings and were not re-captured.",
+    "sources_checked": 24,
+    "tenders_found": 1,
+    "new_sources_found": 1,
+    "entries_pending_detail": 1,
     "gaps": [
-      "HARD EGRESS BLOCK (unchanged, re-tested this run): all direct HTTPS to tender hosts is denied by the session network policy. WebFetch to www.tenders.gov.au and www.tenders.nsw.gov.au both returned DNS ENOTFOUND this run, so no buyer-originated detail page, feed/API or tender document could be opened. To restore full discovery these hosts should be allowed in the session network settings: www.tenders.gov.au, buy.nsw.gov.au / info.buy.nsw.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au, qtenders.epw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, gateway.icn.org.au, www.brisbane.qld.gov.au, www.energyco.nsw.gov.au, www.energy.nsw.gov.au, www.notredame.edu.au, and individual council/university/utility/corporate sites.",
-      "Every tender captured this run is headline-only and UNVERIFIED on the buyer's own opened page. Titles, reference numbers, closing dates and (for Brisbane) contact names come from WebSearch snapshots of buyer pages, trade press and aggregators, not from an opened buyer detail page or an opened ATM. Deliverables, requirements, eligibility, evaluation criteria, submission mechanics, value and most contacts are therefore null and still need a detail pass once egress is restored.",
-      "NT QTOL: a WebSearch of tendersonline.nt.gov.au surfaced a detailed set of December-closing NT tenders (AGC26-0118 Professional Advisory Services 36 months closing 16/12; C11 Channel Island Power Station Synchronous Condenser D&C closing 17/12; T26-1400 Peter McAulay Centre office refurbishment D&C closing 07/12; RFT0763 Power & Water Emergency Operations/Business Continuity Incident Management System closing 11/12; T26-1062 lift repairs/maintenance 36 months closing 10/12; T26-1246 MAGNT main switchboard replacement closing 09/12; NTG26-0127 vehicle rental 60 months closing 08/12; T26-1225 Alice Springs medians/verges/landscaping 36 months closing 07/12). A targeted follow-up search could NOT re-corroborate AGC26-0118 or RFT0763 (it returned different/older PWC tenders RFT0575/0577/0589/0715 and an older AGC21-0265), and NTG26-0127 appeared with a conflicting title (vehicle rental vs aerial-photography/LiDAR). To avoid asserting unverified IDs/dates/scope these NT items were NOT captured as tenders (egress block prevented opening the QTOL records). The QTOL portal is clearly active with many current 'Details' records and a Forward Tender Outlook; these need verification on the live site once egress is restored.",
-      "ACT: additional new Tenders ACT references surfaced this run in a single cached listing snapshot but could NOT be re-corroborated and were NOT captured: PICE0014931 (City and Environment Directorate EOI, reported released 5 Nov, closing 10 Dec 2026); PIED0011391 (Education Directorate RFT, reported released 11 Nov, closing 10 Dec 2026 - a targeted follow-up search could not re-find this reference); PICH0008972 (Canberra Health Services RFT, reported released 12 Nov, closing 10 Dec 2026). These are recorded here for verification on the live portal; only PIDC0014871 (double-sourced) was captured as a tender.",
-      "Three carryover opportunities were NOT independently re-corroborated this run and are asserted only as still within their open window: TfNSW New England Hwy Maitland Westbound ROI (26.0000139291.0941.ROI, closing 11 Dec) and the two Tenders ACT entries (SL20260630; PIMA0014211 closing 3 Dec). The Tenders ACT SL20260630 close date remains in conflict across snapshots (1 Dec vs 3 Dec) and must be confirmed on the live portal once egress is restored.",
-      "ACT PIDC0014871 (Digital Canberra RFT, captured this run) is headline-only and carries two residual uncertainties to resolve on the live portal: (a) the release 16 Nov / close 11 Dec 2026 2:00pm dates sat in an ambiguous block that could belong to a neighbouring listing (PIHD0007322); and (b) an aggregator labelled the related 'Digital Canberra Data Centre Services for ACT Government' procurement as 'Current Invited', so it may be a select/invited rather than fully open tender.",
-      "WebSearch index lags the run date (2026-11-21) and is US-indexed. Many surfaced notices had already closed (e.g. multiple Victoria Gippsland Water/Latrobe Regional Health items closing 17-20 Nov; University of Wollongong student financial counselling UOW2026_0169 closed 19 Oct; various NT civil tenders) and were correctly excluded, NOT captured. Genuinely recent (last 24-48h) buyer-originated notices are almost certainly undercounted.",
-      "Tier 3 corporate (SAP Business Network Discovery / SAP Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne subcontractor packages, and major retail/bank/telco/energy e-sourcing hubs) remained registration-gated or invitation-only; no authenticated supplier session is available, so no corporate opportunity could be read. Recorded as portals only; no corporate tender fabricated. Management-consultancy / invitation-only RFPs are out of scope by definition and were not invented.",
-      "University of Notre Dame Australia 'Managed Security Operations Centre (SOC) Services' RFT has a specific buyer page (notredame.edu.au/staff/support/finance/procurement/suppliers/rft-managed-security-operations-centre-soc-services) but its dates/status could not be confirmed (egress block), so it was recorded as a source only and NOT captured as a tender."
+      "HARD EGRESS BLOCK (unchanged from recent runs): WebFetch to all external hosts fails with DNS ENOTFOUND - confirmed this run for www.tenders.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au and www.developmentaid.org. No buyer portal, feed, API or tender document could be directly opened. These hosts must be added to the session's allowed network domains for a full-fidelity run. Until then every run is search-only and detail extraction from tender documents is impossible.",
+      "Tier 1 Commonwealth (AusTender): could not open https://www.tenders.gov.au/atm; no live ATM list retrievable; search returned only cached/stale ATM snapshots and aggregator pages. Deferred.",
+      "Tier 1 NSW (buy.nsw/eTendering): opportunities hub not fetchable; only the already-known ~$80M Master Media RFT (closing 27 Nov) surfaced, plus platform guidance. Deferred to a future authenticated/allowed run.",
+      "Tier 1 VIC (tenders.vic.gov.au): portal is JavaScript-rendered; search returned only cached 'open/future/closed' pages whose listings had already closed (Oct 2026). No current Nov-2026 VIC tender confirmable.",
+      "Tier 1 QLD (QTenders -> VendorPanel/supply.qld.gov.au): mid-migration; no live list fetchable; aggregator (qld2032) listings stale/closed. Deferred.",
+      "Tier 1 WA/SA/TAS/NT/ACT: portals not fetchable; only cached/closed listings or weekly-roundup PDFs surfaced.",
+      "Tier 2 GBEs (Sydney Water, Melbourne Water, NBN Co, Transgrid, etc.): current-tenders pages not fetchable; search returned mostly closed notices and infrastructure-pipeline briefings (forward-looking milestones, not open RFx).",
+      "Tier 3 corporate (SAP Ariba Discovery, BHP GCMS, Rio Tinto Ariba, EstimateOne, Coupa): all registration-gated or invitation-only; no publicly-visible open RFx; recorded as portals (already in known-source set), none fabricated.",
+      "Aggregator-only hits (australiantenders.com.au, biddetail, tendersontime, globaltenders, developmentaid, qld2032) were used only as discovery signals and NOT captured as opportunities, per the buyer-originated-only rule; none were paywall-confirmable against a buyer source this run."
     ],
     "recommended_seed_additions": [
-      "EnergyCo NSW and the NSW Electricity Infrastructure Roadmap ASL / AEMO Services tenders (https://www.energyco.nsw.gov.au and https://www.energy.nsw.gov.au/nsw-plans-and-progress/major-state-projects/electricity-infrastructure-roadmap) - buyer-originated NSW government channel running major Renewable Energy Zone (REZ) network-operator and Authorised Service List tenders; added to discovered_sources this run as a new source.",
-      "Queensland Government Procurement Spend Portal (new public-facing portal under the Queensland Procurement Policy 2026) - buyer-originated government transparency portal; useful for awarded-contract intelligence even though it is not an open-opportunities feed. Added to discovered_sources this run.",
-      "Once egress is restored, verify the new Tenders ACT references surfaced this run on the live portal and capture any that are genuinely open: PIDC0014871 (resolve the date-attribution and open-vs-invited question), PICE0014931, PIED0011391 and PICH0008972.",
-      "Once egress is restored, open tendersonline.nt.gov.au (QTOL) and verify the December-closing NT 'Details' records surfaced via search (AGC26-0118, C11 Channel Island synchronous condenser, T26-1400, RFT0763, T26-1062, T26-1246, NTG26-0127, T26-1225) - several appear to be genuine open civil/building/ICT/services tenders whose IDs and close dates could not be confirmed without opening the portal.",
-      "Verify the University of Notre Dame Australia Managed Security Operations Centre (SOC) Services RFT on its procurement page and capture as a tender once the close date/status is confirmed.",
-      "Once egress is restored, open the buyer detail pages for all carried opportunities and complete the deliverables/requirements detail pass: AusTender ATM for DFAT-1113 (PNG Health ENABLE); buy.nsw for the NSW Master Media RFT and TfNSW 26.0000139291.0941.ROI; Brisbane City Council Doc115483155 and Doc118000917; Tenders ACT SL20260630, PIMA0014211 and PIDC0014871."
+      "Department of Housing and Works (WA) - Service Alliance 2012 (SA12) regional building-maintenance registration arrangement (wa.gov.au/government/publications/service-alliance-2012-invitation) - open rolling prequalification for regional WA contractors; worth adding to the permanent known-source list and re-checking monthly for refreshed invitations.",
+      "ALLOW-LIST REQUEST (infrastructure, not a tender source): add the Tier-1 portal hosts (tenders.gov.au, tenders.nsw.gov.au, tenders.vic.gov.au, qtenders.hpw.qld.gov.au, supply.qld.gov.au, tenders.wa.gov.au, tenders.sa.gov.au, tenders.tas.gov.au, tendersonline.nt.gov.au, tenders.act.gov.au) plus vendorpanel.com.au to the session network policy so future runs can fetch live detail pages and feeds."
     ]
   },
   "months": [
@@ -211,7 +208,7 @@
     },
     {
       "month": "2026-11",
-      "new_tenders": 134,
+      "new_tenders": 135,
       "active_tenders": 0
     }
   ],
@@ -52519,7 +52516,7 @@
       ],
       "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "TfNSW:26.0000139291.0941.ROI",
@@ -52590,7 +52587,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "NLA:NLA26/817",
@@ -52788,7 +52785,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "BrisbaneCityCouncil:Doc115483155",
@@ -52858,7 +52855,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "BaysideCouncilNSW:F26-618",
@@ -53172,7 +53169,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "ACT Tenders (Tenders ACT)",
@@ -53241,7 +53238,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "austender:DFAT-1113",
@@ -53309,7 +53306,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "dedup_key": "tenders-act:PIDC0014871",
@@ -53372,6 +53369,86 @@
       "last_seen": "2026-11-21",
       "seen_dates": [
         "2026-11-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "dedup_key": "WA-DHW:service-alliance-2012-2026-11",
+      "source_name": "Department of Housing and Works (WA) - Service Alliance 2012 (SA12)",
+      "source_url": "https://www.wa.gov.au/government/publications/service-alliance-2012-invitation",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "state": "WA",
+      "tender_id": "SA12-INVITATION-2026-11",
+      "tender_url": "https://www.wa.gov.au/system/files/2026-11/service-alliance-2012-invitation-05112026.pdf",
+      "access": "public",
+      "title": "Service Alliance 2012 (SA12) - Invitation to register for regional building maintenance and improvement works",
+      "buyer": "Department of Housing and Works (WA) - Buildings and Contracts, Regional Operations Division",
+      "buyer_url": "https://www.wa.gov.au/organisation/department-of-finance/building-maintenance-government-agencies",
+      "category": "Building maintenance and improvement works (regional)",
+      "category_codes": [],
+      "procurement_type": "prequalification",
+      "current_status": "open",
+      "description": "Standing 'Service Alliance 2012' (SA12) arrangement under which locally based regional Western Australian contractors can register to be eligible for government building-related maintenance and improvement work. A refreshed invitation to register was published on wa.gov.au dated 5 November 2026. Registration is open on a rolling basis; it is an expression of interest to perform services and does not guarantee any work.",
+      "deliverables_summary": "Successful applicants join the SA12 arrangement and become eligible to be engaged for building-related maintenance and improvement works valued up to $250,000 across regional Western Australia, delivered for the Department of Housing and Works (and, from 1 July 2026, extending to Department of Communities sites per the department's maintenance bulletin). Scope is general building repairs, maintenance and minor improvement works using locally based contractors.",
+      "key_deliverables": [],
+      "scope_of_work": "Building-related maintenance and improvement works up to $250,000 in value for government agency buildings in regional WA, delivered through the Service Alliance 2012 (SA12) contractual arrangement administered by the Department of Housing and Works' Buildings and Contracts, Regional Operations Division.",
+      "requirements": [
+        "Be a locally based contractor operating in the relevant regional WA area",
+        "Complete the SA12 pre-application form and accept the Service Alliance 2012 conditions of contract"
+      ],
+      "eligibility": "Open arrangement - locally based regional WA contractors may apply for membership at any time; registration is an expression of interest and does not guarantee the award of any work.",
+      "evaluation_criteria": [],
+      "value": "Up to $250,000 per engagement",
+      "value_currency": "AUD",
+      "contract_term": "",
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-11-05",
+      "closing_date": null,
+      "closing_time": "",
+      "questions_due": "",
+      "briefing": "",
+      "submission_method": "Complete the SA12 pre-application form and submit to the Department of Housing and Works per the invitation document (open/rolling registration).",
+      "lodgement_url": "https://www.wa.gov.au/government/publications/service-alliance-2012-pre-application-form",
+      "documents": [
+        {
+          "name": "Service Alliance 2012 invitation (5 Nov 2026)",
+          "url": "https://www.wa.gov.au/system/files/2026-11/service-alliance-2012-invitation-05112026.pdf"
+        },
+        {
+          "name": "Service Alliance 2012 conditions of contract",
+          "url": "https://www.wa.gov.au/government/publications/service-alliance-2012-conditions-of-contract"
+        },
+        {
+          "name": "SA12 pre-application form",
+          "url": "https://www.wa.gov.au/government/publications/service-alliance-2012-pre-application-form"
+        }
+      ],
+      "mandatory_conditions": [
+        "Acceptance of the Service Alliance 2012 general conditions of contract"
+      ],
+      "delivery_location": "Regional Western Australia",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "WA",
+        "building-maintenance",
+        "prequalification",
+        "regional",
+        "standing-arrangement",
+        "SME"
+      ],
+      "first_seen": "2026-11-22",
+      "detail_source": "WebSearch index snapshot of the buyer's own invitation document at https://www.wa.gov.au/system/files/2026-11/service-alliance-2012-invitation-05112026.pdf (dated 5 Nov 2026) and related SA12 publications on wa.gov.au. The PDF itself could not be opened directly this run due to the egress block.",
+      "reasoning": "Discovered via WebSearch for recent WA tender/registration activity; the search surfaced the buyer-originated invitation PDF on wa.gov.au dated 05112026. Captured from the buying organisation's own publication (not an aggregator). Buyer = Department of Housing and Works (WA).",
+      "notes": "Headline-level capture only - counted in entries_pending_detail. The full invitation PDF and conditions-of-contract document could not be fetched this run (hard egress block: DNS ENOTFOUND on all external hosts), so key_deliverables, evaluation_criteria, precise contract term, delivery regions and contacts remain unverified and are left empty/null rather than inferred. This is an open, rolling prequalification arrangement with no fixed closing date (closing_date null by design). Value '$250,000' is the per-engagement eligibility ceiling stated in the SA12 scope, not a single contract value. A future run with portal access should open the invitation PDF to extract the full scope, regional lots, insurance/licence conditions and contacts.",
+      "last_seen": "2026-11-22",
+      "seen_dates": [
+        "2026-11-22"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
@@ -53460,7 +53537,7 @@
       ],
       "seen_count": 12,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "AusTender (Commonwealth)",
@@ -53567,7 +53644,7 @@
       ],
       "seen_count": 14,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Tenders WA",
@@ -53754,7 +53831,7 @@
       ],
       "seen_count": 88,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "BHP - Global Contract Management System (GCMS) / Find Opportunities",
@@ -53800,7 +53877,7 @@
       ],
       "seen_count": 25,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Qantas — Procurement (Coupa Supplier Portal)",
@@ -54213,7 +54290,7 @@
       ],
       "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "EstimateOne (E1) - construction subcontractor packages",
@@ -54330,7 +54407,7 @@
       ],
       "seen_count": 50,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Transgrid — Suppliers (iBuy / SAP Ariba)",
@@ -54668,7 +54745,7 @@
       ],
       "seen_count": 13,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Trains — NSW eTendering",
@@ -54741,7 +54818,7 @@
       ],
       "seen_count": 7,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Reserve Bank of Australia — Procurement & Suppliers",
@@ -55251,7 +55328,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Sydney Water tenders (NSW eTendering sub-portal)",
@@ -55358,7 +55435,7 @@
       ],
       "seen_count": 10,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "illion TenderLink",
@@ -57486,7 +57563,7 @@
       ],
       "seen_count": 21,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -59588,7 +59665,7 @@
       ],
       "seen_count": 9,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Greater Western Water",
@@ -60250,7 +60327,7 @@
       ],
       "seen_count": 11,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "TasWater - E-Tendering (illion TenderLink)",
@@ -65290,7 +65367,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Liverpool Plains Shire Council — Procurement, tendering and contracts",
@@ -65711,7 +65788,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SA Water - Supplier Portal",
@@ -65736,7 +65813,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Water Corporation (WA) - Supplier/Bidder Portal",
@@ -65761,7 +65838,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Northern Territory - Quotations and Tenders Online (QTOL)",
@@ -65785,7 +65862,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Endeavour Energy - Suppliers / Tendering",
@@ -65809,7 +65886,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "EnergyCo NSW / NSW Electricity Infrastructure Roadmap tenders",
@@ -65830,8 +65907,8 @@
         "2026-11-21"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Queensland Government Procurement Spend Portal",
@@ -65850,6 +65927,28 @@
       "last_seen": "2026-11-21",
       "seen_dates": [
         "2026-11-21"
+      ],
+      "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "Department of Housing and Works (WA) - Service Alliance 2012 (SA12) regional maintenance registration",
+      "source_url": "https://www.wa.gov.au/government/publications/service-alliance-2012-invitation",
+      "source_type": "gov-state",
+      "jurisdiction": "Western Australia",
+      "platform": "custom",
+      "access_method": "html",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for recent WA building-maintenance supplier registration activity surfaced the buyer-originated SA12 invitation PDF (dated 5 Nov 2026) and related SA12 publications on wa.gov.au. This is a WA Government (Department of Housing and Works) standing registration arrangement published directly by the buyer, distinct from the already-known Tenders WA portal.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Open, rolling prequalification arrangement (SA12) for regional WA building maintenance/improvement works up to $250,000; locally based contractors may apply at any time. Buyer-originated (wa.gov.au), not an aggregator. Invitation and conditions-of-contract documents are publicly downloadable; could not be fetched directly this run due to the egress block. Worth adding to the permanent known-source list.",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-22",
+      "seen_dates": [
+        "2026-11-22"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
