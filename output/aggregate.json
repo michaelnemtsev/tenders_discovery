@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23",
+  "generated": "2026-11-24",
   "runs": [
     "2026-06-25",
     "2026-06-26",
@@ -152,29 +152,30 @@
     "2026-11-20",
     "2026-11-21",
     "2026-11-22",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
-  "run_count": 152,
+  "run_count": 153,
   "first_run": "2026-06-25",
-  "latest_run": "2026-11-23",
-  "latest_coverage_summary": "WebSearch-only discovery run under a persistent hard egress block (all direct HTTPS to tender hosts denied by the session network policy; WebFetch to tender.gov.au, tenders.nsw/vic/wa/act, ausconnect.dfat.gov.au all returned DNS ENOTFOUND again this run). Tier 1 Commonwealth and state portals (AusTender/DFAT, buy.nsw, Tenders ACT, QTenders, Tenders WA) were swept via WebSearch snapshots; Tier 2 (universities, water/electricity networks, regional WA development-commission bulletins) and Tier 3 (SAP Ariba / SAP Business Network Discovery, major-buyer e-sourcing hubs) were sampled. Two recent, currently-open, buyer-corroborated opportunities were captured at headline level: a WA Government EOI for additional capacity at Kwinana Bulk Jetty and the DFAT PNG Health Program ENABLE RFEOI. No buyer detail page, feed/API or tender document could be opened, so every capture is headline-only and unverified on the live portal.",
+  "latest_run": "2026-11-24",
+  "latest_coverage_summary": "WebSearch-only discovery run under the same persistent hard egress block as prior runs: all direct HTTPS to buyer tender hosts is denied by the session network policy. WebFetch to www.tenders.gov.au, www.tenders.nsw.gov.au and www.vendorpanel.com.au each returned DNS ENOTFOUND again this run, so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened. Tier 1 (AusTender/DFAT, buy.nsw Opportunities Hub, Tenders VIC, QTenders/Queensland Procurement Solution, NT QTOL, Tenders WA, Tenders ACT) was swept via WebSearch snapshots; Tier 2 (universities, water corporations, port authorities) and Tier 3 (SAP Business Network Discovery, BAE Systems/Ivalua, Downer and Southern Ports on Felix) were sampled. Two currently-open, buyer-corroborated opportunities carried forward from recent runs remain open and were re-confirmed at headline level: the DFAT PNG Health Program ENABLE RFEOI (closing 1 Dec 2026) and the WA Government EOI for additional capacity at Kwinana Bulk Jetty (closing 23 Dec 2026). No new, independently-corroborated opportunity could be captured this run because live portals could not be opened; an NT 'AGC26-0118' consultancy lead surfaced in one search summary but could not be corroborated on a follow-up search and was deliberately excluded rather than fabricated. Two genuinely new buyer-originated sources were found (Downer Group and Southern Ports, both on the Felix platform).",
   "latest_run_metadata": {
-    "run_date": "2026-11-23",
-    "coverage_summary": "WebSearch-only discovery run under a persistent hard egress block (all direct HTTPS to tender hosts denied by the session network policy; WebFetch to tender.gov.au, tenders.nsw/vic/wa/act, ausconnect.dfat.gov.au all returned DNS ENOTFOUND again this run). Tier 1 Commonwealth and state portals (AusTender/DFAT, buy.nsw, Tenders ACT, QTenders, Tenders WA) were swept via WebSearch snapshots; Tier 2 (universities, water/electricity networks, regional WA development-commission bulletins) and Tier 3 (SAP Ariba / SAP Business Network Discovery, major-buyer e-sourcing hubs) were sampled. Two recent, currently-open, buyer-corroborated opportunities were captured at headline level: a WA Government EOI for additional capacity at Kwinana Bulk Jetty and the DFAT PNG Health Program ENABLE RFEOI. No buyer detail page, feed/API or tender document could be opened, so every capture is headline-only and unverified on the live portal.",
-    "sources_checked": 14,
+    "run_date": "2026-11-24",
+    "coverage_summary": "WebSearch-only discovery run under the same persistent hard egress block as prior runs: all direct HTTPS to buyer tender hosts is denied by the session network policy. WebFetch to www.tenders.gov.au, www.tenders.nsw.gov.au and www.vendorpanel.com.au each returned DNS ENOTFOUND again this run, so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened. Tier 1 (AusTender/DFAT, buy.nsw Opportunities Hub, Tenders VIC, QTenders/Queensland Procurement Solution, NT QTOL, Tenders WA, Tenders ACT) was swept via WebSearch snapshots; Tier 2 (universities, water corporations, port authorities) and Tier 3 (SAP Business Network Discovery, BAE Systems/Ivalua, Downer and Southern Ports on Felix) were sampled. Two currently-open, buyer-corroborated opportunities carried forward from recent runs remain open and were re-confirmed at headline level: the DFAT PNG Health Program ENABLE RFEOI (closing 1 Dec 2026) and the WA Government EOI for additional capacity at Kwinana Bulk Jetty (closing 23 Dec 2026). No new, independently-corroborated opportunity could be captured this run because live portals could not be opened; an NT 'AGC26-0118' consultancy lead surfaced in one search summary but could not be corroborated on a follow-up search and was deliberately excluded rather than fabricated. Two genuinely new buyer-originated sources were found (Downer Group and Southern Ports, both on the Felix platform).",
+    "sources_checked": 16,
     "tenders_found": 2,
-    "new_sources_found": 1,
+    "new_sources_found": 2,
     "entries_pending_detail": 2,
     "gaps": [
-      "HARD EGRESS BLOCK (unchanged, re-tested this run): all direct HTTPS to buyer tender hosts is denied by the session network policy. WebFetch to www.tenders.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au and ausconnect.dfat.gov.au each returned DNS ENOTFOUND this run, so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened. To restore full discovery these hosts should be allowed in the session network settings: www.tenders.gov.au, buy.nsw.gov.au / info.buy.nsw.gov.au, www.tenders.nsw.gov.au, www.tenders.vic.gov.au / buyingfor.vic.gov.au, qtenders.epw.qld.gov.au / supply.qld.gov.au, www.tenders.wa.gov.au, www.tenders.sa.gov.au, www.tenders.tas.gov.au, tendersonline.nt.gov.au, www.tenders.act.gov.au, www.vendorpanel.com.au, service.ariba.com, gateway.icn.org.au, www.dfat.gov.au / ausconnect.dfat.gov.au, and individual council/university/utility/corporate sites.",
-      "Both tenders captured this run are headline-only and UNVERIFIED on the buyer's own opened page. The Kwinana Bulk Jetty EOI is anchored on an official WA Government media statement (wa.gov.au); its tender_id, closing time, submission mechanics, EOI documents and detailed scope were not opened on Tenders WA and are null. The DFAT ENABLE RFEOI scope is from DFAT's own published development page and PNG ENABLE concept note, but its ATM id (DFAT-1113), closing time (10:00am ACT), value (AUD 85M) and industry-briefing date come from the DevelopmentAid aggregator as a corroboration signal, not from an opened AusTender record, and need verification on AusTender.",
-      "Tenders ACT: a single WebSearch snapshot surfaced December-closing ACT references this run but with reference formats and descriptions that CONFLICT with the formats seen in prior runs (e.g. an id previously described as a Canberra Health Services RFT appeared this run as a City & Environment road-construction RFT). Because the ACT snapshots cannot be internally reconciled or opened on the live portal, no ACT item was captured as a tender this run. SL20260630 (Suburban Land Agency, close date reported as 1 Dec vs 3 Dec across snapshots) remains unresolved and is noted for live verification.",
-      "Tier 3 corporate (SAP Ariba Discovery / SAP Business Network Discovery, BHP GCMS, Rio Tinto / Fortescue / Woodside Ariba, Coles/Woolworths, bank/telco/energy e-sourcing hubs, EstimateOne subcontractor packages) remained registration-gated or invitation-only; no authenticated supplier session is available, so no corporate opportunity could be read. SAP Business Network Discovery returned no publicly-visible open Australian RFx via WebSearch this run. Corporate portals are recorded in discovered_sources only; no corporate tender was fabricated. Invitation-only / shortlisted RFx (e.g. the TfNSW Mandalong Road Upgrade D&C, now at shortlisted-proposal stage) are out of scope and were not captured.",
-      "WebSearch index lags the run date (2026-11-23) and is US-indexed. Many surfaced notices had already closed (e.g. AEMO SWIS-wide System Restart EOI closed 9 Nov; various Victorian water and Western Power ICT EOIs) and were correctly excluded. Genuinely fresh (last 24-48h) buyer-originated notices are almost certainly undercounted this run."
+      "HARD EGRESS BLOCK (unchanged, re-tested this run): all direct HTTPS to buyer tender hosts is denied by the session network policy. WebFetch to www.tenders.gov.au, www.tenders.nsw.gov.au and www.vendorpanel.com.au each returned DNS ENOTFOUND this run, so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened. To restore full discovery and deliverables extraction, these hosts (and the other Tier 1/2/3 tender hosts) need to be allowed in the session's network settings. Both captured tenders therefore remain headline-level and unverified against the live portal.",
+      "Tier 1: buy.nsw Opportunities Hub, QTenders/Queensland Procurement Solution, Tenders VIC and Tenders ACT could only be read through cached WebSearch snapshots; current open-tender lists filtered by publish/closing date could not be retrieved, so newly-published (last 24-48h) listings on those portals are likely under-captured.",
+      "Tier 3 (SAP Business Network Discovery / SAP Ariba Discovery): queried as mandatory, but the public posting board requires a free supplier login to view open Australian RFx; no authenticated session is available, so no individual corporate opportunity was publicly visible. Portal recorded in discovered_sources (access_method=portal-registration); no corporate tender fabricated.",
+      "Tier 3 invitation-only RFx (e.g. management-consultancy RFPs sent directly to shortlisted/panel suppliers) remain out of scope and undiscoverable by design, as noted in the task spec.",
+      "Unverified lead excluded: an NT tendersonline consultancy tender cited as 'AGC26-0118' (professional advisory services, closing 16/12/2026) appeared in one search summary but could not be confirmed on a targeted follow-up search (no listing with that exact number was found); excluded per the fidelity rule rather than recorded as a confirmed opportunity."
     ],
     "recommended_seed_additions": [
-      "Consolidated Tenders / Procure Connect — the procurement-platform operator that runs the Buying for Victoria, Tenders SA and Tenders ACT portals (and NZ GETS). Worth tracking for portal rebrands/migrations rather than as a buyer in its own right.",
-      "Government of WA media-statements channel (wa.gov.au/government/media-statements) — a reliable early-signal source for WA market soundings/EOIs (e.g. the Kwinana Bulk Jetty capacity EOI) that often precede the formal Tenders WA listing."
+      "Downer Group — Working with Downer / vendor registration & prequalification on the Felix platform (felix.net); major Australian infrastructure, transport, utilities and facilities contractor issuing subcontract/supply packages.",
+      "Southern Ports (WA Government-owned port authority: Albany, Bunbury, Esperance) — supplier onboarding via the Felix platform; Tier 2 government business enterprise not previously in the known-source set."
     ]
   },
   "months": [
@@ -53504,14 +53505,15 @@
       ],
       "first_seen": "2026-11-23",
       "detail_source": "",
-      "reasoning": "Discovered via WebSearch surfacing the official Government of WA media statement (wa.gov.au, dated 6 Nov 2026); corroborated by Westport WA and The DCN maritime coverage. Buyer-originated (WA Government); the formal EOI is expected on Tenders WA. Distinct from the separate Westport/Fremantle Ports 'Kwinana Bulk Terminal Redevelopment — Marine Infrastructure' Design & Construct EOI (July 2026).",
-      "notes": "Headline-only. Egress block prevented opening the Tenders WA EOI record and documents, so tender_id, closing time, submission mechanics and detailed scope are null/unverified. Closing date (23 Dec 2026) and publish date (6 Nov 2026) are from the WA Government media statement. Must be confirmed on the live Tenders WA portal.",
-      "last_seen": "2026-11-23",
+      "reasoning": "Carried forward from the 2026-11-23 run and still open (closing 23 Dec 2026). Originally discovered via WebSearch surfacing the official Government of WA media statement (wa.gov.au, dated 6 Nov 2026); corroborated by Westport WA and The DCN maritime coverage. Buyer-originated (WA Government); the formal EOI is expected on Tenders WA. Distinct from the separate Westport/Fremantle Ports 'Kwinana Bulk Terminal Redevelopment — Marine Infrastructure' Design & Construct EOI (July 2026).",
+      "notes": "Headline-only, still open as at 2026-11-24. Egress block prevented opening the Tenders WA EOI record and documents, so tender_id, closing time, submission mechanics and detailed scope are null/unverified. Closing date (23 Dec 2026) and publish date (6 Nov 2026) are from the WA Government media statement. Must be confirmed on the live Tenders WA portal.",
+      "last_seen": "2026-11-24",
       "seen_dates": [
-        "2026-11-23"
+        "2026-11-23",
+        "2026-11-24"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     },
     {
@@ -53572,14 +53574,15 @@
       ],
       "first_seen": "2026-11-23",
       "detail_source": "DFAT development business-notification page (dfat.gov.au) and the published PNG ENABLE concept note (scope/term); ATM id, closing date/time and value corroborated via the DevelopmentAid aggregator — not opened on AusTender directly.",
-      "reasoning": "Discovered via WebSearch; DFAT's own published development page corroborated the RFEOI nature, two-stage process, scope and 2027 start / up-to-2037 term. The ATM id (DFAT-1113), closing date (1 Dec 2026, 10:00am ACT), publish date (5 Nov 2026) and indicative value (AUD 85M) were corroborated via the DevelopmentAid aggregator used only as a discovery/corroboration signal; the buyer-originated source recorded is DFAT/AusTender.",
-      "notes": "Headline-only. Egress block prevented opening the AusTender ATM record and RFEOI documents, so closing time, exact value, industry-briefing date and evaluation criteria are from an aggregator or the concept note and need verification on AusTender. value (AUD 85M) is an aggregator figure, not confirmed on the DFAT/AusTender notice.",
-      "last_seen": "2026-11-23",
+      "reasoning": "Carried forward from the 2026-11-23 run and re-confirmed still open via WebSearch (DFAT Development Procurement Pipeline snapshot shows DFAT-1113 closing 1 Dec 2026). DFAT's own published development page corroborates the RFEOI nature, two-stage process, scope and 2027 start / up-to-2037 term. ATM id, closing date and indicative value were corroborated via the DevelopmentAid aggregator used only as a discovery/corroboration signal; the buyer-originated source recorded is DFAT/AusTender.",
+      "notes": "Headline-only, re-confirmed open on 2026-11-24. Egress block prevented opening the AusTender ATM record and RFEOI documents, so closing time, exact value, industry-briefing date and evaluation criteria are from an aggregator or the concept note and need verification on AusTender. value (AUD 85M) is an aggregator figure, not confirmed on the DFAT/AusTender notice. Now within 7 days of closing — status updated to closing-soon.",
+      "last_seen": "2026-11-24",
       "seen_dates": [
-        "2026-11-23"
+        "2026-11-23",
+        "2026-11-24"
       ],
-      "seen_count": 1,
-      "is_new_in_latest": true,
+      "seen_count": 2,
+      "is_new_in_latest": false,
       "active_in_latest": true
     }
   ],
@@ -53607,20 +53610,20 @@
       "active_in_latest": false
     },
     {
-      "source_name": "buy.nsw (NSW eTendering)",
+      "source_name": "buy.nsw Opportunities Hub (NSW Government eTendering)",
       "source_url": "https://www.tenders.nsw.gov.au",
       "source_type": "gov-state",
-      "jurisdiction": "New South Wales",
+      "jurisdiction": "Australia — New South Wales",
       "platform": "buy.nsw",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.nsw.gov.au/public_data/rss/rss.xml",
+      "feed_or_api_url": "https://www.info.buy.nsw.gov.au/supplier-guidance/supply-to-government/tenders",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; probed via WebSearch. Returned landing/search pages plus stale (HSSP_HC18_808, 2018) and 2023-vintage (TfNSW 23.0000129385.1420) items; no new verifiable current buyer link title captured this run. An RSS feed (public_data/rss/rss.xml) was noted in a result title for a future feed-first pass.",
+      "how_discovered": "Tier 1 sweep via WebSearch. NSW tender detail and lodgement has moved onto the buy.nsw Opportunities Hub.",
       "recommended_check_frequency": "daily",
-      "notes": "Snippet-only council items (Destination NSW Vivid Sydney, Wingecarribee Shire Council) deferred; no new buy.nsw opportunity captured this run.",
+      "notes": "Known source. Direct HTTPS blocked this run (DNS ENOTFOUND).",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-11-24",
       "seen_dates": [
         "2026-06-25",
         "2026-08-15",
@@ -53628,11 +53631,12 @@
         "2026-09-11",
         "2026-09-12",
         "2026-09-21",
-        "2026-09-22"
+        "2026-09-22",
+        "2026-11-24"
       ],
-      "seen_count": 7,
+      "seen_count": 8,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Sydney Water - Current Tenders",
@@ -53852,7 +53856,7 @@
       "active_in_latest": false
     },
     {
-      "source_name": "SAP Business Network Discovery / SAP Ariba Discovery",
+      "source_name": "SAP Business Network Discovery (formerly SAP Ariba Discovery)",
       "source_url": "https://service.ariba.com/Discovery.aw/",
       "source_type": "corporate",
       "jurisdiction": "Australia (and global)",
@@ -53861,12 +53865,12 @@
       "feed_or_api_url": null,
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Tier 3 MANDATORY corporate channel; checked by WebSearch this run. Now branded SAP Business Network Discovery.",
+      "how_discovered": "Mandatory Tier 3 sweep via WebSearch. Public posting board where buyers post open RFx; keyword search of open RFPs/RFIs and full opportunity detail require a (free) supplier login.",
       "recommended_check_frequency": "daily",
-      "notes": "Free supplier registration required to view full opportunity detail; no authenticated session available this run, so no individual corporate RFx was read or captured. Portal recorded only; nothing fabricated.",
+      "notes": "Known source. No authenticated session available this run, so no individual Australian corporate opportunity was publicly visible; recorded as portal-registration. No corporate tender fabricated.",
       "state": "",
       "first_seen": "2026-06-25",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-24",
       "seen_dates": [
         "2026-06-25",
         "2026-06-26",
@@ -53955,11 +53959,12 @@
         "2026-11-18",
         "2026-11-19",
         "2026-11-20",
-        "2026-11-21"
+        "2026-11-21",
+        "2026-11-24"
       ],
-      "seen_count": 88,
+      "seen_count": 89,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "BHP - Global Contract Management System (GCMS) / Find Opportunities",
@@ -57652,7 +57657,7 @@
       "active_in_latest": false
     },
     {
-      "source_name": "AusTender (Commonwealth)",
+      "source_name": "AusTender (Commonwealth) / DFAT Development Business Opportunities",
       "source_url": "https://www.tenders.gov.au",
       "source_type": "gov-commonwealth",
       "jurisdiction": "Australia — Commonwealth",
@@ -57661,11 +57666,11 @@
       "feed_or_api_url": "https://www.tenders.gov.au/atm",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical seed; swept via WebSearch this run (direct fetch blocked by egress policy).",
+      "how_discovered": "Tier 1 sweep via WebSearch (direct fetch blocked). Primary Commonwealth procurement portal; DFAT Development Procurement Pipeline cross-checked for aid-program RFx.",
       "recommended_check_frequency": "daily",
-      "notes": "Direct HTTPS denied (DNS ENOTFOUND) this run; only WebSearch snapshots available. Carries DFAT ATM DFAT-1113 (ENABLE) captured this run.",
+      "notes": "Known source. Direct HTTPS blocked this run (DNS ENOTFOUND); read only via cached search snapshots.",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-11-23",
+      "last_seen": "2026-11-24",
       "seen_dates": [
         "2026-07-26",
         "2026-08-15",
@@ -57688,9 +57693,10 @@
         "2026-11-19",
         "2026-11-20",
         "2026-11-21",
-        "2026-11-23"
+        "2026-11-23",
+        "2026-11-24"
       ],
-      "seen_count": 22,
+      "seen_count": 23,
       "is_new_in_latest": false,
       "active_in_latest": true
     },
@@ -59148,27 +59154,28 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Quotations and Tenders Online (QTOL)",
+      "source_name": "Quotations and Tenders Online (QTOL) — NT Government",
       "source_url": "https://tendersonline.nt.gov.au",
       "source_type": "gov-state",
-      "jurisdiction": "Northern Territory",
+      "jurisdiction": "Australia — Northern Territory",
       "platform": "custom",
       "access_method": "html",
-      "feed_or_api_url": "https://tendersonline.nt.gov.au/Tender/Search/Current",
+      "feed_or_api_url": "https://tendersonline.nt.gov.au/Tender/ListCurrent",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; probed via WebSearch. Returned portal landing/search/list pages with no verifiable individual link title. Most NT work over $200,000 is publicly advertised here.",
+      "how_discovered": "Tier 1 sweep via WebSearch; current-tender and tender-detail pages seen in cache. NT Government office closure 25 Dec 2026 – 1 Jan 2027 noted on the portal.",
       "recommended_check_frequency": "daily",
-      "notes": "Tender list is viewable without an account; no individual NT opportunity captured this run.",
+      "notes": "Known source. Direct HTTPS blocked this run; individual Tender/Details pages only visible as cached snippets.",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-11-24",
       "seen_dates": [
         "2026-08-15",
-        "2026-09-22"
+        "2026-09-22",
+        "2026-11-24"
       ],
-      "seen_count": 2,
+      "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "Tenders ACT",
@@ -59192,7 +59199,7 @@
       ],
       "seen_count": 3,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Melbourne Water procurement",
@@ -59842,7 +59849,7 @@
       ],
       "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "Rio Tinto - Buy Local EOI Portal",
@@ -60925,7 +60932,7 @@
       ],
       "seen_count": 5,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "University of Adelaide E-Tendering (TenderLink)",
@@ -61422,28 +61429,29 @@
       "active_in_latest": false
     },
     {
-      "source_name": "Buying for Victoria (tenders.vic.gov.au)",
+      "source_name": "Buying for Victoria (Tenders VIC)",
       "source_url": "https://www.tenders.vic.gov.au",
       "source_type": "gov-state",
-      "jurisdiction": "Victoria",
+      "jurisdiction": "Australia — Victoria",
       "platform": "custom",
       "access_method": "html",
-      "feed_or_api_url": "https://www.tenders.vic.gov.au/tender/search?preset=open",
+      "feed_or_api_url": "https://www.tenders.vic.gov.au/tenders/open",
       "is_new_source": false,
       "confidence": "high",
-      "how_discovered": "Canonical Tier 1 seed; probed via WebSearch. Returned landing/browse/search pages and a generic tender/view link with no ID/title in link text.",
+      "how_discovered": "Tier 1 sweep via WebSearch (open/future/closed listing pages seen in cache).",
       "recommended_check_frequency": "daily",
-      "notes": "No individual VIC opportunity captured this run.",
+      "notes": "Known source. Live listings could only be read via cached snapshots this run; current open list filtered by publish/closing date not retrievable.",
       "first_seen": "2026-09-12",
-      "last_seen": "2026-09-22",
+      "last_seen": "2026-11-24",
       "seen_dates": [
         "2026-09-12",
         "2026-09-21",
-        "2026-09-22"
+        "2026-09-22",
+        "2026-11-24"
       ],
-      "seen_count": 3,
+      "seen_count": 4,
       "is_new_in_latest": false,
-      "active_in_latest": false
+      "active_in_latest": true
     },
     {
       "source_name": "QTenders (Queensland Government)",
@@ -65055,7 +65063,7 @@
       ],
       "seen_count": 2,
       "is_new_in_latest": false,
-      "active_in_latest": true
+      "active_in_latest": false
     },
     {
       "source_name": "SAP Ariba Discovery / SAP Business Network Discovery",
@@ -66106,8 +66114,8 @@
         "2026-11-23"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "DFAT Development Business Opportunities / AusConnect",
@@ -66128,8 +66136,8 @@
         "2026-11-23"
       ],
       "seen_count": 1,
-      "is_new_in_latest": true,
-      "active_in_latest": true
+      "is_new_in_latest": false,
+      "active_in_latest": false
     },
     {
       "source_name": "Government of Western Australia — Media Statements",
@@ -66150,26 +66158,71 @@
         "2026-11-23"
       ],
       "seen_count": 1,
+      "is_new_in_latest": false,
+      "active_in_latest": false
+    },
+    {
+      "source_name": "QTenders / Queensland Procurement Solution (VendorPanel)",
+      "source_url": "https://qtenders.epw.qld.gov.au",
+      "source_type": "gov-state",
+      "jurisdiction": "Australia — Queensland",
+      "platform": "VendorPanel",
+      "access_method": "html",
+      "feed_or_api_url": "https://www.supply.qld.gov.au",
+      "is_new_source": false,
+      "confidence": "high",
+      "how_discovered": "Tier 1 sweep via WebSearch. Confirmed again this run that QTenders is being replaced in phases by the Queensland Procurement Solution on VendorPanel; suppliers must register with VendorPanel to access documents and respond while agencies migrate.",
+      "recommended_check_frequency": "daily",
+      "notes": "Known source; migration to VendorPanel ongoing. QTenders host now resolves under qtenders.epw.qld.gov.au (Dept of Energy and Public Works). Direct HTTPS blocked this run.",
+      "first_seen": "2026-11-23",
+      "last_seen": "2026-11-24",
+      "seen_dates": [
+        "2026-11-23",
+        "2026-11-24"
+      ],
+      "seen_count": 2,
+      "is_new_in_latest": false,
+      "active_in_latest": true
+    },
+    {
+      "source_name": "Downer Group — Working with Downer (vendor registration & prequalification via Felix)",
+      "source_url": "https://www.downergroup.com/working-with-downer",
+      "source_type": "construction-subcontract",
+      "jurisdiction": "Australia (national) and New Zealand",
+      "platform": "Felix",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "WebSearch for Felix-platform Australian buyers; Downer's own 'Working with Downer' pages and a Downer-hosted Felix Help Guide confirm Downer requires all existing and new vendors to register and complete prequalification in Felix (free).",
+      "recommended_check_frequency": "weekly",
+      "notes": "Major Australian infrastructure, transport, utilities and facilities contractor that issues subcontract and supply packages to its vendor base. Buyer-originated (Downer chose Felix as its platform), not an aggregator. Individual opportunities are gated behind free Felix registration; no authenticated session available this run.",
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-24",
+      "seen_dates": [
+        "2026-11-24"
+      ],
+      "seen_count": 1,
       "is_new_in_latest": true,
       "active_in_latest": true
     },
     {
-      "source_name": "QTenders (Queensland) / Queensland Procurement Solution (VendorPanel)",
-      "source_url": "https://qtenders.epw.qld.gov.au",
-      "source_type": "gov-state",
-      "jurisdiction": "Australia — Queensland",
-      "platform": "QTenders / VendorPanel",
-      "access_method": "html",
+      "source_name": "Southern Ports (WA) — supplier onboarding via Felix",
+      "source_url": "https://southernports.com.au/doing-business-with-us",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Australia — Western Australia",
+      "platform": "Felix",
+      "access_method": "portal-registration",
       "feed_or_api_url": null,
-      "is_new_source": false,
+      "is_new_source": true,
       "confidence": "high",
-      "how_discovered": "Canonical seed; checked via WebSearch. Confirmed ongoing migration: opportunities increasingly published through the Queensland Procurement Solution (VendorPanel profile required) and mirrored on QTenders.",
-      "recommended_check_frequency": "daily",
-      "notes": "Queensland Procurement Policy 2026 also flags a planned public-facing Queensland Government Procurement Spend Portal by 31 Dec 2026 — watch for launch. Direct HTTPS denied this run.",
-      "first_seen": "2026-11-23",
-      "last_seen": "2026-11-23",
+      "how_discovered": "WebSearch for Felix-platform buyers surfaced a Southern Ports 'Becoming a supplier' page stating Felix is the system used to onboard suppliers to Southern Ports (free for suppliers).",
+      "recommended_check_frequency": "weekly",
+      "notes": "WA Government-owned port authority operating the ports of Albany, Bunbury and Esperance — a Tier 2 government business enterprise not previously in the known-source set. Buyer-originated procurement via Felix; supplier registration is free.",
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-24",
       "seen_dates": [
-        "2026-11-23"
+        "2026-11-24"
       ],
       "seen_count": 1,
       "is_new_in_latest": true,
