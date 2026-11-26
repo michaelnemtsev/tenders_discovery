@@ -1,27 +1,27 @@
 {
   "run_metadata": {
-    "run_date": "2026-11-26",
-    "coverage_summary": "WebSearch-only discovery run under the same persistent hard egress block as prior runs: the session network policy denies all direct HTTPS to buyer tender hosts (WebFetch to www.tenders.gov.au again returned DNS ENOTFOUND this run), so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened and every captured tender is headline-level only. Tier 1 was swept via WebSearch snapshots across AusTender/DFAT, buy.nsw, Buying for Victoria, QTenders, Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL and ACT Tenders. NT QTOL was again by far the richest live source, yielding 10+ December-closing tenders across NT agencies plus the Power and Water Corporation and Territory Generation GBEs; ACT Tenders yielded several December-closing ATMs. Tier 2 (universities, water corporations Sydney/SA/Melbourne, GBEs NBN/Australia Post/Transgrid/Ausgrid) was sampled — no publicly-visible open opportunity with a current closing date was captured (these route through Ariba, own portals or had closed EOIs). Tier 3 (mandatory) — SAP Ariba Discovery and major buyers BHP/Rio Tinto/Fortescue/Woodside were queried; all open RFx remain login-gated or only visible via aggregators/ICN Gateway, so no corporate tender was captured and the portals are recorded in discovered_sources. Eight opportunities were carried forward and re-confirmed open (DFAT PNG ENABLE, Kwinana Bulk Jetty EOI, NT fire-detection, NT AGC26-0118, NT T26-1062 lifts, NT aerial/LiDAR NTG26-0127, NT vehicle rental, Defence DSARC). Eleven new opportunities were captured this run: five further NT QTOL tenders (Power and Water RFT0763 incident-management system; T26-1246 MAGNT switchboard; T26-1225 Alice Springs landscaping; T26-1400 Peter McAulay Centre refurbishment; Territory Generation CIDC020-26 Channel Island synchronous condenser), a WA Forest Products Commission plantation-establishment RFP, two ACT tenders (Canberra Health Services medical equipment PICH0008972; ACT 52652-RFT-002 education/IT restricted), two Brisbane City Council RFx (Gardner Road construction Doc115483155; Prebble Street Bikeway Doc118000917) and a CSIRO managing-contractor RFT (CSIRORFT2026031, ACDP Part Life Refit Stage 2). Two genuinely new sources were found: the Goldfields-Esperance and Pilbara development commissions' regional tender-opportunity bulletins (mirroring the already-tracked Kimberley Development Commission). A prior-run data error was corrected: CIDC020-26 was wrongly matched to the NT fire-detection tender last run; it is in fact the Territory Generation Channel Island synchronous condenser tender.",
+    "run_date": "2026-11-27",
+    "coverage_summary": "WebSearch-only discovery run under the same persistent hard egress block as prior runs: the session network policy denies all direct HTTPS to buyer tender hosts (WebFetch to https://www.tenders.gov.au/atm again returned getaddrinfo ENOTFOUND this run), so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened and every captured tender is headline-level only. Tier 1 was swept via WebSearch snapshots across AusTender/DFAT, buy.nsw, Buying for Victoria, QTenders/VendorPanel (Qld), Tenders WA, Tenders SA, Tenders Tasmania, NT QTOL and ACT Tenders. As in recent runs, NT QTOL and ACT Tenders were by far the richest live sources; the larger portals (NSW, VIC, QLD, WA, SA, TAS) returned mostly stale or framework/demo snapshots (buy.nsw now redirects eTendering to the 'buy.nsw' Opportunities list; Tenders SA search was again partly hijacked by South African results). Seventeen prior opportunities were carried forward; nine of them (the NT QTOL December-closing tenders plus ACT 52652-RFT-002) were explicitly re-confirmed still open in this run's snapshots, the rest carried forward without live re-verification. Two genuinely new opportunities were captured: ACT 39215-RFT-400 (City and Environment Directorate construction/landscaping RFT, released 16 Nov 2026, closing 11 Dec 2026, UNSPSC 72000000/72102902) and NT QTOL T26-1326 (Victoria Highway consultancy, Katherine Region, closing 13 Jan 2027). Two data corrections: the Canberra Health Services medical-equipment RFT carries ID 30995-RFT-420 (prior run's 'PICH0008972' was a mis-read), and the NT fire-detection tender is ID T26-1304. Tier 2 (universities, Sydney/Melbourne/SA Water, NBN, Australia Post, Transgrid, Ausgrid) was sampled — no publicly-visible open opportunity with a current closing date; Melbourne Water's Field Services Panel RFT (Zycus) was flagged imminent. Tier 3 (mandatory): SAP Ariba Discovery and major buyers BHP/Rio Tinto/Fortescue were queried; all open RFx remain login-gated or visible only via aggregators, so no corporate tender was captured and the portals are recorded in discovered_sources. Two new sources found: Melbourne Water's Zycus supplier portal and Energy Queensland's SAP Ariba supplier portal.",
     "sources_checked": 22,
-    "tenders_found": 19,
+    "tenders_found": 21,
     "new_sources_found": 2,
-    "entries_pending_detail": 19,
+    "entries_pending_detail": 21,
     "gaps": [
       "HARD EGRESS BLOCK (unchanged, re-tested this run): the session network policy denies all direct HTTPS to buyer tender hosts. WebFetch to https://www.tenders.gov.au/atm returned getaddrinfo ENOTFOUND, matching every prior run, so no buyer-originated detail page, RSS/JSON feed, API or tender document could be opened. Every tender this run is headline-level only; deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Restoring full discovery and deliverables extraction requires allowing the Tier 1/2/3 tender hosts in the session's network settings.",
-      "Tier 1: AusTender, buy.nsw, Buying for Victoria, QTenders/Queensland Procurement Solution, Tenders WA, Tenders SA and Tenders Tasmania could only be read through cached WebSearch snapshots, many of them stale (e.g. Buying for Victoria and buy.nsw snapshots still showed October/early-November closing dates). Newly-published (last 24-48h) listings on those portals are very likely under-captured. NT QTOL and ACT Tenders were the usable exceptions this run.",
-      "Tenders SA: WebSearch for the South Australian portal (tenders.sa.gov.au) was repeatedly hijacked by South African ('Tenders SA') results; no South Australian government opportunity could be captured this run. Deferred to a future run / needs direct portal access.",
-      "Tier 2 (universities, Sydney Water, SA Water, Melbourne Water, NBN Co, Australia Post, Transgrid, Ausgrid): sampled, but no publicly-visible open opportunity with a current (Nov/Dec 2026) closing date was found — these route tendering through SAP Ariba, their own portals, or had already-closed EOIs. Captured as discovered_sources context only.",
+      "Tier 1: AusTender, buy.nsw, Buying for Victoria, QTenders/VendorPanel (Qld), Tenders WA, Tenders SA and Tenders Tasmania could only be read through cached WebSearch snapshots, many stale (Buying for Victoria snapshots still showed late-October closing dates; buy.nsw returned mostly demo-template pages). Newly-published (last 24-48h) listings on those portals are very likely under-captured. NT QTOL and ACT Tenders were the usable exceptions this run.",
+      "Tenders SA: WebSearch for the South Australian portal was again partly hijacked by South African ('Tenders SA') results; the SA listings that did surface (contracts.sa.gov.au / procurement.sa.gov.au) had September/October closing dates. No current SA Government opportunity could be captured this run. Deferred / needs direct portal access.",
+      "NT QTOL T26-1326 (Victoria Highway consultancy) and ACT 39215-RFT-400 were captured at headline level from buyer-originated snapshots, but their detail pages/documents could not be opened; scope, deliverables and (for T26-1326) the exact closing time remain unverified. Related NT Victoria Highway pavement-design packages (123-130km, 136-146km) appeared only via aggregator australiantenders.com.au and were deliberately NOT captured as tenders (buyer-source detail unavailable).",
+      "Tier 2 (universities, Sydney Water, SA Water, Melbourne Water, NBN Co, Australia Post, Transgrid, Ausgrid): sampled, but no publicly-visible open opportunity with a current (Nov/Dec 2026) closing date was found — these route tendering through SAP Ariba, Zycus, their own portals, or had already-closed EOIs. Melbourne Water's Field Services Panel RFT (Zycus) was flagged 'coming soon' but no open-date/closing-date was published. Captured as discovered_sources context only.",
       "Tier 3 (SAP Ariba Discovery and major buyers BHP/Rio Tinto/Fortescue/Woodside): queried as mandatory; all open RFx are login-gated or only visible via aggregators/ICN Gateway. No authenticated session is available, so no corporate opportunity was publicly visible and none was fabricated. Portals recorded in discovered_sources.",
       "Tier 3 invitation-only RFx (e.g. management-consultancy RFPs sent directly to shortlisted/panel suppliers) remain out of scope and undiscoverable by design.",
-      "Unverified closing dates carried from prior runs and NOT reconfirmed this run: DFAT PNG ENABLE (2026-12-01) and Kwinana Bulk Jetty EOI (2026-12-23); both opportunities are confirmed still live but their exact closing dates could not be re-verified against the live portals.",
-      "Unverified aggregator signal NOT captured as structured fields: australiantenders.com.au lists the Defence DSARC 'Alternate Energy Solution' (ID 630837) with an estimated value ~A$80M and a ~17 Dec 2026 closing date; the official AusTender ATM record exists (captured) but could not be opened, so those figures are recorded only in notes.",
-      "CSIRO RFT CSIRORFT2026031 and the WA FPC plantation RFP have no publicly-visible closing date (set in tender documents / not in the announcement); left null."
+      "Carried-forward opportunities NOT individually re-verified against the live portals this run (egress block): DFAT PNG ENABLE (closing 2026-12-01), Kwinana Bulk Jetty EOI (2026-12-23), NT vehicle-rental T26 (2026-12-08), Power and Water RFT0763 (2026-12-11), Defence DSARC alternate-energy, WA FPC plantation RFP, CSIRO RFT2026031, and both Brisbane City Council RFx. All are believed still open but their status/closing dates were carried from prior runs, not reconfirmed this run.",
+      "CSIRO RFT CSIRORFT2026031, the WA FPC plantation RFP and the Defence DSARC managing-contractor ATM have no publicly-visible closing date in the announcement (set in tender documents); left null."
     ],
     "recommended_seed_additions": [
-      "Goldfields-Esperance Development Commission (gedc.wa.gov.au) — WA regional development commission publishing periodic regional tender-opportunity bulletins; discovery/signpost value, medium confidence.",
-      "Pilbara Development Commission (pdc.wa.gov.au) — WA regional development commission publishing Pilbara tender-opportunity bulletins; discovery/signpost value, medium confidence.",
-      "WA Government Media Statements / Announcements (wa.gov.au/government/media-statements and /announcements) — a reliable parallel discovery feed that announces new Tenders WA EOIs/RFPs (surfaced the Kwinana Bulk Jetty EOI and FPC plantation RFP this run) when the Tenders WA search pages are unreachable.",
-      "CSIRO Public Interest Certificates (csiro.au Do-Business public-interest-certificates) — CSIRO publishes approach-to-market public interest certificates that name AusTender RFT IDs ahead of/at publication; a useful early-signal source for Commonwealth research-facility procurements."
+      "Melbourne Water Zycus supplier portal (melbournewater.com.au building-and-works / contractor information) — buyer-originated GBE e-sourcing on the Zycus platform (not Ariba/VendorPanel); Field Services Panel RFT runs here. High confidence; register a supplier account for authenticated reads.",
+      "Energy Queensland supplier portal (energyq.com.au/suppliers) — Qld government-owned electricity GBE (Energex/Ergon) sourcing via SAP Ariba; pivot point to sibling energy-sector buyers on Ariba. High confidence.",
+      "australiantenders.com.au as a DISCOVERY SIGNAL only (aggregator, not source of truth) — repeatedly surfaces NT/SA buyer tender IDs (e.g. Victoria Highway pavement packages) before the buyer portals are reachable; use to spot new buyer tender IDs, then pivot to QTOL/the buyer source. Do not record its listings as confirmed opportunities.",
+      "utilitymagazine.com.au 'open tenders and opportunities' — trade-press signpost that surfaces imminent water/energy GBE RFTs (e.g. Melbourne Water Field Services Panel on Zycus); discovery signal for Tier 2 utility procurement."
     ]
   },
   "tenders": [
@@ -77,7 +77,7 @@
       "first_seen": "2026-11-23",
       "detail_source": "",
       "reasoning": "Carried forward from recent runs; re-confirmed Open this run via DFAT's own ENABLE business notice and a DevelopmentAid listing showing Status: Open, last updated 5 Nov 2026.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date 2026-12-01 was recorded in a prior run and could NOT be re-verified against the live AusTender ATM record this run; treat the closing date as unconfirmed."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date 2026-12-01 was recorded in a prior run and could NOT be re-verified against the live AusTender ATM record this run; treat the closing date as unconfirmed. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "WA-Ports:kwinana-bulk-jetty-additional-capacity-eoi:2026-12-23",
@@ -131,7 +131,7 @@
       "first_seen": "2026-11-23",
       "detail_source": "",
       "reasoning": "Carried forward; re-confirmed this run via the WA Government media statement announcing the EOI. Buyer corrected to Fremantle Ports (operator of Kwinana Bulk Terminal), not Pilbara Ports.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date 2026-12-23 was recorded in a prior run and was NOT reconfirmed this run (no closing date visible in the media statement); treat as unconfirmed. The facility is operated by Fremantle Ports."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date 2026-12-23 was recorded in a prior run and was NOT reconfirmed this run (no closing date visible in the media statement); treat as unconfirmed. The facility is operated by Fremantle Ports. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "QTOL:FireDetectionSystems-NT",
@@ -140,7 +140,7 @@
       "source_type": "gov-state",
       "jurisdiction": "Northern Territory",
       "state": "NT",
-      "tender_id": "",
+      "tender_id": "T26-1304",
       "tender_url": "https://tendersonline.nt.gov.au/Tender/ListContracts",
       "access": "public",
       "title": "Repairs and Maintenance of Fire Detection Systems and Associated Equipment in NT Government Assets (Darwin and East Arnhem Regions) — 36 months",
@@ -184,7 +184,7 @@
       "first_seen": "2026-11-06",
       "detail_source": "",
       "reasoning": "Carried forward from prior runs; NT QTOL remains the richest live-detail Tier 1 source this run.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. A prior run tentatively matched this to tender number CIDC020-26; that match was INCORRECT — CIDC020-26 is a separate Territory Generation tender (see Channel Island synchronous condenser entry). This fire-detection tender has no reliably captured tender number."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. A prior run tentatively matched this to tender number CIDC020-26; that match was INCORRECT — CIDC020-26 is a separate Territory Generation tender (see Channel Island synchronous condenser entry). This fire-detection tender has no reliably captured tender number. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged). | 2026-11-27: this run's QTOL snapshot ties the Darwin & East Arnhem fire-detection repair tender to ID T26-1304 (closing 3 Dec 2026)."
     },
     {
       "dedup_key": "NT-QTOL:AGC26-0118",
@@ -236,7 +236,7 @@
       "first_seen": "2026-11-25",
       "detail_source": "",
       "reasoning": "Carried forward; re-confirmed this run directly in the NT QTOL current-tender listing with closing 16/12/2026 2:00 PM ACST.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "NT-QTOL:T26-1062",
@@ -289,7 +289,7 @@
       "first_seen": "2026-11-25",
       "detail_source": "",
       "reasoning": "Carried forward; re-confirmed in the NT QTOL current list with closing 10/12/2026 2:00 PM ACST.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "NT-QTOL:aerial-photography-lidar-supply-2026-12-08",
@@ -342,7 +342,7 @@
       "first_seen": "2026-11-25",
       "detail_source": "",
       "reasoning": "Carried forward; re-confirmed and enriched this run — the NT QTOL listing shows tender number NTG26-0127, buyer Dept of Lands, Planning and Environment, and a 36-month term.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Tender number NTG26-0127 newly matched this run."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Tender number NTG26-0127 newly matched this run. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "NT-QTOL:vehicle-rental-2026-12-08",
@@ -394,7 +394,7 @@
       "first_seen": "2026-11-25",
       "detail_source": "",
       "reasoning": "Carried forward; re-confirmed in the NT QTOL current list (closing 08/12/2026), now attributed to the Dept of Corporate and Digital Development with a 60-month term.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "AusTender:DSARC-alternate-energy-managing-contractor",
@@ -447,7 +447,7 @@
       "first_seen": "2026-11-25",
       "detail_source": "",
       "reasoning": "Carried forward from last run; has an official AusTender ATM record (could not be opened this run due to the egress block).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. An aggregator (australiantenders.com.au, ID 630837) indicated an estimated value of ~A$80M and a closing date around 17 Dec 2026; these are UNVERIFIED and deliberately not placed in the value/closing_date fields."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. An aggregator (australiantenders.com.au, ID 630837) indicated an estimated value of ~A$80M and a closing date around 17 Dec 2026; these are UNVERIFIED and deliberately not placed in the value/closing_date fields. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "QTOL:RFT0763-powerwater-eoc-bcms",
@@ -501,7 +501,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced directly in the NT QTOL current-tender listing (RFT0763, Power and Water Corporation).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "QTOL:T26-1246-magnt-switchboard",
@@ -554,7 +554,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the NT QTOL current-tender listing (T26-1246).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "QTOL:T26-1225-alice-springs-landscaping",
@@ -607,7 +607,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the NT QTOL current-tender listing (T26-1225).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "QTOL:T26-1400-peter-mcaulay-refurb",
@@ -659,7 +659,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the NT QTOL current-tender listing (T26-1400).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "QTOL:CIDC020-26-channel-island-synchronous-condenser",
@@ -713,7 +713,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the NT QTOL current-tender listing (CIDC020-26, Territory Generation). Corrects a prior run that mislabelled CIDC020-26 as the NT fire-detection tender.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "TendersWA:FPC-plantation-establishment-services-rfp",
@@ -769,7 +769,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — WA Government announcement (3 Nov 2026) for an FPC RFP for plantation establishment services; directs respondents to Tenders WA.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Deliverables summary is taken from the public WA Government announcement text, not the Tenders WA detail document (which could not be opened). Closing date not published in the announcement."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Deliverables summary is taken from the public WA Government announcement text, not the Tenders WA detail document (which could not be opened). Closing date not published in the announcement. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "ACT-Tenders:PICH0008972-chs-medical-equipment",
@@ -778,10 +778,10 @@
       "source_type": "health",
       "jurisdiction": "Australian Capital Territory",
       "state": "ACT",
-      "tender_id": "PICH0008972",
+      "tender_id": "30995-RFT-420",
       "tender_url": "https://www.tenders.act.gov.au/tenders/open",
       "access": "public",
-      "title": "Medical Equipment (Canberra Health Services)",
+      "title": "Medical Equipment (Canberra Health Services) — RFT 30995-RFT-420",
       "buyer": "Canberra Health Services",
       "buyer_url": "https://www.canberrahealthservices.act.gov.au",
       "category": "Medical equipment",
@@ -821,7 +821,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the ACT Tenders open-tenders listing (PICH0008972).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Title is a generalisation from the listing snapshot; the specific equipment category was not fully visible."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Title is a generalisation from the listing snapshot; the specific equipment category was not fully visible. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists). | 2026-11-27: this run's ACT Tenders snapshot shows the Canberra Health Services medical-equipment RFT carries ID 30995-RFT-420 (closing Tue 08 Dec 2026, 2:00pm); prior-run ID 'PICH0008972' appears to have been a mis-read. dedup_key retained for cross-run continuity."
     },
     {
       "dedup_key": "ACT-Tenders:52652-RFT-002-education-it-services",
@@ -874,7 +874,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — surfaced in the ACT Tenders open-tenders listing (52652-RFT-002), flagged restricted/prequalification.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Listed as a restricted/selective tender; full detail requires sign-in on ACT Tenders."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Listed as a restricted/selective tender; full detail requires sign-in on ACT Tenders. | 2026-11-27: re-confirmed still open in the buyer-originated WebSearch snapshot this run (closing date unchanged)."
     },
     {
       "dedup_key": "Brisbane-CC:Doc115483155-gardner-road",
@@ -928,7 +928,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — appeared on the Brisbane City Council current-tenders page (RFx Doc115483155).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Full tender documents require registration on the council supplier portal."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Full tender documents require registration on the council supplier portal. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "Brisbane-CC:Doc118000917-prebble-street-bikeway",
@@ -983,7 +983,7 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — appeared on the Brisbane City Council current-tenders page (RFx Doc118000917).",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Full tender documents require registration on the council supplier portal."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Full tender documents require registration on the council supplier portal. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
     },
     {
       "dedup_key": "AusTender:CSIRORFT2026031-acdp-part-life-refit",
@@ -1037,7 +1037,116 @@
       "first_seen": "2026-11-26",
       "detail_source": "",
       "reasoning": "New this run — identified from a CSIRO Public Interest Certificate (dated 14 Oct 2026) naming AusTender ID CSIRORFT2026031 as an open RFT.",
-      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date is set in the tender documents (not in the public interest certificate) and could not be retrieved; left null."
+      "notes": "Headline-level only: the session network policy blocks all direct HTTPS to buyer tender hosts (WebFetch DNS resolution denied again this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date is set in the tender documents (not in the public interest certificate) and could not be retrieved; left null. | 2026-11-27: carried forward and re-observed as still listed/open; not individually re-verified against the live portal this run (egress block persists)."
+    },
+    {
+      "dedup_key": "ACT-Tenders:39215-RFT-400-city-environment-construction",
+      "source_name": "ACT Tenders",
+      "source_url": "https://www.tenders.act.gov.au/tenders/open",
+      "source_type": "gov-state",
+      "jurisdiction": "Australian Capital Territory",
+      "state": "ACT",
+      "tender_id": "39215-RFT-400",
+      "tender_url": "https://www.tenders.act.gov.au/tenders/open",
+      "access": "public",
+      "title": "39215-RFT-400 — Building/facility construction & landscaping works (ACT City and Environment Directorate)",
+      "buyer": "ACT City and Environment Directorate",
+      "buyer_url": "https://www.act.gov.au",
+      "category": "Building and facility construction and maintenance; landscaping",
+      "category_codes": [
+        "72000000",
+        "72102902"
+      ],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "Open Request for Tender from the ACT City and Environment Directorate for building/facility construction and maintenance works with a landscaping component. Released 16 November 2026, closing 11 December 2026.",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "Open; the listing shows prequalification categories 'CL' and 'F2'.",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": "2026-11-16",
+      "closing_date": "2026-12-11",
+      "closing_time": "2:00 PM (ACT local)",
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge electronically via Tenders ACT",
+      "lodgement_url": "https://www.tenders.act.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Australian Capital Territory",
+      "contact_name": "",
+      "contact_email": "TendersACT@act.gov.au",
+      "contact_phone": "",
+      "tags": [
+        "ACT",
+        "construction",
+        "landscaping",
+        "government"
+      ],
+      "first_seen": "2026-11-27",
+      "detail_source": "",
+      "reasoning": "New this run — surfaced in the ACT Tenders open-tenders listing (39215-RFT-400). UNSPSC split 72000000 Building & Facility Construction/Maintenance (80%) and 72102902 Landscaping services (20%); prequalification categories CL and F2, released 16 Nov 2026, closing 11 Dec 2026 2:00pm.",
+      "notes": "Headline-level only: the session network policy again blocked all direct HTTPS to buyer tender hosts (WebFetch to www.tenders.gov.au returned DNS ENOTFOUND this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. UNSPSC codes and prequalification categories (CL, F2) were visible in the listing snapshot; the precise project title/scope was not fully visible and the general-form title here is derived from the UNSPSC categories. Contact email is the Tenders ACT generic inbox per the standard ACT short-form RFT template, not a tender-specific contact."
+    },
+    {
+      "dedup_key": "NT-QTOL:T26-1326-victoria-highway-consultancy",
+      "source_name": "Quotations and Tenders Online (QTOL, NT)",
+      "source_url": "https://tendersonline.nt.gov.au/Tender/ListContracts",
+      "source_type": "gov-state",
+      "jurisdiction": "Northern Territory",
+      "state": "NT",
+      "tender_id": "T26-1326",
+      "tender_url": "https://tendersonline.nt.gov.au/Tender/DetailsFTO/3493",
+      "access": "public",
+      "title": "T26-1326 — Victoria Highway consultancy (Katherine Region, NT)",
+      "buyer": "Northern Territory Government (Dept of Logistics and Infrastructure / Transport)",
+      "buyer_url": "https://nt.gov.au",
+      "category": "Engineering/road consultancy",
+      "category_codes": [],
+      "procurement_type": "RFT",
+      "current_status": "recently-published",
+      "description": "NT Government QTOL consultancy tender relating to the Victoria Highway (Katherine Region). Flagged on QTOL as closing 13 January 2027 (the first opportunity to close after the QTOL Christmas/New Year break).",
+      "deliverables_summary": null,
+      "key_deliverables": [],
+      "scope_of_work": null,
+      "requirements": [],
+      "eligibility": "",
+      "evaluation_criteria": [],
+      "value": null,
+      "value_currency": "AUD",
+      "contract_term": null,
+      "contract_start": null,
+      "contract_end": null,
+      "publish_date": null,
+      "closing_date": "2027-01-13",
+      "closing_time": null,
+      "questions_due": null,
+      "briefing": "",
+      "submission_method": "Lodge online via QTOL",
+      "lodgement_url": "https://tendersonline.nt.gov.au",
+      "documents": [],
+      "mandatory_conditions": [],
+      "delivery_location": "Katherine Region, Northern Territory",
+      "contact_name": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "tags": [
+        "NT",
+        "roads",
+        "consultancy",
+        "Victoria-Highway"
+      ],
+      "first_seen": "2026-11-27",
+      "detail_source": "",
+      "reasoning": "New this run — QTOL WebSearch snapshot (incl. the QTOL Christmas/New Year closing-dates page) identifies T26-1326 as a Victoria Highway consultancy closing 13 January 2027. Related Victoria Highway pavement-design packages (123-130km, 136-146km) appeared only via aggregator australiantenders.com.au and were NOT captured.",
+      "notes": "Headline-level only: the session network policy again blocked all direct HTTPS to buyer tender hosts (WebFetch to www.tenders.gov.au returned DNS ENOTFOUND this run), so the tender's own detail page and documents could not be opened. Deliverables, requirements, evaluation criteria, contacts and most commercial fields are null. Captured from WebSearch snapshots of the buyer-originated portal; verify on the live portal before relying. Closing date (13 Jan 2027) comes from the QTOL holiday-schedule snapshot; the tender's own scope, deliverables and exact closing time could not be opened and remain unverified. tender_url points to a QTOL detail path surfaced in search and should be confirmed on the live portal."
     }
   ],
   "discovered_sources": [
@@ -1049,11 +1158,11 @@
       "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "medium",
       "how_discovered": "Found via a Tenders WA / WA regional search; GEDC periodically publishes 'Goldfields-Esperance Tender Opportunities' PDF bulletins (e.g. 20251118). Mirrors the already-tracked Kimberley Development Commission bulletins.",
       "recommended_check_frequency": "monthly",
-      "notes": "Government regional development commission that compiles regional tender/grant opportunity bulletins. Primarily a discovery/signpost bulletin rather than an originating tender board; pivot to each named buyer's own source."
+      "notes": "Government regional development commission that compiles regional tender/grant opportunity bulletins. Primarily a discovery/signpost bulletin rather than an originating tender board; pivot to each named buyer's own source. | 2026-11-27: now a known/tracked source (first recorded 2026-11-26)."
     },
     {
       "source_name": "Pilbara Development Commission — Pilbara Tender Opportunities bulletins",
@@ -1063,11 +1172,11 @@
       "platform": "custom",
       "access_method": "html",
       "feed_or_api_url": null,
-      "is_new_source": true,
+      "is_new_source": false,
       "confidence": "medium",
       "how_discovered": "Found via WA regional search (Pilbara_Tender_Opportunities_2026_06_22.pdf). Same model as the Kimberley and Goldfields-Esperance development commissions.",
       "recommended_check_frequency": "monthly",
-      "notes": "WA regional development commission publishing periodic Pilbara tender-opportunity bulletins. Discovery/signpost source; confirm each opportunity at its originating buyer source."
+      "notes": "WA regional development commission publishing periodic Pilbara tender-opportunity bulletins. Discovery/signpost source; confirm each opportunity at its originating buyer source. | 2026-11-27: now a known/tracked source (first recorded 2026-11-26)."
     },
     {
       "source_name": "Quotations and Tenders Online (QTOL, NT)",
@@ -1180,6 +1289,34 @@
       "how_discovered": "Recurred as the buyer-originated work-package gateway for major projects this run (Chevron Australia, BHP Port Debottlenecking, Perth Airport, NT Logistics & Infrastructure).",
       "recommended_check_frequency": "weekly",
       "notes": "Buyer-originated project/work-package gateway for major capital projects; registration gives full package detail."
+    },
+    {
+      "source_name": "Melbourne Water — Zycus supplier portal (Field Services Panel RFT)",
+      "source_url": "https://www.melbournewater.com.au/building-and-works/contractor-information",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Victoria",
+      "platform": "Zycus",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 2 GBE sweep — a Melbourne Water notice flagged an imminent open RFT for renewal of its Field Services Panel (FSP), with responses lodged through the Zycus portal requiring supplier self-registration. First time Zycus has been recorded as a buyer-originated e-sourcing platform for this routine.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated GBE procurement running on Zycus (not Ariba/VendorPanel). Individual opportunities are registration-gated; the Field Services Panel RFT was flagged 'coming soon' (annual procurement plan estimated release 30 Jun 2026, since slipped). Register a supplier account to read full opportunity detail in an authenticated run."
+    },
+    {
+      "source_name": "Energy Queensland — Supplier portal (SAP Ariba)",
+      "source_url": "https://www.energyq.com.au/suppliers",
+      "source_type": "gov-business-enterprise",
+      "jurisdiction": "Queensland",
+      "platform": "SAP-Ariba",
+      "access_method": "portal-registration",
+      "feed_or_api_url": null,
+      "is_new_source": true,
+      "confidence": "high",
+      "how_discovered": "Tier 3 / e-sourcing platform pivot off the SAP Ariba Discovery sweep — Energy Queensland (Qld government-owned electricity GBE, Energex/Ergon) runs supplier sourcing (RFQ/RFT) through SAP Ariba. Sibling-buyer discovery alongside Endeavour Energy and PanAust on the same platform.",
+      "recommended_check_frequency": "monthly",
+      "notes": "Buyer-originated GBE sourcing on SAP Ariba; opportunities are registration-gated behind the Ariba Business Network. Captured as a portal; no publicly-visible open opportunity could be read without an authenticated session."
     }
   ]
 }
